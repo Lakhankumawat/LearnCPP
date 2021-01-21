@@ -10,7 +10,10 @@
 
 <td> <a href="https://www.youtube.com/watch?v=pQKPUD4_6gA" ><img src="https://edent.github.io/SuperTinyIcons/images/svg/youtube.svg" width="45" title="YouTube" /></a><br>[C++]
 </td><td>
-<a href="https://github.com/prateek27/workshop_ymca"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /></a><br>[Learn Cpp]
+<a href="https://github.com/prateek27/workshop_ymca"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /></a><br>[Learn Cpp 1]
+</td>
+<td>
+<a href="https://github.com/Codecademy/learn-cpp"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /></a><br>[Learn Cpp 2]
 </td>
 <td><a href="https://www.cse.iitb.ac.in/~ranade/simplecpp/"><img src="https://edent.github.io/SuperTinyIcons/images/svg/chrome.svg" width="35" title="Chrome" /></a><br>[Simple cpp]</td></table>
 
