@@ -8,7 +8,7 @@
 <h2 align="center" >This repos content is mainly inspired by :</h2>
 <table align="center" >
 
-<td> <a href="https://www.youtube.com/watch?v=pQKPUD4_6gA" ><img src="https://edent.github.io/SuperTinyIcons/images/svg/youtube.svg" width="45" title="YouTube" /></a><br>[C++]
+<td> <a href="https://www.youtube.com/watch?v=pQKPUD4_6gA" ><img src="https://edent.github.io/SuperTinyIcons/images/svg/youtube.svg" width="45" title="YouTube" /><br>[C++]</a>
 </td><td>
 <a href="https://github.com/prateek27/workshop_ymca"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Learn Cpp 1]</a>
 </td>
