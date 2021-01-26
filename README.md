@@ -15,13 +15,15 @@
 <td>
 <a href="https://github.com/Codecademy/learn-cpp"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Learn Cpp 2]</a>
 </td>
-<td><a href="https://www.cse.iitb.ac.in/~ranade/simplecpp/"><img src="https://edent.github.io/SuperTinyIcons/images/svg/chrome.svg" width="35" title="Chrome" /><br>[Simple cpp Download]</a></td>
+<td><a href="https://www.cse.iitb.ac.in/~ranade/simplecpp/"><img src="https://edent.github.io/SuperTinyIcons/images/svg/chrome.svg" width="35" title="Chrome" /><br>[CodeBlocks Download]</a></td>
 <tr><td>
  <a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" ><img src="https://www.flaticon.com/svg/vstatic/svg/2892/2892879.svg?token=exp=1611583981~hmac=23bac6ce2c06928ba60259c2ac061e87" width="45" title="YouTube" /><br>[Worth Reading Articles]</a>
 <td>
 <a href="https://github.com/sahilbansal17/Get_Better_at_CP_in_2_Months"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Learn CP with CPP]</a>
 </td>
 </table>
-
+<ul><li>
+ Note: The Introduction files may contain some turtle graphics and to implement them i recommend to download Simple Codeblocks link is given above .You can also use plugin library for same.
+ </li></ul>
 
 <h2 align="center" >< Please Do Contribute 💗 & Star!🤩></h2>
