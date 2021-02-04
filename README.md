@@ -20,13 +20,16 @@
  <a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" ><img src="https://www.flaticon.com/svg/vstatic/svg/2892/2892879.svg?token=exp=1611583981~hmac=23bac6ce2c06928ba60259c2ac061e87" width="45" title="YouTube" /><br>[Worth Reading Articles]</a>
 <td>
 <a href="https://github.com/sahilbansal17/Get_Better_at_CP_in_2_Months"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Competitive Programming]</a>
- 
+
 </td>
 <td>
 <a href="https://github.com/smv1999/CompetitiveProgrammingQuestionBank"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Competitive-2]</a>
  
 </td>
-
+<td>
+<a href="https://github.com/TheAlgorithms/C-Plus-Plus"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Cpp Algorithms]</a>
+ 
+</td>
 </table>
 <ul><li>
  Note: The Introduction files may contain some turtle graphics and to implement them i recommend to download Simple Codeblocks link is given above .You can also use plugin library for same.
