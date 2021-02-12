@@ -30,6 +30,16 @@
 <a href="https://github.com/TheAlgorithms/C-Plus-Plus"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Cpp Algorithms]</a>
  
 </td>
+<tr>
+ <td>
+  <h3><a href="https://leetcode.com/problemset/all/"><img src="https://img.icons8.com/metro/26/000000/code.png"/> LeetCode</a></h3></td>
+ <td>
+  <h3>
+  <a href="https://www.hackerrank.com/dashboard"><img src="https://img.icons8.com/windows/32/000000/hackerrank.png"/> HackerRank</a></h3></td>
+ <td>
+  <h3>
+  <a href="https://www.codechef.com/"><img src="https://img.icons8.com/android/24/000000/cook-male.png"/> CodeChef</a></h3></td>
+ </tr>
 </table>
 <ul><li>
  Note: The Introduction files may contain some turtle graphics and to implement them i recommend to download Simple Codeblocks link is given above .You can also use plugin library for same.
