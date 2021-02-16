@@ -4,7 +4,9 @@
     Learn
   <br>
   Cpp<img src="https://media.giphy.com/media/9S3FMee8gGGRBhZsA7/giphy.gif" width="36px"/>
+ 
 </h1>
+<img align="right" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=LakhanKumawat&repo=LearnCPP&countColorcountColor&countColor=%237B1E7B"/>
 <h2 align="center" >This repos content is mainly inspired by :</h2>
 <table align="center" >
 
