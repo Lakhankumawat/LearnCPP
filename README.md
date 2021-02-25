@@ -41,6 +41,9 @@
  <td>
   <h3>
   <a href="https://www.codechef.com/"><img src="https://img.icons8.com/android/24/000000/cook-male.png"/> CodeChef</a></h3></td>
+ <td>
+ <h3>
+  <a href="https://www.codeforces.com/"><img width="24" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/codeforces-512.png"/> CodeForces</a></h3></td>
  </tr>
 </table>
 <ul><li>
