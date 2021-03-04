@@ -3,7 +3,7 @@
     <img align="right" alt="GIF" height="60px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
     Learn
   <br>
-  Cpp<img src="https://media.giphy.com/media/9S3FMee8gGGRBhZsA7/giphy.gif" width="36px"/>
+  <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/><img src="https://media.giphy.com/media/9S3FMee8gGGRBhZsA7/giphy.gif" width="36px"/>
  
 </h1>
 <img align="right" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=LakhanKumawat&repo=LearnCPP&countColorcountColor&countColor=%237B1E7B"/>
@@ -17,7 +17,7 @@
 <td>
 <a href="https://github.com/Codecademy/learn-cpp"><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /><br>[Learn Cpp 2]</a>
 </td>
-<td><a href="https://www.cse.iitb.ac.in/~ranade/simplecpp/"><img src="https://edent.github.io/SuperTinyIcons/images/svg/chrome.svg" width="35" title="Chrome" /><br>[CodeBlocks Download]</a></td>
+<td><a href="https://www.codeblocks.org/downloads/binaries/"><img src="https://edent.github.io/SuperTinyIcons/images/svg/chrome.svg" width="35" title="Chrome" /><br>[CodeBlocks Download]</a></td>
 <tr><td>
  <a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" ><img src="https://img.icons8.com/fluent/48/000000/notepad.png" width="45" alt="articles" /><br>[Worth Reading Articles]</a>
 <td>
