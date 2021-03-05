@@ -46,8 +46,10 @@
   <a href="https://www.codeforces.com/"><img width="24" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/codeforces-512.png"/> CodeForces</a></h3></td>
  </tr>
 </table>
+ 
 <ul><li>
  Note: The Introduction files may contain some turtle graphics and to implement them i recommend to download Simple Codeblocks link is given above .You can also use plugin library for same.
  </li></ul>
-
+<h3 align="center">Contributing </h3>
+<h5 align="center">Contributions to the project are most welcome, so feel free to fork and improve.</h5>
 <h2 align="center" >< Please Do Contribute 💗 & Star!🤩></h2>
