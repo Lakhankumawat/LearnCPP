@@ -4,7 +4,7 @@
 #include <string.h>
 using namespace std;
 
-#function to reverse a string
+//#function to reverse a string
 void reverse(char *x, int begin, int end)
 {
 char c;
