@@ -2,7 +2,7 @@
 
 void pop()
 {
-    if ( isEmpty() == True )
+    if ( isEmpty()== True )
         print( "Stack is empty!" )
     else
         top = top - 1

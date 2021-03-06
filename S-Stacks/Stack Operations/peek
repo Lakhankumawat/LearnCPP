@@ -1,6 +1,6 @@
 //This is the Implementation for PEEK operation in Stacks.
 
-int stack::peek()
+int peek()
 {
     if (!isEmpty()) {
         return arr[top];
@@ -9,4 +9,3 @@ int stack::peek()
         exit(EXIT_FAILURE);
     }
 }
- 
