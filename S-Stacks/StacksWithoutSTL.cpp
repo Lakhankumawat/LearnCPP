@@ -1,3 +1,6 @@
+//Implementation of Stack with its operations.
+
+
 #include <iostream>
 using namespace std;
 #define MAX 5
