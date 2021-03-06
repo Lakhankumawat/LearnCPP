@@ -1,0 +1,12 @@
+// Implementation algorithm for PUSH
+
+void push(int item)
+{
+    if ( top == capacity - 1 )
+        print( "Stack overflow!" )
+    else
+    {
+        arr[top+1] = item
+        top = top + 1
+    }
+}
