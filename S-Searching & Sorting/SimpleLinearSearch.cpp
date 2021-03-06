@@ -9,7 +9,7 @@ int n=sizeof(arr)/sizeof(int);
 
 cout<<n<<endl<<"Enter element to Search : ";
 
-//Search element find operation
+//Search element find operation.
 int key;
 cin>>key;
 //It will return address of searched element so auto instead of int
@@ -25,4 +25,3 @@ else
     cout<<"Element is at index"<<index;
 return 0;
 }
-
