@@ -1,6 +1,5 @@
 //Implementation of Stack with its operations.
 
-
 #include <iostream>
 using namespace std;
 #define MAX 5
@@ -13,8 +12,8 @@ class Stack
         int ele[MAX];
     public:
         Stack();
-        int     isFull();
-        int     isEmpty();
+        bool     isFull();
+        bool    isEmpty();
         void    push(int item);
         int     pop(int *item);
 };
@@ -26,25 +25,15 @@ Stack:: Stack()
 }
 
 //Check stack is full or not
-int Stack:: isFull()
+bool Stack:: isFull()
 {
-    int full = 0;
-
-    if( top == MAX-1 )
-        full = 1;
-
-    return full;
+    return top==MAX-1;
 }
 
 //Check stack is empty or not
-int Stack:: isEmpty()
+bool Stack:: isEmpty()
 {
-    int empty = 0;
-
-    if( top == -1 )
-        empty = 1;
-
-    return empty;
+    return top==-1;
 }
 
 //Insert item into stack
@@ -81,27 +70,15 @@ int main()
 
     Stack s = Stack();
 
-    s.push( 10 );
-    s.push( 20 );
-    s.push( 30 );
-    s.push( 40 );
-    s.push( 50 );
-    s.push( 60 );
+    for(int i=1;i<=MAX;i++)
+    s.push(i*10);
 
+//There will be Overflow
+    s.push(60);
 
-    if( s.pop(&item) == 0 )
+    while( s.pop(&item)== 0 ){
         cout<<"\nDeleted item : "<< item;
-    if( s.pop(&item) == 0 )
-        cout<<"\nDeleted item : "<< item;
-    if( s.pop(&item) == 0 )
-        cout<<"\nDeleted item : "<< item;
-    if( s.pop(&item) == 0 )
-        cout<<"\nDeleted item : "<< item;
-    if( s.pop(&item) == 0 )
-        cout<<"\nDeleted item : "<< item;
-    if( s.pop(&item) == 0 )
-        cout<<"\nDeleted item : "<< item;
-
+    }
     cout<< endl;
 
     return 0;
