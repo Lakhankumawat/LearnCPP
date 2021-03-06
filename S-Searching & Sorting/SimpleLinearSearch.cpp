@@ -25,4 +25,3 @@ else
     cout<<"Element is at index"<<index;
 return 0;
 }
-
