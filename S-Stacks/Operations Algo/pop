@@ -1,0 +1,9 @@
+//Implementation for POP operation in stacks.
+
+void pop()
+{
+    if ( isEmpty() == True )
+        print( "Stack is empty!" )
+    else
+        top = top - 1
+}
