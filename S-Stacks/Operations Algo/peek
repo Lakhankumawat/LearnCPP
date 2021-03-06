@@ -1,0 +1,12 @@
+//This is the Implementation for PEEK operation in Stacks.
+
+int peek()
+{
+    if ( isEmpty() == True )
+    {
+        print( "Stack is empty!" )
+        return -1
+    }
+    else
+        return arr[top]
+}
