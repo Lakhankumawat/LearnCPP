@@ -1,12 +1,12 @@
 //This is the Implementation for PEEK operation in Stacks.
 
-int peek()
+int stack::peek()
 {
-    if ( isEmpty() == True )
-    {
-        print( "Stack is empty!" )
-        return -1
+    if (!isEmpty()) {
+        return arr[top];
     }
-    else
-        return arr[top]
+    else {
+        exit(EXIT_FAILURE);
+    }
 }
+ 
