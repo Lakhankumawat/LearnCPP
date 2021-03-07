@@ -53,3 +53,7 @@
 <h3 align="center">Contributing </h3>
 <h5 align="center">Contributions to the project are most welcome, so feel free to fork and improve.</h5>
 <h2 align="center" >< Please Do Contribute 💗 & Star!🤩></h2>
+<br><br><hr>
+  <h6 align="center">© LearnCPP 2021 <br>
+  All Rights Reserved</h6>
+
