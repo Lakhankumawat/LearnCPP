@@ -6,6 +6,25 @@
   <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/><img src="https://media.giphy.com/media/9S3FMee8gGGRBhZsA7/giphy.gif" width="36px"/>
  
 </h1>
+
+
+
+<p align="center">
+
+<a href="https://github.com/Lakhankumawat/LearnCPP/fork" target="blank">
+<img src="https://img.shields.io/github/forks/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 forks"/>
+</a>
+<a href="https://github.com/pratyush2410/HackNITP-3.0-H4CK3RS-/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/pratyush2410/HackNITP-3.0-H4CK3RS-?style=flat-square" alt="HackNITP-3.0 stars"/>
+</a>
+<a href="https://github.com/pratyush2410/HackNITP-3.0-H4CK3RS-/issues" target="blank">
+<img src="https://img.shields.io/github/issues/pratyush2410/HackNITP-3.0-H4CK3RS-?style=flat-square" alt="HackNITP-3.0issues"/>
+</a>
+<a href="https://github.com/pratyush2410/HackNITP-3.0-H4CK3RS-/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/pratyush2410/HackNITP-3.0-H4CK3RS-?style=flat-square" alt="HackNITP-3.0 pull-requests"/>
+</a>
+</p>
+
 <img align="right" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=LakhanKumawat&repo=LearnCPP&countColorcountColor&countColor=%237B1E7B"/>
 <h2 align="center" >This repos content is mainly inspired by :</h2>
 <table align="center" >
