@@ -14,16 +14,17 @@
 <a href="https://github.com/Lakhankumawat/LearnCPP/fork" target="blank">
 <img src="https://img.shields.io/github/forks/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 forks"/>
 </a>
-<a href="https://github.com/pratyush2410/HackNITP-3.0-H4CK3RS-/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/pratyush2410/HackNITP-3.0-H4CK3RS-?style=flat-square" alt="HackNITP-3.0 stars"/>
+<a href="https://github.com/Lakhankumawat/LearnCPP/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 stars"/>
 </a>
-<a href="https://github.com/pratyush2410/HackNITP-3.0-H4CK3RS-/issues" target="blank">
-<img src="https://img.shields.io/github/issues/pratyush2410/HackNITP-3.0-H4CK3RS-?style=flat-square" alt="HackNITP-3.0issues"/>
+<a href="https://github.com/Lakhankumawat/LearnCPP/issues" target="blank">
+<img src="https://img.shields.io/github/issues/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0issues"/>
 </a>
-<a href="https://github.com/pratyush2410/HackNITP-3.0-H4CK3RS-/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/pratyush2410/HackNITP-3.0-H4CK3RS-?style=flat-square" alt="HackNITP-3.0 pull-requests"/>
+<a href="https://github.com/Lakhankumawat/LearnCPP/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 pull-requests"/>
 </a>
 </p>
+
 
 <img align="right" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=LakhanKumawat&repo=LearnCPP&countColorcountColor&countColor=%237B1E7B"/>
 <h2 align="center" >This repos content is mainly inspired by :</h2>
