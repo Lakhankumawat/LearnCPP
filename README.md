@@ -12,16 +12,16 @@
 <p align="center">
 
 <a href="https://github.com/Lakhankumawat/LearnCPP/fork" target="blank">
-<img src="https://img.shields.io/github/forks/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 forks"/>
+<img src="https://img.shields.io/github/forks/Lakhankumawat/LearnCPP?style=flat-square" alt=" forks"/>
 </a>
 <a href="https://github.com/Lakhankumawat/LearnCPP/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 stars"/>
+<img src="https://img.shields.io/github/stars/Lakhankumawat/LearnCPP?style=flat-square" alt=" stars"/>
 </a>
 <a href="https://github.com/Lakhankumawat/LearnCPP/issues" target="blank">
-<img src="https://img.shields.io/github/issues/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0issues"/>
+<img src="https://img.shields.io/github/issues/Lakhankumawat/LearnCPP?style=flat-square" alt="issues"/>
 </a>
 <a href="https://github.com/Lakhankumawat/LearnCPP/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/Lakhankumawat/LearnCPP?style=flat-square" alt="HackNITP-3.0 pull-requests"/>
+<img src="https://img.shields.io/github/issues-pr/Lakhankumawat/LearnCPP?style=flat-square" alt=" pull-requests"/>
 </a>
 </p>
 
