@@ -1,84 +1,78 @@
-# Contributing
+# Contributing Guidelines
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+This documentation contains a set of guidelines to help you during the contribution process. 
+We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project. Thank you for helping out and remember,
+**no contribution is too small.**
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+# Submitting Contributions👩‍💻👨‍💻
+Below you will find the process and workflow used to review and merge your changes.
+## Step 1 : Find an issue
+- Take a look at the Existing Issues or create your **own** Issues!
+- Wait for the Issue to be assigned to you after which you can start working on it.
+- Note : Every change in this project should/must have an associated issue. 
 
-## Pull Request Process
+![Screenshot (43) - Copy](https://user-images.githubusercontent.com/55774240/113246266-51ebda00-92d6-11eb-805e-4b65644f0a19.png)
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you.
+## Step 2 : Fork the Project
+- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.
+```
+$ git clone https://github.com/<your-username>/Amazing-Python-Scripts
+$ cd Amazing-Python-Scripts
+$ git remote add upstream https://github.com/avinashkranjan/Amazing-Python-Scripts
+```
+![Screenshot (43)](https://user-images.githubusercontent.com/55774240/113246246-426c9100-92d6-11eb-9222-d8642c2de4af.png)
 
-## Code of Conduct
 
-### Our Pledge
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+- If you have already forked the project, update your copy before working.
+```
+$ git remote update
+$ git checkout <branch-name>
+$ git rebase upstream/<branch-name>
+```
+## Step 3 : Branch
+Create a new branch. Use its name to identify the issue your addressing.
+```
+# It will create a new branch with name Branch_Name and switch to that branch 
+$ git checkout -b branch_name
+```
+## Step 4 : Work on the issue assigned
+- Work on the issue(s) assigned to you. 
+- Add all the files/folders needed.
+- After you've made changes or made your contribution to the project add changes to the branch you've just created by:
+```
+# To add all new files to branch Branch_Name
+$ git add .
+```
+## Step 5 : Commit
+- To commit give a descriptive message for the convenience of reveiwer by:
+```
+# This message get associated with all files you have changed
+$ git commit -m "message"
+```
+- **NOTE**: A PR should have only one commit. Multiple commits should be squashed.
+## Step 6 : Work Remotely
+- Now you are ready to your work to the remote repository.
+- When your work is ready and complies with the project conventions, upload your changes to your fork:
 
-### Our Standards
+```
+# To push your work to your remote repository
+$ git push -u origin Branch_Name
+```
 
-Examples of behavior that contributes to creating a positive environment
-include:
+## Step 7 : Pull Request
+- Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
-Examples of unacceptable behavior by participants include:
+## Need more help?🤔
+You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+- [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
 
-### Our Responsibilities
-
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
-
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
-
-### Scope
-
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
-
-### Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+## Tip from us😇
+It always takes time to understand and learn. So, do not worry at all. We know **you have got this**!💪
