@@ -6,12 +6,22 @@
   <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/><img src="https://media.giphy.com/media/9S3FMee8gGGRBhZsA7/giphy.gif" width="36px"/>
  
 </h1>
+<!------------------Swags------------------------->
 
+<p align="center">
+
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" alt=" forks"/>
+<img src="https://forthebadge.com/images/badges/built-by-codebabes.svg" alt=" forks"/>
+<img src="https://forthebadge.com/images/badges/made-with-c-plus-plus.svg" alt=" forks"/>
+<img src="https://forthebadge.com/images/badges/makes-people-smile.svg" alt=" forks"/>
+<img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" alt=" forks"/>
+
+</p>
 <!------------------------------------Badges------------------------------->
 
-<h3 align="center">
+<h2 align="center">
 <img src="https://img.icons8.com/office/48/000000/under-construction.png"/>Repo Under Construction
-</h3>
+</h2>
 <h6 align="center">
 New suggestions have a warm welcome from our side
 </h6>
@@ -20,17 +30,22 @@ New suggestions have a warm welcome from our side
 <p align="center">
 
 <a href="https://github.com/Lakhankumawat/LearnCPP/fork" target="blank">
-<img src="https://img.shields.io/github/forks/Lakhankumawat/LearnCPP?style=flat-square" alt=" forks"/>
+<img src="https://img.shields.io/github/forks/Lakhankumawat/LearnCPP?color=blue" alt=" forks"/>
 </a>
 <a href="https://github.com/Lakhankumawat/LearnCPP/stargazers" target="blank">
 <img src="https://img.shields.io/github/stars/Lakhankumawat/LearnCPP?style=flat-square" alt=" stars"/>
 </a>
 <a href="https://github.com/Lakhankumawat/LearnCPP/issues" target="blank">
-<img src="https://img.shields.io/github/issues/Lakhankumawat/LearnCPP?style=flat-square" alt="issues"/>
+<img src="https://img.shields.io/github/issues/Lakhankumawat/LearnCPP?color=yellow" alt="issues"/>
 </a>
 <a href="https://github.com/Lakhankumawat/LearnCPP/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/Lakhankumawat/LearnCPP?style=flat-square" alt=" pull-requests"/>
+<img src="https://img.shields.io/github/issues-pr/Lakhankumawat/LearnCPP?color=lightgreen" alt=" pull-requests"/>
 </a>
+
+<img src="https://img.shields.io/github/repo-size/Lakhankumawat/LearnCPP?color=yellow" alt="GitHub repo size"/>
+
+
+
 </p>
 
 <!--- Tables Start-->
