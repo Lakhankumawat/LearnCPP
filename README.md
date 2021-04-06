@@ -137,8 +137,14 @@ New suggestions have a warm welcome from our side
 
 <!--- Tables Offline best ide-->
 
-<table align="center" ><th><img src="https://img.icons8.com/fluent/48/000000/programming-flag.png"/> Coding Ides</th><tr>
-<td><a href="https://www.codeblocks.org/downloads/binaries/">1. CodeBlocks</a></td></tr>
+<table align="center" ><th><img src="https://img.icons8.com/fluent/48/000000/programming-flag.png"/> Coding Ides</th>
+ <tr>
+<td><h3>
+ <a href="https://www.codeblocks.org/downloads/binaries/">1. CodeBlocks</a></h3></td></tr>
+ 
+<tr><td><h3><a href="https://code.visualstudio.com/download">2. VS Code</a></h3></td></tr>
+ 
+<tr><td><h3><a href="https://www.eclipse.org/eclipseide/">3. Eclipse</a></h3></td></tr>
 </table>
 
 
