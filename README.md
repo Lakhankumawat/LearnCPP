@@ -150,6 +150,25 @@ New suggestions have a warm welcome from our side
 <h3 align="center">Contributing </h3>
 <h5 align="center">Contributions to the project are most welcome, so feel free to fork and improve.</h5>
 <h2 align="center" >< Please Do Contribute 💗 & Star!🤩></h2>
+ 
+## Contributors ✨
+> Thanks goes to these wonderful people :
+ 
+ <table>
+  <tr>
+    <td align="center"><a href="https://github.com/rutujaingole"><img src="https://avatars.githubusercontent.com/u/72335505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub>
+     </a>
+     <br />
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=rutujaingole" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3rutujaingole" title="Reviewed Pull Requests">👀</a> </td>
+
+ <td align="center"><a href="https://github.com/lucy2512"><img src="https://avatars.githubusercontent.com/u/74641700?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub>
+     </a>
+     <br />
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=lucy2512" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3Alucy2512" title="Reviewed Pull Requests">👀</a> </td></tr>
+
+</table>
+ 
+ 
 <br><br><hr>
   <h6 align="center">© LearnCPP 2021 <br>
   All Rights Reserved</h6>
