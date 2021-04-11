@@ -161,10 +161,12 @@ New suggestions have a warm welcome from our side
      <br />
      <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=rutujaingole" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3rutujaingole" title="Reviewed Pull Requests">👀</a> </td>
 
- <td align="center"><a href="https://github.com/lucy2512"><img src="https://avatars.githubusercontent.com/u/74641700?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub>
+ <td align="center"><a href="https://github.com/lucy2512"><img src="https://avatars.githubusercontent.com/u/74641700?v=4?s=100" width="100px;" alt=""/><br /><sub><b>lucy2512</b></sub>
      </a>
      <br />
-     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=lucy2512" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3Alucy2512" title="Reviewed Pull Requests">👀</a> </td></tr>
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=lucy2512" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3Alucy2512" title="Reviewed Pull Requests">👀</a> </td>
+     
+     </tr>
 
 </table>
  
