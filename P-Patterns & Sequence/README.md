@@ -16,7 +16,7 @@ Explanation: F(2) = F(1) + F(0) = 1 + 0 = 1.
 ```
 <hr>
 
-## 2. Pascal's Triangle
+## 2. [Pascal's Triangle](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Patterns%20%26%20Sequence/PascalsTriangle.cpp)
 In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
 
 ![PascalTriangleAnimated2](https://user-images.githubusercontent.com/55774240/117033249-d12e5c80-ad1f-11eb-9db0-7ac5af84b812.gif)
