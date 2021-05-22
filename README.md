@@ -155,7 +155,7 @@ New suggestions have a warm welcome from our side
 > Thanks goes to these wonderful people :
  
  <table>
-  <tr>
+  <!---  Not sure about this line -->
     <td align="center"><a href="https://github.com/rutujaingole"><img src="https://avatars.githubusercontent.com/u/72335505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub>
      </a>
      <br />
