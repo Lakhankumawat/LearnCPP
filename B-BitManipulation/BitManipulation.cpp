@@ -28,42 +28,67 @@ int updateBit(int &n,int x,int v){
      n = cleared | (v<<x);
     return n;
 }
+int clearLastnBits(int &n ,int x){
+ int mask = (-1<<x);
+ return n&mask;
+}
+int clearBitsRange(int &n,int x,int y){
+int a = (-1<<(y+1));
+int b = (1<<x)-1;
+int mask = a|b;
+return n&mask;
+
+}
 
 int main()
 {
-ios_base :: sync_with_stdio(false);
-cin.tie(nullptr);
-cout.tie(nullptr);
 
-int n;
-int position;
-int value;
 
-cin>>n>>position>>value;
+int n,position,value,choice,i,j;
+while(1){
+cout<<"Enter a number : ";
+cin>>n;
+cout<<"Enter Your Choice : "<<endl;
+cout<<"1.getBit  2.setBit  3.clearBit  4.updateBit\n5.clearLastnBits  6.clearRange : ";
+cin>>choice;
+    if(choice!=6){
+    cout<<"Enter Position :";
+    cin>>position;}
+switch(choice){
+case 1:
+    cout<<"Bit at "<<position<<" is"<<getBit(n,position)<<endl;break;
+case 2:
+    cout<<"After Setting bit at "<<position<<" no. is : "<<setBit(n,position)<<endl;break;
+case 3:
+    cout<<"After Clearing bit at "<<position<<" no. is : "<<clearBit(n,position)<<endl;break;
+case 4:
+    cout<<"Enter value(to update 0/1):";
+    cin>>value;
+    cout<<"Updated bit at "<<position<<" to "<<value<<" : "<<updateBit(n,position,value)<<endl;break;
+case 5:
+    cout<<"After Clearing last "<<position<<" bits no. is : "<<clearLastnBits(n,position)<<endl;break;
+case 6:
+    cout<<"Enter range i to j (i<=j):";
+    cin>>i>>j;
+    cout<<"After Clearing Range from "<<i<<" to "<<j<<" no. is : "<<clearBitsRange(n,i,j)<<endl;break;
+};
 
-cout<<"Bit at "<<position<<" is"<<getBit(n,position)<<endl;
-cout<<"After Setting bit at "<<position<<" no. is : "<<setBit(n,position)<<endl;
-cout<<"After Clearing bit at "<<position<<" no. is : "<<clearBit(n,position)<<endl;
-cout<<"Updated bit at "<<position<<" to "<<value<<" : "<<updateBit(n,position,value)<<endl;
-
+}
 return 0;
+
 }
 
 /*---------OUTPUT----------
-7
-2
-1
-Bit at 2 is 1
-After Setting bit at 2 no. is : 7
-After Clearing bit at 2 no. is : 3
-Updated bit at 2 to 1 : 7
-
-
-Explanation:
-7 = 111
-1. position 2 starting from 0 bit is 1
-2. as bit at pos 2 is alredy 1 so setting to 1 no. remains same
-3. clearing no becomes 011 i.e 3
-4. updating to value 1 at bit pos. 2 becomes 111 i.e 7
-similarly go for other
+Enter a number : 15
+Enter Your Choice :
+1.getBit  2.setBit  3.clearBit  4.updateBit
+5.clearLastnBits  6.clearRange : 5
+Enter Position :2
+After Clearing last 2 bits no. is : 12
+Enter a number : 31
+Enter Your Choice :
+1.getBit  2.setBit  3.clearBit  4.updateBit
+5.clearLastnBits  6.clearRange : 6
+Enter range i to j (i<=j):1 3
+After Clearing Range from 1 to 3 no. is : 17
 -------------------*/
