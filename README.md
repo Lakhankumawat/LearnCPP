@@ -14,10 +14,12 @@
 
 </p>
 <!------------------------------------Badges------------------------------->
+<p align="center">
+<img align="center" src="https://img.icons8.com/office/48/000000/under-construction.png"/></p>
+<h1 align="center">
+Repo Under Construction
+</h1>
 
-<h2 align="center">
-<img src="https://img.icons8.com/office/48/000000/under-construction.png"/>Repo Under Construction
-</h2>
 <h6 align="center">
 New suggestions have a warm welcome from our side
 </h6>
@@ -42,115 +44,110 @@ New suggestions have a warm welcome from our side
 
 <table align="center" >
 <tr><th><img src="https://edent.github.io/SuperTinyIcons/images/svg/youtube.svg" width="45" title="YouTube" />  Top YT Channels to Learn C++
-</th></tr>
+</th><th><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" />   Github Repos</th>
+ <th><img src="https://img.icons8.com/color/48/000000/badminton-2.png"/> Best Coding Playgrounds</th></tr>
 <td>
 <h3>
 <a href="https://www.youtube.com/user/MrRupeshyadav">1. CppNuts</a>
-</h3></td><tr></tr>
+</h3></td><td><h3>
+<a href="https://github.com/Codecademy/learn-cpp">1. Codecademy/learn-cpp</a>
+ </h3></td>
+ <td>
+  <h3><a href="https://leetcode.com/problemset/all/">1. LeetCode</a></h3></td>
+
+  
+ <tr></tr>
 <td><h3>
 <a href="https://www.youtube.com/user/TheChernoProject">2. The Cherno</a>
 </h3>
-</td><tr></tr>
-<td><h3>
-<a href="https://www.youtube.com/user/ChiliTomatoNoodle">3. ChiliTomatoNoodle</a>
-</h3></td><tr></tr>
-<td><h3>
-<a href="https://www.youtube.com/user/BoQianTheProgrammer">4. Bo Qian</a>
-</h3></td>
-
-
-</table>
-
-<!--- Tables Repos-->
-
-
-<table align="center" >
-<th><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" />   Github Repos</th>
-<tr>
-<td><h3>
-<a href="https://github.com/Codecademy/learn-cpp">1. Codecademy/learn-cpp</a>
-</h3>
-
 </td>
-</tr>
-<tr>
-<td>
+ <td>
 <h3>
 <a href="https://gist.github.com/johnmcfarlane/1b2d9c83e4d3f700ba61e2df4077c613">2. begin c++ </a>
 </h3>
 </td>
-</tr>
-<tr>
-<td>
+ <td>
+ <h3>
+  <a href="https://www.hackerrank.com/dashboard">2. HackerRank</a></h3></td>
+ <tr></tr>
+<td><h3>
+<a href="https://www.youtube.com/user/ChiliTomatoNoodle">3. ChiliTomatoNoodle</a>
+</h3></td>
+ <td>
 <h3>
 <a href="https://github.com/ratansingh98/CPP-Learning">3. ratansingh98/CPP-Learning</a>
 </h3>
 </td>
-</tr>
-</table>
-
-<!--- Tables Competitive -->
-
-
-
-<table align="center" >
-<th><img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" /> Best of Competitive Programming</th>
-<tr><td><h3><a href="https://github.com/sahilbansal17/Get_Better_at_CP_in_2_Months">1. Get_Better_at_CP_in_2_Months</a></h3>
-</td></tr>
-<tr><td><h3><a href="https://github.com/smv1999/CompetitiveProgrammingQuestionBank">2. CompetitiveProgramming</a></h3>
-</td></tr>
-</table>
-
-<!--- Tables Coding Playgrounds-->
-<table align="center" >
-<th><img src="https://img.icons8.com/color/48/000000/badminton-2.png"/> Best Coding Playgrounds</th>
-<tr>
- <td>
-  <h3><a href="https://leetcode.com/problemset/all/">1. LeetCode</a></h3></td></tr><tr>
  <td>
   <h3>
-  <a href="https://www.hackerrank.com/dashboard">2. HackerRank</a></h3></td></tr><tr>
- <td>
-  <h3>
-  <a href="https://www.codechef.com/">3. CodeChef</a></h3></td></tr><tr>
- <td>
+  <a href="https://www.codechef.com/">3. CodeChef</a></h3></td>
+ <tr></tr>
+<td><h3>
+<a href="https://www.youtube.com/user/BoQianTheProgrammer">4. Bo Qian</a>
+</h3></td>
+<td><h3><a href="https://github.com/sahilbansal17/Get_Better_at_CP_in_2_Months">1. Get_Better_at_CP_in_2_Months</a></h3>
+</td>
+<td>
  <h3>
   <a href="https://www.codeforces.com/">4. CodeForces</a></h3></td>
- </tr>
 </table>
+
+
 
 <!--- Tables Offline best ide-->
 
 <table align="center" ><th><img src="https://img.icons8.com/fluent/48/000000/programming-flag.png"/> Coding Ides</th>
+ <th><img src="https://img.icons8.com/color/48/000000/generic-sorting.png"/>Algorithms</th>
+ <th><img src="https://img.icons8.com/fluent/48/000000/notepad.png" width="45" alt="articles" />Worth Reading Articles</th>
  <tr>
 <td><h3>
- <a href="https://www.codeblocks.org/downloads/binaries/">1. CodeBlocks</a></h3></td></tr>
+ <a href="https://www.codeblocks.org/downloads/binaries/">1. CodeBlocks</a></h3></td>
+ <td><a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" >1. Namespace/GFG</a></td>
+  
+  
+  <td><a href="https://github.com/TheAlgorithms/C-Plus-Plus" >1. C-Plus-Plus</a></td>
+ </tr>
  
-<tr><td><h3><a href="https://code.visualstudio.com/download">2. VS Code</a></h3></td></tr>
- 
-<tr><td><h3><a href="https://www.eclipse.org/eclipseide/">3. Eclipse</a></h3></td></tr>
+<tr><td><h3><a href="https://code.visualstudio.com/download">2. VS Code</a></h3></td>
+  <td><a href="https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/" >2. Top Algorithms for CP</a></td>
+  <td><a href="https://codeforces.com/blog/entry/13529" >Good Blog Post/Resources</a></td>
+
+ </tr>
 </table>
 
 
-<!--- Tables Articles -->
-
-<table align="center" ><th><img src="https://img.icons8.com/color/48/000000/generic-sorting.png"/>Algorithms</th><tr>
-<td><a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" >1. Namespace/GFG</a></td></tr>
-</table>
-
-<!--- Tables Algorithms -->
-
-<table align="center" ><th><img src="https://img.icons8.com/fluent/48/000000/notepad.png" width="45" alt="articles" />Worth Reading Articles</th><tr>
-<td><a href="https://github.com/TheAlgorithms/C-Plus-Plus" >1. C-Plus-Plus</a></td></tr>
-</table>
 
 <ul><li>
  Note: The Introduction files may contain some turtle graphics and to implement them i recommend to download Simple Codeblocks link is given above .You can also use plugin library for same.
  </li></ul>
-<h3 align="center">Contributing </h3>
-<h5 align="center">Contributions to the project are most welcome, so feel free to fork and improve.</h5>
-<h2 align="center" >< Please Do Contribute 💗 & Star!🤩></h2>
  
+## 🛠️ Installation Steps
+
+
+1. open Terminal and clone the repo
+
+```bash
+  git clone https://github.com/Lakhankumawat/LearnCPP.git
+```
+ 2. cd over 
+ 
+```bash
+   cd LearnCPP
+```
+ 3. follow along
+```
+   happy coding!
+```
+
+## <img src="https://media.giphy.com/media/Y3eZ2VA2b2UP5Lz6os/giphy.gif" alt="prerequisite" width="40px" > Contributing
+
+Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/Lakhankumawat/HackNITP-3.0/compare).
+
+Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+<h5 >Contributions to the project are most welcome, so feel free to fork and improve.</h5>
+<h2 >< Please Do Contribute 💗 & Star!🤩></h2>
+ 
+
 ## Contributors ✨
 > Thanks goes to these wonderful people :
  
@@ -179,3 +176,6 @@ New suggestions have a warm welcome from our side
   <h6 align="center">© LearnCPP 2021 <br>
   All Rights Reserved</h6>
 
+<p align="center">
+Developed with ❤️ in India 🇮🇳 
+</p>
