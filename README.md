@@ -85,7 +85,7 @@ New suggestions have a warm welcome from our side
 <td><h3>
 <a href="https://www.youtube.com/user/BoQianTheProgrammer">4. Bo Qian</a>
 </h3></td>
-<td><h3><a href="https://github.com/sahilbansal17/Get_Better_at_CP_in_2_Months">1. Get_Better_at_CP_in_2_Months</a></h3>
+<td><h3><a href="https://github.com/sahilbansal17/Get_Better_at_CP_in_2_Months">Get_Better_at_CP_in_2_Months</a></h3>
 </td>
 <td>
  <h3>
