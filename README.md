@@ -169,8 +169,14 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
      <br />
      <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/9/commits/0cb7b298ee00eafcb59847bcf30c921679075e59" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/9" title="Reviewed Pull Requests">👀</a> </td>
 
+<!--   4 -->
+  <td align="center"><a href="https://github.com/StarEditorBoy"><img src="https://avatars.githubusercontent.com/u/71385306?v=4" width="100px;" alt=""/><br /><sub><b> StarEditorBoy</b></sub>
+     </a>
+     <br />
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/8/commits/1e786e617570e0750228cac66d34ba157eed84be" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/8" title="Reviewed Pull Requests">👀</a> </td>
+
 </table>
- 
+
  
 <br><br><hr>
   <h6 align="center">© LearnCPP 2021 <br>
