@@ -1,35 +1,36 @@
-// leetcode 1
-// Problem Statement: https://leetcode.com/problems/two-sum/
-
-/* 
-Easy and understandable Solution of Two Sum Problem
-*/
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> v, ans;
-        int l = 0, r = nums.size() - 1, n1, n2;
-        v = nums;
-        sort(nums.begin(), nums.end());      // inbuilt sort function in c++ stl
-        while(l < r)                         // implementing quick sort
+        map<int,int> m;
+        vector<int> v;
+        int n= nums.size();
+        for(int i=0;i<n;i++)
         {
-            if(nums[l] + nums[r] > target) r--;
-			      else if(nums[l] + nums[r] < target) l++;
-			      else{
-				      n1 = nums[l], n2 = nums[r];
-				      break;
-			      }
-        }
-        for(int i = 0; i < v.size(); i++)
-        {
-            if(v[i] == n1 || v[i] == n2)
+            int diff = target - nums[i];
+            if(m.find(diff) != m.end())
             {
-                ans.push_back(i);
+            auto p = m.find(diff);
+            v.push_back(p->second);
+            v.push_back(i);
             }
-            if(ans.size() == 2)
-                break;
+            m.insert(make_pair(nums[i],i));
         }
-        return ans;
+        return v;
     }
 };
+
+
+int main(){
+    Solution s ;
+    vector<int> v;
+     v={1,6,3,2,5};
+     vector<int> result= s.twoSum (v, 11);
+     for(int i: result)
+     {
+          cout<<i<<" ";
+     }
+     return 0;
+}
