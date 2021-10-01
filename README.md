@@ -1,4 +1,5 @@
- <a href="https://github.com/Kushal997-das/Hacktoberfest-2021/"><img align='center' height="30" src="https://img.shields.io/badge/Hacktoberfest-2021-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" /></a> <br><br>
+ <p align="center"><a href="https://github.com/Lakhankumawat/LearnCPP/"><img align="center" src="https://user-images.githubusercontent.com/55774240/135599967-28cd1163-2a94-4f0f-ac9b-f54f1141a4e4.png" /></a></p> <br>
+
 
 <p align="center"><img src="https://github.com/Kushal997-das/Hacktoberfest_2021/blob/master/files/hack211.jpg" alt="Web Developement Image" width=800px />
 
@@ -28,7 +29,7 @@ To qualify for the __official limited edition Hacktoberfest shirt__, you must re
  
  ## Instructions 🙅🏼 🙅🏼‍♂️
 
--   If you are totally new to this culture then head over to this [guide](CONTRIBUTING.md) where everything has been explained in detail.
+-   If you are totally new to this culture then head over to this [guide](https://github.com/Lakhankumawat/LearnCPP/blob/main/Contributing.md) where everything has been explained in detail.
 -   Look at the current issues.
 -   If you are interested in any of them then comment "I would like to contribute in this"
     **Note: Issues are assigned on a first come first basis, do check if the issue or language implementation is not claimed by anyone else**
