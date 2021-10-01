@@ -6,6 +6,7 @@ We are happy to welcome all the contributions from anyone willing to improve/add
 
 # Submitting Contributions👩‍💻👨‍💻
 Below you will find the process and workflow used to review and merge your changes.
+
 ## Step 1 : Find an issue
 - Take a look at the Existing Issues or create your **own** Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
@@ -45,6 +46,9 @@ $ git checkout -b branch_name
 $ git add .
 ```
 ## Step 5 : Commit
+
+ 🎀🎀Before submitting an issue please find the correct folder where your program will go , You can discuss about it in the discussion.
+ 
 - To commit give a descriptive message for the convenience of reveiwer by:
 ```
 # This message get associated with all files you have changed
