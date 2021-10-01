@@ -1,6 +1,6 @@
 
 ## Related Issue
-- Mention issue for which this pull request is a part of
+- Mention issue for which this pull request is a part of (please mention issue number # )
 
 ## Proposed Changes
 - Change 1
