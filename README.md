@@ -1,3 +1,53 @@
+ <a href="https://github.com/Kushal997-das/Hacktoberfest-2021/"><img align='center' height="30" src="https://img.shields.io/badge/Hacktoberfest-2021-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" /></a> <br><br>
+
+<p align="center"><img src="https://github.com/Kushal997-das/Hacktoberfest_2021/blob/master/files/hack211.jpg" alt="Web Developement Image" width=800px />
+
+### This repository aims to help code beginners with their first successful pull request and open source contribution. :partying_face:
+ 
+:star: Register for Hacktoberfest: Navigate to the [Hacktoberfest registration page](https://hacktoberfest.digitalocean.com/) and follow the instructions. But, read the rules carefully before you do and then sign In using your GitHub credentials.
+
+:star: Feel free to use this project to make your first contribution to an open-source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+
+:star: Make sure to grab some cool swags during Hacktoberfest by getting involved in the open-source community.
+
+### This repository is open to all members of the GitHub community. Any member can contribute to this project! :grin:
+
+
+## What is Hacktoberfest? :thinking:
+A month-long celebration from October 1st to October 31st presented by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [DEV Community](https://dev.to/) collaborated with [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open-source developer community.
+
+[https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
+
+
+### Rules :fire:
+To qualify for the __official limited edition Hacktoberfest shirt__, you must register [here](https://hacktoberfest.digitalocean.com/) and make four Pull Requests (PRs) between October 1-31, 2021 (in any time zone). PRs can be made to any public repo on GitHub, not only the ones with issues labeled Hacktoberfest. This year, the __first 70,000__ participants who complete the challenge will earn a T-shirt.
+
+
+ 
+ # Hacktoberfest_2021 🌈
+ 
+ ## Instructions 🙅🏼 🙅🏼‍♂️
+
+-   If you are totally new to this culture then head over to this [guide](CONTRIBUTING.md) where everything has been explained in detail.
+-   Look at the current issues.
+-   If you are interested in any of them then comment "I would like to contribute in this"
+    **Note: Issues are assigned on a first come first basis, do check if the issue or language implementation is not claimed by anyone else**
+-   Issues are assigned on a first-come basis.
+-   If you want to work on anything you have in mind then create an issue for that, tag me and then **wait for it be to be assigned to you.**
+-   **Do not make a Pull request until you are assigned that specific issue.**
+
+## Code I expect (for everyone):
+
+-   It should be properly formatted
+-   Add relevant comments explaining what the code is all about.
+-   Please use proper naming for variables, do not use i,j,k,x,y,z. The variable name should be self-explanatory.
+-   Use proper names for your files.
+-   **Do all your changes in your forked repository branch and not in the master branch until asked.**
+-   **We will reject any pull request which looks like spammy or just to have +1 in the counter, so contribute quality code here!**
+-   As per the guidlines of Hacktoberfest, we will not merge any **plagiarised** code or any type of **fishy** code.
+
+## 👑 👑 Hurray!!! You just got closer to completing your hacktoberfest challenge. 😃
+ 
  
   <img align="center" alt="LearnCPP" height="560px" src="https://socialify.git.ci/Lakhankumawat/LearnCPP/image?description=1&descriptionEditable=A%20one%20step%20solution%20for%20c%2B%2B%20beginners%20and%20cp%20enthusiasts&font=Bitter&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light" />
   
