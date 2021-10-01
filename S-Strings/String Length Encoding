@@ -22,7 +22,10 @@ void printRLE(string str)
  
 int main()
 {
-    string str = "wwwwaaadexxxxxxywww";
+    string str;
+    cout<<"Enter The string";
+    cin>>str;
+    //string str = "wwwwaaadexxxxxxywww";
     printRLE(str);
     return 0;
 }
