@@ -1,7 +1,6 @@
  <p align="center"><a href="https://github.com/Lakhankumawat/LearnCPP/"><img align="center" src="https://user-images.githubusercontent.com/55774240/135599967-28cd1163-2a94-4f0f-ac9b-f54f1141a4e4.png" /></a></p> <br>
 
-
-<p align="center"><img src="https://github.com/Kushal997-das/Hacktoberfest_2021/blob/master/files/hack211.jpg" alt="Web Developement Image" width=800px />
+<p align="center"><img src="https://user-images.githubusercontent.com/55774240/135601424-b2e9ea03-e371-4f68-afab-8626040928cb.png" alt="Image" width=800px />
 
 ### This repository aims to help code beginners with their first successful pull request and open source contribution. :partying_face:
  
