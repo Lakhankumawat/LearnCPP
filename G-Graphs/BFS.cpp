@@ -1,16 +1,18 @@
-// BFS traversal in graph
+// BFS traversal in graph using adjacency matrix
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
 int v, e, adj[20][20], visited[21];
 
+// Adding edges to the graph
 void addEdge(int l, int r)
 {
     adj[l][r] = 1;
     adj[r][l] = 1;
 }
 
+// BFS algorithm
 void BFS(int start)
 {
 
