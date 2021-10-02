@@ -191,6 +191,40 @@ New suggestions have a warm welcome from our side
 
 ## <img src="https://media.giphy.com/media/Y3eZ2VA2b2UP5Lz6os/giphy.gif" alt="prerequisite" width="40px" > Contributing
 
+## Please Read the following Steps before contributing.
+
+## Algorithms
+
+|                |Follow these steps                         	|
+|----------------|-------------------------------|
+|New Algorithm|`'Please see if the algorithm is already present'`|
+| What to include |`"Your algorithm should be efficiently written with proper code / comments / time complexity / space complexity / link to gfg or any other documentation on top in code file"`            |
+|Where to include         |`Most of the algorithms are inside`[here](https://github.com/Lakhankumawat/LearnCPP/tree/main/Day-100(Algorithms))`please commit your algorithm in correct folder or discuss` [here](https://github.com/Lakhankumawat/LearnCPP/discussions/7) `before commiting for where to include`|
+| README | `"Please check whether your directory has a README file , if there is then edit your algorithm name with link , otherwise create new one "` [how your README should look like](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/B-BackTracking/README.md)
+
+## Problem Statement 
+
+|                |Follow these steps                         	|
+|----------------|-------------------------------|
+|New Problem Statement|`'Please see if the problem is present already ? If it is do not commit your own '`|
+| What to include |`"Your problem statement solution should be efficiently written with proper code / comments / time complexity / space complexity / link to problem statement in code file"`            |
+|Where to include         |`Most of the Problem Statements are inside`[here](https://github.com/Lakhankumawat/LearnCPP/tree/main/P-Problem%20Statements%20%26%20Solution)`please commit your problem solution in correct folder or discuss` [here](https://github.com/Lakhankumawat/LearnCPP/discussions/7) `before commiting for where to include`|
+| README | `"Please check whether your directory has a README file , if there is then edit your algorithm name with link , otherwise create new one "` [how your README should look like](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/B-BackTracking/README.md)
+|Additional Context |`"There are three levels of problem statement"` [1-Level 1](https://github.com/Lakhankumawat/LearnCPP/tree/main/P-Problem%20Statements%20%26%20Solution/1-Level%201 "1-Level 1") `like wise 2-Level 2 & 3-Level 3 , please include your problem statement with solution in right level you prefer`
+
+## Adding the STL programs will follow same approach as  Algorithms
+
+## ReadMe 
+Fond of designing README this section will be helpful to you
+|                |Follow these steps                         	|
+|----------------|-------------------------------|
+|New README |`'Please see if there is no README in any folder , if no ? Then please design it '`|
+| What to include |`"Your README should be efficiently and clearly written / link to problem statement in code file"`            |
+|Where to include         |`Inside the folder where programs are residing ,discuss` [here](https://github.com/Lakhankumawat/LearnCPP/discussions/7) `before commiting for where to include`|
+| README |  [Example for README](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/B-BackTracking/README.md)
+
+
+
 Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/Lakhankumawat/HackNITP-3.0/compare).
 
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
