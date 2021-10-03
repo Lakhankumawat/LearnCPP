@@ -16,13 +16,14 @@ void countFreq(int arr[], int n)
     for (auto x : mp)
         cout << x.first << " " << x.second << endl;
 }
- 
+// driver code
 int main()
 {
     int n;
     cout<<"Enter the number of Elements in an array = ";
     cin >> n;
     int arr[n+1];
+    //Inserting an array 1 2 2 4 5 4
     for(int i =0;i<n;i++){
         cin >> arr[i];
     }
