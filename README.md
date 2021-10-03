@@ -259,6 +259,17 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
      <br />
      <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/8/commits/1e786e617570e0750228cac66d34ba157eed84be" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/8" title="Reviewed Pull Requests">👀</a> </td>
 
+  <!--   5-->
+  <td align="center"><a href="https://github.com/Supratim2000"><img src="https://avatars.githubusercontent.com/u/52972176?v=4" width="100px;" alt=""/><br /><sub><b> Supratim2000</b></sub>
+     </a>
+     <br />
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/14/commits/8fcb907c4f42abc1b812fcd5efa883a3ae634c6d" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/14" title="Reviewed Pull Requests">👀</a> </td>
+  
+   <!--   6-->
+  <td align="center"><a href="https://github.com/Lucifer4255"><img src="https://avatars.githubusercontent.com/u/50608734?v=4" width="100px;" alt=""/><br /><sub><b> Lucifer4255</b></sub>
+     </a>
+     <br />
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/17/commits/7b73daac80f312c49c4ae9709d3de4c4343582cb" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/17" title="Reviewed Pull Requests">👀</a> </td>
 </table>
 
  
