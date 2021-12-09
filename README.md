@@ -223,6 +223,12 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
      </a>
      <br />
      <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/17/commits/7b73daac80f312c49c4ae9709d3de4c4343582cb" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/17" title="Reviewed Pull Requests">👀</a> </td>
+  
+   <!--   7-->
+  <td align="center"><a href="https://github.com/ujjwalban"><img src="https://avatars.githubusercontent.com/u/51720065?v=4" width="100px;" alt=""/><br /><sub><b>ujjwalban</b></sub>
+     </a>
+     <br />
+     <a href="#question" title="Answering Questions">💬</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/25/commits/de5848092bccbacd023cac6f03b33e94647977b9" title="Documentation">📖</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pull/25" title="Reviewed Pull Requests">👀</a> </td>
 </table>
 
  
