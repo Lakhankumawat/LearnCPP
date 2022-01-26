@@ -233,7 +233,7 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
  
 <br><br><hr>
-  <h6 align="center">© LearnCPP 2021 <br>
+  <h6 align="center">© LearnCPP 2022 <br>
   All Rights Reserved</h6>
 
 <p align="center">
