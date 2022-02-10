@@ -1,87 +1,100 @@
-#include <iostream>
-using namespace std;
-bool issafe(int board[][10],int i,int j,int n){
-    int x = i;
-    int y = j;
-    for(int row =0;row<i;row++){
-        if(board[row][j] == 1){
-            return false;
-        }
+/* C/C++ program to solve N Queen Problem using
+   backtracking */
+#define N 4
+#include <stdbool.h>
+#include <stdio.h>
+/* ld is an array where its indices indicate row-col+N-1
+ (N-1) is for shifting the difference to store negative 
+ indices */
+int ld[30] = { 0 };
+/* rd is an array where its indices indicate row+col
+   and used to check whether a queen can be placed on 
+   right diagonal or not*/
+int rd[30] = { 0 };
+/*column array where its indices indicates column and 
+  used to check whether a queen can be placed in that
+    row or not*/
+int cl[30] = { 0 };
+/* A utility function to print solution */
+void printSolution(int board[N][N])
+{
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++)
+            printf(" %d ", board[i][j]);
+        printf("\n");
     }
-
-x = i;
-y = j;
-
-
-    while(x>=0 && y>=0){
-        if(board[x][y] == 1){
-            return false;
-        }
-        x--;
-        y--;
-    }
-
-x = i;
-y = j;
-
-
- while(x>=0 && y<=n){
-        if(board[x][y] == 1){
-            return false;
-        }
-        x--;
-        y++;
-    }
-
-return true;
-
 }
 
-
-bool solvenqueen(int board[][10],int i,int n){
-    if(i == n){
-        for(int k = 0;k<n;k++){
-            for(int m=0;m<n;m++){
-                if(board[k][m] == 1){
-                    cout<<" Q ";
-                }
-                if(board[k][m] == 0){
-                    cout<<" _ ";
-                }
-            }
-        cout<<endl;
-
-        }
-        cout<<endl<<endl;
-        return false;
-
-    }
-
-   // cout<<i;
-    for(int j=0;j<n;j++){if(issafe(board,i,j,n))
-    {
-    board[i][j] = 1;
-    bool nextqueenrakhpaye = solvenqueen(board,i+1,n);    ///CHANGE.
-    if(nextqueenrakhpaye){
+/* A recursive utility function to solve N
+   Queen problem */
+bool solveNQUtil(int board[N][N], int col)
+{
+    /* base case: If all queens are placed
+      then return true */
+    if (col >= N)
         return true;
+
+    /* Consider this column and try placing
+       this queen in all rows one by one */
+    for (int i = 0; i < N; i++) {
+        /* Check if the queen can be placed on
+          board[i][col] */
+        /* A check if a queen can be placed on 
+           board[row][col].We just need to check
+           ld[row-col+n-1] and rd[row+coln] where
+           ld and rd are for left and right 
+           diagonal respectively*/
+        if ((ld[i - col + N - 1] != 1 &&
+                  rd[i + col] != 1) && cl[i] != 1) {
+            /* Place this queen in board[i][col] */
+            board[i][col] = 1;
+            ld[i - col + N - 1] =
+                          rd[i + col] = cl[i] = 1;
+
+            /* recur to place rest of the queens */
+            if (solveNQUtil(board, col + 1))
+                return true;
+
+            /* If placing queen in board[i][col]
+               doesn't lead to a solution, then
+               remove queen from board[i][col] */
+            board[i][col] = 0; // BACKTRACK
+            ld[i - col + N - 1] =
+                         rd[i + col] = cl[i] = 0;
+        }
     }
 
-
-    }
-    board[i][j] = 0;
-    }
+    /* If the queen cannot be placed in any row in
+        this column col  then return false */
     return false;
-
-
-
-
 }
-int main() {
-    int n;
-    cout<<"Enter the number of rows in matrix : ";
-    cin>>n;
-    int board[][10] = {0};
-    solvenqueen(board,0,n);
+/* This function solves the N Queen problem using
+   Backtracking. It mainly uses solveNQUtil() to 
+   solve the problem. It returns false if queens
+   cannot be placed, otherwise, return true and
+   prints placement of queens in the form of 1s.
+   Please note that there may be more than one
+   solutions, this function prints one  of the
+   feasible solutions.*/
+bool solveNQ()
+{
+    int board[N][N] = { { 0, 0, 0, 0 },
+                        { 0, 0, 0, 0 },
+                        { 0, 0, 0, 0 },
+                        { 0, 0, 0, 0 } };
 
+    if (solveNQUtil(board, 0) == false) {
+        printf("Solution does not exist");
+        return false;
+    }
 
+    printSolution(board);
+    return true;
+}
+
+// driver program to test above function
+int main()
+{
+    solveNQ();
+    return 0;
 }
