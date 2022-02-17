@@ -99,25 +99,39 @@ New suggestions have a warm welcome from our side
 
 <!--- Tables Offline best ide-->
 
-<table align="center" ><th><img src="https://img.icons8.com/fluent/48/000000/programming-flag.png"/> Coding Ides</th>
+<table align="center" >
+ <th><img src="https://img.icons8.com/fluent/48/000000/programming-flag.png"/> Coding Ides</th>
  <th><img src="https://img.icons8.com/color/48/000000/generic-sorting.png"/>Algorithms</th>
  <th><img src="https://img.icons8.com/fluent/48/000000/notepad.png" width="45" alt="articles" />Worth Reading Articles</th>
  <tr>
-<td><h3>
- <a href="https://www.codeblocks.org/downloads/binaries/">1. CodeBlocks</a></h3></td>
- <td><a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" >1. Namespace/GFG</a></td>
-  
-  
+<td>
+ <h3>
+ <a href="https://www.codeblocks.org/downloads/binaries/">1. CodeBlocks</a></h3>
+  </td>
+ <td>
+  <a href="https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/" >1. Namespace/GFG</a>
+  </td>
   <td><a href="https://github.com/TheAlgorithms/C-Plus-Plus" >1. C-Plus-Plus</a></td>
  </tr>
  
-<tr><td><h3><a href="https://code.visualstudio.com/download">2. VS Code</a></h3></td>
+<tr>
+ <td><h3><a href="https://code.visualstudio.com/download">2. VS Code</a></h3></td>
   <td><a href="https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/" >2. Top Algorithms for CP</a></td>
-  <td><a href="https://codeforces.com/blog/entry/13529" >Good Blog Post/Resources</a></td>
-
+   <td><a href="https://codeforces.com/blog/entry/13529" >2. Good Blog Post/Resources</a></td>
  </tr>
-</table>
+ 
+  <tr>
+ <td><h3><a href="https://code.visualstudio.com/download">3. Install VS Code</a></h3></td>
+  <td><a href="https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/" >3. Top Algorithms for CP</a></td>
+ <td><a href="https://leetcode.com/problems/unique-binary-search-trees/discuss/1565543/C%2B%2BPython-5-Easy-Solutions-w-Explanation-or-Optimization-from-Brute-Force-to-DP-to-Catalan-O(N)" >3. Unique BSTs</a></td>
+ </tr>
+ 
 
+  
+ 
+
+ 
+</table>
 
 
 <ul><li>
