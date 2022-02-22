@@ -1,8 +1,9 @@
 
 
 
+
  
-  <img align="center" alt="LearnCPP" height="560px" src="https://socialify.git.ci/Lakhankumawat/LearnCPP/image?description=1&descriptionEditable=A%20one%20step%20solution%20for%20c%2B%2B%20beginners%20and%20cp%20enthusiasts&font=Bitter&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light" />
+  <img align="center" alt="LearnCPP"  src="https://user-images.githubusercontent.com/55774240/155181240-a7625e78-c7f4-4132-a8aa-f90d7bdd4f09.png" />
   
 
 <!------------------Swags------------------------->
