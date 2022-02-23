@@ -3,7 +3,7 @@
 
 
  
-  <img align="center" alt="LearnCPP"  src="https://user-images.githubusercontent.com/55774240/155181240-a7625e78-c7f4-4132-a8aa-f90d7bdd4f09.png" />
+  <img align="center" alt="LearnCPP"  src="https://socialify.git.ci/Lakhankumawat/LearnCPP/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fd1fdloi71mui9q.cloudfront.net%2FWDPdNJfQt65Ho3qKhZQQ_519jouHPPpyoYg1x&name=1&pulls=1&stargazers=1&theme=Dark" />
   
 
 <!------------------Swags------------------------->
