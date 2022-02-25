@@ -23,6 +23,15 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "ujjwalban",
+      "name": "Ujjwal Bansal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51720065?v=4",
+      "profile": "https://github.com/ujjwalban",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
