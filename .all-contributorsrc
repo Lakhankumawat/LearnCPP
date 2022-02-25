@@ -13,6 +13,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "n4i9kita",
+      "name": "Nikita Sharma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60391776?v=4",
+      "profile": "https://n4i9kita.github.io/",
+      "contributions": [
+        "maintenance",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
