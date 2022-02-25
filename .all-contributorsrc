@@ -23,6 +23,15 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "Supratim2000",
+      "name": "Supratim2000",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52972176?v=4",
+      "profile": "https://github.com/Supratim2000",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
