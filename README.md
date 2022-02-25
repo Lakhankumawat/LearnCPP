@@ -214,6 +214,7 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
     <td align="center"><a href="https://github.com/officSatyam"><img src="https://avatars.githubusercontent.com/u/100135781?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SATYAM KUMAR</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=officSatyam" title="Code">💻</a></td>
     <td align="center"><a href="https://n4i9kita.github.io/"><img src="https://avatars.githubusercontent.com/u/60391776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nikita Sharma</b></sub></a><br /><a href="#maintenance-n4i9kita" title="Maintenance">🚧</a> <a href="#ideas-n4i9kita" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/rutujaingole"><img src="https://avatars.githubusercontent.com/u/72335505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=rutujaingole" title="Code">💻</a></td>
+
   </tr>
 </table>
 
