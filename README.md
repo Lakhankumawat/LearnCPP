@@ -1,4 +1,37 @@
 
+
+
+<div align="center">
+ 
+ <table>
+  <th>
+  <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDBqaDg3Z3JzaHAwYjVmcDJxNGw3OGszZDYga3VtYXdhdGxha2hhbjA3MDcyMDAxQG0&amp;tmsrc=kumawatlakhan07072001%40gmail.com"><img border="0" src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-meet-512.png" height="100"></a></th>
+    <th>
+  <a target="_blank" href="https://gssoc.girlscript.tech/"><img border="0" src="https://d1fdloi71mui9q.cloudfront.net/WDPdNJfQt65Ho3qKhZQQ_519jouHPPpyoYg1x" height="100"></a></th>
+  <tr>
+   <td>Learn CPP </td>
+    <td>Contribution Meet</td>
+  </tr>
+  <tr>
+   <td>Date</td>
+    <td>Monday, February 28</td>
+  </tr>
+  <tr>
+   <td>Time</td>
+    <td>6:00pm – 6:30pm</td>
+  </tr>
+  <tr>
+   <td> <a target="_blank" href="https://meet.google.com/xso-fzcw-mcr?authuser=0">Click here to join</a><br></td>
+    <td> <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDBqaDg3Z3JzaHAwYjVmcDJxNGw3OGszZDYga3VtYXdhdGxha2hhbjA3MDcyMDAxQG0&amp;tmsrc=kumawatlakhan07072001%40gmail.com">Click here to save event</a></td>
+  </tr>
+ </table>
+ 
+
+
+</div>
+
+
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
