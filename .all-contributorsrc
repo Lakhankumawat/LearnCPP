@@ -1,0 +1,44 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "officSatyam",
+      "name": "SATYAM KUMAR",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100135781?v=4",
+      "profile": "https://github.com/officSatyam",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "n4i9kita",
+      "name": "Nikita Sharma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60391776?v=4",
+      "profile": "https://n4i9kita.github.io/",
+      "contributions": [
+        "maintenance",
+        "ideas"
+      ]
+    },
+    {
+      "login": "ujjwalban",
+      "name": "Ujjwal Bansal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51720065?v=4",
+      "profile": "https://github.com/ujjwalban",
+
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "LearnCPP",
+  "projectOwner": "Lakhankumawat",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
