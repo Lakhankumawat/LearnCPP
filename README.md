@@ -21,7 +21,7 @@
     <td>6:00pm – 6:30pm</td>
   </tr>
   <tr>
-   <td> <a target="_blank" href="meet.google.com/xso-fzcw-mcr">Click here to join</a><br></td>
+   <td> <a target="_blank" href="https://meet.google.com/xso-fzcw-mcr?authuser=0">Click here to join</a><br></td>
     <td> <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDBqaDg3Z3JzaHAwYjVmcDJxNGw3OGszZDYga3VtYXdhdGxha2hhbjA3MDcyMDAxQG0&amp;tmsrc=kumawatlakhan07072001%40gmail.com">Click here to save event</a></td>
   </tr>
  </table>
