@@ -233,7 +233,14 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 <h5 >Contributions to the project are most welcome, so feel free to fork and improve.</h5>
-<h2 >< Please Do Contribute 💗 & Star!🤩></h2>
+<h2 >Please Do Contribute 💗 & Star!🤩</h2>
+
+
+## 🤔 Got a doubt 
+- Everyone has some doubts from beginner to advanced and for that we are here 
+- Post your doubts related to contribution or pull requests or issues 
+- Get familiar and have fun contribution while learning
+- [Link to discussion forum](https://github.com/Lakhankumawat/LearnCPP/discussions/7)
  
 
 ## Contributors ✨
