@@ -12,8 +12,9 @@ class Stack
         int ele[MAX];
     public:
         Stack();
-        bool     isFull();
+        bool    isFull();
         bool    isEmpty();
+        int     peek();
         void    push(int item);
         int     pop(int *item);
 };
@@ -35,6 +36,18 @@ bool Stack:: isEmpty()
 {
     return top==-1;
 }
+
+//Return value of item at top of stack
+int Stack:: peek()
+{
+    if (!isEmpty()) {
+        return arr[top];
+    }
+    else {
+        exit(EXIT_FAILURE);
+    }
+}
+
 
 //Insert item into stack
 void Stack:: push( int item )
@@ -73,7 +86,8 @@ int main()
     for(int i=1;i<=MAX;i++)
     s.push(i*10);
 
-//There will be Overflow
+    // s can store max of 5 elements.
+    // Pushing one more element will result into overflow situation.
     s.push(60);
 
     while( s.pop(&item)== 0 ){
