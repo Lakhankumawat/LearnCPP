@@ -123,8 +123,7 @@ Fond of designing README this section will be helpful to you
 - [Link to discussion forum](https://github.com/Lakhankumawat/LearnCPP/discussions/7)
  
 ## Want to contribute ?
-- Take a look at [contributing guidelines]() if you're interested in helping!
-- Check out [`CONTRIBUTING.md`](Contributing.md)
+- Take a look at [`contributing guidelines`](Contributing.md) if you're interested in helping!
 - Refer [GitHub Flow](https://guides.github.com/introduction/flow). 
 <!-- Create a branch, add commits, and [open a pull request](https://github.com/Lakhankumawat/HackNITP-3.0/compare). -->
 <!--  will mention the method of contri in short in the README-->
