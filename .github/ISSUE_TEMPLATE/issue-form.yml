@@ -1,6 +1,6 @@
 name: New Issue
 description: Description
-title: "[Create New Issue]: "
+title: "Title "
 labels: ["GWOC21"]
 body:
   - type: markdown
