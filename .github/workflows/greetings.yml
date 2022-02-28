@@ -8,7 +8,7 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-    - uses: Suvraneel/Greeting-action@main
+    - uses: LakhanKumawat/Greeting-action@main
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         issue_message: 'Hello @${{github.actor}}, <br>
