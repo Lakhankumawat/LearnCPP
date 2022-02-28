@@ -2,7 +2,7 @@
 
 #include<iostream>
 #include<string>
-#import<algorithm>
+#include<algorithm>
 using namespace std;
 
  bool comp(string s1,string s2){
