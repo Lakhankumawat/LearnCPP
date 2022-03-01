@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- follow the template of Bubble Sort, add the respective heading in Table of content -->
 
 
@@ -83,3 +84,8 @@ end BubbleSort
 ## Quick Sort
 
 ---
+=======
+Iterative merge sort added.
+Link: 
+geeksforgeeks.org/iterative-merge-sort/
+>>>>>>> ddb57c5 (Iterative merge sort added)
