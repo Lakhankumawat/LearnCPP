@@ -1,0 +1,41 @@
+// The Fibonacci numbers are the numbers in the following integer sequence. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..and so on
+
+// C++ program for Fibonacci Series using Dynamic Programming upto nth term
+
+#include<iostream>
+using namespace std;
+ 
+int fibonacci(int n)
+{
+    int F[n+1];
+  F[0]=0;
+   F[1]=1;
+ if (n==1){cout<<F[0];}
+
+ else if(n==2){cout<<F[0]<<" "<<F[1];}
+
+ else{
+   
+ cout<<F[0]<<" "<<F[1]<<" ";
+   
+    for(int i=2;i<n;i++){
+       
+        F[i]=F[i-1]+F[i-2];
+        cout<<F[i]<<" ";
+    }
+ }
+}
+ 
+ //Driver meathod
+int main()
+{
+    int n;
+    cout<<"Enter the value of n"<<endl;
+    cin>>n;
+ 
+    cout<<"Required fibonacci series is ";
+    fibonacci(n);
+ 
+    cout<<endl;
+    return 0;
+}
