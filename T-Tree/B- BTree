@@ -1,3 +1,11 @@
+/*
+B-trees are balanced search trees designed to work well on disks or other directaccess secondary storage devices. B-trees are similar to red-black trees (Chapter 13), but they are better at minimizing disk I/O operations. Many database systems use B-trees, or variants of B-trees, to store information.
+B-trees to implement many dynamic-set operations by below time complexity
+Insertion - O(log n)
+Search - O(log n)
+Traverse - O(n)
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,7 +28,7 @@ typedef struct b_tree tree;
 tree *create_tree(int x)                                    //To create the tree initialising root to NULL and the degree
 {
 	tree *p=(tree*)malloc(sizeof(tree));
-    p->t=x;
+    	p->t=x;
 	p->root=NULL;
 	return p;
 }
@@ -30,35 +38,35 @@ node *create(tree* T)
 {
 	node *ptr;
 	ptr=(node*)malloc(sizeof(node));      //Creat a node
-    int t;
-    t=T->t;
-    ptr->Child=(node**)malloc((2*t)*sizeof(node*)); //Initialize child pointers
+    	int t;
+    	t=T->t;
+    	ptr->Child=(node**)malloc((2*t)*sizeof(node*)); //Initialize child pointers
 	ptr->keys=(int*)malloc((2*t-1)*sizeof(int));    //Initialize keys array
 	ptr->n=0;                   //No of key =0
-    ptr->leaf=1;                //Assume it to be a leaf
-    return ptr;
+    	ptr->leaf=1;                //Assume it to be a leaf
+    	return ptr;
 }
 
 //Split child Function
 void btree_splitchild(int i,tree *T,node* x)
 {
-    int j,t;
+    	int j,t;
 	node *z, *y;
-    z=create(T);
-    t=T->t;                       //a new node which stores (t-1) keys
-    y=x->Child[i];
-    z->leaf=y->leaf;
+    	z=create(T);
+    	t=T->t;                       //a new node which stores (t-1) keys
+    	y=x->Child[i];
+    	z->leaf=y->leaf;
 	z->n=t-1;
     //Copy the (t-1) keys of y to z
 	for(j=0;j<t-1;j++)
-    {
+    	{
 		z->keys[j]=y->keys[j+t];
-    }
+    	}
     // Copy the last t children of y to z
 	if(!y->leaf)
-    {
+    	{
 		for(j=0;j<t;j++)
-        {
+        	{
 			z->Child[j]=y->Child[j+t];
 		}
 	}
@@ -66,13 +74,13 @@ void btree_splitchild(int i,tree *T,node* x)
 	y->n=t-1;
     //New space for new child
 	for(j=x->n;j>=i+1;--j)
-    {
+    	{
 		x->Child[j+1]=x->Child[j];
 	}
     //Link new child
 	x->Child[i+1]=z;
 	for(j=x->n-1;j>=i;--j)
-    {
+    	{
 		x->keys[j+1]=x->keys[j];
 	}
     //Duplicate the middle key of y
