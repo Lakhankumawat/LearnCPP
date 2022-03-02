@@ -2,6 +2,7 @@
 
 // C++ program for Fibonacci Series using Dynamic Programming upto nth term
 
+
 #include<iostream>
 using namespace std;
  
@@ -11,9 +12,9 @@ void fibonacci(int n)
   F[0]=0;  // Making the first term  zero
    F[1]=1; // Making the second  term  one
 
-if (n==1) {cout<<F[0];}
+if (n==1) {cout<<F[0];}  //printing the first term
 
- else if(n==2) {cout<<F[0]<<" "<<F[1];}
+ else if(n==2) {cout<<F[0]<<" "<<F[1];}  //printing the first two terms
 
  else{
    
@@ -21,7 +22,7 @@ if (n==1) {cout<<F[0];}
    
     for(int i=2;i<n;i++){
        
-        F[i]=F[i-1]+F[i-2];
+        F[i]=F[i-1]+F[i-2]; //printing the series if n>2
         cout<<F[i]<<" ";
     }
  }
@@ -40,3 +41,7 @@ int main()
    
     return 0;
 }
+
+//The space complexity is O(n)
+//The time complexity is  O(n)
+
