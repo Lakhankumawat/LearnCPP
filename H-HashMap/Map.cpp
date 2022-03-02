@@ -1,91 +1,88 @@
 
 
 
-#include<iostream>
-#include<map>
-#include<string>
+#include<bits/stdc++.h> // A High utility header file generally used in Competitive Programming contains 100's header file
+
 using namespace std;
 
-/* -------------Maps maintain a self balancing BST------------- */
-// Maps sorts itself on the basis of keys
+// MAPS is a Data Structre which stores KEY-VALUE Pairs 
+// Ordered Maps use Red Black Trees : an advanced data structre : https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/
+// maps are not contious Example it++ is allowed while it+1 is not  
+// All keys are unique if redeclaration happens the pair with that pre-existing key updates
+
+// READ MORE ABOUT MAPS : 
+
+// 1. https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
+
+// 2. https://www.cplusplus.com/reference/map/map/
 
 
-int main(){
-map<string,int> m;
+void print(map<int,string> &m)
+{
+  cout<<m.size()<<endl;
+for( auto &pr : m)
+{
+  cout<<pr.first<<" "<<pr.second<<endl;
+}
 
-/* Insert Values in Map */
-m.insert(make_pair("Mango",100));
+// printing also O(logn) : TIME COMPLEXITY
 
-//Make a pair and insert
-pair<string,int> p;
+}
 
-p.first="Apple";
-p.second=120;
+int main()
+{
 
-m.insert(p);
+map<int,string> m; // Declaration Syntax of Map STL 
 
-//INsert way 3
+m[1]="abc"; //O(logn) ALSO DEPENDS ON KEY ALSO ( Refer to RED BLACK TREES ) : TIME COMPLEXITY
+m[5]="cdc";
+m[3]="acd";
 
-m["Banana"]=20;
+// Red Black Trees : It compares other strings length and place it acc to sorted method , READ more on above link
+// string comparison time is added therefore
+// Final TIME COMPLEXITY {s.size()*O(logn)} 
 
-
-string fruit;
-cin>>fruit;
-
-
-//Lets try to update the value of keys
-m[fruit]+=22;
-
-
-//Iterator can also be defined as map<string,int>:: iterator;
-//it here is iterator
-auto it = m.find(fruit);
-
-//If fruit is not present it will point to the end of map
-
-if(it!=m.end()){
-    cout<<"Price of "<<fruit<<" : "<<m[fruit];}
-    else
-        cout<<"Fruit is not present";
-
-    cout<<endl;
-
-    cout<<"Deleted Fruit "<<fruit;
-    m.erase(fruit);
-
-    cout<<endl;
-
-    //Another way to find a particular map
-    //it stores unique keys only once
-
-    //mapname.count returns 1 if key is present , 0 if not present
-
-    if(m.count(fruit))
-        cout<<"Price : "<<m[fruit];
-    else
-        cout<<"Fruit is not present";
-
-    cout<<endl;
-
-
-
-    //Lets try to update the value of keys another one
-    m["Strawberry"]=110;
-    m["Mango"]=90;
-
-    for(auto it=m.begin();it!=m.end();it++)
-        cout<<it->first<<" and "<<it->second<<endl;  //We can also access values by *it
-
-
-    //For each loop in Maps
-
-    for(auto p:m)
-        cout<<p.first<<" : "<<p.second<<endl;
-
-
-
-
-return 0;
+auto it1=m.find(3); // returns iterator of 3 if it of 3 doesnt exist then retunr m.end()
+if(it1==m.end()){
+  cout<<"NO VALUE"<<endl;
+}
+else{
+  cout<<(*it1).first<<" "<<(*it1).second<<endl;
 }
 
 
+if(it1!=m.end()) // Checking if 'it' exist or not to avoid Segmentation Fault: https://www.geeksforgeeks.org/core-dump-segmentation-fault-c-cpp/
+m.erase(it1); //O(logn) one must never give any iterator that doesnt exist else will give segmentation fault : TIME COMPLEXITY
+
+print(m); 
+
+m.clear(); // clears the whole map 
+
+
+// Another way of insert 
+
+m.insert({4,"afg"});
+
+// priniting using iterator method
+
+map<int,string> :: iterator it;
+
+for(it=m.begin();it!=m.end();it++)
+{
+
+  cout<<(*it).first<<" "<<(*it).second<<endl; // prints in sorted order
+
+}
+
+
+
+// strings are also stored in lexographical order ie dictionary order
+
+
+
+
+print(m);
+
+
+
+}
