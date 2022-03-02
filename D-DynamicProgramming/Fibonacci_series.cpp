@@ -5,14 +5,15 @@
 #include<iostream>
 using namespace std;
  
-int fibonacci(int n)
+void fibonacci(int n)
 {
     int F[n+1];
-  F[0]=0;
-   F[1]=1;
- if (n==1){cout<<F[0];}
+  F[0]=0;  // Making the first term  zero
+   F[1]=1; // Making the second  term  one
 
- else if(n==2){cout<<F[0]<<" "<<F[1];}
+if (n==1) {cout<<F[0];}
+
+ else if(n==2) {cout<<F[0]<<" "<<F[1];}
 
  else{
    
@@ -36,6 +37,6 @@ int main()
     cout<<"Required fibonacci series is ";
     fibonacci(n);
  
-    cout<<endl;
+   
     return 0;
 }
