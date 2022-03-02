@@ -24,4 +24,8 @@ Therefore total time complexity is O (n2^n) * O (n) = **O(n^22^n)**
 
 Space complexity is also number of sub-problems which is **O(n2^n)**
 
+## Output
+![Image](https://github.com/rittikadeb/LearnCPP/blob/main/D-DynamicProgramming/Travelling_Salesman_Problem/Screenshots/Output.PNG)
+
+
 
