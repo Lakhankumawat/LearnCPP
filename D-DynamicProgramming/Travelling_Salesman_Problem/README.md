@@ -3,7 +3,7 @@ This problem is an implementation of dynamic programming to find the shortest pa
 
 ## Problem Statement
 
-Given a list of villages and the distances between each pair of villages, what is the shortest possible route that visits each village and returns to the origin village. In this case, the salesman needs to visit each city once without returning to the start city.
+Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city. In this case, the salesman needs to visit each city once without returning to the start city.
 
 ## Solution
 
