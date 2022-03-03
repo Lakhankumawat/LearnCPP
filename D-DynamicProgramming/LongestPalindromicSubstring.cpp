@@ -62,6 +62,7 @@ int manacherAlgo(string s, int left, int right, int center, vector<int> &maxLeng
 int main()
 {
     string s;
+    cout<<"Enter The String - ";
     cin >> s;
     int left = 1, right = 1, center = 1;
     // now before passing the string make sure you can add '#', '$' and '@'
@@ -73,10 +74,10 @@ int main()
     }
     copy += ("#@");
     copy = '$' + copy;                       // adding the '$' at front (for starting point)
-    int n = s.length();                      // length of the string(main)
+    int n = copy.length();                      // length of the string(main)
     vector<int> maxLengthForEachIndex(n, 0); // initialised with 0
     int result = manacherAlgo(copy, left, right, center, maxLengthForEachIndex);
-    cout << s << "has the Largest Palindromic Substring of Length - " << result << "\n";
+    cout <<"\n"<< s << " has the Largest Palindromic Substring of Length - " << result << "\n";
 }
 
 // Contributed By - github.com/singhkunal01
