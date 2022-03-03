@@ -80,9 +80,10 @@
 Fond of designing README this section will be helpful to you
 |                |Follow these steps                         	|
 |----------------|-------------------------------|
-|New README |`'Please see if there is no README in any folder , if no ? Then please design it '`|
-| What to include |`"Your README should be efficiently and clearly written / link to problem statement in code file"`            |
-|Where to include         |`Inside the folder where programs are residing ,discuss` [here](https://github.com/Lakhankumawat/LearnCPP/discussions/7) `before commiting for where to include`|
+| 🆕 New README |`'Please see if there is no README in any folder , if no ? Then please design it '`|
+| 🤔 What to include |`"Your README should be efficiently and clearly written / link to problem statement in code file"`  |
+| ✅ Must Contain | `1. and explain in brief about addition` `2. An Image of addition i.e how it works` `3. Mention the Psuedo Code` `4. Time and Space Complexities` `5. Advantages` `6. Disadvantages ` |
+| 🪧 Where to include  |`Inside the folder where programs are residing ,discuss` [here](https://github.com/Lakhankumawat/LearnCPP/discussions/7) `before commiting for where to include`|
 
 ## Why to contribute ?
 - If you find any errors or bugs then please report by creating an issue. 
