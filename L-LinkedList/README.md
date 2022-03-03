@@ -1,5 +1,5 @@
 
-#1) Implementing Queue using LinkedList
+# 1) Implementing Queue using LinkedList
 
 
 There are two general ways to implement Queue, one using conventional arrays 
@@ -12,10 +12,10 @@ which is not efficient when dealing with higher amounts of computing.
 
 ![Queue using LinkedList](https://i0.wp.com/learnersbucket.com/wp-content/uploads/2019/06/Enqueue-in-queue-using-linked-list-1.png?w=768&ssl=1).
 
-Source : [learnersbucket.com] (
+Source : [learnersbucket.com](
 https://i0.wp.com/learnersbucket.com/wp-content/uploads/2019/06/Enqueue-in-queue-using-linked-list-1.png?w=768&ssl=1).
 
-###Proceedure
+### Proceedure
 
 - Create New Node
 - Set temp->data = n(value)
@@ -28,7 +28,6 @@ https://i0.wp.com/learnersbucket.com/wp-content/uploads/2019/06/Enqueue-in-queue
 //Custom Code ADD ON
 //for menu driven program
 
-```
 bool loop = true;
     while(loop==true){
         cout<<"\n1 Insert\n2 Delete\n3 Display\n4 Exit\n"<<endl;
@@ -58,13 +57,3 @@ bool loop = true;
             
         }
     }
-    ```
-    
-    
-    
-    
-    
-    
-    
-    
-    
