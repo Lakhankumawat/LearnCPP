@@ -10,6 +10,7 @@ public:
 };
 
 // function to pushing the elements into the linked list
+// we will be inserting the new Node in the start of the Linked list 
 void push(Node **head_ref, int new_data)
 {
     Node *new_node = new Node();
@@ -18,20 +19,30 @@ void push(Node **head_ref, int new_data)
     (*head_ref) = new_node;
 }
 
-// function to delete a node in linked list
+
+// function to find the length of the linked list
+int length(Node* head){
+    if(!head) return 0; // if the head is null means there are no elements and hence the size will be 0
+    return 1+length(head->next);
+}
+
+// function to delete a node in linked list at a given position
 Node *deleteNode(Node *head, int i)
 {
-    if (i == 1)
-        return head->next; // if we want to delete the head node then return the next node after head
-    Node *copyhead = head;
-    int c = 1;
-    while (c != i - 1) // traverse the linked list just one before node which you want to delete
-    {
-        copyhead = copyhead->next;
-        c++;
-    }
+    if (i == 1) return head->next; // if we want to delete the head node then return the next node after head
+    int l = length(head);
+    if(i > l ) return head;
+    else {
+        Node *temp = head;
+        int c = 1;
+        while (c != i - 1) // traverse the linked list just one before node which you want to delete
+        {
+            temp = temp->next;
+            c++;
+        }
 
-    copyhead->next = copyhead->next->next; // make the new connection
+        temp->next = temp->next->next; // make the new connection
+    }
     return head;
 }
 
@@ -57,7 +68,7 @@ int main()
     cout << "Created Linked List: ";
     printList(head);
     int x;
-    cin >> x;
+    cin >> x; 
     Node *t = deleteNode(head, x);
 
     cout << "\nLinked List after Deletion of " << x << "th Node: ";
