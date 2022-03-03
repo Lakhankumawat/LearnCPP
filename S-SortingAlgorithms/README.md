@@ -15,6 +15,7 @@
     - [Properties_mergesort](#properties_mergesort)
     - [Advantage_mergesort](#advantage_mergesort)
     - [Disadvantage_mergesort](#disadvantage_mergesort)
+    - [Output](#output)
   - [Insertion Sort](#insertion-sort)
   - [Quick Sort](#quick-sort)
 
