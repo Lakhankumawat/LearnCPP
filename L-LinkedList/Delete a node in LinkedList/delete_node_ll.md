@@ -24,20 +24,3 @@ Else, keep traversing the list until the end of the linked list.
 The following illustration will make the approach more clear.
 
 ![ll](https://user-images.githubusercontent.com/75165587/156487339-0cbead17-c8c7-4ec2-8ee5-45120dcca7db.PNG)
-
-## CODE
-
-```
-Node *deleteNode(Node *head, int i){
-    if (i == 1)  return head->next; // if we want to delete the head node then return the next node after head
-    Node *copyhead = head;
-    int c = 1;
-    while (c != i - 1){ // traverse the linked list just one before node which you want to delete    
-        copyhead = copyhead->next;
-        c++;
-    }
-    copyhead->next = copyhead->next->next; // make the new connection
-    return head;
-}
-
-```
