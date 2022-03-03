@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <!-- follow the template of Bubble Sort, add the respective heading in Table of content -->
 
 
