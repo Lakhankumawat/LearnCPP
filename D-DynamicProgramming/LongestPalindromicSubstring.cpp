@@ -40,7 +40,7 @@ int manacherAlgo(string s, int left, int right, int center, vector<int> &maxLeng
         { 
             maxLengthForEachIndex[idx] = min(right - idx, maxLengthForEachIndex[mirrorOfCurrIndex]);
         }
-        // now we expand along the center to the left or right and also update the palindromic (largest possible) for that index
+        // now we expand along the center to the left or right and also update the palindromic (longest possible) for that index
         while (s[idx + (1 + maxLengthForEachIndex[idx])] == s[idx - (1 + maxLengthForEachIndex[idx])])
         { // it means the left character to that index is equals to the right one hence increase the length at the index
             maxLengthForEachIndex[idx]++;
@@ -77,7 +77,7 @@ int main()
     int n = copy.length();                      // length of the string(main)
     vector<int> maxLengthForEachIndex(n, 0); // initialised with 0
     int result = manacherAlgo(copy, left, right, center, maxLengthForEachIndex);
-    cout <<"\n"<< s << " has the Largest Palindromic Substring of Length - " << result << "\n";
+    cout <<"\n"<< s << " has the Longest Palindromic Substring of Length - " << result << "\n";
 }
 
 // Contributed By - github.com/singhkunal01
