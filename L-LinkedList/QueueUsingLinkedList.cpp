@@ -78,44 +78,20 @@ class Queue{
  
 int main(){
     Queue Q;
-  //For Testing purposes the code fragment below can be replaced by direct calls 
-  //for example 'Q.insert(integer)' , 'Q.delete()' , 'Q.display';
-    bool loop = true;
-    while(loop==true){
-        cout<<"\n1 Insert\n2 Delete\n3 Display\n4 Exit\n"<<endl;
-        int op, insertion = 0,inputs, i=0;
-        cin>>op;
-        switch(op){
-            case 1:
-                cout<<"Enter the number of insertions followed by the inputs"<<endl;
-                cin>>insertion;
-                while(i<insertion){
-                    cin>>inputs;
-                    Q.insert(inputs);
-                    i++;
-                }
-                break;
-            case 2:
-                Q.deleteitem();
-                break;
-            case 3:
-                Q.display();
-                break;
-            case 4:
-                loop=false;
-                break;
-            default:
-                cout<<"Invalid Input"<<endl;
-            
-        }
-    }
+    //For Testing purposes within the code, replace the call lines with a custom menu written in the description
+    
+    Q.insert(10);
+    Q.insert(30);
+    Q.insert(50);
+    Q.display();
+    Q.deleteitem();
+    Q.display();
+    Q.insert(7);
+    Q.display();
+    
      
     return 0;
 }
 
  
 
-
-
-
- 
