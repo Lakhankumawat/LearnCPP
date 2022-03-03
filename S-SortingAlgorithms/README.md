@@ -85,12 +85,7 @@ end BubbleSort
 ## Quick Sort
 
 ---
-=======
-Iterative merge sort added.
-Link: 
-geeksforgeeks.org/iterative-merge-sort/
->>>>>>> ddb57c5 (Iterative merge sort added)
-=======
+
 # [Iterative merge sort](geeksforgeeks.org/iterative-merge-sort/)
 
 ![MergeSort](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png)
@@ -105,4 +100,5 @@ It uses bottom up approach and unlike recursive approach it doesn't uses auxilia
 
 # Output
 ![output](https://user-images.githubusercontent.com/76995136/156413137-24f1e7ba-07e7-4722-a1df-b70e392b01b2.png)
->>>>>>> bcd7b4e (readme file updated)
+
+
