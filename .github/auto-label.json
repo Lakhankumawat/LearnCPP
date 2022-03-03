@@ -1,5 +1,6 @@
 {
   "rules": {
+    "README": ["*.md"],
     "Frontend": ["*.js", "*.css", "*.html"],
     "Backend": ["app/", "*.rb"],
     "CI": ".circleci"
