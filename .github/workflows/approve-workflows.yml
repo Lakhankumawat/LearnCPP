@@ -10,6 +10,6 @@ jobs:
       - name: Automatic Approve
         uses: mheap/automatic-approve-action@v1
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           workflows: "greetings.yml"
           dangerous_files: "build.js"
