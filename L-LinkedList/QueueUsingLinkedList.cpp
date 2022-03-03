@@ -88,8 +88,7 @@ int main(){
     Q.display();
     Q.insert(7);
     Q.display();
-    
-     
+       
     return 0;
 }
 
