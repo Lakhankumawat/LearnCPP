@@ -3,16 +3,16 @@
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
 - It is helpful when we have to perform searching faster, or to identify similar items.
 - Some algorithms make use of sorting as a key subroutine.
-- 
 
 ### Terms explained :
 
 - In place: If only constant memory is required other than the input array.
 - Stable : If the order of identical elements in the array is retained.
 - Make sure to understand the difference between increasing and non-decreasing order.
-xs
 
 
+
+<!-- Table of content -->
 - [Sorting Algorithms](#sorting-algorithms)
     - [Terms explained :](#terms-explained-)
   - [Bubble Sort](#bubble-sort)
