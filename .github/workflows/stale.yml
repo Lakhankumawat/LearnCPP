@@ -16,8 +16,8 @@ jobs:
           close-issue-message: 'This issue was closed because it has been stalled for 5 days with no activity. Please reopen this issue if not resolved.'
           stale-issue-label: "no-issue-activity"
           stale-pr-label: "no-pr-activity"
-          days-before-stale: 30
-          days-before-close: 5
+          days-before-stale: 7
+          days-before-close: 7
           days-before-pr-close: -1
           exempt-issue-milestones: 'important, crucial, critical, no_stale'
           exempt-pr-milestones: 'important, crucial, critical, no_stale'
