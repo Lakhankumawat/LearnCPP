@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "Frontend": ["*.js", "*.css", "*.html"],
+    "Backend": ["app/", "*.rb"],
+    "CI": ".circleci"
+    "C/CPP": ["*.cpp", "*.c"],
+    "Python": ["*.py", "*.ipynb"],
+  }
+}

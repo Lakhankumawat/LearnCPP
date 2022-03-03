@@ -1,0 +1,15 @@
+name: Automatic Approve Workflows for 1st time contributors
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+jobs:
+  automatic-approve:
+    name: Automatic Approve
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automatic Approve
+        uses: mheap/automatic-approve-action@v1
+        with:
+          token: ${{ secrets.PAT }}
+          workflows: "greetings.yml"
+          dangerous_files: "build.js"
