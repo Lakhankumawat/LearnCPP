@@ -72,6 +72,7 @@ end BubbleSort
 
 ---
 
+
 ## Insertion Sort
 
 ---
@@ -83,3 +84,48 @@ end BubbleSort
 ## Quick Sort
 
 ---
+
+
+## Counting Sort
+
+- 
+<!-- image to help better explain the concept -->
+![bubble-sort](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
+<!-- citation : [Here](https://www.programiz.com/dsa/counting-sort)  -->
+
+
+### Algorithm
+
+```
+
+countingSort(array, size)
+  max <- find largest element in array
+  initialize count array with all zeros
+  for j <- 0 to size
+    find the total count of each unique element and 
+    store the count at jth index in count array
+  for i <- 1 to max
+    find the cumulative sum and store it in count array itself
+  for j <- size down to 1
+    restore the elements to array
+    decrease count of each element restored by 1
+
+```
+
+### Properties
+
+- Time Complexity :
+  - Worst case time	: O(n)
+  - Best case time : O(n)
+  - Average case time : O(n)
+- Auxillary Space : O(n)
+- In-place : No
+- Stable : Yes
+
+### Advantages
+
+- Linear time sorting technique, making it faster than comparison based algorithms.
+
+### Disadvantage
+
+- Works for restricted inputs only for a certain range and takes extra space.
