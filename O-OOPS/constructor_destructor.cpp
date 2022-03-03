@@ -31,7 +31,7 @@ public:
     };
 
     // copy constructor
-    learncpp(learncpp &obj) // argument in a copy constructor should be passed by reference.
+    learncpp(const learncpp &obj) // argument in a copy constructor should be passed by reference.
     {
         // initialising variables using variables of object passed to constructor
         m = obj.m;
@@ -60,9 +60,8 @@ public:
 
 int main()
 {
-    learncpp obj1;
-    learncpp obj2(100, 200, "kalash");
-    learncpp obj3(obj2);
-    
+    learncpp obj1; // calling default constructor
+    learncpp obj2(100, 200, "kalash"); // calling parameterized constructor
+    learncpp obj3 = obj2; // copy constructor is called (note: obj3 is a copy of obj2 which demonstrates the use of copy constructor)
     return 0;
 }
