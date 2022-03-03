@@ -58,3 +58,12 @@ bool loop = true;
         }
     }
 ```
+### Properties
+Time Complexity : O(n)
+In-place : Yes
+Stable : Yes
+### Advantages
+- Dyanmically allocated
+- No memory wastage
+### Disadvantage
+- Requires more memory to store than array 
