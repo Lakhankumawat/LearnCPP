@@ -1,3 +1,19 @@
+<!-- follow the template of Bubble Sort, add the respective heading in Table of content -->
+
+
+<!-- Table of content -->
+# Table of content
+- [Sorting Algorithms](#sorting-algorithms)
+    - [Terms explained :](#terms-explained-)
+  - [Bubble Sort](#bubble-sort)
+    - [Algorithm](#algorithm)
+    - [Properties](#properties)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantage)
+  - [Insertion Sort](#insertion-sort)
+  - [Merge Sort](#merge-sort)
+  - [Quick Sort](#quick-sort)
+
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -11,18 +27,6 @@
 - Make sure to understand the difference between increasing and non-decreasing order.
 
 
-
-<!-- Table of content -->
-- [Sorting Algorithms](#sorting-algorithms)
-    - [Terms explained :](#terms-explained-)
-  - [Bubble Sort](#bubble-sort)
-    - [Algorithm](#algorithm)
-    - [Properties](#properties)
-    - [Advantages](#advantages)
-    - [Disadvantage](#disadvantage)
-  - [Insertion Sort](#insertion-sort)
-  - [Merge Sort](#merge-sort)
-  - [Quick Sort](#quick-sort)
 
 ## Bubble Sort
 
