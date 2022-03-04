@@ -108,7 +108,7 @@ int main() {
 
     for(string query : queries) 
     {
-        // if currern query of queries is present in Trie we will print query present
+        // if current query of queries is present in Trie we will print query present
         // otherwise query not present
     	t.search(query) ? cout << query << " :  present" << endl :
     	                  cout << query << " : not present" << endl; 
