@@ -7,7 +7,7 @@ using namespace std;
 // Function to find the maximum revenue from cutting a rod of length (len)
 // where the rod of length (i) has cost (prices[i - 1])
 int RodCutting(vector <int> & prices, int len) {
-    // (dp) stores the maximum revenue achieved from cutting a rod of length (from 0 to len)
+    // (dp) stores the maximum revenue achieved from cutting a rod of length (from 1 to len)
     vector <int> dp (len + 1, 0);
     // If the rod length is negative (invalid) or zero there's no revenue from it
     if (len <= 0) {
