@@ -2,7 +2,9 @@
 
 //------------------------------------PROBLEM : Subsequence with K sum ----------------------------------
 
-#include <bits/stdc++.h>
+#include<iostream>
+#include<stack>
+#include<vector>
 using namespace std;
 
 void generate(vector<int> arr, vector<int> output, int index, int sum, int tempSum)
@@ -36,7 +38,7 @@ int main()
     int n, sum;
 
     cout << "Enter the total number of elements in the array/vector : " << endl;
-    cin >> n; //number of elements
+    cin >> n;
 
     cout << "Enter the elements : " << endl;
     for (int i = 0; i < n; i++)
@@ -47,7 +49,7 @@ int main()
     }
 
     cout << "Enter the subsequence sum : " << endl;
-    cin >> sum; //the subsequence sum (K)
+    cin >> sum;
     cout << "The subsequences are as follows : " << endl;
 
     int tempSum = 0;
@@ -56,7 +58,7 @@ int main()
 
     //this prints all the subsequences
     generate(arr, output, index, sum, tempSum);
-    //you can also store all the subsequences in a 2D vector by passing it as a reference in the function
+    //It is also possible to store all the subsequences in a 2D vector by passing it as a reference in the 'generate' function
     return 0;
     
 }
