@@ -3,7 +3,6 @@
 //------------------------------------PROBLEM : Subsequence with K sum ----------------------------------
 
 #include<iostream>
-#include<stack>
 #include<vector>
 using namespace std;
 
