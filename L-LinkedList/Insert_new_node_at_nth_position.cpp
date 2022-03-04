@@ -72,27 +72,27 @@ void create(node** head, int val){
 }
 
 // Function will insert the node at nth position of the linked list
-void insert(node* head, int val, int n){
+void insert(node* temp_head, int val, int n){
     node* newnode = new node(val);
     while(n--){     //loop will iterate to nth position
-        if(head->next == nullptr){
+        if(temp_head->next == nullptr){
             cout<<"Can not insert! Less than n nodes are present\n";
             return;
         }
-        head = head->next;
+        temp_head = temp_head->next;
     }
     //inserting the node
-    newnode->next = head->next;
-    head->next = newnode;
+    newnode->next = temp_head->next;
+    temp_head->next = newnode;
 }
 
 // Function will display elements of the linked list
-void display(node* head){
+void display(node* temp_head){
     cout<<"Linked list: ";
-    while (head!=nullptr)
+    while (temp_head!=nullptr)
     {
-        cout<<head->data<<" ";
-        head = head->next;
+        cout<<temp_head->data<<" ";
+        temp_head = temp_head->next;
     }
     cout<<endl;
 }
@@ -100,8 +100,7 @@ void display(node* head){
 
 int main()
 {
-    /*no_of_nodes, is the number of nodes in the linked list,
-    n is the nth node at which insertion is to be performed
+    /*n is the nth node at which insertion is to be performed
     & val is the value which will be assgned to the nodes */
 
     int no_of_nodes, n, val;     
