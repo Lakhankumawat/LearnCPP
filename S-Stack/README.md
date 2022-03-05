@@ -13,7 +13,7 @@ Applications of stack :
 2. Infix to prefix or postfix conversion
 3. To reverse a word or a string
 4. _Call stack_ : To store list of functions that are either executing or waiting to be executed during runtime. ( stored in stack in memory)
-5. Practical application : (<-)Back button present in a browser pushes the URLs of the visited sites on a stack. ## Infix To Postfix 
+5. Practical application : (<-)Back button present in a browser pushes the URLs of the visited sites on a stack.
 
 ## Infix to postfix conversion
 (information from geeksforgeeks)
