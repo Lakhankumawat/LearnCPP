@@ -121,8 +121,19 @@ Fond of designing README this section will be helpful to you
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
+<br>
 
+## 🌟 Stargazers Over Time 🌟 
+
+[![Stargazers over time](https://starchart.cc/Lakhankumawat/LearnCPP.svg)](https://starchart.cc/Lakhankumawat/LearnCPP)
+
+
+## Project Maintainers ❤️ 
+
+ Section Coming Soon ...
  
+## Happy Coding !!
+
 <br><br><hr>
   <h6 align="center">© LearnCPP 2022 <br>
   All Rights Reserved</h6>
