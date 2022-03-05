@@ -17,7 +17,7 @@ Applications of stack :
 
 ## Infix to postfix conversion
 (information from geeksforgeeks)
-Postfix expression: The expression of the form a b op. When an operator is followed for every pair of operands.
+- Postfix expression: The expression of the form a b op. When an operator is followed for every pair of operands.
 
 Why postfix representation of the expression? 
 The compiler scans the expression either from left to right or from right to left. 
@@ -27,7 +27,7 @@ The compiler first scans the expression to evaluate the expression b * c, then a
 The repeated scanning makes it very in-efficient. It is better to convert the expression to postfix(or prefix) form before evaluation.
 The corresponding expression in postfix form is abc*+d+. The postfix expressions can be evaluated easily using a stack. We will cover postfix expression evaluation in a separate post.
 
-## Algorithm !
+## Algorithm
 (information from geeksforgeeks)
 1. Scan the infix expression from left to right. 
 2. If the scanned character is an operand, output it. 
