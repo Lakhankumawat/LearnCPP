@@ -1,4 +1,4 @@
-//------------------ Infix expression to Postfix -----------------//
+//---------- Infix expression to Postfix ------------//
 
 #include <bits/stdc++.h>
 
@@ -6,7 +6,7 @@ using namespace std;
 
 // to comparare the precedence of operaters
 int precedence_comparision(char symbol){
-    
+
     switch(symbol)
     {
         case '(':
@@ -25,24 +25,21 @@ int precedence_comparision(char symbol){
 
         default:
         return -1;
-
     }
-    
-
 }
 
 // converts infix to postfix expression
 void InfixtoPostfix(string infix){
 
-    // Using cpp built stack , For stack operation 
+    // Using cpp built stack , For stack operation
     stack<char>  expression_stack;
     string result;
 
     for(int i=0;i< infix.length();i++){
-        
+
         char symbol=infix[i];
         // check the character
-        
+
         //if it is a operand , add to output
         if((symbol>='a' && symbol<='z')||(symbol>='0' && symbol<='9')||(symbol>='A' && symbol<='Z')){
 
@@ -83,10 +80,7 @@ void InfixtoPostfix(string infix){
                 result+=expression_stack.top();
                 expression_stack.pop();
     }
-    
     cout<<result<<endl;
-
-
 }
 
 // driver program to test InfixtoPostfix function
