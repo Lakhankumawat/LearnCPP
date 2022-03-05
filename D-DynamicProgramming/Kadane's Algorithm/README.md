@@ -15,9 +15,9 @@ among all subarrays of that array. A subarray of array A[] of length n is a cont
     
 **Example :**
 
-    1. A = {2,1,-2,5,6,-7,3}
-       * Subarray = {5,6} 
-       * o/p Largest Sum = 11
+    1. A = {-2,1,-3,4,-1,2,1,-5,4}
+       * Subarray = {4,-1,2,1} 
+       * o/p Largest Sum = 6
        
     2. B = {7,2,3,1,10}
        * Subarray = {7,2,3,1,10}... if all nos are positive then their sum is largest sum.
