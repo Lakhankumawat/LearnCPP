@@ -16,6 +16,7 @@ Applications of stack :
 5. Practical application : (<-)Back button present in a browser pushes the URLs of the visited sites on a stack. ## Infix To Postfix 
 
 ## Infix to postfix conversion
+(information from geeksforgeeks)
 Postfix expression: The expression of the form a b op. When an operator is followed for every pair of operands.
 
 Why postfix representation of the expression? 
@@ -26,8 +27,7 @@ The compiler first scans the expression to evaluate the expression b * c, then a
 The repeated scanning makes it very in-efficient. It is better to convert the expression to postfix(or prefix) form before evaluation.
 The corresponding expression in postfix form is abc*+d+. The postfix expressions can be evaluated easily using a stack. We will cover postfix expression evaluation in a separate post.
 
-## Algorithm 
-![Algorithm](InfixToPostfix.cpp)
+## Algorithm !
 (information from geeksforgeeks)
 1. Scan the infix expression from left to right. 
 2. If the scanned character is an operand, output it. 
@@ -40,7 +40,9 @@ The corresponding expression in postfix form is abc*+d+. The postfix expressions
 7. Print the output 
 8. Pop and output from the stack until it is not empty.
 
+
    - Its implementation is [here](InfixToPostfix.cpp)
+
 
    ![Infix to postfix conversion](https://prepinsta.com/wp-content/uploads/2020/06/Infix-to-Posting-Conversion-in-C-using-Stacks-2048x1453.png)
 
