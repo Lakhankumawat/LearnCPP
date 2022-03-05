@@ -20,6 +20,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+<!-- [![GitHub Super-Linter](https://github.com/Lakhankumawat/LearnCPP/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+ -->
 
  
 <div align="center">
@@ -119,8 +121,19 @@ Fond of designing README this section will be helpful to you
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
+<br>
 
+## 🌟 Stargazers Over Time 🌟 
+
+[![Stargazers over time](https://starchart.cc/Lakhankumawat/LearnCPP.svg)](https://starchart.cc/Lakhankumawat/LearnCPP)
+
+
+## Project Maintainers ❤️ 
+
+ Section Coming Soon ...
  
+## Happy Coding !!
+
 <br><br><hr>
   <h6 align="center">© LearnCPP 2022 <br>
   All Rights Reserved</h6>
