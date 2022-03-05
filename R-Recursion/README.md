@@ -32,3 +32,26 @@ Output : 3.14p
 Input : str = “xpix” 
 Output : x3.14x
 ```
+
+# [Tower of Hanoi](R-Recursion/TowerofHanoi.cpp)
+
+The Tower of Hanoi is a mathematical game or puzzle consisting of three rods and a number of disks of various diameters, <br>
+which can slide onto any rod. The puzzle begins with the disks stacked on one rod in order of decreasing size, <br>
+the smallest at the top, thus approximating a conical shape.
+## Examples: 
+```
+Input : 2
+Output : Disk 1 moved from A to B
+         Disk 2 moved from A to C
+         Disk 1 moved from B to C
+
+Input : 3
+Output : Disk 1 moved from A to C
+         Disk 2 moved from A to B
+         Disk 1 moved from C to B
+         Disk 3 moved from A to C
+         Disk 1 moved from B to A
+         Disk 2 moved from B to C
+         Disk 1 moved from A to C
+```
+
