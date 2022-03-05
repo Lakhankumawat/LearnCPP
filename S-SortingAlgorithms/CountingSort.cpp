@@ -1,22 +1,13 @@
-/*---COUNTING SORT---
-In this sorting technique we count the number of objects having distinct key values.
-
-    Time complexity:  O(n+k) where:
-     'n' denotes the number of elements in input array
-     'k' is the range of input. 
-
-    Auxiliary Space: O(n+k)
-*/
-
 //Program
-#include<bits/stdc++.h> //including header file 
+#include<iostream> 
 using namespace std;
 
 //counting sort function
 void countsort(int a[], int n){
 
-    int count[256];
-     // initializing all elements with 0
+     //Declaring an array of range 256 - max number of bits of all characters in ascii codes.
+    int count[256]; //for counting the number of occurences of a particular character
+     
     for(int i=0;i<256;i++){
         count[i]=0;
     }
