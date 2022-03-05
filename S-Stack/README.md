@@ -16,31 +16,28 @@ Applications of stack :
 5. Practical application : (<-)Back button present in a browser pushes the URLs of the visited sites on a stack.
 
 ## Infix to postfix conversion
-(information from geeksforgeeks)
-- Postfix expression: The expression of the form a b op. When an operator is followed for every pair of operands.
 
-Why postfix representation of the expression? 
-The compiler scans the expression either from left to right or from right to left. 
-Consider the below expression: a op1 b op2 c op3 d 
-If op1 = +, op2 = *, op3 = +
-The compiler first scans the expression to evaluate the expression b * c, then again scans the expression to add a to it. The result is then added to d after another scan.
-The repeated scanning makes it very in-efficient. It is better to convert the expression to postfix(or prefix) form before evaluation.
-The corresponding expression in postfix form is abc*+d+. The postfix expressions can be evaluated easily using a stack. We will cover postfix expression evaluation in a separate post.
+- The conventational method of representing an arithmatic is known as infix
+- Postfix expression: if the operater is placed after the operand then this notation is called postfix or reverse polish notation .
+- Infix A+B
+- Postfix AB+
 
-## Algorithm
+Need of postfix Notation :
+Although  this notation is not very reable by humans , but proved very useful for compiler designers in generating machine language  code for evaluating arithmetic expression .
+
+Algorithm
 - Time Complexity O(n) , where n is length of expression .
-
-(information from geeksforgeeks)
-1. Scan the infix expression from left to right. 
-2. If the scanned character is an operand, output it. 
-3. Else, 
-      1 If the precedence of the scanned operator is greater than the precedence of the operator in the stack(or the stack is empty or the stack contains a ‘(‘ ), push it. 
-      2 Else, Pop all the operators from the stack which are greater than or equal to in precedence than that of the scanned operator. After doing that Push the scanned operator to the stack. (If you encounter parenthesis while popping then stop there and push the scanned operator in the stack.) 
-4. If the scanned character is an ‘(‘, push it to the stack. 
-5. If the scanned character is an ‘)’, pop the stack and output it until a ‘(‘ is encountered, and discard both the parenthesis. 
-6. Repeat steps 2-6 until infix expression is scanned. 
-7. Print the output 
-8. Pop and output from the stack until it is not empty.
+1. Using cpp built stack , For stack operation .
+2. check each character of Infix expression one by one from left to right.
+3. If the character is an operand, add to output. 
+4. Else If the character is ‘(‘, push in stack. 
+5. Else If the character is ‘)’, pop the stack and output the string upto character '(' .
+6. Else, it is a operator , check precedence and push or pop accordingly 
+      1.  If the precedence of the checked operator is greater than the precedence of the operator in the stack(or the stack is empty or the stack contains a ‘(‘ ), push it. 
+      2. Else, Pop all the operators from the stack which are greater than or equal to in precedence than that of the checked operator. After doing that Push the checked operator to the stack. (If thjere is a parenthesis while popping then stop there and push the checked operator in the stack.)   
+7. Repeat steps 3-6 upto the end of Infix expression. 
+8. pop the remaining expression from the stack until stack is empty
+9. print the result string that is the postfix notation.
 
 
    - Its implementation is [here](InfixToPostfix.cpp)
