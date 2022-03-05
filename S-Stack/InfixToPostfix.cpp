@@ -1,13 +1,6 @@
 //------------------ Infix expression to Postfix -----------------//
 
 #include <bits/stdc++.h>
-/*  #include <iostream>
-#include <cmath>
-#include <string>
-#include <cstdlib>
-#include <stack>
-#include <cstring> */
-
 
 using namespace std;
 
