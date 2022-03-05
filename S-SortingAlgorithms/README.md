@@ -88,9 +88,9 @@ end BubbleSort
 
 ## Counting Sort
 
-- Counting sort is a sorting algorithm that sorts the elements of an array by counting the number of occurrences of each unique element in the array. The count is stored in an auxiliary array and the sorting is done by mapping the count as an index of the auxiliary array.
+- Counting sort is a special sorting algorithm that sorts the multiple elements without performing any comparison. It counts the number of occurences of the various elements .This counting can be stored in a temporary array in which elements are marked as indexes and count of their occurences stored as values of the array .
 <!-- image to help better explain the concept -->
-![bubble-sort](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
+![counting-sort](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
 <!-- citation : [Here](https://www.programiz.com/dsa/counting-sort)  -->
 
 
@@ -98,18 +98,25 @@ end BubbleSort
 
 ```
 
-countingSort(array, size)
-  max <- find largest element in array
-  initialize count array with all zeros
-  for j <- 0 to size
-    find the total count of each unique element and 
-    store the count at jth index in count array
-  for i <- 1 to max
-    find the cumulative sum and store it in count array itself
-  for j <- size down to 1
-    restore the elements to array
-    decrease count of each element restored by 1
+begin countSort(arr, n)
+    declare a count array of max range 256.
+    mark all elements of the count array as 0.
 
+    Run a for loop from i:=0 to i:=n-1 :
+      compute the count of every element present in the array and store it at ith position of the count array.
+    
+    Run a for loop from i=1 to 256 :
+      Convert the count array to prefix sum array by cummulative addding of previous elements.
+
+    declare an output array of size n for storing the sorted sequence.
+
+    Run a for loop from j:=n-1 to 0 :
+      Insert the elments in the output using the count and original array, and Decrease  the count of each element restored by 1.
+
+    Finally run a loop from i:=0 to i:=n-1 :
+      Copy the values of output array into the original array.
+
+  [end of program]
 ```
 
 ### Properties
