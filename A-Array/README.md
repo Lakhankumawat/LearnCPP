@@ -33,8 +33,9 @@ begin sortArray(array)
          swap(array[mid], array[high])
          high--
       end if
+   end while
 
-    return array
+   return array
 
 end sortArray
 ```
