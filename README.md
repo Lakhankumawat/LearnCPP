@@ -137,3 +137,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/officSatyam"><img src="https://avatars.githubusercontent.com/u/100135781?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SATYAM KUMAR</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=officSatyam" title="Code">💻</a></td>
+    <td align="center"><a href="https://n4i9kita.github.io/"><img src="https://avatars.githubusercontent.com/u/60391776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nikita Sharma</b></sub></a><br /><a href="#maintenance-n4i9kita" title="Maintenance">🚧</a> <a href="#ideas-n4i9kita" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/ujjwalban"><img src="https://avatars.githubusercontent.com/u/51720065?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ujjwal Bansal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=ujjwalban" title="Code">💻</a></td>
+
+  </tr>
+</table>
