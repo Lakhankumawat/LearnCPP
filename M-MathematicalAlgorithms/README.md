@@ -10,18 +10,7 @@
 The sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit. 
 It does so by iteratively marking as composite (i.e., not prime) the multiples of each prime, starting with the first prime number, 2.
 
-
-
-
-
-
-
-
-
-
 ### Algorithm
-
-
 ```
 - Create a boolean list of number from 0 to n and assign each of them with the value true
 - Mark 0th and 1st index as false
