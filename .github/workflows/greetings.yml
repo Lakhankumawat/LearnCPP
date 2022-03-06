@@ -8,10 +8,9 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-    - uses: LakhanKumawat/Greeting-action@main
+    - uses: Suvraneel/Greeting-action@main
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        issue_message: 'Hello @${{github.actor}}, <br>
-                        Thank you for opening an issue. :octocat: <br>
-                        To get assigned to this particular issue please use <b>/assign</b><br>
-                        <i> Check this <a href="https://github.com/Lakhankumawat/LearnCPP/blob/main/Contributing.md">guide</a> before contributing.'
+        issue_message: 'Hello @${{github.actor}}, thanks for creating your first issue at LearnCPP, hope you followed the guidelines.'
+        pr-message: 'Congratulations!! for making your first PR at  LearnCPP, our mentors will review it soon.'
+
