@@ -70,6 +70,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lucy2512",
+      "name": "Parthib Sarkar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74641700?v=4",
+      "profile": "http://parthib.netlify.app",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
