@@ -15,6 +15,15 @@
         "review",
         "projectManagement"
       ]
+    },
+    {
+      "login": "ChetasShree",
+      "name": "Chetas Shree Madhusudhan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75165587?v=4",
+      "profile": "https://chetasshree.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
