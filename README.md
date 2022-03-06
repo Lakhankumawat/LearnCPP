@@ -103,10 +103,6 @@ Fond of designing README this section will be helpful to you
 
 
 
-## Contributors ✨
-> Thanks goes to these wonderful people :
-
-
 <br>
 
 ## 🌟 Stargazers Over Time 🌟 
