@@ -6,7 +6,7 @@
 2. Change the next of previous node.
 3. Free memory for the node to be deleted.
 
-## Time omplexity
+## Time Complexity
 1. Deleting the first node -> O(1)
 2. Deleting a node in between -> O(n)
 3. Deleting the last node -> O(n)
