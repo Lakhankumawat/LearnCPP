@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -136,6 +136,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://n4i9kita.github.io/"><img src="https://avatars.githubusercontent.com/u/60391776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nikita Sharma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=n4i9kita" title="Code">💻</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3An4i9kita" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/ujjwalban"><img src="https://avatars.githubusercontent.com/u/51720065?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ujjwal Bansal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=ujjwalban" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Supratim2000"><img src="https://avatars.githubusercontent.com/u/52972176?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Supratim2000</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Supratim2000" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/puneetkaur2929"><img src="https://avatars.githubusercontent.com/u/80326308?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Puneet Kaur</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=puneetkaur2929" title="Code">💻</a></td>
   </tr>
 </table>
 
