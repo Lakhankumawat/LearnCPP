@@ -1,7 +1,5 @@
 <img  align="left" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=LakhanKumawat&repo=LearnCPP&countColorcountColor&countColor=%237B1E7B"/><img align="right" src="https://img.shields.io/github/repo-size/Lakhankumawat/LearnCPP?style=for-the-badge&logo=appveyor" alt="GitHub repo size"/>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 <img align="right" alt="LearnCPP"  src="https://socialify.git.ci/Lakhankumawat/LearnCPP/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fd1fdloi71mui9q.cloudfront.net%2FWDPdNJfQt65Ho3qKhZQQ_519jouHPPpyoYg1x&name=1&pulls=1&stargazers=1&theme=Dark" />
 
   
@@ -17,6 +15,12 @@
 <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" alt=" forks"/>
 
 </p>
+
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 
 <div align="center">
 
