@@ -1,5 +1,6 @@
 //---------- Infix expression to Postfix ------------//
 
+//#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -96,7 +97,10 @@ expression: a^(b*c-d/(e+f))
 */
 // Main Function
 int main(){
-    string expression ="a^(b*c-d/(e+f))";
+    string expression;
+    cout<<"Enter expression : ";
+    getline (cin, expression);
+    //string expression ="a^(b*c-d/(e+f))";
     InfixtoPostfix(expression);
     return 0;
 }
