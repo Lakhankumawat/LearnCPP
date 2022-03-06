@@ -38,20 +38,30 @@ Output : x3.14x
 The Tower of Hanoi is a mathematical game or puzzle consisting of three rods and a number of disks of various diameters, <br>
 which can slide onto any rod. The puzzle begins with the disks stacked on one rod in order of decreasing size, <br>
 the smallest at the top, thus approximating a conical shape.
+
+Three simple rules are followed:
+1. Only one disk can be moved at a time.
+2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.<br>
+ In other words, a disk can only be moved if it is the uppermost disk on a stack.
+3. No larger disk may be placed on top of a smaller disk.
 ## Examples: 
 ```
 Input : 2
 Output : Disk 1 moved from A to B
          Disk 2 moved from A to C
          Disk 1 moved from B to C
+         
+Explanation:          
+Take an example for 2 disks :
+Let rod 1 = 'A', rod 2 = 'B', rod 3 = 'C'.
 
-Input : 3
-Output : Disk 1 moved from A to C
-         Disk 2 moved from A to B
-         Disk 1 moved from C to B
-         Disk 3 moved from A to C
-         Disk 1 moved from B to A
-         Disk 2 moved from B to C
-         Disk 1 moved from A to C
+Step 1 : Shift first disk from 'A' to 'B'.
+Step 2 : Shift second disk from 'A' to 'C'.
+Step 3 : Shift first disk from 'B' to 'C'.
+
+The pattern here is :
+Shift 'n-1' disks from 'A' to 'B'.
+Shift last disk from 'A' to 'C'.
+Shift 'n-1' disks from 'B' to 'C'.
 ```
 
