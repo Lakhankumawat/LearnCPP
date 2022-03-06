@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -133,6 +133,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://lakhankumawat.me/"><img src="https://avatars.githubusercontent.com/u/55774240?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LakhanKumawat ᵖ⁺</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Lakhankumawat" title="Code">💻</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3ALakhankumawat" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-Lakhankumawat" title="Project Management">📆</a></td>
     <td align="center"><a href="https://chetasshree.github.io/"><img src="https://avatars.githubusercontent.com/u/75165587?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chetas Shree Madhusudhan</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=ChetasShree" title="Code">💻</a></td>
+    <td align="center"><a href="https://n4i9kita.github.io/"><img src="https://avatars.githubusercontent.com/u/60391776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nikita Sharma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=n4i9kita" title="Code">💻</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3An4i9kita" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
