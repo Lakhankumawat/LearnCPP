@@ -1,4 +1,7 @@
 <img  align="left" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=LakhanKumawat&repo=LearnCPP&countColorcountColor&countColor=%237B1E7B"/><img align="right" src="https://img.shields.io/github/repo-size/Lakhankumawat/LearnCPP?style=for-the-badge&logo=appveyor" alt="GitHub repo size"/>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <img align="right" alt="LearnCPP"  src="https://socialify.git.ci/Lakhankumawat/LearnCPP/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fd1fdloi71mui9q.cloudfront.net%2FWDPdNJfQt65Ho3qKhZQQ_519jouHPPpyoYg1x&name=1&pulls=1&stargazers=1&theme=Dark" />
 
   
@@ -114,3 +117,23 @@ Fond of designing README this section will be helpful to you
 <p align="center">
 Developed with ❤️ in India 🇮🇳 
 </p>
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://lakhankumawat.me/"><img src="https://avatars.githubusercontent.com/u/55774240?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LakhanKumawat ᵖ⁺</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Lakhankumawat" title="Code">💻</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3ALakhankumawat" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-Lakhankumawat" title="Project Management">📆</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
