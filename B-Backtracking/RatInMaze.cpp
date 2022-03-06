@@ -92,7 +92,21 @@ int main()
 		cout << "Enter the row and column number of the obstacle you would like to add: ";
 		cin >> ObstacleRow >> ObstacleColumn;
 
-		maze[ObstacleRow - 1][ObstacleColumn - 1] = 0;
+		if ((ObstacleRow == 1) && (ObstacleColumn == 1))
+		{
+			cout << "The entrance of the maze can not be blocked.\n";
+		}
+
+		else if ((ObstacleRow == rows) && (ObstacleColumn == columns))
+		{
+			cout << "The exit of the maze can not be blocked.\n";
+		}
+
+		else
+		{
+			maze[ObstacleRow - 1][ObstacleColumn - 1] = 0;
+		}
+
 		cout << "Would you like to add another obstacle(y/n): ";
 		cin >> choice;
 
@@ -146,4 +160,3 @@ int main()
 
 	return 0;
 }
-
