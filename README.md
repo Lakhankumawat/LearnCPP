@@ -17,7 +17,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- [![GitHub Super-Linter](https://github.com/Lakhankumawat/LearnCPP/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
