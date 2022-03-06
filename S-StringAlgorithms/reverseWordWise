@@ -1,0 +1,45 @@
+//Reverse the given string word wise. That is, the last word in given string should come at 1st place, last second word at 2nd place and so on. Individual words should remain as it is.
+//Input format :
+//String in a single line
+//Output format :
+//Word wise reversed string in a single line
+//Sample Input 2:
+//Always indent your code
+//Sample Output 2:
+//code your indent Always
+
+
+void reverseStringWordWise(char input[]) {
+     int start=0; //i keeps index of current character being read
+    int end=0;// j tracks the index in output
+    char temp;
+	int len = 0;
+	for(int i = 0; input[i] != '\0'; i++) {
+		len++;
+	}
+       int k=0;
+    int l=len-1;
+    while(k<l){
+        char swap=input[k];
+        input[k]=input[l];
+        input[l]=swap;
+        k++;
+        l--;
+        
+    }
+    for(int i=0;i<len;i++){
+        while(i<len && input[i]==32){i++;}//Skip space
+        start=i;
+        while(i<len && input[i]!=32){i++;}//Skip nonspaces
+        end=i-1;//end index of word
+        while(end>start){
+            char temp=input[start];
+            input[start]=input[end];
+            input[end]=temp;
+            start++;
+            end--;
+        }
+        
+        
+}
+}
