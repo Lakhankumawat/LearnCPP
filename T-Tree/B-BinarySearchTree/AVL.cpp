@@ -251,17 +251,20 @@ int main()
 {
     Node *root = NULL;
 
-    root = insert(root, 9);
-    root = insert(root, 5);
-    root = insert(root, 10);
-    root = insert(root, 0);
-    root = insert(root, 6);
-    root = insert(root, 11);
-    root = insert(root, -1);
-    root = insert(root, 1);
-    root = insert(root, 2);
+    int N;
+    cout<<"\nHow many numbers you want to insert ? ";
+    cin>>N;
+    cout<<"\nEnter "<<N<<" numbers in AVL tree :\n";
+    for(int i=0;i<N;i++){
+        int temp;
+        cin>>temp;
+        root = insert(root,temp);
+    } 
  
-    /* The constructed AVL Tree would be
+    /* 
+    N=9
+    input value : 9 5 10 0 6 11 -1 1 2 
+    The constructed AVL Tree would be
              9
            /   \
           1     10
@@ -271,16 +274,15 @@ int main()
       -1  2 6
     */
  
-    cout << "Preorder traversal of the constructed AVL tree is \n";
+    cout<<"\nPreorder traversal of the constructed AVL tree is :\n";
     preOrder(root);
     cout<<"\n";
-    bool before = search(root, 10);
-    if (before)
-        cout << "value 10 found";
-    else
-        cout << "value 10 not found";
+
+    int num;
+    cout<<"\nEnter the number to delete from AVL tree :";
+    cin>>num;
  
-    root = deleteNode(root, 10);
+    root = deleteNode(root,num);
  
      /* The AVL Tree after deletion
              1
@@ -292,14 +294,18 @@ int main()
             2   6
     */
  
-    cout << "\nPreorder traversal after deletion of 10 \n";
+    cout<<"\nPreorder traversal after deletion of "<<num<<"\n";
     preOrder(root);
     cout<<"\n";
-    bool after = search(root, 10);
+
+    int numsearch;
+    cout<<"\nEnter the number to be searched ";
+    cin>>numsearch;
+    bool after = search(root,numsearch);
     if (after)
-        cout << "value 10 found";
+        cout<<"value "<<numsearch<<" found\n";
     else
-        cout << "value 10 not found"; 
+        cout<<"value "<<numsearch<<" not found\n";
     return 0;
 }
 
