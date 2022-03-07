@@ -26,7 +26,7 @@
 
 
 <!------------------------------------Badges------------------------------->
-<h2 align="center"> Some helful resources</h2>
+<h2 align="center"> Some Helpful Resources</h2>
 
 | <img src="https://edent.github.io/SuperTinyIcons/images/svg/youtube.svg" width="45" title="YouTube" /> Youtube channels | <img src="https://edent.github.io/SuperTinyIcons/images/png/github.png" width="45" />   Github Repos | <img src="https://img.icons8.com/color/48/000000/badminton-2.png"/> Best Coding Playgrounds |
 | --- | --- |----|
