@@ -107,6 +107,15 @@
         "code",
         "example"
       ]
+    },
+    {
+      "login": "AastikSharma05",
+      "name": "Aastik Sharma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84850243?v=4",
+      "profile": "https://www.linkedin.com/in/aastik-sharma-8846061b8/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
