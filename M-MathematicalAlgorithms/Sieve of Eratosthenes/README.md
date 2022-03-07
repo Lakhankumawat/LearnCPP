@@ -1,7 +1,7 @@
 # Sieve of Eratosthenes
 ![gssoc](https://user-images.githubusercontent.com/95519167/156644642-9359f3d3-d87c-41c1-b400-be97ed386829.jpg)
 
-Sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit in an optimised way.
+Sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit in an optimised way. It is one of the most efficient ways to find all primes smaller than n when n is smaller than 10 million or so. It works on the principle of cancellation of prime factors.
 In this method we iteratively mark all the multiples of each prime number starting with the first prime number 2. Unmarked numbers give us the required set of prime numbers within the given limit.
 ## Sieve Algorithm:
 Suppose we are given a limit n, upto which we have to find all prime numbers.
