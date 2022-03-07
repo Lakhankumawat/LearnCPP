@@ -13,6 +13,7 @@
   - [Insertion Sort](#insertion-sort)
   - [Merge Sort](#merge-sort)
   - [Quick Sort](#quick-sort)
+  - [Cocktail Sort](#cocktail-sort)
 
 # Sorting Algorithms
 
