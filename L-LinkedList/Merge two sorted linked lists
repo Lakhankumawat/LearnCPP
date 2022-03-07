@@ -66,9 +66,18 @@ int main(){
 
 
 //OUTPUT
+//Test Case #1
 //First sorted list: 
 //10 15 17 20 
 //Second sorted list: 
 //5 9 13 19 
 //Final sorted list: 
 //5 9 10 13 15 17 19 20
+
+//Test Case #1
+//First sorted list: 
+//5 10 15 
+//Second sorted list: 
+//2 3 20 
+//Final sorted list: 
+//2 3 5 10 15 20
