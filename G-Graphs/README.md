@@ -89,6 +89,17 @@ bool bipartiteBfs(int src, vector<int> adj[], int color[]) {
 ```
 ---
 
+### Input & Output:
+
+***1.***
+
+![bipartite1](https://user-images.githubusercontent.com/77873383/157034893-7bff7c34-665e-4600-a10c-b50fa355931c.jpg)
+
+***2.***
+
+![bipartite2](https://user-images.githubusercontent.com/77873383/157035024-9cd7dcdb-6ff4-405b-b75d-aa90f1b40b7c.jpg)
+
+
 
 
       
