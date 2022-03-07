@@ -97,6 +97,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "officSatyam",
+      "name": "SATYAM KUMAR",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100135781?v=4",
+      "profile": "https://github.com/officSatyam",
+      "contributions": [
+        "code",
+        "example"
+      ]
     }
   ],
   "contributorsPerLine": 7,
