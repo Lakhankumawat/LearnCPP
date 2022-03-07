@@ -22,6 +22,11 @@ void reverseQueueWithoutRecursion(queue<int> q) // Passing queue by value as we 
         cout << q.front() << " ";
         q.pop();
     }
+
+    /*
+    Time Complexity : O(n)
+    Space Complexity : O(n)
+    */
 }
 // Reverse a queue using Recursion
 void reverseQueueWithRecursion(queue<int> &q) // Passing  a Queue by reference
@@ -36,6 +41,10 @@ void reverseQueueWithRecursion(queue<int> &q) // Passing  a Queue by reference
     q.pop();
     reverseQueueWithRecursion(q);
     q.push(data);
+    /*
+    Time Complexity : O(n)
+    Space Complexity : O(n) (As recursion uses stack concept)
+    */
 }
 int main()
 {
