@@ -109,18 +109,20 @@ Fond of designing README this section will be helpful to you
 
 
 ## Project Maintainers ❤️ 
+<br>
+ <table>
+  <tr>
+    <td align="center"><a href="http://lakhankumawat.me/"><img src="https://avatars.githubusercontent.com/u/55774240?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LakhanKumawat ᵖ⁺</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Lakhankumawat" title="Code">💻</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3ALakhankumawat" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-Lakhankumawat" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://n4i9kita.github.io/"><img src="https://avatars.githubusercontent.com/u/60391776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nikita Sharma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=n4i9kita" title="Code">💻</a> <a href="https://github.com/Lakhankumawat/LearnCPP/pulls?q=is%3Apr+reviewed-by%3An4i9kita" title="Reviewed Pull Requests">👀 🚧</a></td>
+   <td align="center"><a href="https://github.com/miraj0507"><img src="https://avatars.githubusercontent.com/u/62544210?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SK MIRAJ</b></sub></a><br />💻 👀 🚧 </td>
+      <td align="center"><a href="https://github.com/iamgunjan"><img src="https://avatars.githubusercontent.com/u/53567221?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gunjan</b></sub></a><br />💻 👀 🚧 </td>
+      <td align="center"><a href="https://github.com/siddhi-244"><img src="https://avatars.githubusercontent.com/u/69195262?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhi Bhanushali</b></sub></a><br />💻 👀 🚧 </td>
+    <td align="center"><a href="https://github.com/Poojaamangal"><img src="https://avatars.githubusercontent.com/u/91134877?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pooja Mangal</b></sub></a><br />👀</td>
+  </tr>
+</table>
 
- Section Coming Soon ...
- 
-## Happy Coding !!
-
-<br><br><hr>
-  <h6 align="center">© LearnCPP 2022 <br>
-  All Rights Reserved</h6>
-
-<p align="center">
-Developed with ❤️ in India 🇮🇳 
-</p>
+<br>
+<br>
 
 ## Contributors ✨
 
@@ -157,4 +159,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 
+## Happy Coding !!
 
+<br><br><hr>
+  <h6 align="center">© LearnCPP 2022 <br>
+  All Rights Reserved</h6>
+
+<p align="center">
+Developed with ❤️ in India 🇮🇳 
+</p>
