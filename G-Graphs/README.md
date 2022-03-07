@@ -1,6 +1,6 @@
 # Bipartite Graph
 
-A graph Can be said bipartite the graph can be **coloured using 2 colours only such a way that no 2 adjacent vertex will be of same colour**.
+A graph Can be said bipartite when  the graph can be **coloured using 2 colours only such a way that no 2 adjacent vertex will be of same colour**.
 
 ---
 ![Bipartite Graph](https://i0.wp.com/algorithms.tutorialhorizon.com/files/2019/09/Even-and-odd-cycles-Bipartite-Graph-1.png?resize=563%2C264)
