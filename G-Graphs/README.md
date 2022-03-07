@@ -6,7 +6,7 @@ A graph Can be said bipartite the graph can be **coloured using 2 colours only s
 ![Bipartite Graph](https://i0.wp.com/algorithms.tutorialhorizon.com/files/2019/09/Even-and-odd-cycles-Bipartite-Graph-1.png?resize=563%2C264)
 ---
 
->  **APPROACH::** <br>
+##   **APPROACH::** <br>
 It is possible to test whether a graph is bipartite or not using a BFS Algorithm
 There are 2 ways to check for a bipartite graph:
 *  A graph is a bipartite graph if and only if it is colorable by 2 colors only.
@@ -36,7 +36,7 @@ If a graph contains an odd, we cannot divide the graph such that every adjacent 
 ***P.S.:***  If the Graph is not have odd length cycle it's Biparite for sure.
 
 ---
-### Complexity Analysis:
+## Complexity Analysis:
  >***Time Comlexity :*** O(N+E)
  <br>//N=number of nodes and E=no. of edges.
 
@@ -45,7 +45,7 @@ If a graph contains an odd, we cannot divide the graph such that every adjacent 
 
 ---
 
-### Code Analysis
+## Code Analysis
 
 ```cpp
 //Main function used to check bipartite graph
@@ -89,7 +89,7 @@ bool bipartiteBfs(int src, vector<int> adj[], int color[]) {
 ```
 ---
 
-### Input & Output:
+## Input & Output:
 
 ***1.***
 
