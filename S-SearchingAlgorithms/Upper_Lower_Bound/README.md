@@ -20,7 +20,3 @@ If an element is not present in a SORTED array, Lower Bound of the element will 
 •	Else Update endIndex as mid.
 •	Repeat the above steps until startIndex is less than endIndex or until the difference of endIndex and startIndex is greater than 1.
 •	After all the above steps the startIndex is the upper_bound of K in the given array.
-
-
-![Screenshot 1](https://drive.google.com/file/d/1RjEssnzYiNjDFbnP1kqPXc5kDQaY4nPr/view?usp=sharing)
-![Screenshot 2](https://drive.google.com/file/d/19qh8T74lvgHg86EQkSyOYSPgn1FPXUrf/view?usp=sharing)
