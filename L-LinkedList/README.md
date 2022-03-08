@@ -1,4 +1,4 @@
-#  Merge two sorted linked lists
+#  [Merge two sorted linked lists](https://github.com/nirUpma52/LearnCPP/blob/main/L-LinkedList/Merge%20two%20sorted%20linked%20lists)
 ## Function that takes two lists, each of which is sorted in increasing order, and merges the two together into one list which is in increasing order. SortedMerge() should return the new list. The new list should be made by splicing together the nodes of the first two lists.
 
 ### To Merge two sorted linked lists , we need to do following steps.
