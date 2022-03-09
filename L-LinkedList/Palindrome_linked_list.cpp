@@ -1,3 +1,6 @@
+/* Given a linked list, check weather the linked list is palindrome or not
+*/
+
 #include<iostream>
 #include<stack>
 using namespace std;
