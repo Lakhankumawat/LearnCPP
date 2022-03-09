@@ -32,3 +32,23 @@ Output : 3.14p
 Input : str = “xpix” 
 Output : x3.14x
 ```
+
+# [Towe-of-Hanoi]
+
+Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules: 
+
+1->Only one disk can be moved at a time.
+2->Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.
+3->No disk may be placed on top of a smaller disk.
+
+##Examples:
+
+Input : No. of disks=3
+output  :Disk 1 is moved from A to C  , Disk 2 is moved from A to B  , Disk 1 is moved from C to B  , Disk 3 is moved from A to C  , Disk 1 is moved 
+from B to A  , Disk 2 is moved from B to C  , Disk 1 is moved from A to C 
+
+
+Input : No. of disks=5
+Output:
+Disk 1 is moved from A to C  , Disk 2 is moved from A to B  , Disk 1 is moved from C to B  , Disk 3 is moved from A to C  , Disk 1 is moved 
+from B to A  , Disk 2 is moved from B to C  , Disk 1 is moved from A to C  , Disk 4 is moved from A to B  , Disk 1 is moved from C to B  , Disk 2 is moved from C to A  , Disk 1 is moved from B to A  , Disk 3 is moved from C to B  , Disk 1 is moved from A to C  , Disk 2 is moved from A to B  , Disk 1 is moved from C to B  , Disk 5 is moved from A to C  , Disk 1 is moved from B to A  , Disk 2 is moved from B to C  , Disk 1 is moved from A to C  , Disk 3 is moved from B to A  , Disk 1 is moved from C to B  , Disk 2 is moved from C to A  , Disk 1 is moved from B to A  , Disk 4 is moved from B to C  , Disk 1 is moved from A to C  , Disk 2 is moved from A to B  , Disk 1 is moved from C to B  , Disk 3 is moved from A to C  , Disk 1 is moved from B to A  , Disk 2 is moved from B to C  , Disk 1 is moved from A to C 
