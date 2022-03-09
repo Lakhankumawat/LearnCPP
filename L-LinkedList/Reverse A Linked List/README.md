@@ -10,5 +10,6 @@
 1.Time Complexity: O(n) 
 2.Space Complexity: O(1)
 
-
+## Image for Reference
+![image](https://user-images.githubusercontent.com/74498344/157373109-47ee044b-3c6b-4634-8aa7-03af083adb93.png)
 
