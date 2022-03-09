@@ -1,5 +1,11 @@
 ## Morris Traversal
+Using Morris Traversal, we can traverse the tree without using stack and recursion. The idea of Morris Traversal is based on Threaded Binary Tree. In this traversal, we first create links to Inorder successor and print the data using these links, and finally revert the changes to restore original tree. 
+
 The Morris algorithm for inorder traversal allows you to traverse a tree with O(n) time and O(1) space complexity. But it requires changing the tree at runtime.
+## Time Complexity:
+We observe that every edge of the tree is traversed at most 3 times. The same number of extra edges, as in the input tree, is removed and created. Thus, the total time complexity of the above program is O(n).
+## Space complexity 
+O(1) 
 
 ## algorithm
 Initialize a class Node which contains variables and pointers related to a node.
