@@ -1,12 +1,14 @@
-# Equal Sum Partition Problem
-
-- [Problem Statement](#problem-statement)
+# Contents
+- [Problem Statement 1](#problem-statement-1)
     - [Examples](#examples)
-- [Explanation](#explanation)
-- [Complexity](#complexity)
+    - [Explanation](#explanation)
+    - [Complexity](#complexity)
+- [Problem Statement 2](#problem-statement-2)
+    - [Explanations](#explanations)
+    - [Complexities](#complexities)
 
-
-# Problem Statement
+# Equal Sum Partition Problem
+# Problem Statement 1
 
 Given an array you have to output true or false depending on whether the array can be divided into two subsets such that the sum of both the subsets is equal. 
 
@@ -87,3 +89,32 @@ t[i][j] = true if a subset of {arr[0], arr[1], ..arr[j-1]} has sum equal to i, o
 Time Complexity: O(sum*n) 
 Auxiliary Space: O(sum*n) 
 ```
+
+
+
+# Problem Statement 2:
+```
+You will be given two strings. 
+You have to find the number of times the second string occurs in the first string, be it continuous or discontinuous.
+Example 1::
+Input : String A: abcde
+String B: abc
+Output: 1
+
+Example 2::
+Input : String A: abcaeb
+String B: ab
+Output: 3
+
+```
+
+# Explanations
+The fundamental idea to solve this problem is to process all characters of both the strings one by one starting from from left to the right side
+If last characters of both strings are same, either consider it or ignore the last character of the first string.
+If last characters of both strings are different then ignore last character of the first string.
+For this, we use dynamic programming meethod and fill up the dp matrix by bottom-up approach. 
+# Complexities
+
+Time Complexity: O(m*n)
+
+Space Complexity: O(m*n)
