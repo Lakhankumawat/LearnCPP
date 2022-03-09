@@ -11,5 +11,5 @@
 2.Space Complexity: O(1)
 
 ## Image for Reference
-![image](https://user-images.githubusercontent.com/74498344/157373109-47ee044b-3c6b-4634-8aa7-03af083adb93.png)
+![image](https://user-images.githubusercontent.com/74498344/157373186-14c6049b-aee4-44af-8d42-50d413cc77f1.png)
 
