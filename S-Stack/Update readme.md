@@ -1,6 +1,6 @@
 # STACK :
 1. A linear-data structure that follows LIFO (Last In First Out) principle.
-2. It can be implemented using Array or Linked List.
+2. It can be implemented by using Array or Linked List.
 
 
 ## Static implementation of Stack :
@@ -11,42 +11,25 @@
 
 
 ### Algorithm:
-1. PUSH
-Step 1: Start
+1. PUSH:
+- First it will check whether the stack is full or not , by comparing top with (MAX-1). If the stack is 
+full then print "Stack is full." and then we can't push more values in that stack.
+- If the stack is not full then we will increment top by 1 and set stk[top] = num which will push the value in stack.
 
-Step 2: Declare  stk[MAX];    //Maximum size of Stack 
-
-Step 3: Check if the stack is full or not by comparing top with (MAX-1)
-		If the stack is full, Then print "Stack is full." and cannot be pushed with another element 
-
-Step 4: Else, the stack is not full
-		Increment top by 1 and Set, stk[top] = num
-		which pushes the element num into the address pointed by top.
-		// The element num is stored in stk[top]
-
-Step 5: Stop
-
-2. POP
-Step 1: Start
-
-Step 2: Declare  stk[MAX]
-
-Step 3: Push the elements into the stack 
-
-Step 4: Check if the stack is empty or not by comparing top with base of array i.e 0
-		If top is less than 0, then stack is empty, print "Stack is empty"
-                                
-Step 5: Else, If top is greater than zero the stack is not empty, then store the value pointed by top in a variable num = stk[top] and decrement top by 1. The popped element is num.
-
+2. POP:
+- First it will check whether if the stack is empty or not by comparing top with -1.
+If top is equal to -1 then stack is empty and it'll print "Stack is empty
+- If top is not equal -1 then it'll store the value pointed by top in a variable num = stk[top] 
+and decrement top by 1 then num will popped from the stack.
         
 #### Properties:
 Time Complexity: O(N)\
 Space Complexity: O(N)
 
 ##### Advantage:
-The advantage of using an array implementation for a stack is that it is more efficient in terms of time than a linked list implementation. This is because there is none of the work associated with claiming new store as the size of the stack increases and garbage collecting it as it reduces.
+It is more time efficient than Dynamic Implementation.
 
 ###### Disadvantage:
-In array it take lots of effort to add new element or remove an element . In stack we can easily add or remove elements from stack . Because of dynamic memory allocation if we not use all memory space then there will be wastage of memory space .
+In this static implementation , lots of effort are there to add or remove the value . 
 
-https://media.geeksforgeeks.org/wp-content/uploads/20210716162942/stack-660x345.png
+![This is an image](https://media.geeksforgeeks.org/wp-content/uploads/20210716162942/stack-660x345.png)
