@@ -1,7 +1,8 @@
 
 
 //------------------------------------PROBLEM :String Replace PI using Recursion ----------------------------------
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 #define ll long long int
 #define pb push_back
@@ -18,29 +19,23 @@ typedef vector<vl> vvl;
 
 
 //character array and index
-void addPi(char s[],int i){
-if(s[i]=='\0' and s[i+1]=='\0'){
-    return;
-}
-if(s[i]=='p' and s[i+1]=='i'){
-    int j=i+2;
-    while(s[j]!='\0')j++;
-
-    while(j>=i+2){
-        s[j+2]=s[j];
-        j--;
+void addPi(char s[]){
+    //Base Case
+    if(s[0]=='\0'){
+        return ;
     }
-    s[i]='3';
-    s[i+1]='.';
-    s[i+2]='1';
-    s[i+3]='4';
-
-    addPi(s,i+4);
-}else{
-    //no p and corresponding 'i'
-    addPi(s,i+1);
-}
-
+    if(s[0]=='p'&&s[1]=='i'){
+        s[0]='3';
+        s[1]='.';
+        //To update the size 
+        for(int i=strlen(s)+2;i>1;i--){
+            s[i]=s[i-2];
+        }
+        s[2]='1';
+        s[3]='4';
+    }
+    //Recursive Call
+    addPi(s+1);
 }
 
 
@@ -52,7 +47,7 @@ cout.tie(nullptr);
 
 char arr[10000];
 cin>>arr;
-addPi(arr,0);
+addPi(arr);
 
 cout<<arr;
 
