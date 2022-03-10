@@ -14,3 +14,20 @@ Applications of stack :
 3. To reverse a word or a string
 4. _Call stack_ : To store list of functions that are either executing or waiting to be executed during runtime. ( stored in stack in memory)
 5. Practical application : (<-)Back button present in a browser pushes the URLs of the visited sites on a stack.
+
+# Parenthesis Matching
+
+* If the current character is a starting bracket ('(' or '{' or '[') then push it to stack.
+* If the current character is a closing bracket (')' or '}' or ']') then pop from stack and if the popped character is the        matching starting bracket then fine else brackets are not balanced.
+* After complete traversal, if there is some starting bracket left in stack then “not balanced”
+
+```
+
+## Example
+Input: expr= {()}[]
+Output: Balanced
+
+Input: expr= {()}[
+Output: Not Balanced
+
+```
