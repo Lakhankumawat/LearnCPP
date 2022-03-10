@@ -39,11 +39,13 @@ bool isPalindrome(node* temp_head) {
         }
         fast = temp_head;
         stack<int> s;   //creating a stack
+        //Pushing all the elements after the middle node into the stack
         while(slow){
             s.push(slow->data);
             slow = slow->next;
         }
-        int c = s.size();
+        int c = s.size();   //Size of the stack
+        //Comparing the elements 
         while(c--){
             if(fast->data != s.top())    return false;
             s.pop();
