@@ -1,6 +1,8 @@
 # Reversing-of-array.cpp
 reverse1->reverse the array with the help of auxilliary array in  time complexity->O(n)  and space complexity--> O(n)
 reverse2->reverse the array with the help of two pointers high and low and swapping the index of high with index of low in array
+
+
 example1-->
 input:    1 2 3 4 5
 output:   5 4 3 2 1
