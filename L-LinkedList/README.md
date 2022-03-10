@@ -1,34 +1,25 @@
 
----------------------Problem description----------------------
+Insert a node at nth position in the linked list
+---
+To insert a node at nth position, we need to follow these steps-
+* Create a new node
+* Iterate to the previous of the nth node
+* Set newnode's ‘next’ pointer to the ‘next’ pointer of the previous of the nth node
+* Set previous node's next to the new node
+* Return the head pointer
 
-Given the head of the linkd list, insert a new node at nth position in the linked list.
-If n is greater than the number of nodes in the linked list the print the message "Can not insert! Less than n nodes are present".
+Time Complexity
+------------------------
+* Insertion at head node - O(1).
+* Insertion at last node - O(n).
+* Insertion in middle - O(n). 
 
-Input format-
-        First line will contain no_of_node (number of nodes in the linked list)
-        Then n lines will contain values of linked list
-        Then value of node to be inserted and position
-
-Example test cases:
-    1>
-    Input:
-       Line 1- 6
-       Line 2- 1, 2, 3, 4, 5, 6,
-       Line 3- 33, 4
-
-    Output: 1 2 3 33 4 5 6
-
-
-Examle-1
-        Given number of nodes 6, then create a linked list with 5 nodes 
-        Let the linked list created is 1->2->3->4->5->6->NULL
-        Now as value of n(position where the node will be inserted) and value is given
-        Insert the node at given position
-        Let n is given as 4 and val is given as 33
-        Then the given linked list becomes 1->2->3->33->4->5->6->NULL
-        Hence the node is inserted at given position successfully.
+Space Complexity
+-----------
+* Space complexity: O(1).
 
 
+Image to show the insertion
+---
 
-        If the n(position of insertion) is greater than the number of nodes in the linked list,
-        then program will display the message "Can not insert! Less than n nodes are present" and in next line Linked list will be displayed.
+![insertion-in-singly-linked-list-at-beginning](https://user-images.githubusercontent.com/86103131/157711281-4a6a00be-1a58-4fca-af71-e5b5a1a31e89.png)
