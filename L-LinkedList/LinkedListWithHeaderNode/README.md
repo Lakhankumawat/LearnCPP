@@ -6,7 +6,7 @@
 
 # Linked List With Header Node
 
-- Header linked list is linked list which have a header node at the beginning of the list and trhe list start from the second node .
+- Header linked list is linked list which have a header node at the beginning of the list and the list start from the second node .
 - Header node can be used to store data like total number of nodes in the linkedlist or max/min element in the linked list or can be left empty to use in future for inserting some useful information about linked list.
 
 
@@ -19,9 +19,9 @@
   O(n) ,where n is the number of node
 - For addatend()
   O(n) ,where n is the number of node
-- For addbefore
+- For addbefore()
   O(1) ,constant
-- For addatpos
+- For addatpos()
   O(1) ,constant
 - For del()
   O(1) ,constant
@@ -36,4 +36,4 @@
 
 ### Disadvantages
 
-- Extra memory required to store the header node
+- Extra memory required for the header node .
