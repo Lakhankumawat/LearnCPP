@@ -3,7 +3,6 @@ using namespace std;
 
 // ref: https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
 
-
 // structure of node
 class node
 {

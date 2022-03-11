@@ -26,7 +26,7 @@
   O(n^2) ,where n is the number of node
 ### Advantages 
 
-- Can store some useful information about Binary tree.
+- Can store some useful information about Binary tree like left diameter and right diameter.
 - It make the program simple to understand and we can even have a clear vision of how we are traversing on binary tree.
 - We can even learn how height is different from diameter also how to compare diameter.
 
