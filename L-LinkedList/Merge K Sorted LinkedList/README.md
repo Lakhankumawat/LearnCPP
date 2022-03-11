@@ -11,3 +11,5 @@
 
 ## Space Complexity: O(n*k)
 - Because recursion is used in merge() and to merge the final 2 linked lists of size (n\*k)/2, n\*k recursive calls will be made.
+
+You can also see different approches [here](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/).
