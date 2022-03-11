@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -152,6 +152,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://allcontributors.org"><img src="https://avatars.githubusercontent.com/u/46410174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=all-contributors" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/gaurangSaraswat-07"><img src="https://avatars.githubusercontent.com/u/56469208?v=4?s=100" width="100px;" alt=""/><br /><sub><b>gaurangSaraswat-07</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=gaurangSaraswat-07" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/anurag-kr-singh/"><img src="https://avatars.githubusercontent.com/u/86841935?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anurag Kumar Singh</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Anuragkr07" title="Code">💻</a></td>
   </tr>
 </table>
 
