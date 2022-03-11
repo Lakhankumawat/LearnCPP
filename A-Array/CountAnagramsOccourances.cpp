@@ -57,7 +57,7 @@ vector<int> findAnagrams(string s, string p)
 int main()
 {
     string s = "abscdfgcabkkbac";
-    string p = "abc";
+    string p = "ab";
     vector<int> v = findAnagrams(s, p);
     for (int i : v)
         cout << i << " ";
