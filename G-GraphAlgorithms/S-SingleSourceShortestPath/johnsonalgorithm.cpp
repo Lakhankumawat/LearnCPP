@@ -1,5 +1,4 @@
 #include<iostream>
-#include<bits/stdc++.h>
 #define INF 9999
 using namespace std;
 int min(int a, int b);
