@@ -33,7 +33,7 @@ Input : str = “xpix”
 Output : x3.14x
 ```
 
-# [Tower of Hanoi](R-Recursion/TowerofHanoi.cpp)
+# [Tower of Hanoi](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/TowerofHanoi.cpp)
 
 The Tower of Hanoi is a mathematical game or puzzle consisting of three rods and a number of disks of various diameters, <br>
 which can slide onto any rod. The puzzle begins with the disks stacked on one rod in order of decreasing size, <br>
@@ -44,6 +44,8 @@ Three simple rules are followed:
 2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.<br>
  In other words, a disk can only be moved if it is the uppermost disk on a stack.
 3. No larger disk may be placed on top of a smaller disk.
+
+![Tower-of-Hanoi](https://4.bp.blogspot.com/-MiMl_ZKCkKs/Vnk3SyI2D5I/AAAAAAAAAy0/iqw84ovEbGM/s1600/Tower-Of-Hanoi-2-disk.png)
 ## Examples: 
 ```
 Input : 2
@@ -64,4 +66,20 @@ Shift 'n-1' disks from 'A' to 'B'.
 Shift last disk from 'A' to 'C'.
 Shift 'n-1' disks from 'B' to 'C'.
 ```
+
+### Properties
+
+- Time Complexity : O(n)
+- Space Complexity : O(n)
+
+### Advantages
+
+- The Tower of Hanoi puzzle is sensitive to prefrontal damage and dysfunction. The puzzle’s difficulty level can easily be <br>
+ increased or decreased with additional disks or pegs respectively
+
+### Disadvantage
+
+- The Tower of Hanoi cannot be used standalone to understand and assess executive functions of the brain. <br>
+It can be difficult to employ individuals unable to cooperate with the process.
+
 
