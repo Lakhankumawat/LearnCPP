@@ -59,7 +59,9 @@ int findMinInsertionsLCS(string str, int n)
 // Driver code
 int main()
 {
-	string str = "geeks";
+	string str;
+	cout<<"Enter string"<<endl;
+	cin>>str;
 	cout << findMinInsertionsLCS(str, str.length());
 	return 0;
 }
