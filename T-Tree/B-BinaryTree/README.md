@@ -15,11 +15,17 @@
 
 
 - We are using Binary-Tree given below:
+
               15 
-           /      \ 
-         13       17 
-        /  \     /   \ 
-      12    14  16    21  
+              
+           /      \
+           
+         13       17
+         
+        /  \     /   \
+        
+      12    14  16    21
+      
 
 
 ## Number of leaf nodes in the binary tree
