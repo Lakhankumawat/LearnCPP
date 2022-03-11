@@ -31,6 +31,7 @@ int main()
     set 2 ={4,5}
     cartesian product = {{1,4},{1,5},{2,4}{2,5},{3,4},{3,5}} */
     
+    cout<<"The cartesian product of two set is : "<<endl;
     cout<<"{";
     for(i=0;i<n;i++)
     {
