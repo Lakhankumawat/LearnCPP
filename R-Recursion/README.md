@@ -46,7 +46,7 @@ Three simple rules are followed:
 3. No larger disk may be placed on top of a smaller disk.
 
 ![Tower-of-Hanoi](https://4.bp.blogspot.com/-MiMl_ZKCkKs/Vnk3SyI2D5I/AAAAAAAAAy0/iqw84ovEbGM/s1600/Tower-Of-Hanoi-2-disk.png)
-## Example: 
+## Example
 ```
 Input : 2
 Output : Disk 1 moved from A to B
@@ -65,6 +65,24 @@ The pattern here is :
 Shift 'n-1' disks from 'A' to 'B'.
 Shift last disk from 'A' to 'C'.
 Shift 'n-1' disks from 'B' to 'C'.
+```
+
+### Algorithm
+
+```
+START
+Procedure Hanoi(disk, source, dest, aux)
+
+   IF disk == 1, THEN
+      move disk from source to dest             
+   ELSE
+      Hanoi(disk - 1, source, aux, dest)     // Step 1
+      move disk from source to dest          // Step 2
+      Hanoi(disk - 1, aux, dest, source)     // Step 3
+   END IF
+   
+END Procedure
+STOP
 ```
 
 ### Properties
