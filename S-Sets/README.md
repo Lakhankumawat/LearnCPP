@@ -5,7 +5,7 @@
 Ordered Pair: It is when order of the two elements matter i.e. one element comes befor the other 
 Eg: (4,5) != (5,4)
 
-![image](https://media.geeksforgeeks.org/wp-content/uploads/20201015194740/CartesianProduct.png/to/img.png)
+![image](https://user-images.githubusercontent.com/91279248/158008983-9d811305-29a0-4bba-b70b-8400163a40d6.png)
 
 If A and B are two non-empty sets, then their Cartesian product A × B is the set of all ordered pair of elements from A and B.
 
