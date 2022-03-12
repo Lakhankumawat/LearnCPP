@@ -10,7 +10,7 @@
   - [Problems](#problems) 
   
 
-# Strong_Number :
+# Strong Number :
 Also known as Krishnamurti Number, is a number which was discovered by Dr. Jiddu Krishnamurty and Dr. Peterson. The uniqueness of the number is that the sum of the factorial of each digits is equal to the original number.
 
 ### example
