@@ -19,7 +19,7 @@ jobs:
           days_until_warning: 5
           days_until_unassign: 7
           stale_assignment_label: Stale
-          assigned_comment: "This issue [has been assigned]({{ comment.html_url }}) to {{ comment.user.login }}!\nIt will become unassigned if it is nott closed within {{ totalDays }} days. A maintainer can also add the **{{ inputs.pin_label }}** label to prevent it from being unassigned."
+          assigned_comment: "This issue [has been assigned]({{ comment.html_url }}) to {{ comment.user.login }}!\nIt will become unassigned if it is not closed within {{ totalDays }} days. A maintainer can also add the **{{ inputs.pin_label }}** label to prevent it from being unassigned."
           fail_comment: "This issue is already assigned to a contributor."
 
       - name: Message failure

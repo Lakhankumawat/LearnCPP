@@ -72,6 +72,7 @@ end BubbleSort
 
 ---
 
+
 ## Insertion Sort
 
 ---
@@ -83,3 +84,55 @@ end BubbleSort
 ## Quick Sort
 
 ---
+
+
+## Counting Sort
+
+- Counting sort is a special sorting algorithm that sorts the multiple elements without performing any comparison. It counts the number of occurences of the various elements .This counting can be stored in a temporary array in which elements are marked as indexes and count of their occurences stored as values of the array .
+<!-- image to help better explain the concept -->
+![counting-sort](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
+<!-- citation : [Here](https://www.programiz.com/dsa/counting-sort)  -->
+
+
+### Algorithm
+
+```
+
+begin countSort(arr, n)
+    declare a count array of max range 256.
+    mark all elements of the count array as 0.
+
+    Run a for loop from i:=0 to i:=n-1 :
+      compute the count of every element present in the array and store it at ith position of the count array.
+    
+    Run a for loop from i=1 to 256 :
+      Convert the count array to prefix sum array by cummulative addding of previous elements.
+
+    declare an output array of size n for storing the sorted sequence.
+
+    Run a for loop from j:=n-1 to 0 :
+      Insert the elments in the output using the count and original array, and Decrease  the count of each element restored by 1.
+
+    Finally run a loop from i:=0 to i:=n-1 :
+      Copy the values of output array into the original array.
+
+  [end of program]
+```
+
+### Properties
+
+- Time Complexity :
+  - Worst case time	: O(n)
+  - Best case time : O(n)
+  - Average case time : O(n)
+- Auxillary Space : O(n)
+- In-place : No
+- Stable : Yes
+
+### Advantages
+
+- Linear time sorting technique, making it faster than comparison based algorithms.
+
+### Disadvantage
+
+- Works for restricted inputs only for a certain range and takes extra space.
