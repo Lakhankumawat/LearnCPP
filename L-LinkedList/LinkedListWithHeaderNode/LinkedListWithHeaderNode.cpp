@@ -21,6 +21,7 @@ void addatpos(Node*head,int data,int pos);
 void del(Node*head,int data);
 void reverse(Node*head);
 
+//--------main-------//
 int main(){
 
     int choice ,data,node_data,pos;
@@ -93,11 +94,14 @@ void create_list(Node* head){
     }
 }
 
+//list diasplay
 void display(Node*node){
+    //if list is empty
     if(node->link==NULL){
         cout<<"list is empty\n";
         return;
     }
+    //printing all element
     while(node->link!=NULL){
         node=node->link;
         cout<<node->info<<"\t";
@@ -116,7 +120,7 @@ void addatend(Node*head,int data){  //adding node at the end
     return;
 }
 
-void addbefore(Node* head,int data, int node_data){
+void addbefore(Node* head,int data, int node_data){  //adding node before a specific node
     Node*p=head;
     while(p->link!=NULL){
         if(p->link->info==node_data){
@@ -128,14 +132,14 @@ void addbefore(Node* head,int data, int node_data){
         }
         p =p->link;
     }
-    cout<<"element "<<node_data<<" is not present in the list"<<endl;
+    cout<<"element "<<node_data<<" is not present in the list"<<endl; //if element is not present in the list
 }   
 
-void addatpos(Node*head,int data,int pos){
+void addatpos(Node*head,int data,int pos){  //adding node at a given postion
      Node*p=head;
     for(int i=1;i<pos;i++){
         p =p->link;
-        if(p==NULL){
+        if(p==NULL){ //if list get ended but position is not reached
             cout<<"List have less elements than "<<pos<<endl;
             return;
         }
@@ -146,21 +150,21 @@ void addatpos(Node*head,int data,int pos){
     p->link=new_node;
 }
 
-void del(Node*head,int data){
+void del(Node*head,int data){ //deleting node of given data
     Node*p=head,*del_node;
     while(p->link!=NULL){
         if(p->link->info==data){
         del_node=p->link;
         p->link=del_node->link;
-        free(del_node);
+        free(del_node); //free the memory
         return;
         }
         p =p->link;
     }
-    cout<<"element "<<data<<" is not present in the list"<<endl;
+    cout<<"element "<<data<<" is not present in the list"<<endl; //if element is not present in the list
 } 
 
-void reverse(Node*head){
+void reverse(Node*head){ // reversing the list
     Node*prev,*ptr,*next;
     prev=NULL;
     ptr=head->link;
@@ -170,5 +174,5 @@ void reverse(Node*head){
         prev=ptr;
         ptr=next;
     }
-    head->link=prev;
+    head->link=prev; // make the header node to point the first node
 }

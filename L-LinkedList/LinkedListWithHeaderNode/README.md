@@ -1,7 +1,7 @@
 # Table of content
 - [Linked List With Header Node](#Linked-List-With-Header-Node)
     - [Implementation](LinkedListWithHeaderNode.cpp)
-    - [Time Complexity](#Complexity)
+    - [Time Complexity](#Time-Complexity)
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
 
@@ -11,7 +11,7 @@
 - Header node can be used to store data like total number of nodes in the linkedlist or max/min element in the linked list or can be left empty to use in future for inserting some useful information about linked list.
 
 
-![Linked-List-With-Header-Node](https://teachics.org/data-structures/header-linked-list/)
+![Linked-List-With-Header-Node](https://teachics.org/wp-content/uploads/2021/09/header-linked0list-2.png)
 
 ### Time Complexity
 - For create_list()
@@ -35,6 +35,6 @@
 - It make the program simple and faster as the list is never empty ,header node is always present . Therefore we can avoid cases for insertion or deletion at beginning.
 - head or start will always point to header node what irrespective of the first node ,so no need to repoint the start to first node.
 
-### Disadvantages
+### Disadvantage
 
 - Extra memory required for the header node .
