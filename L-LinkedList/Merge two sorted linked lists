@@ -1,83 +1,138 @@
 /* C++ program to merge two sorted linked lists */
-#include <iostream>
-#include <new>
-#define SIZE(arr) (sizeof(arr) / sizeof(arr[0]))
+// { Driver Code Starts
+#include<iostream>
 using namespace std;
-struct node {
-   int data;
-   struct node *next;
+
+/* Link list Node */
+struct Node
+{
+    int data;
+    struct Node *next;
+    
+    Node(int x)
+    {
+        data = x;
+        next = NULL;
+    }
 };
-node *createList(int *arr, int n){
-   node *head, *p;
-   p = head = new node;
-   head->data = arr[0];
-   head->next = NULL;
-   for (int i = 1; i < n; ++i) {
-      p->next = new node;
-      p = p->next;
-      p->data = arr[i];
-      p->next = NULL;
-   }
-return head;
-}
-void displayList(node *head){
-   while (head != NULL) {
-      cout << head->data << " ";
-      head = head->next;
-   }
-   cout << endl;
-}
-node *mergeSortedLists(node *head1, node *head2){
-   node *result = NULL;
-   
-   /* Base cases*/
-   if (head1 == NULL) {
-      return head2;
-   }
-   if (head2 == NULL) {
-      return head1;
-   }
-   
-    /* Pick either head1 or head2, and recur */
-   if (head1->data < head2->data) {
-      result = head1;
-      result->next = mergeSortedLists(head1->next, head2);
-   } else {
-      result = head2;
-      result->next = mergeSortedLists(head1, head2->next);
-   }
-   return result;
-}
-int main(){
-   int arr1[] = {10, 15, 17, 20};
-   int arr2[] = {5, 9, 13, 19};
-   node *head1, *head2, *result = NULL;
-   head1 = createList(arr1, SIZE(arr1));
-   head2 = createList(arr2, SIZE(arr1));
-   cout << "First sorted list: " << endl;
-   displayList(head1);
-   cout << "Second sorted list: " << endl;
-   displayList(head2);
-   result = mergeSortedLists(head1, head2);
-   cout << "Final sorted list: " << endl;
-   displayList(result);
-   return 0;
+
+Node* sortedMerge(struct Node* a, struct Node* b);
+
+/* Function to print Nodes in a given linked list */
+void printList(struct Node *n)
+{
+    while (n!=NULL)
+    {
+        cout << n->data << " ";
+        n = n->next;
+    }
+    cout << endl;
 }
 
+/* Driver program to test above function*/
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,m;
+        cin>>n>>m;
 
-//OUTPUT
+        int data;
+        cin>>data;
+        struct Node *head1 = new Node(data);
+        struct Node *tail1 = head1;
+        for (int i = 1; i < n; ++i)
+        {
+            cin>>data;
+            tail1->next = new Node(data);
+            tail1 = tail1->next;
+        }
+
+        cin>>data;
+        struct Node *head2 = new Node(data);
+        struct Node *tail2 = head2;
+        for(int i=1; i<m; i++)
+        {
+            cin>>data;
+            tail2->next = new Node(data);
+            tail2 = tail2->next;
+        }
+
+        Node *head = sortedMerge(head1, head2);
+        printList(head);
+    }
+    return 0;
+}
+// } Driver Code Ends
+
+
+ 
+
+/* Link list Node
+struct Node {
+  int data;
+  struct Node *next;
+  
+  Node(int x) {
+    data = x;
+    next = NULL;
+  }
+};
+*/
+//Function to merge two sorted linked list.
+Node* sortedMerge(Node* head1, Node* head2)  
+{  
+    // code here
+  
+    Node* result = NULL; 
+      
+    /* Base cases */
+    if (head1 == NULL) 
+        return(head2); 
+    else if (head2 == NULL) 
+        return(head1); 
+      
+    /* Pick either a or b, and recur */
+    if (head1->data <= head2->data) 
+    { 
+        result = head1; 
+        result->next = sortedMerge(head1->next, head2); 
+    } 
+    else
+    { 
+        result = head2; 
+        result->next = sortedMerge(head1, head2->next); 
+    } 
+    return(result); 
+
+} 
+
+
 //Test Case #1
-//First sorted list: 
+//Input: 
+//4 4
 //10 15 17 20 
-//Second sorted list: 
 //5 9 13 19 
-//Final sorted list: 
+//Output: 
 //5 9 10 13 15 17 19 20
 
 //Test Case #2
-//First sorted list: 
-//5 10 15 
-//Second sorted list: 
-//2 3 20 
-//Final sorted list: 
-//2 3 5 10 15 20
+//Input: 
+//4 3
+//5 10 15 40 
+//2 3 20
+//Output:
+//2 3 5 10 15 20 40
+
+//Test Case #3
+//Input: 
+//2 2
+//1 1
+//2 4
+//Output:
+//1 1 2 4
+
+
+
