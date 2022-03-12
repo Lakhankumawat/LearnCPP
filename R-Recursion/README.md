@@ -35,50 +35,50 @@ Output : x3.14x
 
 # [Tower of Hanoi](https://github.com/bhumikatewary/LearnCPP/blob/ddd6b1e51cecd18d72f76f303cefe7f341f3092f/R-Recursion/TowerofHanoi.cpp)
 
-The Tower of Hanoi is a mathematical game or puzzle consisting of three rods and a number of disks of various diameters, <br>
-which can slide onto any rod. The puzzle begins with the disks stacked on one rod in order of decreasing size, <br>
-the smallest at the top, thus approximating a conical shape.
+Tower of Hanoi is a mathematical game or puzzle involving three sticks and a number of different discs, <br>
+which can slip on any stick/rod. The paradox begins with discs embedded in the same object in a declining size(descending order), <br>
+the smallest at the top, thus almost showing a conical shape.
 
-Three simple rules are followed:
+Here are three simple rules:
 1. Only one disk can be moved at a time.
-2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.<br>
- In other words, a disk can only be moved if it is the uppermost disk on a stack.
-3. No larger disk may be placed on top of a smaller disk.
+2. Each movement involves taking a disk above one of the stacks and placing it on top of another stack. <br>
+ In other words, the disk can only be moved if it is the highest disk in the stack.
+3. No larger disk can be placed on a smaller disk.
 
 ![Tower-of-Hanoi](https://4.bp.blogspot.com/-MiMl_ZKCkKs/Vnk3SyI2D5I/AAAAAAAAAy0/iqw84ovEbGM/s1600/Tower-Of-Hanoi-2-disk.png)
 ## Example
 ```
 Input : 2
-Output : Disk 1 moved from A to B
-         Disk 2 moved from A to C
-         Disk 1 moved from B to C
+Output : Disk 1 moved from X to Y
+         Disk 2 moved from X to Z
+         Disk 1 moved from Y to Z
          
 Explanation:          
-Take an example for 2 disks :
-Let rod 1 = 'A', rod 2 = 'B', rod 3 = 'C'.
+Taking the example for 2 disks :
+Let rod 1 = 'X', rod 2 = 'Y', rod 3 = 'Z'.
 
-Step 1 : Shift first disk from 'A' to 'B'.
-Step 2 : Shift second disk from 'A' to 'C'.
-Step 3 : Shift first disk from 'B' to 'C'.
+Step 1 : Shift first disk from 'X' to 'Y'.
+Step 2 : Shift second disk from 'X' to 'Z'.
+Step 3 : Shift first disk from 'Y' to 'Z'.
 
 The pattern here is :
-Shift 'n-1' disks from 'A' to 'B'.
-Shift last disk from 'A' to 'C'.
-Shift 'n-1' disks from 'B' to 'C'.
+Shift 'n-1' disks from 'X' to 'Y'.
+Shift last disk (nth) from 'X' to 'Y'.
+Shift 'n-1' disks from 'Y' to 'Z'.
 ```
 
 ### Algorithm
 
 ```
 START
-Procedure Hanoi(disk, source, dest, aux)
+Procedure Hanoi(disk, source, destination, auxillary)
 
    IF disk == 1, THEN
-      move disk from source to dest             
+      move disk from source to destination             
    ELSE
-      Hanoi(disk - 1, source, aux, dest)     // Step 1
-      move disk from source to dest          // Step 2
-      Hanoi(disk - 1, aux, dest, source)     // Step 3
+      Hanoi(disk - 1, source, auxillary, destination)     // Step 1
+      move disk from source to destination                // Step 2
+      Hanoi(disk - 1, auxillary, destination, source)     // Step 3
    END IF
    
 END Procedure
@@ -92,12 +92,11 @@ STOP
 
 ### Advantages
 
-- The Tower of Hanoi puzzle is sensitive to prefrontal damage and dysfunction. The puzzle’s difficulty level can easily be <br>
- increased or decreased with additional disks or pegs respectively
+- The Tower of Hanoi puzzle is sensitive to previous damage and malfunction. The level of complexity can be easily
+ increased or decreased with additional discs.
 
 ### Disadvantage
 
-- The Tower of Hanoi cannot be used standalone to understand and assess executive functions of the brain. <br>
-It can be difficult to employ individuals unable to cooperate with the process.
+The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
 
 
