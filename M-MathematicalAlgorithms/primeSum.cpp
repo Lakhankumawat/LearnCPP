@@ -25,9 +25,9 @@ vector<int>primeSumDivision(int n)
     vector<bool>sieve(n, true);   // create a sieve
 
     sieve[0] = false;      // mark 0 and 1 as false as 0 and 1 are non prime
-    sieve[1] = true;
+    sieve[1] = false;
 
-    for (int i=2; i*i<n; i++)      //start the loop from 2 i.e. the first prime number
+    for (int i=2; i<n; i++)      //start the loop from 2 i.e. the first prime number till n-1.
     {
         if (sieve[i] == true)      // check if the number is found to be prime 
 	  {
@@ -58,5 +58,5 @@ int main()   // driver code
 }
 
 
-//Time Complexity : O(n*log(log(n)))
+//Time Complexity : O(n*log(n))
 //Space Complexity :O(n)
