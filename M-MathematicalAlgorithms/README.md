@@ -1,10 +1,23 @@
 <!-- Table of content -->
 # Table of content
+- [Strong Number/Krishnamurty Number](#Strong-Number)
+  - [What is Strong Number](#what_is_strong_number)
+ 
 - [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
   - [Advantages](#advantages)
   - [Disadvantages](#disadvantage)
-  - [Problems](#problems)
+  - [Problems](#problems) 
+  
+
+# Strong_Number :
+Also known as Krishnamurti Number, is a number which was discovered by Dr. Jiddu Krishnamurty and Dr. Peterson. The uniqueness of the number is that the sum of the factorial of each digits is equal to the original number.
+
+### example
+- 145 , Here factorial of 1 + factorial of 4 (44) + factorial of 5 (120) = 145
+
+
+
 
 # Sieve Of Eratosthenes :
 The sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit. 
