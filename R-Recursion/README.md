@@ -97,6 +97,6 @@ STOP
 
 ### Disadvantage
 
-The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
+- The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
 
 
