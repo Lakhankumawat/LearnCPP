@@ -1,4 +1,11 @@
-Cartesian Product of two Set
+# Cartesian Product of two Set
+
+## Terms Explained:
+
+Ordered Pair: It is when order of the two elements matter i.e. one element comes befor the other 
+Eg: (4,5) != (5,4)
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20201015194740/CartesianProduct.png/to/img.png)
 
 If A and B are two non-empty sets, then their Cartesian product A × B is the set of all ordered pair of elements from A and B.
 
@@ -11,4 +18,21 @@ Example of cartesian product :
     set 2 ={4,5}
     cartesian product = {{1,4},{1,5},{2,4}{2,5},{3,4},{3,5}}
 
-    
+# Properties:
+ 1. It is non-commutative 
+    A × B != B × A
+
+ 2. If A × B = B × A then A = B
+
+ 3. The cardinality of the Cartesian Product:
+    The number of elements in A × B and is equal to the product of cardinality of both sets: |A × B| = |A| * |B|
+
+ 4.  A × B = {∅}, if either A = {∅} or B = {∅}  
+
+ # Pseduo code:
+ 1. Initialize Set A and B
+ 2. for i=0 to n:
+      for j=0 to n:
+        print {A[i],B[j]}
+
+ - **Time Complexity** for finding Cartesian Product is n^2 
