@@ -24,6 +24,6 @@ Space Complexity: O(1) (since no extra space is used.)
 3. Return resultant list
 
 
-https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220303143032/Merge-Two-Sorted-LinkedLists1.jpg
 
-https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
+![Merge-Two-Sorted-LinkedLists1](https://user-images.githubusercontent.com/89499345/158004765-40dca639-6508-44d5-9727-1986e8123902.jpg)
+
