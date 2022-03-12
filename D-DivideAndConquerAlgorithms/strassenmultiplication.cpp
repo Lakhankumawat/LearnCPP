@@ -136,7 +136,8 @@ int main()
 
     // generate random numbers for matrix row and coloumn value
     int randomnumber1, randomnumber2;
-    cout<<endl<<"Enter N of N*N matrix:"<<endl;
+    cout << endl
+         << "Enter N of N*N matrix:" << endl;
     int n;
     int temp;
     cin >> n;

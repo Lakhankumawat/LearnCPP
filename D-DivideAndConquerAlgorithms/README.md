@@ -1,4 +1,4 @@
-#Divide and Conquer Method
+###Divide and Conquer Method
 
 Consider the following matrices A and B:
 
@@ -31,4 +31,6 @@ d * (g - e)
 (a + d) * (e + h)
 (b - d) * (g + h)
 (a - c) * (e + f)
+
+
 
