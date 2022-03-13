@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -162,6 +162,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Izhar03"><img src="https://avatars.githubusercontent.com/u/55507957?v=4?s=100" width="100px;" alt=""/><br /><sub><b>IZHAR AHMAD</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Izhar03" title="Code">💻</a></td>
     <td align="center"><a href="https://sites.google.com/view/priyanshu-saxena/home"><img src="https://avatars.githubusercontent.com/u/53018678?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Priyanshu Saxena</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=PriyanshuSaxena2612" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Mrudula-Kulkarni"><img src="https://avatars.githubusercontent.com/u/58851969?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mrudula-Kulkarni</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Mrudula-Kulkarni" title="Code">💻</a></td>
   </tr>
 </table>
 
