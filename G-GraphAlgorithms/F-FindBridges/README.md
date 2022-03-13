@@ -12,7 +12,7 @@ Following are some example graphs with bridges highlighted with red color.
 <img width="314" alt="Bridge1" src="https://user-images.githubusercontent.com/89836012/156888404-114f8c5c-88d2-42e0-9465-58c7ca83a94a.png">
 
 
-
+**Algorithm**
 
 1)We do DFS traversal of the given graph. 
 
