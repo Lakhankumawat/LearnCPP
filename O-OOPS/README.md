@@ -64,10 +64,24 @@ Function overriding is achieved during runtime. It is a form of runtime polymorp
 
 Function Overloading VS Function Overriding:
 
-1. Inheritance : Overriding of functions occurs when one class is inherited from another class. Overloading can occur without inheritance.
-2. Function Signature : Overloaded functions must differ in function signature ie either number of parameters or type of parameters should differ. In overriding, function signatures must be same.
-3. Scope of functions : Overridden functions are in different scopes; whereas overloaded functions are in same scope.
-4. Behavior of functions : Overriding is needed when derived class function has to do some added or different job than the base class function. Overloading is used to have same name functions which behave differently depending upon parameters passed to them.
+1. Inheritance           : Overriding of functions occurs when one class is inherited from another class. Overloading can occur without inheritance.
 
+3. Function Signature    : Overloaded functions must differ in function signature ie either number of parameters or type of parameters should differ. In overriding, function signatures must be same.
+
+5. Scope of functions    : Overridden functions are in different scopes; whereas overloaded functions are in same scope.
+
+7. Behavior of functions : Overriding is needed when derived class function has to do some added or different job than the base class function. Overloading is used to have same name functions which behave differently depending upon parameters passed to them.
+
+----------------------------------------------------
+
+For more reference you can checkout the example code of function overloading and overriding in the repository.
+
+Websites for reference:-
+
+https://www.geeksforgeeks.org/function-overloading-vs-function-overriding-in-cpp/
+
+https://techvidvan.com/tutorials/function-overloading-and-overriding-in-cpp/
+
+https://www.edureka.co/blog/function-overloading-and-overriding-in-cpp/
 
 
