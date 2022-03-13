@@ -1,10 +1,16 @@
 <!-- Table of content -->
 # Table of content
-- [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
+1. [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
   - [Advantages](#advantages)
   - [Disadvantages](#disadvantage)
   - [Problems](#problems)
+
+2. [Perfect Number](#perfect-number)
+  - [Algorithm](#Algorithm)
+  - [Example](#Example)
+  - [properties](#properties)
+
 
 # Sieve Of Eratosthenes :
 The sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit. 
@@ -56,23 +62,31 @@ It does so by iteratively marking as composite (i.e., not prime) the multiples o
 Solution Link: 
  ```
 
- ### Perfect Number:
+# Perfect Number:
+
  A perfect number is a positive integer that is equal to the sum of its positive divisors, 
 excluding the number itself.
 
-# Example: 
-6 is a positive number that is completely divisible by 1, 2, and 3. 
-We know that the number is also divisible by itself but we will not include it in the addition of divisors. 
-When we add these divisors (1 + 2 + 3 = 6), it gives 6, which is equal to the number that we have chosen.
- So, we say that 6 is a perfect number.
+ ![image](https://user-images.githubusercontent.com/100208233/158046110-e5602331-b5ad-46ef-936d-aa95bab21330.png)
 
-# properties:
---> If 2k -1 is prime for k>1, then 2k-1(2k -1) is a perfect number.
---> A perfect number is called Ore Harmonic number if the harmonic mean of its divisor is an integer.
+ ### Algorithm:
 
-# pseudo code:
 1. Enter the number.
 2. finding the divisors of the number. 
 3. adding the devisors in variable sum.
 4. checking weather a number is a perfect number or not. 
 5. printing the result.
+
+### Example: 
+
+ ![image](https://user-images.githubusercontent.com/100208233/158046167-33dbb048-640a-4911-a9fd-cb8703d999c5.png)
+
+6 is a positive number that is completely divisible by 1, 2, and 3. 
+We know that the number is also divisible by itself but we will not include it in the addition of divisors. 
+When we add these divisors (1 + 2 + 3 = 6), it gives 6, which is equal to the number that we have chosen.
+ So, we say that 6 is a perfect number.
+
+### properties:
+
+--> If 2k -1 is prime for k>1, then 2k-1(2k -1) is a perfect number.
+--> A perfect number is called Ore Harmonic number if the harmonic mean of its divisor is an integer.
