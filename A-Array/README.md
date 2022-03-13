@@ -5,6 +5,10 @@
     - [Dutch National Flag Algorithm](#dutch-national-flag-algorithm)
     - [Properties](#properties)
     - [Sample Output](#sample-output)
+  - [2. Insertion of an element in an Array](#2-insertion-of-an-element-in-an-array)
+    - [Properties](#properties-1)
+  - [3. Traversing an Array](#3-traversing-an-array)
+    - [Properties](#properties-2)
 
 
 ## [1. Sort an Array of 0s, 1s and 2s](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Sort_0_1_2.cpp)
@@ -55,3 +59,40 @@ end sortArray
 
 - For More Reference Please Check Out -> 
 [Geeks For Geeks](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)
+
+## 2. Insertion of an element in an Array
+
+To insert an element in an array at kth position, we follow these steps --
+
+1. Enter the number of elements in an array to be taken.
+2. Enter the values of all its elements.
+3. Get the element value which needs to be inserted.
+4. Get the position value.
+5. Check whether the position value is valid or not.
+6. If it is valid,
+      Shift all the elements from the last index to position index by 1 position to the right.
+      Insert the new element in arr[position]
+7. Otherwise,
+   Invalid Position
+
+### Properties
+* Time Complexity at Worst Case: O(n)
+* Time Complexity at Best Case: O(1)
+* Space Complexity: O(1)
+
+## 3. Traversing an Array
+
+To traverse an array or elements of an array, we follow these steps --
+
+1. Enter the number of elements in an array to be taken.
+2. Enter the values of all its elements.
+3. [Initialization] Set I = LB   (I is Counter Variable)
+4. Repeat Step 5 and Step 6 while I  < = UB
+5. [ processing ] Process the A[I] element
+6. [ Increment the counter ] I = I + 1
+   [ End of the loop]
+7. Exit 
+
+### Properties
+* Time Complexity: O(n)
+* Space Complexity: O(1)
