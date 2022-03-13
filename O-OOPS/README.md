@@ -1,5 +1,5 @@
  
- C++ is an Object Oriented Programming Language in nature and it boasts off various features. In this session we would be discussing how to implement Function Overloading And Function Overriding in C++.
+C++ is an Object Oriented Programming Language in nature and it boasts off various features. In this session we would be discussing how to implement Function Overloading And Function Overriding in C++.
 
 Following Pointers will be covered in this article,
 
@@ -25,7 +25,7 @@ However, if in two or more functions, only return type is different keeping numb
 
 Function overloading is achieved during compile time. It is a form of compile time polymorphism.
 
-Examples of overloaded functions
+- Examples of overloaded functions
 
       int add(int, int);
 
