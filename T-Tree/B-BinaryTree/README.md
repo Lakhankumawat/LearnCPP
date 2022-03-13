@@ -1,8 +1,20 @@
-#**Convert a Binary Tree into its Mirror Tree**[GFG Link : https://www.geeksforgeeks.org/write-an-efficient-c-function-to-convert-a-tree-into-its-mirror-tree/]
+# Convert a Binary Tree into its Mirror Tree
+**[GFG Link : https://www.geeksforgeeks.org/write-an-efficient-c-function-to-convert-a-tree-into-its-mirror-tree/]**
 
-Mirror of a Tree: Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged. 
+- [Problem Statement](#problem-statement)
+    - [Examples](#examples)
+- [Algorithm](#algorithm)
+- [Complexity](#complexity)
+
+# Problem Statement
+
+Given a Binary Tree, convert it into its mirror.
+
+**NOTE** : Mirror of a Tree: Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged. 
 
 ![Screenshot (235)](https://user-images.githubusercontent.com/81473660/157376212-b8ea84cc-0778-4968-bb22-9b1f54a5ea34.png)
+
+# Examples
 
 **EXAMPLE 1**
 
@@ -20,7 +32,7 @@ Mirror of a Tree: Mirror of a Binary Tree T is another Binary Tree M(T) with lef
 
 
 
-##**Algorithm**
+# Algorithm
 
 (1) Mirror the left-subtree    i.e., Mirror(left-subtree)
 
@@ -34,6 +46,7 @@ Mirror of a Tree: Mirror of a Binary Tree T is another Binary Tree M(T) with lef
 
 ![Screenshot (233)](https://user-images.githubusercontent.com/81473660/157375594-cc2fbb46-6ee3-4136-a88a-fc4195f0ad76.png)
 
+# Complexity 
 
 **Time Complexity:** O(n)  
 **Auxiliary Space:** O(HEIGHT OF TREE)
