@@ -20,6 +20,18 @@ struct Node *create ( int val )
     return p;
 }
 
+struct Node* tree(Node* t, int v){
+	 if (t == NULL)
+        return create(v);
+
+    if (v < t->value)
+        t->left = tree(t->left, v);
+    else
+        t->right = tree(t->right, v);
+
+    return t;
+}
+
 ///------------Height of the binary tree------------///
 int height( struct Node* p )  
 {  
@@ -39,22 +51,25 @@ int height( struct Node* p )
 // Driver functions
 int main()
 {
-    /*
-    Let us create following Binary-Tree
-              15
-           /      \
-         13       17
-        /  \     /   \
-      12    14  16    21 
-    */
-    struct Node *root = NULL;
-    root = create( 15 );
-    root->left = create( 13 );
-    root->left->left = create( 12 );
-    root->left->right = create( 14 );
-    root->right = create( 17 );
-    root->right->left = create( 16 );
-    root->right->right = create( 21 );
+	int size;
+	Node *root = new Node;
+	root = NULL;
+
+	cout<<"Enter the size of array : ";
+	cin>>size;
+
+    int a[size];
+    
+	cout<<"Enter the elements in array : ";
+	for(int i=0;i<size;i++)
+    {
+        cin>>a[i];
+    }
+    
+	for(int i = 0; i < size; i++)
+	{
+	    root = tree(root, a[i]);
+	}
     
     cout << height( root ) << endl;
     
