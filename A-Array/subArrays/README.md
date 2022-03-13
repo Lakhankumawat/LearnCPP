@@ -1,10 +1,10 @@
 ## Table of content:
-- [Problem Statement](https://github.com/MRK04/LearnCPP/blob/main/A-Array/README.md#problem-statement)
-- [Example](https://github.com/MRK04/LearnCPP/blob/main/A-Array/README.md#example)
-- [Differnt Approches](https://github.com/MRK04/LearnCPP/blob/main/A-Array/README.md#differnt-approches)
-  - [Brute force Approach (simple)](https://github.com/MRK04/LearnCPP/blob/main/A-Array/README.md#brute-force-approach-simple)
-  - [Cumulative Sum Approach](https://github.com/MRK04/LearnCPP/blob/main/A-Array/README.md#cumulative-sum-approach)
-  - [Efficient Approach: Kadane’s Algorithm](https://github.com/MRK04/LearnCPP/blob/main/A-Array/README.md#efficient-approach-kadanes-algorithm)
+- [Problem Statement](https://github.com/MRK04/LearnCPP/main/main/A-Array/subArrays/README.md#problem-statement)
+- [Example](https://github.com/MRK04/LearnCPP/edit/main/A-Array/subArrays/README.md#example)
+- [Differnt Approches](https://github.com/MRK04/LearnCPP/edit/main/A-Array/subArrays/README.md#differnt-approches)
+  - [Brute force Approach (simple)](https://github.com/MRK04/LearnCPP/edit/main/A-Array/subArrays/README.md#brute-force-approach-simple)
+  - [Cumulative Sum Approach](https://github.com/MRK04/LearnCPP/edit/main/A-Array/subArrays/README.md#cumulative-sum-approach)
+  - [Efficient Approach: Kadane’s Algorithm](https://github.com/MRK04/LearnCPP/edit/main/A-Array/subArrays/README.md#efficient-approach-kadanes-algorithm)
 
 ## Problem Statement:
 Given an array of integers, the task is to find the maximum subarray sum possible of all the non-empty subarrays. \
