@@ -26,9 +26,17 @@ int maxProfit(vector<int>& v){
 //Space complexity: O(1)
 
 int main(){
-    vector<int> v={7,6,4,3,1};
-
-    cout<<maxProfit(v);
+    vector<int> v={};
+    cout<<"Enter number of Elements:"<<endl;
+    int n=0;
+    cin>>n;
+    cout<<"Enter Elements:"<<endl;
+    for(int i=0 ; i<n;i++){
+        int ele;
+        cin>>ele;
+        v.push_back(ele);
+    }
+    cout<<"output : "<<maxProfit(v);
 }
 
 
