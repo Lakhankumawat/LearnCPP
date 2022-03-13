@@ -1,7 +1,11 @@
  
 C++ is an Object Oriented Programming Language in nature and it boasts off various features. In this session we would be discussing how to implement Function Overloading And Function Overriding in C++.
 
-# Following Pointers will be covered in this article,
+# Polymorphism
+
+![polymorphism-in-java-1](https://user-images.githubusercontent.com/97386407/158065829-b68c51c6-38bb-467d-a36e-a710cd2a4ae0.png)
+
+# Polymorphism and interrelation between Overloading and Overriding
 
 ![Overloading-and-overriding2](https://user-images.githubusercontent.com/97386407/158064821-9bc8a80f-b967-4003-861f-a86015888c60.jpg)
 
