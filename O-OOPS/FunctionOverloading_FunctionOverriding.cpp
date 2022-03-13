@@ -1,3 +1,5 @@
+/* Kindly consider their are two different code for function overloading and overriding so comment the rest of the part before running it */
+
 /*-----------Function Overloading in CPP----------- */
 
 // CPP program to illustrate
@@ -33,6 +35,7 @@ cout << " Area of Square C is: " << tot << endl;
 
 
 /*Next Program*/
+
 
 /*----------- Function Overriding in CPP -----------*/
 // CPP program to illustrate
