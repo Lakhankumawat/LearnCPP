@@ -1,16 +1,10 @@
 <!-- Table of content -->
 # Table of content
-1. [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
+- [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
   - [Advantages](#advantages)
   - [Disadvantages](#disadvantage)
   - [Problems](#problems)
-
-2. [Perfect Number](#perfect-number)
-  - [Algorithm](#Algorithm)
-  - [Example](#Example)
-  - [properties](#properties)
-
 
 # Sieve Of Eratosthenes :
 The sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit. 
@@ -61,6 +55,14 @@ It does so by iteratively marking as composite (i.e., not prime) the multiples o
  
 Solution Link: 
  ```
+ 
+ 
+<!-- Table of content -->
+# Table of content
+- [Perfect Number](#perfect-number)
+  - [Algorithm](#algorithm)
+  - [Example](#example)
+  - [properties](#properties)
 
 # Perfect Number:
 
