@@ -21,11 +21,11 @@
 - For addatend()
   O(n) ,where n is the number of node
 - For addbefore()
-  O(1) ,constant
+  O(n)
 - For addatpos()
-  O(1) ,constant
+  O(n)
 - For del()
-  O(1) ,constant
+  O(n)
 - For  reverse()
   O(n) ,where n is the number of node
 
