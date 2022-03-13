@@ -50,16 +50,8 @@ class LinkedList {
 
 int main() {
   LinkedList listl;
-  listl.push(1);
-  listl.push(2);
-  listl.push(3);
-  listl.push(4);
-  listl.push(5);
-  listl.push(6);
-  listl.push(7);
-  listl.push(8);
-  listl.push(9);
-  listl.push(10);
+  for(int i=1;i<=10;i++)
+	listl.push(i);
 
   cout << "Given linked list\n";
   listl.print();
