@@ -1,21 +1,57 @@
-seive of Eratossthenes
-algorith to find Prime number in given range
+<!-- Table of content -->
+# Table of content
+- [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
+  - [Algorithm](#algorithm)
+  - [Advantages](#advantages)
+  - [Disadvantages](#disadvantage)
+  - [Problems](#problems)
 
-Following is the algorithm to find all the prime numbers less than or equal to a given integer n by the Eratosthene’s method:
-When the algorithm terminates, all the numbers in the list that are not marked are prime.
+# Sieve Of Eratosthenes :
+The sieve of Eratosthenes is an algorithm for finding all prime numbers up to any given limit. 
+It does so by iteratively marking as composite (i.e., not prime) the multiples of each prime, starting with the first prime number, 2.
 
-Explanation with Example:
+### Algorithm
+```
+- Create a boolean list of number from 0 to n and assign each of them with the value true
+- Mark 0th and 1st index as false
+- Start from the first prime number i.e. 2 and mark all the multiples of 2 as false
+- Move to the next element. If it is marked as true, then mark all its multiples as false
+- Do till you don't reach n
+- Now the numbers which are marked as true will be the prime numbers from 0 to n.
+```
 
-Let us take an example when n = 50. So we need to print all prime numbers smaller than or equal to 50.
+### Advantages
 
-We create a list of all numbers from 2 to 50.
+- It reduces the time complexity of Finding prime numbers in a range.
 
-According to the algorithm we will mark all the numbers which are divisible by 2 and are greater than or equal to the square of it.
+### Disadvantage
 
-Now we move to our next unmarked number 3 and mark all the numbers which are multiples of 3 and are greater than or equal to the square of it.
+- It takes up O(n) of extra space
 
-We move to our next unmarked number 5 and mark all multiples of 5 and are greater than or equal to the square of it.
 
-We continue this process and our final table will look like below:
+### Problems
+ ```
+   Given a number n.
+   Express it as a sum of two prime numbers if it is possible else print -1.
 
-2 3 5 7 11 13 17 19 23 29 31 37 41 43 47  these all are unmarked numbers and they are prime number less than 50
+   Example 1: 
+   n=24
+   Output: 5 19
+
+
+   Example 2: 
+   n=1
+   Output: -1 -1
+
+   Example 3: 
+   n=100
+   Output: 3 97
+ ```
+ ```
+```
+//Time Complexity : O(n*log(log(n)))
+//Space Complexity :O(n)
+```
+ 
+Solution Link: 
+ ```
