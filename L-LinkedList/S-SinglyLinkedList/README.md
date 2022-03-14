@@ -48,7 +48,6 @@ Write Pseudo code for your algorithm here
 - 
 
 ---
-=======
 
 ### Singly Linked List 
 
