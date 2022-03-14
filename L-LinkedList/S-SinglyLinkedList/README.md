@@ -36,8 +36,8 @@ Write Pseudo code for your algorithm here
 
 ### Properties
 
-- Time Complexity : 
-- Auxillary Space : 
+- Time Complexity : Insert element at front O(1), Insert element at end O(N) = O(N)
+- Auxillary Space : No extra space used = O(1)
 
 ### Advantages
 
