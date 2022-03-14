@@ -6,6 +6,7 @@
     -[Properties_of_trace_matrix](# Properties of trace matrix)
     -[Example](# Example)
     -[Algorithim](# Algorithim)
+    -[Time complexity](# Time complexity)
 
 ## Trace:
 
@@ -37,7 +38,7 @@ so, normal of matrix = 6.55
 
 ### Normal:
 
-now we will first check the conditions for trace of matrix (i.e. row==column) then we will add all the diagonal elements 
+Now we will first check the conditions for trace of matrix (i.e. row==column) then we will add all the diagonal elements 
 trace = 2+4+4  so, trace of matrix = 10
 
 ## Algorithim:
@@ -50,6 +51,11 @@ trace = 2+4+4  so, trace of matrix = 10
 6. Using the condition row == column we can find the sum of diagonal elements of a matrix , value of sum will be store in
  variable trace .
 7. Print the value of normal and trace of a matrix .
+
+## Time complexity:
+
+Time complexity of trace of a matrix is n^2.
+Time complexity of normal of a matrix is n^2.
 
 =======
 <!-- Table of content -->
