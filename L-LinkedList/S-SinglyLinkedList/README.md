@@ -1,3 +1,4 @@
+
 ### Singly Linked List 
 
 1. Create a SLL 
@@ -45,9 +46,32 @@ Inserting at first position :
 
 ![Linkedlist_insert_at_start](https://user-images.githubusercontent.com/81226536/157304956-2cee37f1-5cda-455a-ad4a-477b74cdad01.png) 
 
-Inserting a node in between : 
 
-![Linkedlist_insert_middle](https://user-images.githubusercontent.com/81226536/157304917-d53314ee-add4-412b-9a45-71e24e53f8d2.png) 
+Insert a node at nth position in the linked list
+---
+To insert a node at nth position, we need to follow these steps-
+* Create a new node
+* Iterate to the previous of the nth node
+* Set newnode's ‘next’ pointer to the ‘next’ pointer of the previous of the nth node
+* Set previous node's next to the new node
+* Return the head pointer
+
+Time Complexity
+------------------------
+* Insertion at head node - O(1).
+* Insertion at last node - O(n).
+* Insertion in middle - O(n). 
+
+Space Complexity
+-----------
+* Space complexity: O(1).
+
+
+Image to show the insertion
+---
+
+![insertion-in-singly-linked-list-at-beginning](https://user-images.githubusercontent.com/86103131/157711281-4a6a00be-1a58-4fca-af71-e5b5a1a31e89.png)
+
  
 **Time Complexity** 
 
@@ -84,12 +108,3 @@ Deleting a node  :
 No extra space is used.   
 Space Complexity : O(1) 
 
-### OUTPUT : 
-
-1. Insertion 
-
-![insertion in LL](https://user-images.githubusercontent.com/81226536/157299920-c3f7b0c3-9251-4480-af1b-f48d716a2547.png)
-
-2. Deletion 
-
-![deletion in LL](https://user-images.githubusercontent.com/81226536/157299882-c34dad3e-f087-4bf7-b480-ccc45cc32b00.png)
