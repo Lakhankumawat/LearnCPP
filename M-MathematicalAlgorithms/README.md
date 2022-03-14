@@ -63,6 +63,7 @@ Solution Link:
   - [Algorithm](#algorithm)
   - [Example](#example)
   - [properties](#properties)
+  - [Time complexity](#time complexity)
 
 # Perfect Number:
 
@@ -92,3 +93,6 @@ When we add these divisors (1 + 2 + 3 = 6), it gives 6, which is equal to the nu
 
 --> If 2k -1 is prime for k>1, then 2k-1(2k -1) is a perfect number.
 --> A perfect number is called Ore Harmonic number if the harmonic mean of its divisor is an integer.
+
+### Time complexity:
+Time complexity of perfect number is n. 
