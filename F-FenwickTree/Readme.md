@@ -4,7 +4,7 @@
 
 Fenwick tree is also called **Binary Indexed Tree**, or just BIT abbreviated.
 
-![Intro](output1.jpeg)
+![Intro](https://github.com/uhini0201/GSSoc-22-images/blob/main/output1.jpeg?raw=true)
 
 
 ## Description
@@ -34,7 +34,7 @@ This feature is used to build up the Fenwick tree and so it can be seen that Fen
 
 **_The basic idea behind Fenwick tree is that since any integer can be represented as sum of powers of 2, we can represent cumulative frequencies as sum of non-overlapping sub-frequencies._**
 
-![implement](output2.png)
+![implement](https://i.stack.imgur.com/QcUPG.png)
 
 
 
@@ -56,7 +56,7 @@ Some people call this "range update, single query", what we would like to accomp
 
 2) *RangeUpdate(i, j, d)* — adds d to the elements from i to j.
 
-![Intro](output.jpeg)
+![Intro](https://miro.medium.com/max/1400/1*RZgpomELnq40ZoL2Ykbrew.png)
 
 
 ## Approach Used
