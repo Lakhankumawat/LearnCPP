@@ -62,7 +62,7 @@ Step4: If the queue becomes empty return the solution vector.
 
 Step5: Atlast after return from the topological_sorting() function, print contents of returned vector.
 
-![](https://media.geeksforgeeks.org/wp-content/uploads/20200529233009/Untitled-Diagram-337.png)
+![](https://iq.opengenus.org/content/images/2019/04/topological_sort.jpg)
 
 ### My Output
 ![]()
