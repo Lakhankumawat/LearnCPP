@@ -71,7 +71,7 @@ int main()
 	    root = tree(root, a[i]);
 	}
     
-    cout << height( root ) << endl;
+    cout << "\n Height of tree: "<<height( root ) << endl;
     
     return 0;
 }
