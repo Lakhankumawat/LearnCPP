@@ -33,7 +33,7 @@ Step 4: Atlast after return from the utility function, print contents of stack.
 ![](https://iq.opengenus.org/content/images/2019/04/st-1.PNG)
 
 ### My Output 
- <img scr="image/TS_DFS.png" width="50">
+ <img src="image/TS_DFS.png" width="50">
 
 
 ## Topological Sorting using BFS
@@ -65,4 +65,4 @@ Step5: Atlast after return from the topological_sorting() function, print conten
 ![](https://iq.opengenus.org/content/images/2019/04/topological_sort.jpg)
 
 ### My Output
-<img scr="image/TS_BFS.png" width="50">
+<img src="image/TS_BFS.png" width="50">
