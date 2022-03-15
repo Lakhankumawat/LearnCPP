@@ -67,10 +67,11 @@ int main(){
 
 
 /*
+It's implementation is same as BFS so,
 Space Complexity :
-Space Complexity of BFS based Topological Sort Algo is same as Kahn's Algo = O(V)
+Space Complexity of Detect_cycle_in_a_directed_graph = O(V)
 Time Complexity :
-Time Complexity of BFS based Topological Sort Algo is same as Kahn's Algo = O(V+E)  
+Time Complexity of Detect_cycle_in_a_directed_graph = O(V+E)  
 where V stands for number of vertices in Graph 
 and E stands for number of edges in Graph
 */
