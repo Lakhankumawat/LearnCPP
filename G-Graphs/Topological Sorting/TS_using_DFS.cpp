@@ -44,8 +44,8 @@ int main(){
 	/*
 	0->1->3->4
 	      ^  ^
-          \/
-           2
+               \/
+               2
 	*/
 	int V=5; //number of vertex in above graph is 5
 	vector<int> adj[V];// making adjacency list
