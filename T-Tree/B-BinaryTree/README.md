@@ -32,6 +32,40 @@ Else
     height_of_a_tree = 1 + (which-one is bigger from 'l' & 'r')
  end height
 ```
+
+### Output:
+1.
+```
+100
+  \
+   120
+      \
+      130
+         \
+         140
+            \
+            150
+              \
+              160
+                 \
+                 170
+```
+Height of tree: 7
+
+![o_p5](https://user-images.githubusercontent.com/76229635/158337847-c0be85a6-d577-47ed-a347-dba09652e8e6.png)
+
+2.
+```
+                 100
+           /              \
+        30                150
+     /    \             /      \
+  20       50          122      188
+```
+Height of tree: 3
+
+![o_p4](https://user-images.githubusercontent.com/76229635/158338061-5043a09d-70ef-449c-adbe-79117bc3ce4f.png)
+
 ### Properties
 
 - Time Complexity :
