@@ -1,44 +1,48 @@
-// problem link --> https://leetcode.com/problems/majority-element/
+#include<iostream>
+#include<vector>
 
-#include<bits/stdc++.h>
 using namespace std;
 
-class Solution {
+/*
+Intuition:
+        If there exists a element which is repeated more than n/2 time 
+        then there are only n/2-1 elements left which can be removed by n/2 elements 
+         and the element which remains will be our ans .
+*/
+class AlgorithmImplementation {
 public:
     int majorityElement(vector<int>& nums) {
-        /*  
-        Intution : If there exists a element which is repeated more than n/2 time 
-                   then there are only n/2-1 elements left which can be removed by n/2 elements 
-                   and the element which remains will be our ans .
-        */
-        int countmajority = 0 , majorelement = 0;  // will count of the number of majority element and will also store which one is the majority element 
+         // count of majority element and the majority element
+        int countmajority = 0 , majorelement = 0; 
         int n = nums.size();
         for(int i=0;i<n;i++) {
-            // if we not found any majority element then who ever comes first will be our majority element
+            // get the majority element if not exist
             if(countmajority == 0) {
                 majorelement = nums[i];
             }
 
-            // if the current is same as our majority element then increase its count 
+            // if it is the majority count it  
             if(majorelement == nums[i]) {
                 countmajority++;
             }else{   
-                countmajority--;          // else just decrease the count by eliminating the non majority elements 
+                countmajority--;     // if not decrease the count 
             }
             
         }
-        // finally the majorelement will store the majority element as it is given there exists majority element
+        // atlast the majority will be left with us
         return majorelement;
         
     }
 };
 
 int main ( ) {
-    vector<int>arr{2,2,1,1,1,2,2};
-    Solution s;
-    cout<<s.majorityElement(arr);
+    int  n;  // no of elements
+    cin>>n;
+    vector<int>v(n);
+    for(int i=0;i<n;i++) {
+        cin>>v[i];
+    }
+    AlgorithmImplementation algo;
+    cout<<algo.majorityElement(arr);
     return 0;
 }
-
-// Time Complexcity -   O ( N ) as we are doing a single traversal on elements
-// Space Complexcity -  O ( 1 ) we have not used any extra space other than two integers 
