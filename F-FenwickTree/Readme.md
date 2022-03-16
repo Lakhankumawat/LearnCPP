@@ -51,7 +51,7 @@ This feature is used to build up the Fenwick tree and so it can be seen that Fen
 
 
 
-# K Query
+## K Query
 
 
 We know by now, that BIT can be used to support following two operations:
@@ -69,7 +69,7 @@ Some people call this "range update, single query", what we would like to accomp
 ![Intro](https://miro.medium.com/max/1400/1*RZgpomELnq40ZoL2Ykbrew.png)
 
 
-## Algorithm
+### Algorithm
 
 An Efficient Approach is to solve the problem using offline queries and Fenwick Trees. Below are the steps: 
  
@@ -96,17 +96,17 @@ An Efficient Approach is to solve the problem using offline queries and Fenwick 
 
 
 
-## Time Complexity
+### Time Complexity
 
-#### Update Operation
-
-The update operation takes at most **O(log2(n)) time**.
-
-#### Query Operation
+* Update Operation - The update operation takes at most **O(log2(n)) time**.
 
 
 
-The query operation takes **O(log2(n)) time**.
+* Query Operation - The query operation takes **O(log2(n)) time**.
+
+
+
+
 
 ## Advantages
 
