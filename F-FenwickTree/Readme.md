@@ -100,69 +100,17 @@ An Efficient Approach is to solve the problem using offline queries and Fenwick 
 
 #### Update Operation
 
-Let’s see how to construct this tree and then we will come back to querying the tree for prefix sums. BIT[] is an array of size = 1 + the size of the given array a[] on which we need to perform operations. Initially all values in BIT[] are equal to 0. Then we call update() operation for each element of given array to construct the Binary Indexed Tree. The update() operation is discussed below.
-
-```
-
-void update(int idx, int val) //add "val" at "idx"
-{
-    for(; idx <= n; idx += idx&-idx)
-          BIT[idx] += val;
-}
-
-```
-
-Its okay if you are unable to understand how the above update() function works. Let’s take an example and try to understand it.
-
-Suppose we call update(13, 2).
-
-Here we see from the above figure that indices 13, 14, 16 cover index 13 and thus we need to add 2 to them also.
-
-Initially idx is 13, we update BIT[13]
-
-    BIT[13] += 2;
-Now isolate the last set bit of idx = 13(1101) and add that to idx , i.e. idx += idx&(-idx)
-
-Last bit is of x = 13(1101) is 1 which we add to idx, then idx = 13+1 = 14, we update BIT[14]
-
-    BIT[14] += 2;
-Now 14 is 1110, isolate last bit and add to 14, x becomes 14+2 = 16(10000), we update BIT[16]
-
-    BIT[16] += 2;
-In this way, when an update() operation is performed on index x we update all the indices of BIT[] which cover index x and maintain the BIT[].
-
-If we look at the for loop in update() operation, we can see that the loop runs at most the number of bits in index idx which is restricted to be less or equal to n (the size of the given array), so we can say that the update operation takes at most **O(log2(n)) time**.
+The update operation takes at most **O(log2(n)) time**.
 
 #### Query Operation
 
 
-```
-int query(int idx)      //returns the sum of first idx elements in given array a[]
-{
-     int sum = 0;
-     for(; idx > 0; idx -= idx&-idx)
-         sum += BIT[idx];
-     return sum;
-}
-```
-Suppose we call query(14), initially sum = 0
 
-idx is 14(1110) we add BIT[14] to our sum variable, thus sum = BIT[14] = (a[14] + a[13])
+The query operation takes **O(log2(n)) time**.
 
-we add BIT[12] to our sum variable, thus sum = BIT[14] + BIT[12] = (a[14] + a[13]) + (a[12] + … + a[9])
+## Advantages
 
-again we isolate last set bit from x = 12(1100) and subtract it from x
+1) This data structure is more space efficient, because while a segment tree required us to store N+N/2+N/4+...+1<2N values, we store only N values with a BIT, no increase from what we needed to just store the raw input.
+## Disadvantages
 
-
-we add BIT[8] to our sum variable, thus
-
-sum = BIT[14] + BIT[12] + BIT[8] = (a[14] + a[13]) + (a[12] + … + a[9]) + (a[8] + … + a[1])
-
-once again we isolate last set bit from x = 8(1000) and subtract it from x
-
-
-since x = 0, the for loop breaks and we return the prefix sum.
-
-Talking about complexity, again we can see that the loop iterates at most the number of bits in x which will be at most n(the size of the given array). Thus the *query operation takes **O(log2(n)) time**.
-
-
+1) The Fenwick tree structure works for addition because addition is invertible. It doesn't work for minimum, because as soon as you have a cell that's supposed to be the minimum of two or more inputs, you've lost information potentially.
