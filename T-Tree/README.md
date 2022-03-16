@@ -8,7 +8,8 @@ But before understanding Vertical order traversal, we should be aware with the t
 <br></br>
 <img src = "https://i.imgur.com/I7g4VHa.png"/>
 <br></br>
-#### In vertical order traversal, the nodes that are at the left most horizontal distance from the root are printed first and the nodes that are at the rightmost horizontal distance are printed at the end. <br> The nodes that lie at the same horizontal distance are then printed from top to bottom. <br> If the nodes are at same horizontal distance and same level, then they are printed from right to left. This is ensured in the code by using level order traversal approach.
+#### In vertical order traversal, the nodes that are at the left most horizontal distance from the root are printed first and the nodes that are at the rightmost horizontal distance are printed at the end. <br> The nodes that lie at the same horizontal distance are then printed from top to bottom. <br> If the nodes are at same horizontal distance and same level, then they are printed from right to left. This is ensured in the code by using level order traversal approach. <br>
+The time complexity for the same is O(n * logn), where n is the no. of total nodes.
 <br></br>
 #### **Algorithm -** 
 1. A binary tree is constructed on the basis of the user input (number of nodes, inorder traversal, preorder traversal)<br>
