@@ -1,4 +1,14 @@
 
+# Table Of Content
+* [Fenwick Tree](#fenwick-tree)
+    * [Description](#description)
+    * [Implementations](#implementations)
+    * [Notes](#note)
+    * [K_Query](#k-query)
+        * [Algorithm](#algorithm)
+        * [Time Complexity](#time-complexity)
+            * [Update Operation](#update-operation)
+            * [Query Operation](#query-operation)
 # Fenwick Tree
 
 
@@ -59,7 +69,7 @@ Some people call this "range update, single query", what we would like to accomp
 ![Intro](https://miro.medium.com/max/1400/1*RZgpomELnq40ZoL2Ykbrew.png)
 
 
-## Approach Used
+## Algorithm
 
 An Efficient Approach is to solve the problem using offline queries and Fenwick Trees. Below are the steps: 
  
