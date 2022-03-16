@@ -1,11 +1,12 @@
 // Vertical order traversal of a binary tree 
 /* Approach - Since duplicate values can't be stored in map, maintain a vector to store all the nodes with same horizontal distance
             - Follow level order traversal as the node which is first vertically has to be printed first
-// Time complexity - O(n*logn)
+Time complexity - O(n*logn), because level order traversal is used
 */
 #include <vector>
 #include <map>
 #include <queue>
+#include <unordered_map>
 #include <iostream>
 using namespace std;
 
@@ -24,6 +25,42 @@ struct Node
         left = right = NULL;
     }
 };
+
+struct Node* conTree(int in[], int pre[], int start, int end, unordered_map<int, int>& mp)
+{
+    static int preIndex = 0;
+ 
+    if (start > end)
+        return NULL;
+ 
+    //Finding root
+    int curr = pre[preIndex++];
+    Node *root = new Node(curr);
+ 
+    if (start == end)
+        return root;
+ 
+    // Finding index of the root in Inorder traversal
+    int inIndex = mp[curr];
+ 
+    // Constructing left and right node
+    root->left = conTree(in, pre, start, inIndex - 1, mp);
+    root->right = conTree(in, pre, inIndex + 1, end, mp);
+ 
+    return root;
+}
+ 
+// Wrapper function to call conTree()
+struct Node *TreeWrap(int in[], int pre[], int n)
+{
+    // Store indexes of all items so that we
+    // we can quickly find later
+    unordered_map<int, int> mp;
+    for (int i = 0; i < n; i++)
+        mp[in[i]] = i;
+ 
+    return conTree(in, pre, 0, n - 1, mp);
+}
 
 // Function to print vertical order traversal
 // of the binary tree with given node
@@ -59,19 +96,26 @@ void verticalTraversal(Node *root)
 
 /* Driver code*/
 int main()
-{
-    Node *root = new Node(1);
-    root->left = new Node(2);
-    root->right = new Node(3);
-    root->left->left = new Node(4);
-    root->left->right = new Node(5);
-    root->right->left = new Node(6);
-    root->right->right = new Node(7);
-    root->right->left->right = new Node(8);
-    root->right->right->right = new Node(9);
-    root->right->right->left = new Node(10);
-    root->right->right->left->right = new Node(11);
-    root->right->right->left->right->right = new Node(12);
+{   
+    int n;
+    cout << "Enter number of nodes: " << "\n";
+    cin >> n;
+
+    /* NOTE - 
+    To construct a binary tree we require both, inorder and preorder traversal
+    */
+    int in[n], pre[n]; 
+
+    cout << "Enter Inorder traversal of the tree: " << "\n";
+    for(int i = 0; i < n; i++)
+        cin >> in[i];
+
+    cout << "Enter Preorder traversal of the tree: " << "\n";
+    for(int i = 0; i < n; i++)
+        cin >> pre[i];
+    
+    // Constructing the binary tree
+    Node *root = TreeWrap(in, pre, n);
 
     cout << "Vertical order traversal is \n";
     verticalTraversal(root);
