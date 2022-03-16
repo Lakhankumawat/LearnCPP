@@ -55,14 +55,15 @@ It does so by iteratively marking as composite (i.e., not prime) the multiples o
  
 Solution Link: 
  ```
- 
- 
+
 <!-- Table of content -->
-# Table of content
-- [Perfect Number](#perfect-number)
-  - [Algorithm](#algorithm)
-  - [Example](#example)
+# Table of content:
+
+ [Perfect Number](#perfect-number)
+  - [Algorithm](#Algorithm)
+  - [Example](#Example)
   - [properties](#properties)
+  - [Time_complexity](#time_complexity)
 
 # Perfect Number:
 
@@ -92,3 +93,7 @@ When we add these divisors (1 + 2 + 3 = 6), it gives 6, which is equal to the nu
 
 --> If 2k -1 is prime for k>1, then 2k-1(2k -1) is a perfect number.
 --> A perfect number is called Ore Harmonic number if the harmonic mean of its divisor is an integer.
+
+### time_complexity:
+
+Time complexity for perfect number is n.
