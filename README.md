@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -167,6 +167,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ShruthiKartik"><img src="https://avatars.githubusercontent.com/u/99183334?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ShruthiKartik</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=ShruthiKartik" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Aneesh-07"><img src="https://avatars.githubusercontent.com/u/85986613?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aneesh Tripathi </b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Aneesh-07" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/md-nazish-arman-54076619b/"><img src="https://avatars.githubusercontent.com/u/98539013?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Md Nazish Arman</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=mdnazisharman2803" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/shubhamlakheraa"><img src="https://avatars.githubusercontent.com/u/64166515?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SHUBHAM LAKHERA</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shubhamlakheraa" title="Code">💻</a></td>
   </tr>
 </table>
 
