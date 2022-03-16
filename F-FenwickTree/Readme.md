@@ -142,3 +142,5 @@ An Efficient Approach is to solve the problem using offline queries and Fenwick 
 ## Disadvantages
 
 1) The Fenwick tree structure works for addition because addition is invertible. It doesn't work for minimum, because as soon as you have a cell that's supposed to be the minimum of two or more inputs, you've lost information potentially.
+
+
