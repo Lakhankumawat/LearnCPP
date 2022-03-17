@@ -1,0 +1,14 @@
+Since CPP is an integral part of Object Oriented Language, its understanding for any learner is very important.
+This file will contain all aspects of inheritance:
+
+Inheritance and its different types
+Inheritance Syntax and Visibility Mode
+Single Inheritance
+Protected , Public and Private access Modifier
+Multilevel Inheritance
+Multiple Inheritance
+Ambiguity resolution
+Virtual Base class
+Constructors In derived Class
+
+--- GSSOC22 Contributor Sanya Gera
