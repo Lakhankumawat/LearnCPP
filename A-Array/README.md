@@ -43,7 +43,7 @@ so, normal of matrix = 6.55
 Now we will first check the conditions for trace of matrix (i.e. row==column) then we will add all the diagonal elements 
 trace = 2+4+4  so, trace of matrix = 10
 
-## Algorithim:
+## Algorithm:
 ```
 1. Enter the order of a matrix (eg: 3X3 or 2X2 etc...)
 2. Using loop enter the elements of a matrix .
