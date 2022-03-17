@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -171,6 +171,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/shubhamlakheraa"><img src="https://avatars.githubusercontent.com/u/64166515?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SHUBHAM LAKHERA</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shubhamlakheraa" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/aparnamittal"><img src="https://avatars.githubusercontent.com/u/100208233?v=4?s=100" width="100px;" alt=""/><br /><sub><b>aparnamittal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=aparnamittal" title="Code">💻</a></td>
+    <td align="center"><a href="https://rahulsharma.vercel.app/"><img src="https://avatars.githubusercontent.com/u/67220225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul Sharma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Rahul5430" title="Code">💻</a></td>
   </tr>
 </table>
 
