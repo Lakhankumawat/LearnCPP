@@ -1,12 +1,14 @@
 # Table of contents:
+- [Trace and Normal of Matrix](trace-and-normal-of-matrix)
+- [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
 
-- Trace and Normal of Matrix:
-    -[Trace](#Trace)
-    -[Normal](# Normal)
-    -[Properties_of_trace_matrix](# Properties of trace matrix)
-    -[Example](# Example)
-    -[Algorithim](# Algorithim)
-    -[Time complexity](# Time complexity)
+# Trace and Normal of Matrix
+  - [Trace](#trace)
+  - [Normal](#normal)
+  - [Properties_of_trace_matrix](#properties-of-trace-matrix)
+  - [Example](#example)
+  - [Algorithim](#algorithim)
+  - [Time complexity](#time-complexity)
 
 ## Trace:
 
@@ -17,11 +19,11 @@ The trace of a matrix A, defined by tr(A), is the sum of the diagonal elements o
 The normal of matrix is the sum of all the elements of a matrix and then the square root of sum.
 
 ## Properties of trace matrix:
-
+```
  --> tr(A + B) = tr(A) +tr(B)
  --> tr(cA) = ctr(A)  ** c represents scalars
  --> tr(A) = tr(A^T)  ** T means transpose of matrix 
-
+```
 ## Example: 
 
 ![image](https://user-images.githubusercontent.com/100208233/158046978-b535dc41-9ad6-4d5b-ad27-0580fa836415.png)
@@ -42,7 +44,7 @@ Now we will first check the conditions for trace of matrix (i.e. row==column) th
 trace = 2+4+4  so, trace of matrix = 10
 
 ## Algorithim:
-
+```
 1. Enter the order of a matrix (eg: 3X3 or 2X2 etc...)
 2. Using loop enter the elements of a matrix .
 3. Printing the elements of the matrix .
@@ -51,18 +53,17 @@ trace = 2+4+4  so, trace of matrix = 10
 6. Using the condition row == column we can find the sum of diagonal elements of a matrix , value of sum will be store in
  variable trace .
 7. Print the value of normal and trace of a matrix .
-
+```
 ## Time complexity:
-
+```
 Time complexity of trace of a matrix is n^2.
 Time complexity of normal of a matrix is n^2.
+```
 
-=======
 <!-- Table of content -->
 
-# Table of content
-- [Table of content](#table-of-content)
-  - [1. Sort an Array of 0s, 1s and 2s](#1-sort-an-array-of-0s-1s-and-2s)
+# Sort an Array of 0s, 1s and 2s
+    - [1. Sort an Array of 0s, 1s and 2s](#1-sort-an-array-of-0s-1s-and-2s)
     - [Dutch National Flag Algorithm](#dutch-national-flag-algorithm)
     - [Properties](#properties)
     - [Sample Output](#sample-output)
