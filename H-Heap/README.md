@@ -1,9 +1,9 @@
-# TABLE OF CONTENTS
+# Table of Contents
 * [Explanation](#explanation)  
 * [Time Complexity](#time-complexity-of-min-max-heap)  
 
 -[k-largest Elements in an Array](#k-largest-elements)
-## EXPLANATION  
+## Explanation  
 
 ### How are Min/Max Heaps represented?
 
@@ -26,7 +26,7 @@ The time complexity of this operation is O(Log n) because we need to maintain th
 Time Complexity of this operation is O(Log n) because we insert the value at the end of the tree and traverse up to remove violated property of min/max heap.  
 
 
-# K LARGEST ELEMENTS
+# K Largest Elements
 -[Problem Statment](#problem-statement)  
 -[Sample in/op](#sample-input)  
 -[Time Complexity](#time-complexity)
