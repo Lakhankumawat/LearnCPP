@@ -19,7 +19,7 @@ Applications of stack :
 
 
 
-# LINKED LIST IMPLEMENTATION OF A STACK
+# Linked List Implementation of Stack
 
 ### Problem statement : 
     Implement all the possible basic stack functions using linked list implemenetation. Design the program in such a way that it should work for all the data types whenever used. Also in main function demenostarte the functions using any data type.
