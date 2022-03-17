@@ -19,6 +19,9 @@
 - Unlike the linked list, each node stores the address of multiple nodes.
 - Every node stores address of its children and the very first node’s address will be stored in a separate pointer called root.
 
+![generic-tree_gfg](https://user-images.githubusercontent.com/55774240/158732482-11f84781-453f-4d25-8826-8ef54a5b0490.png)
+
+
 ### Properties
 
 - Many children at every node.
@@ -38,12 +41,12 @@ display(child);
 }
 
 ### Time Complexity
-
+```
 - For creatingtreee()
   O(n) ,where n is the number of node
 - For display()
   O(n) ,where n is the number of node
-  
+ ``` 
 ### Advantages 
 
 - Memory efficient – No extra links are required, hence a lot of memory is saved.
@@ -65,6 +68,9 @@ display(child);
 - So the distance between two nodes must pass through their ancestor from the defination of generic tree.
 - Ancestor will have refrence to both of the node.
 
+![some1](https://user-images.githubusercontent.com/55774240/158732716-cfea4195-85db-4631-9ec4-f6ca50000875.jpg)
+
+
 ### Properties
 
 - Minimum distance between two nodes will contains parent node.
@@ -77,12 +83,13 @@ display(child);
 - Now the distance between two nodes will be the distance of node 1 from LCA in addition to the distance of node 2 from LCA.
 
 ### Time Complexity
-
+```
 - For creatingtreee()
   O(n), where is number of nodes. 
 - Finding the node in the entire tree to get the node to the root path takes O(n), where is number of nodes.
-- just traversing the node-to-root path (arrays) takes O(d) where d = depth of the node. In the worst case, d can be equal to n, hence total time complexity will be O(n) only, where is number of nodes.
-
+- just traversing the node-to-root path (arrays) takes O(d) where d = depth of the node.
+  In the worst case, d can be equal to n, hence total time complexity will be O(n) only, where is number of nodes.
+```
 ### Advantages 
 
 - Memory efficient – No extra links are required, hence a lot of memory is saved.
