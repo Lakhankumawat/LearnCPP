@@ -1,6 +1,7 @@
 # Table of contents:
 - [Trace and Normal of Matrix](trace-and-normal-of-matrix)
 - [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
+- [Prefix Sum](#prefix-sum)
 
 # Trace and Normal of Matrix
   - [Trace](#trace)
@@ -60,16 +61,18 @@ Time complexity of trace of a matrix is n^2.
 Time complexity of normal of a matrix is n^2.
 ```
 
-<!-- Table of content -->
+
 
 # Sort an Array of 0s, 1s and 2s
+
     - [1. Sort an Array of 0s, 1s and 2s](#1-sort-an-array-of-0s-1s-and-2s)
     - [Dutch National Flag Algorithm](#dutch-national-flag-algorithm)
     - [Properties](#properties)
     - [Sample Output](#sample-output)
+    
 
 
-## [1. Sort an Array of 0s, 1s and 2s](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Sort_0_1_2.cpp)
+## [Sort an Array of 0s, 1s and 2s](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Sort_0_1_2.cpp)
 
 ![Snap](https://user-images.githubusercontent.com/53018678/156426951-61050466-bf4a-4685-be42-e81a5cf623cb.png)
 
@@ -101,7 +104,6 @@ begin sortArray(array)
 
 end sortArray
 ```
-   <hr>
 
 ### Properties
 * Time Complexity: O(n)
@@ -112,9 +114,37 @@ end sortArray
 ### Sample Output
 ![Snap2](https://user-images.githubusercontent.com/53018678/156428828-324bda09-356d-47dc-bfaa-793bae0a3dff.png)
 
-
-<hr>
-
 - For More Reference Please Check Out -> 
 [Geeks For Geeks](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)
+
+
+# Prefix Sum
+
+Given an array of N integers. Given Q queries and in each query given L and R print sum of array elements from index L to R (both inclusive)
+
+### Naive Approach
+Use a loop to calculate the sum of numbers from l to r for each query.
+
+Time Complexity: `O(N) + O(Q*N) = 10^ 10`   
+Space Complexity: `O(1)`
+
+### Optimial Approach
+
+
+Use prefix sum , a pre-computation technique , to calculate the sum .
+
+We declare a prefix[] array which stores the sum of numbers from 1 to ith index.
+prefix[i] --->  Stores the sum of numbers from 1 to ith index
+
+So, to calculate the sum of numbers from l to r , we deduce a formula:
+
+prefix[r] ----> Stores sum of numbers from 1 to rth index
+prefix[l-1] ----> Stores sum of numbers from 1 to (l-1)th index
+
+So, to output the sum of numbers from l to r , we use this:   
+prefix[r]-prefix[l-1]        (O(1) time complexity)
+
+ Time Complexity:  `O(N) + O(N) + O(Q) =  10^5 `
+ Space Complexity: `O(N)  + O(N) (Using prefix array)`
+
 
