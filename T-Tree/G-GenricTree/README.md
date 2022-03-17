@@ -1,17 +1,18 @@
 # Table of content
-- [Construct and Display Genric Tree](#Construct and Display Genric Tree)
-    - [Properties](#Properties)
-    - [Algorithm](#Algorithm)
-    - [Time Complexity](#Complexity)
+- [Construct and Display Genric Tree](#construct-and-display-genric-tree)
+    - [Properties](#properties)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#time-complexity)
     - [Advantages](#advantages)
-    - [Disadvantage](#disadvantage)
- - [Minimum distance between two nodes in a Genric Tree](#Minimum distance between two nodes in a Genric Tree) 
-    - [Properties](#Properties)
-    - [Algorithm](#Algorithm)
-    - [Time Complexity](#Complexity)
-    - [Advantages](#advantages)
-    - [Disadvantage](#disadvantage)
-    - 
+    - [Disadvantage](#disadvantages)
+    
+ - [Minimum distance between two nodes in a Genric Tree](#minimum-distance-between-two-nodes-in-a-genric-tree) 
+    - [Properties](#properties-1)
+    - [Algorithm](#algorithm-1)
+    - [Time Complexity](#time-complexity-1)
+    - [Advantages](#advantages-1)
+    - [Disadvantage](#disadvantages-1)
+
 # Construct and Display Genric Tree
 
 - Generic trees are a collection of nodes where each node is a data structure that consists of records and a list of references to its children  (duplicate references are not allowed).  
