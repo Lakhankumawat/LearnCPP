@@ -17,5 +17,5 @@ Output: Linked list should be changed to,
 2.Space Complexity: O(1)
 
 ## Image for Reference
-![image](https://user-images.githubusercontent.com/74498344/157373186-14c6049b-aee4-44af-8d42-50d413cc77f1.png)
+![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
