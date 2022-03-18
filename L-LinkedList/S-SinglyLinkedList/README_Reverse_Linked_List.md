@@ -12,8 +12,17 @@ Output: Linked list should be changed to,
     
     
     next = curr->next
+    
+    
+    
     curr->next = prev 
+    
+    
+    
     prev = curr 
+    
+    
+    
     curr = next
 ## Time Complexity and Space Complexity
 1.Time Complexity: O(n) 
