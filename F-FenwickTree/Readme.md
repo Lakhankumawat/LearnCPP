@@ -1,5 +1,6 @@
 
 # Table Of Content
+
 * [Fenwick Tree](#fenwick-tree)
     * [Description](#description)
     * [Implementations](#implementations)
