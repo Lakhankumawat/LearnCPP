@@ -8,6 +8,9 @@ Output: Linked list should be changed to,
 ### To reverse a linked list, do the following.
 1. Initialize three pointers prev as NULL, curr as head and next as NULL
 2. Iterate through the linked list. In loop, do following,
+    
+    
+    
     next = curr->next
     curr->next = prev 
     prev = curr 
