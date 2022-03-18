@@ -13,6 +13,7 @@
   - [Insertion Sort](#insertion-sort)
   - [Merge Sort](#merge-sort)
   - [Quick Sort](#quick-sort)
+  - [Radix Sort](#radix-sort)
 
 # Sorting Algorithms
 
@@ -136,3 +137,10 @@ begin countSort(arr, n)
 ### Disadvantage
 
 - Works for restricted inputs only for a certain range and takes extra space.
+
+
+## Radix Sort
+
+- It repeatedly loops through the array elements to get the max element, then iterate through each digit.
+<!-- image to help better explain the concept -->
+![radix-sort](https://cdn.programiz.com/cdn/farfuture/GKQPB3dxbVfvYT3qiSZtTQDI5UOENnLr-oTPlCbYKaM/mtime:1582112622/sites/tutorial2program/files/Radix-sort-0_0.png)
