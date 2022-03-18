@@ -2,6 +2,7 @@
 - [Dynamic Programming](#dynamic-programming)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
+- [shortest common super sequence](#shortest-common-super-sequence)
 
 
 <!-- Table of content -->
@@ -211,4 +212,68 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 ```
 
+# [shortest common super sequence](https://leetcode.com/problems/shortest-common-supersequence/)
+
+- [Problem Statement](#problem-statement)
+    - [Examples](#examples)
+    - [Constraints](#Constraints)
+- [Explanation](#explanation)
+- [Complexity](#complexity)
+
+### Problem-Statement
+
+Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences. If there are
+multiple valid strings, return any of them.
+
+A string s is a subsequence of string t if deleting some number of characters from t (possibly 0) results in the string
+s.
+
+### Examples
+
+```
+Input: str1 = "abac", str2 = "cab"
+Output: "cabac"
+Explanation:
+str1 = "abac" is a subsequence of "cabac" because we can delete the first "c".
+str2 = "cab" is a subsequence of "cabac" because we can delete the last "ac".
+The answer provided is the shortest such string that satisfies these properties.
+```
+
+### Constraints
+
+```
+Input: str1 = "aaaaaaaa", str2 = "aaaaaaaa"
+Output: "aaaaaaaa"
+```
+
+```
+1 <= str1.length, str2.length <= 1000
+str1 and str2 consist of lowercase English letters.
+```
+
+### Explanation
+
+In order to find the shortest super subsequence we need to
+
+1) Find the longest common subsequence (lcs)
+2) Include its characters only once
+3) Add the other characters of the two strings
+
+Finding length of the longest common subsequence
+
+1) The first row and the first column are filled with zeros. 
+2) Fill each cell with the table using the following logic.
+3) If the character corresponding to the current row and current column are matching, then fill the current cell by
+adding one to the diagonal element. Point an arrow to the diagonal cell. 
+4) Else take the maximum value from the previous column and previous row element for filling the current cell.
+5) Step 2 is repeated until the table is filled.
+6) The value in the last row and the last column is the length of the longest common subsequence.
+
+### Complexity
+
+```
+Time Complexity : O(n*m)
+Space Complexity : O(n+m)
+Where n and m are the lengths of the two strings
+```
 
