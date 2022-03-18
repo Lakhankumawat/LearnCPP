@@ -1,15 +1,17 @@
-
-<!-- Table of content -->
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
+- [Equal Sum Partition Problem](#equal-sum-partition-problem)
+- [Trapping Rain Water Problem](#trapping-rain-water-problem)
+
+
+<!-- Table of content -->
+# Dynamic Programming
   - [Recursive vs Dynamic Programming Approach](#recursive-vs-dynamic-programming-approach)
-  - [Algorithm](#algorithm)
   - [Properties](#properties)
   - [Advantages](#advantages)
   - [Disadvantages](#disadvantage)
   - [Problems](#problems)
 
-# Dynamic Programming :
 Dynamic Programming is mainly an optimization over simple recursion.
 Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming.
 The basic idea is to simply store the results of  the subproblems, so that we do not have to compute it again and again them when needed later. 
@@ -17,14 +19,6 @@ This simple optimization reduces time complexities from exponential to polynomia
 
 
 ### Recursive vs Dynamic Programming Approach :
-
-
-
-
-
-
-
-### Algorithm
 
 #### Recursive:
 ```
@@ -70,7 +64,8 @@ return f[n];
  Solution Link: 
  ```
 ---
-=======
+
+
 # Equal Sum Partition Problem
 
 - [Problem Statement](#problem-statement)
@@ -160,4 +155,60 @@ t[i][j] = true if a subset of {arr[0], arr[1], ..arr[j-1]} has sum equal to i, o
 Time Complexity: O(sum*n) 
 Auxiliary Space: O(sum*n) 
 ```
+
+# [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
+
+- [Problem Statement](#problem-statement)
+    - [Examples](#examples)
+- [Explanation](#explanation)
+- [Complexity](#complexity)
+
+### Problem-Statement
+
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+
+### Examples
+
+Input: arr[]   = {2, 0, 2}
+Output: 2
+
+We can trap 2 units of water in the middle gap
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200429012104/Untitled-Diagram711.png" width="300" />
+
+
+
+Input: arr[]   = {3, 0, 2, 0, 4}
+Output: 7
+
+We can trap "3 units" of water between 3 and 2,
+"1 unit" on top of bar 2 and "3 units" between 2 
+and 4.
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200429012307/Untitled-Diagram811.png" width="300" />
+
+### Explanation
+
+An element of the array can store water if there are higher bars on the left and right. The amount of water to be stored in every element can be found out by finding the heights of bars on the left and right sides. The idea is to compute the amount of water that can be stored in every element of the array. 
+
+- Algorithm(Pseudo Code): 
+
+  - Create two arrays left and right of size n. create a variable max_ = INT_MIN.
+  - Run one loop from start to end. In each iteration update max_ as max_ = max(max_, arr[i]) and also assign left[i] = max_
+  - Update max_ = INT_MIN.
+  - Run another loop from end to start. In each iteration update max_ as max_ = max(max_, arr[i]) and also assign right[i] = max_
+  - Traverse the array from start to end.
+  - The amount of water that will be stored in this column is min(a,b) – array[i],(where a = left[i] and b = right[i]) add this value to total     amount of water stored
+  - Print the total amount of water stored.
+
+- Space Optimization for the Solution: 
+
+Instead of maintaining two arrays of size n for storing the left and a right max of each element, maintain two variables to store the maximum till that point. Since water trapped at any element = min(max_left, max_right) – arr[i]. Calculate water trapped on smaller elements out of A[lo] and A[hi] first and move the pointers till lo doesn’t cross hi.
+
+### Complexity
+```
+Time Complexity : O(n)
+Space Complexity : O(1)
+```
+
 
