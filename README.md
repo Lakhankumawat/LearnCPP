@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -170,6 +170,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/shubhamlakheraa"><img src="https://avatars.githubusercontent.com/u/64166515?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SHUBHAM LAKHERA</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shubhamlakheraa" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/aparnamittal"><img src="https://avatars.githubusercontent.com/u/100208233?v=4?s=100" width="100px;" alt=""/><br /><sub><b>aparnamittal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=aparnamittal" title="Code">💻</a></td>
+    <td align="center"><a href="https://rahulsharma.vercel.app/"><img src="https://avatars.githubusercontent.com/u/67220225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul Sharma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Rahul5430" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Jayanth-MKV"><img src="https://avatars.githubusercontent.com/u/93820457?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jayanth MKV</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Jayanth-MKV" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SidharthSarangi"><img src="https://avatars.githubusercontent.com/u/78564629?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sidharth Sarangi</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SidharthSarangi" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rahul-Kumar-prog"><img src="https://avatars.githubusercontent.com/u/68837569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul kumar</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Rahul-Kumar-prog" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Purvak-10"><img src="https://avatars.githubusercontent.com/u/76229635?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Purvak Baliyan</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Purvak-10" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/mohammadruman"><img src="https://avatars.githubusercontent.com/u/88760648?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammad Ruman</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=mohammadruman" title="Code">💻</a></td>
   </tr>
 </table>
 
