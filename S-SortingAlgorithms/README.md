@@ -138,9 +138,47 @@ begin countSort(arr, n)
 
 - Works for restricted inputs only for a certain range and takes extra space.
 
-
 ## Radix Sort
+-**Radix Sort** is a non-comparative sorting algorithm with asymptotic complexity **O(nd)**. It is one of the most efficient and fastest linear sorting algorithms. Radix sort was developed to sort large integers. As an integer is treated as a string of digits so we can also call it a string sorting algorithm.
 
-- It repeatedly loops through the array elements to get the max element, then iterate through each digit.
-<!-- image to help better explain the concept -->
-![radix-sort](https://cdn.programiz.com/cdn/farfuture/GKQPB3dxbVfvYT3qiSZtTQDI5UOENnLr-oTPlCbYKaM/mtime:1582112622/sites/tutorial2program/files/Radix-sort-0_0.png)
+![Clarification](https://www.codingeek.com/wp-content/uploads/2017/02/radix.png)
+
+    Radix-Sort(A, d)
+    for j = 1 to d do
+        int count[10] = {0};
+        for i = 0 to n do
+         count[key of(A[i]) in pass j]++
+        for k = 1 to 10 do
+         count[k] = count[k] + count[k-1]
+        for i = n-1 downto 0 do
+         result[ count[key of(A[i])] ] = A[j]
+         count[key of(A[i])]--
+        for i=0 to n do
+          A[i] = result[i]
+    end for(j)
+    end func
+
+### Properties
+**Worst Case Time complexity**: O (nd)  
+**Average Case Time complexity**: O(nd)  
+**Best Case Time complexity**: O(nd)  
+**Space Complexity:** O(n+k)  
+**Data Structure:** Array  
+**Sorting In Place**: No  
+**Stable**: Yes
+
+## Advantages
+
+The advantages of Radix Sort are:
+
+-   Fast when the keys are short i.e. when the range of the array elements is less.
+-   Used in suffix array constuction algorithms like Manber's algorithm and DC3 algorithm.
+-   Radix Sort is stable sort as relative order of elements with equal values is maintained.
+
+## Disadvantages
+
+The disadvantages of Radix Sort are:
+
+-   Since Radix Sort depends on digits or letters, Radix Sort is much less flexible than other sorts. Hence , for every different type of data it needs to be rewritten.
+-   The constant for Radix sort is greater compared to other sorting algorithms.
+-   It takes more space compared to Quicksort which is inplace sorting.
