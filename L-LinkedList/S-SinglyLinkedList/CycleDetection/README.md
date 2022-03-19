@@ -1,5 +1,5 @@
-## Table of Content
-- Cycle in Linked List
+# Table of Content
+- [Cycle in Linked List][here](# Cycle in Linked List)
 - Terms Explained
 - Algorithm used
 - Approach
@@ -9,14 +9,14 @@
 - Disadvantages
 
 
-# Cycle in Linked List
+## Cycle in Linked List
 Given a linked list, check if the linked list has cycle or not. Below diagram shows a linked list with a cycle. 
-[here](https://www.geeksforgeeks.org/wp-content/uploads/2009/04/Linked-List-Loop.gif)
+![image](https://www.geeksforgeeks.org/wp-content/uploads/2009/04/Linked-List-Loop.gif)
 
 
 ## Terms Explained:
 Linked List : A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. 
-[here](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
+![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 
 ## Algorithm used: [Floyd's Algorithm or Hare-Tortoise Algorithm]
