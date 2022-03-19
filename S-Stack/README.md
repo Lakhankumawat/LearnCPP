@@ -46,3 +46,28 @@ Algorithm
    ![Infix to postfix conversion](https://prepinsta.com/wp-content/uploads/2020/06/Infix-to-Posting-Conversion-in-C-using-Stacks-2048x1453.png)
 
     - For more information about infix to postfix conversion [click here](https://prepinsta.com/data-structures/infix-to-postfix-conversion/)
+
+#Parenthesis Checker
+
+A parentheses is said to be balanced if each left parenthesis has its respective right parenthesis to match its pair in a well-nested format.
+
+In computer science, valid parentheses(balanced parentheses) are a notation used to simplify expressions written in an operator-precedence parser by allowing the programmer to explicitly mark the operator precedence and associativity of a given expression. 
+
+Note that an input string is valid if:
+
+1.Open brackets must be closed by the same type of brackets
+2.Open brackets must be closed in the correct order.
+
+#How To check parenthesis using Stack ?
+1. Declare stack S.
+2. Now traverse the string expression using a pointer. 
+    if the current pointer is at opening bracket ('(' or '{' or '[') then push it to stack S.
+    else the current pointer is at closing bracket (')' or '}' or ']') then pop from the stack 
+        if the popped bracket is the matching opening bracket then brackets are valid 
+        else brackets are not valid.
+
+After complete traversal, if there is some starting bracket left in the stack then "not valid"
+
+ ![parenthesis Checker](![image](https://user-images.githubusercontent.com/91210199/159122082-2a5e98d2-bdd4-4f9d-9131-1d2048a5f60f.png)
+ 
+
