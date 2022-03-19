@@ -1,0 +1,143 @@
+QUESTION:
+Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+
+Solution:
+1.Brute Force approach:
+
+EXPLANATION   :  Here we will take an extra temporary matrix of size n*m and when ever any element in row or coloumn is zero we will store 0 in the temporary matrix
+finally we if at any place  of temporary matrix is zero we will mark 0 in the main matrix also.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+void setZeroes(vector<vector<int>> &matrix, int n, int m) {
+    vector<vector<int>> answer;
+    
+    // Set all elements of answer array as 1
+    for (int i = 0; i < n; i++) {
+        vector<int> curr;
+        for (int j = 0; j < m; j++) {
+            curr.push_back(1);
+        }
+        answer.push_back(curr);
+    }
+    
+    // Traverse row wise
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (matrix[i][j] == 0) {
+                for (int k = 0; k < m; k++) {
+                    answer[i][k] = 0;
+                }
+                break;
+            }
+        }
+    }
+    
+    // Traverse column wise
+    for (int j = 0; j < m; j++) {
+        for (int i = 0; i < n; i++) {
+            if (matrix[i][j] == 0) {
+                for (int k = 0; k < n; k++) {
+                    answer[k][j] = 0;
+                }
+            }
+        }
+    }
+    
+    // Update the elements in matrix array
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (answer[i][j] == 0) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
+}
+
+int main() {
+    // Example 1
+    vector<vector<int>> matrix{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+    int n = matrix.size();
+    int m = matrix[0].size();
+    setZeroes(matrix, n, m);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout<<matrix[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+      return 0;
+}
+
+OUTPUT:
+1 0 1 
+0 0 0 
+1 0 1 
+
+COMPLEXITY ANALYSIS:
+Time Complexity = O(n * m)
+Space Complexity = O(n * m) 
+where n is the number of rows in the matrix and m is the number of columns in the matrix.
+
+The time complexity cannot be decreased further, but we can optimize the space complexity to O(1).
+we can reduce the space complexity in two ways
+
+1.in brute froce approch instaed of taking whole new matrix we can take 2 new arrays one representing rows and other coloumns
+here we can see the function snippet of the function
+
+ void setZeroes(vector<vector<int>>& matrix,int n,int m) {
+        vector<int> u;
+        vector<int> v;
+        int rowsize=n;
+        int colsize=m;
+        for(int i=0;i<rowsize;i++){
+            for(int j=0;j<colsize;j++){
+                if(matrix[i][j]==0){
+                    u.push_back(i);
+                    v.push_back(j);
+                }
+            }
+        }
+        for(int m=0;m<u.size();m++){
+            for(int p=0;p<colsize;p++){
+            matrix[u[m]][p]=0;
+        }
+        }
+        for(int n=0;n<v.size();n++){
+          for(int q=0;q<rowsize;q++){
+            matrix[q][v[n]]=0;
+        }
+        }     
+    }
+
+2.Further we can modify the above method:instaed of taking two arrays we can do this using inplace operations
+
+The idea is simple: store states of each row in the first of that row, and store states of each column in the first of that column. 
+Because the state of row0 and the state of column0 would occupy the same cell, I let it be the state of row0, and use another variable "col0" for column0. 
+In the first phase, use matrix elements to set states in a top-down way. 
+In the second phase, use states to set matrix elements in a bottom-up way.
+
+here is the code snippet
+
+void setZeroes(vector<vector<int> > &matrix,int n,int m) {
+    int col0 = 1, rows = n, cols = m;
+
+    for (int i = 0; i < rows; i++) {
+        if (matrix[i][0] == 0) col0 = 0;
+        for (int j = 1; j < cols; j++)
+            if (matrix[i][j] == 0)
+                matrix[i][0] = matrix[0][j] = 0;
+    }
+
+    for (int i = rows - 1; i >= 0; i--) {
+        for (int j = cols - 1; j >= 1; j--)
+            if (matrix[i][0] == 0 || matrix[0][j] == 0)
+                matrix[i][j] = 0;
+        if (col0 == 0) matrix[i][0] = 0;
+    }
+}
+
+Time Complexity: O(m*n) ;
+Space:O(1);
+This the most optimized solution.
