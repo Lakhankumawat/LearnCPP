@@ -4,7 +4,7 @@
 # Cycle in Linked List content
 - [Cycle in Linked List](#cycleinLinkedList)
 - [Terms Explained](#terms-explained)
-- [Algorithm used](#algorithmused)
+- [Algorithm used](#algorithm)
 - [Approach](#approach)
 - [Algorithm](#algorithm)
 - [Properties](#properties)
@@ -18,12 +18,13 @@ Given a linked list, check if the linked list has cycle or not. Below diagram sh
 
 
 # Terms Explained:
-## Linked List : A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. 
+### Linked List : A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. 
 ![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 
 # Algorithm used: [Floyd's Algorithm or Hare-Tortoise Algorithm]
-Floyd's Algorithm is the fastest method to detect cycle in linked list using two pointers.
+- Floyd's Algorithm is the fastest method to detect cycle in linked list using two pointers.
+![image](https://1.bp.blogspot.com/-cg4vVSVVhyI/URsA1H8AWII/AAAAAAAACiY/FKpQGr7Cxo4/s1600/01.png)
 - How does above algorithm work? 
 Please See : How does Floyd’s slow and fast pointers approach work?
 [here](https://www.geeksforgeeks.org/how-does-floyds-slow-and-fast-pointers-approach-work/)
@@ -72,4 +73,4 @@ bool detectCycle(node* &head){
 - Use of Two pointers
 
 
-You can also see different approches [here](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
+You can also see different approches of the problem on [geeksforgeeks](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
