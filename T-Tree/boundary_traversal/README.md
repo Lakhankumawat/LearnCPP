@@ -49,6 +49,8 @@ NOTE:
  We must avoid the duplicacy as the last left boundary is also a leaf node
  so, we should take care of this.
 ```
+## OUTPUT
+![Screenshot (2)](https://user-images.githubusercontent.com/95274988/159119982-931ab7fe-084f-40e8-a4b7-db2f2751a027.png)
 ##  COMPLEXITY
 ``` javascript
 Time Complexity: O(n) where n is the number of nodes in binary tree.
