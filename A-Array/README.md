@@ -4,16 +4,17 @@
 - [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
 - [Prefix Sum](#prefix-sum)
 
-## Maximum Sum of Subarray:
-Given an array of integers, the task is to find the maximum subarray sum possible of all the non-empty subarrays. \
-![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/kadane-Algorithm.png) 
-
-## Content:
+# Maximum Sum of Subarray:
+- [Maximum Sum Subarray](#maximum-sum-subarray)
 - [Example](#example)
 - [Differnt Approches](#differnt-approches)
   - [Brute force Approach (simple)](#1-brute-force-approach-simple)
   - [Cumulative Sum Approach](#2-cumulative-sum-approach)
   - [Efficient Approach: Kadane’s Algorithm](#3-efficient-approach-kadanes-algorithm)
+
+## [Maximum Sum Subarray:](https://github.com/MRK04/LearnCPP/blob/main/A-Array/MaximumSumSubarray.cpp)
+Given an array of integers, the task is to find the maximum subarray sum possible of all the non-empty subarrays. \
+![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/kadane-Algorithm.png)
 
 ## Example:
  
