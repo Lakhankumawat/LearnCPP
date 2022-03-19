@@ -1,7 +1,8 @@
 // CYCLIC SORT
 
-// Cyclic Sort is an in-place and unstable sorting algorithm.
-// In this sort we simply place the elements of the array on their positions, like 1 should be at 0th index and 2 at 1st index and so on...
+// Cycle sort is a comparison sorting algorithm that forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array. It is theoretically optimal in the sense that it reduces the number of writes to the original array.
+
+// It is an in-place and unstable sorting algorithm. Cycle sort forces an array to be factored into a number of cycles where every element can rotate in order to produce a sorted array. The time complexity of cycle sort is O(n2), even in the best case.
 
 // TIP:-
 
