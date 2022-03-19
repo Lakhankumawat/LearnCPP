@@ -8,6 +8,12 @@
        - [Properties](#properties)
        - [Advantages](#advantages)
        - [Disadvantage](#disadvantage)
+   -  [Binary Search](#binary-search)
+        - [Explanation](#explanation)
+       -  [Code](#desc)
+        - [Properties](#binarysearchproperties)
+        - [Advantages](#advantagesofbinarysearch)
+        - [Disadvantage](#disadvantageofbinarysearch)
 
 # Searching Algorithms
 
@@ -87,3 +93,93 @@ int main()
 ### Disadvantage
 
 - Inversely, slow searching of big lists.
+
+
+## Binary Search
+- Binary search algorithm finds a given element in a list of elements with O(log n) time complexity where n is total number of elements in the list.
+- Binary search is applied only on monotonic functions,values should either be in increasing order or decreasing order. 
+- Binary search can not be used for a list of elements arranged in random order. 
+
+<a name="explanation"></a>
+##  Explanation
+- This search process starts comparing the search element with the middle element in the list. If both are matched, then the result is "element found and we return   the index". 
+- Otherwise, we check whether the search element is smaller or larger than the middle element in the list, then we decide which part we should search.
+- If the search element is smaller, then we repeat the same process for the left sublist of the middle element.
+- If the search element is larger, then we repeat the same process for the right sublist of the middle element. 
+- We repeat this process until we find the search element in the list or until we left with a sublist of only one element.
+-  And if that element also doesn't match with the search element, then the result is "Element not found in the list".
+
+### Middle Element = low + (high – low)/2;
+    why we are calculating the middle index this way, we can just simply add the lower and higher index and divide it by 2.
+     Middle Elememt = (low + high)/2
+But if we calculate the middle index like this it fails for larger values of int variables low and high. Specifically,
+it fails if the sum of low and high is greater than the maximum positive int value(2^31 – 1 ).
+
+## Example :
+![Binary Searchexp](https://user-images.githubusercontent.com/88760648/159125786-794de973-96ce-478b-bbc9-f2e477f27bc4.png)
+<!-- citation : [Here](http://www.btechsmartclass.com/data_structures/binary-search.html)  -->
+<a name="desc"></a>
+###  Code
+```
+
+//Search Element =12
+#include <iostream>
+using namespace std;
+int binarysearch(int arr[], int size, int search_element)
+{
+    int low = 0;            //zero Index Of the Array
+    int high = size - 1;   //Last Index of the Array
+   
+    int mid = low + (high - low) / 2;
+
+    // we have not used this formula middle = (low+high)/2 because it will cross the 
+    //limit of maximum positive int value(2^31 – 1 ) specially when you add low and high.
+
+    while (low <= high)
+    {
+        if (arr[mid] == search_element)
+        {
+            return mid;  
+        }
+        if (search_element > arr[mid])
+        {
+            low = mid + 1; //Right Part 
+        }
+        else
+        {
+            high = mid - 1; //Left Part
+        }
+         
+        mid = low + (high - low) / 2;    // Updating Middle Element
+    }
+    return -1;
+}
+int main()
+{
+    int array[9] = {10,12,20,32,50,55,65,80,99};
+
+    int result = binarysearch(array, 9, 12);       //Function Call
+    cout << "Index of 12 is : " << result << endl;
+ 
+    return 0;
+}
+
+
+```
+
+<a name="binarysearchproperties"></a>
+### Properties
+- Time Complexity : O(log n)
+- Space complexity : O(1)
+
+<a name="advantagesofbinarysearch"></a>
+### Advantages
+- It is great to search through large sorted arrays.
+- It has a simple implementation.
+
+<a name="disadvantageofbinarysearch"></a>
+### Disadvantage
+- The biggest problem with a binary search is that you can only use this if the data is sorted into an order.
+
+<a name="#difference"></a>
+
