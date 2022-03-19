@@ -1,3 +1,14 @@
+## Table of Content
+- Cycle in Linked List
+- Terms Explained
+- Algorithm used
+- Approach
+- Algorithm
+- Properties
+- Advantages
+- Disadvantages
+
+
 # Cycle in Linked List
 Given a linked list, check if the linked list has cycle or not. Below diagram shows a linked list with a cycle. 
 [here](https://www.geeksforgeeks.org/wp-content/uploads/2009/04/Linked-List-Loop.gif)
@@ -39,7 +50,6 @@ bool detectCycle(node* &head){
 
 
 ## Properties
-
 # Complexity Analysis:  
 ## Time Complexity: O(n)
 - Only one traversal of the loop is needed.
