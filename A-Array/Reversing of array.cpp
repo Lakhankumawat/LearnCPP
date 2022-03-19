@@ -46,11 +46,17 @@ void reverse2(int arr[], int n)
 
 int main()
 {
-    //Declaring and initializing the array
-    int arr[] = { 1, 2, 3, 4, 5 };  
-  
-    //Calculating the size of the array
-    int n = sizeof(arr)/sizeof(arr[0]);
+   
+    cout<<"Enter size of array"<<endl;
+    int n;
+    cin>>n;    //taking n (size of array) as input
+    
+    int arr[n];
+    cout<<"Enter "<<n<<" elements of array"<<endl;
+    for(int i=0;i<n;i++)
+    {             //taking array as input
+        cin>>arr[i];
+    }
     
     //calling the utility function reverse1 with passing two arguments array and size of array for reversing the array with the help of auxulliary array
     reverse1(arr, n);
