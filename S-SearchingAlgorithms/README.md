@@ -109,62 +109,45 @@ int main()
 - We repeat this process until we find the search element in the list or until we left with a sublist of only one element.
 -  And if that element also doesn't match with the search element, then the result is "Element not found in the list".
 
-### Middle Element = low + (high – low)/2;
+### middle = lowerBound + ( upperBound - lowerBound ) / 2
     why we are calculating the middle index this way, we can just simply add the lower and higher index and divide it by 2.
-     Middle Elememt = (low + high)/2
+     middle = ( lowerBound +  upperBound ) / 2
 But if we calculate the middle index like this it fails for larger values of int variables low and high. Specifically,
 it fails if the sum of low and high is greater than the maximum positive int value(2^31 – 1 ).
 
 ## Example :
-![Binary Searchexp](https://user-images.githubusercontent.com/88760648/159125786-794de973-96ce-478b-bbc9-f2e477f27bc4.png)
+
+<img src="https://user-images.githubusercontent.com/88760648/159125786-794de973-96ce-478b-bbc9-f2e477f27bc4.png" width="400" height="400">
 <!-- citation : [Here](http://www.btechsmartclass.com/data_structures/binary-search.html)  -->
 <a name="desc"></a>
-###  Code
+
+##  Code
+
 ```
+   A ← sorted array
+   n ← size of array
+   x ← value to be searched
 
-//Search Element =12
-#include <iostream>
-using namespace std;
-int binarysearch(int arr[], int size, int search_element)
-{
-    int low = 0;            //zero Index Of the Array
-    int high = size - 1;   //Last Index of the Array
+   Set lowerBound = 1
+   Set upperBound = n 
+
+   while x not found
+      if upperBound < lowerBound 
+         EXIT: x does not exists.
    
-    int mid = low + (high - low) / 2;
-
-    // we have not used this formula middle = (low+high)/2 because it will cross the 
-    //limit of maximum positive int value(2^31 – 1 ) specially when you add low and high.
-
-    while (low <= high)
-    {
-        if (arr[mid] == search_element)
-        {
-            return mid;  
-        }
-        if (search_element > arr[mid])
-        {
-            low = mid + 1; //Right Part 
-        }
-        else
-        {
-            high = mid - 1; //Left Part
-        }
+      set middle = lowerBound + ( upperBound - lowerBound ) / 2
+      
+      if A[midPoint] < x
+         set lowerBound = midPoint + 1
          
-        mid = low + (high - low) / 2;    // Updating Middle Element
-    }
-    return -1;
-}
-int main()
-{
-    int array[9] = {10,12,20,32,50,55,65,80,99};
+      if A[midPoint] > x
+         set upperBound = midPoint - 1 
 
-    int result = binarysearch(array, 9, 12);       //Function Call
-    cout << "Index of 12 is : " << result << endl;
- 
-    return 0;
-}
-
-
+      if A[midPoint] = x 
+         EXIT: x found at location midPoint
+   end while
+   
+end procedure
 ```
 
 <a name="binarysearchproperties"></a>
