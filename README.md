@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-37-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -179,6 +179,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/mohammadruman"><img src="https://avatars.githubusercontent.com/u/88760648?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammad Ruman</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=mohammadruman" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vinaya563"><img src="https://avatars.githubusercontent.com/u/91210199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vinaya Sree Modem</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=vinaya563" title="Code">💻</a></td>
   </tr>
 </table>
 
