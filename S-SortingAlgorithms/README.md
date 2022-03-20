@@ -13,6 +13,7 @@
   - [Insertion Sort](#insertion-sort)
   - [Merge Sort](#merge-sort)
   - [Quick Sort](#quick-sort)
+  - [DNF Sort](#dnf-sort)
 
 # Sorting Algorithms
 
@@ -84,6 +85,34 @@ end BubbleSort
 ## Quick Sort
 
 ---
+
+## DNF Sort
+DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is specially designed for only the array which contain numbers `0's` `1's` and `2's` only.
+
+## Approach
+
+**The Array is divided into four Sections**
+
+1. `a[1 to low-1]` for zeroes and as repect to flag (red in Dutch Flag).
+2. `a[low to mid-1]` for ones and as repect to flag (white).
+3. `a[mid to high]` no change.
+4. `a[high+1 to n(size)]` for twos and as respect to flag (blue).
+
+## Algorithm
+
+1. Initialize the `low = 0` , `mid = 0` and `high = size - 1`.
+2. Traverse the array from starting to last till mid is less than equal to high.
+3. If the element is 0 then swap the element with the element at index low and increase low and mid by 1.
+4. If the element is 1 then increase mid by 1.
+5. If the element is 2 then swap the element with the element at index high and decrease the high by 1.
+
+## Time Complexity
+
+_O(n)_ where **n** is the size of array.
+
+## Space Complexity
+
+_O(1)_ as there is **no extra space** is required.
 
 
 ## Counting Sort
