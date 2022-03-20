@@ -6,7 +6,7 @@
     - [Properties](#properties)
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
-
+  - [Palindrome linked list](#palindrome-linked-list)
 
 # Segregate Even Odd
 
@@ -156,6 +156,39 @@ Deleting a node  :
 **Space Complexity** 
 
 No extra space is used.   
-Space Complexity : O(1) 
+Space Complexity : O(1)
+***
+# Palindrome linked list
 
+In this approach, I have used a stack to store all the elements after the middle
+element so that We have to compare only (n/2)-1 elements to find out the list is palindrome or not.
 
+### Algorithm
+
+* Find the middle node of the linked list
+* Add all the elements after the middle element in the stack
+* Compare the elements of the linked list with the top element of the stack
+* If the element of the stack and the linked list is same,
+  Iterate to the next element in the linked list and pop the element of the stack
+* Repeat 4th point till stack is empty (or we have reached the middle element of the list)
+* If we have successfully popped all the element of the stack, Return 1
+
+  Else Return 0
+
+### Time Complexity
+
+* The time complexity of this approach will be O(n)
+  - But we have to compare only (n/2)-1 time as we have stored all the elements after the middle in the stack and we are comparing 
+    the elements of the linked list only till the previous of the middle node.
+
+### Space Complexity
+
+* Space complexity will be O(n) as we are using a stack to store the elelments of the linked list.
+
+### Advantages
+
+* Less comparison
+* Easy approach
+
+### Disadvantage
+* Takes O(n) Auxilary space.
