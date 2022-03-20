@@ -68,8 +68,17 @@ int maxSubArraySum3(int a[],int n)
 }
 
 int main() {
-    int a[] = {-2, -3, 4, -1, -2, 1, 5, -3};
-    int n = sizeof(a)/sizeof(a[0]);
+    int n;
+    cout<<"Enter the size of an array: ";
+    cin>>n;
+
+    int a[n];
+    //taking input of array from user
+    cout<<"Enter values of an array: ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
     
     int x;
     cout<<"-----------CHOICES-----------\n1. Brute Force Approach \n2. Cumulative Sum Approach \n3. kadene's algorithm \n4. Exit \n"<<endl;
