@@ -7,6 +7,8 @@
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
 
+![Screenshot (482)](https://user-images.githubusercontent.com/98539013/159149159-d95ee43a-7bd5-4a49-88ce-7c0fb021f29a.png)
+
 # Binary Tree:
 
 - A tree whose elements have at most 2 children is called a binary tree. 
