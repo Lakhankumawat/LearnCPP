@@ -43,8 +43,10 @@ int main(){
     p->left->right=new node(8);
     p->left->right->left=new node(6);
 
-    cout<<"the floor value of the given key is -> "<<FloorInBst(p,14)<<endl;
-    cout<<"the floor value of the given key is -> "<<FloorInBst(p,7)<<endl;
+    // cout<<"the floor value of the given key is -> "<<FloorInBst(p,14)<<endl;
+    // cout<<"the floor value of the given key is -> "<<FloorInBst(p,7)<<endl;
+    cout<<"the floor value of the given key is -> "<<FloorInBst(p,1)<<endl;
+
 }
 
 /* OUTPUT:: 
