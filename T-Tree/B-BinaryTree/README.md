@@ -7,7 +7,7 @@
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
 
-![Screenshot (482)](https://user-images.githubusercontent.com/98539013/159149159-d95ee43a-7bd5-4a49-88ce-7c0fb021f29a.png)
+
 
 # Binary Tree:
 
@@ -83,6 +83,8 @@ Height of tree: 3
 - This is not sufficient to make a tree a binary search tree. It will be a BST if its left subtree and right subtree both are Binary Search Trees too.
 - Note that this property is valid itself for the leaf nodes as they don't have any child nodes. 
 - So, in a BST for every node, the left sub-tree will have all the nodes with values smaller than the value in the parent node and the right subtree will have all the values greater than the value in the parent node.
+
+![Screenshot (482)](https://user-images.githubusercontent.com/98539013/159149159-d95ee43a-7bd5-4a49-88ce-7c0fb021f29a.png)
 
 ### Properties
 
