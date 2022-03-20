@@ -77,13 +77,43 @@ end BubbleSort
 
 ---
 
-## Merge Sort
-
----
-
 ## Quick Sort
 
----
+
+
+## Merge Sort
+
+Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. 
+
+ <!--image to help better understanding of the concept-->
+ ![merge-sort](![image](https://user-images.githubusercontent.com/91210199/159164125-247a8fbb-2d4b-4ea4-9416-5f61939521b9.png)
+
+ ### Algorithm
+  MergeSort(arr[], l,  r)
+If r > l
+     1. Find the middle point to divide the array into two halves:  
+             middle m = l+ (r-l)/2
+     2. Call mergeSort for first half:   
+             Call mergeSort(arr, l, m)
+     3. Call mergeSort for second half:
+             Call mergeSort(arr, m+1, r)
+     4. Merge the two halves sorted in step 2 and 3:
+             Call merge(arr, l, m, r)
+             
+  ### Properties 
+   1)Time complexity = O(nlogn)
+   2)Space Complexity - O(n)
+   3)Stable - Yes
+   4) In place = no
+   
+   ### Advantages
+   
+   Merge sort is the very effiecent algorithm as compared to all the other sorting algorithms and is widely used in order to sort linked lists ,stacks etc
+     
+   ### Disadavantages
+    Slower as compared to all the other algorithms for smaller tasks
+    Requires the usage of additional memory space for additional array
+    
 
 
 ## Counting Sort
