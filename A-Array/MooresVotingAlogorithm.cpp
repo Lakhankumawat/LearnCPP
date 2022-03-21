@@ -11,7 +11,7 @@ Intuition:
 */
 class AlgorithmImplementation {
 public:
-    int countMajjority(int x,vector<int>&nums) {
+    int countMajority(int x,vector<int>&nums) {
         // count whether we have found the correct majority element or not.
         int count  = 0
         for(int i=0;i<nums.size();i++) {
@@ -39,7 +39,7 @@ public:
             
         }
         
-        if(not countMajjority(majorelement,nums)) return -1;
+        if(not countMajority(majorelement,nums)) return -1;
         // atlast the majority will be left with us
         return majorelement;
         
