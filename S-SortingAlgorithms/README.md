@@ -118,6 +118,7 @@ end BubbleSort
 ## Properties
 - Time Complexity: O(n^2) 
 - Space Complexity: O(1)
+ - In-place : Yes
 - Stable : Yes
 
 <a name="advantagesofinsertionSort"></a>
