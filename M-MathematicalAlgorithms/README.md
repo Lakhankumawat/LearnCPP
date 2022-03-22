@@ -1,7 +1,8 @@
 <!-- Table of content -->
 # Table of content
 - [Strong Number/Krishnamurty Number](#Strong-Number)
-  - [What is Strong Number](#what_is_strong_number)
+  - [About Strong Number](#what_is_strong_number)
+  - [How to check if the number is strong or not](#How_to_check)
  
 - [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
@@ -10,8 +11,15 @@
   - [Problems](#problems) 
   
 
-# Strong Number :
+# About Strong Number :
 Also known as Krishnamurti Number, is a number which was discovered by Dr. Jiddu Krishnamurty and Dr. Peterson. The uniqueness of the number is that the sum of the factorial of each digits is equal to the original number.
+
+# How to check if number is Strong number or not?
+Keep on taking the remainder of the number, using while loop, untill it reaches 0 or lesser, and keep on adding the sum of the factorials of the remainders obtained. If the sum is equal to the original number, then it is a strong number.
+
+```
+
+```
 
 ### example
 - 145 , Here factorial of 1 + factorial of 4 (44) + factorial of 5 (120) = 145
