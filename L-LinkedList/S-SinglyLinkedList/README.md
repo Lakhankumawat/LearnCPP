@@ -1,4 +1,54 @@
 
+<!-- Table of content -->
+# Table of content
+  - [Segregate Even Odd](#segregate-even-odd)
+    - [Algorithm](#algorithm)
+    - [Properties](#properties)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantage)
+  - [Palindrome linked list](#palindrome-linked-list)
+
+# Segregate Even Odd
+
+The Problem Statement : Give a Linked List of integer, write a function to modify the linked list such that all even numbers appear before all the odd numbers in the modified linked list. Also, keep the order of even and odd numbers the same
+
+### Task perform 
+- Comparision Linkedlist elements
+- Insertion a node in Linkedlist in Front
+- Insertion a node in Linkedlist in End
+
+
+### Explanation 
+ - First Step is we take a length of LinkedList as input.
+ - Second Step is to take input of the Head Node.
+ - Pointing tail and head to the Head node.
+ - Create a for loop in length -1 times because we alrady take the head.
+ - We create a function who compair the input element passing with Head and tail  with the input data.
+ -  Oddevenchecker funciton to check if the data is odd the call InsertAtTail function to Insert in End of the Head Node of the LinkedList. Or if the data is even the call InsertAtHead function to insert Node in Front Head of the LinkedList.
+ - After all thing call function print to print LinkedList.
+
+![screenshot-185-7838](https://user-images.githubusercontent.com/55774240/158155742-e661bcba-296a-47f8-b43f-bd65c603d053.png)
+### Algorithm
+
+```
+Write Pseudo code for your algorithm here
+```
+
+### Properties
+
+- Time Complexity : Insert element at front O(1), Insert element at end O(N) = O(N)
+- Auxillary Space : No extra space used = O(1)
+
+### Advantages
+
+- 
+
+### Disadvantage
+
+- 
+
+---
+
 ### Singly Linked List 
 
 1. Create a SLL 
@@ -106,5 +156,39 @@ Deleting a node  :
 **Space Complexity** 
 
 No extra space is used.   
-Space Complexity : O(1) 
+Space Complexity : O(1)
+***
+# Palindrome linked list
 
+In this approach, I have used a stack to store all the elements after the middle
+element so that We have to compare only (n/2)-1 elements to find out the list is palindrome or not.
+
+### Algorithm
+
+* Find the middle node of the linked list
+* Add all the elements after the middle element in the stack
+* Compare the elements of the linked list with the top element of the stack
+* If the element of the stack and the linked list is same,
+  Iterate to the next element in the linked list and pop the element of the stack
+* Repeat 4th point till stack is empty (or we have reached the middle element of the list)
+* If we have successfully popped all the element of the stack, Return 1
+
+  Else Return 0
+
+### Time Complexity
+
+* The time complexity of this approach will be O(n)
+  - But we have to compare only (n/2)-1 time as we have stored all the elements after the middle in the stack and we are comparing 
+    the elements of the linked list only till the previous of the middle node.
+
+### Space Complexity
+
+* Space complexity will be O(n) as we are using a stack to store the elelments of the linked list.
+
+### Advantages
+
+* Less comparison
+* Easy approach
+
+### Disadvantage
+* Takes O(n) Auxilary space.
