@@ -152,7 +152,7 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
 ##  [Reversing of Array]
 
 # [REVERSE1]
-Reverse1 is as follows:
+# ALGORITHM
 
 1.Take input the size of the array and the elements of the array.
 2.Consider a function reverse1 which takes the parameters-the array(say arr) and the size of the array(say n).
@@ -171,26 +171,12 @@ Output :5, 4, 3, 2, 1
 2->Input :  10, 20, 30, 40
 Output : 40, 30, 20, 10
 
-# ALGORITHM
-void reverse1(int arr[], int n)
-{
-    int aux[n];
- 
-    for (int i = 0; i < n; i++) {
-        aux[n - 1 - i] = arr[i];
-    }
- 
-    for (int i = 0; i < n; i++) {
-        arr[i] = aux[i];
-    }
-}
 
 
 #[Reverse2]
 
-Reverse2 is as follows->
-
-The second method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
+# ALGORITHM
+The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
 For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 with n-1, 3 with n-2 and further. 
 
 ### PROPERTIES
@@ -203,11 +189,3 @@ Output :5, 4, 3, 2, 1
 
 2->Input :  10, 20, 30, 40
 Output : 40, 30, 20, 10
-
-# ALGORITHM
-void reverse2(int arr[], int n)
-{
-    for (int low = 0, high = n - 1; low < high; low++, high--) {
-        swap(arr[low], arr[high]);
-    }
-}
