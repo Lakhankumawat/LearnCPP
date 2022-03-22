@@ -1,0 +1,39 @@
+
+## Related Issue
+- Finding The max. number of three given numbers (Issue no. #683)
+
+## Proposed Changes
+- Change 1
+- Chnage 2
+
+## Additional Info
+- Any additional information or context
+
+## Checklist
+
+<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
+<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+- [x] âœ… My code follows the code style of this project.
+- [ ] ðŸ“ My change requires a change to the README.
+- [x] ðŸŽ€ I have updated the README accordingly.
+- [x] ðŸ‘€ I have read the [**CONTRIBUTING**](https://github.com/Lakhankumawat/LearnCPP/blob/main/Contributing.md) document.
+- [ ] âœ¨ I have added tests to cover my changes.
+- [ ] ðŸš© All new and existing tests passed.
+- [ ] ðŸŒŸ ed the repo
+
+
+
+<!--- If it fixes an open issue, please link to the issue here. -->
+      https://github.com/Lakhankumawat/LearnCPP/issues/683
+
+<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+
+## Output Screenshots
+| Screenshot #1      | Screenshot #2  |
+| ----------- | ----------- |
+| Title goes here  | Title goes here     |
+| Image goes here  | Image goes here     |
+
