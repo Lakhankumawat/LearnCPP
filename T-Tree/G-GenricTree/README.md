@@ -116,7 +116,8 @@ display(child);
 - So the diameter between two nodes must contains two leaf nodes so as it can be longest as per it's defination.
 - In the left tree, diameter is 5 and in the right tree, the diameter is 8 in the pic below.
 
-![Screenshot (488)](https://user-images.githubusercontent.com/98539013/159149159-d95ee43a-7bd5-4a49-88ce-7c0fb021f29a.png)
+
+![Screenshot (488)](https://user-images.githubusercontent.com/98539013/159484343-7982a5eb-94b9-4c84-bd3c-b4cca6dc3ead.png)
 
 - To be noted that the diameter may not necessarily include the root node as shown in the right tree.
 
