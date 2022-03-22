@@ -14,7 +14,7 @@
 # About Strong Number :
 Also known as Krishnamurti Number, is a number which was discovered by Dr. Jiddu Krishnamurty and Dr. Peterson. The uniqueness of the number is that the sum of the factorial of each digits is equal to the original number.
 
-# How to check if number is Strong number or not?
+### How to check if number is Strong number or not?
 Keep on taking the remainder of the number, using while loop, untill it reaches 0 or lesser, and keep on adding the sum of the factorials of the remainders obtained. If the sum is equal to the original number, then it is a strong number.
 
 ```
