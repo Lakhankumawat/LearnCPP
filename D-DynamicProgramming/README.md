@@ -156,13 +156,64 @@ Time Complexity: O(sum*n)
 Auxiliary Space: O(sum*n) 
 ```
 
-# [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
+# Minimum_insertion_form_palindrome
 
 - [Problem Statement](#problem-statement)
     - [Examples](#examples)
 - [Explanation](#explanation)
 - [Complexity](#complexity)
 
+# Problem Statement
+
+Consider a string str and output the minimum number of characters that need to be inserted to make it a palindrome. 
+
+> This question is a variation of LCS (Longest Common Subsequence) problem
+
+
+## Examples
+```
+Input: abcd
+Output: 3
+Number of insertions required is 3 i.e. dcbabcd
+
+Input: abcda
+Output: 2
+Number of insertions required is 2 i.e. adcbcda 
+
+Input: abcde
+Output: 4
+Number of insertions required is 4 i.e. edcbabcde
+
+
+```
+# Explanation
+
+- Consider a string str: aebcbda
+- We know that to make this string a palindrome we need to add a 'd' and an 'e' i.e  adebcbeda
+- Here it can be seen that we needed to add 2 alphabets to make it a palindrome
+- To find these we need to first find the LPS (Longest palindromic subsequence)
+- To find the LPS find the length of LCS of the input string and its reverse
+- From the LPS we can see that the minimum number of insertions needed would be the length of the input string minus LPS.
+```
+Number of insertions = Length of string - Length of LPS
+```
+So the function findMinInsertionsLCS would be
+``` C++
+    string rev = "";
+	rev = str;
+	reverseStr(rev);
+	return (n - lcs(str, rev, n, n));
+```
+
+
+# Complexity
+```
+Time complexity: O(N^2) 
+Space complexity: O(N^2) 
+
+```
+
+# [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
 ### Problem-Statement
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
@@ -210,5 +261,4 @@ Instead of maintaining two arrays of size n for storing the left and a right max
 Time Complexity : O(n)
 Space Complexity : O(1)
 ```
-
 

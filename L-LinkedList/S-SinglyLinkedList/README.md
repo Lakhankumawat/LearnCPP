@@ -6,7 +6,8 @@
     - [Properties](#properties)
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
-
+  - [Palindrome linked list](#palindrome-linked-list)
+  - [Reverse a Linked List](#Reverse-Linked-List)
 
 # Segregate Even Odd
 
@@ -156,6 +157,74 @@ Deleting a node  :
 **Space Complexity** 
 
 No extra space is used.   
-Space Complexity : O(1) 
+Space Complexity : O(1)
+***
+# Palindrome linked list
 
+In this approach, I have used a stack to store all the elements after the middle
+element so that We have to compare only (n/2)-1 elements to find out the list is palindrome or not.
+
+### Algorithm
+
+* Find the middle node of the linked list
+* Add all the elements after the middle element in the stack
+* Compare the elements of the linked list with the top element of the stack
+* If the element of the stack and the linked list is same,
+  Iterate to the next element in the linked list and pop the element of the stack
+* Repeat 4th point till stack is empty (or we have reached the middle element of the list)
+* If we have successfully popped all the element of the stack, Return 1
+
+  Else Return 0
+
+### Time Complexity
+
+* The time complexity of this approach will be O(n)
+  - But we have to compare only (n/2)-1 time as we have stored all the elements after the middle in the stack and we are comparing 
+    the elements of the linked list only till the previous of the middle node.
+
+### Space Complexity
+
+* Space complexity will be O(n) as we are using a stack to store the elelments of the linked list.
+
+### Advantages
+
+* Less comparison
+* Easy approach
+
+### Disadvantage
+* Takes O(n) Auxilary space.
+
+
+# To reverse a Linked List 
+Given pointer to the head node of a linked list, the task is to reverse the linked list. We need to reverse the list by changing the links between nodes.
+## Example
+Input: Head of following linked list 
+1->2->3->4->NULL 
+Output: Linked list should be changed to, 
+4->3->2->1->NULL
+### To reverse a linked list, do the following.
+1. Initialize three pointers prev as NULL, curr as head and next as NULL
+2. Iterate through the linked list. In loop, do following,
+    
+    
+    
+    next = curr->next
+    
+    
+    
+    curr->next = prev 
+    
+    
+    
+    prev = curr 
+    
+    
+    
+    curr = next
+## Time Complexity and Space Complexity
+1.Time Complexity: O(n) 
+2.Space Complexity: O(1)
+
+## Image for Reference
+![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
