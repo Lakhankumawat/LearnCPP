@@ -3,6 +3,7 @@
 
 # Table of Contents:
 - [Stack](#stack)
+- [Linked List Implementation of Stack](#Linked List Implementation of Stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
 
@@ -28,7 +29,7 @@ Applications of stack :
 
 
 
-# Linked List Implementation of Stack
+## Linked List Implementation of Stack
 
 ### Problem statement : 
     Implement all the possible basic stack functions using linked list implemenetation. Design the program in such a way that it should work for all the data types whenever used. Also in main function demenostarte the functions using any data type.
