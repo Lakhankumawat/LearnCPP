@@ -244,3 +244,55 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
 
  Time Complexity:  `O(N) + O(N) + O(Q) =  10^5 `
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
+
+# Union of two sorted arrays
+
+Brute force approach-
+We can use set because it maintains order.
+We iterate through elements of first array and insert them in set.
+Similarly we do for second array and print the set elements.
+Time complexity :O(m+n)
+
+Second method:
+We iterate through first array and second array. We make comparisons.
+ Between a[i],b[j] whichever is smaller we print it and increment its iterator.
+ We need to print smaller element first so that order is maintained.
+ If both are equal print anyone and increment both iterators.
+ In each comparison we also check whether that element is already present in resultant vector or not.This is to avaoid duplicacy in output.
+
+But as we know number of elements are different. So this can be the case that some elements of arrays are not checked. So we need other loop for it.
+
+Time complexity :O(m+n)
+
+![Snap](https://user-images.githubusercontent.com/55049704/159777966-6de776de-f641-461f-9b91-244303a8d465.png)
+
+
+![Snap](https://user-images.githubusercontent.com/55049704/159777974-65f87218-08bf-47b2-8983-f891ad3f8af5.png)
+
+
+- For More Reference Please Check Out -> 
+[Geeks For Geeks](https://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/)
+
+
+# Intersection of two sorted arrays
+
+Approach:
+
+We iterate through first array and second array. We make comparisons.
+ If a[i],b[j] are equal print one of them and  increment  iterator of both arrays.
+ If elements are not equal then increment iterator of array which has smaller element.
+In each comparison we also check whether that element is already present in resultant vector or not.This is to avaoid duplicacy in output.
+
+Time complexity :O(m+n)
+
+![Snap](https://user-images.githubusercontent.com/55049704/159777976-2810ac77-d027-4638-90ff-c1e7fbcaf8cb.png)
+
+![Snap](https://user-images.githubusercontent.com/55049704/159777977-4d669e75-2e9a-4288-aa66-005babfa70df.png)
+
+
+
+- For More Reference Please Check Out -> 
+[Geeks For Geeks](https://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/)
+
+
+
