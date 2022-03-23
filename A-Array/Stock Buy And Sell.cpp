@@ -36,7 +36,14 @@ int main(){
         cin>>ele;
         v.push_back(ele);
     }
+    cout<<"input array: {";
+    for(int i: v){
+        cout<<i<<" ";
+    }
+    cout<<"}"<<endl;
+
     cout<<"output : "<<maxProfit(v);
 }
+
 
 
