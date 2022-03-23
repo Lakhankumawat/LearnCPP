@@ -1,91 +1,69 @@
 
+// Please read the README.md before going through the code for better understanding for maps 
 
 
 #include<iostream>
-#include<map>
 #include<string>
+#include<map> // The header file specifically made for STL-Maps
+
+#include<bits/stdc++.h> // A High utility header file generally used in Competitive Programming contains 100's header file
+
 using namespace std;
 
-/* -------------Maps maintain a self balancing BST------------- */
-// Maps sorts itself on the basis of keys
+void print(map<int,string> &m)
+{
+  cout<<m.size()<<endl;
+for( auto &pr : m)
+{
+  cout<<pr.first<<" "<<pr.second<<endl;  // printing takes O(logn) , since we run the loop 'n' times so final complexity becomes O(nlogn)-> TIME COMPLEXITY
+}
 
+}
 
-int main(){
-map<string,int> m;
+int main()
+{
 
-/* Insert Values in Map */
-m.insert(make_pair("Mango",100));
+map<int,string> m; // Declaration syntax of STL-Map 
 
-//Make a pair and insert
-pair<string,int> p;
+m[1]="abc"; 
+m[5]="cdc";
+m[3]="acd";
 
-p.first="Apple";
-p.second=120;
+//Insertion takes O(logn) : It depends on the key also ( Refer to RED BLACK TREES ) -> TIME COMPLEXITY
 
-m.insert(p);
+auto it1=m.find(3); // returns iterator of the value '3' and stores it in it1 
 
-//INsert way 3
-
-m["Banana"]=20;
-
-
-string fruit;
-cin>>fruit;
-
-
-//Lets try to update the value of keys
-m[fruit]+=22;
-
-
-//Iterator can also be defined as map<string,int>:: iterator;
-//it here is iterator
-auto it = m.find(fruit);
-
-//If fruit is not present it will point to the end of map
-
-if(it!=m.end()){
-    cout<<"Price of "<<fruit<<" : "<<m[fruit];}
-    else
-        cout<<"Fruit is not present";
-
-    cout<<endl;
-
-    cout<<"Deleted Fruit "<<fruit;
-    m.erase(fruit);
-
-    cout<<endl;
-
-    //Another way to find a particular map
-    //it stores unique keys only once
-
-    //mapname.count returns 1 if key is present , 0 if not present
-
-    if(m.count(fruit))
-        cout<<"Price : "<<m[fruit];
-    else
-        cout<<"Fruit is not present";
-
-    cout<<endl;
-
-
-
-    //Lets try to update the value of keys another one
-    m["Strawberry"]=110;
-    m["Mango"]=90;
-
-    for(auto it=m.begin();it!=m.end();it++)
-        cout<<it->first<<" and "<<it->second<<endl;  //We can also access values by *it
-
-
-    //For each loop in Maps
-
-    for(auto p:m)
-        cout<<p.first<<" : "<<p.second<<endl;
-
-
-
-
-return 0;
+if(it1==m.end()){  // if '3' is not present then it1 will be assigned with m.end() which has NO VALUE 
+  cout<<"NO VALUE"<<endl; 
+}
+else{
+  cout<<(*it1).first<<" "<<(*it1).second<<endl;
 }
 
 
+if(it1!=m.end()) 
+m.erase(it1); //O(logn)  -> TIME COMPLEXITY
+
+print(m); 
+
+m.clear(); // clears the whole map 
+
+
+// Another way of insert 
+
+m.insert({4,"afg"});
+
+// priniting using iterator method
+
+map<int,string> :: iterator it;
+
+for(it=m.begin();it!=m.end();it++)
+{
+
+  cout<<(*it).first<<" "<<(*it).second<<endl; // prints in sorted order
+
+}
+
+print(m);
+
+}
