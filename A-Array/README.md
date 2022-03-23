@@ -1,7 +1,7 @@
 Question link:
 
 
-## [1. Best Time to Buy And Sell Stock]()
+## [1. Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
 <pre>
 The problem states that there is an array or vector that contains N elements and elements stores stocks price at that day.
 For example:
