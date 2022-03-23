@@ -1,5 +1,3 @@
-Question link:
-
 
 ## [1. Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
 <pre>
@@ -16,13 +14,16 @@ Then i=0 stores stocks price at 1st day that is 7.
            Input :[7,1] 
            Output: 0
 </pre>
-## Solution
+## Algorithm
 
-* 1<sup>st</sup> initiate the buying price as `INT_MAX` as we want to minimize it in later steps. Let `buying price` be b
-* 2<sup>nd</sup> initiate the maximum profit as `0` as it is given in the problem to return 0 if in case of no profit. Let `maximum profit` be p.
-* 3<sup>rd</sup> Now check iterate over the array or vector if current element at `i is smaller then the previous element` then update b to that element.
-* 4<sup>th</sup> Check wether the differece of current b with the current element then update the p value to the value of differnce.
+* 1<sup>st</sup> initiate the buying price as `INT_MAX` as we want to minimize it in later steps. Let us say `buying price` be b
+* 2<sup>nd</sup> initiate the maximum profit as `0` as it is given in the problem to return 0 if in case of no profit. Let us say `maximum profit` be p.
+* 3<sup>rd</sup> Now iterate over the array or vector if current element at `i is smaller then the previous element` then update b to that element.
+* 4<sup>th</sup> Check wether the differece of current b with the current element is lager than previous value then update the p value to the value of differnce.
 * 5<sup>th</sup> continue 3<sup>rd</sup> and 4<sup>th</sup> step till the lenth of the array or vector.
+>My Output
+>![image](https://user-images.githubusercontent.com/75080313/159704449-96988e82-61de-4605-8ec4-d2f23b8fbf68.png)
+
 
 ## Complexity
 <pre>
