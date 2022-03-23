@@ -29,6 +29,7 @@ int main(){
             found_answer = true;
         }
     }
+    //found answer, do not give output on sequence again
     if(!found_answer) {
         if (bracket.empty()) {
             cout << "Valid Sequence" << endl;
