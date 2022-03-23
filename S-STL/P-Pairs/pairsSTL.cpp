@@ -12,7 +12,7 @@ int main(){
     p1=make_pair(1,"Amit");
      //2nd way to insert valueds into pair
     p1={2,"santanu"};
-    
+
      //Displaying Pair elements.
      cout<<"Displaying elements of p1->"<<endl;
     cout<<p1.first<<"-> "<<p1.second<<endl;
@@ -48,7 +48,7 @@ int main(){
     //Swapping between two pairs
     pair<char, int> pair1 = make_pair('X', 100);
     pair<char, int> pair2 = make_pair('Y', 200);
- 
+
     cout << "Before swapping the pairs "<<endl;
     cout << "elements of pair1 = " << pair1.first << "->"
          << pair1.second<<endl;
@@ -56,18 +56,17 @@ int main(){
          << pair2.second<<endl;
 //swap between pair1 and pair2
     pair1.swap(pair2);
- 
+
  //After swapping
     cout << "After swapping betwen pairs "<<endl;
     cout << "elements of pair1 = " << pair1.first << "->"
          << pair1.second<<endl;
     cout << "elements of pair2 = " << pair2.first << "->"
          << pair2.second<<endl;
-    
+
 
 //OUTPUT::
 /*
-
 Displaying elements of p1->
 2-> santanu
 Displaying elements of p3->
