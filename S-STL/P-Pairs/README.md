@@ -4,7 +4,7 @@
 <br>
 The 1st value is pointed by first and next value is pointed by second.
 ---
-# SYNTAX:
+# Syntax:
 
 ## 1. Initialize a Pair:
 ```cpp
@@ -31,7 +31,7 @@ cout<<p1.first<<"-> "<<p1.second<<endl;
 ```
 ## 4. Copying content from one pair to another:
 ```cpp
-  pair<int,int>p2={10,20};
+  pair<int,int>p2= [10,20] ;
 //define another pair
     
     pair<int,int>p3=p2; 
@@ -95,7 +95,7 @@ elements of pair2 = X->100
 ## 7. Iterators in Pair
 
 ```cpp
- vector<pair<int,int>>VP={{1,2},{3,4},{5,6}};
+ vector<pair<int,int>>VP=[[1,2],[3,4],[5,6]];
  //initialize a vector containing pair in it.
  //iterator to access elements of the vector of pairs
  vector<pair<int,int>>::iterator it;
