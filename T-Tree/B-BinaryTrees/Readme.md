@@ -3,6 +3,7 @@
 - [Problem Statement](#problem-statement)
     - [Examples](#examples)
 - [Explanation](#explanation)
+- [Algorithm](#algorithm)
 - [Complexity](#complexity)
 
 
@@ -34,31 +35,26 @@ Given the root of a binary tree, return the length of the diameter of the tree.
 
 - To compute the Diameter efficiently, made use of the pair class of C++, which provides the facility of computing the height of the left subtree as well as of right subtree and the diameter of the respectve subtrees.
 - Found the maximum diameter by comparing the diameter of the left subtree(by recursion) and the right subtree(by recursion) and the sum of the heights of the left subtree and the right subtree.
+![largest-diameter-of-binary-tree](https://user-images.githubusercontent.com/84433782/159844065-b609c7c4-2d43-4216-bb15-69ccb6f35435.png)
+ 
 
- ``` 
- pair<int, int> Diameter(binaryTreeNode<int> *root)
-{
-    if(root == nullptr){
-        pair<int, int> p;
-        p.first = 0;
-        p.second = 0;
-        return p;
-    }
-    // Recursive approach to get the results from the left sub-tree.
-    pair<int, int> left = Diameter(root -> left);
-    // Recursive approach to get the results from the right sub-tree.
-    pair<int, int> right = Diameter(root -> right);
-    int leftHeight = left.first;
-    int leftDiameter = left.second;
-    int rightHeight = right.first;
-    int rightDiameter = right.second;
-    // Resulting Diameter and Height w.r.t to the root of the tree.
-    pair<int, int> output;
-    output.first = max(leftHeight, rightHeight) + 1;
-    output.second = max(leftDiameter, max(rightDiameter, leftHeight + rightHeight));
-    return output;
-}
+
+# Algorithm
+
+- Node passed in recursive function is null then return zero.
+- Using recursive call, calculate the diameter and the height of left-subtree until node becomes NULL 
+(used inbuilt pair class of C++ to calculate height and diameter of the tree simultaneously which makes the solution complexity wise more efficient).
+- Using recursive call, calculate the diameter and the height of right-subtree until node becomes NULL. 
+-  If the root node is included then,
  ```
+     Diameter = left-subtree + right-subtree + 1 
+ ```
+-  If the root node is not included then,
+ ```
+     Diameter = max(diameter of left-subtree, diameter of right subtree)
+ ```  
+-  The final output will return the max of step 4 and step 5.
+
 
 # Complexity
 ```
