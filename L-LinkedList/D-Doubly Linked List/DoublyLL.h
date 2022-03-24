@@ -1,6 +1,6 @@
 ﻿#pragma once
-#ifndef DLL_H
-#define DLL_H
+#ifndef DoublyLL_H
+#define DoublyLL_H
 
 using namespace std;
 
