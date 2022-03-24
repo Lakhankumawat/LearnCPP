@@ -108,5 +108,3 @@ elements of pair2 = X->100
 3->4
 5->6
 ```
-## OUTPUT:
-![output](https://user-images.githubusercontent.com/77873383/157461717-9e83cd32-d464-4899-9f42-fb3a98a25f0c.png)
