@@ -57,8 +57,5 @@ int main(){
  2  8
    /
   6
-
 Lets Take the key=14 ,  So the Floor Value is =10
-
 */
-  

@@ -6,7 +6,6 @@ ___
 Let suppose we are given a key , and we have to find floor value with respect of the key value , present int our BST.
 ```
 **The greatest value present in BST which is just smaller than the key given is called Floor value**
-
 ___
 
 # EXAMPLE =>
@@ -28,7 +27,6 @@ For the given BST , as shown above , if <br>
 # Approach to find Floor Value in BST:
 > A easy approach is to traverse the BST using any traversale method(Inorder or Preorder or Postorder) and keep updating  the closest smaller or same element.
 
- 
 
 ```txt
  1. Start from root
@@ -42,5 +40,3 @@ For the given BST , as shown above , if <br>
 # Time & Space Complexity :
 > **Time Complexity :** O(h) for the traversal ,  [h is height of BST]<br>
 **Space Complexity :** No extra/auxillary space required.
-
-
