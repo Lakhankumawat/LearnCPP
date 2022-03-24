@@ -57,8 +57,14 @@ int lcs(char* X, char* Y, int m, int n)
 // Driver code
 int main()
 {
-	char X[] = "AGGTAB";
-	char Y[] = "GXTXAYB";
+	
+	int n, m;
+	cin >> n >> m; //Size of two strings
+	char X[n], Y[m];
+	for (int i = 0; i < n; i++)
+		cin >> X[i]; //Taking input for first string
+	for (int i = 0; i < m; i++)
+		cin >> Y[i];    //Taking input for second string
 
 	cout << "Length of the shortest supersequence is "
 		<< shortestSuperSequence(X, Y) << endl;
