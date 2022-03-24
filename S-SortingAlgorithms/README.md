@@ -11,6 +11,11 @@
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
   - [Insertion Sort](#insertion-sort)
+       -  [Algorithm](#algorithmofinsertionSort)
+       - [Properties](#insertionSortproperties)
+       - [Advantages](#advantagesofinsertionSort)
+       - [Disadvantage](#disadvantageofinsertionSort)
+
   - [Merge Sort](#merge-sort)
   - [Quick Sort](#quick-sort)
 
@@ -74,8 +79,62 @@ end BubbleSort
 
 
 ## Insertion Sort
+- Insertion sort is a simple and efficient comparison sort.
+- In this algorithm, each iteration removes an element from the input data and inserts it into the     
+  correctposition in the list being sorted.
+- The choice of the element being removed from the input is random and this process is repeated until
+  all input elements have gone through. 
+  
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/88760648/159166514-e50c6fc3-7e40-4707-9b07-0eb52456027e.png" width="500" height="500">
+    <!-- citation : [Here](https://www.crio.do/blog/insertion-sort/)  -->
+<a name="algorithmofinsertionSort"></a>
 
----
+## Algorithm
+- If the element is the first element, assume that it is already sorted. Return 1.
+- Pick the next element, and store it separately in a key.
+- Now, compare the key with all elements in the sorted array.
+- If the element in the sorted array is smaller than the current element, then move to the next element.
+  Else, shift greater elements in the array towards the right.
+- Insert the value.
+- Repeat until the array is sorted.
+
+```
+    void InsertionSort(int A[], int n) {
+        int i, j, v;
+        for (i = 1; i <= n - 1; i++) {
+          v=A[i];
+           j= i;
+          while (A[j-1]>v && j >= 1) {
+            A[j] = A[j-1];
+             j--;
+            }
+              A[j] = v;
+            }
+     }
+```
+<a name="insertionSortproperties"></a>
+
+## Properties
+- Time Complexity: O(n^2) 
+- Space Complexity: O(1)
+ - In-place : Yes
+- Stable : Yes
+
+<a name="advantagesofinsertionSort"></a>
+
+## Advantages
+- Simple implementation
+- Efficient for small data
+- Practically more efficient than selection and bubble sorts, even though all of them
+  have O(n^2) worst case complexity
+
+<a name="disadvantageofinsertionSort"></a>
+
+## Disadvantage
+
+- Insertion sort is inefficient against more extensive data sets.
+
 
 ## Merge Sort
 

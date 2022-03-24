@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -167,6 +167,27 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ShruthiKartik"><img src="https://avatars.githubusercontent.com/u/99183334?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ShruthiKartik</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=ShruthiKartik" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Aneesh-07"><img src="https://avatars.githubusercontent.com/u/85986613?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aneesh Tripathi </b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Aneesh-07" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/md-nazish-arman-54076619b/"><img src="https://avatars.githubusercontent.com/u/98539013?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Md Nazish Arman</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=mdnazisharman2803" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/shubhamlakheraa"><img src="https://avatars.githubusercontent.com/u/64166515?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SHUBHAM LAKHERA</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shubhamlakheraa" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/aparnamittal"><img src="https://avatars.githubusercontent.com/u/100208233?v=4?s=100" width="100px;" alt=""/><br /><sub><b>aparnamittal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=aparnamittal" title="Code">💻</a></td>
+    <td align="center"><a href="https://rahulsharma.vercel.app/"><img src="https://avatars.githubusercontent.com/u/67220225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul Sharma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Rahul5430" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Jayanth-MKV"><img src="https://avatars.githubusercontent.com/u/93820457?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jayanth MKV</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Jayanth-MKV" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SidharthSarangi"><img src="https://avatars.githubusercontent.com/u/78564629?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sidharth Sarangi</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SidharthSarangi" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rahul-Kumar-prog"><img src="https://avatars.githubusercontent.com/u/68837569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul kumar</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Rahul-Kumar-prog" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Purvak-10"><img src="https://avatars.githubusercontent.com/u/76229635?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Purvak Baliyan</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Purvak-10" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/mohammadruman"><img src="https://avatars.githubusercontent.com/u/88760648?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammad Ruman</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=mohammadruman" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vinaya563"><img src="https://avatars.githubusercontent.com/u/91210199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vinaya Sree Modem</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=vinaya563" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/maithili-kharabe-063a631b1"><img src="https://avatars.githubusercontent.com/u/62667818?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maithili Kharabe</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=MRK04" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/svenkat19"><img src="https://avatars.githubusercontent.com/u/74498344?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shashank Venkat</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=svenkat19" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/janhavikale06"><img src="https://avatars.githubusercontent.com/u/81229872?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Janhavi Kale</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=janhavikale06" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Mrjoy832"><img src="https://avatars.githubusercontent.com/u/77873383?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TRIDIB BAG</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Mrjoy832" title="Code">💻</a></td>
+    <td align="center"><a href="https://sebinfrancis7.github.io/portfolio"><img src="https://avatars.githubusercontent.com/u/59263190?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sebin Francis</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=sebinfrancis7" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kalash2205"><img src="https://avatars.githubusercontent.com/u/76390773?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kalash Singhal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=kalash2205" title="Code">💻</a></td>
   </tr>
 </table>
 
