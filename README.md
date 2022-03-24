@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -185,6 +185,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/janhavikale06"><img src="https://avatars.githubusercontent.com/u/81229872?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Janhavi Kale</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=janhavikale06" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Mrjoy832"><img src="https://avatars.githubusercontent.com/u/77873383?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TRIDIB BAG</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Mrjoy832" title="Code">💻</a></td>
     <td align="center"><a href="https://sebinfrancis7.github.io/portfolio"><img src="https://avatars.githubusercontent.com/u/59263190?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sebin Francis</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=sebinfrancis7" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kalash2205"><img src="https://avatars.githubusercontent.com/u/76390773?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kalash Singhal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=kalash2205" title="Code">💻</a></td>
   </tr>
 </table>
 
