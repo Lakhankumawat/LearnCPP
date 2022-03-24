@@ -4,6 +4,7 @@
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 
+
 <!-- Table of content -->
 # Dynamic Programming
   - [Recursive vs Dynamic Programming Approach](#recursive-vs-dynamic-programming-approach)
@@ -330,8 +331,3 @@ Time Complexity : O(m*n)
 Space Complexity : O(m*n)
 ```
 
-### Output
-
-| Output - 1 | Output - 2 |
-| ---- | ---- |
-| ![image1](https://user-images.githubusercontent.com/59263190/159669813-76ad4f4a-2bea-4d29-bc2b-4aee438447a7.png) | ![image2](https://user-images.githubusercontent.com/59263190/159669281-e1bafb40-609e-42b3-b259-68ede1aa45c9.png) |
