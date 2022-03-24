@@ -18,7 +18,7 @@ we gonna also find even length subtrings
 If s = abababa then after changes it becomes : $#a#b#a#b#a#b#a#@
 If s = abacabacabb then after changes it becomes : $#a#b#a#c#a#b#a#c#a#b#b#@
  */
-
+`
 // CODE :
 
 #include <bits/stdc++.h>
