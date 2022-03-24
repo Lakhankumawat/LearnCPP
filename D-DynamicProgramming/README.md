@@ -2,6 +2,7 @@
 - [Dynamic Programming](#dynamic-programming)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
+- [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 
 
 <!-- Table of content -->
@@ -260,5 +261,73 @@ Instead of maintaining two arrays of size n for storing the left and a right max
 ```
 Time Complexity : O(n)
 Space Complexity : O(1)
+```
+
+# [Longest Common Subsequence Problem](https://www.programiz.com/dsa/longest-common-subsequence)
+
+### Problem Statement
+
+Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.
+
+### Example
+
+Let S1 and S2 be the two strings. Then the longest common subsequence **LCS** is given as 
+```
+Eg 1. 
+S1 = {A, C, G, A, T, A, B} 
+S2 = {C, Z, A, X, T, B, Q, P, R}
+LCS = {C, A, T, B}
+
+Eg 2.
+S1 = {B, C, D, A, A, C, D}
+S2 = {A, C, D, B, A, C}
+LCS = {C, D, A, C}
+```
+
+### Explanation
+- Consider two strings S1 -> ABACC and S2 -> AABBC.
+- Create a LCS table of dimension **(n+1 * m+1)** where **n** and **m** are the lengths of S1 and S2 respectively.
+  
+  ``` LCS[m][n] ```
+- The first row and the first column of the LCS table are filled with zeros since there will be no common subsequence when we compare string S1 or S2 with an empty string.
+
+  ```
+  if (i = 0 or  j = 0)
+    LCS[i][j] = 0 
+  ```
+- For the remaining cells : 
+
+   - If the character corresponding to the current row and current column are matching, this implies that the current character can be added to the LCS found upto previous character of both strings. Update the LCS table by adding 1 to the diagonal cell of the current character cell.
+
+      ``` LCS[i,j] := LCS[i-1,j-1] + 1 ```
+   - If the character corresponding to the current row and current column do not match, this implies that the current character cannot be added to the LCS. So the LCS found upto current character will be same as the maximum LCS found upto previos character of either strings. Fill the current cell by taking the maximum of previous column and previous row element from the LCS table
+
+      ``` LCS[i,j] := max(LCS[i,j-1], LCS[i-1,j]) ```
+    
+    <br />
+
+    ![image](https://user-images.githubusercontent.com/59263190/159671926-ca8db497-b132-40d1-9c17-c1d1a41a2aa8.png)
+
+
+- ### Algorithm
+```cpp
+function computeLCS (S1[1...m], S2[1...n])
+    LCS = array(0..m, 0..n)
+    for i := 0 -> m
+      for j := 0 -> n
+        if i == 0 or j == 0
+          LCS[i][j] = 0
+        else if S1[i] == S2[j]
+          LCS[i,j] := LCS[i-1,j-1] + 1
+        else
+          LCS[i,j] := max(LCS[i,j-1], LCS[i-1,j])
+    
+    return LCS[m][n]
+```
+
+### Complexity
+```
+Time Complexity : O(m*n)
+Space Complexity : O(m*n)
 ```
 
