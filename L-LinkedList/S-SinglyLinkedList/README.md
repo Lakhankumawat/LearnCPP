@@ -8,7 +8,7 @@
     - [Disadvantage](#disadvantage)
   - [Palindrome linked list](#palindrome-linked-list)
   - [Middle Element of the linked list](#middle-element-of-the-linked-list)
-  - [Reverse a Linked List](#Reverse-Linked-List)
+  - [Reverse a Linked List](#reverse-a-linked-list)
 
 # Segregate Even Odd
 
@@ -197,6 +197,12 @@ element so that We have to compare only (n/2)-1 elements to find out the list is
 ***
 Middle element of the linked list
 ---
+#### Problem statement:
+* Given head of the linked list, return the data of middle node of the linked list.
+  Ex- Given linked list: 1->2->3->4->5
+  function should return 3
+  
+###### My appraoch:
 * I have used two pointers approach to find the middle element of the linked list, in this we have to do only n/2 comparisions
 
 ### Algorithm
@@ -220,7 +226,7 @@ Space complexity will be O(1) as it is not taking any extra space in the program
 =======
 
 
-# To reverse a Linked List 
+# Reverse a Linked List 
 Given pointer to the head node of a linked list, the task is to reverse the linked list. We need to reverse the list by changing the links between nodes.
 ## Example
 Input: Head of following linked list 
