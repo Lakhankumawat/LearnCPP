@@ -15,6 +15,38 @@ struct node{//Structure of every node of BST
     }
 };
 
+//Insert values into BST
+node* INSERTintoBST(node * root,int val){
+    if(root==NULL) {
+        return new node(val);
+    }
+
+    while(true){
+        if(root->data<=val){
+            if(root->right!=NULL)
+            {
+                root=root->right;
+                }
+            else{
+                root->right=new node(val);
+                break;
+                }
+          
+
+        }
+
+        else{
+            if(root->left!=NULL){
+                root=root->left;
+                }
+            else {
+                root->left=new node(val);
+                break;
+                }
+            
+        }
+    }
+
 //Function to find Ceil value
 int findCeil(node * root,int key){
     int ceil=-1;//initial value of ceil
@@ -37,18 +69,25 @@ int findCeil(node * root,int key){
 }
 
 int main(){
-    struct node* p=new node(8);
-    p->left=new node(3);
-    p->right=new node(10);
-    p->right->right=new node(14);
-    p->right->left=new node(13);
-    p->left->left=new node(1);
-    p->left->right=new node(6);
-    p->left->right->left=new node(4);
-    p->left->right->right=new node(7);
-     cout<<"the Ceil value of the given key is -> "<<findCeil(p,7)<<endl;
-    
-}
+    int nodes, val;
+    cout<<"enter the number of nodes"<<endl;
+    cin>>nodes;
+    cout<<"enter 1st value"<<endl;
+    cin>>val;
+    struct node*root=new node(val);
+    int i=nodes-1;
+    while(i){
+        cout<<"enter other  values"<<endl;
+        cin>>val;
+        INSERTintoBST(root,val);
+        i--;
+    }
+    int key;
+    cout<<"enter the key"<<endl;
+    cin>>key;
+
+    cout<<"The Floor value in BST w.r.t to the key ->"<<endl;
+    cout<<findCeil(root,key);
 
 /* OUTPUT :
       8
