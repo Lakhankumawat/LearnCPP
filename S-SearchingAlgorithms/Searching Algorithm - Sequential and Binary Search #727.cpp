@@ -149,6 +149,7 @@ void BinarySearch(int a[] , int n , int element)
     }
 }
 
+
 /*
 Output:
 
