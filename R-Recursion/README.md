@@ -81,8 +81,12 @@ Step 3 − Move n-1 disks from aux to dest*/
 
 ![example](https://user-images.githubusercontent.com/100334178/158751947-92d1ef97-5c62-4373-9068-3f1409033368.png)
 
-ADVANTAGE
+# ADVANTAGE
 The program of tower of hanoi gives us the simple solution of a very famous and complex problem with simple understanding with only few lines of codes.
 
-DISADVANTAGE
+# DISADVANTAGE
 This program has time-complexity-O(2^n) where n=number of disks,which is not so good because it will take much more time for giving us the solution of problem tower of hanoi.
+
+# Properties
+Time-complexity->O(2^n)
+Space-complexity->O(n)
