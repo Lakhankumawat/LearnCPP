@@ -46,7 +46,7 @@ int main(){
     p->left->right=new node(6);
     p->left->right->left=new node(4);
     p->left->right->right=new node(7);
-     cout<<"the Ceil value of the given key is -> "<<findCeil(p,9)<<endl;
+     cout<<"the Ceil value of the given key is -> "<<findCeil(p,7)<<endl;
     
 }
 
@@ -59,6 +59,6 @@ int main(){
   /\
  4 7
 
- Lets Take the key=9 ,  So the Ceilr Value is =10
+ Lets Take the key=7 ,  So the Ceilr Value is =7
 
  */
