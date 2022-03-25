@@ -3,6 +3,7 @@
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [shortest common super sequence](#shortest-common-super-sequence)
+- [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 
 
 <!-- Table of content -->
@@ -157,13 +158,64 @@ Time Complexity: O(sum*n)
 Auxiliary Space: O(sum*n) 
 ```
 
-# [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
+# Minimum_insertion_form_palindrome
 
 - [Problem Statement](#problem-statement)
     - [Examples](#examples)
 - [Explanation](#explanation)
 - [Complexity](#complexity)
 
+# Problem Statement
+
+Consider a string str and output the minimum number of characters that need to be inserted to make it a palindrome. 
+
+> This question is a variation of LCS (Longest Common Subsequence) problem
+
+
+## Examples
+```
+Input: abcd
+Output: 3
+Number of insertions required is 3 i.e. dcbabcd
+
+Input: abcda
+Output: 2
+Number of insertions required is 2 i.e. adcbcda 
+
+Input: abcde
+Output: 4
+Number of insertions required is 4 i.e. edcbabcde
+
+
+```
+# Explanation
+
+- Consider a string str: aebcbda
+- We know that to make this string a palindrome we need to add a 'd' and an 'e' i.e  adebcbeda
+- Here it can be seen that we needed to add 2 alphabets to make it a palindrome
+- To find these we need to first find the LPS (Longest palindromic subsequence)
+- To find the LPS find the length of LCS of the input string and its reverse
+- From the LPS we can see that the minimum number of insertions needed would be the length of the input string minus LPS.
+```
+Number of insertions = Length of string - Length of LPS
+```
+So the function findMinInsertionsLCS would be
+``` C++
+    string rev = "";
+	rev = str;
+	reverseStr(rev);
+	return (n - lcs(str, rev, n, n));
+```
+
+
+# Complexity
+```
+Time complexity: O(N^2) 
+Space complexity: O(N^2) 
+
+```
+
+# [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
 ### Problem-Statement
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
@@ -275,5 +327,72 @@ adding one to the diagonal element. Point an arrow to the diagonal cell.
 Time Complexity : O(n*m)
 Space Complexity : O(n+m)
 Where n and m are the lengths of the two strings
+
+# [Longest Common Subsequence Problem](https://www.programiz.com/dsa/longest-common-subsequence)
+
+### Problem Statement
+
+Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.
+
+### Example
+
+Let S1 and S2 be the two strings. Then the longest common subsequence **LCS** is given as 
+```
+Eg 1. 
+S1 = {A, C, G, A, T, A, B} 
+S2 = {C, Z, A, X, T, B, Q, P, R}
+LCS = {C, A, T, B}
+
+Eg 2.
+S1 = {B, C, D, A, A, C, D}
+S2 = {A, C, D, B, A, C}
+LCS = {C, D, A, C}
+```
+
+### Explanation
+- Consider two strings S1 -> ABACC and S2 -> AABBC.
+- Create a LCS table of dimension **(n+1 * m+1)** where **n** and **m** are the lengths of S1 and S2 respectively.
+  
+  ``` LCS[m][n] ```
+- The first row and the first column of the LCS table are filled with zeros since there will be no common subsequence when we compare string S1 or S2 with an empty string.
+
+  ```
+  if (i = 0 or  j = 0)
+    LCS[i][j] = 0 
+  ```
+- For the remaining cells : 
+
+   - If the character corresponding to the current row and current column are matching, this implies that the current character can be added to the LCS found upto previous character of both strings. Update the LCS table by adding 1 to the diagonal cell of the current character cell.
+
+      ``` LCS[i,j] := LCS[i-1,j-1] + 1 ```
+   - If the character corresponding to the current row and current column do not match, this implies that the current character cannot be added to the LCS. So the LCS found upto current character will be same as the maximum LCS found upto previos character of either strings. Fill the current cell by taking the maximum of previous column and previous row element from the LCS table
+
+      ``` LCS[i,j] := max(LCS[i,j-1], LCS[i-1,j]) ```
+    
+    <br />
+
+    ![image](https://user-images.githubusercontent.com/59263190/159671926-ca8db497-b132-40d1-9c17-c1d1a41a2aa8.png)
+
+
+- ### Algorithm
+```cpp
+function computeLCS (S1[1...m], S2[1...n])
+    LCS = array(0..m, 0..n)
+    for i := 0 -> m
+      for j := 0 -> n
+        if i == 0 or j == 0
+          LCS[i][j] = 0
+        else if S1[i] == S2[j]
+          LCS[i,j] := LCS[i-1,j-1] + 1
+        else
+          LCS[i,j] := max(LCS[i,j-1], LCS[i-1,j])
+    
+    return LCS[m][n]
+```
+
+### Complexity
+```
+Time Complexity : O(m*n)
+Space Complexity : O(m*n)
 ```
 
