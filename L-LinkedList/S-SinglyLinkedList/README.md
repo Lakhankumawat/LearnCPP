@@ -7,7 +7,8 @@
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
   - [Palindrome linked list](#palindrome-linked-list)
-  - [Reverse a Linked List](#Reverse-Linked-List)
+  - [Middle Element of the linked list](#middle-element-of-the-linked-list)
+  - [Reverse a Linked List](#reverse-a-linked-list)
 
 # Segregate Even Odd
 
@@ -193,9 +194,39 @@ element so that We have to compare only (n/2)-1 elements to find out the list is
 
 ### Disadvantage
 * Takes O(n) Auxilary space.
+***
+Middle element of the linked list
+---
+#### Problem statement:
+* Given head of the linked list, return the data of middle node of the linked list.
+  Ex- Given linked list: 1->2->3->4->5
+  function should return 3
+  
+###### My appraoch:
+* I have used two pointers approach to find the middle element of the linked list, in this we have to do only n/2 comparisions
+
+### Algorithm
+* Initialize two pointers i.e one is slow and one is fast and set them to head of the list
+* Iterate in the list until fast or fast->next pointer becomes null, make slow = slow->next and fast = fast->next->next
+* After while loops terminates, the slow pointer will be pointing at the middle node of the list
+* Return slow->data
+
+### Time complexity
+
+- The time complexity will be O(n). But we have to do only n/2 comparisions in this approach
+
+### Space complexity
+
+Space complexity will be O(1) as it is not taking any extra space in the program
+### Advantage
+
+- This approach is very efficient as only n/2 comparision is done.
+
+![image](https://user-images.githubusercontent.com/86103131/159268069-d7b68db0-6d67-45a5-9288-e8b3c4a335a9.png)
+=======
 
 
-# To reverse a Linked List 
+# Reverse a Linked List 
 Given pointer to the head node of a linked list, the task is to reverse the linked list. We need to reverse the list by changing the links between nodes.
 ## Example
 Input: Head of following linked list 
