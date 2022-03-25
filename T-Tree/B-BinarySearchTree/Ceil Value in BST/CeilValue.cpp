@@ -90,6 +90,30 @@ int main(){
     cout<<findCeil(root,key);
 
 /* OUTPUT :
+enter the number of nodes
+9
+enter 1st value
+8
+enter other  values
+3
+enter other  values
+10
+enter other  values
+1
+enter other  values
+6
+enter other  values
+13
+enter other  values
+14
+enter other  values
+4
+enter other  values
+7
+enter the key
+7
+The Floor value in BST w.r.t to the key ->
+7
       8
     / \
    3  10
