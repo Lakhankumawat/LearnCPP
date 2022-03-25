@@ -53,6 +53,7 @@ void anagramChecker(string& word1 , string& word2){
         }
         else{
             cout << "No";
+            break;
         }
 
     }
