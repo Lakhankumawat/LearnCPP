@@ -53,7 +53,6 @@ int main()
     return 0;
 }
 
-
 //Defining function for Linear Search
 void LinearSearch(int a[] , int n , int element)
 {
@@ -84,9 +83,8 @@ void LinearSearch(int a[] , int n , int element)
     if(flag!=0)
         std::cout<<"\nOccurence : "<<flag<<std::endl; //It'll show the occurence of element if the element is repeated in an array
     else
-        std::cout<<"Element not found"<<std::endl;   //If element is not present in an array
+        std::cout<<"Element not found"<<std::endl;  //If element is not present in an array
 }
-
 
 //Defining function for Binary Search
 void BinarySearch(int a[] , int n , int element)
@@ -149,9 +147,9 @@ void BinarySearch(int a[] , int n , int element)
     }
 }
 
+
 /*
 Output:
-
 -------MENU-------
 
 1.Linear Search 
