@@ -40,4 +40,4 @@ The approach is to traverse the string and checking whether the character at ith
 - There is no extra space required.
 
 
-## You can checkout different approaches to solve this problem at [geeksforgeeks](https://www.geeksforgeeks.org/c-program-to-check-if-a-given-string-is-palindrome-or-not/)
+### You can checkout different approaches to solve this problem at [geeksforgeeks](https://www.geeksforgeeks.org/c-program-to-check-if-a-given-string-is-palindrome-or-not/)
