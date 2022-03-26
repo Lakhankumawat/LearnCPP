@@ -2,8 +2,13 @@
 
 Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x is the first greater element on the right side of x in the array. Elements for which no greater element exist, consider the next greater element as -1. 
 ```
-Input: Some expression with brackets "{()}[]"
-Output: They are balanced
+Input: elements of array 4 8 3 19 3
+Output: 
+4-->8
+8-->19
+3-->19
+19-->-1
+3-->-1
 ```
 
 ## Algorithim
