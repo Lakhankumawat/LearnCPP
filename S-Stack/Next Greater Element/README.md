@@ -33,6 +33,7 @@ Step 5: printing the result
 
 ### Test Case
 
-<img src="/images/output.png" width="400px"></img>
+![output](https://user-images.githubusercontent.com/84399701/160231076-3516027d-4b94-4548-9a48-26971f9bd8d8.png)
+
 
 
