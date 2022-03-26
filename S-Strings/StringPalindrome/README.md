@@ -26,6 +26,25 @@ The approach is to traverse the string and checking whether the character at ith
 
 - Iterate over the range [0, N/2], using the variable i and in each iteration check if the character at index i and N-i-1 are not equal, then return "False" from the function.
 - If none of the above cases satisfy, then return "True".
+```
+bool isPalindrome(string S)
+{
+    if (S.length() <= 1)
+    {
+        return true;     // if length of string is 1 or 0 it will be palindrome for sure
+    }
+
+    // if length of string is more than one we will iterate over a loop 
+    for (int i = 0; i < S.length() / 2; i++)
+    {
+        if (S[i] != S[S.length() - i - 1])  // checking characters from first and last of string
+        {
+            return false;
+        }
+    }
+    return true;
+}
+```
 
 
 # Properties
