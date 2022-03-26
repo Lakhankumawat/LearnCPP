@@ -38,10 +38,19 @@ Time Complexity: O(n)
 Space Complexity: O(1) No extra space is required.
 ```
 
-## Screenshots
 
-![Code](https://raw.githubusercontent.com/gp919934/Screenshots/main/1.png?token=GHSAT0AAAAAABSVBUS4JQSDPGCZW3EV26QGYR6NKZA)
-![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/2.png?token=GHSAT0AAAAAABSVBUS5OHWIKVDJK2HMOTW4YR6NLRA)
+## Example
+According to problem statement, you are given a matrix M[][], let consider it as example,
 
-Output:-
-![Code](https://raw.githubusercontent.com/gp919934/Screenshots/main/3.png?token=GHSAT0AAAAAABSVBUS55XQJFENW42YAYOTOYR6NL5Q)
+![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/examples.png?token=GHSAT0AAAAAABSVBUS4LGILYJCWGLOCA4XAYSH53EA)
+
+
+The above Matrix will be given and if M[i][j] = 1, it means ith person knows jth person.
+
+For example, in above Matrix, 0th person knows 2nd person.
+
+NOTE only ith person knows jth person, we are still not sure that whether jth person knows ith person or not.
+
+In the above example, 2nd person is the celebrity because, every other person knows him and 2nd person doesn’t know anyone.
+
+OUTPUT:- 2 .
