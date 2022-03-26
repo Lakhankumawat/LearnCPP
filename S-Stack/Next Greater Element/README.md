@@ -33,6 +33,6 @@ Step 5: printing the result
 
 ### Test Case
 
-![image](https://raw.github.com/shr-code/learncpp/nge/image/output.png)
+<img src="/images/output.png" width="400px"></img>
 
 
