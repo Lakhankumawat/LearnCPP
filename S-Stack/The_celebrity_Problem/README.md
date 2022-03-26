@@ -1,3 +1,15 @@
+## Table of Contents
+
+[The Celebrity Problem](#the-celebrity-problem)
+
+ [Algorithm](#algorithm)
+
+
+ [Complexity analysis](#complexity-analysis)
+
+
+ [Example](#example)
+
 
 ## The Celebrity Problem
 
