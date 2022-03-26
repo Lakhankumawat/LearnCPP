@@ -256,7 +256,7 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
 - [Algorithm](#algorithm-4)
 - [Time Complexity](#time-and-space-complexity)
 
-## [First negative integer in every k size window:]()
+## [First negative integer in every k size window:](https://github.com/arzitmahajan/LearnCPP/blob/new_branch/A-Array/FirstNegativeInEveryWindow.cpp)
 Given an array and a positive integer k, find the first negative integer for each window(contiguous subarray) of size k. If a window does not contain a negative integer, then print 0 for that window. \
 ```
 
