@@ -18,7 +18,7 @@ Explanation: The reverse of the given string is equal to the "cba" which is equa
 ### Palindrome - A string is said to be palindrome if the reverse of the string is the same as the string. For example: 
 - abba is palindrome as reverse of it is also abba.
 - frog is not palindrome as reverse of it is gorf.
-![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fjavacodekorner.blogspot.com%2F2019%2F07%2Fjava-program-for-string-and-number-palindrome.html&psig=AOvVaw1g7sJzi1C45vVr1nxMJjwD&ust=1648387296255000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMjNmq_v4_YCFQAAAAAdAAAAABAJ)
+![image](https://1.bp.blogspot.com/-hwF_ytPGMzI/XsIieTT6_JI/AAAAAAAAA5k/MdEKdvefKFMOQYewtagdUImM3mCA-445QCLcBGAsYHQ/s1600/string-palindrome.jpg)
 
 
 # Algorithm
