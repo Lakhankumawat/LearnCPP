@@ -24,6 +24,13 @@ Output: 9
 - So we have given an string of N length and we have to return the length of longest palindromic Substring in this given string , But ```HOW ?```
 - As You Saw in the further approaches of the same problem ***What We are Doing ?*** we are iterating over all characters and checking the substring which leads to **O(N^2).**
 - Here ```MANACHER's ALGORITHM``` helps to reduce those number of checks and solve it in *Linear Time* and *Constant Space*.
+#### -> What Does This MANACHER's Algorithm Does ?
+**Ans** -  Manacher’s Algorithm mainly help us to find the _**longest palindromic substring**_
+in the given string in better complexity then the Brute Force Solution also the Dynamic Programming Solution
+in Linear Time and Linear Space.
+
+**_Note_** : It will _reduce_ the number of expands for the each index it saves the length of previously occured palindrome length
+
 - While Reading the Explantion Make sure to Take a Dry Run and Keep in mind that what these Variables Do.
 > 1.left<br>
 2.right<br>
