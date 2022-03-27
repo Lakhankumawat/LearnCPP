@@ -3,6 +3,7 @@
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
+- [Minimum Path Sum](#Minimum-path-sum)
 
 
 <!-- Table of content -->
@@ -330,4 +331,46 @@ function computeLCS (S1[1...m], S2[1...n])
 Time Complexity : O(m*n)
 Space Complexity : O(m*n)
 ```
+ # [Minimum path sum]
+ 
+ ### problem statement
+ 
+ Given a matrix of N * M. Find the maximum path sum in matrix. The maximum path is sum of all elements from first row to last row where you are allowed to move only down or diagonally to left or right. You can start from any element in first row.
+ 
+ ### example
+ 
+ Input : mat[][] = 10 10  2  0 20  4
+                   1  0  0 30  2  5
+                   0 10  4  0  2  0
+                   1  0  2 20  0  4
+Output : 74
+The maximum sum path is 20-30-4-20.
 
+Input : mat[][] = 1 2 3
+                  9 8 7
+                  4 5 6
+Output : 17
+The maximum sum path is 3-8-6
+
+### algorithm
+
+Now we understand the problem statement of minimum path sum. Without discussing much we just move to the algorithm used for the implementation of this problem.
+
+1 ) Get the input value in an array.
+2 ) Open a nested for loop and make it run until all the rows and columns traverse of the given input array.
+     a) If i = =0 &&j = =0
+then continue, means leave this iteration and jump onto next one.
+     b) Else if i = =0
+then array[i][j]=array[i][j]+ arr[i][j-1];
+      c ) Else if j = =0
+arr[i][j] = arr[i][j] + arr[i-1][j];
+      d ) Else
+arr[i][j] = getMin(arr[i-1][j]+arr[i][j], arr[i][j-1]+arr[i][j])
+      e ) Pass these values to getMin function which returns the minimum value between two.
+ 3) Return array[rows-1][columns-1];
+
+### complexity
+Time complexity - O(m*n)
+Space complexity - O(1)
+
+ 
