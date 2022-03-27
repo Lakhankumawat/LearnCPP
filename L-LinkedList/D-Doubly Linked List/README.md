@@ -20,8 +20,10 @@ It provides an itertaor class to access any node(element) from the beginning, en
 
 ### Steps of Implementation
  
-1. Create a template class (to store any desired data type) for the list nodes, each node has a value and 2 pointers (previous and next).
+1. Create a node template class (to store any desired data type) for the list nodes, each node has a value and 2 pointers (previous and next).
 2. Create a doubly linked list template class for the list itself in which it's implemented the iterator class and in which the nodes will be inserted. 
+3. DLL class contains an iterator class, insert function, erase function and display function.
+
 
 ### Space Complexity
 
@@ -29,12 +31,19 @@ Space Complexity : O(n)
 
 ### Time Complexity
 
-* Insertion at head node - O(1).
-* Insertion at last node - O(1).
-* Insertion in middle - O(n). 
-* Deletion at head node - O(1).
-* Deletion at last node - O(n).
-* Deletion in middle - O(1). 
+* Insertion at head node - O(1). 
+* Deletion at head node - O(1). 
 * Displaying the first node - O(1).
 * Displaying a node in between - O(n). 
 * Displaying the last node - O(n). 
+
+### Doubly Linked List advantages and disadvantges:
+
+## Advantages
+1. Doubly linked list is more efficient than singly linked list in accessing nodes(elements) as forward and backward traversal is possible.
+2. Time complexity of inserting and deleting using iterator is O(1) but in singly linked list it's O(n).
+3. Doubly linked list is preferrable in searching.
+
+## Disadvantages
+1. Conusme more space than a singly linked list as each node has previous pointer.
+2. No direct access.

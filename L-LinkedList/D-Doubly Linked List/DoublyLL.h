@@ -11,14 +11,14 @@ private:
 	ListNode<T>* next;
 	ListNode<T>* prev;
 public:
-	ListNode();
-	ListNode(T data);
-	T& getValue();
-	void setValue(T val);
-	ListNode* getNext();
-	ListNode* getPrev();
-	void setNext(ListNode<T>* nt);
-	void setPrev(ListNode<T>* previous);
+	ListNode(); // Default constructor
+	ListNode(T data); // Parametric constructor
+	T& getValue(); // Getter: Return node value
+	void setValue(T val); // Setter: set node value
+	ListNode* getNext(); // Getter: get next element
+	ListNode* getPrev(); // Getter: get previous element
+	void setNext(ListNode<T>* nt); // Setter: set next element
+	void setPrev(ListNode<T>* previous);// Setter: set previous element
 };
 
 template<class T>
@@ -28,11 +28,11 @@ private:
 	ListNode<T>* head, * tail, * dummyNode;
 	int size;
 public:
-	DLL();
-	DLL(T data, int init_size);
-	~DLL();
-	int getSize() const;
-	DLL<T>& operator = (const DLL<T>& another_list);
+	DLL(); // Default constructor
+	DLL(T data, int init_size); // Parametric constructor
+	~DLL(); // Destructor 
+	int getSize() const; // Return list size
+	DLL<T>& operator = (const DLL<T>& another_list); // Copy Constructor
 
 	class iterator {
 	private:
@@ -42,7 +42,7 @@ public:
 	public:
 		friend class DLL;
 		T& operator*() const;
-		void operator++();
+		void operator++(); 
 		void operator -- ();
 		bool operator == (const iterator& anotherITR);
 		bool operator != (const iterator& anotherITR);
@@ -419,7 +419,6 @@ void DLL<T>::iterator::operator++() {
 		exit(0);
 	}
 }
-
 
 // Decrement iterator by 1
 template<class T>
