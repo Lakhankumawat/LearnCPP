@@ -16,8 +16,9 @@ In vertical order traversal, the nodes that are at the left most horizontal dist
 3. All the nodes corresponding to the same horizontal distance are stored in a map.<br>
 4. To print the vertical order traversal, the map is traversed. 
 
-#### **Time Complexity -**
-The time complexity for the same is O(n * logn), where n is the no. of total nodes.
+#### **Complexity -**
+Time Complexity - O(n * logn), where n is the no. of total nodes.
+Space Complexity - O(n)
 
 #### **Input/Output-**
 Thus the input and output for the above binary tree will be as follows: <br>
