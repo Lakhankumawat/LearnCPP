@@ -93,7 +93,10 @@ Output: A Balanced BST
 - The left and right subtree each must also be a binary search tree.
 
 ## Algorithm
-- To check if a tree is height-balanced, get the height of left and right subtrees. Return true if difference between heights is not more than 1 and left and right subtrees are balanced, otherwise return false. 
+- To check if a tree is height-balanced, get Get the Middle of the array and make it root.
+- Get the middle of left half and make it left child of the root created in step 1.
+- Get the middle of right half and make it right child of the root created in step 1.
+- Return true if difference between heights is not more than 1 and left and right subtrees are balanced, otherwise return false. 
 
 ## Searching in Binary search tree
 - First, compare the element to be searched with the root element of the tree.
