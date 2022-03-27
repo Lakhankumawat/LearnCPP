@@ -1,13 +1,14 @@
 # Table of contents:
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
-- [Trace and Normal of Matrix](trace-and-normal-of-matrix)
-- [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
+- [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
+- [Sort an Array of 0s, 1s and 2s](#sort-an-array-of-0s-1s-and-2s)
 - [Prefix Sum](#prefix-sum)
+- [Peak In 1D Array](#peak-in-1d-array)
 
 # Maximum Sum of Subarray:
 - [Maximum Sum Subarray](#maximum-sum-subarray)
 - [Example](#example)
-- [Differnt Approches](#differnt-approches)
+- [Different Approches](#different-approches)
   - [Brute force Approach (simple)](#1-brute-force-approach-simple)
   - [Cumulative Sum Approach](#2-cumulative-sum-approach)
   - [Efficient Approach: Kadane’s Algorithm](#3-efficient-approach-kadanes-algorithm)
@@ -25,7 +26,7 @@ Given an array of integers, the task is to find the maximum subarray sum possibl
 |   3   |   [-5, 8, 9, -6, 10, -15, 3]  |   21  | The subarray [8, 9, -6, 10] has the maximum sum among all subarrays with sum 21.   |
 |   4   |       [-4, -7, -1, 5,-2]      |   4   | The subarray [-1, 5] has the maximum sum among all subarrays with sum 4.           |
 
-## Differnt Approches:
+## Different Approches:
 We would be solving the problem by following approaches –
 1. Brute force approach
 2. Cumulative sum approach
@@ -244,3 +245,101 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
 
  Time Complexity:  `O(N) + O(N) + O(Q) =  10^5 `
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
+
+# Peak in 1D Array
+
+  - [Introduction](#introduction)
+  - [Examples](#examples)
+  - [Simple Approach](#simple-approach)
+  - [Efficient Approach](#efficient-approach)
+
+ ## Introduction
+ Peak element in 1D array is the element which is greater than or equal to its adjacent neighbours.
+ For the first and last element in the array consider only one adjacent neighbour.
+ 
+ ## Examples
+ 
+ Example 1:
+ 
+ ![image](https://user-images.githubusercontent.com/89828000/160277051-7d885331-18bf-4abb-90e2-2f2f792c557f.png)
+ 
+  Example 2:
+  
+ ![image](https://user-images.githubusercontent.com/89828000/160277086-4865cbe0-b2f2-4bab-8b82-c641b54aa5af.png)
+ 
+ Example 3:
+ 
+ ![image](https://user-images.githubusercontent.com/89828000/160277112-b04e8844-8617-4c13-841c-6bb150dd8663.png)
+ 
+## Simple Approach
+  Traverse the array linearly and check wheather the element is peak or not, by comparing with it's adjacent neighbours.
+  	
+  ### Algorithm
+1. If size of the array is 1 then then return that element.
+2. Checking for the corner cases: 
+   1. In the array if the first element is greater than or equal to second element then we return 0 (index of the first element).
+   2. In the array if the last element is greater than or equal to second last element then we return n-1 (index of the last element).
+3. Traverse the array from second element to second last element.
+4. If the element is greater than or equal to both of it's adjacent neighbours then return the index of that element.
+  	
+  ### Code
+  ```
+  int simplePeak(vector<int> &arr,int n){
+    if(n==1) return 0
+    if(arr[0]>=arr[1]) return 0
+    if(arr[n-1]>=arr[n-2]) return n-1
+    for(int i=1;i<n-1;i++){
+        if(arr[i]>=arr[i+1] && arr[i]>=arr[i-1]) return i
+    }
+}
+  
+  ```
+ **Time Complexity:** `O(n)`\
+ **Auxillary Space:** `O(1)`
+
+## Efficient Approach:
+   ### Algorithm
+   1. Make two variables,start=0 and end=n-1.
+   2. Iterate till start is less than end.
+   3. Check if the mid value is peak or not ,if yes then return mid.
+   4. If the element on the left side of mid element is more then update end=mid-1.
+   5. If the element on the right side of mid element is more then update start=mid+1.
+   
+   ### Code
+   ```
+   int efficientPeak(vector<int> &arr,int n){
+
+    if(n==1) return 0
+    int start=0,end=n-1,mid
+
+    while(end>=start){
+
+        mid=(start+end)/2
+
+        if(mid == 0){
+            if(arr[mid] >= arr[mid+1]) return mid
+            else start=mid+1
+        }
+
+        else if(mid == n-1){
+            if(arr[mid] >= arr[mid-1]) return mid
+            else end=mid-1
+        }
+
+        else if((arr[mid] >= arr[mid-1]) && (arr[mid] >=arr[mid+1])) return mid
+
+        else if(arr[mid] < arr[mid-1]) end=mid-1
+
+        else start=mid+1
+    }
+}
+   ```
+**Time Complexity:** `O(log n)`\
+**Auxillary Space:** `O(1)`
+ 
+
+ 
+ 
+
+
+
