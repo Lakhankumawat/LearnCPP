@@ -259,3 +259,17 @@ Output: Linked list should be changed to,
 ## Image for Reference
 ![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
+# Stack using a singly Linked List 
+Implement a stack using singly linked list.
+Stacks is a linear type of data structure that follows the Last In First Out principle and allows insertion and deletion operations from one end of the stack data structure, that is top.
+
+# Appraoch:
+ I have used switch case to implement operations like push, pop, peek and display.
+ Push: To insert an element in the linked list
+ Pop: To delete the last inserted element in the linked list
+ Peek: To display the last inserted element in the linked list
+ Display: To print the linked list
+## Time Complexity
+ Time Complexity: O(n)
+## Space Complexity 
+ Space Complexity: O(n)
