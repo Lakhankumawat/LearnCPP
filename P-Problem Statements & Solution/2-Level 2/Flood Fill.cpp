@@ -66,9 +66,19 @@ int main(){
 	
 	int newColor;
 	cin>>newColor;
+  
+    cout<<"Original matrix"<<endl;
+	for(int i=0; i<m; i++){ 
+        
+        cout<<"[ ";
+        for (int j=0; j<m; j++) 
+           cout<<a[i][j]<<" "; 
+        cout<<"]\n"; 
+    }
     
     floodFill(a, x, y, newColor); 
- 
+	
+    cout<<"Modified matrix"<<endl;
     //printing the modified array   
     for(int i=0; i<m; i++){ 
         
