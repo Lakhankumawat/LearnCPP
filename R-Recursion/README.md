@@ -34,59 +34,71 @@ Output : x3.14x
 ```
 
 
+# [Tower of Hanoi](https://github.com/bhumikatewary/LearnCPP/blob/ddd6b1e51cecd18d72f76f303cefe7f341f3092f/R-Recursion/TowerofHanoi.cpp)
+
+Tower of Hanoi is a mathematical game or puzzle involving three sticks and a number of different discs, <br>
+which can slip on any stick/rod. The paradox begins with discs embedded in the same object in a declining size(descending order), <br>
+the smallest at the top, thus almost showing a conical shape.
+
+Here are three simple rules:
+1. Only one disk can be moved at a time.
+2. Each movement involves taking a disk above one of the stacks and placing it on top of another stack. <br>
+ In other words, the disk can only be moved if it is the highest disk in the stack.
+3. No larger disk can be placed on a smaller disk.
+
+![Tower-of-Hanoi](https://4.bp.blogspot.com/-MiMl_ZKCkKs/Vnk3SyI2D5I/AAAAAAAAAy0/iqw84ovEbGM/s1600/Tower-Of-Hanoi-2-disk.png)
+## Example
+```
+Input : 2
+Output : Disk 1 moved from X to Y
+         Disk 2 moved from X to Z
+         Disk 1 moved from Y to Z
+         
+Explanation:          
+Taking the example for 2 disks :
+Let rod 1 = 'X', rod 2 = 'Y', rod 3 = 'Z'.
+
+Step 1 : Shift first disk from 'X' to 'Y'.
+Step 2 : Shift second disk from 'X' to 'Z'.
+Step 3 : Shift first disk from 'Y' to 'Z'.
+
+The pattern here is :
+Shift 'n-1' disks from 'X' to 'Y'.
+Shift last disk (nth) from 'X' to 'Y'.
+Shift 'n-1' disks from 'Y' to 'Z'.
+```
+
+### Algorithm
+
+```
+START
+Procedure Hanoi(disk, source, destination, auxillary)
+
+   IF disk == 1, THEN
+      move disk from source to destination             
+   ELSE
+      Hanoi(disk - 1, source, auxillary, destination)     // Step 1
+      move disk from source to destination                // Step 2
+      Hanoi(disk - 1, auxillary, destination, source)     // Step 3
+   END IF
+   
+END Procedure
+STOP
+```
+
+### Properties
+
+- Time Complexity : O(n)
+- Space Complexity : O(n)
+
+### Advantages
+
+- The Tower of Hanoi puzzle is sensitive to previous damage and malfunction. The level of complexity can be easily
+ increased or decreased with additional discs.
+
+### Disadvantage
+
+- The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
 
 
-# [Tower Of Hanoi]
 
-Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules: 
-
-1->Only one disk can be moved at a time.
-2->Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.
-3->No disk may be placed on top of a smaller disk.
-
-# Algorithm
-To write an algorithm for Tower of Hanoi, first we need to learn how to solve this problem with lesser amount of disks, say → 1 or 2. We 
-mark three towers with name, source, destination and aux (only to help moving the disks). If we have only one disk, then it can easily be moved from source
-to destination peg.
-![ALGORITHM](https://user-images.githubusercontent.com/100334178/158752356-32cf3154-6062-4633-9a66-23db69d5199d.png)  
-
-If we have 2 disks −
-
-First, we move the smaller (top) disk to aux peg.
-Then, we move the larger (bottom) disk to destination peg.
-And finally, we move the smaller disk from aux to destination peg.
-
-Tower Of Hanoi with Two Disks
-So now, we are in a position to design an algorithm for Tower of Hanoi with more than two disks. We divide the stack of disks in two parts.
-The largest disk (nth disk) is in one part and all other (n-1) disks are in the second part.
-
-Our ultimate aim is to move disk n from source to destination and then put all other (n1) disks onto it. We can imagine to apply the same in a recursive way
-for all given set of disks.
-
-The steps to follow are −
-
-Step 1 − Move n-1 disks from source to aux
-Step 2 − Move nth disk from source to dest
-Step 3 − Move n-1 disks from aux to dest*/
-
-# APPROACH
-
-![approach](https://user-images.githubusercontent.com/100334178/158751782-95976bf3-c1d5-45c6-9a94-0f9cbbebdc97.png)
-
-# IMAGE
-
-![image](https://user-images.githubusercontent.com/100334178/158751870-3ca284b3-0f8e-44a5-be94-41d4eaf24f39.png)
-
-# EXAMPLE
-
-![example](https://user-images.githubusercontent.com/100334178/158751947-92d1ef97-5c62-4373-9068-3f1409033368.png)
-
-# ADVANTAGE
-The program of tower of hanoi gives us the simple solution of a very famous and complex problem with simple understanding with only few lines of codes.
-
-# DISADVANTAGE
-This program has time-complexity-O(2^n) where n=number of disks,which is not so good because it will take much more time for giving us the solution of problem tower of hanoi.
-
-# Properties
-Time-complexity->O(2^n)
-Space-complexity->O(n)
