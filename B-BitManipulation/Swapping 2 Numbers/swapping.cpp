@@ -17,3 +17,10 @@ int main(){
 cout<<"elements after swapping -> "<<"1st number= "<<num1<<" "<<", 2nd number= "<<num2<<endl;
 
 }
+
+/* Output:
+Enter 2 number :
+10
+20
+elements after swapping -> 1st number= 20 , 2nd number= 10
+*/
