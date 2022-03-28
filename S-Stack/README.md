@@ -3,7 +3,7 @@
 
 # Table of Contents:
 - [Stack](#stack)
-- [Linked List Implementation of Stack](#Linked List Implementation of Stack)
+- [Linked List Implementation of Stack](#linked-list-implementation-of-stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
 
