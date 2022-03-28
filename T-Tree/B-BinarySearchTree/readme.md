@@ -71,21 +71,9 @@
 - In a Binary search tree, the value of left node must be smaller than the parent node, and the value of right node must be greater than the parent node.  
 - A height-balanced binary tree is defined as a binary tree in which the left and right subtrees of every node differ in height by no more than 1. 
 
-``` 
-Input:  Array {1, 2, 3}
-Output: A Balanced BST
-     2
-   /  \
-  1    3 
 
-Input: Array {1, 2, 3, 4}
-Output: A Balanced BST
-      3
-    /  \
-   2    4
- /
-1
-```
+![ARRAYTOBSTIMAGE](https://user-images.githubusercontent.com/86939497/160360064-80a93caa-0a72-41a5-8a1b-5806fc4a3503.jpeg)
+
 
 ## Properties
 - The left subtree of a node contains only nodes with keys lesser than the node’s key.
