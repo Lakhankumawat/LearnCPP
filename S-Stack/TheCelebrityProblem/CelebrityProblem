@@ -1,4 +1,3 @@
-// Celebrity Problem Code
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -44,17 +43,29 @@ int CelebrityProblem(vector<vector<int>>& v1)
   
 int main() 
 { 
-    vector<vector<int>> v1{ {0,0,1,1},
-                            {1,0,1,0},
-                            {0,1,0,0},
-                            {0,1,1,0} };
+    // taking input of a size of column and rows
+    int n,m;
+    cin>>n>>m;
+    vector<vector<int>> v;
 
-    int celebrity = CelebrityProblem(v1);
+        for (int i = 0; i < n; i++)
+        {
+            int x;
+            vector<int>temp;
+            for(int j=0;j<m;j++);
+            {
+                cin>>x;
+                temp.push_back(x);
+            }
+            v.push_back(temp);
+
+        }
+
+    int celebrity = CelebrityProblem(v);
 
     if(celebrity == -1)
         cout<<"No Celebrity Exists!"<<endl;
     else
         cout<<"Celebrity is Person Number "<<celebrity<<endl;
-
     return 0; 
 } 
