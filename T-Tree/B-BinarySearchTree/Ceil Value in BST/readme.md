@@ -1,4 +1,4 @@
-# Ceil Value in Binary Seacrh Tree(BST)
+## Ceil Value in Binary Seacrh Tree(BST)
 ___
 
 > ## What is Ceil Value in BST ?
@@ -7,7 +7,7 @@ Let suppose we are given a key , and we have to find Ceil value with respect of 
 ```
 **The Smallest value present in BST which is just greater or equal to the the key given is called Ceil value**
 ___
-# EXAMPLE =>
+## EXAMPLE =>
 ![image](https://user-images.githubusercontent.com/77873383/159840232-4f926f98-2c2e-4051-a01c-4cea440ff06c.png)
 
 
@@ -23,7 +23,7 @@ For the given BST , as shown above , if <br>
 
 ---
 
-# Approach to find Ceil Value in BST:
+## Approach to find Ceil Value in BST:
 > A easy approach is to traverse the BST using any traversale method(Inorder or Preorder or Postorder) and keep updating  the closest Greater or same element.
 
 ```txt
@@ -35,6 +35,6 @@ For the given BST , as shown above , if <br>
 ```
 ---
 
-# Time & Space Complexity :
+## Time & Space Complexity :
 > **Time Complexity :** O(h) for the traversal ,  [h is height of BST]<br>
 **Space Complexity :** No extra/auxillary space required.
