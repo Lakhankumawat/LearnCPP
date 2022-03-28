@@ -331,3 +331,50 @@ Time Complexity : O(m*n)
 Space Complexity : O(m*n)
 ```
 
+# Coin Change
+
+- [Problem Statement](#problem-statement)
+    - [Examples](#examples)
+- [Explanation](#explanation)
+- [Complexity](#complexity)
+
+# Problem Statement
+
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+You may assume that you have an infinite number of each kind of coin.
+
+
+## Examples
+```
+
+Example 1:
+    Input: coins = [1,2,5], amount = 11
+    Output: 3
+    Explanation: 11 = 5 + 5 + 1
+
+Example 2:
+    Input: coins = [2], amount = 3
+    Output: -1
+    
+Example 3:
+    Input: coins = [1], amount = 0
+    Output: 0
+    
+```
+# Explanation
+
+- Consider an amount A and coins array C.
+- We use bottom up approach so will solve the problem for each amount less than A first.
+- Initialize dp array of length (amount+1) with MAX value. Where MAX = amount + 1.
+- For a certain amount X we will try to pick up each coin in C.
+- Minimize the answer for amount X. i.e. dp[x] = min(dp[x], 1 + dp[X-Ci]) where i ranges from 0 to |C|-1.
+- Finally, Return dp[amount] if dp[amount]<MAX else return -1.
+
+
+# Complexity
+```
+Time complexity: O(N) 
+Space complexity: O(N) 
+
+```
