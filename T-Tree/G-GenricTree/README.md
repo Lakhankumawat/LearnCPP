@@ -13,12 +13,19 @@
     - [Advantages](#advantages-1)
     - [Disadvantage](#disadvantages-1)
     
-- [Diameter of a Genric Tree](#Diameter of a Genric Tree)
+- [Diameter of a Genric Tree](#Diameter-of-a-genric-tree)
     - [Properties](#Properties)
     - [Algorithm](#Algorithm)
     - [Time Complexity](#Complexity)
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
+
+- [Mirror of a Genric Tree](#Mirror-of-a-genric-tree)
+    - [Properties](#properties)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#time-complexity)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantages)
 
 # Construct and Display Genric Tree
 
@@ -158,3 +165,51 @@ O(n), where is number of nodes.
 - Need to traverse all the tree to find diameter.
 - Unknown number of children – The number of children for each node is not known in advance.
 
+
+
+# Mirror of a Genric Tree
+
+- An image or object which is identical in form to another, but with the structure reversed, as in a mirror.
+- Mirror image can be understand as lateral inversion.
+- Each element of the mirror image is the same distance behind the mirror as each element of the object is in front of the mirror.
+
+### Properties
+
+- The image obtained is virtual.
+- The image is laterally inverted.
+- The image is erect.
+- The size of the image is the same as the size of the object.
+- The distance between the image obtained is the same as the distance between the object from the mirror.
+
+### Algorithm
+
+- Recursively call the mirror function on all the children of the root of the generic tree which would give.
+- Reverse the families of its children using the following code,
+   for (int i = 0, j = node->children.size() - 1; i < j; i++, j--)
+    {
+        Node *temp = node->children[i];
+        node->children[i] = node->children[j];
+        node->children[j] = temp;
+    }
+
+### Time Complexity
+```
+- For constructor01()
+O(n), where is number of nodes. 
+- For display()
+O(n), where is number of nodes.
+- Time complexity for the mirror function is linear as we post traversing the tree.
+there fore overall Timecomplexity is
+O(n), where is number of nodes.
+```
+### Advantages 
+
+- Memory efficient – No extra links are required, hence a lot of memory is saved.
+- We even can visualise how mirror nodes are structured.
+- Many algorithms can be expressed more easily because it is just a binary tree.
+- Each node is of fixed size no auxiliary array or vector is required.
+
+### Disadvantages
+
+- Need to traverse all the tree to show mirror.
+- Unknown number of children – The number of children for each node is not known in advance.
