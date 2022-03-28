@@ -173,6 +173,9 @@ O(n), where is number of nodes.
 - Mirror image can be understand as lateral inversion.
 - Each element of the mirror image is the same distance behind the mirror as each element of the object is in front of the mirror.
 
+![Screenshot (503)](https://user-images.githubusercontent.com/98539013/160352051-d08c4dc0-1583-4a83-9836-48d08cab1e94.png)
+
+
 ### Properties
 
 - The image obtained is virtual.
