@@ -1,9 +1,14 @@
+
+# STACK 
+
 # Table of Contents:
 - [Stack](#stack)
+- [Linked List Implementation of Stack](#linked-list-implementation-of-stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
 
 ## STACK 
+
 
 - A linear-data structure that follows LIFO (Last In First Out) principle.
 - It is useful when we need to store data in a particular order like... function calls during recursion
@@ -51,6 +56,46 @@ Applications of stack :
 3. To reverse a word or a string
 4. _Call stack_ : To store list of functions that are either executing or waiting to be executed during runtime. ( stored in stack in memory)
 5. Practical application : (<-)Back button present in a browser pushes the URLs of the visited sites on a stack.
+
+
+
+
+
+## Linked List Implementation of Stack
+
+### Problem statement : 
+    Implement all the possible basic stack functions using linked list implemenetation. Design the program in such a way that it should work for all the data types whenever used. Also in main function demenostarte the functions using any data type.
+
+### Key Terms : 
+- Head : A meta data structure hwich contains link to top pointeer and count.
+- Push : Inserting a new element into the Stack
+- Pop : Removing the topmost element
+- Count : Number of elemets in a Stack
+
+### Functions : 
+- createStack : This function creates new stack
+- pushstack : This function pushes data into the node
+- popStack : This function pops the data from the stack
+- stackTop : This function retrieves stack top
+- emptyStack : This function checks whether the stack is empty
+- stackCount : This function return the stack count
+
+### Properties
+
+- Time Complexity :
+  - Worst case time	: O(1)
+  - Best case time : O(1)
+  - Average case time : O(1)
+- Auxillary Space : O(1)
+- Stable : Yes
+
+### Advantages
+
+- Uasge of a Linked List in a program makes it better efficient than stack using array.
+
+### Disadvantage
+
+- Working with linked list and void pointers is little bit difficult.
 
 ## Infix to postfix conversion
 
@@ -107,4 +152,8 @@ After complete traversal, if there is some starting bracket left in the stack th
 ```
 ![image](https://user-images.githubusercontent.com/91210199/159122082-2a5e98d2-bdd4-4f9d-9131-1d2048a5f60f.png)
  
+
+    - For more information about infix to postfix conversion [click here](https://prepinsta.com/data-structures/infix-to-postfix-conversion/)
+
+
 
