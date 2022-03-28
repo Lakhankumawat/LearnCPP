@@ -1,0 +1,50 @@
+//Include header files for running C++ program
+#include<iostream>
+using namespace std;
+//main function
+int main()
+{
+    //Variables declaration 
+	int numHoursWorked;
+    int numOfDependents;
+	double workersGrossPay;
+	char programerChoice;
+    //do-while loop repeats the program multiple times 
+    //as per programmer choice
+	do	
+	{ 
+      // Read in the number of hours worked in a week 
+      //and the number of dependents as input   
+	  cout<<" Please enter number of hours worked per week: ";
+	  cin>>numHoursWorked;
+	  cout<<"Please enter number of dependents : ";
+	  cin>>numOfDependents;
+
+
+     //Calculate grosspay of the worker as per given question
+	 workersGrossPay =  numHoursWorked>40?((40 * 16.78)
+       +  (numHoursWorked-40)*(16.78*1.5)): (numHoursWorked*16.78);
+	 cout<<workersGrossPay<<endl;
+
+     //Output the worker’s gross pay, each withholding amount,
+     // and the net take-home pay for the week
+	 cout<<" Worker\'s gross pay :";
+    cout<<" Withhold amount  for state income tax= "
+	    <<(.05 * workersGrossPay)<<"\n";
+	 cout<<" Withhold amount for Social security tax = "
+	       <<(.06* workersGrossPay)<<"\n";
+    cout<<" Withhold amount  for federal income tax = "
+	     <<(.14* workersGrossPay)<<"\n";
+	cout<<" Withhold amount  for union dues= $ 10 "<<"\n";
+	if(numOfDependents >= 3)
+	{
+	cout<<" Withhold amount  for insurance cost $35\n";
+		 workersGrossPay -= 35;
+	}
+	cout<<" Net amount take-home pay for the week  ";
+	cout<<(workersGrossPay*(1-0.06 - 0.05-0.14) - 10)<<endl;
+	cout<<"Press 'Y or y' for repeat again, otherwise press any character: ";
+	cin>>programerChoice;
+	}while(programerChoice =='y' || programerChoice =='Y');
+
+}
