@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	string price = "";
-  string discount;
+  	string discount;
 	
 	// boolen variable for checking whether input string is a number or not.
 	bool isDouble = false;
@@ -70,6 +70,7 @@ int main()
 	// Reassign variables to the primary value then take the second input from the user
 	numberCounter = 0;
 	decimalCounter = 0;
+	isDouble = false;
 
   
 	do 
