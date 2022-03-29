@@ -2,6 +2,8 @@
 - [Trace and Normal of Matrix](trace-and-normal-of-matrix)
 - [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
 - [Prefix Sum](#prefix-sum)
+- [Finding Minimum and Maximim in an array] (min_max_in_an_array)
+
 
 # Trace and Normal of Matrix
   - [Trace](#trace)
@@ -148,3 +150,15 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
 
 
+# Minimum and Maximum in an array
+
+### Approach
+
+Step 1: Take the input array of size n
+Step 2: First we will initialize two variable to the possible minimum integer(i.e INT_MIN) and possible maximum integer(i.e INT_MAX)
+Step 2: Iterate the Array and calculate the minimum and maximum element in an array by using builtin funtion max and min and store it in   variables.
+Step 3: To use INT_MIN and INT_MAX include this header file :#include<climits>.
+
+### Time Complexity
+
+-Time Complexity is O(n).
