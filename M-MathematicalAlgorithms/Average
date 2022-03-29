@@ -1,0 +1,26 @@
+// Program Description: The average of three numbers
+// Last Modification Date: 29/3/2022
+// Author: Sara Adel Hanafi
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float number1, number2, number3;
+    cout <<"please enter 3 numbers to calculate the average:\n";
+    
+    //take the three numbers from the user
+    cout <<"the first number:\n ";
+    cin >> number1;
+    cout <<"the second number:\n ";
+    cin >> number2;
+    cout <<"the three number:\n ";
+    cin >> number3;
+   
+   //calculate the average of the three numbers
+    double average=(number1+number2+number3)/3;
+    cout <<"the average of the three numbers is: " << average << endl;
+        
+}
