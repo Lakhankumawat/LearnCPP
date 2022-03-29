@@ -1,8 +1,10 @@
+
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
+- [Egg Dropping Puzzle](#egg-dropping-puzzle)
 
 
 <!-- Table of content -->
@@ -65,7 +67,6 @@ return f[n];
  Solution Link: 
  ```
 ---
-
 
 # Equal Sum Partition Problem
 
@@ -331,3 +332,74 @@ Time Complexity : O(m*n)
 Space Complexity : O(m*n)
 ```
 
+# EGG DROPPING PUZZLE
+
+
+- [Problem Statement](#problem-statement-for-egg-dropping)
+- [Examples-1](#example-1)
+- [Examples-2](#example-2)
+- [Explanation](#explanation-2)
+- [Complexity](#complexity-analysis)
+
+### Problem Statement For Egg Dropping
+You are given N identical eggs and you have access to a K-floored building from 1 to K.
+
+There exists a floor f where 0 <= f <= K such that any egg dropped at a floor higher than f will break, and any egg dropped at or below floor f will not break. There are few rules given below. 
+
+An egg that survives a fall can be used again.
+A broken egg must be discarded.
+The effect of a fall is the same for all eggs.
+If the egg doesn't break at a certain floor, it will not break at any floor below.
+If the eggs breaks at a certain floor, it will break at any floor above.
+Return the minimum number of moves that you need to determine with certainty what the value of f is.
+For more description on this problem see [Link](https://en.wikipedia.org/wiki/Dynamic_programming#Egg_dropping_puzzle)
+
+##### Example 1:
+Input:
+N = 1, K = 2
+Output: 2
+##### Explanation 1: 
+1. Drop the egg from floor 1. If it 
+   breaks, we know that f = 0.
+2. Otherwise, drop the egg from floor 2.
+   If it breaks, we know that f = 1.
+3. If it does not break, then we know f = 2.
+4. Hence, we need at minimum 2 moves to
+   determine with certainty what the value of f is.
+
+##### Example 2:
+
+Input:
+N = 2, K = 10
+Output: 4
+
+##### Explanation 2: 
+Method : Dynamic Programming.  
+The approach will be to make a table which will store the results of sub-problems so that to solve a sub-problem, it would only require a look-up from the table which will take constant time, which took exponential time with recursion.  
+Formally for filling DP[i][j] state where 'i' is the number of eggs and 'j' is the number of floors:   
+ 
+We have to traverse for each floor 'x' from '1' to 'j' and find minimum of:  
+(1 + max( DP[i-1][j-1], DP[i][j-x] )).  
+![dptable](https://user-images.githubusercontent.com/78564629/158542308-490d8143-4889-425f-9d60-7e6632b8808c.png)
+
+
+
+#### 2 egg for 100-floor builing- Optimal Approach:
+If the first egg breaks, we need to test the remaining floors one by one starting from the lowest until the remaining egg breaks. For example, if the first drop is on the 50th floor and the egg breaks, it will take 49 more drops from the 1st floor to the 49th floor to ensure the remaining egg does not break until we know the answer.  
+If the first drop is on the 10th floor and it breaks, then it takes a total of 10 trials to know the answer in a worst case scenario, i.e. the egg starts to break on the 9th or the 10th floor. The trials will be: 10 → 1 → 2 → 3 → 4 → 5 → 6 → 7→ 8 → 9  
+To utilize the number of trials used (10 trials), if the first drop is on the 10th floor and the egg does not break, the second drop should be on the 19th floor, i.e. if the egg breaks on the 19th floor, then you should drop the eggs in the following sequence: 10 → 19 → 11 → 12 → 13 → 14 → 15 → 16 → 17 → 18 (10 trials in total).  
+With this utilization in mind, the ultimate sequence (if an egg never breaks) will be 10 → 19 (10 + 9) → 27 (10 + 9 + 8) → 34 (10 + 9 + 8 + 7) → 40 → 45 → 49 → 52 → 54 → 55, i.e. 10 trials can test up to 55 floors.  
+Using the formula for triangle numbers, m trials can test for \frac{m(m+1)}{2} floors, i.e.  
+13 trials can test 13 * 14 / 2 = 91 floors  
+14 trials can test 14 * 15 / 2 = 105 floors  
+Thus it takes 14 trials to test a 100-floor building.  
+
+##### 2 Egg for 15 Floor
+![File](https://user-images.githubusercontent.com/78564629/158540414-3b65cc6b-e598-4347-b20b-79bdf10af759.png)
+
+
+## Complexity Analysis
+**Time Complexity :** O(nk^2).  
+Where 'n' is the number of eggs and 'k' is the number of floors, as we use a nested for loop 'k^2' times for each egg  
+**Auxiliary Space :** O(nk).  
+As a 2-D array of size 'n*k' is used for storing elements.
