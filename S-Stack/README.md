@@ -2,6 +2,7 @@
 - [Stack](#stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
+- [Score Of Parenthesis](#score-of-parentesis)
 
 ## STACK 
 
@@ -106,5 +107,23 @@ Note that an input string is valid if:
 After complete traversal, if there is some starting bracket left in the stack then "not valid"
 ```
 ![image](https://user-images.githubusercontent.com/91210199/159122082-2a5e98d2-bdd4-4f9d-9131-1d2048a5f60f.png)
+
+## Score of parenthesis
+
+### Let's understand our rule's first of all :-
+1. If our input string is "()" then our score will be 1, so this is our first rule
+2. If we have input string "()()" then our score will be 1 + 1 i.e. 2, where 1 is a score of a balanced parentheses. So, this is our second rule
+3. Now last rule say's, if we have given something like "(())" in our input string, our score will be 2 X 1 i.e. 2, it means that we have something like nested        parenthesis. 
+4. Then multiply it by 2.
+```
+Let's take a look how do we calculate the score on following examples:
+()() => 1+1
+(()()) => 2*(1+1)
+((()())) => 2*2*(1+1)
+((()(()))) => 2*2*(1+2*1)
+```
+Refere video solution here : (https://youtu.be/Pv35fyoKtUA)
+
+Problem link : (https://leetcode.com/problems/score-of-parentheses/) 
  
 
