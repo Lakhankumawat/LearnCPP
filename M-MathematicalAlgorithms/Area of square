@@ -1,0 +1,15 @@
+// C++ program to calculate the area of square
+// By : Youstena Wahba Gabra
+#include <iostream>
+using namespace std;
+int main()
+{
+// identification the side length and the area
+    int x, area;
+    cout<<"Please enter the side length:\n";
+    cin>>x;
+// Calculate the area of a square
+    area = x * x;
+    cout<<"The area of the square is : "<< area << endl;
+    return 0;
+}
