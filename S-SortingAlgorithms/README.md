@@ -17,8 +17,16 @@
        - [Disadvantage](#disadvantageofinsertionSort)
 
   - [Merge Sort](#merge-sort)
-  - [Quick Sort](#quick-sort)
-
+       -  [Algorithm](#algorithmofmergeSort)
+       - [Properties](#mergeSortproperties)
+       - [Advantages](#advantagesofmergeSort)
+       - [Disadvantage](#disadvantageofmergeSort)
+      
+  - [Counting Sort](#counting-sort)
+       -  [Algorithm](#algorithmofcountingSort)
+       - [Properties](#countingSortproperties)
+       - [Advantages](#advantagesofcountingSort)
+       - [Disadvantage](#disadvantageofcountingSort)
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -148,6 +156,8 @@ Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides the inp
  
 ![image](https://user-images.githubusercontent.com/91210199/159164125-247a8fbb-2d4b-4ea4-9416-5f61939521b9.png)
 
+ <a name="algorithmofmergeSort"></a>
+    
  ### Algorithm
  ```
   MergeSort(arr[], l,  r)
@@ -161,6 +171,8 @@ If r > l
      4. Merge the two halves sorted in step 2 and 3:
              Call merge(arr, l, m, r)
   ```           
+  <a name="mergeSortproperties"></a>
+    
   ### Properties 
   ```
    1)Time complexity = O(nlogn)
@@ -168,13 +180,17 @@ If r > l
    3)Stable - Yes
    4) In place = no
    ```
+  <a name="advantagesofmergeSort"></a>
+    
    ### Advantages
    
-   Merge sort is the very effiecent algorithm as compared to all the other sorting algorithms and is widely used in order to sort linked lists ,stacks etc
-     
+   Merge sort is the very effiecent algorithm as compared to all the other sorting algorithms and is widely used in order to sort linked lists ,stacks etc.
+    
+  <a name="disadvantageofmergeSort"></a>
+    
    ### Disadavantages
-    Slower as compared to all the other algorithms for smaller tasks
-    Requires the usage of additional memory space for additional array
+    - Slower as compared to all the other algorithms for smaller tasks
+    - Requires the usage of additional memory space for additional array
     
 
 
@@ -185,7 +201,8 @@ If r > l
 ![counting-sort](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
 <!-- citation : [Here](https://www.programiz.com/dsa/counting-sort)  -->
 
-
+ <a name="algorithmofcountingSort"></a>
+    
 ### Algorithm
 
 ```
@@ -210,6 +227,7 @@ begin countSort(arr, n)
 
   [end of program]
 ```
+ <a name="countingSortproperties"></a>
 
 ### Properties
 
@@ -221,10 +239,13 @@ begin countSort(arr, n)
 - In-place : No
 - Stable : Yes
 
+<a name="advantagesofcountingSort"></a>
+    
 ### Advantages
 
-- Linear time sorting technique, making it faster than comparison based algorithms.
-
+ -  Linear time sorting technique, making it faster than comparison based algorithms.
+    
+ <a name="disadvantageofcountingSort"></a>
 ### Disadvantage
 
 - Works for restricted inputs only for a certain range and takes extra space.
