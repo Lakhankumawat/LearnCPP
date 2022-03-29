@@ -3,7 +3,9 @@
 - [Trace and Normal of Matrix](trace-and-normal-of-matrix)
 - [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
 - [Prefix Sum](#prefix-sum)
+- [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 
+ 
 # Maximum Sum of Subarray:
 - [Maximum Sum Subarray](#maximum-sum-subarray)
 - [Example](#example)
@@ -244,3 +246,66 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
 
  Time Complexity:  `O(N) + O(N) + O(Q) =  10^5 `
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
+
+
+
+
+# First negative integer in every k size window:
+- [Example](#few-examples)
+- [Approach Used](#approach-used---sliding-window-approach)
+- [Algorithm](#algorithm-4)
+- [Time Complexity](#time-and-space-complexity)
+
+## [First negative integer in every k size window:](https://github.com/arzitmahajan/LearnCPP/blob/new_branch/A-Array/FirstNegativeInEveryWindow.cpp)
+Given an array and a positive integer k, find the first negative integer for each window(contiguous subarray) of size k. If a window does not contain a negative integer, then print 0 for that window. \
+```
+
+  Input : arr[] = {-8, 2, 3, -6, 10}, k = 2
+  Output : -8 0 -6 -6
+  First negative integer for each window of size k
+  {-8, 2} = -8
+  {2, 3} = 0 (does not contain a negative integer)
+  {3, -6} = -6
+  {-6, 10} = -6
+
+  Input : arr[] = {12, -1, -7, 8, -15, 30, 16, 28} , k = 3
+  Output : -1 -1 -7 -15 -15 0
+
+```
+
+## Few Examples:
+|Sr. No.|              Input            |        Output          |                                  Explanation                                       |
+|:----: | :----------------------------:|:----------------------:| :--------------------------------------------------------------------------------- |
+|   1   | [-3, -4, 5, -1, 2, -4, 6] , 3 | [-3, -4, -1, -1, -4]   | [-3, -4, -1, -1, -4] are  the first negative  integer  of every window of size 3.  |
+|   2   |         [-2, 3, -1, 2] , 2    |    [-2, -1, -1]        | [-2, -1, -1] are  the first negative  integer  of every window of size 2.          |
+|   3   | [-5, 8, 9, -6, 10, -15, 3] , 3| [-5, -6 ,-6, -6, -15]  | [-5, -6 ,-6, -6, -15] are  the first negative  integer  of every window of size 3. |
+|   4   |       [-4, -7, 1, 5,2] , 2    |   [-4, -7, 0, 0]       | [-4, -7, 0, 0] are  the first negative  integer  of every window of size 2.        |
+
+## Approach Used -> Sliding Window Approach:
+For every k size window store every element if negative in deque from rear end using for loop then check size of deque size if greater than 0 then then get the element from front and store it in vector. If deque size is 0 store 0 in vector. Move the window ahead if we have reached or passed the last element of the window.
+ #### Algorithm:
+  ```
+    1. Initialize deque and vector.
+    2. Use loop for starting window that is till k.
+    3. Push back the index in deque if element is negative.
+    4. Push back 0 if element is positive.
+    5. Check the size of deque after execution of loop if size > 0 get the front element of deque(index) store the element at that index in vector.
+    6. Else store 0 in vector.
+    7. Use loop from k till last index of array.
+    8. Check if deque is not empty  && loop variable - front element of deque is not greater than or equal to k.
+    9. If step 8 is true pop the front element in deque.
+    10.Repeat  steps 5,6 and 8, 9  till execution of loop
+
+  ```
+
+## Time and space complexity: 
+```
+ Time Complexity =  O(n-k), Where n is the size of the array and k is window size.
+ Space complexity = O(n-k+1), size of vector returned. 
+
+```
+
+
+
+
+
