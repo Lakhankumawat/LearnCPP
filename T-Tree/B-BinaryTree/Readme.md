@@ -73,6 +73,7 @@ Height of tree: 7
 
 ### Properties
 - Time Complexity: O(n)
+- Space Complexity: O(n)
 
 ## Number of leaf nodes in binary tree
 - A node is a leaf node if both left child and right child nodes of its are NULL.
@@ -134,4 +135,5 @@ No. of leaf nodes in tree: 4
 ### Properties
 
 - Time Complexity: O(n)
+- Space Complexity: O(n)
 
