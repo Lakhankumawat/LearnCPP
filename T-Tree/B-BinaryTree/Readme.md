@@ -1,16 +1,16 @@
-<!-- follow the template of Bubble Sort, add the respective heading in Table of content -->
 
 
 <!-- Table of content -->
 # Table of content
-- Height of the binary tree.
-   - Algorithms
-   - Output
-   - Time Complexity
-- Number of leaf nodes in Binary Tree.
-   - Algorithms
-   - Output
-   - Time Complexity
+- [Binary Tree](#binary-tree)
+- [Height of the binary tree](#height-of-the-binary-tree)
+    - [Algorithm](#algorithm)
+    - [Output for height of the binary tree](#output-for-height-of-the-binary-tree)
+    - [Properties](#properties)
+- [Number of leaf nodes in Binary Tree](#number-of-leaf-nodes-in-binary-tree)
+    - [Algorithm](#algorithm-1)
+    - [Output for number of leaf nodes in binary tree](#output-for-number-of-leaf-nodes-in-binary-tree)
+    - [Properties](#properties-1)
 
 
 # Binary Tree:
