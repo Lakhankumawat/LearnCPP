@@ -2,7 +2,7 @@
 - [Trace and Normal of Matrix](trace-and-normal-of-matrix)
 - [Sort an Array of 0s, 1s and 2s](sort-an-array-of-0s-1s-and-2s)
 - [Prefix Sum](#prefix-sum)
-- [Finding Minimum and Maximim in an array] (min_max_in_an_array)
+- [Finding Minimum and Maximim in an array](min_max_in_an_array)
 
 
 # Trace and Normal of Matrix
