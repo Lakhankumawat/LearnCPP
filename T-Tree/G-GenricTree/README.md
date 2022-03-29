@@ -187,14 +187,14 @@ O(n), where is number of nodes.
 ### Algorithm
 
 - Recursively call the mirror function on all the children of the root of the generic tree.
-- Reverse the families of its children using reverse function or use the following code for children from 0th position to (size-1)th posotion,
+- Reverse the families of its children using reverse function or use the following code for children from 0th position to (size-1)th posotion.
 - Make a temprary node and store children at ith position of the parent node.
-  Node *temp = node->children[i];
-- Assign jth children to ith children of the parent node
-  node->children[i] = node->children[j];
+Node *temp = node->children[i];
+- Assign jth children to ith children of the parent node.
+node->children[i] = node->children[j];
 - And then assign value of temp node to jth children
-  node->children[j] = temp;
-  hence reverse is done, and this will give our desired output on printing it using display function.
+node->children[j] = temp;
+hence reverse is done, and this will give our desired output on printing it using display function.
 
 ### Time Complexity
 ```
