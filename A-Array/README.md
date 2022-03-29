@@ -35,6 +35,11 @@ Then i=0 stores stocks price at 1st day that is 7.
 >Method
 ![Stock_Buy_And_Sell](https://user-images.githubusercontent.com/75080313/160533604-ce792a39-09b2-44a0-9089-2b7eee957693.jpg)
 
+>My Outputs
+![ss2](https://user-images.githubusercontent.com/75080313/160626814-0669c088-819d-4adc-abca-d844546e10f1.png)
+![ss1](https://user-images.githubusercontent.com/75080313/160626831-2e8ace3b-06c0-47e7-b5c3-f9b8e46d9533.png)
+
+
 
 ## Complexity
 <pre>
