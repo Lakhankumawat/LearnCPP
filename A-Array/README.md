@@ -362,34 +362,31 @@ For every k size window store every element if negative in deque from rear end u
    4. If the element on the left side of mid element is more then update end=mid-1.
    5. If the element on the right side of mid element is more then update start=mid+1.
    
-   ### Code
+   ### Pseudo Code
    ```
-   int efficientPeak(vector<int> &arr,int n){
+   begin efficientPeak(array,n)
 
-    if(n==1) return 0
-    int start=0,end=n-1,mid
+	    if(n == 1) return 0
+	    if(array[0] >= array[1]) return 0;
+	    if(array[n-1] >= array[n-2]) return n-1;
 
-    while(end>=start){
-
-        mid=(start+end)/2
-
-        if(mid == 0){
-            if(arr[mid] >= arr[mid+1]) return mid
-            else start=mid+1
-        }
-
-        else if(mid == n-1){
-            if(arr[mid] >= arr[mid-1]) return mid
-            else end=mid-1
-        }
-
-        else if((arr[mid] >= arr[mid-1]) && (arr[mid] >=arr[mid+1])) return mid
-
-        else if(arr[mid] < arr[mid-1]) end=mid-1
-
-        else start=mid+1
-    }
-}
+	    int start = 0
+	    int mid = 0
+	    int end= n-1
+    
+	    while(start <= end)
+		mid = (start + end)/2
+		if((array[mid] >= array[mid-1]) && (array[mid] >= array[mid+1])) 
+		  return mid
+		else if(array[mid] < array[mid-1]) 
+		  end=mid-1
+		else 
+		  start=mid+1
+		end if
+	    end while
+	    
+   end efficientPeak
+	
    ```
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
