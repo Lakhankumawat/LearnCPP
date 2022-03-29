@@ -15,7 +15,7 @@ int main() {
     cin >> num;
     // loops over all numbers less than the input number
     int sum = 0;
-    for (int i = 0; i < num; i++) {
+    for (int i = 1; i < num; i++) {
         // checks if number is divisble
         if (num % i == 0) {
             sum += i; // add the divisor to the sum
