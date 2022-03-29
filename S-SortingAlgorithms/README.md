@@ -40,7 +40,6 @@
 - Make sure to understand the difference between increasing and non-decreasing order.
 
 
-
 ## Bubble Sort
 
 - It repeatedly loops through the array elements to be sorted and compares each pair of adjacent items and swaps them if they are not in order.
