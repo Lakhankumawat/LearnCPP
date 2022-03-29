@@ -414,6 +414,42 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "i-am-aisha",
+      "name": "Aisha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100334178?v=4",
+      "profile": "https://github.com/i-am-aisha",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bhumikatewary",
+      "name": "Bhumika Tewary",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77784592?v=4",
+      "profile": "https://github.com/bhumikatewary",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "arzitmahajan",
+      "name": "arzitmahajan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73886210?v=4",
+      "profile": "https://github.com/arzitmahajan",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "PeritusDeveloper",
+      "name": "PeritusDeveloper",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89828000?v=4",
+      "profile": "https://github.com/PeritusDeveloper",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
