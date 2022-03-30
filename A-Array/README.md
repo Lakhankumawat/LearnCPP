@@ -11,6 +11,8 @@
 
 
 # [Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
+
+![Gif](https://3.bp.blogspot.com/-XCvki3_jPow/WTRI77m3aBI/AAAAAAAADVA/a2Q6DTc6DEg5KkSCHkivlCUTJ3XR75XhgCLcB/s1600/BuySeelStock2.gif)
 <pre>
 The problem states that there is an array or vector that contains N elements and elements stores stocks price at that day.
 For example:
@@ -32,13 +34,6 @@ Then i=0 stores stocks price at 1st day that is 7.
 * 3<sup>rd</sup> Now iterate over the array or vector if current element at `i is smaller then the previous element` then update b to that element.
 * 4<sup>th</sup> Check wether the differece of current b with the current element is lager than previous value then update the p value to the value of differnce.
 * 5<sup>th</sup> continue 3<sup>rd</sup> and 4<sup>th</sup> step till the lenth of the array or vector.
->Method
-![Stock_Buy_And_Sell](https://user-images.githubusercontent.com/75080313/160533604-ce792a39-09b2-44a0-9089-2b7eee957693.jpg)
-
->My Outputs
-![ss2](https://user-images.githubusercontent.com/75080313/160626814-0669c088-819d-4adc-abca-d844546e10f1.png)
-![ss1](https://user-images.githubusercontent.com/75080313/160626831-2e8ace3b-06c0-47e7-b5c3-f9b8e46d9533.png)
-
 
 
 ## Complexity
