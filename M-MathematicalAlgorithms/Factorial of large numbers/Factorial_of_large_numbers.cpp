@@ -38,7 +38,7 @@ int factorial(int i,int res[],int size){
 }
 
 void solve(int n){
-    //taking a array of size 500 and initializing it with 0 
+    //taking a array of size 1000 and initializing it with 0 
     int res[1000]={0};
 
     res[0]=1;  // Initializing factorial of 0 as 1
