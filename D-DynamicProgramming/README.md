@@ -6,6 +6,8 @@
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 - [Egg Dropping Puzzle](#egg-dropping-puzzle)
 
+- [Climbing Stairs](#climbing-stairs)
+
 
 <!-- Table of content -->
 # Dynamic Programming
@@ -403,3 +405,80 @@ Thus it takes 14 trials to test a 100-floor building.
 Where 'n' is the number of eggs and 'k' is the number of floors, as we use a nested for loop 'k^2' times for each egg  
 **Auxiliary Space :** O(nk).  
 As a 2-D array of size 'n*k' is used for storing elements.
+
+
+
+# [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+- [Problem Statement of Climbing Stairs](#problem-statement-of-climbing-stairs)
+
+- [Examples of Climbing Stairs](#examples-of-climbing-stairs)
+
+- [Explanation of Climbing Stairs](#explanation-of-climbing-stairs)
+
+- [Code](https://github.com/Shweta2024/LearnCPP/blob/climbing_stairs/D-DynamicProgramming/ClimbingStairs.cpp)
+
+- [Analysis](#analysis)
+
+### Problem Statement of Climbing Stairs
+
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+
+### Examples of Climbing Stairs
+
+##### Example 1
+
+       
+Input: n = 2
+
+          Output: 2
+
+          Explanation: There are two ways to climb to the top.
+
+          1) 1 step + 1 step
+
+          2) 2 steps 
+
+#### Example 2:
+
+       
+Input: n = 3
+
+          Output: 3
+
+          Explanation: There are three ways to climb to the top.
+
+          1) 1 step + 1 step + 1 step
+
+          2) 1 step + 2 steps
+ 
+          3) 2 steps + 1 step  
+
+### Explanation of Climbing Stairs
+
+-We have to return the total number of possible ways to reach the n-th step, provided that we can either take one step or two step.
+
+-So at any given stair (say currentStair) we'll have two options :- 1)to make a jump of one step or 2)to make a jump of two steps, therefore we'll make two recursive calls one for oneJump & another for twoJump.
+
+-if we make a jump of one we'll reach to currentStair+1 and if we make a jump of two then we'll reach currentStair+2.
+
+-if we reach the target stair ,then return 1,because it is a vaild way to reach the target.
+
+-if we have gone beyond the target step,then return 0, because we can't reach the target stair.
+
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+-So we can store the values in a hash map and will use those values from the hash map only instead of making recursive calls for it.
+
+
+### Analysis
+#### Time Complexity = O(n)
+
+
+#### Space Complexity = O(n)
