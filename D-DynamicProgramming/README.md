@@ -444,6 +444,11 @@ Input: n = 2
 
 #### Example 2:
 
+###### The below diagram shows the three different ways of Climbing the Stairs
+
+
+![cs](https://user-images.githubusercontent.com/75883328/160851148-014f971e-43eb-4cb3-8323-e41561717835.png)
+
        
 Input: n = 3
 
@@ -453,9 +458,9 @@ Input: n = 3
 
           1) 1 step + 1 step + 1 step
 
-          2) 1 step + 2 steps
+          2) 2 steps + 1 step
  
-          3) 2 steps + 1 step  
+          3) 1 step + 2 steps
 
 ### Explanation of Climbing Stairs
 
@@ -475,6 +480,42 @@ This recursive code will give us a TLE.So, we need to optimize this.
 We'll optimize this using DP ,because we have overlapping sub-problems.
 
 -So we can store the values in a hash map and will use those values from the hash map only instead of making recursive calls for it.
+
+### Pseudo code
+
+```
+int totalWays(int currentIndex,int target,unordered_map<int,int>&m)
+
+           if(currentIndex==target) return 1; 
+	   
+           if(currentIndex>target) return 0;
+	   
+	   int currentKey=currentIndex;
+	   
+	   if(m.count(currentKey)) return m[currentKey];
+	   
+	   int oneJump=totalWays(currentIndex+1,target,m);
+	   
+           int twoJump=totalWays(currentIndex+2,target,m);
+	   
+	   m[currentKey]=oneJump+twoJump;
+        
+    return m[currentKey];
+
+```
+
+
+### The below is the Screenshot of my output
+
+###### Output for n=4
+
+![op1](https://user-images.githubusercontent.com/75883328/160851883-c485d803-7892-4ced-b15f-edc00eb8491f.png)
+
+
+###### Output for n=44
+
+![op2](https://user-images.githubusercontent.com/75883328/160852013-dc76d8b2-8b29-4a00-8f7b-b82a21bd868f.png)
+
 
 
 ### Analysis
