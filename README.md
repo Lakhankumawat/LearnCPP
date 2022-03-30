@@ -55,6 +55,13 @@
 
 ## Read the following steps before contributing.
 
+
+|     Follow Steps      |  Get Started           |
+|----------------|-------------------------------|
+| [![Alt text](https://user-images.githubusercontent.com/55774240/160746943-ce6cfa8e-859f-4fa3-b526-4a853ef8284e.jpg)](https://youtu.be/r7Xmlm3Bs8I)| [![Alt text](https://user-images.githubusercontent.com/55774240/160746656-6513e4a4-a953-4372-83ec-9f63369639b7.jpg)](https://youtu.be/MRXcoxDillk) | 
+| [![Alt text](https://user-images.githubusercontent.com/55774240/160747046-dc75df22-26f1-4b37-ae41-18bfba32d8d5.jpg)](https://youtu.be/kIFwqp9B7pQ)| [![Alt text](https://user-images.githubusercontent.com/55774240/160747132-369b5bf5-bebe-4abd-ae80-de44859286a2.jpg)](https://youtu.be/7UgC3HDETRA) | 
+
+
 ### Algorithms
 
 |                |Follow these steps                         	|
