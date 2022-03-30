@@ -23,26 +23,26 @@ public:
 
     }
 };
-
-
-
 int main()
 {
     // 't' variable of number of repeating program
     int t;
+    cout<<"Enter number of repeating program: "<<endl;
     cin >> t;
     // Using while loop for repeat program t times.
     while(t--)
     {
         //Declare size of two arrays.
         int n, m;
+        cout<<"Enter size of two arrays: "<<endl;
         cin >> n >> m;
         //Declare two arrays.
         int a[n], b[m];
         //initialize two array.
+        cout<<"Enter the first array: "<<endl;
         for(int i = 0; i<n; i++)
             cin >> a[i];
-
+        cout<<"Enter the second array: "<<endl;
         for(int i = 0; i<m; i++)
             cin >> b[i];
 
@@ -50,6 +50,7 @@ int main()
         Solution ob;
 
         // Calling doUnion Function using ob Object for return the count of union elements of the two arrays.
+        cout<<"The count of union elements of the two arrays =  ";
         cout << ob.doUnion(a, n, b, m) << endl;
 
     }
