@@ -7,6 +7,7 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
+- [Leaders in an array](#Leaders in an array)
 
 
 
@@ -428,4 +429,55 @@ For every k size window store every element if negative in deque from rear end u
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
  
+**Leaders in an array**
+# [Leaders in an array](https://www.interviewbit.com/problems/leaders-in-an-array/)
 
+<pre>
+Given an integer array A containing N distinct integers, you have to find all the leaders in the array A.
+An element is leader if it is strictly greater than all the elements to its right side.
+NOTE:The rightmost element is always a leader.
+</pre>
+
+## Complexity for naive approach
+<pre>
+Time complexity: O(n*n) 
+Space complexity: O(n) 
+</pre>
+
+## Complexity for my approach
+<pre>
+Time complexity: Theta(n) 
+Space complexity: Theta(nX) 
+</pre>
+
+## APPROACH
+## A brute force solution  using two nested loops 
+## An efficient solution  using a single scan from the right
+
+## Solution idea
+
+Now the critical question is: can we solve this problem in O(n) time complexity using a single traversal? Let's think!
+variable cur_ldr=current leader
+An element arr[i] is a leader if arr[i] is greater than the maximum among all the elements to its right side. So one idea would be to scan all the elements from right to left and keep track of the max so far using a variable cur_ldr. Whenever we find an arr[i] > cur_ldr, it means arr[i] is a leader element that is greater than the max element on the right side. In other words: whenever cur_ldr changes its value, we have found a leader element. Note: The last element of the array is a leader by default, so we initialize cur_ldr = arr[n - 1].
+
+#### Pseudo code:
+void Leader(int arr[], int n)
+{
+	int cur_ldr = arr[n-1];
+
+	/* Rightmost element is always leader */
+	cout <<cur_ldr << " ";
+
+	for (int i = n-2; i >= 0; i--)
+	{
+		if (cur_ldr < arr[i])
+		{		
+			cur_ldr= arr[i];
+			cout << cur_ldr << " ";
+		}
+	}
+}
+
+## output
+![image](https://www.enjoyalgorithms.com/static/leaders-in-an-array-cover-774a509abfa400c54c7afd01172480dc.jpeg)
+![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190620130246/Leaders-in-an-array.png)
