@@ -10,6 +10,7 @@
 - [Peak In 1D Array](#peak-in-1d-array)
 
 # Counting divisible Substrings
+![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
 Question:
 You are given a string Str of length N. Each character of the string is a base 10 digit.
 
@@ -54,15 +55,16 @@ The problem states that there is a string that contains only digits. You have to
 </pre>
 
 ## Algorithm
-* 1<sup>st</sup> Select an index in the string from begining that has not been selected before as leftmost prefix.
-* 2<sup>nd</sup> get the digit from the string by int(string[index])-int('0').
-* 3<sup>rd</sup> Now generate the number by (suming prefix digit)*10 +  current index digits
-* 4<sup>th</sup> follow step 3<sup>rd</sup> till the end of string.
-* 5<sup>th</sup> continue step 1-4 till all the element of string is not chosen as most significant digit place.
+* 1<sup>st</sup> Select an index in the string from begining that has not been selected before as leftmost prefix and initilize count = 0.
+* 2<sup>nd</sup> initilize number as 0.
+* 3<sup>rd</sup> get the digit from the string by int(string[index])-int('0').
+* 4<sup>th</sup> Now update the number by (suming prefix digit)*10 +  current index digits and increment count if number is divisible
+* 5<sup>th</sup> follow step 3<sup>rd</sup> till the end of string.
+* 6<sup>th</sup> continue step 1-4 till all the element of string is not chosen as most significant digit place.
 
 ## Complexity
 <pre>
-Time complexity: O(n^2) 
+Time complexity: O(n<sup>2</sup>) 
 Space complexity: O(1) 
 </pre>
 
