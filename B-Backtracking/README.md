@@ -48,3 +48,20 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 > My OUTPUT
 > 
    <img src="https://user-images.githubusercontent.com/55774240/113557918-66a0d880-961c-11eb-8cd8-a71a6f5db9a4.png" width="350" />
+   
+## [3. Rat in Maze](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-Backtracking/RatInMaze.cpp)
+
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/ratinmaze_filled11.png" width="350"/>
+
+In the rat in maze problem we have to find a path to get the rat of a maze given by the user.
+
+<hr>
+
+### Backtracking algorithm
+
+1. Start in the left most column.
+2. If it is possible for the rat to be in the current position return true.
+3. Check if the rat can move to its right or downward.
+4. If the rat can not move in either of the directions, mark its current position as blocked and backtrack to last decision making point.
+5. Repeat till the path is found or till it is made sure that no path is available.
+
