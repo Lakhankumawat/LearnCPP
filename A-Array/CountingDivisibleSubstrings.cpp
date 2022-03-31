@@ -9,8 +9,8 @@ int helper(string & s, int tar){
     int cont=0;
     for(int i=0;i<s.length();i++){
         int n=0; //init number
-        for(int j = i;i<s.length();i++){
-          n= n*10+ int(s[i])-int('0');//combine digits to generate numbers
+        for(int j = i;j<s.length();j++){
+          n= n*10+ int(s[j])-int('0');//combine digits to generate numbers
           if(n%tar==0){ //check if the number is divisible by the given number then increment count value
             cont++; //increment count
           }
