@@ -1,0 +1,37 @@
+//https://www.interviewbit.com/problems/leaders-in-an-array/
+
+//time complexity  :theta(n)
+//AUX Space        :theta(nX)
+
+//It prints the array from left to right
+
+#include <iostream>
+using namespace std;
+
+/* C++ Function to print leaders in an array */
+void Leader(int arr[], int n)
+{
+	int cur_ldr = arr[n-1];
+
+	/* Rightmost element is always leader */
+	cout <<cur_ldr << " ";
+	
+	for (int i = n-2; i >= 0; i--)
+	{
+		if (cur_ldr < arr[i])
+		{		
+			cur_ldr= arr[i];
+			cout << cur_ldr << " ";
+		}
+	}
+}
+
+//main function
+int main()
+{
+	int arr[] = {77, 23, 15, 9, 5, 24};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	Leader(arr, n);
+	return 0;
+}
+
