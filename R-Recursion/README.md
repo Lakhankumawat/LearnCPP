@@ -18,7 +18,7 @@ Output: 2
 Explanation: Given array has two inversions:
 (3, 1), (3, 2) 
 ```
-# [Quick Sort](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/QuickSort.cpp)
+# [Quick Sort](https://github.com/MRK04/LearnCPP/blob/main/R-Recursion/QuickSort.cpp)
 
 Quicksort is a divide and conquer algorithm. Select a random pivot, put it in its correct position, and sort the left and right part recursively. 
 There are many different versions of quickSort that pick pivot in different ways: 
