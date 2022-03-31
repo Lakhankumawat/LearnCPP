@@ -1,6 +1,13 @@
 # Table of content
 - [BST](#bst-tree)
-- [AVL](#avl-tree)
+- [AVL](#avl-tree) 
+- [Array to Bst](#Array-to-Bst)
+    - [Properties](#Properties)
+    - [Algorithm](#Algorithm)
+    - [Time Complexity](#Complexity)
+    - [Searching in Binary search tree](#searching-in-binary-search-tree)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantage)
 
 <hr>
 
@@ -56,3 +63,55 @@
 - AVL trees are very difficult to implement
 
 <hr>
+
+
+
+# Array to bst
+- A binary search tree follows some order to arrange the elements. 
+- In a Binary search tree, the value of left node must be smaller than the parent node, and the value of right node must be greater than the parent node.  
+- A height-balanced binary tree is defined as a binary tree in which the left and right subtrees of every node differ in height by no more than 1. 
+
+
+![ARRAYTOBSTIMAGE](https://user-images.githubusercontent.com/86939497/160360064-80a93caa-0a72-41a5-8a1b-5806fc4a3503.jpeg)
+
+
+## Properties
+- The left subtree of a node contains only nodes with keys lesser than the node’s key.
+- The right subtree of a node contains only nodes with keys greater than the node’s key.
+- The left and right subtree each must also be a binary search tree.
+
+## Algorithm
+- To check if a tree is height-balanced, get Get the Middle of the array and make it root.
+- Get the middle of left half and make it left child of the root created in step 1.
+- Get the middle of right half and make it right child of the root created in step 1.
+- Return true if difference between heights is not more than 1 and left and right subtrees are balanced, otherwise return false. 
+
+## Searching in Binary search tree
+- First, compare the element to be searched with the root element of the tree.
+- If root is matched with the target element, then return the node's location.
+- If it is not matched, then check whether the item is less than the root element, if it is smaller than the root   element, then move to the left subtree.
+- If it is larger than the root element, then move to the right subtree.
+- Repeat the above procedure recursively until the match is found.
+- If the element is not found or not present in the tree, then return NULL.
+
+## Time Complexity
+
+```
+
+- Insertion	:- O(n)
+- Deletion  :- O(n)
+- Search    :- O(n)
+- Space Complexity :- O(n)
+```
+
+## Advantages of Binary search tree
+
+- Searching an element in the Binary search tree is easy as we always have a hint that which subtree has the desired element.
+- As compared to array and linked lists, insertion and deletion operations are faster in BST.
+- Many algorithms can be expressed more easily because it is just a binary tree.
+
+
+## Disadvantages
+
+- It employs recursive approach which requires more stack space.
+- The interaction of binary search with memory hierarchy i.e. caching is poor.

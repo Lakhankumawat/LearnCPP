@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-37-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-51-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -55,6 +55,13 @@
 
 ## Read the following steps before contributing.
 
+
+|     Follow Steps      |  Get Started           |
+|----------------|-------------------------------|
+| [![Alt text](https://user-images.githubusercontent.com/55774240/160746943-ce6cfa8e-859f-4fa3-b526-4a853ef8284e.jpg)](https://youtu.be/r7Xmlm3Bs8I)| [![Alt text](https://user-images.githubusercontent.com/55774240/160746656-6513e4a4-a953-4372-83ec-9f63369639b7.jpg)](https://youtu.be/MRXcoxDillk) | 
+| [![Alt text](https://user-images.githubusercontent.com/55774240/160747046-dc75df22-26f1-4b37-ae41-18bfba32d8d5.jpg)](https://youtu.be/kIFwqp9B7pQ)| [![Alt text](https://user-images.githubusercontent.com/55774240/160747132-369b5bf5-bebe-4abd-ae80-de44859286a2.jpg)](https://youtu.be/7UgC3HDETRA) | 
+
+
 ### Algorithms
 
 |                |Follow these steps                         	|
@@ -80,7 +87,7 @@
 Fond of designing README this section will be helpful to you
 |                |Follow these steps                         	|
 |----------------|-------------------------------|
-| 🆕 New README |`'Please see if there is no README in any folder , if no ? Then please design it '`|
+| 🆕 New README |`'Please see if there is no README in any folder , if no ? Then please design it , if yes ? Then please edit it accordingly your contribution and folling the guidelines '`|
 | 🤔 What to include |`"Your README should be efficiently and clearly written / link to problem statement in README at the top"` [see exmaple](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/README.md)  |
 | ✅ Must Contain | `1. and explain in brief about addition` `2. An Image of addition i.e how it works` `3. Mention the Pseudo Code` `4. Time and Space Complexities` `5. Advantages` `6. Disadvantages ` |
 | 🪧 Where to include  |`Inside the folder where programs are residing ,discuss` [here](https://github.com/Lakhankumawat/LearnCPP/discussions/7) `before commiting for where to include`|
@@ -180,6 +187,24 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/mohammadruman"><img src="https://avatars.githubusercontent.com/u/88760648?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohammad Ruman</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=mohammadruman" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/vinaya563"><img src="https://avatars.githubusercontent.com/u/91210199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vinaya Sree Modem</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=vinaya563" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/maithili-kharabe-063a631b1"><img src="https://avatars.githubusercontent.com/u/62667818?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maithili Kharabe</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=MRK04" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/svenkat19"><img src="https://avatars.githubusercontent.com/u/74498344?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shashank Venkat</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=svenkat19" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/janhavikale06"><img src="https://avatars.githubusercontent.com/u/81229872?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Janhavi Kale</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=janhavikale06" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Mrjoy832"><img src="https://avatars.githubusercontent.com/u/77873383?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TRIDIB BAG</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Mrjoy832" title="Code">💻</a></td>
+    <td align="center"><a href="https://sebinfrancis7.github.io/portfolio"><img src="https://avatars.githubusercontent.com/u/59263190?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sebin Francis</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=sebinfrancis7" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kalash2205"><img src="https://avatars.githubusercontent.com/u/76390773?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kalash Singhal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=kalash2205" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Bhavneet345"><img src="https://avatars.githubusercontent.com/u/84433782?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bhavneet Singh</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Bhavneet345" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/dev24il"><img src="https://avatars.githubusercontent.com/u/98025162?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jyoti Singh</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=dev24il" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/i-am-aisha"><img src="https://avatars.githubusercontent.com/u/100334178?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aisha</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=i-am-aisha" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bhumikatewary"><img src="https://avatars.githubusercontent.com/u/77784592?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bhumika Tewary</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=bhumikatewary" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/arzitmahajan"><img src="https://avatars.githubusercontent.com/u/73886210?v=4?s=100" width="100px;" alt=""/><br /><sub><b>arzitmahajan</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=arzitmahajan" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/PeritusDeveloper"><img src="https://avatars.githubusercontent.com/u/89828000?v=4?s=100" width="100px;" alt=""/><br /><sub><b>PeritusDeveloper</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=PeritusDeveloper" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/PrashantVIT1"><img src="https://avatars.githubusercontent.com/u/75080313?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Prashant Raj</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=PrashantVIT1" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ritikagarg0326"><img src="https://avatars.githubusercontent.com/u/86939497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ritika Garg</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=ritikagarg0326" title="Code">💻</a></td>
   </tr>
 </table>
 
