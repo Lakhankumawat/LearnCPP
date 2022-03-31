@@ -1,5 +1,6 @@
 
 # Table of contents:
+- [Counting divisible Substrings](#counting-divisible-substrings)
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
 - [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
@@ -8,7 +9,12 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 
+# [Counting divisible Substrings]
+Question:
 
+<pre>
+The problem states that there is a string that contains only digits. You have to find the number of subsets that can be divisible by 6.
+</pre>
 
 # [Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
 
