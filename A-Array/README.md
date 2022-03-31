@@ -9,7 +9,7 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 
-# Counting divisible Substrings
+# [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
 Question:<br>
 You are given a string Str of length N. Each character of the string is a base 10 digit.
