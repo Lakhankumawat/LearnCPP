@@ -262,8 +262,8 @@ Print every element only once.
 
 FOR EXAMPLE LETS SAY -:
 
-Input format :
-Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M  elements in row wise fashion.
+0.Input format :
+1.Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M  elements in row wise fashion.
 Input:
 3 6 
 4 4 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
