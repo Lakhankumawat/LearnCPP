@@ -27,6 +27,11 @@
        - [Properties](#countingSortproperties)
        - [Advantages](#advantagesofcountingSort)
        - [Disadvantage](#disadvantageofcountingSort)
+   - [Radix Sort](#radix-sort)
+       -  [Algorithm](#algorithmofradixSort)
+       - [Properties](#radixSortproperties)
+       - [Advantages](#advantagesofradixSort)
+       - [Disadvantage](#disadvantageofradixSort)
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -248,3 +253,55 @@ begin countSort(arr, n)
 ### Disadvantage
 
 - Works for restricted inputs only for a certain range and takes extra space.
+    
+## Radix Sort
+-The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.
+ Pass 1:
+In the first pass, the list is sorted on the basis of the digits at 0's place.
+
+![image](https://user-images.githubusercontent.com/94166841/161280732-8b32294d-0b90-4941-8d23-e7922c5b0f10.png
+Pass 2:
+In this pass, the list is sorted on the basis of the next significant digits (i.e., digits at 10th place).
+
+![image](https://user-images.githubusercontent.com/94166841/161280875-f7d1ba84-52de-4cb6-aa57-84d69641759f.png)
+Pass 3:
+In this pass, the list is sorted on the basis of the next significant digits (i.e., digits at 100th place).
+![image](https://user-images.githubusercontent.com/94166841/161281067-c1df95a6-2cde-4929-a0cc-46810b63b72e.png)
+The array elements after sorting are:
+![image](https://user-images.githubusercontent.com/94166841/161281158-384c2b63-9ce0-4eda-b3b0-6721e16f9015.png)
+ <a name="algorithmofradixSort"></a>
+    
+### Algorithm
+   radixSort(arr)  
+max = largest element in the given array  
+d = number of digits in the largest element (or, max)  
+Now, create d buckets of size 0 - 9  
+for i -> 0 to d  
+sort the array elements using counting sort (or any stable sort) according to the digits at  
+the ith place  
+
+<a name="radixSortproperties"></a>
+
+### Properties
+
+- Time Complexity :
+  - Worst case time	: O(nk)
+  - Best case time : O(n+k)
+  - Average case time : O(nk)
+- Auxillary Space : O(n+k)
+- In-place : No
+- Stable : Yes
+
+<a name="advantagesofradixSort"></a>
+    
+### Advantages
+
+ - Fast when the keys are short i.e. when the range of the array elements is less.
+ - Used in suffix array constuction algorithms like Manber's algorithm and DC3 algorithm.
+    
+ <a name="disadvantageofradixSort"></a>
+### Disadvantage
+
+- Since Radix Sort depends on digits or letters, Radix Sort is much less flexible than other sorts. Hence , for every different type of data it needs to be rewritten.
+- The constant for Radix sort is greater compared to other sorting algorithms.
+- It takes more space compared to Quicksort which is inplace sorting.
