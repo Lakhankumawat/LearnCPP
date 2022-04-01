@@ -5,6 +5,7 @@
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 - [Egg Dropping Puzzle](#egg-dropping-puzzle)
+- [Max Gernated Array](#max-gernated-array)
 
 
 <!-- Table of content -->
@@ -336,8 +337,8 @@ Space Complexity : O(m*n)
 
 
 - [Problem Statement](#problem-statement-for-egg-dropping)
-- [Examples-1](#example-1)
-- [Examples-2](#example-2)
+  - [Examples-1](#example-1)
+  - [Examples-2](#example-2)
 - [Explanation](#explanation-2)
 - [Complexity](#complexity-analysis)
 
@@ -403,3 +404,9 @@ Thus it takes 14 trials to test a 100-floor building.
 Where 'n' is the number of eggs and 'k' is the number of floors, as we use a nested for loop 'k^2' times for each egg  
 **Auxiliary Space :** O(nk).  
 As a 2-D array of size 'n*k' is used for storing elements.
+
+# [Max Gernated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)
+
+
+
+
