@@ -256,6 +256,7 @@ begin countSort(arr, n)
     
 ## Radix Sort
 -The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.
+    
  Pass 1:
 In the first pass, the list is sorted on the basis of the digits at 0's place.
 ![image](https://user-images.githubusercontent.com/94166841/161282973-dede55cd-1c37-4be6-bc94-a2bbee33c54e.png)
