@@ -259,16 +259,20 @@ begin countSort(arr, n)
  Pass 1:
 In the first pass, the list is sorted on the basis of the digits at 0's place.
 
-![image](https://user-images.githubusercontent.com/94166841/161280732-8b32294d-0b90-4941-8d23-e7922c5b0f10.png
+![image](https://user-images.githubusercontent.com/94166841/161280732-8b32294d-0b90-4941-8d23-e7922c5b0f10.png)
+    
 Pass 2:
 In this pass, the list is sorted on the basis of the next significant digits (i.e., digits at 10th place).
 
 ![image](https://user-images.githubusercontent.com/94166841/161280875-f7d1ba84-52de-4cb6-aa57-84d69641759f.png)
+    
 Pass 3:
 In this pass, the list is sorted on the basis of the next significant digits (i.e., digits at 100th place).
 ![image](https://user-images.githubusercontent.com/94166841/161281067-c1df95a6-2cde-4929-a0cc-46810b63b72e.png)
+    
 The array elements after sorting are:
 ![image](https://user-images.githubusercontent.com/94166841/161281158-384c2b63-9ce0-4eda-b3b0-6721e16f9015.png)
+    
  <a name="algorithmofradixSort"></a>
     
 ### Algorithm
