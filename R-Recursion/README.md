@@ -44,7 +44,7 @@ Step 4 − Apply quick sort on right partition recursively
 */
 quickSort(arr[], start, end)
 {
-    if (low < high)
+    if (start < end)
     {
         // pivot_index is partitioning index, arr[pivot_index] is now at correct place in sorted array
         pivot_index = partition(arr, start, end);
