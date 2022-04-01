@@ -15,7 +15,6 @@
   - [Merge Sort](#merge-sort)
   - [Quick Sort](#quick-sort)
   - [Radix Sort](#radix-sort)
-=======
        -  [Algorithm](#algorithmofinsertionSort)
        - [Properties](#insertionSortproperties)
        - [Advantages](#advantagesofinsertionSort)
@@ -299,5 +298,5 @@ The disadvantages of Radix Sort are:
 -   Since Radix Sort depends on digits or letters, Radix Sort is much less flexible than other sorts. Hence , for every different type of data it needs to be rewritten.
 -   The constant for Radix sort is greater compared to other sorting algorithms.
 -   It takes more space compared to Quicksort which is inplace sorting.
-=======
+
 
