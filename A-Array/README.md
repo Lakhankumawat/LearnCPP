@@ -247,13 +247,13 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
 
 # Spiral Print in Matrix
-- [Spiral Print in Matrix](#Spiral-Print-in-Matrix)
 - [Spiral Print](#Spiral-Print)
 - [Approach](#Approach)
 - [Algorithm](#Algorithm)
 - [ComplexityAnalysis](#Complexity-Analysis)
 - [Time Complexity](#Time-Complexity)
 - [Space Complexity](#Space-complexity)
+
 
 # Spiral Print :
 Given an N*M 2D array, print it in spiral form. That is, first you need to print the 1st row, then last column, then last row and then first column and so on.
@@ -264,7 +264,7 @@ FOR EXAMPLE LETS SAY -:
 
 Input format :
 Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M  elements in row wise fashion.
-Sample Input :
+Input:
 3 6 
 4 4 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 Sample Output :
@@ -272,7 +272,7 @@ Sample Output :
 Explanation: The output is matrix in spiral format. 
 
 Input format :
-Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M. 
+Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M  elements in row wise fashion.  
 Input: 
 4 4
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
@@ -281,7 +281,11 @@ Explanation: The output is matrix in spiral format.
 
 
 # Approach:
- The problem can be solved by dividing the matrix into loops or squares or boundaries. It can be seen that the elements of the outer loop are printed first in a clockwise manner then the elements of the inner loop is printed. So printing the elements of a loop can be solved using four loops which prints all the elements. Every ‘for’ loop defines a single direction movement along with the matrix. The first for loop represents the movement from left to right, whereas the second crawl represents the movement from top to bottom, the third represents the movement from the right to left, and the fourth represents the movement from bottom to up.
+The problem can be solved by dividing the matrix into loops or squares or boundaries. 
+It can be seen that the elements of the outer loop are printed first in a clockwise manner then the elements of the inner loop is printed. 
+So printing the elements of a loop can be solved using four loops which prints all the elements. 
+Every ‘for’ loop defines a single direction movement along with the matrix. 
+The first for loop represents the movement from left to right, whereas the second crawl represents the movement from top to bottom, the third represents the movement from the right to left, and the fourth represents the movement from bottom to up.
 
 # Algorithm: 
 Create and initialize variables k – starting row index, m – ending row index, l – starting column index, n – ending column index
