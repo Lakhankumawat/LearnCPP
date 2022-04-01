@@ -247,13 +247,13 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
 
 # Spiral Print in Matrix
-   -[Spiral Print in Matrix](#Spiral-Print-in-Matrix)
-   -[Spiral Print](#Spiral-Print)
-   -[Approach](#Approach)
-   -[Algorithm](#Algorithm)
-   -[ComplexityAnalysis](#Complexity-Analysis)
-   -[Time Complexity](#Time-Complexity)
-   -[Space Complexity](#Space-complexity)
+- [Spiral Print in Matrix](#Spiral-Print-in-Matrix)
+- [Spiral Print](#Spiral-Print)
+- [Approach](#Approach)
+- [Algorithm](#Algorithm)
+- [ComplexityAnalysis](#Complexity-Analysis)
+- [Time Complexity](#Time-Complexity)
+- [Space Complexity](#Space-complexity)
 
 # Spiral Print :
 Given an N*M 2D array, print it in spiral form. That is, first you need to print the 1st row, then last column, then last row and then first column and so on.
