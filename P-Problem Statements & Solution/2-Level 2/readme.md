@@ -21,3 +21,5 @@ many such configurations are possible. For above shown configurations, maximum o
 * Iterate through array to check if minimum distance found is valid for allocating cows in stalls. 
 * If all the cows are not allocated, reduce search from right. Else reduce search space from left.
 
+### Time Complexity
+For sorting, it takes Nlog(N). For our algorithm, log(N) for binary search and N for checking if cows can be allocated or not. So total time complexity is Nlog(N).
