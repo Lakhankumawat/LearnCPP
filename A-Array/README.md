@@ -251,42 +251,39 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
    -[Spiral Print](#Spiral-Print)
    -[Approach](#Approach)
    -[Algorithm](#Algorithm)
-   -[ComplexityAnalysis](#complexity analysis)
+   -[ComplexityAnalysis](#Complexity-Analysis)
    -[Time Complexity](#Time-Complexity)
    -[Space Complexity](#Space-complexity)
 
 # Spiral Print :
 Given an N*M 2D array, print it in spiral form. That is, first you need to print the 1st row, then last column, then last row and then first column and so on.
 Print every element only once.
+![20](https://user-images.githubusercontent.com/97442721/161239578-828b4a9d-cc60-4872-b046-fed7d83c4b2e.jpg)
+
 FOR EXAMPLE LETS SAY -:
+
 Input format :
 Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M  elements in row wise fashion.
 Sample Input :
 3 6 
- 4 4 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+4 4 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 Sample Output :
 4 4 1 2 3 4 10 16 15 14 13 12 11 5 6 7 8 9
+Explanation: The output is matrix in spiral format. 
 
 Input format :
 Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M. 
 Input: 
 4 4
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 Output: 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10 
 Explanation: The output is matrix in spiral format. 
 
-Input: 
-3 6
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
-Output: 1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
-Explanation :The output is matrix in spiral format.
 
-
-
-## Approach:
+# Approach:
  The problem can be solved by dividing the matrix into loops or squares or boundaries. It can be seen that the elements of the outer loop are printed first in a clockwise manner then the elements of the inner loop is printed. So printing the elements of a loop can be solved using four loops which prints all the elements. Every ‘for’ loop defines a single direction movement along with the matrix. The first for loop represents the movement from left to right, whereas the second crawl represents the movement from top to bottom, the third represents the movement from the right to left, and the fourth represents the movement from bottom to up.
 
-## Algorithm: 
+# Algorithm: 
 Create and initialize variables k – starting row index, m – ending row index, l – starting column index, n – ending column index
 Run a loop until all the squares of loops are printed.
 In each outer loop traversal print the elements of a square in a clockwise manner.
@@ -295,7 +292,7 @@ Print the right column, i.e. Print the last column or n-1th column from row inde
 Print the bottom row, i.e. if k < m, then print the elements of m-1th row from column n-1 to l and decrease the count of m
 Print the left column, i.e. if l < n, then print the elements of lth column from m-1th row to k and increase the count of l.
 
-## Complexity Analysis: 
+# Complexity Analysis: 
 
 # Time Complexity: O(m*n). 
 To traverse the matrix O(m*n) time is required.
