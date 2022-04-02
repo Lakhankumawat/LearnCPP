@@ -264,7 +264,7 @@ begin countSort(arr, n)
 
 - Finally, the sorted buckets are combined to form a final sorted array.
     
-- In [BucketSort](./BucketSort.cpp), the underlying sorting technique is Insertion Sort. 
+- In [BucketSort.cpp Program](./BucketSort.cpp), the underlying sorting technique is Insertion Sort. 
     
 - Bucket Sort is useful when:
     
@@ -301,6 +301,31 @@ begin countSort(arr, n)
     
 ### Properties
 <a name="#bucketsortProperties"></a>
+
+- Time Complexity: 
+  - Worst Case Complexity: O(n^2)
+     - When there are elements of close range in the array, they are likely to be placed in the same bucket. This may result in some buckets having more number of elements than others.
+     - It makes the complexity depend on the sorting algorithm used to sort the elements of the bucket.
+The complexity becomes even worse when the elements are in reverse order. If insertion sort is used to sort elements of the bucket, then the time complexity becomes O(n^2).
+    
+  - Best Case Complexity: O(n+k)
+     - It occurs when the elements are uniformly distributed in the buckets with a nearly equal number of elements in each bucket.
+     - The complexity becomes even better if the elements inside the buckets are already sorted.
+     - If insertion sort is used to sort elements of a bucket then the overall complexity in the best case will be linear ie. O(n+k). 
+     - O(n) is the complexity for making the buckets and O(k) is the complexity for sorting the elements of the bucket using algorithms having linear time complexity at the best case.
+
+  - Average Case Complexity: O(n)
+     - It occurs when the elements are distributed randomly in the array. Even if the elements are not distributed uniformly, bucket sort runs in linear time. It holds true until the sum of the squares of the bucket sizes is linear in the total number of elements.
+    
+- Space Complexity: O(n+k)
+
+- Stable: Depends on the underlying sorting algorithm
+    
+  - In case of [BucketSort.cpp](./BucketSort.cpp), the underlying sorting algorithm, that is, Insertion Sort is stable, hence Bucket Sort is stable. 
+    
+- In-place: No
     
 
+### Advantages
+<a name="#bucketsortAdvantages"></a>
     
