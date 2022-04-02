@@ -27,6 +27,13 @@
        - [Properties](#countingSortproperties)
        - [Advantages](#advantagesofcountingSort)
        - [Disadvantage](#disadvantageofcountingSort)
+       
+  - [Bucket Sort](#bucket-sort)
+       - [Algorithm](#bucketsortAlgo)
+       - [Properties](#bucketsortProperties)
+       - [Advantages](#bucketsortAdvantages)
+       - [Disadvantages](#bucketsortDisadvantages)
+   
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -248,3 +255,15 @@ begin countSort(arr, n)
 ### Disadvantage
 
 - Works for restricted inputs only for a certain range and takes extra space.
+
+    
+## Bucket Sort
+<a name="#bucket-sort"></a>
+    
+- Bucket Sort is a sorting algorithm that divides the unsorted array elements into several groups called buckets. Each bucket is then sorted by using any of the suitable sorting algorithms or recursively applying the same bucket algorithm.
+
+- Finally, the sorted buckets are combined to form a final sorted array.
+
+![Bucket_2](https://user-images.githubusercontent.com/80174214/161367542-0588c6fd-e2a7-4f39-a281-cc801ad48d0f.png)
+
+### Algorithm
