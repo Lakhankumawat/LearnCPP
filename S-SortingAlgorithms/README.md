@@ -265,9 +265,42 @@ begin countSort(arr, n)
 - Finally, the sorted buckets are combined to form a final sorted array.
     
 - In [BucketSort](./BucketSort.cpp), the underlying sorting technique is Insertion Sort. 
+    
+- Bucket Sort is useful when:
+    
+    - inputs are scattered within a range. 
+    
+    - floating point numbers are taken as inputs. 
 
 ![Bucket_2](https://user-images.githubusercontent.com/80174214/161367542-0588c6fd-e2a7-4f39-a281-cc801ad48d0f.png)
 
 ### Algorithm
 <a name="#bucketsortAlgo"></a>
 
+```
+    
+  bucketSort()
+  
+    create N buckets each of which can hold a range of values
+    
+    for all the buckets
+      initialize each bucket with 0 values
+ 
+    for all the buckets
+    put elements into buckets matching the range
+  
+    for all the buckets 
+    sort elements in each bucket
+  
+    gather elements from each bucket
+
+    end bucketSort
+    
+```
+<!-- citation: [Here](https://www.programiz.com/dsa/bucket-sort)-->
+    
+### Properties
+<a name="#bucketsortProperties"></a>
+    
+
+    
