@@ -263,7 +263,11 @@ begin countSort(arr, n)
 - Bucket Sort is a sorting algorithm that divides the unsorted array elements into several groups called buckets. Each bucket is then sorted by using any of the suitable sorting algorithms or recursively applying the same bucket algorithm.
 
 - Finally, the sorted buckets are combined to form a final sorted array.
+    
+- In [BucketSort](./BucketSort.cpp), the underlying sorting technique is Insertion Sort. 
 
 ![Bucket_2](https://user-images.githubusercontent.com/80174214/161367542-0588c6fd-e2a7-4f39-a281-cc801ad48d0f.png)
 
 ### Algorithm
+<a name="#bucketsortAlgo"></a>
+
