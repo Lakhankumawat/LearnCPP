@@ -5,6 +5,7 @@
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 - [Egg Dropping Puzzle](#egg-dropping-puzzle)
+- [Coin Change](#coin-change)
 
 
 <!-- Table of content -->
