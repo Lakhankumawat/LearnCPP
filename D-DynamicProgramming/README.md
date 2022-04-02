@@ -331,38 +331,48 @@ Time Complexity : O(m*n)
 Space Complexity : O(m*n)
 ```
 
+
+
+
 # Coin Change
 
-- [Problem Statement](#problem-statement)
-    - [Examples](#examples)
-- [Explanation](#explanation)
-- [Complexity](#complexity)
+- [Problem Statement](#problem-statement-of-coin-change)
+- [Examples](#examples-of-coin-change)
+- [Explanation](#explanation-of-coin-change)
+- [Complexity](#complexity-of-coin-change)
 
-# Problem Statement
+
+# Problem Statement of Coin Change
 
 You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
 Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
 You may assume that you have an infinite number of each kind of coin.
 
 
-## Examples
-```
+### Examples of Coin Change:
 
-Example 1:
+##### Example 1:
+
     Input: coins = [1,2,5], amount = 11
     Output: 3
     Explanation: 11 = 5 + 5 + 1
 
-Example 2:
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:  | :--:  | 
+| 0 | 1 | 1 | 2 | 2 | 1 | 2 | 2 | 3 | 3 | 2  |  3  | 
+	
+#### Example 2:
+
     Input: coins = [2], amount = 3
     Output: -1
-    
-Example 3:
+   
+ #### Example 3:
+
     Input: coins = [1], amount = 0
     Output: 0
     
-```
-# Explanation
+    
+### Explanation of Coin Change:
 
 - Consider an amount A and coins array C.
 - We use bottom up approach so will solve the problem for each amount less than A first.
@@ -372,9 +382,27 @@ Example 3:
 - Finally, Return dp[amount] if dp[amount]<MAX else return -1.
 
 
-# Complexity
-```
-Time complexity: O(N) 
-Space complexity: O(N) 
+### Pseudo code of Coin Change:
 
 ```
+int coinChange(vector<int>& coins, int amount) {
+
+    int MAX = amount+1;                                              // max answer we can get is amount itself, sum of ones for example amount = 3 = 1 + 1 + 1
+    vector<int> dp(amount+1,MAX);
+    dp[0] = 0;
+
+    for(int i=0;i<dp.size();i++)
+        for(int j = 0;j<coins.size();j++){
+            if(i-coins[j]>=0)
+                dp[i] = min(dp[i],dp[i-coins[j]]+1);
+        }
+
+    return (dp[amount]!=MAX)? dp[amount]: -1;
+}
+
+```
+
+### Complexity of Coin Change:
+
+#### Time Complexity = O(n)
+#### Space Complexity = O(n)
