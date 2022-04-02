@@ -68,3 +68,30 @@ end reverseQueueWithRecursion
 
 - Time Complexity : O(n)
 - Space Complexity : O(n) (As recursion uses stack concept)
+
+
+## 2. Reverse K elements in Queue
+Only following standard operations are allowed on queue. 
+- enqueue(x) : Add an item x to rear of queue
+- dequeue() :  Remove an item from front of queue
+- size() :     Returns number of elements in queue.
+- front() :    Finds front item.
+
+### [Reverse k elements of queue](https://www.geeksforgeeks.org/reversing-first-k-elements-queue/)
+
+### Approach
+
+1. Remove first k elements of the queue and push them into a stack.
+2. Pop all the elements of the stack and push them to the end of the queue.
+3. Pop-out (n – k) elements from the front of the queue and push them to the end of the queue, where n is the total number of elements in the queue.
+4. First, k elements of the queue are reversed, print the elements of the queue.
+
+<!-- image to help better explain the concept -->
+
+   ![Queue-reversal-using-recursion](https://www.tutorialcup.com/wp-content/uploads/2020/06/ReversingtheFirstKelementsofaQueue1.png?ezimgfmt=ng:webp/ngcb41)
+  
+
+### Complexity Analysis for Reversing the First K elements of a Queue
+- Time Complexity = O(n + k)
+- Space Complexity = O(k) 
+where n is the number of elements in the queue.
