@@ -276,6 +276,27 @@ begin countSort(arr, n)
 
 ### Algorithm
 <a name="#bucketsortAlgo"></a>
+    
+The process of bucket sort can be understood as a scatter-gather approach.
+Here, elements are first scattered into buckets then the elements in each bucket are sorted.
+Finally, the elements are gathered in order.
+To implement Bucket Sort in C++:
+
+1. Create an array of size 10 to input elements to sort.
+
+2. Create a self-referential structure Node with data member to hold array element and a pointer to refer to the next node.
+   
+3. Create buckets of Node double pointer type and allocate memory to them according to the capacity assigned to each bucket.
+    
+4. Initialize the empty buckets to NULL by taking a loop.
+    
+5. Retrieve the bucket index corresponding to each array element by dividing the element value with bucket capacity, i.e., 10.
+
+6. Using bucket index and a loop, insert array elements to the buckets of matching range.
+    
+7. Now that the buckets contain unsorted elements, Insertion Sort is applied on each bucket to sort them. Refer to [Insertion Sort Algorithm](#algorithmofinsertionSort).
+    
+8. Combine the sorted buckets and put them back on the original input array to form a sorted array.
 
 ```
     
@@ -287,10 +308,10 @@ begin countSort(arr, n)
       initialize each bucket with 0 values
  
     for all the buckets
-    put elements into buckets matching the range
+      put elements into buckets matching the range
   
     for all the buckets 
-    sort elements in each bucket
+      sort elements in each bucket
   
     gather elements from each bucket
 
