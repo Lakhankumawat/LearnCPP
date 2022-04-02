@@ -1,5 +1,6 @@
 // Bucket Sort Program in C++
 // Takes both whole numbers and floating point numbers as input
+// Underlying sorting algorithm is Insertion Sory
 
 #include <iomanip>
 #include <iostream>
