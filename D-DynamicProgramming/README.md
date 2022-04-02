@@ -429,10 +429,6 @@ You may assume that you have an infinite number of each kind of coin.
     Input: coins = [1,2,5], amount = 11
     Output: 3
     Explanation: 11 = 5 + 5 + 1
-
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:  | :--:  | 
-| 0 | 1 | 1 | 2 | 2 | 1 | 2 | 2 | 3 | 3 | 2  |  3  | 
 	
 #### Example 2:
 
@@ -453,6 +449,12 @@ You may assume that you have an infinite number of each kind of coin.
 - For a certain amount X we will try to pick up each coin in C.
 - Minimize the answer for amount X. i.e. dp[x] = min(dp[x], 1 + dp[X-Ci]) where i ranges from 0 to |C|-1.
 - Finally, Return dp[amount] if dp[amount]<MAX else return -1.
+
+### Example 1 dp array:
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:  | :--:  | 
+| 0 | 1 | 1 | 2 | 2 | 1 | 2 | 2 | 3 | 3 | 2  |  3  | 
 
 
 ### Pseudo code of Coin Change:
