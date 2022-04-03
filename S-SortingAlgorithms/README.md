@@ -33,6 +33,12 @@
        - [Properties](#bucketsortProperties)
        - [Advantages](#bucketsortAdvantages)
        - [Disadvantages](#bucketsortDisadvantages)
+       
+  - [Shell Sort](#shell-sort)
+       - [Algorithm](#shellalgo)
+       - [Properties](#shellprop)
+       - [Advantages](#shelladv)
+       - [Disadvantages](#shelldisadv)
    
 # Sorting Algorithms
 
@@ -364,3 +370,13 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - Can’t apply it to all data types since a suitable bucketing technique is required. Bucket sort’s efficiency is dependent on the distribution of the input values, thus it’s not worth it if your data are closely grouped.In many situations, you might achieve greater performance by using a specialized sorting algorithm like radix sort, counting sort, or burst sort instead of bucket sort.
 
 - Bucket sort’s performance is determined by the number of buckets used, which may need some additional performance adjustment when compared to other algorithms.
+    
+    
+## Shell Sort
+<a name="#shell-sort"></a>
+    
+- Shell sort is a generalized version of the insertion sort algorithm. It first sorts elements that are far apart from each other and successively reduces the interval between the elements to be sorted.
+
+- The interval between the elements is reduced based on the sequence used. Some of the optimal sequences that can be used in the shell sort algorithm are:
+    
+    • **Shell's Original Sequence**: `N/2 , N/4 , …, 1`
