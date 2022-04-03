@@ -391,4 +391,7 @@ The complexity becomes even worse when the elements are in reverse order. If ins
   
     • **Pratt**: `1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....`
     
+![20220403_135227_0000](https://user-images.githubusercontent.com/80174214/161418965-d688b5a8-595f-494d-8bb0-852de15e5a0e.png)
+    
+In [ShellSort.cpp](./ShellSort.cpp), Shell's original sequence is used as the interval, however, we are free to use any of these sequences, especially the one which optimizes our code the most.
 
