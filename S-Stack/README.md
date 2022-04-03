@@ -2,7 +2,7 @@
 - [Stack](#stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
-
+- [Converting decimal number to binary](#Converting-decimal-number-to-binary)
 ## STACK 
 
 - A linear-data structure that follows LIFO (Last In First Out) principle.
@@ -107,4 +107,18 @@ After complete traversal, if there is some starting bracket left in the stack th
 ```
 ![image](https://user-images.githubusercontent.com/91210199/159122082-2a5e98d2-bdd4-4f9d-9131-1d2048a5f60f.png)
  
+## Converting decimal number to binary
+```
+For converting a decimal number to binary we first have to recursively divide the number by 2 and store its remainder. Reverse of the remainder is the binary equivalent of the particular number.
 
+For example:
+![image](https://user-images.githubusercontent.com/91279248/161446653-d7f5145c-89d0-4f89-926a-eb5f40d524a7.png)
+
+## Algorithm:
+```
+1. Divide the number by 2 and store its remainder
+2. Repeat step 1 unitl the number cannot be divided any further
+3. Print the remainder in reverse order
+
+```
+Time Complexity is O(n)
