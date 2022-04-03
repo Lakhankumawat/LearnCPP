@@ -54,7 +54,7 @@ int main()
     initialization();
 
     //Taking the input of the number from the user 
-    cout<<"enter the number : ";
+    cout<<"Enter the number : ";
     cin>>a;
 
     //finding the remainder and pushing it into the stack
@@ -66,6 +66,7 @@ int main()
     }
 
     //Printing the binary equivalent 
+    cout<<"The Binary Equivalent is : ";
     while(empty()!=1)
     {
         x=pop();
