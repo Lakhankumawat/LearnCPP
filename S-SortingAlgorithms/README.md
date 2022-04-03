@@ -380,3 +380,15 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - The interval between the elements is reduced based on the sequence used. Some of the optimal sequences that can be used in the shell sort algorithm are:
     
     • **Shell's Original Sequence**: `N/2 , N/4 , …, 1`
+    
+    • **Knuth's Increments**: `1, 4, 13, …, (3k – 1) / 2`
+   
+    • **Sedgewick's increments**: `1, 8, 23, 77, 281, 1073, 4193, 16577...4j+1+ 3·2j+ 1`
+   
+    • **Hibbard's increments**: `1, 3, 7, 15, 31, 63, 127, 255, 511…`
+  
+    • **Papernov & Stasevich increment**: `1, 3, 5, 9, 17, 33, 65,...`
+  
+    • **Pratt**: `1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....`
+    
+
