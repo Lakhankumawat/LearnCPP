@@ -434,6 +434,7 @@ End ShellSort
 <!--citation: [Here](https://www.programiz.com/dsa/bucket-sort)-->
                                              
 ### Properties
+<a name="#shellprop"></a>
     
 - `Time Complexity:`
     - `Best Case Complexity: O(n*logn)`
@@ -444,9 +445,22 @@ End ShellSort
 
     - `Worst Case Complexity: O(n^2)`
        - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of Shell sort is O(n^2).
+       - According to Poonen Theorem, worst case complexity for shell sort is O(N*log N)^2/(log log N)^2) or O(N*log N)^2/log log N) or O(N*(log N)^2) or something in between.
 
 - `Space Complexity: O(1)`
     
 - `Stable: No`
     
 - `In-place: Yes`
+
+    
+### Advantages
+<a name="#shelladv"></a>
+    
+Shell sort is preferred when:
+
+• Calling a stack is overhead. `uClibc` library uses this sort.
+
+• Recursion exceeds a limit. `bzip2` compressor uses it.
+
+• Insertion sort does not perform well when the close elements are far apart. Shell sort helps in reducing the distance between the close elements. Thus, there will be less number of swappings to be performed.
