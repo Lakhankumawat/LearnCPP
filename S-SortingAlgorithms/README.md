@@ -464,3 +464,15 @@ Shell sort is preferred when:
 • Recursion exceeds a limit. `bzip2` compressor uses it.
 
 • Insertion sort does not perform well when the close elements are far apart. Shell sort helps in reducing the distance between the close elements. Thus, there will be less number of swappings to be performed.
+
+• Shell sort algorithm is 5.32 x faster than bubble sort algorithm.
+    
+
+### Disadvantages
+<a name="#shelldisadv"></a>
+    
+• Shell sort has the following disadvantages:
+
+• Shell sort algorithm is complex in structure and bit more difficult to understand.
+
+• Shell sort algorithm is significantly slower than the merge sort, quick sort and heap sort algorithms.
