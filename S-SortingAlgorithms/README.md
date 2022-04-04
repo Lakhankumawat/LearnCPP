@@ -329,7 +329,7 @@ To implement Bucket Sort in C++:
 ### Properties
 <a name="#bucketsortProperties"></a>
 
-- Time Complexity: 
+- `Time Complexity: `
   - `Worst Case Complexity: O(n^2)`
      - When there are elements of close range in the array, they are likely to be placed in the same bucket. This may result in some buckets having more number of elements than others.
      - It makes the complexity depend on the sorting algorithm used to sort the elements of the bucket.
@@ -434,3 +434,19 @@ End ShellSort
 <!--citation: [Here](https://www.programiz.com/dsa/bucket-sort)-->
                                              
 ### Properties
+    
+- `Time Complexity:`
+    - `Best Case Complexity: O(n*logn)`
+       - It occurs when there is no sorting required, i.e., the array is already sorted. The best-case time complexity of Shell sort is O(n*logn).
+    
+    - `Average Case Complexity: O(n*logn)`
+       - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average-case time complexity of Shell sort is O(n*logn).
+
+    - `Worst Case Complexity: O(n^2)`
+       - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of Shell sort is O(n^2).
+
+- `Space Complexity: O(1)`
+    
+- `Stable: No`
+    
+- `In-place: Yes`
