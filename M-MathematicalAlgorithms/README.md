@@ -68,6 +68,8 @@ Solution Link:
 
 An integer number is called Armstrong number if sum of the cubes of its digits is equal to the number itself.
 
+![image](https://user-images.githubusercontent.com/100208233/161560743-43ad6e21-4183-4505-8868-8e0b44efbf42.png)
+
 ### Algorithm:
 
 1. The number of digits in n is determined and found out.
