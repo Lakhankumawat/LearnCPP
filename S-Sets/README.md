@@ -1,3 +1,33 @@
+# Table of Content 
+- [Union of two sets](#Union-of-two-sets)
+- [Cartesian Product of two Set](#cartesian-product-of-two-set)
+
+# Union of two sets
+- The union of a two of sets is the set of all elements in the both the sets. It is one of the fundamental operations through which sets can be combined and related to each other. 
+- A nullary union refers to a union of zero sets and it is by definition equal to the empty set.
+
+- For example:
+![image](https://user-images.githubusercontent.com/91279248/161617670-56260c6c-5931-4bc1-ba53-053216aa52d6.png)
+
+## Properties 
+1. Commutative Property	`A ∪ B = B ∪ A`
+2. Associative Property	`(A ∪ B) ∪ C = A ∪ (B ∪ C)`
+3. Idempotent Property	`A ∪ A = A`
+4. Property of Ⲫ/ Identity Law	`A ∪ Ⲫ = A`
+5. Property of Universal Set	`A ∪ U = U`
+
+## Pseduo code
+1. Input sets A and B 
+2. Initialize a new set c
+3. check if any element of A is getting repeated 
+4. if yes then break the loop
+5. else put the element in sets C
+6. traverse through sets B 
+7. if any element of B in C then break
+8. else put it into sets C
+
+**Time Complexity** is O(n^2)
+
 # Cartesian Product of two Set
 
 ## Terms Explained:
@@ -16,7 +46,7 @@ If A and B are two non-empty sets, then their Cartesian product A × B is the se
 Suppose, if A and B are two non-empty sets, then the Cartesian product of two sets, A and set B is the set of all ordered pairs (a, b) such that a `∈A` and `b∈B` which is denoted as `A × B`.
 
 
-# Properties:
+## Properties:
  1. It is non-commutative 
    ` A × B != B × A`
 
@@ -27,10 +57,10 @@ Suppose, if A and B are two non-empty sets, then the Cartesian product of two se
 
  4. ` A × B = {∅}, if either A = {∅} or B = {∅}  `
 
- # Pseduo code:
+ ## Pseduo code:
  1. Initialize Set A and B
  2. for i=0 to n:
       for j=0 to n:
         print `{A[i],B[j]}`
 
- - **Time Complexity** for finding Cartesian Product is n^2 
+ - **Time Complexity** for finding Cartesian Product is O(n^2) 
