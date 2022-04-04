@@ -395,3 +395,18 @@ The complexity becomes even worse when the elements are in reverse order. If ins
     
 In [ShellSort.cpp](./ShellSort.cpp), Shell's original sequence is used as the interval, however, we are free to use any of these sequences, especially the one which optimizes our code the most.
 
+### Algorithm
+<a name="#shellalgo"></a>
+         
+         
+```
+shellSort(array, size)
+  for interval i <- size/2n down to 1
+    for each interval "i" in array
+        sort all the elements at interval "i"
+end shellSort
+                                             
+```
+<!--citation: [Here](https://www.programiz.com/dsa/bucket-sort)-->
+                                             
+### Properties
