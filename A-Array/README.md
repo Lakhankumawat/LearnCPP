@@ -1,4 +1,45 @@
 
+# Symmetric Matrix:
+- [Symmetric_Matrix](#Symmetric Matrix)
+- [Properties_of_Symmetric_Matrix](#properties-of-Symmetric-Matrix)
+- [Example](#example)
+- [Algorithim](#algorithm)
+- [Application](#application)
+- [Time complexity](#time-complexity) 
+
+## Symmetric Matrix:
+In linear algebra, a symmetric matrix is defined as the square matrix that is equal to its transpose matrix. The transpose matrix of any given matrix A can be given as A^T. A symmetric matrix A therefore satisfies the condition, A = A^T. 
+
+![image](https://user-images.githubusercontent.com/100208233/161611874-c8883351-7d07-494b-aad8-8f52bbe4c2e6.png)
+
+## Properties of Symmetric Matrix:
+1. The sum and difference of two symmetric matrices give the resultant as a symmetric matrix.
+2. The property stated above is not always true for the product: Given the symmetric matrices A and B, then AB is symmetric if and only if A and B follow commutative property of multiplication, i.e., if AB = BA.
+3. For integer n, if A is symmetric, ⇒ A^n is symmetric.
+4. If A^-1 exists, it will be symmetric if and only if A is symmetric.
+
+## Example:
+Enter the number of rows and columns : 2X2
+Enter the matrix elements : 10 20 20 10
+The matrix is symmetric.
+ 10 20
+ 20 10
+
+## Algorithim:
+1. Input from the user the order r,c of the matrix we wish to check
+2. Input a matrix of size rxc from the user with the help of nested for loops and store it in a 2-D array of size rxc.
+3. Set a variable flag = 0.
+3. Using a nested for loop check if a[i][j] = a[j][i] , if not, set flag = 1 and break out of the loops.
+4. Out of the loop check if flag = 0 then its symmetric matrix.
+5. In the else condition, if flag = 1 then its not a symmetric matrix.
+
+# Application:
+Machine Learning
+
+# Time complexity:
+Time complexity of symmetric matrix is n*n.
+
+
 # Table of contents:
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
@@ -142,7 +183,7 @@ return max_so_far
 **Time complexity:** `O(n)`, Where n is the size of the array. \
 **Space complexity:** `O(1)` 
 
-# Trace and Normal of Matrix
+# Trace and Normal of Matrix:
   - [Trace](#trace)
   - [Normal](#normal)
   - [Properties_of_trace_matrix](#properties-of-trace-matrix)
@@ -428,4 +469,3 @@ For every k size window store every element if negative in deque from rear end u
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
  
-
