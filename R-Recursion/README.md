@@ -32,3 +32,73 @@ Output : 3.14p
 Input : str = “xpix” 
 Output : x3.14x
 ```
+
+
+# [Tower of Hanoi](https://github.com/bhumikatewary/LearnCPP/blob/ddd6b1e51cecd18d72f76f303cefe7f341f3092f/R-Recursion/TowerofHanoi.cpp)
+
+Tower of Hanoi is a mathematical game or puzzle involving three sticks and a number of different discs, <br>
+which can slip on any stick/rod. The paradox begins with discs embedded in the same object in a declining size(descending order), <br>
+the smallest at the top, thus almost showing a conical shape.
+
+Here are three simple rules:
+1. Only one disk can be moved at a time.
+2. Each movement involves taking a disk above one of the stacks and placing it on top of another stack. <br>
+ In other words, the disk can only be moved if it is the highest disk in the stack.
+3. No larger disk can be placed on a smaller disk.
+
+![Tower-of-Hanoi](https://4.bp.blogspot.com/-MiMl_ZKCkKs/Vnk3SyI2D5I/AAAAAAAAAy0/iqw84ovEbGM/s1600/Tower-Of-Hanoi-2-disk.png)
+## Example
+```
+Input : 2
+Output : Disk 1 moved from X to Y
+         Disk 2 moved from X to Z
+         Disk 1 moved from Y to Z
+         
+Explanation:          
+Taking the example for 2 disks :
+Let rod 1 = 'X', rod 2 = 'Y', rod 3 = 'Z'.
+
+Step 1 : Shift first disk from 'X' to 'Y'.
+Step 2 : Shift second disk from 'X' to 'Z'.
+Step 3 : Shift first disk from 'Y' to 'Z'.
+
+The pattern here is :
+Shift 'n-1' disks from 'X' to 'Y'.
+Shift last disk (nth) from 'X' to 'Y'.
+Shift 'n-1' disks from 'Y' to 'Z'.
+```
+
+### Algorithm
+
+```
+START
+Procedure Hanoi(disk, source, destination, auxillary)
+
+   IF disk == 1, THEN
+      move disk from source to destination             
+   ELSE
+      Hanoi(disk - 1, source, auxillary, destination)     // Step 1
+      move disk from source to destination                // Step 2
+      Hanoi(disk - 1, auxillary, destination, source)     // Step 3
+   END IF
+   
+END Procedure
+STOP
+```
+
+### Properties
+
+- Time Complexity : O(n)
+- Space Complexity : O(n)
+
+### Advantages
+
+- The Tower of Hanoi puzzle is sensitive to previous damage and malfunction. The level of complexity can be easily
+ increased or decreased with additional discs.
+
+### Disadvantage
+
+- The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
+
+
+
