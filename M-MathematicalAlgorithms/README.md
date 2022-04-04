@@ -55,3 +55,35 @@ It does so by iteratively marking as composite (i.e., not prime) the multiples o
  
 Solution Link: 
  ```
+ <!-- Table of content -->
+# Table of content:
+ [Armstrong Number](#Armstrong-number)
+  - [Algorithm](#Algorithm)
+  - [Example](#Example)
+  - [Time_complexity](#time_complexity)
+
+### armstrong number :
+
+An integer number is called Armstrong number if sum of the cubes of its digits is equal to the number itself.
+
+### Algorithm:
+
+1. The number of digits in n is determined and found out.
+2. The sum of digits of a number are found by performing n mod 10, where mod is called the remainder operation.
+3. The individual digit is then raised to the power (number of digits) and stored.
+4. The number is then divided by 10 in order to obtain the second digit.
+5. All the above 3-steps numbered Steps 2, 3 and 4 are performed until the value of n is greater than 0.
+6. When the n is less than 0, end the while loop.
+7. Check the sum obtained or Armstrong value is the same as the original number
+8. When yes, the number is labelled an Armstrong number
+
+### Example:
+
+370 is an armstrong number because:
+
+370 = 333 + 777 + 000
+= 27 + 343 + 0
+= 370
+
+### Time_complexity:
+Time complexity of armstrong number is n.
