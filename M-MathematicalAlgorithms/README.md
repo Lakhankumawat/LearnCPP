@@ -55,8 +55,10 @@ It does so by iteratively marking as composite (i.e., not prime) the multiples o
  
 Solution Link: 
  ```
+
  <!-- Table of content -->
 # Table of content:
+
  [Armstrong Number](#Armstrong-number)
   - [Algorithm](#Algorithm)
   - [Example](#Example)
