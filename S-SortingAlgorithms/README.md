@@ -397,7 +397,20 @@ In [ShellSort.cpp](./ShellSort.cpp), Shell's original sequence is used as the in
 
 ### Algorithm
 <a name="#shellalgo"></a>
-         
+    
+1 - At first, an array is created to input elements to sort.
+
+2 - An interval is decided on the basis of which the list/array will be divided. 
+
+3 - Follow the below steps:
+    
+• Initialize the value of h
+
+• Divide the list into smaller sub-list of equal interval h
+
+• Sort these sub-lists using insertion sort
+
+• Repeat until complete list is sorted     
          
 ```
 shellSort(array, size)
@@ -405,6 +418,17 @@ shellSort(array, size)
     for each interval "i" in array
         sort all the elements at interval "i"
 end shellSort
+                    
+                    or
+                    
+ShellSort(a, n) // 'a' is the given array, 'n' is the size of array  
+  for (interval = n/2; interval > 0; interval /= 2)  
+    for ( i = interval; i < n; i += 1)  
+          temp = a[i];  
+          for ( j = i; j >= interval && a[j - interval] > temp; j -= interval)  
+                a[j] = a[j - interval];   
+          a[j] = temp;  
+End ShellSort  
                                              
 ```
 <!--citation: [Here](https://www.programiz.com/dsa/bucket-sort)-->
