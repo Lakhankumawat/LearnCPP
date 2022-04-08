@@ -68,3 +68,126 @@ end reverseQueueWithRecursion
 
 - Time Complexity : O(n)
 - Space Complexity : O(n) (As recursion uses stack concept)
+
+## 2. Deque Data Structure
+
+Double-ended queues are sequence containers with the feature of insertion & deletion on both ends, whereas a Queue data structure allows insertion from one end & deletion from other end.
+
+The deque data structure is present in the 'deque' header file.
+
+**Syntax**
+
+```
+deque <data_type> name
+```
+
+![DequeImplementation](https://media.geeksforgeeks.org/wp-content/uploads/anod.png)
+
+### Functions available with Deque
+
+**max_size():** Returns the maximum number of elements deque can contain.
+
+**push_back() and push_front():** push_front( ) push the elements into a deque from the front and push_back() push elements into a deque from the back.
+
+**pop_front() and pop_back():** pop_front() function is used to pop elements from a deque from the front and pop_back() function is used to pop elements from a deque from the back.
+
+**clear() and erase():** clear is used to remove all the elements from the deque and erase is used to remove some specified elements.
+
+**insert():** increases the container side by inserting element in the specified position.
+
+**resize():** changes the size of the element’s container as per requirement.
+
+**rbegin() and rend():** rbegin() points to the last element of the deque whereas rend points to the position before the beginning of the deque.
+
+**at() and swap():** at() points to the position of the element given in the parameter and swap( ) is used two swap elements of two deques.
+
+**emplace_front() and emplace_back():** these two functions are used to insert new elements in the container at the beginning and at the end of deque respectively.
+
+### Algorithm for Insertion at rear end
+
+```
+Step-1: [Check for overflow]
+		if(rear==MAX)
+			Print("Queue is Overflow”);
+			return;
+Step-2:  [Insert Element]
+		else
+			rear=rear+1;
+			q[rear]=no;
+		[Set rear and front pointer]
+		if rear=0
+			rear=1;
+		if front=0
+			front=1;
+Step-3: return
+```
+
+![insertionAtBack](https://iq.opengenus.org/content/images/2018/05/push_back.png)
+
+### Algorithm for Insertion at front end
+
+```
+Step-1 :  [Check for the front position]
+		if(front<=1)
+			Print("Cannot add item at the front”);
+			return;
+Step-2 :  [Insert at front]
+		else
+			front=front-1;
+			q[front]=no;
+Step-3  : Return
+```
+
+![insertionAtFront](https://iq.opengenus.org/content/images/2018/05/push_front-1.png)
+
+### Algorithm for Deletion from front end
+
+```
+Step-1 [ Check for front pointer]
+		if front=0
+			print(" Queue is Underflow”);
+			return;
+Step-2 [Perform deletion]
+		else
+			no=q[front];
+			print(“Deleted element is”,no);
+		[Set front and rear pointer]
+		if front=rear
+			front=0;
+			rear=0;
+		else
+			front=front+1;
+Step-3 : Return
+```
+
+![deletionFromFront](https://iq.opengenus.org/content/images/2018/05/pop_front-1.png)
+
+### Algorithm for Deletion from rear end
+
+```
+Step-1 : [Check for the rear pointer]
+		if rear=0
+			print(“Cannot delete value at rear end”);
+			return;
+Step-2:  [ perform deletion]
+		else
+			no=q[rear];
+			[Check for the front and rear pointer]
+		if front= rear
+			front=0;
+			rear=0;
+		else
+			rear=rear-1;
+			print(“Deleted element is”,no);
+Step-3 : Return
+```
+
+### Time Complexity analysis
+
+- Insertion or deletion in the middle is O(n)
+
+- Complexity of random access by index is O(1)
+
+- Complexity of all enque(insert)/deque(delete) operations is O(1)
+
+Learn more about Deque on [GFG](https://www.geeksforgeeks.org/deque-cpp-stl/).
