@@ -81,10 +81,14 @@ int main()
      
     /* Let us create a sorted linked list to test the functions
     Created linked list will be 10->8->4->2 */
-    push(&head, 2);
-    push(&head, 4);
-    push(&head, 8);
-    push(&head, 10);
+    int n,k;
+    cout << "Enter the number of nodes in linked list: ";
+    cin >> n;
+    cout << "Enter the nodes: ";
+    for(int i=1;i<=n;i++){
+      cin >> k;
+      push(&head, k);
+    }
      
     cout << "Original Linked list" << endl;
     printList(head);
