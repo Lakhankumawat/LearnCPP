@@ -126,5 +126,4 @@ For example:
 3. Print the remainder in reverse order
 
 ```
-![image](https://user-images.githubusercontent.com/91279248/162582678-e84410dd-d018-4bca-8b52-630411a8cde5.png)
 **Time Complexity** is O(n)
