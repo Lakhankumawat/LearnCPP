@@ -3,7 +3,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-     cout<<"----------- UNORDERED SET----------------"<<endl;
+    
     set<int>s;
     cout<<"enter set size->";
     int n;
