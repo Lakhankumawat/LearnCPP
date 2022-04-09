@@ -1,5 +1,10 @@
 <!-- Table of content -->
-# Table of content
+# Table of content:
+-[Sieve Of Eratosthenes](#sieve-of-eratosthenes)
+
+ -[Armstrong Number](#armstrong-number)
+
+#  Sieve Of Eratosthenes :
 - [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
   - [Advantages](#advantages)
@@ -56,21 +61,19 @@ It does so by iteratively marking as composite (i.e., not prime) the multiples o
 Solution Link: 
  ```
 
- <!-- Table of content -->
-# Table of content:
-
- [Armstrong Number](#Armstrong-number)
-  - [Algorithm](#Algorithm)
-  - [Example](#Example)
+# Armstrong number:
+  - [Armstrong Number](#armstrong-number)
+  - [Algorithm of armstrong number](#algorithm-of-armstrong-number)
+  - [Example](#example)
   - [Time_complexity](#time_complexity)
 
-### armstrong number :
+### Armstrong number:
 
 An integer number is called Armstrong number if sum of the cubes of its digits is equal to the number itself.
 
 ![image](https://user-images.githubusercontent.com/100208233/161560743-43ad6e21-4183-4505-8868-8e0b44efbf42.png)
 
-### Algorithm:
+### Algorithm of armstrong number:
 
 1. The number of digits in n is determined and found out.
 2. The sum of digits of a number are found by performing n mod 10, where mod is called the remainder operation.
@@ -83,11 +86,19 @@ An integer number is called Armstrong number if sum of the cubes of its digits i
 
 ### Example:
 
-370 is an armstrong number because:
+371 is an armstrong number because:
 
-370 = 333 + 777 + 000
+371 =>
+= 3*3*3 + 7*7*7 + 1*1*1
 = 27 + 343 + 0
-= 370
+= 371
+
+Example 1:
+![image](https://user-images.githubusercontent.com/100208233/162582338-3a22a503-2afc-49c4-a957-fa553dd41b7e.png)
+
+Example 2:
+![image](https://user-images.githubusercontent.com/100208233/162582384-25ff197c-9f36-4758-b9e4-4828acd4cd14.png)
+
 
 ### Time_complexity:
 Time complexity of armstrong number is n.
