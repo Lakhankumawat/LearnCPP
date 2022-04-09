@@ -584,22 +584,22 @@ The total cost is 6.
 
 ### Explanation of Min Cost Climbing Stairs
 
--We have to Return the minimum cost to reach the top of the floor, provided that we can either take one step or two step and can either start from the step with index 0, or the step with index 1.
+- We have to Return the minimum cost to reach the top of the floor, provided that we can either take one step or two step and can either start from the step with index 0, or the step with index 1.
 
--So at any given stair (say currentStair) we'll have two options :- 1)to make a jump of one step or 2)to make a jump of two steps, therefore we'll make two recursive calls one for oneJump & another for twoJump and if we make a jump from the currentStair then we have to pay an amount i.e. cost[currentStair].
+- So at any given stair (say currentStair) we'll have two options :- 1)to make a jump of one step or 2)to make a jump of two steps, therefore we'll make two recursive calls one for oneJump & another for twoJump and if we make a jump from the currentStair then we have to pay an amount i.e. cost[currentStair].
 
--if we make a jump of one we'll pay cost[currentStair] and will reach to currentStair+1 and if we make a jump of two then we'll reach currentStair+2 by paying the same amount.
+- if we make a jump of one we'll pay cost[currentStair] and will reach to currentStair+1 and if we make a jump of two then we'll reach currentStair+2 by paying the same amount.
 
--if we reach the target stair ,then return 0,because we don't need to pay any amount to reach the target stair from the target.
+- if we reach the target stair ,then return 0,because we don't need to pay any amount to reach the target stair from the target.
 
--if we have gone beyond the target step,then return infinity, because we can't reach the target stair.
+- if we have gone beyond the target step,then return infinity, because we can't reach the target stair.
 
 
 This recursive code will give us a TLE.So, we need to optimize this.
 
 We'll optimize this using DP ,because we have overlapping sub-problems.
 
--So we can store the values in a hash map and will use those values from the hash map only instead of making recursive calls for it.
+- So we can store the values in a hash map and will use those values from the hash map only instead of making recursive calls for it.
 
 
 ### Pseudo code
