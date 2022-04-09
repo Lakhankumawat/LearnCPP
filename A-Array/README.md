@@ -7,6 +7,8 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
+- [Array Operations](https://github.com/Lakhankumawat/LearnCPP/issues/1063)
+
 
 
 
@@ -427,5 +429,113 @@ For every k size window store every element if negative in deque from rear end u
    ```
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
+
+# [Array Operations](A-Array/arrayOperations.cpp)
+ This is a new concept which tells about various operations which can be performed in an Array.
+ The Operations which can be performed are as follows: 
+ 1. Traversal
+ 2. Insertion
+ 3. Deletion
+ 4. Searching- a) Linear Search b) Binary Search
+
+# SAMPLE OUTPUT
+![Output 1](https://user-images.githubusercontent.com/87706725/162575070-8514290c-1fba-49d9-b6cc-19ad50ef0efd.png)
+![Output 2](https://user-images.githubusercontent.com/87706725/162575080-7853a59b-78a6-4159-90a9-2eade886e6b8.png)
+
+
+ # Algorithm
+
+* 1<sup>st</sup> START OF THE PROGRAM
+* 2<sup>st</sup> Create an array of fixed size i.e the maximum capacity/elements the array can store.
+* 3<sup>nd</sup> Input the size of array you want to create & the elements of array from the user.
+* 4<sup>rd</sup> Create a traversal function which takes array & size of the array as its arguments so that every element of the array can be traversed as well as printed(with the help of for loop which iterate with the size of array).
+* 5<sup>th</sup> For Insertion, create an insert function i.e insert(array,new element,index of new element,size,capacity). Check the condition whether element can be inserted or not & if the index number is valid or not.If yes, then insert the new element by shifting the previous elements in forward direction & put the new element at the required index
+*       for (int i = size - 1; i >= index; i--)
+        {
+            arr[i + 1] = arr[i];
+        }
+        arr[index] = element;
+* 6<sup>th</sup> For Deletion, create a delete function which takes array, size & index as arguments. Deletion can be done directly by shifting the elements in backward direction from the index number
+*        for (int i = index; i < size - 1; i++)
+         {
+             arr[i] = arr[i + 1];
+         }
+* 7<sup>st</sup> In order to Search elements in the Array, there are 2 methods i.e LINEAR SEARCH ALGORITHM & another is BINARY SEARCH ALGORITHM.
+* LINEAR SEARCH -
+* In this algorithm, a sequential search is made over all elements one by one & if a match is found(i.e key==element),then index of that element is returned.
+*        for (int i = 0; i < size; i++)
+         {
+              if (arr[i] == key)
+              {
+                return i;
+              }
+         }
+* BINARY SEARCH -
+* NOTE:: This algorithm works only for SORTED ARRAYS
+* In this algorithm, search begins by comparing the key with  the element in the middle of the array.If match is found then index is returned. But, if the key is less than middle element, then the search continues in the lower half of the array(i.e BINARY SEARCH will again work from low index to the middle index). And if the key is greater than the middle element,then search continues in the upper half(i.e from middle index to high index)
+*         int low = 0;
+          int mid;
+          int high = size - 1;
+
+          while (low <= high)
+          {
+              mid = (low + high) / 2;
+              if (arr[mid] == key)
+              {
+                 return mid;
+              }
+              else if (arr[mid] < key)
+              {
+                 low = mid + 1;
+              }
+              else
+              {
+                 high = mid - 1;
+              } 
+	  }
+* 8<sup>st</sup> END OF THE PROGRAM
+
+
+## Example:
+*            SAMPLE INPUT -  arr[10]={1,2,3,4,5};
+            Traversal-> traversal(arr,size);
+                        O/P- 1  2  3  4  5 
+	    Insertion-> insert(arr, new element, index, size, capacity); 
+	                (let new element be 9 & index be 2)
+	                O/P- 1  2  9  3  4  5
+	    Deletion->  delete(arr,size,index);
+	                (let index=1)
+			 O/P- 1  9  3  4  5
+	    Linear Search-> linear(arr,key,size);
+	                    (let key=3)
+			     O/P- Element 3 is found at index 2
+	    Binary Search-> binary(arr,key,size);
+	                    (let key=9)
+			    O/P- Element 9 is found at index 1
+			    (if key=3)
+			     O/P- Element not Found as Binary search works only for sorted array
+
+## Time complexity:
+
+For **TRAVERSAL**-
+
+**Time complexity is** O(n).
+
+For **INSERTION**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **DELETION**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **LINEAR SEARCH**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **BINARY SEARCH**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(log n)
+
  
 
