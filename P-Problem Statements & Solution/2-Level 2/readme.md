@@ -1,5 +1,12 @@
 # Aggressive Cows #
 
+## Table of Contents:-
+* [Problem Statement](#problem-statement)
+* [Explanation of Problem Statement](#explanation-of-problem-statement-with-a-test-case)
+* [Approach](#approach)
+* [Algorithm](#algorithm)
+* [Time Complexity](#time-complexity)
+
 ## Problem Statement
 There is a new barn with N stalls and C number of cows. The stalls are located on a straight line with positions x1,x2,...,xN. We have to assign the cows to the stalls, is such that the minimum distance between any two of them is as large as possible. We have to find largest minimum distance.
 
@@ -15,11 +22,17 @@ many such configurations are possible. For above shown configurations, maximum o
 * From above solution, we can see that we are alloting cows to stalls from pre-defining the minimum distance between the two cows. So, we are basically making use of range for distances. This range will be in sorted increasing order. This gives us hint to use of binary search. 
 
 ### Algorithm
-* Sort the given array.
-* Define search space to be [1...last element of the array].
-* Find the mid value of the range currently going in the loop.
-* Iterate through array to check if minimum distance found is valid for allocating cows in stalls. 
-* If all the cows are not allocated, reduce search from right. Else reduce search space from left.
-
+``` 
+  Sort the given array.
+  low = 1, high = last element of the array
+  while(low<=high):
+    mid = (low+high)/2
+    for i in array:
+      if mid is valid minimum distance for allocating cows in stalls
+        low = mid+1
+      else 
+        high = mid-1
+  return high
+```
 ### Time Complexity
 For sorting, it takes Nlog(N). For our algorithm, log(N) for binary search and N for checking if cows can be allocated or not. So total time complexity is Nlog(N).
