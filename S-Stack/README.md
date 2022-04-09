@@ -1,7 +1,12 @@
 # Table of Contents:
 - [Stack](#stack)
+  -[Algorithm](#algorithm)
+  -[Properties](#properties)
+  -[Advantage](#advantage)
+  -[Disadvantage](#disadvantage)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
+  -[How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
 - [Converting decimal number to binary](#Converting-decimal-number-to-binary)
 ## STACK 
 
@@ -112,13 +117,13 @@ After complete traversal, if there is some starting bracket left in the stack th
 For converting a decimal number to binary we first have to recursively divide the number by 2 and store its remainder. Reverse of the remainder is the binary equivalent of the particular number.
 
 For example:
-![image](https://user-images.githubusercontent.com/91279248/161446653-d7f5145c-89d0-4f89-926a-eb5f40d524a7.png)
+![image](https://user-images.githubusercontent.com/91279248/162582678-e84410dd-d018-4bca-8b52-630411a8cde5.png)
 
-## Algorithm:
+## Algorithm for decimal to binary conversion:
 ```
 1. Divide the number by 2 and store its remainder
 2. Repeat step 1 unitl the number cannot be divided any further
 3. Print the remainder in reverse order
 
 ```
-Time Complexity is O(n)
+**Time Complexity** is O(n)
