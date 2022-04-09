@@ -100,5 +100,30 @@ STOP
 
 - The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
 
+# [M Colouring Problem](https://www.tutorialspoint.com/M-Coloring-Problem)
 
+## Problem Statement
+Given an undirected graph and a number m, determine if the graph can be colored with at most m colors such that no two adjacent vertices of the graph are colored with the same color.
+
+## Example
+![image](https://user-images.githubusercontent.com/69976168/162581066-246f9f5d-a8f2-4fd0-9db2-c4093029f4ff.png)
+
+## Algorithm
+Approach:
+Basically starting from vertex 0 color one by one the different vertices. 
+
+Base condition:
+If I have colored all the N nodes return true.
+
+Recursion:
+- Trying every color from 1 to m with the help of a for a loop.
+- Is safe function returns true if it is possible to color it with that color i.e none of the adjacent nodes have the same color.
+- In case this is an algorithm and follows a certain intuition, please mention it. 
+- Color it with color i then call the recursive function for the next node if it returns true we will return true.
+- And If it is false then take off the color.
+- Now if we have tried out every color from 1 to m and it was not possible to color it with any of the m colors then return false.
+
+## Complexities
+- Time Complexity: O( N^M) (n raised to m)
+- Space Complexity: O(N)
 
