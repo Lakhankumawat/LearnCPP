@@ -19,7 +19,7 @@ Each element is unique in set and elements are stored in sorted order. Value of 
 1. begin() = return iterator to 1st element to the set.
 2. end() = return iterator to last element to the set.
 3. size() = return number of elements stored in set.
-4. insert(X)= insert new element 'X' in sorted position
+4. insert(X)= insert new element 'X' in unordered_set
 5. find(key)= return iterator pointing to the element 'key'
 6. empty() = bool function return true if set is empty
              either return false.
