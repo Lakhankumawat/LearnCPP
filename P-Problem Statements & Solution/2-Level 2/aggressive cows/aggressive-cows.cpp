@@ -33,6 +33,7 @@ int main() {
         high = mid - 1;
       }
     }
+    // printing the answer
     cout << "The largest minimum distance is " << high << endl;
     return 0;
 }
