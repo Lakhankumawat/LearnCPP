@@ -13,7 +13,7 @@ There is a new barn with N stalls and C number of cows. The stalls are located o
 ### Explanation of Problem Statement with a test case
 Let's say we have 5 stalls and 3 cows. The stalls are place as [1,2,4,8,9]. We will try to place 3 cows in stalls and find minimum distances from these configurations.
 
-<img src="image.png"/>
+![image](https://user-images.githubusercontent.com/92020810/162578422-e2f52ce4-cecc-4253-9718-1aa3d205d6d6.png)
 many such configurations are possible. For above shown configurations, maximum or largest minimum distance is 3. This is what we have to do. Hope you understand... else try out some more configurations on your own :)
 
 ### Approach
