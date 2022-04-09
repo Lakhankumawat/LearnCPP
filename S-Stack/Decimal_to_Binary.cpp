@@ -29,48 +29,47 @@ int empty()
 //Printing the element from top of the stack 
 int pop()
 {
-    int x;
+    int temp;
     if(s.top==-1)
       cout<<"underflow condition ";
-    x=s.items[s.top];
+    temp=s.items[s.top];
     s.top--;
-    return x;
+    return temp;
 }
 
 //Pusing the elements into the stack
-int push(int x)
+void push(int num)
 {
 
     if(s.top==9)
         cout<<"stack overflow";
     s.top++;
-    s.items[s.top]=x ;
-
+    s.items[s.top]=num;
 }
 
 int main()
 {
-    int a,b,c,x;
+    int num,temp,bin;
     initialization();
 
     //Taking the input of the number from the user 
     cout<<"Enter the number : ";
-    cin>>a;
+    cin>>num;
 
     //finding the remainder and pushing it into the stack
-    while(a!=0)
+    while(num!=0)
     {
-      b=a%2;
-      push(b);
-      a=a/2;
+      temp=num%2;
+      push(temp);
+      num=num/2;
     }
 
     //Printing the binary equivalent 
     cout<<"The Binary Equivalent is : ";
     while(empty()!=1)
     {
-        x=pop();
-        cout<<x;
+        bin=pop();
+        cout<<bin;
     }
     return 0;
 }
