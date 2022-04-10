@@ -113,6 +113,7 @@ After complete traversal, if there is some starting bracket left in the stack th
 For converting a decimal number to binary we first have to recursively divide the number by 2 and store its remainder. Reverse of the remainder is the binary equivalent of the particular number.
 
 For example:
+
 ![image](https://user-images.githubusercontent.com/91279248/162582678-e84410dd-d018-4bca-8b52-630411a8cde5.png)
 
 Algorithm for decimal to binary conversion:
