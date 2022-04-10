@@ -12,12 +12,14 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           stale-issue-message: 'This issue is stale because it has been open 30 days with no activity. Remove stale label or comment or this will be closed in 5 days.'
-          stale-pr-message: 'This PR is stale because it has been open 45 days with no activity. Please commit the changes requested or make improvements on the code. Thank you for your contributions!'
+          stale-pr-message: 'This PR is stale because it has been open 30 days with no activity. Please commit the changes requested or make improvements on the code. Thank you for your contributions!'
           close-issue-message: 'This issue was closed because it has been stalled for 5 days with no activity. Please reopen this issue if not resolved.'
           stale-issue-label: "no-issue-activity"
           stale-pr-label: "no-pr-activity"
-          days-before-stale: 7
-          days-before-close: 7
-          days-before-pr-close: -1
+          days-before-stale: 30
+          days-before-close: 5
+          days-before-pr-close: 5
+          days-before-pr-stale: 30
+          remove-stale-when-updated: true
           exempt-issue-milestones: 'important, crucial, critical, no_stale'
           exempt-pr-milestones: 'important, crucial, critical, no_stale'
