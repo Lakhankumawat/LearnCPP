@@ -81,6 +81,22 @@ int stackCount(STACK* stack){
     return stack -> count;
 }
 
+/*----------------This function prints all the element sof the Stack----------*/
+void display(STACK* stack){
+    int* a = NULL;
+    if(!stack)
+        cout << "Stack Underflow" << endl;
+    else   
+        cout << "The stack elements are : " << endl;
+        STACK_NODE* temp = stack -> top;
+        while(temp -> link != NULL){
+            a = (int*)(temp -> dataPtr);
+            cout << *a << " ---> ";
+            temp = temp -> link;
+        }
+        a = (int*)(temp -> dataPtr);
+        cout << *a << endl;
+}
 
 int main(){
     int* dataPtr;
@@ -108,12 +124,20 @@ int main(){
     *dataPtr = (int)40;
     pushStack(stack, dataPtr);
 
+    display(stack);
+    cout << endl;
+
     dataPtr = (int*) popStack(stack);
     printf("Popped data is : %d\n", *dataPtr);
     
+    display(stack);
+    cout << endl;
+
     dataPtr = (int*) popStack(stack);
     printf("Popped data is : %d\n", *dataPtr);
     
+    display(stack);
+    cout << endl;
 
     dataPtr = (int*)stackTop(stack);
     printf("The stack top is : %d\n", *dataPtr);
