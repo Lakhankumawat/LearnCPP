@@ -318,7 +318,7 @@ Print the bottom row, i.e. if k < m, then print the elements of m-1th row from c
 Print the left column, i.e. if l < n, then print the elements of lth column from m-1th row to k and increase the count of l.
 
 
-# Sample Output :
+## Sample Output :
 ![18](https://user-images.githubusercontent.com/97442721/162615507-b71fef3e-aa5e-442b-94f6-0c44f0337de6.png)
 
 
