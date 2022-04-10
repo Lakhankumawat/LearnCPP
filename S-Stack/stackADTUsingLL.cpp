@@ -108,41 +108,35 @@ int main(){
     //For the sake of simplicity the program uses the integer data in the stack.
     //However the above funtions can be used for any data types 
     
-    dataPtr = (int*)malloc(sizeof(int));
-    *dataPtr = 10;
-    pushStack(stack, dataPtr);
-    
-    dataPtr = (int*)malloc(sizeof(int));
-    *dataPtr = 20;
-    pushStack(stack, dataPtr);
-    
-    dataPtr = (int*)malloc(sizeof(int));
-    *dataPtr = 30;
-    pushStack(stack, dataPtr);  
-    
-    dataPtr = (int*)malloc(sizeof(int));
-    *dataPtr = (int)40;
-    pushStack(stack, dataPtr);
-
-    display(stack);
-    cout << endl;
-
-    dataPtr = (int*) popStack(stack);
-    printf("Popped data is : %d\n", *dataPtr);
-    
-    display(stack);
-    cout << endl;
-
-    dataPtr = (int*) popStack(stack);
-    printf("Popped data is : %d\n", *dataPtr);
-    
-    display(stack);
-    cout << endl;
-
-    dataPtr = (int*)stackTop(stack);
-    printf("The stack top is : %d\n", *dataPtr);
-
-    cout << "The no.of elements is " << stackCount(stack) << endl;
-
+    int ch, n;
+    while(true){
+        cout << "1.Push an item  2.Pop an item  3.Retrieve stack top  4.Check empty  5.Stack count  6.Display  7.EXIT\n";
+        cout << "Enter your choice : ";
+        cin >> ch;
+        switch(ch){
+            case 1: cout << "Enter an item : ";
+                    cin >> n;
+                    dataPtr = (int*)malloc(sizeof(int));
+                    *dataPtr = n;
+                    pushStack(stack, dataPtr);
+                    break;
+            case 2: dataPtr = (int*) popStack(stack);
+                    printf("Popped data is : %d\n", *dataPtr);
+                    break;
+            case 3: dataPtr = (int*) stackTop(stack);
+                    printf("The stack top is : %d\n", *dataPtr);
+                    break;
+            case 4: if(!emptyStack(stack))
+                        cout << "Stack is not empty" << endl;
+                    else
+                        cout << "Stack is empty" << endl;
+                    break;
+            case 5: cout << "The no.of elements is " << stackCount(stack) << endl;
+                    break;
+            case 6: display(stack);
+                    break;
+            case 7: exit(0);
+        }
+    }
     return 0;
 }
