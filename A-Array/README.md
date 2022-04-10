@@ -250,6 +250,7 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
 - [Spiral Print](#Spiral-Print)
 - [Approach](#Approach)
 - [Algorithm](#Algorithm)
+- [Sample Output](#Sample-Output)
 - [ComplexityAnalysis](#Complexity-Analysis)
 - [Time Complexity](#Time-Complexity)
 - [Space Complexity](#Space-complexity)
@@ -317,8 +318,12 @@ Print the bottom row, i.e. if k < m, then print the elements of m-1th row from c
 Print the left column, i.e. if l < n, then print the elements of lth column from m-1th row to k and increase the count of l.
 
 
-# Complexity Analysis: 
+# Sample Output :
+![18](https://user-images.githubusercontent.com/97442721/162615507-b71fef3e-aa5e-442b-94f6-0c44f0337de6.png)
 
+
+
+# Complexity Analysis: 
 # Time Complexity: O(m*n). 
 To traverse the matrix O(m*n) time is required.
 # Space Complexity: O(1). 
