@@ -13,12 +13,19 @@
     - [Advantages](#advantages-1)
     - [Disadvantage](#disadvantages-1)
     
-- [Diameter of a Genric Tree](#Diameter of a Genric Tree)
+- [Diameter of a Genric Tree](#diameter-of-a-genric-Tree)
     - [Properties](#Properties)
     - [Algorithm](#Algorithm)
     - [Time Complexity](#Complexity)
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
+
+- [Level order traversal in a Genric Tree](#Level-order-traversal-in-a-genric-tree) 
+    - [Properties](#properties)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#time-complexity)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantages)
 
 # Construct and Display Genric Tree
 
@@ -156,5 +163,49 @@ O(n), where is number of nodes.
 ### Disadvantages
 
 - Need to traverse all the tree to find diameter.
+- Unknown number of children – The number of children for each node is not known in advance.
+
+
+
+# Level order traversal in a Genric Tree
+
+- "levelorder fashion" is  printing the tree top to bottom levels from left to right where the nodes are separated by spaces.
+- We can define in other words as, Level Order Traversal is the algorithm to process all nodes of a tree by traversing through depth, first the root, then the child of the root, etc.
+
+![Screenshot (513)](https://user-images.githubusercontent.com/98539013/159484343-7982a5eb-94b9-4c84-bd3c-b4cca6dc3ead.png)
+
+
+### Properties
+
+- Level order traversal is actually a Breadth-First Search.
+- It can be used to solve many problems in graph theory.
+
+### Algorithm
+
+- A Queue is defined as a type node.
+- A node (basically root), passed as argument, is added to the queue.
+- A while loop is applied which runs until the queue is emptied.
+- An element (of type node) is removed from the queue and stored in the node.
+- The node which was removed in the previous step, its data gets printed in this step.
+- Then the children of this node are added to the queue using a for loop.
+
+### Time Complexity
+```
+- For construct()
+  O(n) ,where n is the number of node
+- For levelorder()
+  O(n) ,where n is the number of node
+ Travelling to all the elements of the tree. Every node is processed individually in a while loop
+ ``` 
+### Advantages 
+
+- Memory efficient – No extra links are required, hence a lot of memory is saved.
+- This concept can be used to solve many problems in graph theory, for example: Finding all nodes within one connected component.
+- Many algorithms can be expressed more easily because it is just a binary tree.
+- Each node is of fixed size no auxiliary array or vector is required.
+
+### Disadvantages
+
+- Memory Wastage – All the pointers are not required in all the cases. Hence, there is lot of memory wastage.
 - Unknown number of children – The number of children for each node is not known in advance.
 
