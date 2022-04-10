@@ -7,7 +7,7 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Symmetric matrix](#symmetric-matrix)
-
+- [Spiral Print in Matrix](#Spiral-Print-in-Matrix)
 
 # [Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
 
@@ -471,6 +471,78 @@ For every k size window store every element if negative in deque from rear end u
    end efficientPeak
 	
    ```
-**Time Complexity:** `O(log n)`\
+**Time Complexity:** `O(log n)`
 **Auxillary Space:** `O(1)`
  
+# Spiral Print :
+Given an N*M 2D array, print it in spiral form. That is, first you need to print the 1st row, then last column, then last row and then first column and so on.
+Print every element only once.
+![20](https://user-images.githubusercontent.com/97442721/161239578-828b4a9d-cc60-4872-b046-fed7d83c4b2e.jpg)
+
+FOR EXAMPLE LETS SAY -:
+
+# Input format :
+
+Line 1 : N and M, No. of rows & No. of columns (separated by space) followed by N*M  elements in row wise fashion.
+
+# Input:
+
+3 6 
+
+4 4 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+# Output :
+
+4 4 1 2 3 4 10 16 15 14 13 12 11 5 6 7 8 9
+
+Explanation: The output is matrix in spiral format. 
+
+# Input: 
+
+4 4
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+# Output: 
+
+1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10 
+
+Explanation: The output is matrix in spiral format. 
+
+### Sample Output :
+![18](https://user-images.githubusercontent.com/97442721/162615507-b71fef3e-aa5e-442b-94f6-0c44f0337de6.png)
+
+# Approach:
+The problem can be solved by dividing the matrix into loops or squares or boundaries. 
+
+It can be seen that the elements of the outer loop are printed first in a clockwise manner then the elements of the inner loop is printed. 
+
+So printing the elements of a loop can be solved using four loops which prints all the elements. 
+
+Every ‘for’ loop defines a single direction movement along with the matrix. 
+
+The first for loop represents the movement from left to right, whereas the second crawl represents the movement from top to bottom, the third represents the movement from the right to left, and the fourth represents the movement from bottom to up.
+
+# Algorithm: 
+Create and initialize variables k – starting row index, m – ending row index, l – starting column index, n – ending column index
+
+Run a loop until all the squares of loops are printed.
+
+In each outer loop traversal print the elements of a square in a clockwise manner.
+
+Print the top row, i.e. Print the elements of the kth row from column index l to n, and increase the count of k.
+
+Print the right column, i.e. Print the last column or n-1th column from row index k to m and decrease the count of n.
+
+Print the bottom row, i.e. if k < m, then print the elements of m-1th row from column n-1 to l and decrease the count of m
+
+Print the left column, i.e. if l < n, then print the elements of lth column from m-1th row to k and increase the count of l.
+
+# Complexity Analysis: 
+# Time Complexity: O(m*n). 
+To traverse the matrix O(m*n) time is required.
+# Space Complexity: O(1). 
+No extra space is required.
+
+
+
