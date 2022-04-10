@@ -230,6 +230,8 @@ O(n), where is number of nodes.
 - "levelorder fashion" is  printing the tree top to bottom levels from left to right where the nodes are separated by spaces.
 - We can define in other words as, Level Order Traversal is the algorithm to process all nodes of a tree by traversing through depth, first the root, then the child of the root, etc.
 
+![Screenshot (513)](https://user-images.githubusercontent.com/98539013/162618893-1282526e-17fb-492f-83fa-fa9a22d8712e.png)
+
 
 ### Properties
 - Level order traversal is actually a Breadth-First Search.
