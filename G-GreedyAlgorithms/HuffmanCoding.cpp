@@ -63,7 +63,7 @@ void huffmancode(char data[], int fq[], int size){
 //--------- main function --------//
 int main()
 {
-    int nfile;
+    int symbols;
     /*char arr[] = {'a','b','c','d','e','f'};
     int fq[] = {7,11,15,16,21,34};
     f : 0
