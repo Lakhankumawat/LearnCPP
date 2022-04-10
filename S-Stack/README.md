@@ -2,7 +2,8 @@
 - [Stack](#stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
-
+- [How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
+- [Converting decimal number to binary](#converting-decimal-number-to-binary)
 ## STACK 
 
 - A linear-data structure that follows LIFO (Last In First Out) principle.
@@ -78,7 +79,7 @@ Algorithm
 9. print the result string that is the postfix notation.
 ```
 - Its implementation is [here](InfixToPostfix.cpp)
-- 
+
 ![Infix to postfix conversion](https://prepinsta.com/wp-content/uploads/2020/06/Infix-to-Posting-Conversion-in-C-using-Stacks-2048x1453.png)
 
 - For more information about infix to postfix conversion [click here](https://prepinsta.com/data-structures/infix-to-postfix-conversion/)
@@ -107,4 +108,18 @@ After complete traversal, if there is some starting bracket left in the stack th
 ```
 ![image](https://user-images.githubusercontent.com/91210199/159122082-2a5e98d2-bdd4-4f9d-9131-1d2048a5f60f.png)
  
+ ## Converting decimal number to binary
 
+For converting a decimal number to binary we first have to recursively divide the number by 2 and store its remainder. Reverse of the remainder is the binary equivalent of the particular number.
+
+For example:
+![image](https://user-images.githubusercontent.com/91279248/162582678-e84410dd-d018-4bca-8b52-630411a8cde5.png)
+
+Algorithm for decimal to binary conversion:
+
+1. Divide the number by 2 and store its remainder
+2. Repeat step 1 unitl the number cannot be divided any further
+3. Print the remainder in reverse order
+
+
+**Time Complexity** is O(n)
