@@ -6,7 +6,7 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
-- [Array Operations](https://github.com/Lakhankumawat/LearnCPP/issues/1063)
+- [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
 
 
@@ -477,19 +477,32 @@ For every k size window store every element if negative in deque from rear end u
 **Auxillary Space:** `O(1)`
 
 # [Array Operations](A-Array/arrayOperations.cpp)
- This is a new concept which tells about various operations which can be performed in an Array.
+
+- [INTRODUCTION](#introduction-of-arrays)
+- [SAMPLE ARRAY](#sample-array)
+- [Algorithm](#algorithm-of-array-operations)
+- [Example](#example-of-array)
+- [Time Complexity](#time-complexity-of-various-operations)
+
+# INTRODUCTION of arrays
+
+ Array is a container which can hold fix number of items of same data type.
+ Syntax for declaring an array is:
+       datatype array_name[size];
+       
+ Most of the Data Structures use arrays to implement algorithms. Some basics operations can be performed in an array.
  The Operations which can be performed are as follows: 
  1. Traversal
  2. Insertion
  3. Deletion
  4. Searching- a) Linear Search b) Binary Search
 
-# SAMPLE OUTPUT
+# SAMPLE ARRAY
 ![Output 1](https://user-images.githubusercontent.com/87706725/162575070-8514290c-1fba-49d9-b6cc-19ad50ef0efd.png)
 ![Output 2](https://user-images.githubusercontent.com/87706725/162575080-7853a59b-78a6-4159-90a9-2eade886e6b8.png)
 
 
- # Algorithm
+ # Algorithm of array operations
 
 * 1<sup>st</sup> START OF THE PROGRAM
 * 2<sup>st</sup> Create an array of fixed size i.e the maximum capacity/elements the array can store.
@@ -542,7 +555,7 @@ For every k size window store every element if negative in deque from rear end u
 * 8<sup>st</sup> END OF THE PROGRAM
 
 
-## Example:
+## Example of Array:
 *            SAMPLE INPUT -  arr[10]={1,2,3,4,5};
             Traversal-> traversal(arr,size);
                         O/P- 1  2  3  4  5 
@@ -561,7 +574,7 @@ For every k size window store every element if negative in deque from rear end u
 			    (if key=3)
 			     O/P- Element not Found as Binary search works only for sorted array
 
-## Time complexity:
+## Time complexity of various operations:
 
 For **TRAVERSAL**-
 
