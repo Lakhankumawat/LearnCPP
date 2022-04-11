@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-56-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-57-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -211,6 +211,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Akshat-z"><img src="https://avatars.githubusercontent.com/u/76041127?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akshat Agarwal</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Akshat-z" title="Code">💻</a></td>
     <td align="center"><a href="https://uhini0201.github.io/Me-Myself/"><img src="https://avatars.githubusercontent.com/u/59994163?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Uhini Mukherjee</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=uhini0201" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Pragati1122"><img src="https://avatars.githubusercontent.com/u/84949697?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pragati Verma</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Pragati1122" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/dewanshiPaul"><img src="https://avatars.githubusercontent.com/u/92020810?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dewanshi Paul</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=dewanshiPaul" title="Code">💻</a></td>
   </tr>
 </table>
 
