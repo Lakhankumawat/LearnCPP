@@ -110,25 +110,30 @@ After complete traversal, if there is some starting bracket left in the stack th
 ```
 ![image](https://user-images.githubusercontent.com/91210199/159122082-2a5e98d2-bdd4-4f9d-9131-1d2048a5f60f.png)
  
- ## Converting decimal number to binary
+## Converting decimal number to binary
 
-For converting a decimal number to binary we first have to recursively divide the number by 2 and store its remainder. Reverse of the remainder is the binary equivalent of the particular number.
+For converting a decimal number to binary we first have to recursively divide the number by 2 and store its remainder. Then remainders are popped one at a time and converted into its Binary equivalent.
+
+![image](https://user-images.githubusercontent.com/91279248/162764333-a8b6929f-5c5e-4f92-add0-d1ed2233f2db.png)
+
+### Key Terms:
+- **Binary Equivalent:** A binary number is a number expressed in the base-2 numeral system or binary numeral system, a method of mathematical expression which uses only two symbols: one and zero.
 
 For example:
 
 ![image](https://user-images.githubusercontent.com/91279248/162582678-e84410dd-d018-4bca-8b52-630411a8cde5.png)
 
-Algorithm for decimal to binary conversion:
+### Algorithm for decimal to binary conversion:
 
-1. Divide the number by 2 and store its remainder
-2. Repeat step 1 unitl the number cannot be divided any further
-3. Print the remainder in reverse order
-
+1. Take a number in decimal
+2. while the number is greater than 0
+3. Push the remainder after dividing the number by 2 into stack.
+4. set the number as number / 2.
+5. Pop elements from stack and print the binary number
 
 **Time Complexity** is O(n)
-=======
- ![Stack ADT using linked list]
- ## Stack ADT using Linked List
+
+## Stack ADT using Linked List
 
 ### Problem statement : 
     Implement all the possible basic stack ADT functions using linked list implemenetation. Design the program in such a way that it should work for all the data types whenever used. Also in main function demenostarte the functions using any data type.
