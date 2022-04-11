@@ -7,7 +7,7 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Symmetric matrix](#symmetric-matrix)
-- [Reversing of Array](#reversing-of-array)
+- [Array reversing](#array-reversing)
 
 
 # [Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
@@ -478,7 +478,8 @@ For every k size window store every element if negative in deque from rear end u
 
 
 
-# Reversing of Array
+
+# Array reversing
 
 ## REVERSE1
 
@@ -519,7 +520,3 @@ Output :5, 4, 3, 2, 1
 
 2->Input :  10, 20, 30, 40
 Output : 40, 30, 20, 10
-
-
-
-
