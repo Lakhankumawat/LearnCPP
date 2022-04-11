@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-57-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-58-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -214,6 +214,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/dewanshiPaul"><img src="https://avatars.githubusercontent.com/u/92020810?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dewanshi Paul</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=dewanshiPaul" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Arun9739"><img src="https://avatars.githubusercontent.com/u/84305637?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arun G Nayak</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Arun9739" title="Code">💻</a></td>
   </tr>
 </table>
 
