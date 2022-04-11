@@ -7,7 +7,7 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Symmetric matrix](#symmetric-matrix)
-- [Reversing of Array]
+- [Reversing of Array](#Reversing-of-Array
 
 
 # [Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
@@ -478,9 +478,9 @@ For every k size window store every element if negative in deque from rear end u
 
 
 
--[Reversing of Array]
+# Reversing of Array
 
-# REVERSE1
+## REVERSE1
 
 ### ALGORITHM
 
@@ -503,7 +503,7 @@ Output : 40, 30, 20, 10
 
 
 
--[Reverse2]
+## Reverse2
 
 ### ALGORITHM
 The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
