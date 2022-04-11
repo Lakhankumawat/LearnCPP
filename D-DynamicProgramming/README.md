@@ -646,3 +646,120 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 Time Complexity = O(n)
 
 Space Complexity = O(n)
+
+
+
+
+
+# [Unique Paths II ](https://leetcode.com/problems/unique-paths-ii/)
+
+- [Problem Statement of Unique Paths II](#problem-statement-of-unique-paths-ii)
+
+- [Examples of Unique Paths II](#examples-of-unique-paths-ii)
+
+- [Explanation of Unique Paths II](#explanation-of-unique-paths-ii)
+
+- [Pseudo Code of Unique Paths II](#pseudo-code-of-unique-paths-ii)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/UniquePaths2/D-DynamicProgramming/UniquePaths2.cpp)
+
+- [Time Complexity and Space Complexity of Unique Paths II](#time-complexity-and-space-complexity-of-unique-paths-ii)
+
+-  [Output of Unique Paths II](#output-of-unique-paths-ii)
+
+
+### Problem Statement of Unique Paths II
+
+You are given an m x n integer array grid. There is a robot initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m-1][n-1]). The robot can only move either down or right at any point in time.
+
+An obstacle and space are marked as 1 or 0 respectively in grid. A path that the robot takes cannot include any square that is an obstacle.
+
+Return the number of possible unique paths that the robot can take to reach the bottom-right corner.
+
+
+### Examples of Unique Paths II
+
+
+##### Example 1:
+
+
+
+Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+
+Output: 2
+
+Explanation: There is one obstacle in the middle of the 3x3 grid above.
+There are two ways to reach the bottom-right corner:
+1. Right -> Right -> Down -> Down
+2. Down -> Down -> Right -> Right
+
+
+
+##### Example 2:
+
+Input: obstacleGrid = [[0,1],[0,0]]
+
+Output: 1
+
+
+### Explanation of Unique Paths II
+
+- we have to return the number of possible unique paths that the robot can take to reach the bottom-right corner (i.e., grid[m - 1][n - 1]) from top-left corner (i.e., grid[0][0]) provided that a path that the robot takes cannot include any square that is an obstacle. 
+
+- So from any cell of the grid we are having 2 options :-  1.either move down or 2. move right at any point in time.
+
+- if we'll move down we'll reach grid[i+1][j] and on moving right we'll reach gird[i][j+1].
+
+- if we'll reach grid[m-1][n-1] then. return 1 because its a valid path.
+
+- if at any point i<0 or j<0 or grid[i][j]=1,then, return 0 because its an invalid path.
+
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+- So we can store the values in a vector and will use those values from the vector only instead of making recursive calls for it.
+
+
+### Pseudo code of Unique Paths II
+
+
+
+    int totalPaths(int currRow,int currCol,int targetRow,int targetCol, vector<vector<int>>&obstacleGrid,vector<vector<int>>&v)
+
+            if(currRow == targetRow && currCol == targetCol && obstacleGrid[currRow][currCol]==0) 
+                    return 1;  
+        
+            if(currRow<0||currCol<0||currRow>targetRow||currCol>targetCol|| obstacleGrid[currRow][currCol]==1)
+                    return 0;  
+        
+            if(v[currRow][currCol]!=-1) return v[currRow][currCol];
+        
+   
+            int right = totalPaths(currRow,currCol+1,targetRow,targetCol,obstacleGrid,v); 
+            int down = totalPaths(currRow+1,currCol,targetRow,targetCol,obstacleGrid,v); 
+
+                  v[currRow][currCol] = (right+down);
+            return v[currRow][currCol];
+   
+
+
+
+### Output of Unique Paths II
+
+###### Output for  obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+
+
+
+###### Output for obstacleGrid = [[0,1],[0,0]]
+
+
+
+
+### Time Complexity and Space Complexity of Unique Paths II
+
+#### Time Complexity = O(m * n)
+
+
+#### Space Complexity = O(m * n)
