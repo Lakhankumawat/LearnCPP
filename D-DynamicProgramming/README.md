@@ -10,6 +10,8 @@
 
 - [Min Cost Climbing Stairs](#min-cost-climbing-stairs)
 
+- [Unique Paths II](#unique-paths-ii)
+
 <!-- Table of content -->
 # Dynamic Programming
   - [Recursive vs Dynamic Programming Approach](#recursive-vs-dynamic-programming-approach)
@@ -651,7 +653,7 @@ Space Complexity = O(n)
 
 
 
-# [Unique Paths II ](https://leetcode.com/problems/unique-paths-ii/)
+# [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
 
 - [Problem Statement of Unique Paths II](#problem-statement-of-unique-paths-ii)
 
@@ -680,7 +682,11 @@ Return the number of possible unique paths that the robot can take to reach the 
 ### Examples of Unique Paths II
 
 
-##### Example 1:
+![image](https://user-images.githubusercontent.com/75883328/162787851-8fc367a8-3631-4a80-9fe1-2cba166b2a26.png)
+
+
+
+#### Example 1:
 
 
 
@@ -695,14 +701,20 @@ There are two ways to reach the bottom-right corner:
 
 
 
-##### Example 2:
+#### Example 2:
+
+![image](https://user-images.githubusercontent.com/75883328/162787892-b1377a99-0a02-4e6a-9631-859ccd019004.png)
+
+
 
 Input: obstacleGrid = [[0,1],[0,0]]
 
 Output: 1
 
 
+
 ### Explanation of Unique Paths II
+
 
 - we have to return the number of possible unique paths that the robot can take to reach the bottom-right corner (i.e., grid[m - 1][n - 1]) from top-left corner (i.e., grid[0][0]) provided that a path that the robot takes cannot include any square that is an obstacle. 
 
@@ -748,16 +760,25 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 ### Output of Unique Paths II
 
-###### Output for  obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+
+##### Output for  obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+
+
+![image](https://user-images.githubusercontent.com/75883328/162788176-a55a8df3-af20-498b-82ca-e191ce04445d.png)
 
 
 
-###### Output for obstacleGrid = [[0,1],[0,0]]
 
+
+##### Output for obstacleGrid = [[0,1],[0,0]]
+
+
+![image](https://user-images.githubusercontent.com/75883328/162788334-1da70398-accb-46e1-838e-9ef60c2f3b27.png)
 
 
 
 ### Time Complexity and Space Complexity of Unique Paths II
+
 
 #### Time Complexity = O(m * n)
 
