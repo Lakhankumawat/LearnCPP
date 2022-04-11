@@ -4,6 +4,8 @@
 - [Parenthesis Checker](#parenthesis-checker)
 - [How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
 - [Converting decimal number to binary](#converting-decimal-number-to-binary)
+- [Stack ADT using linked list](#stack-adt-using-linked-list)
+
 ## STACK 
 
 - A linear-data structure that follows LIFO (Last In First Out) principle.
@@ -124,3 +126,42 @@ Algorithm for decimal to binary conversion:
 
 
 **Time Complexity** is O(n)
+=======
+ ![Stack ADT using linked list]
+ ## Stack ADT using Linked List
+
+### Problem statement : 
+    Implement all the possible basic stack ADT functions using linked list implemenetation. Design the program in such a way that it should work for all the data types whenever used. Also in main function demenostarte the functions using any data type.
+
+### Key Terms : 
+- Head : A meta data structure hwich contains link to top pointeer and count.
+- Push : Inserting a new element into the Stack
+- Pop : Removing the topmost element
+- Count : Number of elemets in a Stack
+
+### Functions : 
+- createStack : This function creates new stack
+- pushstack : This function pushes data into the node
+- popStack : This function pops the data from the stack
+- stackTop : This function retrieves stack top
+- emptyStack : This function checks whether the stack is empty
+- stackCount : This function return the stack count
+
+### Properties
+
+- Time Complexity :
+  - Worst case time	: O(1)
+  - Best case time : O(1)
+  - Average case time : O(1)
+- Auxillary Space : O(1)
+- Stable : Yes
+
+### Advantages
+
+- Uasge of a Linked List in a program makes it better efficient than stack using array.
+
+### Disadvantage
+
+- Working with linked list and void pointers is little bit difficult.
+
+![image](https://prepinsta.com/wp-content/uploads/2019/07/ll.png)
