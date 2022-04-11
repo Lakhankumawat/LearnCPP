@@ -1,8 +1,14 @@
+
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
+- [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
+- [Egg Dropping Puzzle](#egg-dropping-puzzle)
 
+- [Climbing Stairs](#climbing-stairs)
+
+- [Min Cost Climbing Stairs](#min-cost-climbing-stairs)
 
 <!-- Table of content -->
 # Dynamic Programming
@@ -64,7 +70,6 @@ return f[n];
  Solution Link: 
  ```
 ---
-
 
 # Equal Sum Partition Problem
 
@@ -262,3 +267,382 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 ```
 
+# [Longest Common Subsequence Problem](https://www.programiz.com/dsa/longest-common-subsequence)
+
+### Problem Statement
+
+Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.
+
+### Example
+
+Let S1 and S2 be the two strings. Then the longest common subsequence **LCS** is given as 
+```
+Eg 1. 
+S1 = {A, C, G, A, T, A, B} 
+S2 = {C, Z, A, X, T, B, Q, P, R}
+LCS = {C, A, T, B}
+
+Eg 2.
+S1 = {B, C, D, A, A, C, D}
+S2 = {A, C, D, B, A, C}
+LCS = {C, D, A, C}
+```
+
+### Explanation
+- Consider two strings S1 -> ABACC and S2 -> AABBC.
+- Create a LCS table of dimension **(n+1 * m+1)** where **n** and **m** are the lengths of S1 and S2 respectively.
+  
+  ``` LCS[m][n] ```
+- The first row and the first column of the LCS table are filled with zeros since there will be no common subsequence when we compare string S1 or S2 with an empty string.
+
+  ```
+  if (i = 0 or  j = 0)
+    LCS[i][j] = 0 
+  ```
+- For the remaining cells : 
+
+   - If the character corresponding to the current row and current column are matching, this implies that the current character can be added to the LCS found upto previous character of both strings. Update the LCS table by adding 1 to the diagonal cell of the current character cell.
+
+      ``` LCS[i,j] := LCS[i-1,j-1] + 1 ```
+   - If the character corresponding to the current row and current column do not match, this implies that the current character cannot be added to the LCS. So the LCS found upto current character will be same as the maximum LCS found upto previos character of either strings. Fill the current cell by taking the maximum of previous column and previous row element from the LCS table
+
+      ``` LCS[i,j] := max(LCS[i,j-1], LCS[i-1,j]) ```
+    
+    <br />
+
+    ![image](https://user-images.githubusercontent.com/59263190/159671926-ca8db497-b132-40d1-9c17-c1d1a41a2aa8.png)
+
+
+- ### Algorithm
+```cpp
+function computeLCS (S1[1...m], S2[1...n])
+    LCS = array(0..m, 0..n)
+    for i := 0 -> m
+      for j := 0 -> n
+        if i == 0 or j == 0
+          LCS[i][j] = 0
+        else if S1[i] == S2[j]
+          LCS[i,j] := LCS[i-1,j-1] + 1
+        else
+          LCS[i,j] := max(LCS[i,j-1], LCS[i-1,j])
+    
+    return LCS[m][n]
+```
+
+### Complexity
+```
+Time Complexity : O(m*n)
+Space Complexity : O(m*n)
+```
+
+# EGG DROPPING PUZZLE
+
+
+- [Problem Statement](#problem-statement-for-egg-dropping)
+- [Examples-1](#example-1)
+- [Examples-2](#example-2)
+- [Explanation](#explanation-2)
+- [Complexity](#complexity-analysis)
+
+### Problem Statement For Egg Dropping
+You are given N identical eggs and you have access to a K-floored building from 1 to K.
+
+There exists a floor f where 0 <= f <= K such that any egg dropped at a floor higher than f will break, and any egg dropped at or below floor f will not break. There are few rules given below. 
+
+An egg that survives a fall can be used again.
+A broken egg must be discarded.
+The effect of a fall is the same for all eggs.
+If the egg doesn't break at a certain floor, it will not break at any floor below.
+If the eggs breaks at a certain floor, it will break at any floor above.
+Return the minimum number of moves that you need to determine with certainty what the value of f is.
+For more description on this problem see [Link](https://en.wikipedia.org/wiki/Dynamic_programming#Egg_dropping_puzzle)
+
+##### Example 1:
+Input:
+N = 1, K = 2
+Output: 2
+##### Explanation 1: 
+1. Drop the egg from floor 1. If it 
+   breaks, we know that f = 0.
+2. Otherwise, drop the egg from floor 2.
+   If it breaks, we know that f = 1.
+3. If it does not break, then we know f = 2.
+4. Hence, we need at minimum 2 moves to
+   determine with certainty what the value of f is.
+
+##### Example 2:
+
+Input:
+N = 2, K = 10
+Output: 4
+
+##### Explanation 2: 
+Method : Dynamic Programming.  
+The approach will be to make a table which will store the results of sub-problems so that to solve a sub-problem, it would only require a look-up from the table which will take constant time, which took exponential time with recursion.  
+Formally for filling DP[i][j] state where 'i' is the number of eggs and 'j' is the number of floors:   
+ 
+We have to traverse for each floor 'x' from '1' to 'j' and find minimum of:  
+(1 + max( DP[i-1][j-1], DP[i][j-x] )).  
+![dptable](https://user-images.githubusercontent.com/78564629/158542308-490d8143-4889-425f-9d60-7e6632b8808c.png)
+
+
+
+#### 2 egg for 100-floor builing- Optimal Approach:
+If the first egg breaks, we need to test the remaining floors one by one starting from the lowest until the remaining egg breaks. For example, if the first drop is on the 50th floor and the egg breaks, it will take 49 more drops from the 1st floor to the 49th floor to ensure the remaining egg does not break until we know the answer.  
+If the first drop is on the 10th floor and it breaks, then it takes a total of 10 trials to know the answer in a worst case scenario, i.e. the egg starts to break on the 9th or the 10th floor. The trials will be: 10 → 1 → 2 → 3 → 4 → 5 → 6 → 7→ 8 → 9  
+To utilize the number of trials used (10 trials), if the first drop is on the 10th floor and the egg does not break, the second drop should be on the 19th floor, i.e. if the egg breaks on the 19th floor, then you should drop the eggs in the following sequence: 10 → 19 → 11 → 12 → 13 → 14 → 15 → 16 → 17 → 18 (10 trials in total).  
+With this utilization in mind, the ultimate sequence (if an egg never breaks) will be 10 → 19 (10 + 9) → 27 (10 + 9 + 8) → 34 (10 + 9 + 8 + 7) → 40 → 45 → 49 → 52 → 54 → 55, i.e. 10 trials can test up to 55 floors.  
+Using the formula for triangle numbers, m trials can test for \frac{m(m+1)}{2} floors, i.e.  
+13 trials can test 13 * 14 / 2 = 91 floors  
+14 trials can test 14 * 15 / 2 = 105 floors  
+Thus it takes 14 trials to test a 100-floor building.  
+
+##### 2 Egg for 15 Floor
+![File](https://user-images.githubusercontent.com/78564629/158540414-3b65cc6b-e598-4347-b20b-79bdf10af759.png)
+
+
+## Complexity Analysis
+**Time Complexity :** O(nk^2).  
+Where 'n' is the number of eggs and 'k' is the number of floors, as we use a nested for loop 'k^2' times for each egg  
+**Auxiliary Space :** O(nk).  
+As a 2-D array of size 'n*k' is used for storing elements.
+
+
+
+# [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+- [Problem Statement of Climbing Stairs](#problem-statement-of-climbing-stairs)
+
+- [Examples of Climbing Stairs](#examples-of-climbing-stairs)
+
+- [Explanation of Climbing Stairs](#explanation-of-climbing-stairs)
+
+- [Code](https://github.com/Shweta2024/LearnCPP/blob/climbing_stairs/D-DynamicProgramming/ClimbingStairs.cpp)
+
+- [Analysis](#analysis)
+
+### Problem Statement of Climbing Stairs
+
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+
+### Examples of Climbing Stairs
+
+##### Example 1
+
+       
+Input: n = 2
+
+          Output: 2
+
+          Explanation: There are two ways to climb to the top.
+
+          1) 1 step + 1 step
+
+          2) 2 steps 
+
+#### Example 2:
+
+###### The below diagram shows the three different ways of Climbing the Stairs
+
+
+![cs](https://user-images.githubusercontent.com/75883328/160851148-014f971e-43eb-4cb3-8323-e41561717835.png)
+
+       
+Input: n = 3
+
+          Output: 3
+
+          Explanation: There are three ways to climb to the top.
+
+          1) 1 step + 1 step + 1 step
+
+          2) 2 steps + 1 step
+ 
+          3) 1 step + 2 steps
+
+### Explanation of Climbing Stairs
+
+-We have to return the total number of possible ways to reach the n-th step, provided that we can either take one step or two step.
+
+-So at any given stair (say currentStair) we'll have two options :- 1)to make a jump of one step or 2)to make a jump of two steps, therefore we'll make two recursive calls one for oneJump & another for twoJump.
+
+-if we make a jump of one we'll reach to currentStair+1 and if we make a jump of two then we'll reach currentStair+2.
+
+-if we reach the target stair ,then return 1,because it is a vaild way to reach the target.
+
+-if we have gone beyond the target step,then return 0, because we can't reach the target stair.
+
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+-So we can store the values in a hash map and will use those values from the hash map only instead of making recursive calls for it.
+
+### Pseudo code
+
+```
+int totalWays(int currentIndex,int target,unordered_map<int,int>&m)
+
+           if(currentIndex==target) return 1; 
+	   
+           if(currentIndex>target) return 0;
+	   
+	   int currentKey=currentIndex;
+	   
+	   if(m.count(currentKey)) return m[currentKey];
+	   
+	   int oneJump=totalWays(currentIndex+1,target,m);
+	   
+           int twoJump=totalWays(currentIndex+2,target,m);
+	   
+	   m[currentKey]=oneJump+twoJump;
+        
+    return m[currentKey];
+
+```
+
+
+### The below is the Screenshot of my output
+
+###### Output for n=4
+
+![op1](https://user-images.githubusercontent.com/75883328/160851883-c485d803-7892-4ced-b15f-edc00eb8491f.png)
+
+
+###### Output for n=44
+
+![op2](https://user-images.githubusercontent.com/75883328/160852013-dc76d8b2-8b29-4a00-8f7b-b82a21bd868f.png)
+
+
+
+### Analysis
+#### Time Complexity = O(n)
+
+
+#### Space Complexity = O(n)
+
+
+# [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+
+- [Problem Statement of Min Cost Climbing Stairs](#problem-statement-of-min-cost-climbing-stairs)
+
+- [Examples of Min Cost Climbing Stairs](#examples-of-min-cost-climbing-stairs)
+
+- [Explanation of Min Cost Climbing Stairs](#explanation-of-min-cost-climbing-stairs)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/Min_Cost_Climbing_Stairs/D-DynamicProgramming/MinCostClimbingStairs.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
+-  [Output](#output)
+
+
+### Problem Statement of Min Cost Climbing Stairs
+
+You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
+
+You can either start from the step with index 0, or the step with index 1.
+
+Return the minimum cost to reach the top of the floor.
+
+
+### Examples of Min Cost Climbing Stairs
+
+
+![3](https://user-images.githubusercontent.com/75883328/161399647-bebbc27d-80b6-4c1a-a581-ba11518c7ea0.png)
+
+
+##### Example 1
+
+Input: cost = [10,15,20]
+
+Output: 15
+
+Explanation: You will start at index 1.
+- Pay 15 and climb two steps to reach the top.
+The total cost is 15.
+
+
+#### Example 2:
+
+Input: cost = [1,100,1,1,1,100,1,1,100,1]
+
+Output: 6
+
+Explanation: You will start at index 0.
+- Pay 1 and climb two steps to reach index 2.
+- Pay 1 and climb two steps to reach index 4.
+- Pay 1 and climb two steps to reach index 6.
+- Pay 1 and climb one step to reach index 7.
+- Pay 1 and climb two steps to reach index 9.
+- Pay 1 and climb one step to reach the top.
+The total cost is 6.
+
+
+### Explanation of Min Cost Climbing Stairs
+
+- We have to Return the minimum cost to reach the top of the floor, provided that we can either take one step or two step and can either start from the step with index 0, or the step with index 1.
+
+- So at any given stair (say currentStair) we'll have two options :- 1)to make a jump of one step or 2)to make a jump of two steps, therefore we'll make two recursive calls one for oneJump & another for twoJump and if we make a jump from the currentStair then we have to pay an amount i.e. cost[currentStair].
+
+- if we make a jump of one we'll pay cost[currentStair] and will reach to currentStair+1 and if we make a jump of two then we'll reach currentStair+2 by paying the same amount.
+
+- if we reach the target stair ,then return 0,because we don't need to pay any amount to reach the target stair from the target.
+
+- if we have gone beyond the target step,then return infinity, because we can't reach the target stair.
+
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+- So we can store the values in a hash map and will use those values from the hash map only instead of making recursive calls for it.
+
+
+### Pseudo code
+
+
+```
+
+          int minCost(vector<int>&cost,int currentIndex,unordered_map<int,int>&m)
+                  if(currentIndex==cost.size()) return 0; 
+                  if(currentIndex>cost.size()) return 999;
+        
+                  int currentKey=currentIndex;
+        
+                  if(m.count(currentKey)) return m[currentKey];
+        
+                  int oneJump= cost[currentIndex] + minCost(cost,currentIndex+1,m);
+                  int twoJump= cost[currentIndex] + minCost(cost,currentIndex+2,m);
+        
+                  m[currentKey]= min(oneJump,twoJump);
+        
+                  return m[currentKey];
+		  
+```
+
+
+ 
+### Output
+### The below is the Screenshot of my output
+
+###### Output for cost = [10,15,20]
+
+
+![1](https://user-images.githubusercontent.com/75883328/161399432-35952f0e-9ea2-48f9-93f9-e2124d7a0b0f.png)
+
+
+
+###### Output for cost = [1,100,1,1,1,100,1,1,100,1]
+
+![2](https://user-images.githubusercontent.com/75883328/161399444-22dbea8a-9bda-4a36-96c1-0037079da70d.png)
+
+
+### Time Complexity and Space Complexity
+
+Time Complexity = O(n)
+
+Space Complexity = O(n)
