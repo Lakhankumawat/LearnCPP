@@ -106,6 +106,8 @@ STOP
 
  The value of the Exponential function can be calculated using Taylor Series.
 
+
+## Approach
 Taylor series is … 
 e^x = 1 + x/1! + x^2/2! + x^3/3! + x^4/4!......
 
@@ -142,7 +144,8 @@ As we can see the total number of multiplications is reduced to just 4 from 12.
 So, this will give us O(n) time complexity.
 
 ## Properties
-Time-Complexity->To find this we will determine the total multiplication performed.
+### Time-Complexity
+To find this we will determine the total multiplication performed.
 
 e^x = 1 + x/1! + x^2/2! + x^3/3! + …… + until n terms
 
@@ -156,7 +159,10 @@ and we know sum of n natural numbers = n*(n+1)/2 whose order is n2
 
 Hence, 
 the time complexity if this approach is O(n2)
-Space-Complexity-> The recursive call will take place n+1 times and hence n + 1 activation records will get created at max. That shows the space complexity is O(n).
+
+
+### Space-Complexity
+The recursive call will take place n+1 times and hence n + 1 activation records will get created at max. That shows the space complexity is O(n).
 
 ## Examples
 input-->5,30
