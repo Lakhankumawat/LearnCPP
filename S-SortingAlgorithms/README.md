@@ -33,6 +33,12 @@
        - [Properties](#bucketsortProperties)
        - [Advantages](#bucketsortAdvantages)
        - [Disadvantages](#bucketsortDisadvantages)
+
+  - [Radix Sort] (#Radix-sort)
+      - [Algorithm] (#RadixsortAlgo)
+      - [Properties] (RadixSortProperties)
+      - [Advantages] (#RadixSortadvantages)
+      - [Disadvantages] (#radixsortDisadvantages)
    
 # Sorting Algorithms
 
@@ -364,3 +370,74 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - Can’t apply it to all data types since a suitable bucketing technique is required. Bucket sort’s efficiency is dependent on the distribution of the input values, thus it’s not worth it if your data are closely grouped.In many situations, you might achieve greater performance by using a specialized sorting algorithm like radix sort, counting sort, or burst sort instead of bucket sort.
 
 - Bucket sort’s performance is determined by the number of buckets used, which may need some additional performance adjustment when compared to other algorithms.
+
+### Algorithm
+<a name="#RadixSort algorithm"></a>
+    
+Radix sort is the linear sorting algorithm that is used for integers. The process of radix sort can be understood as a grouping approach.
+Wherein, the algorithm sorts the elements by first grouping the individual digits of the same place value. Then, sort the elements according to their increasing/decreasing order.
+ And the process continues until we find the sorted list.
+To implement Radix Sort in C++:
+
+The Radix sort algorithm works by ordering each digit from least significant to most significant -  
+
+1. Sort the array by least significant digit (1s place) in the given array
+
+2. Then Sort the array according to the next least significant digit (2s place)
+
+3. Finally Sort the array according to the next least significant digit (3s place)
+
+Radix-Sort(A, d)
+       for j = 1 to d do
+            int count[10] = {0};
+            for i = 0 to n do
+                count[key of(A[i]) in pass j]++
+            for k = 1 to 10 do
+                count[k] = count[k] + count[k-1]
+            for i = n-1 downto 0 do
+                result[ count[key of(A[i])] ] = A[j]
+                count[key of(A[i])]--
+            for i=0 to n do
+                A[i] = result[i]
+       end for(j)
+ end func 
+
+
+### Properties
+<a name="#RadixsortProperties"></a>
+
+- Time Complexity: 
+  - `Worst Case Complexity: O(n^2)`
+     - In radix sort, the worst case is when all elements have the same number of digits except one, which has a significantly large number of digits. 
+     -If the number of digits in the largest element equals n, the runtime is O.(n2).
+    
+  - `Best Case Complexity: O(a*n)`
+     - When all elements have the same number of digits, the best-case scenario occurs. O(a(n+b)) is the best-case time complexity. If b equals O(n), the time complexity is O. (a*n).
+     - Or when there is no sorting required, i.e. the array is already sorted.
+
+  - `Average Case Complexity: O(p*(n+d))`
+     - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of Radix sort is θ(nk).
+
+- `Space Complexity: O(n+k)`
+  - Radix sort employs Counting sort, which uses auxiliary arrays of sizes n and k, where n is the number of elements in the input array and k is the largest element among the dth place elements (ones, tens, hundreds, and so on) of the input array. 
+  - Hence, the Radix sort has a space complexity of (n+k).
+
+- `Stability of Radix Sort Algorithm`
+
+  - Radix Sort algorithm is a stable sorting subroutine-based integer sorting algorithm. It is a sorting algorithm that does not use comparisons to sort a collection of integers. It classifies keys based on individual digits with the same significant position and value.
+
+  ### Advantages
+<a name="#RadixsortAdvantages"></a>
+    
+ - When the keys are short its fast, i.e. when the array element range is small.
+ - Used in suffix arrays construction algorithms such as Manber's and the DC3 algorithm.
+ - Radix Sort is a stable sort because it maintains the relative order of elements with equal values.
+    
+### Disadvantages
+<a name="#RadixsortDisadvantages"></a>
+
+ - The Radix Sort algorithm is less flexible than other sorts because it is based on digits or letters. As a result, for each different type of data, it must be rewritten.
+ - Radix sort has a higher constant than other sorting algorithms.
+ - It takes up more space than Quicksort, which is used for in-place sorting.
+ - Radix sort may be slower than other sorting algorithms such as merge sort and Quicksort if the operations are inefficient. These operations include sub-inset lists and delete functions, as well as the process of isolating the desired digits.
+ - Because it is based on digits or letters, the radix sort is less flexible than other sorts. If the data type must be rewritten, so must the Radix sort.
