@@ -102,7 +102,7 @@ STOP
 
 
 
-#[Taylor series by Horner's rule]
+# Taylor series by Horner's rule
 
  The value of the Exponential function can be calculated using Taylor Series.
 
@@ -133,13 +133,15 @@ e^x = 1 + x/1 ( 1 + x/2 + x^2/2*3 + x^3/2*3*4).........
 e^x = 1 + x/1 (1 + x/2 (1 + x/3 + x^2 / 3*4) ).....
 
 e^x = 1 + x/1 (1 + x/2 (1 + x/3 ( 1 + x/4 ) ) ).....
-https://1.bp.blogspot.com/-w8R6uOR0Uck/YIUbI92SBJI/AAAAAAABd-A/syBf_lLdioQ7Wqcpxcdyli5A05IMiduawCLcBGAsYHQ/w640-h488/Taylor%2BSeries%2Busing%2BHorner%2527s%2BRule.JPG
+
+![Screenshot (315)](https://user-images.githubusercontent.com/100334178/162727372-4ccff189-304a-4fad-b6ae-7bbd12881242.png)
+
 
 As we can see the total number of multiplications is reduced to just 4 from 12.
 
 So, this will give us O(n) time complexity.
 
-#[Properties]
+## Properties
 Time-Complexity->To find this we will determine the total multiplication performed.
 
 e^x = 1 + x/1! + x^2/2! + x^3/3! + …… + until n terms
@@ -156,7 +158,7 @@ Hence,
 the time complexity if this approach is O(n2)
 Space-Complexity-> The recursive call will take place n+1 times and hence n + 1 activation records will get created at max. That shows the space complexity is O(n).
 
-#[Examples]
+## Examples
 input-->5,30
 output-->144
 
