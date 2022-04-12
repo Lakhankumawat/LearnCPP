@@ -1,4 +1,5 @@
 # Table of contents:
+- [Counting divisible Substrings](#counting-divisible-substrings)
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
 - [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
@@ -8,6 +9,68 @@
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Symmetric matrix](#symmetric-matrix)
 - [Reversing of Array](#reversing-of-array)
+
+
+# [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
+![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
+Question:<br>
+You are given a string Str of length N. Each character of the string is a base 10 digit.
+
+Your task is to find the total number of substrings of Str such that the number denoted by the string Str[i...j] is divisible by 6. Since that result can be a very large return it is modulo 10^9+7.
+
+Notes:
+* It is given that a number denoted by Str[i..j] can have leading Zeroes.
+
+Input Format
+The first line contains an integer, N, denoting the length of the given string.
+The next line contains a string, Str, denoting the given string.
+
+Constrains
+1 <= N <= 10^5
+1 <= len(Str) <= 10^5
+
+<table>
+    <tr>
+        <td>Sample Input</td>
+        <td>Sample Output</td>
+        <td>Explanation</td>
+    </tr>
+    <tr>
+        <td>3<br>328</td>
+        <td>0</td>
+        <td>No substring is divisible by 6</td>
+    </tr>
+    <tr>
+        <td>3<br>318</td>
+        <td>2</td>
+        <td>"18","318" divisible by 6</td>
+    </tr>
+        <tr>
+        <td>4<br>6151</td>
+        <td>1</td>
+        <td>"6" divisible by 6</td>
+    </tr>
+</table>
+</pre>
+<pre>
+The problem states that there is a string that contains only digits. You have to find the number of subsets that can be divisible by 6.
+</pre>
+
+## Algorithm
+* 1<sup>st</sup> Select an index in the string from begining that has not been selected before as leftmost prefix and initilize count = 0.
+* 2<sup>nd</sup> initilize number as 0.
+* 3<sup>rd</sup> get the digit from the string by int(string[index])-int('0').
+* 4<sup>th</sup> Now update the number by (suming prefix digit)*10 +  current index digits and increment count if number is divisible
+* 5<sup>th</sup> follow step 3<sup>rd</sup> till the end of string.
+* 6<sup>th</sup> continue step 1-4 till all the element of string is not chosen as most significant digit place.
+
+## Complexity
+<pre>
+Time complexity: O(n<sup>2</sup>) 
+Space complexity: O(1) 
+</pre>
+
+
 
 
 # [Best Time to Buy And Sell Stock](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)
