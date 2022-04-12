@@ -34,6 +34,12 @@
        - [Advantages](#bucketsortAdvantages)
        - [Disadvantages](#bucketsortDisadvantages)
    
+   - [Shell Sort](#shell-sort)
+       - [Algorithm](#shellsortAlgo)
+       - [Properties](#shellsortProperties)
+       - [Advantages](#shellsortAdvantages)
+       - [Disadvantages](#shellsortDisadvantages)
+   
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -258,7 +264,7 @@ begin countSort(arr, n)
 
     
 ## Bucket Sort
-<a name="#bucket-sort"></a>
+<a name="bucket-sort"></a>
     
 - Bucket Sort is a sorting algorithm that divides the unsorted array elements into several groups called buckets. Each bucket is then sorted by using any of the suitable sorting algorithms or recursively applying the same bucket algorithm.
 
@@ -275,7 +281,7 @@ begin countSort(arr, n)
 ![Bucket_2](https://user-images.githubusercontent.com/80174214/161367542-0588c6fd-e2a7-4f39-a281-cc801ad48d0f.png)
 
 ### Algorithm
-<a name="#bucketsortAlgo"></a>
+<a name="bucketsortAlgo"></a>
     
 The process of bucket sort can be understood as a scatter-gather approach.
 Here, elements are first scattered into buckets then the elements in each bucket are sorted.
@@ -321,7 +327,7 @@ To implement Bucket Sort in C++:
 <!-- citation: [Here](https://www.programiz.com/dsa/bucket-sort)-->
     
 ### Properties
-<a name="#bucketsortProperties"></a>
+<a name="bucketsortProperties"></a>
 
 - Time Complexity: 
   - `Worst Case Complexity: O(n^2)`
@@ -348,7 +354,7 @@ The complexity becomes even worse when the elements are in reverse order. If ins
     
 
 ### Advantages
-<a name="#bucketsortAdvantages"></a>
+<a name="bucketsortAdvantages"></a>
     
 - Bucket sort allows each bucket to be processed independently. As a result, you’ll frequently need to sort much smaller arrays as a secondary step after sorting the main array.
 
@@ -357,10 +363,64 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - Bucket sort also has the advantage of being able to be used as an external sorting algorithm. If you need to sort a list that is too large to fit in memory, you may stream it through RAM, split the contents into buckets saved in external files, and then sort each file separately in RAM.
     
 ### Disadvantages
-<a name="#bucketsortDisadvantages"></a>
+<a name="bucketsortDisadvantages"></a>
     
 - The problem is that if the buckets are distributed incorrectly, you may wind up spending a lot of extra effort for no or very little gain. As a result, bucket sort works best when the data is more or less evenly distributed, or when there is a smart technique to pick the buckets given a fast set of heuristics based on the input array.
 
 - Can’t apply it to all data types since a suitable bucketing technique is required. Bucket sort’s efficiency is dependent on the distribution of the input values, thus it’s not worth it if your data are closely grouped.In many situations, you might achieve greater performance by using a specialized sorting algorithm like radix sort, counting sort, or burst sort instead of bucket sort.
 
 - Bucket sort’s performance is determined by the number of buckets used, which may need some additional performance adjustment when compared to other algorithms.
+
+    
+<a name="#shell-sort"></a>
+    
+ ## Shell Sort
+
+- Shell sort is a special case of insertion sort. It was designed to overcome the drawbacks of insertion sort. Thus, it is more efficient than insertion sort.
+- Also known as Shell's method, an in-place comparison sort. It can be seen as either a generalization of sorting by exchange or sorting by insertion. 
+- The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared
+- Sorting array by breaking it down into a number of smaller subarrays.
+- Not necessary lists of contiguous elements.
+- Instead, shell sort algorithm uses increment gap, to create the array of elements that are “gap” elements apart.
+<!-- image to help better explain the concept -->
+![ShellSort](https://user-images.githubusercontent.com/66736704/156896138-2758e5cc-69c4-4021-a572-839f119b3f71.png)
+
+<!-- For extra information : [Here](https://www.programiz.com/dsa/shell-sort#:~:text=Shell%20sort%20is%20a%20generalized,based%20on%20the%20sequence%20used.)  -->
+    
+ <a name="shellsortAlgo"></a>
+    
+### Algorithm
+
+```
+shellSort(array, size)
+  for interval i <- size/2n down to 1
+    for each interval "i" in array
+        sort all the elements at interval "i"
+end shellSort   
+                    
+```
+
+### Properties
+<a name="shellsortProperties"></a>
+- Time Complexity:
+    - Best Complexity: O(nlog n)
+    - Worst Complexity: O(n2)
+    - Average Complexity: O(nlog n)
+    
+- Space Complexity: O(1)
+- Stability: No
+
+ <a name="shellsortAdvantages"></a>   
+    
+### Advantages
+    
+- Shell sort algorithm is only efficient for finite number of elements in an array.
+- Shell sort algorithm is 5.32 x faster than bubble sort algorithm.
+    
+
+ <a name="shellsortDisadvantages"></a>
+    
+### Disadvantages
+ 
+- Shell sort algorithm is complex in structure and bit more difficult to understand.
+- Shell sort algorithm is significantly slower than the merge sort, quick sort and heap sort algorithms.
