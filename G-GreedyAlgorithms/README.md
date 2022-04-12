@@ -55,8 +55,16 @@
 
 - Huffman coding is a method of data compression that is independent of its data type. In which more common event is represented by shorter code and less common event is represent longer code.
 <!-- image to help better explain the concept -->
-![Huffman-Coding](https://image2.slideserve.com/5123904/huffman-coding-n.jpg)
+![Huffman-Coding](https://ds055uzetaobb.cloudfront.net/image_optimizer/7d429535d4035498e71eb0b5402a1c301ecfa131.jpg)
+Huffman coding :
+A : 11
+B : 10
+C : 01
+D : 00
 
+Huffman Coding have two main steps -
+1. Creating a huffman tree from input characters.
+2. Huffman tree traversal and assigning codes to characters.
 
 ### Huffman Coding Algorithm
 
