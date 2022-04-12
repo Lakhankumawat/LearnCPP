@@ -68,3 +68,60 @@ end reverseQueueWithRecursion
 
 - Time Complexity : O(n)
 - Space Complexity : O(n) (As recursion uses stack concept)
+
+
+## 2.Implementation of Queue using Array
+
+Implementation of Queue using Array performing different operations such as insertion, deletion and display of elements in a queue.
+
+### Approach
+
+1. Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
+2. There are 3 main operations.
+- Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition. 
+- Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition. 
+- Display: All the elements of the queue are displayed, starting from the front index to the rear.
+
+<!-- image to help better explain the concept -->
+
+![Queue](https://www.tutorialandexample.com/wp-content/uploads/2020/05/Queue-in-DS-1.jpg)
+
+### Pseudo Code
+1. For insertion
+```
+STEP 1: IF REAR == N-1
+   Return OVERFLOW
+   Goto STEP 3
+
+STEP 2: IF REAR != N-1
+   Set ARR[REAR] = INTEGER
+   INCREMENT REAR BY 1
+   {END OF LOOP}
+
+STEP 3: EXIT LOOP
+```
+2. For deletion
+```
+STEP 1: IF (FRONT==0 AND REAR==-1) OR FRONT==REAR+1
+        Return UNDERFLOW
+        Goto STEP 2
+        ELSE
+        Return ARR[FRONT]
+        INCREMENT FRONT BY 1
+
+STEP 2: EXIT  
+```
+3. For display
+```
+for i from front to rear
+    print array[i]
+
+```
+### Properties
+
+1. Time Complexity : 
+- Enqueue: O(1) time
+- Dequeue: O(1) time
+-  Display: O(N) time
+
+2. Space Complexity : O(1)
