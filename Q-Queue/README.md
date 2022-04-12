@@ -70,17 +70,24 @@ end reverseQueueWithRecursion
 - Space Complexity : O(n) (As recursion uses stack concept)
 
 
-## 2.Implementation of Queue using Array
+## 2. Implementation of Queue using Array
 
-Implementation of Queue using Array performing different operations such as insertion, deletion and display of elements in a queue.
+### Problem Statement
+Implementation of Queue using Array and performing different operations such as insertion, deletion and display of elements in a queue.
+
+### Features
+
+1. Queue is a linear data structure which has two ends, one for insertion of elements and other for deletion of elements.
+2. The first end is called ‘Rear’ and the later is called ‘Front’.
+3. Elements are inserted from Rear end and deleted from Front end.
+4. Queues are called First In First Out (FIFO) list, since the first element in a queue will be the first element out of the queue.
 
 ### Approach
 
-1. Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
-2. There are 3 main operations.
-- Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition. 
-- Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition. 
-- Display: All the elements of the queue are displayed, starting from the front index to the rear.
+- There are 3 main operations.
+1. Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition. 
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition. 
+3. Display: All the elements of the queue are displayed, starting from the front index to the rear.
 
 <!-- image to help better explain the concept -->
 
@@ -125,3 +132,8 @@ for i from front to rear
 -  Display: O(N) time
 
 2. Space Complexity : O(1)
+
+### Disadvantages of implementing queue using array
+
+- Memory wastage : The space of the array, which is used to store queue elements, can never be reused to store the elements of that queue because the elements can only be inserted at front end and the value of front might be so high so that, all the space before that, can never be filled.
+
