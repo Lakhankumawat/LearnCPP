@@ -6,6 +6,7 @@
 
 # Juggler Sequence :
 Juggler Sequence is a series of integer number in which the first term starts with a positive integer number a and the remaining terms are generated from the immediate previous term using the below recurrence relation : 
+
 ![quicklatex com-0d2326af0f44e3f68f466125175e15e2_l3](https://user-images.githubusercontent.com/31670657/161595243-073b5b74-a6d2-4370-b59c-af5cd96cd77f.svg)
 
 ### Examples
