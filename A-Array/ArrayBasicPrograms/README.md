@@ -11,6 +11,7 @@
 - [SymmetricMatrix](https://github.com/prachi0011/LearnCPP/tree/main/A-Array/ArrayBasicPrograms/symmetricMatrix.cpp)
 
 # InputArray
+
 ### **Question: Program to input an array using command line and traverse array elements**
 Algorithm:
 - 1. Initialize variable n representing size of array.
