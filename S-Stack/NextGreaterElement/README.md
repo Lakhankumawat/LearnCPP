@@ -1,3 +1,12 @@
+<!-- Table of content -->
+# Table of content
+-[ Problem Statement: Next Greater Element. ](#nge)
+   - [Alogrithm.](#algo)
+   - [Approach.](#approach)
+   - [Time Complexity](#time)
+   - [Auxiliary Space](#space)
+   - [Test case](#testcase)
+<a name ="nge"></a>
 #  Next Greater Element Using Stack
 
 Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x is the first greater element on the right side of x in the array. Elements for which no greater element exist, consider the next greater element as -1. 
@@ -10,7 +19,7 @@ Output:
 19-->-1
 3-->-1
 ```
-
+<a name ="algo"></a>
 ## Algorithim
 ```
 Step 1: Given array and other array to store the index of the next greater element (nge[]) 
@@ -27,10 +36,21 @@ Step 5: printing the result
         * print array[i] and array[nge[i]]
         * If nge[i] is equal to -1 print -1
 ```
+<a name ="approach"></a>
+## Approach
+![NextGreaterElement](https://user-images.githubusercontent.com/84399701/163118470-25118e13-5087-4b2a-94c3-d3f7e5b760e3.png)
 
-**Time Complexity:** O(n)  
+<a name ="time"></a>
+**Time Complexity:** O(n)
+
+
+
+
+
+<a name ="space"></a>
 **Auxiliary Space:** O(n) for stack.
 
+<a name ="testcase"></a>
 ### Test Case
 
 ![output](https://user-images.githubusercontent.com/84399701/160231076-3516027d-4b94-4548-9a48-26971f9bd8d8.png)
