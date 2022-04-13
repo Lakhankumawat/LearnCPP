@@ -40,3 +40,8 @@ Source vertex = 0
               b.  Insert v into the pq (Even if v is already there) <br>
 
      5. Loop through the dist[] array to print the shortest paths from source to all the vertices.
+     
+  
+# Output for the given problem
+
+![image](https://user-images.githubusercontent.com/53929423/163178809-b85f608a-6528-4b09-bb87-b8d1d1d4a5b4.png)
