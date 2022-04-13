@@ -68,3 +68,72 @@ end reverseQueueWithRecursion
 
 - Time Complexity : O(n)
 - Space Complexity : O(n) (As recursion uses stack concept)
+
+
+## 2. Implementation of Queue using Array
+
+### Problem Statement
+Implementation of Queue using Array and performing different operations such as insertion, deletion and display of elements in a queue.
+
+### Features
+
+1. Queue is a linear data structure which has two ends, one for insertion of elements and other for deletion of elements.
+2. The first end is called ‘Rear’ and the later is called ‘Front’.
+3. Elements are inserted from Rear end and deleted from Front end.
+4. Queues are called First In First Out (FIFO) list, since the first element in a queue will be the first element out of the queue.
+
+### Approach
+
+- There are 3 main operations.
+1. Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition. 
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition. 
+3. Display: All the elements of the queue are displayed, starting from the front index to the rear.
+
+<!-- image to help better explain the concept -->
+
+![Queue](https://www.tutorialandexample.com/wp-content/uploads/2020/05/Queue-in-DS-1.jpg)
+
+### Pseudo Code
+1. For insertion
+```
+STEP 1: IF REAR == N-1
+   Return OVERFLOW
+   Goto STEP 3
+
+STEP 2: IF REAR != N-1
+   Set ARR[REAR] = INTEGER
+   INCREMENT REAR BY 1
+   {END OF LOOP}
+
+STEP 3: EXIT LOOP
+```
+2. For deletion
+```
+STEP 1: IF (FRONT==0 AND REAR==-1) OR FRONT==REAR+1
+        Return UNDERFLOW
+        Goto STEP 2
+        ELSE
+        Return ARR[FRONT]
+        INCREMENT FRONT BY 1
+
+STEP 2: EXIT  
+```
+3. For display
+```
+for i from front to rear
+    print array[i]
+
+```
+### Properties
+
+1. Time Complexity : 
+- Enqueue: O(1) time
+- Dequeue: O(1) time
+-  Display: O(N) time
+
+2. Space Complexity : O(1)
+
+### Disadvantages of implementing queue using array
+
+- Memory wastage : The space of the array, which is used to store queue elements, can never be reused to store the elements of that queue because the elements can only be inserted at front end and the value of front might be so high so that, all the space before that, can never be filled.
+
