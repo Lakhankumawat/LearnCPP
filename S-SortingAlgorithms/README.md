@@ -15,6 +15,11 @@
        - [Properties](#insertionSortproperties)
        - [Advantages](#advantagesofinsertionSort)
        - [Disadvantage](#disadvantageofinsertionSort)
+  - [Quick Sort](#quick-sort)
+       -  [Algorithm](#algorithmofquickSort)
+       - [Properties](#quickSortproperties)
+       - [Advantages](#advantagesofquickSort)
+       - [Disadvantage](#disadvantageofquickSort)
 
   - [Merge Sort](#merge-sort)
        -  [Algorithm](#algorithmofmergeSort)
@@ -27,6 +32,8 @@
        - [Properties](#countingSortproperties)
        - [Advantages](#advantagesofcountingSort)
        - [Disadvantage](#disadvantageofcountingSort)
+
+
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -142,10 +149,97 @@ end BubbleSort
 
 - Insertion sort is inefficient against more extensive data sets.
 
-
+---
 ## Quick Sort
+    
+Quicksort is a divide and conquer algorithm. Select a random pivot, put it in its correct position, and sort the left and right part recursively. 
+There are many different versions of quickSort that pick pivot in different ways: 
+1.	Always pick first element as pivot.
+2.	Always pick last element as pivot (implemented)
+3.	Pick a random element as pivot.
+4.	Pick median as pivot.
+
+Technically, quick sort follows the below steps: \
+Step 1 − Make any element as pivot \
+Step 2 − Partition the array on the basis of pivot \
+Step 3 − Apply quick sort on left partition recursively \
+Step 4 − Apply quick sort on right partition recursively 
+
+### Example:
+![image](https://user-images.githubusercontent.com/62667818/161125194-3613bc6f-5e94-44ed-aa96-a36e0514957a.png)
+
+<a name="algorithmofquickSort"></a>
+### Algorithm:
+```
+/**
+* The main function that implements quick sort.
+* @Parameters: array, starting index and ending index
+*/
+quickSort(arr[], start, end)
+{
+    if (start < end)
+    {
+        // pivot_index is partitioning index, arr[pivot_index] is now at correct place in sorted array
+        pivot_index = partition(arr, start, end);
+
+        quickSort(arr, start, pivot_index - 1);  // Before pivot_index
+        quickSort(arr, pivot_index + 1, end); // After pivot_index
+    }
+}
+```
 
 
+```
+/**
+* The function selects the last element as pivot element, places that pivot element correctly in the array in such a way that 
+  all the elements to the left of the pivot are lesser than the pivot and all the elements to the right of pivot are greater than it.
+* @Parameters: array, starting index and ending index
+* @Returns: index of pivot element after placing it correctly in sorted array
+*/
+
+partition (arr[], start, end)
+{
+    // pivot - Element at right most position
+    pivot = arr[end];  
+    i = (start - 1);  // Index of smaller element
+    for (j = start; j <= end-1; j++)
+    {
+        // If current element is smaller than the pivot, swap the element with pivot
+        if (arr[j] < pivot)
+        {
+            i++;    // increment index of smaller element
+            swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i + 1], arr[end]);
+    return (i + 1);
+}
+```
+ <a name="quickSortproperties"></a>                          
+### Properties
+- Time Complexities: 
+  - **Best Case: O(n logn)**, the best case occurs when the partition process always picks the middle element as pivot. 
+  - **Average Case: O(n logn)**, it occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. 
+  - **Worst Case: O(n^2)**, the worst case occurs when the partition process always picks greatest or smallest element as pivot. 
+
+- Space Complexity: \
+  The space complexity for quicksort is **O(log n)**
+    
+- Stable: No
+- InPlace : Yes
+
+   
+<a name="advantagesofquickSort"></a>
+### Advantages
+ - Fast and efficient
+ - On the average it runs very fast, even faster than Merge Sort.
+    
+    
+ <a name="disadvantageofquickSort"></a>
+### Disadvantage
+ - Its running time can differ depending on the contents of the array
+    
+---
 
 ## Merge Sort
 
@@ -248,3 +342,6 @@ begin countSort(arr, n)
 ### Disadvantage
 
 - Works for restricted inputs only for a certain range and takes extra space.
+
+    
+    
