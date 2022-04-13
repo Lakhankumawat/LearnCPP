@@ -41,6 +41,11 @@ Source vertex = 0
 
      5. Loop through the dist[] array to print the shortest paths from source to all the vertices.
      
+     
+# Complexity 
+
+    Time Complexity for the implementation is O(V^2). 
+    If the input graph is represented using adjacency list, it can be reduced to O(E log V) with the help of a binary heap.
   
 # Output for the given problem
 
