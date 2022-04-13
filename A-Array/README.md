@@ -1,5 +1,5 @@
-
 # Table of contents:
+- [Counting divisible Substrings](#counting-divisible-substrings)
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
 - [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
@@ -7,6 +7,68 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
+- [Symmetric matrix](#symmetric-matrix)
+
+
+# [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
+![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
+Question:<br>
+You are given a string Str of length N. Each character of the string is a base 10 digit.
+
+Your task is to find the total number of substrings of Str such that the number denoted by the string Str[i...j] is divisible by 6. Since that result can be a very large return it is modulo 10^9+7.
+
+Notes:
+* It is given that a number denoted by Str[i..j] can have leading Zeroes.
+
+Input Format
+The first line contains an integer, N, denoting the length of the given string.
+The next line contains a string, Str, denoting the given string.
+
+Constrains
+1 <= N <= 10^5
+1 <= len(Str) <= 10^5
+
+<table>
+    <tr>
+        <td>Sample Input</td>
+        <td>Sample Output</td>
+        <td>Explanation</td>
+    </tr>
+    <tr>
+        <td>3<br>328</td>
+        <td>0</td>
+        <td>No substring is divisible by 6</td>
+    </tr>
+    <tr>
+        <td>3<br>318</td>
+        <td>2</td>
+        <td>"18","318" divisible by 6</td>
+    </tr>
+        <tr>
+        <td>4<br>6151</td>
+        <td>1</td>
+        <td>"6" divisible by 6</td>
+    </tr>
+</table>
+</pre>
+<pre>
+The problem states that there is a string that contains only digits. You have to find the number of subsets that can be divisible by 6.
+</pre>
+
+## Algorithm
+* 1<sup>st</sup> Select an index in the string from begining that has not been selected before as leftmost prefix and initilize count = 0.
+* 2<sup>nd</sup> initilize number as 0.
+* 3<sup>rd</sup> get the digit from the string by int(string[index])-int('0').
+* 4<sup>th</sup> Now update the number by (suming prefix digit)*10 +  current index digits and increment count if number is divisible
+* 5<sup>th</sup> follow step 3<sup>rd</sup> till the end of string.
+* 6<sup>th</sup> continue step 1-4 till all the element of string is not chosen as most significant digit place.
+
+## Complexity
+<pre>
+Time complexity: O(n<sup>2</sup>) 
+Space complexity: O(1) 
+</pre>
+
 
 
 
@@ -142,7 +204,7 @@ return max_so_far
 **Time complexity:** `O(n)`, Where n is the size of the array. \
 **Space complexity:** `O(1)` 
 
-# Trace and Normal of Matrix
+# Trace and Normal of Matrix:
   - [Trace](#trace)
   - [Normal](#normal)
   - [Properties_of_trace_matrix](#properties-of-trace-matrix)
@@ -199,6 +261,53 @@ trace = 2+4+4  so, trace of matrix = 10
 Time complexity of trace of a matrix is n^2.
 Time complexity of normal of a matrix is n^2.
 ```
+
+# Symmetric matrix:
+- [Symmetric matrix](#symmetric-matrix)
+- [Pseudo Code of Symmetric Matrix](#pseudo-code-of-Symmetric-Matrix)
+- [Some properties of Symmetric Matrix](#some-properties-of-Symmetric-Matrix)
+- [Example of Symmetric Matrix](#example-of-Symmetric-Matrix)
+- [Time complexity/space complexity of Symmetric Matrix](#time-complexity/space-complexity-of-Symmetric-Matrix)
+
+## Problem statement:
+To check weather a matrix is symmetric or not 
+
+## Symmetric Matrix
+
+In linear algebra, a symmetric matrix is defined as the square matrix that is equal to its transpose matrix. The transpose matrix of any given matrix A can be given as A^T. A symmetric matrix A therefore satisfies the condition, A = A^T. 
+
+![image](https://user-images.githubusercontent.com/100208233/161611874-c8883351-7d07-494b-aad8-8f52bbe4c2e6.png)
+
+## Pseudo Code of Symmetric Matrix
+
+1. Input from the user the order r,c of the matrix we wish to check
+2. Input a matrix of size rxc from the user with the help of nested for loops and store it in a 2-D array of size rxc.
+3. Set a variable flag = 0.
+3. Using a nested for loop check if a[i][j] = a[j][i] , if not, set flag = 1 and break out of the loops.
+4. Out of the loop check if flag = 0 then its symmetric matrix.
+5. In the else condition, if flag = 1 then its not a symmetric matrix.
+
+![image](https://user-images.githubusercontent.com/100208233/162382134-ae77a23c-68f4-4a79-8fb5-7ccd859d97f4.png)
+
+## Some properties of Symmetric Matrix
+
+1. The sum and difference of two symmetric matrices give the resultant as a symmetric matrix.
+2. The property stated above is not always true for the product: Given the symmetric matrices A and B, then AB is symmetric if and only if A and B follow commutative property of multiplication, i.e., if AB = BA.
+3. For integer n, if A is symmetric, ⇒ A^n is symmetric.
+4. If A^-1 exists, it will be symmetric if and only if A is symmetric.
+
+
+## Example of Symmetric Matrix
+
+
+![image](https://user-images.githubusercontent.com/100208233/162580118-952fbd6c-064d-447d-aad8-9729a09dde40.png)
+
+
+## Time complexity/space complexity of Symmetric Matrix
+
+Time Complexity : O(N x N) 
+space complexity : O(N x N)
+
 
 
 # Sort an Array of 0s, 1s and 2s
@@ -428,4 +537,3 @@ For every k size window store every element if negative in deque from rear end u
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
  
-
