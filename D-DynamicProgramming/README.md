@@ -14,6 +14,7 @@
 
 - [Unique Paths II](#unique-paths-ii)
 
+- [Minimum Falling Path Sum](#minimum-falling-path-sum)
 
 
 # Dynamic Programming
@@ -866,3 +867,110 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 
 #### Space Complexity = O(m * n)
+
+
+# [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
+
+- [Problem Statement of Minimum Falling Path Sum](#problem-statement-of-minimum-falling-path-sum)
+
+- [Examples of Minimum Falling Path Sum](#examples-of-minimum-falling-path-sum)
+
+- [Explanation of Minimum Falling Path Sum](#explanation-of-minimum-falling-path-sum)
+
+- [Pseudo Code of Minimum Falling Path Sum](#pseudo-code-of-minimum-falling-path-sum)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/MinimumFallingPathSum/D-DynamicProgramming/MinimumFallingPathSum.cpp)
+
+- [Time Complexity and Space Complexity of Minimum Falling Path Sum](#time-complexity-and-space-complexity-of-minimum-falling-path-sum)
+
+- [Output of Minimum Falling Path Sum](#output-of-minimum-falling-path-sum)
+
+
+### Problem Statement of Minimum Falling Path Sum
+
+Given an n x n array of integers matrix, return the minimum sum of any falling path through matrix.
+
+A falling path starts at any element in the first row and chooses the element in the next row that is either directly below or diagonally left/right. Specifically, the next element from position (row, col) will be (row + 1, col - 1), (row + 1, col), or (row + 1, col + 1).
+
+
+### Examples of Minimum Falling Path Sum
+
+#### Example 1
+
+![image](https://user-images.githubusercontent.com/75883328/163238977-cc4fff48-4640-41f4-9877-7da9ac5fc4e7.png)
+
+#### Input: matrix = [[2,1,3],[6,5,4],[7,8,9]]
+#### Output: 13
+
+
+#### Example 2
+
+![image](https://user-images.githubusercontent.com/75883328/163239115-52cb1c59-4463-444b-918b-f393b6239bf1.png)
+
+#### Input: matrix = [[-19,57],[-40,-5]]
+#### Output: -59
+
+
+### Explanation of Minimum Falling Path Sum
+
+- we are supposed to find the minimum sum of the falling path.
+- since a falling path starts at any element in the first row ,so we'll run a for loop upto the number of columns.
+- now at any cell we are having three options :- 1.move directly below ,2.move  diagonally left ,3. move diagonally right
+- now explore all these three options to get a falling path with minimum sum.
+- if we are on grid[i][j] ,then  
+
+               - on moving directly below we'll reach gird[i+1][j] .
+               
+               - on moving move diagonally left we'll reach gird[i+1][j-1] .
+               
+               - on moving move diagonally right we'll reach gird[i+1][j+1].
+
+- if at any point i<0 or j<0 return infinity ,because its an invalid path.
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+- So we can store the values in a vector and will use those values from the vector only instead of making recursive calls for it.
+
+
+
+
+### Pseudo Code of Minimum Falling Path Sum
+
+
+        int minSum(int currRow,int currCol,int m,int n,vector<vector<int>>&matrix, vector<vector<int>>&v)
+
+               if(currCol < 0 || currCol >= n) return 100001; 
+               if(currRow == m-1) return matrix[currRow][currCol];
+        
+               if(v[currRow][currCol]!=-1) return v[currRow][currCol];
+
+               int leftD = matrix[currRow][currCol] + minSum(currRow+1,currCol-1,m,n,matrix,v); 
+               int down = matrix[currRow][currCol] + minSum(currRow+1,currCol,m,n,matrix,v);    
+               int rightD = matrix[currRow][currCol] + minSum(currRow+1,currCol+1,m,n,matrix,v); 
+       
+               v[currRow][currCol] = min(down,min(leftD,rightD));
+               return v[currRow][currCol];
+
+
+
+
+### Time Complexity and Space Complexity of Minimum Falling Path Sum
+
+
+#### Time Complexity = O(n^2)
+
+#### Space Complexity = O(n^2)
+
+
+### Output of Minimum Falling Path Sum
+
+#### Output for matrix = [[2,1,3],[6,5,4],[7,8,9]]
+
+![image](https://user-images.githubusercontent.com/75883328/163241550-9efc2764-6101-4439-b2f9-aa22768b989a.png)
+
+
+#### Output for matrix = [[-19,57],[-40,-5]]
+
+![image](https://user-images.githubusercontent.com/75883328/163241760-ba04bc09-8e7b-40a6-b974-e0031f64cf79.png)
