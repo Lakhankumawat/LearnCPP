@@ -754,18 +754,6 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 #### Space Complexity = O(m * n)
 
 
-### Output of Unique Paths
-
-###### Output for  m = 3, n = 7
-
-![image](https://user-images.githubusercontent.com/75883328/161979235-37d30429-4f84-4533-88b8-8f82eff40fc8.png)
-
-
-###### Output for m = 3, n = 2
-
-![image](https://user-images.githubusercontent.com/75883328/161979330-a98223f7-4aff-411a-8ee4-dc099ea89768.png)
-
-
 
 # [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
 
@@ -878,22 +866,3 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 
 #### Space Complexity = O(m * n)
-
-
-
-### Output of Unique Paths II
-
-
-##### Output for  obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
-
-
-![image](https://user-images.githubusercontent.com/75883328/162788176-a55a8df3-af20-498b-82ca-e191ce04445d.png)
-
-
-
-
-
-##### Output for obstacleGrid = [[0,1],[0,0]]
-
-
-![image](https://user-images.githubusercontent.com/75883328/162788334-1da70398-accb-46e1-838e-9ef60c2f3b27.png)
