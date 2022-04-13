@@ -12,20 +12,16 @@
 
 # Segmented-Sieve
 
-
-_Sieve of Eratosthenes_ is an algorithm for finding all the prime numbers in a segment [1:n] using O(n loglogn) operations.
+Sieve of Eratosthenes is an algorithm for finding all the prime numbers in a segment [1:n] using O(n loglogn) operations.
 
 ![Intro](https://media.geeksforgeeks.org/wp-content/cdn-uploads/SieveofEratosthenes3.jpg)
 
 
 ## Description
 
-* The basic idea of a _segmented sieve_ is to choose the sieving primes less than the square root of n, choose a reasonably large segment size that nevertheless fits in memory, and then sieve each of the segments in turn, starting with the smallest. 
+* The basic idea of a segmented sieve is to choose the sieving primes less than the square root of n, choose a reasonably large segment size that nevertheless fits in memory, and then sieve each of the segments in turn, starting with the smallest. 
 * At the first segment, the smallest multiple of each sieving prime that is within the segment is calculated, then multiples of the sieving prime are marked as composite in the normal way; when all the sieving primes have been used, the remaining unmarked numbers in the segment are prime. 
 *Then, for the next segment, for each sieving prime you already know the first multiple in the current segment (it was the multiple that ended the sieving for that prime in the prior segment), so you sieve on each sieving prime, and so on until you are finished.
-
-
-
 
 
 ## Implementations
@@ -42,35 +38,29 @@ Iterate through all primes found in step 1. For every prime, mark its multiples 
 
 ##### Note
 
-*The time complexity (or a number of operations) by Segmented Sieve is the same as Simple Sieve.*
-
-
-
-
-
-
-
+The time complexity (or a number of operations) by Segmented Sieve is the same as Simple Sieve.
 
 
 ### Problem Statement
 
 In this problem you have to print all primes from given interval.
-_Input_
+Input
 
 >t - the number of test cases, then t lines follows. [t <= 150]
 On each line are written two integers L and U separated by a blank. L - lower bound of 
 interval, U - upper bound of interval. [2 <= L < U <= 2147483647] [U-L <= 1000000].
 
-_Output_
+Output
+
 >For each test case output must contain all primes from interval [L; U] in increasing order.
 
 
-_Sample Input_:
+Sample Input:
 2
 2 10
 3 7
 
-_Sample Output_:
+Sample Output:
 2
 3
 5
@@ -78,7 +68,6 @@ _Sample Output_:
 3
 5
 7 
-
 
 ### Algorithm
 
@@ -100,26 +89,17 @@ An Efficient Approach is to solve the problem using offline queries and Fenwick 
 * Hence if we reach a cell and it is not marked, then it isn't divisible by any smaller prime number and therefore has to be prime.
 
 
- 
-
-
-
-
 ### Time Complexity
 
-*  The *time complexity* of calculating all primes below n in the random access machine model is _O(n log log n)_ operations, a direct consequence of the fact that the prime harmonic series asymptotically approaches log log n. 
+*  The time complexity of calculating all primes below n in the random access machine model is O(n log log n) operations, a direct consequence of the fact that the prime harmonic series asymptotically approaches log log n. 
 
-* It has an exponential time complexity with regard to input size, though, which makes it a pseudo-polynomial algorithm. The basic algorithm requires _O(n)_ of memory.
+* It has an exponential time complexity with regard to input size, though, which makes it a pseudo-polynomial algorithm. The basic algorithm requires O(n) of memory.
 
 * The bit complexity of the algorithm is O(n (log n)(log log n)) bit operations with a memory requirement of O(n)
-
-
-
-
 
 ## Advantages
 
 1) It has advantages for large ‘n’ as it has better locality of reference thus allowing better caching by the CPU and also requires less memory space.
 ## Disadvantages
 
-1) It does slow down as the size increases.
+1) It does slow down as the size increases.S
