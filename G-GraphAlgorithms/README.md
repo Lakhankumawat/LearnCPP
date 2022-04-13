@@ -4,11 +4,14 @@ Objective : We will see the implementation of the Dijkstra algorithm using the p
 
 Let's take an example, A graph having weight on the edges is given as below:
 
+![try](https://user-images.githubusercontent.com/53929423/163178252-bfcdb6f7-4eba-4bf6-893f-c97d489eb485.PNG)
 
 
 Let us consider a source vertex 0, we have to find the shortest path from the source vertex to all the vertices in the graph.
 
 Source vertex = 0
+
+![tr](https://user-images.githubusercontent.com/53929423/163178272-cf69d282-564d-48bc-ad34-de361bc2ab3a.PNG)
 
 
 # Algorithm 
