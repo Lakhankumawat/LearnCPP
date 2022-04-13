@@ -44,7 +44,7 @@ Source vertex = 0
      
 # Complexity 
 
-    Time Complexity for the implementation is O(V^2). 
+    Time Complexity = O(V^2). 
     If the input graph is represented using adjacency list, it can be reduced to O(E log V) with the help of a binary heap.
   
 # Output for the given problem
