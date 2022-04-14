@@ -9,6 +9,7 @@
 
 - [Climbing Stairs](#climbing-stairs)
 
+
 # Dynamic Programming
   - [Recursive vs Dynamic Programming Approach](#recursive-vs-dynamic-programming-approach)
   - [Properties](#properties)
@@ -720,7 +721,7 @@ Space Complexity = O(n)
 
 - [Time Complexity and Space Complexity of Unique Paths](#time-complexity-and-space-complexity-of-unique-paths)
 
--  [Output of Unique Paths](#output-of-unique-paths)
+- [Output of Unique Paths](#output-of-unique-paths)
 
 
 ### Problem Statement of Unique Paths
@@ -773,6 +774,114 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 
 - if at any point i<0 or j<0 then, return 0 because its an invalid path.
 
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+- So we can store the values in a vector and will use those values from the vector only instead of making recursive calls for it.
+
+### Pseudo code of Unique Paths
+
+```
+
+
+         int totalPaths(int currentRow,int currentCol,int targetRow,int targetCol,vector<vector<int>>&v)
+              if(currentRow==targetRow && currentCol==targetCol) return 1;
+              if(currentRow<0  currentCol<0 ||currentRow>targetRow ||currentCol>targetCol) return 0;
+        
+              if(v[currentRow][currentCol]!=-1) return v[currentRow][currentCol];
+       
+              int right = totalPaths(currentRow,currentCol+1,targetRow,targetCol,v); 
+              int down = totalPaths(currentRow+1,currentCol,targetRow,targetCol,v); 
+        
+              v[currentRow][currentCol] = (right+down); 
+              return v[currentRow][currentCol];
+         
+ ```
+ 
+ 
+         
+### Time Complexity and Space Complexity of Unique Paths
+
+#### Time Complexity = O(m * n)
+
+#### Space Complexity = O(m * n)
+
+
+
+# [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+
+- [Problem Statement of Unique Paths II](#problem-statement-of-unique-paths-ii)
+
+- [Examples of Unique Paths II](#examples-of-unique-paths-ii)
+
+- [Explanation of Unique Paths II](#explanation-of-unique-paths-ii)
+
+- [Pseudo Code of Unique Paths II](#pseudo-code-of-unique-paths-ii)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/UniquePaths2/D-DynamicProgramming/UniquePaths2.cpp)
+
+- [Time Complexity and Space Complexity of Unique Paths II](#time-complexity-and-space-complexity-of-unique-paths-ii)
+
+-  [Output of Unique Paths II](#output-of-unique-paths-ii)
+
+
+### Problem Statement of Unique Paths II
+
+You are given an m x n integer array grid. There is a robot initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m-1][n-1]). The robot can only move either down or right at any point in time.
+
+An obstacle and space are marked as 1 or 0 respectively in grid. A path that the robot takes cannot include any square that is an obstacle.
+
+Return the number of possible unique paths that the robot can take to reach the bottom-right corner.
+
+
+### Examples of Unique Paths II
+
+
+![image](https://user-images.githubusercontent.com/75883328/162787851-8fc367a8-3631-4a80-9fe1-2cba166b2a26.png)
+
+
+
+#### Example 1:
+
+
+
+Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+
+Output: 2
+
+Explanation: There is one obstacle in the middle of the 3x3 grid above.
+There are two ways to reach the bottom-right corner:
+1. Right -> Right -> Down -> Down
+2. Down -> Down -> Right -> Right
+
+
+
+#### Example 2:
+
+![image](https://user-images.githubusercontent.com/75883328/162787892-b1377a99-0a02-4e6a-9631-859ccd019004.png)
+
+
+
+Input: obstacleGrid = [[0,1],[0,0]]
+
+Output: 1
+
+
+
+### Explanation of Unique Paths II
+
+
+- we have to return the number of possible unique paths that the robot can take to reach the bottom-right corner (i.e., grid[m - 1][n - 1]) from top-left corner (i.e., grid[0][0]) provided that a path that the robot takes cannot include any square that is an obstacle. 
+
+- So from any cell of the grid we are having 2 options :-  1.either move down or 2. move right at any point in time.
+
+- if we'll move down we'll reach grid[i+1][j] and on moving right we'll reach gird[i][j+1].
+
+- if at any point i<0 or j<0 or grid[i][j]=1,then, return 0 because its an invalid path.
+
+- if we'll reach grid[m-1][n-1] then. return 1 because its a valid path.
+
 
 This recursive code will give us a TLE.So, we need to optimize this.
 
@@ -781,39 +890,31 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 - So we can store the values in a vector and will use those values from the vector only instead of making recursive calls for it.
 
 
-### Pseudo code of Unique Paths
+### Pseudo code of Unique Paths II
 
+```
 
+         int totalPaths(int currRow,int currCol,int targetRow,int targetCol, vector<vector<int>>&obstacleGrid,vector<vector<int>>&v)
 
-    int totalPaths(int currentRow,int currentCol,int targetRow,int targetCol,vector<vector<int>>&v)
-         if(currentRow==targetRow && currentCol==targetCol) return 1;
-         if(currentRow<0 || currentCol<0 ||currentRow>targetRow ||currentCol>targetCol) return 0;
+               if(currRow == targetRow && currCol == targetCol && obstacleGrid[currRow][currCol]==0) 
+                     return 1;
+               if(currRow<0||currCol<0||currRow>targetRow||currCol>targetCol obstacleGrid[currRow][currCol]==1)
+                     return 0;  
         
-         if(v[currentRow][currentCol]!=-1) return v[currentRow][currentCol];
+               if(v[currRow][currCol]!=-1) return v[currRow][currCol];
         
    
-         int right = totalPaths(currentRow,currentCol+1,targetRow,targetCol,v); 
-         int down = totalPaths(currentRow+1,currentCol,targetRow,targetCol,v); 
-        
-         v[currentRow][currentCol] = (right+down); 
-         return v[currentRow][currentCol];
-   
+               int right = totalPaths(currRow,currCol+1,targetRow,targetCol,obstacleGrid,v); 
+               int down = totalPaths(currRow+1,currCol,targetRow,targetCol,obstacleGrid,v); 
+
+               v[currRow][currCol] = (right+down);
+               return v[currRow][currCol];
+
+```
 
 
+### Time Complexity and Space Complexity of Unique Paths II
 
-### Output of Unique Paths
-
-###### Output for  m = 3, n = 7
-
-![image](https://user-images.githubusercontent.com/75883328/161979235-37d30429-4f84-4533-88b8-8f82eff40fc8.png)
-
-
-###### Output for m = 3, n = 2
-
-![image](https://user-images.githubusercontent.com/75883328/161979330-a98223f7-4aff-411a-8ee4-dc099ea89768.png)
-
-
-### Time Complexity and Space Complexity of Unique Paths
 
 #### Time Complexity = O(m * n)
 
