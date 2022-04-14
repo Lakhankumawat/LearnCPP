@@ -541,7 +541,6 @@ For every k size window store every element if negative in deque from rear end u
 - [Spiral Print](#spiral-print)
 - [Approach](#approach)
 - [Algorithm](#algorithm)
-- [Program](#program)
 - [Complexity Analysis](#complexity-analysis)
 
 ## Spiral Print:
@@ -569,47 +568,7 @@ Print every element only once.
 * 5<sup>th</sup> Print the right column, i.e. Print the last column or n-1th column from row index k to m and decrease the count of n.
 * 6<sup>th</sup> Print the bottom row, i.e. if k < m, then print the elements of m-1th row from column n-1 to l and decrease the count of m
 * 7<sup>th</sup> Print the left column, i.e. if l < n, then print the elements of lth column from m-1th row to k and increase the count of l.
-## Program:
-```
-void spiralPrint(int m, int n, int a[R][C])
-{
-    int i, k = 0, l = 0;
-    while (k < m && l < n) {
-        /* Print the first row from
-               the remaining rows */
-        for (i = l; i < n; ++i) {
-            cout << a[k][i] << " ";
-        }
-        k++;
- 
-        /* Print the last column
-         from the remaining columns */
-        for (i = k; i < m; ++i) {
-            cout << a[i][n - 1] << " ";
-        }
-        n--;
- 
-        /* Print the last row from
-                the remaining rows */
-        if (k < m) {
-            for (i = n - 1; i >= l; --i) {
-                cout << a[m - 1][i] << " ";
-            }
-            m--;
-        }
- 
-        /* Print the first column from
-                   the remaining columns */
-        if (l < n) {
-            for (i = m - 1; i >= k; --i) {
-                cout << a[i][l] << " ";
-            }
-            l++;
-        }
-    }
-}
 
-```
 ### Sample Output :
 ![18](https://user-images.githubusercontent.com/97442721/162615507-b71fef3e-aa5e-442b-94f6-0c44f0337de6.png)
 
