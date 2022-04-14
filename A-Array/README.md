@@ -5,10 +5,7 @@
 - [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
 - [Sort an Array of 0s, 1s and 2s](#sort-an-array-of-0s-1s-and-2s)
 - [Prefix Sum](#prefix-sum)
-<<<<<<< HEAD
 - [Finding Minimum and Maximim in an array](min_max_in_an_array)
-
-=======
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 
@@ -145,7 +142,6 @@ return max_so_far
 ```
 **Time complexity:** `O(n)`, Where n is the size of the array. \
 **Space complexity:** `O(1)` 
->>>>>>> d09a93c33479f19422ee92b1bb7232038d634564
 
 # Trace and Normal of Matrix
   - [Trace](#trace)
@@ -290,7 +286,6 @@ prefix[r]-prefix[l-1]        (O(1) time complexity)
  Space Complexity: `O(N)  + O(N) (Using prefix array)`
 
 
-<<<<<<< HEAD
 # Minimum and Maximum in an array
 
 ### Approach
@@ -303,7 +298,7 @@ Step 3: To use INT_MIN and INT_MAX include this header file :#include<climits>.
 ### Time Complexity
 
 -Time Complexity is O(n).
-=======
+
 
 # First negative integer in every k size window:
 - [Example](#few-examples)
@@ -448,4 +443,4 @@ For every k size window store every element if negative in deque from rear end u
 **Auxillary Space:** `O(1)`
  
 
->>>>>>> d09a93c33479f19422ee92b1bb7232038d634564
+
