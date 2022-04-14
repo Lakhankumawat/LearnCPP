@@ -25,43 +25,4 @@ Forms of Inheritance in C++
 Single Inheritance in C++
 
 	Single inheritance is a type of inheritance in which a derived class is inherited with only one base class.
-	For example, we have two classes “employee” and “programmer”. If the “programmer” class is inherited from 
-	the “employee” class which means that the “programmer” class can now implement the functionalities of the 
-	“employee” class.
-
-Multiple Inheritances in C++
-
- 	Multiple inheritances are a type of inheritance in which one derived class is inherited with more than one
-	base class. 
-	For example, we have three classes “employee”, “assistant” and “programmer”. If the “programmer” class is 
-	inherited from the “employee” and “assistant” class which means that the “programmer” class can now 
-	implement the functionalities of the “employee” and “assistant” class.
-
-Hierarchical Inheritance
-
-	A hierarchical inheritance is a type of inheritance in which several derived classes are inherited from a 
-	single base class. 
-	For example, we have three classes “employee”, “manager” and “programmer”. If the “programmer” and “manager”
-	classes are inherited from the “employee” class which means that the “programmer” and “manager” class can 
-	now implement the functionalities of the “employee” class.
-
-Multilevel Inheritance in C++
-
-	Multilevel inheritance is a type of inheritance in which one derived class is inherited from another derived
-	class.
-	For example, we have three classes “animal”, “mammal” and “cow”. If the “mammal” class is inherited from the 
-	“animal” class and “cow” class is inherited from “mammal” which means that the “mammal” class can now
-	implement the functionalities of “animal” and “cow” class can now implement the functionalities of “mammal” 
-	class.
-
-Hybrid Inheritance in C++
-
-	Hybrid inheritance is a combination of multiple inheritance and multilevel inheritance. 
-	In hybrid inheritance, a class is derived from two classes as in multiple inheritances. 
-	However, one of the parent classes is not a base class. 
-	For example, we have four classes “animal”, “mammal”, “bird”, and “bat”. If “mammal”  and “bird” classes 
-	are inherited from the “animal” class and “bat” class is inherited from “mammal” and “bird” classes which
-	 means that “mammal” and “bird” classes can now implement the functionalities of “animal” class and “bat”
-	class can now implement the functionalities of “mammal” and “bird” classes.
-
- 
+	![Single](https://user-images.githubusercontent.com/75986201/162964057-dfd898db-1dea-41db-bcc3-c02329fbca5b.png)
