@@ -441,3 +441,55 @@ Radix-Sort(A, d)
  - It takes up more space than Quicksort, which is used for in-place sorting.
  - Radix sort may be slower than other sorting algorithms such as merge sort and Quicksort if the operations are inefficient. These operations include sub-inset lists and delete functions, as well as the process of isolating the desired digits.
  - Because it is based on digits or letters, the radix sort is less flexible than other sorts. If the data type must be rewritten, so must the Radix sort.
+
+
+ ### Algorithm
+<a name="#Pancake Sorting algorithm"></a>
+    
+Pancake sort is a sorting algorithm in which the only allowed operation is to "flip" one end of the list. It is inplace but not stable.
+Pancake sort is called so because it resembles sorting pancakes on a plate with a spatula, where you can only use the spatula to flip some of the top pancakes in the plate.
+Unlike most sorting algorithms that try to minimize the number of comparisons required to perform the sort, it tries to sort the array in minimum reversals.
+To implement Pancake Sort in C++:
+
+The Pancake sorting algorithm works by finding the maximum element in the sequence and placing it at the end, and reduce the size of the sequence by one.  
+
+1. Write a function flip(Arr, i) that reverses the order of the first i elements in the array arr.
+
+2. Write a function pancakeSort(Arr) that sorts and returns the input array. You are allowed to use only the function flip in order to make changes in the array.
+
+
+Radix-Sort(A, d)
+       for j = 1 to d do
+            int count[10] = {0};
+            for i = 0 to n do
+                count[key of(A[i]) in pass j]++
+            for k = 1 to 10 do
+                count[k] = count[k] + count[k-1]
+            for i = n-1 downto 0 do
+                result[ count[key of(A[i])] ] = A[j]
+                count[key of(A[i])]--
+            for i=0 to n do
+                A[i] = result[i]
+       end for(j)
+ end func 
+
+
+ ### Properties
+<a name="#Pancake sortProperties"></a>
+
+- Time Complexity: 
+  - `Worst Case Complexity: O(n^2)`
+     - The worst-case occurs when the elements are alternating small and large elements. A total of 2n-3 flips are required. The number of flips required is of the order of O(n). The worst-case time complexity is [Big O]: O(n2). 
+     -If the number of digits in the largest element equals n, the runtime is O.(n2).
+    
+  - `Best Case Complexity: O(n)`
+     - The best-case occurs when the array is already sorted, and no flips are required. The best-case time complexity is [Big Omega]: O(n).
+     - Or when there is no sorting required, i.e. the array is already sorted.
+
+  - `Average Case Complexity: O(n^2)`
+     - It can be calculated by counting the number of loops. There are a total of two loops of n iterations making complexity: n*n = n2.
+
+  - `Space Complexity: O(n)`
+  - For each round of iteration, at most, we would add two pancake flips. Therefore, the maximal number of pancake flips needed would be 2*N.
+  - As a result, the space complexity of the algorithm is O(N). 
+
