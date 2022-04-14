@@ -88,6 +88,9 @@ end BubbleSort
 
 ## DNF Sort
 DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is specially designed for only the array which contain numbers `0's` `1's` and `2's` only.
+<!-- image to help better explain the concept -->
+![image](https://user-images.githubusercontent.com/86917304/163337575-936ebee1-d6dd-45d6-a26e-97d2d48db154.png)
+
 
 ## Approach
 
