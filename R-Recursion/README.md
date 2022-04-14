@@ -101,4 +101,48 @@ STOP
 - The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
 
 
+# [Maze Path](https:github.com/prachi0011/LearnCPP/maze_path.cpp)
+Take as input N1 and N2, both numbers. N1 and N2 is the number of rows and columns on a rectangular board. Our player starts in top-left corner of the board and must reach bottom-right corner. In one move the player can move 1 step horizontally (right) or 1 step vertically (down).
+Function will do 2 things:
+- a. returns the count of different ways the player can travel across the board. 
+- b. returns an ArrayList of moves for all valid paths across the board. 
+### Example
+```
+ Input :  m = 2, n = 2;
+Output : 2, VH HV
+There are two paths
+(0, 0) -> (0, 1) -> (1, 1)
+(0, 0) -> (1, 0) -> (1, 1)
+
+Input :  m = 2, n = 3;
+Output : 3, HHV HVV VHH
+There are three paths
+(0, 0) -> (0, 1) -> (0, 2) -> (1, 2)
+(0, 0) -> (0, 1) -> (1, 1) -> (1, 2)
+(0, 0) -> (1, 0) -> (1, 1) -> (1, 2)
+```
+
+```
+START
+Intialize n1, n2
+Procedure maze(i, j, s)
+IF i == n1-1 && j == n2-1
+		cout<<s<<" ";
+		a += 1;
+		return;
+END IF
+
+IF i < n1-1
+		maze(i+1,j,s+"V");
+END IF
+IF j < n2-1
+		maze(i,j+1,s+"H");
+END IF
+END Procedure
+END
+```
+
+### Properties
+- Time Complexity: O(2^(m*n)), because on every cell we need to try 2 different directions.
+- Space Complexity:  O(m*n) ,Maximum Depth of the recursion tree(auxiliary space).
 
