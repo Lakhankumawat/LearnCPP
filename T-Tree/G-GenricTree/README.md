@@ -13,12 +13,26 @@
     - [Advantages](#advantages-1)
     - [Disadvantage](#disadvantages-1)
     
-- [Diameter of a Genric Tree](#Diameter of a Genric Tree)
+- [Diameter of a Genric Tree](#Diameter-of-a-genric-tree)
     - [Properties](#Properties)
     - [Algorithm](#Algorithm)
     - [Time Complexity](#Complexity)
     - [Advantages](#advantages)
     - [Disadvantage](#disadvantage)
+
+- [Mirror of a Genric Tree](#Mirror-of-a-genric-tree)
+    - [Properties](#properties)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#time-complexity)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantages)
+    
+ - [Level order traversal in a Genric Tree](#Level-order-traversal-in-a-genric-tree) 
+    - [Properties](#properties)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#time-complexity)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantages)
 
 # Construct and Display Genric Tree
 
@@ -68,7 +82,6 @@ display(child);
 
 
 
-
 # Minimum distance between two nodes in a Genric Tree
 
 - Distance refers to the edges between them. Now in a tree, there is always one path from one node to another.
@@ -108,6 +121,7 @@ display(child);
 
 - Memory Wastage – All the pointers are not required in all the cases. Hence, there is lot of memory wastage.
 - Unknown number of children – The number of children for each node is not known in advance.
+
 
 
 # Diameter of a Genric Tree
@@ -158,3 +172,94 @@ O(n), where is number of nodes.
 - Need to traverse all the tree to find diameter.
 - Unknown number of children – The number of children for each node is not known in advance.
 
+
+
+# Mirror of a Genric Tree
+
+- An image or object which is identical in form to another, but with the structure reversed, as in a mirror.
+- Mirror image can be understand as lateral inversion.
+- Each element of the mirror image is the same distance behind the mirror as each element of the object is in front of the mirror.
+
+![Screenshot (503)](https://user-images.githubusercontent.com/98539013/160352051-d08c4dc0-1583-4a83-9836-48d08cab1e94.png)
+
+### Properties
+- The image obtained is virtual.
+- The image is laterally inverted.
+- The image is erect.
+- The size of the image is the same as the size of the object.
+- The distance between the image obtained is the same as the distance between the object from the mirror.
+
+### Algorithm
+
+- Recursively call the mirror function on all the children of the root of the generic tree.
+- Reverse the families of its children using reverse function or use the following code for children from 0th position to (size-1)th posotion.
+- Make a temprary node and store children at ith position of the parent node.
+Node *temp = node->children[i];
+- Assign jth children to ith children of the parent node.
+node->children[i] = node->children[j];
+- And then assign value of temp node to jth children
+node->children[j] = temp;
+hence reverse is done, and this will give our desired output on printing it using display function.
+
+### Time Complexity
+```
+- For constructor01()
+O(n), where is number of nodes. 
+- For display()
+O(n), where is number of nodes.
+- Time complexity for the mirror function is linear as we post traversing the tree.
+there fore overall Timecomplexity is
+O(n), where is number of nodes.
+```
+### Advantages 
+
+- Memory efficient – No extra links are required, hence a lot of memory is saved.
+- We even can visualise how mirror nodes are structured.
+- Many algorithms can be expressed more easily because it is just a binary tree.
+- Each node is of fixed size no auxiliary array or vector is required.
+
+### Disadvantages
+
+- Need to traverse all the tree to show mirror.
+- Unknown number of children – The number of children for each node is not known in advance.
+
+
+
+# Level order traversal in a Genric Tree
+
+- "levelorder fashion" is  printing the tree top to bottom levels from left to right where the nodes are separated by spaces.
+- We can define in other words as, Level Order Traversal is the algorithm to process all nodes of a tree by traversing through depth, first the root, then the child of the root, etc.
+
+![Screenshot (513)](https://user-images.githubusercontent.com/98539013/162618893-1282526e-17fb-492f-83fa-fa9a22d8712e.png)
+
+
+### Properties
+- Level order traversal is actually a Breadth-First Search.
+- It can be used to solve many problems in graph theory.
+
+### Algorithm
+
+- A Queue is defined as a type node.
+- A node (basically root), passed as argument, is added to the queue.
+- A while loop is applied which runs until the queue is emptied.
+- An element (of type node) is removed from the queue and stored in the node.
+- The node which was removed in the previous step, its data gets printed in this step.
+- Then the children of this node are added to the queue using a for loop.
+
+### Time Complexity
+```
+- For construct()
+  O(n) ,where n is the number of node
+- For levelorder()
+  O(n) ,where n is the number of node
+ Travelling to all the elements of the tree. Every node is processed individually in a while loop
+ ``` 
+### Advantages 
+
+- Memory efficient – No extra links are required, hence a lot of memory is saved.
+- This concept can be used to solve many problems in graph theory, for example: Finding all nodes within one connected component.
+
+### Disadvantages
+
+- Memory Wastage – All the pointers are not required in all the cases. Hence, there is lot of memory wastage.
+- Unknown number of children – The number of children for each node is not known in advance.
