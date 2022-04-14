@@ -1,5 +1,5 @@
 <!-- Table of contents  -->
-- [stringcomparision](#string-comparision)
+- [stringcomparision](#string-comparison)
 - [example](#example)
 - [algorithim](#algorithim)
 - [application](#application)
@@ -9,7 +9,7 @@
 
 Write a program to compare two strings.
 
-# String Comparision:
+# String Comparison:
 
 Most string comparison algorithms compare the strings character by character. C++ provides us some built in operators like == and != to compare strings along with strcmp and compare functions.
 
