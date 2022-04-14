@@ -531,6 +531,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Sukriti-m",
+      "name": "Sukriti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93239528?v=4",
+      "profile": "https://github.com/Sukriti-m",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SarthakSKumar",
+      "name": "Sarthak S Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81763561?v=4",
+      "profile": "http://sarthakskumar.github.io",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "deepu0201",
+      "name": "Deeptarshi Biswas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73191735?v=4",
+      "profile": "https://github.com/deepu0201",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

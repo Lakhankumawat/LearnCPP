@@ -18,6 +18,7 @@ Output: 2
 Explanation: Given array has two inversions:
 (3, 1), (3, 2) 
 ```
+
 # [Replace PI](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Replace_%CF%80.cpp)
 
 Recursive program to replace all occurrences of pi with 3.14 in a given string
