@@ -1,9 +1,9 @@
-# Miscellaneous
+
 
 ## Lambda Functions
 Lambda expressions allow us to write a function in hassle free manner or we say function in a single line . In these functions we only write short snippets of code specially as `Comparitor Function` in STL sort function.
 
-## How to define lambda function
+### How to define lambda function
 
 - Expression have the 4 things to define lambda function
 
@@ -14,7 +14,7 @@ Lambda expressions allow us to write a function in hassle free manner or we say 
 
 Often return type in lambda function is determined by compiler only . But in complex cases like in conditional statement , compiler is not able to figure out that what's return type so in that case we have to specify return type.
 
-## Why to use Lambda expressions
+### Why to use Lambda expressions
 
 lambda functions are more power than an ordinary function by having access to variables from the enclosing in it's scope. We can capture the variable in three ways that are given below:
 
