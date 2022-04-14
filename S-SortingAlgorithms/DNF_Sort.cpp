@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void Swap(int a[], int i, int j)
+void Swap(int a[], int i, int j) // Swapping the numbers
 {
     int temp = a[i];
     a[i] = a[j];
@@ -10,24 +10,24 @@ void Swap(int a[], int i, int j)
 
 void DNF_Sort(int a[], int n)
 {
-    int low = 0, mid = 0, high = n - 1;
+    int low = 0, mid = 0, high = n - 1; // Initializing low , mid and high pointer
 
     while (mid <= high)
     {
-        if (a[mid] == 0)
+        if (a[mid] == 0)  // If mid element is zero we swap low and mid one as we want to sort.
         {
             Swap(a, mid, low);
-            low++;
-            mid++;
+            low++;        // Increasing low pointer
+            mid++;        // Increasing mid pointer
         }
-        else if (a[mid] == 1)
+        else if (a[mid] == 1) // If mid element is one we simple increament mid as its in right position.
         {
-            mid++;
+            mid++;        // Increasing mid pointer
         }
         else
         {
-            Swap(a, mid, high);
-            high--;
+            Swap(a, mid, high); // If mid element is two we swap mid and high one as we want to sort.
+            high--;      // Decreasing high pointer
         }
     }
 }
