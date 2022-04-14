@@ -108,10 +108,7 @@ The least common multiple (LCM) of two integers is the smallest positive integer
 ## What is Recursion : 
 The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function. Using recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
-The Recursion can be demonstrted as base case and sub cases :
-![](https://files.realpython.com/media/Thinking-Recursively-in-Python_Watermarked.1825397c00ea.jpg)
-
-## Diference betwween iterative approach and recursive approach :
+## Difference between iterative approach and recursive approach :
 ![](https://cdn-media-1.freecodecamp.org/images/1*QrQ5uFKIhK3jQSFYeRBIRg.png)
 
 ## Algorithm :
