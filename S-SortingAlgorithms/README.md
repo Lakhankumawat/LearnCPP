@@ -31,14 +31,18 @@
        -  [Algorithm](#algorithmofcountingSort)
        - [Properties](#countingSortproperties)
        - [Advantages](#advantagesofcountingSort)
-       - [Disadvantage](#disadvantageofcountingSort)
-
-       
+       - [Disadvantage](#disadvantageofcountingSort)  
   - [Bucket Sort](#bucket-sort)
        - [Algorithm](#bucketsortAlgo)
        - [Properties](#bucketsortProperties)
        - [Advantages](#bucketsortAdvantages)
        - [Disadvantages](#bucketsortDisadvantages)
+
+   - [DNF Sort](#dnf-sort)
+     -  [Algorithm](#algorithm-6)
+     - [Properties](#properties-6)
+     - [Advantages](#advantages-6)
+     - [Disadvantage](#disadvantage-4)
  
 # Sorting Algorithms
 
@@ -458,3 +462,44 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - Can’t apply it to all data types since a suitable bucketing technique is required. Bucket sort’s efficiency is dependent on the distribution of the input values, thus it’s not worth it if your data are closely grouped.In many situations, you might achieve greater performance by using a specialized sorting algorithm like radix sort, counting sort, or burst sort instead of bucket sort.
 
 - Bucket sort’s performance is determined by the number of buckets used, which may need some additional performance adjustment when compared to other algorithms.
+
+    
+## DNF Sort
+
+DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is specially designed for only the array which contain numbers `0's` `1's` and `2's` only.
+
+### Algorithm
+
+1. Initialize the `low = 0` , `mid = 0` and `high = size - 1`.
+2. Traverse the array from starting to last till mid is less than equal to high.
+3. If the element is 0 then swap the element with the element at index low and increase low and mid by 1.
+4. If the element is 1 then increase mid by 1.
+5. If the element is 2 then swap the element with the element at index high and decrease the high by 1.
+
+- **Approach**
+
+  **The Array is divided into four Sections**
+
+  - `a[1 to low-1]` for zeroes and as repect to flag (red in Dutch Flag).
+  - `a[low to mid-1]` for ones and as repect to flag (white).
+  - `a[mid to high]` no change.
+  - `a[high+1 to n(size)]` for twos and as respect to flag (blue).
+
+### Properties
+
+- Time Complexities
+  - Worst case time : O(n)
+  - Best case time : O(n)
+  - Average case time : O(n)
+- Auxillary Space : O(1)
+- In-place : No
+- Stable : Yes
+
+### Advantages
+
+- The DNF algorithm can be extended to four, or even more colours.
+- Can we used as an alternative to find two different elements `a1` and `a2` , from the array `a` such that `a1<a2`.
+
+### Disadvantage
+
+- Problem was restricted by allowing the inspection of the color of each element only once.
