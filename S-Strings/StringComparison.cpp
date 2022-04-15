@@ -15,11 +15,11 @@ int main ()
     //comparing the two strings and returning the value
     if ( string1 == string2)
     {
-        cout <<endl << " string are equal." << endl;
+        cout <<endl << " strings are equal." << endl;
     }
     else
     {
-        cout <<endl<< "string are not equal." << endl;
+        cout <<endl<< "strings are not equal." << endl;
     }
     return 0;
 }
