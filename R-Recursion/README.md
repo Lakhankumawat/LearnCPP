@@ -135,3 +135,21 @@ The process in which a function calls itself directly or indirectly is called re
 
  ## Disadvantages
  - As recursion uses stack, for large numbers, memory may become full due to stack full
+
+
+# [Pascal Triangle](https://github.com/SwarupKMondal/LearnCPP/blob/main/R-Recursion/Pascaltriangle.cpp) 
+
+## Brief explainaion about Pascal Triangle :
+Pascal’s triangle is a triangular array of the binomial coefficients. Write a function that takes an integer value n as input and prints first n lines of the Pascal’s triangle. 
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/pascaltriangle.png)
+
+## Properties :
+- Time Complexity :- O(n)
+- Space Complexity :- O(1)
+
+
+## Advantage :
+The main advantage lies in the fact that you can pre-compute all (ni ki) where ni < n and ki <= k in O(n^2) time.
+
+
