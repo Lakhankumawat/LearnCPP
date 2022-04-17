@@ -158,7 +158,8 @@ Implementation of Queue using Linked List and performing different operations su
 
 <!-- image to help better explain the concept -->
 
-![QueueusingLinkedList](https://prepinsta.com/wp-content/uploads/2020/07/Implementation-of-Queues-using-Linked-List-in-C.webp)
+![queue_linkedlist](https://user-images.githubusercontent.com/93239528/163711530-ae87370a-e59e-4d8b-8a18-1876028f255d.png)
+
 
 ### Pseudo Code
 1. For insertion
