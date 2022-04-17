@@ -56,16 +56,16 @@ Here, in addition to the last node storing the address of the first node, the fi
 1) It is used in multiplayer games to give a chance to each player to play the game.
 2) Multiple running applications can be placed in a circular linked list on an operating system. The os keeps on iterating over these applications.
 ```
-### Operations Of Circular Linked List
+# Operations Of Circular Linked List
 
-# 1)Insert Operation
+## 1)Insert Operation
 
 ## Algorithm 
 The first operation we're going to cover is the insertion of new nodes. While inserting a new element we'll need to handle two cases :
 
-1)The head node is null, that is there are no elements already added. In this case, we'll make the new node we add as both the head and tail of the list since there is only one node
-2)The head node isn't null, that is to say, there are one or more elements already added to the list. In this case, the existing tail should point to the new node and the newly added node will become the tail 
-3)In both of the above cases, the nextNode for tail will point to head
+1)The head node is null, that is there are no elements already added. In this case, we'll make the new node we add as both the head and tail of the list since there is only one node.
+2)The head node isn't null, that is to say, there are one or more elements already added to the list. In this case, the existing tail should point to the new node and the newly added node will become the tail. 
+3)In both of the above cases, the nextNode for tail will point to head.
 
 ## Complexity
  Complexity of insert operation in best case can cost O(1) whereas in worst case can cost O(n)
@@ -78,9 +78,9 @@ The first operation we're going to cover is the insertion of new nodes. While in
 
 However, there are some special cases we need to think about:
 
-1)The circular linked list has only one element, and we want to remove the element – In this case, we just need to set the head node and tail node to null
-2)The element to delete is the head node – We must make head.nextNode as the new head
-3)The element to delete is the tail node – We need to make the previous node of the node we want to delete as the new tail
+1)The circular linked list has only one element, and we want to remove the element – In this case, we just need to set the head node and tail node to null.
+2)The element to delete is the head node – We must make head.nextNode as the new head.
+3)The element to delete is the tail node – We need to make the previous node of the node we want to delete as the new tail.
 
 ## Complexity
 Complexity of delete operation can cost us O(1).
