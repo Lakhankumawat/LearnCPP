@@ -567,6 +567,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Hend123",
+      "name": "Hend Ahmed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31670657?v=4",
+      "profile": "https://github.com/Hend123",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Shatakshi-Choudhary",
+      "name": "Shatakshi-Choudhary",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87706725?v=4",
+      "profile": "https://github.com/Shatakshi-Choudhary",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
