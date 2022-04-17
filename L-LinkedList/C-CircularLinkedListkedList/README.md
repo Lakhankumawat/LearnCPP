@@ -1,15 +1,9 @@
-## Linked Lists 
-### [1.Singly Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList)
-### [2.Doubly Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/D-DoublyLinkedList)
+
 ### [3.Circular Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularLinkedList)
--[Circular Linked List Complexity]
--[Why Circular Linked List]
--[Applications of Circular Linked List]
--[Operations of Circular Linked List]
-
-
-### [4.Circular Doubly Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularDoublyLinkedList)
-
+-[Circular Linked List Complexity.]
+-[Why Circular Linked List.]
+-[Applications of Circular Linked List.]
+-[Operations of Circular Linked List.]
 
 
 
