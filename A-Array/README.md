@@ -8,7 +8,7 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Symmetric matrix](#symmetric-matrix)
-
+- [Remove Duplicates From Sorted Array](#remove-duplicates-from-sorted-array)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
@@ -537,3 +537,79 @@ For every k size window store every element if negative in deque from rear end u
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
  
+
+# Remove Duplicates From Sorted Array
+
+  - [Introduction](#introduction)
+  - [Examples](#examples)
+  - [Simple Approach](#simple-approach)
+  - [Efficient Approach](#efficient-approach)
+
+ ## Introduction
+ Given a sorted array, the task is to remove the duplicate elements from the array.
+ 
+ ## Examples
+ 
+ Example 1:
+ 
+ ![Remove](https://user-images.githubusercontent.com/72568715/163729014-40291823-be2c-44a1-bb5e-be021d51fa19.png)
+
+ 
+ Example 2:
+
+![Remove1](https://user-images.githubusercontent.com/72568715/163729019-5e9269ba-2da4-4e93-b2c0-0a2f47bc0849.png)
+
+
+
+## Simple Approach
+  Create an auxilary array temp[] to store the unique elements. Traverse the array and one by one copy all the elements. Return the given array.
+  	
+  ### Algorithm
+1. Check if the array is empty or contains single element.
+2. Next traversing the sorted array
+3. Check if the last element whether it is unique or repeated
+4. Modifying the sorted array
+  	
+  ### Code
+  ```
+  int removeDuplicates(int arr[], int n) {
+	if (n==0  || n==1)
+	   return n;
+	int temp[n], j=0;
+	for (int i = 0; i<n-1; i++)
+	    if (arr[i] != arr[i+1])
+	       temp[j++] = arr[i];
+	temp[j++] = arr[n-1]; 
+	for (int i=0; i<j; i++)
+	    arr[i] = temp[i];
+	return j; 
+    }
+
+  ```
+ **Time Complexity:** `O(n)`\
+ **Auxillary Space:** `O(n)`
+
+## Efficient Approach:
+   ### Algorithm
+   1. Check if returns the new size of the array
+   2. Next, store the index of next unique element
+   3. Traverse the array and maintain the another updated index
+   
+   ### Pseudo Code
+   ```
+   int removeDuplicates(int arr[], int n) {
+	if (n==0  || n==1)
+	   return n;
+	int j=0;
+	for (int i = 0; i<n-1; i++)
+	    if (arr[i] != arr[i+1])
+	       arr[j++] = arr[i];
+	arr[j++] = arr[n-1];
+	return j; 
+   }
+	
+   ```
+**Time Complexity:** `O(n)`\
+**Auxillary Space:** `O(1)`
+ 
+
