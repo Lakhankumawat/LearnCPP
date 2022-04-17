@@ -1,9 +1,6 @@
 
-### [3.Circular Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularLinkedList)
--[Circular Linked List Complexity.]
--[Why Circular Linked List.]
--[Applications of Circular Linked List.]
--[Operations of Circular Linked List.]
+### [Circular Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularLinkedList)
+
 
 
 
