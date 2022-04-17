@@ -79,8 +79,5 @@ cout<<n1+n2;
 ``int y = 3;``<br>
 ``int z = x + y;``
 
-##### Output
-
-![output-binary2](https://user-images.githubusercontent.com/78499278/158010603-12fa457f-8918-411b-9fc3-4cd7b70db4c9.jpg)
 <br>
 <hr>
