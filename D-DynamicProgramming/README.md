@@ -174,6 +174,7 @@ Given two strings s1 and s2, you have to output the shortest length of the strin
 
      > Note this question is a variation of LCS problem
 
+![This is working image](https://static.javatpoint.com/tutorial/daa/images/shortest-common-supersequence7.png)
 ## Examples
 ```
 Input:   str1 = "AGGTAB",  str2 = "GXTXAYB"
