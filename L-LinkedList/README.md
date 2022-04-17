@@ -33,8 +33,8 @@ Here, in addition to the last node storing the address of the first node, the fi
 
 ## Circular Linked List Complexity	(Time Complexity	Space Complexity)
 
- 1) Insertion Operation	O(1) or O(n)	
- 2) Deletion Operation	O(1)
+1) Insertion Operation	O(1) or O(n)	
+2) Deletion Operation	O(1)
 
 ## Why Circular Linked List?
 
@@ -44,8 +44,8 @@ Here, in addition to the last node storing the address of the first node, the fi
 
 ## Applications Of Circular Linked List
 
- 1) It is used in multiplayer games to give a chance to each player to play the game.
- 2) Multiple running applications can be placed in a circular linked list on an operating system. The os keeps on iterating over these applications.
+1) It is used in multiplayer games to give a chance to each player to play the game.
+2) Multiple running applications can be placed in a circular linked list on an operating system. The os keeps on iterating over these applications.
 
 
 
