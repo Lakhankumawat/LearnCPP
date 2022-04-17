@@ -279,7 +279,8 @@ O(n), where is number of nodes.
 - Preorder Traversal of a Generic Tree is similar to the preorder traversal of Binary Search Tree or Binary Tree with the only difference that is, all the child nodes of a parent are traversed from left to right in a sequence.
 - Postorder Traversal of a Generic Tree is similar to the postorder traversal of Binary Search Tree or Binary Tree with the only difference that is, all the child nodes of a parent are traversed from right to left in a sequence.
 
-![Screenshot (513)](https://user-images.githubusercontent.com/98539013/162618893-1282526e-17fb-492f-83fa-fa9a22d8712e.png)
+![Screenshot (521)](https://user-images.githubusercontent.com/98539013/163710119-459e3fc2-5185-4ef6-a3e2-55a077364335.png)
+
 
 
 ### Properties
