@@ -2,6 +2,7 @@
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
+- [Shortest Common Super-sequence](#shortest-common-super-sequence)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
 - [Egg Dropping Puzzle](#egg-dropping-puzzle)
@@ -15,6 +16,7 @@
 - [Unique Paths II](#unique-paths-ii)
 
 - [Minimum Falling Path Sum](#minimum-falling-path-sum)
+
 
 
 # Dynamic Programming
@@ -167,8 +169,8 @@ Time Complexity: O(sum*n)
 Auxiliary Space: O(sum*n) 
 ```
 
-# Minimum_insertion_form_palindrome
 
+# Shortest Common Super-sequence
 - [Problem Statement](#problem-statement)
     - [Examples](#examples)
 - [Explanation](#explanation)
@@ -176,6 +178,66 @@ Auxiliary Space: O(sum*n)
 
 # Problem Statement
 
+
+Given two strings s1 and s2, you have to output the shortest length of the string that has both strings s1 and s2 as subsequences.
+
+     > Note this question is a variation of LCS problem
+
+![This is working image](https://static.javatpoint.com/tutorial/daa/images/shortest-common-supersequence7.png)
+## Examples
+```
+Input:   str1 = "AGGTAB",  str2 = "GXTXAYB"
+
+Output:  9
+
+String "AGXGTXAYB" has both string 
+"AGGTAB" and "GXTXAYB" as subsequences.
+
+```
+# Explanation
+
+- Consider two strings S1 and S2.
+```
+S1= A G G T A B
+S2= G X T X A Y B
+```
+- We need to find a string that has both strings as subsequences and is shortest such string.
+
+- Shortest Supersequence for above example would be AGGXTXAYB
+
+- Here we observe that if there are multiple occurence of any alphabet between the two strings(s1 and s2) then we write it only once (i.e GTAB).
+
+- Now we know that GTAB is the LCS of the two strings.
+
+- So to find the total length we calculate the size of both the strings and subtract the LCS of the string to remove second occurences.
+```
+Length of SuperSubsequence = (Length of string S1 + Length of string S2) - LCS(string S1, string S2)
+```
+``` C++
+Input: string s1
+Input: string s2
+     m=size of s1
+     n=size of s2
+     return m+n-LCS(a,b,m,n)
+```
+```
+s1: AGGTAB  
+s2: GXTXAYB
+s1=6, s2= 7, LCS=4 
+
+    Ans 6+7-4=9 
+```
+# Complexity
+```
+Time Complexity: O(m*n) 
+Auxiliary Space: O(m*n) 
+```
+>Complexity here is mainly because of LCS function
+
+
+# [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
+
+=======
 Consider a string str and output the minimum number of characters that need to be inserted to make it a palindrome. 
 
 > This question is a variation of LCS (Longest Common Subsequence) problem
@@ -225,6 +287,7 @@ Space complexity: O(N^2)
 ```
 
 # [Trapping Rain Water Problem](https://leetcode.com/problems/trapping-rain-water/)
+
 ### Problem-Statement
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
