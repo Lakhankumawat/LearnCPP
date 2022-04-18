@@ -133,8 +133,82 @@ The process in which a function calls itself directly or indirectly is called re
  - The logic used by the program is simple to understand
  - time complexity of this program is less compared to other methods for finding GCD and LCM
 
+
+# Taylor series by Horner's rule
+
+ The value of the Exponential function can be calculated using Taylor Series.
+
+
+## Approach
+Taylor series is … 
+e^x = 1 + x/1! + x^2/2! + x^3/3! + x^4/4!......
+
+Now consider, the
+
+1st term i.e. 1 - No multiplications here.
+2nd term i.e. x/1! -  No multiplications here too
+3rd term i.e. x^2/2! -  Two multiplications here   (x*x / 1 * 2)
+4th term i.e. x^3/3!  -   four multiplications here   (x * x * x / 1 * 2 * 3)
+5th term i.e. x^4/4!  -   six multiplications here   (x * x * x * x / 1 * 2 * 3 * 4)
+So, if we go till 4th power of x in Taylor series we have to do 2+4+6 = 12 multiplications.
+
+So this number of multiplications will take us O(n^2)  time. 
+
+But we can reduce the no. of multiplications by using the Horner's rule.
+
+Horner's Rule is just to take common variables and constants outside of the bracket so as to reduce the power the inside the bracket.
+
+We can convert the Taylor series following Horner's Rule to 
+
+e^x = 1 + x/1! + x^2/2! + x^3/3! + x^4/4!......
+
+e^x = 1 + x/1 ( 1 + x/2 + x^2/2*3 + x^3/2*3*4).........
+
+e^x = 1 + x/1 (1 + x/2 (1 + x/3 + x^2 / 3*4) ).....
+
+e^x = 1 + x/1 (1 + x/2 (1 + x/3 ( 1 + x/4 ) ) ).....
+
+![Screenshot (315)](https://user-images.githubusercontent.com/100334178/162727372-4ccff189-304a-4fad-b6ae-7bbd12881242.png)
+
+
+As we can see the total number of multiplications is reduced to just 4 from 12.
+
+So, this will give us O(n) time complexity.
+
+## Properties
+### Time-Complexity
+To find this we will determine the total multiplication performed.
+
+e^x = 1 + x/1! + x^2/2! + x^3/3! + …… + until n terms
+
+       = 1 + x/1  + x*x/1*2 + x*x*x/1*2*3 + x*x*x*x/1*2*3*4 …… + until n terms
+
+           0     0           2                  4                        8                   Number of Multiplications in above terms
+
+So, for n terms total multiplication performed is comparable to sum of n natural numbers (as a parallel series of even numbers is formed).
+
+and we know sum of n natural numbers = n*(n+1)/2 whose order is n2
+
+Hence, 
+the time complexity if this approach is O(n2)
+
+
+### Space-Complexity
+The recursive call will take place n+1 times and hence n + 1 activation records will get created at max. That shows the space complexity is O(n).
+
+## Examples
+input-->5,30
+output-->144
+
+input-->2,4
+output-->6
+
+input-->9,10
+output-->19200
+
  ## Disadvantages
  - As recursion uses stack, for large numbers, memory may become full due to stack full
+
 
 
 # [Pascal Triangle](https://github.com/SwarupKMondal/LearnCPP/blob/main/R-Recursion/Pascaltriangle.cpp) 
@@ -151,5 +225,6 @@ Pascal’s triangle is a triangular array of the binomial coefficients. Write a 
 
 ## Advantage :
 The main advantage lies in the fact that you can pre-compute all (ni ki) where ni < n and ki <= k in O(n^2) time.
+
 
 
