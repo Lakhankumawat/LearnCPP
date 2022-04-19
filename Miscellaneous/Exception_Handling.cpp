@@ -9,6 +9,7 @@ int main()
     cout.tie(0);
     cin.tie(0);
     int div, a, b, ch = 0;
+    printf("\nEnter Two number for Division \n");
     cin >> a >> b;
 
     // By Inputting the value it will enter try block and check condition if b=0 then throw the exception.
@@ -25,8 +26,11 @@ int main()
     // Catch block will catch the error.
     catch (int e)
     {
-        cout << "Division by zero is Undefined "
+        cout << "\nThese lines are executed because we given a undefined thing which is an exception for program and we also specified the error for better understanding for error done by user\n\n";
+        cout << "------------------Error------------------------";
+        cout << "\n\nDivision by zero is Undefined "
              << "Error Code --> " << e;
+        cout << "\n\n------------------------------------------\n";
     }
 
     // This will catch the error when double type exception is thrown
