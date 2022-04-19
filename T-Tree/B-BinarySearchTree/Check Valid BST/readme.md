@@ -20,7 +20,8 @@ For Every Node We have to check that all values present in Left-Subtree will be 
  ```[parent->data, INT_MAX]```
 - During Recursion if any Node disagreed these Condition retuen false .
 
-#IMG
+![validBST](https://user-images.githubusercontent.com/77873383/164070536-557900b0-8054-4c5a-a0f8-6a534f9ff141.png)
+
 
 ## Pseudo Code :
 ```cpp
