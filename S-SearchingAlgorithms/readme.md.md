@@ -3,7 +3,6 @@
 2. In Sequential search, we simply traverse the list completely and match each element of the list with the item whose location is to be found. If the match is found, then the location of the item is returned; otherwise, the it returns NULL.
 
 # Algorithm:
-
 Step 1: Start
 
 Step 2: Ask user for size of an array and elements present in an array.
@@ -36,7 +35,6 @@ Space complexity of Sequential Search: O(1)
 
 
 # Algorithm:
-
 Step 1: Start
 
 Step 2: Ask user for size of an array and elements present in an array.
