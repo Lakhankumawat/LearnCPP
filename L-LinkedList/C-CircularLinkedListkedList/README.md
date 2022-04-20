@@ -2,14 +2,14 @@
 ### [Circular Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularLinkedList)
 <!-- Table of content -->
 # Table of content
--[Circular Linked List](#circular-linked-list)
--[Circular Linked List complexity](#circular-linked-list-complexity)
--[Why circular linked list](#why-circular-linked-list)
--[Applications of circular linked list](#applications-of-circular-linked-list)
--[Operations of circular linked lit](#operationns-of-circular-linked-list)
-    -[Inserting](#inserting)
-    -[Deleting](#deletions)
-    -[Traversal](#traversal)
+ -[Circular Linked List](#circular-linked-list)
+ -[Circular Linked List complexity](#circular-linked-list-complexity)
+ -[Why circular linked list](#why-circular-linked-list)
+ -[Applications of circular linked list](#applications-of-circular-linked-list)
+ -[Operations of circular linked lit](#operationns-of-circular-linked-list)
+     -[Inserting](#inserting)
+     -[Deleting](#deletions)
+     -[Traversal](#traversal)
 
 
 
