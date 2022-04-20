@@ -127,6 +127,9 @@ Fond of designing README this section will be helpful to you
     <td align="center"><a href="https://github.com/Poojaamangal"><img src="https://avatars.githubusercontent.com/u/91134877?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pooja Mangal</b></sub></a><br />👀</td>
       <td align="center"><a href="https://github.com/Mrjoy832"><img src="https://avatars.githubusercontent.com/u/77873383?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TRIDIB BAG</b></sub></a><br />👀</td>
   </tr>
+  <tr>
+  <td align="center"><a href="https://github.com/aditi944"><img src="https://avatars.githubusercontent.com/u/68181276?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aditi</b></sub></a><br />👀</td>
+  </tr>
 </table>
 
 <br>
