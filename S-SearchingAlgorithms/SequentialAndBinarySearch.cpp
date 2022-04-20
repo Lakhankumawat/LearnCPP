@@ -14,8 +14,10 @@ There are 3 possible cases -
 
 */
 
+
 #include<iostream>
 #include<stdlib.h>
+
 using namespace std;
 
 void LinearSearch(int a[] , int n , int element);  //Declaring function of Linear Search
