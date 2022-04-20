@@ -934,29 +934,29 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 # [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
 
-- [Problem Statement of Minimum Falling Path Sum](#problem-statement-of-minimum-falling-path-sum)
+- [Problem Statement](#problem-statement)
 
-- [Examples of Minimum Falling Path Sum](#examples-of-minimum-falling-path-sum)
+- [Examples](#examples)
 
-- [Explanation of Minimum Falling Path Sum](#explanation-of-minimum-falling-path-sum)
+- [Explanation](#explanation)
 
-- [Pseudo Code of Minimum Falling Path Sum](#pseudo-code-of-minimum-falling-path-sum)
+- [Pseudo Code](#pseudo-code)
 
 - [Code Link](https://github.com/Shweta2024/LearnCPP/blob/MinimumFallingPathSum/D-DynamicProgramming/MinimumFallingPathSum.cpp)
 
-- [Time Complexity and Space Complexity of Minimum Falling Path Sum](#time-complexity-and-space-complexity-of-minimum-falling-path-sum)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
 
-- [Output of Minimum Falling Path Sum](#output-of-minimum-falling-path-sum)
+- [Output](#output)
 
 
-### Problem Statement of Minimum Falling Path Sum
+### Problem Statement
 
 Given an n x n array of integers matrix, return the minimum sum of any falling path through matrix.
 
 A falling path starts at any element in the first row and chooses the element in the next row that is either directly below or diagonally left/right. Specifically, the next element from position (row, col) will be (row + 1, col - 1), (row + 1, col), or (row + 1, col + 1).
 
 
-### Examples of Minimum Falling Path Sum
+### Examples
 
 #### Example 1
 
@@ -974,7 +974,7 @@ A falling path starts at any element in the first row and chooses the element in
 #### Output: -59
 
 
-### Explanation of Minimum Falling Path Sum
+### Explanation
 
 - we are supposed to find the minimum sum of the falling path.
 - since a falling path starts at any element in the first row ,so we'll run a for loop upto the number of columns.
@@ -999,7 +999,7 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 
 
-### Pseudo Code of Minimum Falling Path Sum
+### Pseudo Code
 
 
         int minSum(int currRow,int currCol,int m,int n,vector<vector<int>>&matrix, vector<vector<int>>&v)
@@ -1019,15 +1019,14 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 
 
-### Time Complexity and Space Complexity of Minimum Falling Path Sum
-
+### Time Complexity and Space Complexity
 
 #### Time Complexity = O(n^2)
 
 #### Space Complexity = O(n^2)
 
 
-### Output of Minimum Falling Path Sum
+### Output
 
 #### Output for matrix = [[2,1,3],[6,5,4],[7,8,9]]
 
