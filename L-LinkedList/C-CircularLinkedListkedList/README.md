@@ -1,6 +1,15 @@
 
 ### [Circular Linked Lists](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularLinkedList)
-
+<!-- Table of content -->
+# Table of content
+-[Circular Linked List}(#circular-linked-list)
+-[Circular Linked List complexity](#circular-linked-list-complexity)
+-[Why circular linked list](#why-circular-linked-list)
+-[Applications of circular linked list](#applications-of-circular-linked-list)
+-[Operations of circular linked lit](#operationns-of-circular-linked-list)
+    -[Inserting](#inserting)
+    -[Deleting](#deletions)
+    -[Traversal](#traversal)
 
 
 
@@ -27,14 +36,14 @@ Here, in addition to the last node storing the address of the first node, the fi
  
 
 <a name="circularLinkedListComplexity"></a>
-### Circular Linked List Complexity	
+## Circular Linked List Complexity	
  ```
 
 1) Insertion Operation	O(1) or O(n)	
 2) Deletion Operation	O(1)
  ```
 <a name="whycircularLinkedList"></a>
-### Why Circular Linked List?
+## Why Circular Linked List?
  ```
 
 1) The NULL assignment is not required because a node always points to another node.
@@ -42,7 +51,7 @@ Here, in addition to the last node storing the address of the first node, the fi
 3) Traversal from the first node to the last node is quick.
  ```
 <a name="applicationsofCircularLinkedlist"></a>
-### Applications Of Circular Linked List
+## Applications Of Circular Linked List
  ```
 1) It is used in multiplayer games to give a chance to each player to play the game.
 2) Multiple running applications can be placed in a circular linked list on an operating system. The os keeps on iterating over these applications.
