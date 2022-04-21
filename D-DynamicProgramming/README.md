@@ -936,17 +936,16 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 - [Problem Statement](#problem-statement-4)
 
-- [Examples](#examples)
+- [Examples](#examples-4)
 
-- [Explanation](#explanation)
+- [Explanation](#explanation-5)
 
-- [Pseudo Code](#pseudo-code)
+- [Pseudo Code](#pseudo-code-2)
 
 - [Code Link](https://github.com/Shweta2024/LearnCPP/blob/MinimumFallingPathSum/D-DynamicProgramming/MinimumFallingPathSum.cpp)
 
-- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-1)
 
-- [Output](#output)
 
 
 ### Problem Statement
@@ -1025,14 +1024,3 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 #### Space Complexity = O(n^2)
 
-
-### Output
-
-#### Output for matrix = [[2,1,3],[6,5,4],[7,8,9]]
-
-![image](https://user-images.githubusercontent.com/75883328/163241550-9efc2764-6101-4439-b2f9-aa22768b989a.png)
-
-
-#### Output for matrix = [[-19,57],[-40,-5]]
-
-![image](https://user-images.githubusercontent.com/75883328/163241760-ba04bc09-8e7b-40a6-b974-e0031f64cf79.png)
