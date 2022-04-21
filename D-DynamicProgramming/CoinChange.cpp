@@ -21,13 +21,17 @@ int coinChange(vector<int>& coins, int amount) {
 }
 int main(){
 
-    vector<int> coins1 = {1,2,5};
-    int amount1 = 11;
-    cout<<coinChange(coins1,amount1)<<endl;                        // ans = 3 , 11 = 5 + 5 + 1
+    int n,amount;
+    cout<<"Enter the length of the coins array:\n"; 
+    cin>>n;
+    vector<int> coins(n); 
+    cout<<"Enter the coins:\n"; 
+    for(auto&x:coins) cin>>x;
+    cout<<"Enter the amount of money to construct:\n"; 
+    cin>>amount;
+    
 
-    vector<int> coins2 = {2};
-    int amount2 = 3;
-    cout<<coinChange(coins2,amount2)<<endl;                       // ans = -1 , no way to construct amount = 3 form coins = [2]
+    cout<<coinChange(coins,amount)<<endl;                        // ans = 3 , 11 = 5 + 5 + 1
 
     return 0;
 }
