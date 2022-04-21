@@ -240,7 +240,7 @@ Given pointer to the head node of a linked list, the task is to reverse the link
 # Searching in a linked list
 
 ## Iterative Solution 
-### ALGORITHM
+### Algorithm
 
 1) Initialize a node pointer, current = head.
 2) Do following while current is not NULL
@@ -248,11 +248,11 @@ Given pointer to the head node of a linked list, the task is to reverse the link
     b) current = current->next
 3) Return false 
 
-### PROPERTIES
+### Properties
 Time-Complexity-->O(n)
 Space-Complexity-->O(n)
 
-### EXAMPLES
+### Examples
 Linked list-->11->23->45->56->13->50
 ->If we search for 45 then output will be
 output-->Yes
@@ -263,17 +263,17 @@ output-->No
 
 
 ## Recursive Solution 
-### ALGORITHM
+### Algorithm
 bool search(head, x)
 1) If head is NULL, return false.
 2) If head's key is same as x, return true;
 3) Else return search(head->next, x) 
 
-### PROPERTIES
+### Properties
 Time-Complexity-->O(n)
 Space-Complexity-->O(n)
 
-### EXAMPLES
+### Examples
 Linked list-->1->2->5->8->6->30
 ->If we search for 40 then output will be
 output-->No
