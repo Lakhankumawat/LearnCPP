@@ -11,12 +11,11 @@
 
 Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x is the first greater element on the right side of x in the array. Elements for which no greater element exist, consider the next greater element as -1. 
 ```
-Input: elements of array 4 8 3 19 3
+Input: elements of array 11 13 21 3
 Output: 
-4-->8
-8-->19
-3-->19
-19-->-1
+11-->13
+13-->21
+21-->-1
 3-->-1
 ```
 <a name ="algo"></a>
@@ -48,7 +47,7 @@ Output:
 <a name ="testcase"></a>
 ### Test Case
 
-![output](https://user-images.githubusercontent.com/84399701/160231076-3516027d-4b94-4548-9a48-26971f9bd8d8.png)
+![ngeoutput](https://user-images.githubusercontent.com/84399701/164373069-017a36e2-551f-40e5-babe-020ee2634a7f.png)
 
 
 
