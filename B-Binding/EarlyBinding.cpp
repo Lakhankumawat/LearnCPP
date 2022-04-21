@@ -27,6 +27,7 @@ int main(void)
 	// compile time (compiler sees type
 	// of pointer and calls base class
 	// function.)
+    cout<<"Trying to call the derived class show function using the base class pointer"<<endl;
 	bp->show();
 
 	return 0;

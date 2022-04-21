@@ -17,6 +17,7 @@ public:
 int main(void)
 {
 	Base *bp = new Derived;
+    cout<<"Called the derived class show function using the base class pointer"<<endl;
 	bp->show(); // RUN-TIME POLYMORPHISM
 	return 0;
 }
