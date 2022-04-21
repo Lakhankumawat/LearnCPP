@@ -43,13 +43,22 @@ void printNGE(int arr[], int n)
 		cout << s.top() << " --> " << -1 << endl;
 		s.pop();
 	}
+	delete []arr;
 }
 
 /* Driver code */
 int main()
 {
-	int arr[] = { 11, 13, 21, 3 };
-	int n = sizeof(arr) / sizeof(arr[0]);
+	int n;
+    	cout<<"Enter size of the array: "<<endl;
+    	cin>>n;
+    	int* arr=new int[n];
+    	cout<<"Enter elements of the array: "<<endl;
+    	for (int i = 0; i < n; i++)
+    	{
+        cin>>arr[i];
+    	}
+    	cout<<"Next Greater Element Output"<<endl;
 	printNGE(arr, n);
 	return 0;
 }
