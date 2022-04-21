@@ -934,7 +934,7 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 # [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
 
-- [Problem Statement](#problem-statement)
+- [Problem Statement](#problem-statement-4)
 
 - [Examples](#examples)
 
