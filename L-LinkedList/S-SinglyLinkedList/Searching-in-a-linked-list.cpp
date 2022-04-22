@@ -60,7 +60,6 @@ int main()
 {
 	/* Start with the empty list */
 	Node* head = NULL;
-	int x = 21;
 
 	/* Use push() to construct below list
 	14->21->11->30->10 */
