@@ -70,7 +70,7 @@ int main()
 	push(&head, 21);
 	push(&head, 14);
         int y;
-	cout<<"Enter the value of node"<<endl;
+	cout<<"Enter the value of node you want to searched"<<endl;
 	cin>>y;
 	RecursiveSearch(head, y)? cout<<"Yes" : cout<<"No";
 	return 0;
