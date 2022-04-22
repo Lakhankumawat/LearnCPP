@@ -8,6 +8,7 @@
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Symmetric matrix](#symmetric-matrix)
+- [Union of two Sorted Arrays](#union-of-two-sorted-arrays)
 
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
@@ -537,3 +538,38 @@ For every k size window store every element if negative in deque from rear end u
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
  
+# Union of two Sorted Arrays 
+
+
+## Approach :   
+
+Merge all elements of A and B by taking common element once.
+
+**Algorithm :**
+```
+	1. Initialise pointer variables i and j to starting indexes of A and B 
+	2. Also initialise m as length of A and n as length of B.
+	3. While i<m and j<n,
+		3.1. If A[i]<A[j],copy A[i] and i++.
+		3.2. If A[i]>A[j],copy A[j] and j++.
+		3.3. Otherwise , copy A[i] and i++ and j++.
+```
+
+**Time Complexity** 
+  
+O(m+n)= O(n+n)= O(n) 
+Time Complexity : `O(n)` 
+
+**Space Complexity** 
+  
+No extra space is used.  
+Time Complexity : `O(1)` 
+
+
+## OUTPUT : 
+
+
+![image](https://user-images.githubusercontent.com/81226536/163536470-3971f593-6a1a-4be1-9461-b7e4c3981457.png)
+
+
+
