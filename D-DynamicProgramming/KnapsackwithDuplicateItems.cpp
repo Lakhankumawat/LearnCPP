@@ -1,5 +1,5 @@
 //Knapsack with Duplicate Items
-//link of the Problem Statement :-
+//link of the Problem Statement :- https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1/#
 
 #include<bits/stdc++.h>
 using namespace std;
