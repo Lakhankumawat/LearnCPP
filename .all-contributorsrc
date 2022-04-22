@@ -594,6 +594,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "michaelehab",
+      "name": "Michael Ehab",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29122581?v=4",
+      "profile": "https://www.linkedin.com/in/michaelehab16/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
