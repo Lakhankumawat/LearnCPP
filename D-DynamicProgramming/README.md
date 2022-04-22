@@ -1,6 +1,10 @@
 
+
+
+
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
+- [Rod Cutting](#rod-cutting)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Shortest Common Super-sequence](#shortest-common-super-sequence)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
@@ -77,7 +81,45 @@ return f[n];
  ```
  Solution Link: 
  ```
----
+## Rod Cutting 
+- [Problem Statement](#problem-statement-for-rod-cutting)
+    - [Examples](#rod-cutting-examples)
+- [Optimal Approach](#rod-cutting-optimal-approach)
+- [Complexity](#rod-cutting-complexity)
+### Problem Statement for Rod Cutting
+Given a rod of length n and a list of rod prices of length i, where 1 <= i <= n, find the optimal way to cut the rod into smaller rods to maximize profit.
+
+![image](https://user-images.githubusercontent.com/29122581/164487339-bc6e60e9-36f6-4d40-b804-2a220f0ff3d2.png)
+
+
+#### Rod Cutting Examples
+
+    1. prices[] = [1, 5, 8, 9, 10, 17, 17, 20]  
+       rod length = 4  
+       Best: Cut the rod into two pieces of length 2 each to gain revenue of 5 + 5 = 10
+       
+    2. prices[] = [1, 5, 8, 9, 10, 17, 17, 20]
+       rod length = 8
+       Best: Cut the rod into two pieces of length 2 and 6 to gain revenue of 5 + 17 = 22
+       
+    3. prices[] = [3, 5, 8, 9, 10, 17, 17, 20]
+       rod length = 8
+       Best: Cut the rod into eight pieces of length 1 to gain revenue of 8 * 3 = 24
+       
+#### Rod Cutting Optimal Approach
+
+    We will solve this problem in a bottom-up manner. (iteratively)  
+    In the bottom-up approach, we solve smaller subproblems first, then move on to larger subproblems.  
+    The following bottom-up approach computes dp[i], which stores maximum profit achieved from the rod of length i from 1 to len. 
+    It uses the value of smaller values i already computed.
+    
+![image](https://user-images.githubusercontent.com/29122581/164486773-2ec7a752-dcce-464c-adf2-4ecc5fa613db.png)
+    
+#### Rod Cutting Complexity
+```
+Time Complexity : O(n^2;)  
+Space Complexity : O(n)  
+```
 
 # Equal Sum Partition Problem
 
