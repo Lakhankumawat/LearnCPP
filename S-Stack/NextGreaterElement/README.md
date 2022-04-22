@@ -5,7 +5,7 @@
    - [Visualization of Algorithm.](#approach)
    - [Time Complexity](#time)
    - [Auxiliary Space](#space)
-   - [Test case](#testcase)
+   
 <a name ="nge"></a>
 #  Next Greater Element Using Stack
 
@@ -44,10 +44,8 @@ Output:
 <a name ="space"></a>
 **Auxiliary Space:** O(n) for stack.
 
-<a name ="testcase"></a>
-### Test Case
 
-![ngeoutput](https://user-images.githubusercontent.com/84399701/164373069-017a36e2-551f-40e5-babe-020ee2634a7f.png)
+
 
 
 
