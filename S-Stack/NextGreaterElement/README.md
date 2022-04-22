@@ -1,6 +1,6 @@
 <!-- Table of content -->
 # Table of content
--[ Problem Statement: Next Greater Element. ](#nge)
+- [Problem Statement: Next Greater Element.](#nge)
    - [Algorithm.](#algo)
    - [Visualization of Algorithm.](#approach)
    - [Time Complexity](#time)
