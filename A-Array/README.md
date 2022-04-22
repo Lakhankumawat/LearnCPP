@@ -663,7 +663,7 @@ For **BINARY SEARCH**-
 
  # Reversing of Array
 
-## Reverse1
+Reverse1
 
 ### Algorithm
 
@@ -685,18 +685,17 @@ Output :5, 4, 3, 2, 1
 Output : 40, 30, 20, 10
 
 
-
-## Reverse2
+ Reverse2
 
 ### Algorithm
 The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
 For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 with n-1, 3 with n-2 and further. 
 
-### Properties
+ Properties
 Time-complexity-->O(n)
 Space-complexity-->O(1)
 
-### Examples
+Examples
 1->Input : 1, 2, 3, 4, 5
 Output :5, 4, 3, 2, 1
 
