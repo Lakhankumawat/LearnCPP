@@ -19,7 +19,7 @@ Output:
 3-->-1
 ```
 <a name ="algo"></a>
-## Algorithim
+## Algorithm
 ```
 * Push the first element to stack.
 * Pick rest of the elements one by one and follow the following steps in loop. 
