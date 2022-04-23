@@ -36,6 +36,8 @@ When we see a mismatch
 We know that characters pat[0..j-1] match with txt[i-j…i-1] (Note that j starts with 0 and increment it only when there is a match).
 We also know (from above definition) that lps[j-1] is count of characters of pat[0…j-1] that are both proper prefix and suffix.
 From above two points, we can conclude that we do not need to match these lps[j-1] characters with txt[i-j…i-1] because we know that these characters will anyway match. Let us consider above example to understand this.
+ ![kmped](https://user-images.githubusercontent.com/91210199/164911136-c063849b-65e3-4c60-9235-cdd64367b0f7.jpg)
+
 
 
 # Complexity Analysis
