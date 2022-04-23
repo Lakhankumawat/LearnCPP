@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-64-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-68-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -127,6 +127,9 @@ Fond of designing README this section will be helpful to you
     <td align="center"><a href="https://github.com/Poojaamangal"><img src="https://avatars.githubusercontent.com/u/91134877?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pooja Mangal</b></sub></a><br />👀</td>
       <td align="center"><a href="https://github.com/Mrjoy832"><img src="https://avatars.githubusercontent.com/u/77873383?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TRIDIB BAG</b></sub></a><br />👀</td>
   </tr>
+  <tr>
+  <td align="center"><a href="https://github.com/aditi944"><img src="https://avatars.githubusercontent.com/u/68181276?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aditi</b></sub></a><br />👀</td>
+  </tr>
 </table>
 
 <br>
@@ -223,6 +226,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/Shatakshi-Choudhary"><img src="https://avatars.githubusercontent.com/u/87706725?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shatakshi-Choudhary</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=Shatakshi-Choudhary" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/alyeyad"><img src="https://avatars.githubusercontent.com/u/78499278?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aly Eyad</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=alyeyad" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/michaelehab16/"><img src="https://avatars.githubusercontent.com/u/29122581?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Ehab</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=michaelehab" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/shr-code"><img src="https://avatars.githubusercontent.com/u/84399701?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shraddha</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shr-code" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SanyaGera"><img src="https://avatars.githubusercontent.com/u/75986201?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanya Gera</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SanyaGera" title="Code">💻</a></td>
   </tr>
 </table>
 
