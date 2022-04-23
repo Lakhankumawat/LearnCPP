@@ -10,6 +10,7 @@
 - [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
 - [Reversing of array](#reversing-of-array)
+- [Find Duplicates of array](#find-duplicates)
 
 
 
@@ -699,3 +700,40 @@ For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 w
  Properties
 Time-complexity-->O(n)
 Space-complexity-->O(1)
+
+
+# Find Duplicates
+
+- [problem](##problem)
+- [algorithm](##algorithm)
+- [complexity](##complexity )
+
+## Problem 
+
+```
+Given an integer array nums of length n where all the integers of nums are in the range [1, n] and each integer appears once or twice, return an array of all the integers that appears twice.
+
+You must write an algorithm that runs in O(n) time and uses only constant extra space.
+```
+
+## Algorithm
+
+```
+class Solution {
+public:
+    vector<int> findDuplicates(vector<int>& nums) {
+        vector<int> v;
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<nums.size()-1;i++){
+            if(nums[i]==nums[i+1]){
+                v.push_back(nums[i]);
+            }
+        }
+        return v;
+    }
+};
+```
+
+## Complexity 
+
+- O(n)
