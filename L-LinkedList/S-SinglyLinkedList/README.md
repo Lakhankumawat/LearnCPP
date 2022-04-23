@@ -237,51 +237,15 @@ Given pointer to the head node of a linked list, the task is to reverse the link
 ##### Image for Reference:
 ![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
+
+
 # Searching in a linked list
 
 ![image](https://user-images.githubusercontent.com/100334178/164755329-e649def2-f5e5-4406-a896-5f78b3a52aa7.png)
 
- **Iterative Solution** 
-### Algorithm
-
-1) Initialize a node pointer, current = head.
-2) Do following while current is not NULL
-    a) current->key is equal to the key being searched return true.
-    b) current = current->next
-3) Return false 
-
-### Properties
-Time-Complexity-->O(n)
-Space-Complexity-->O(n)
-
-### Examples
-Linked list-->1->2->5->8->6->30
-->If we search for 40 then output will be
-output-->No
-->If we search for 8 then output will be
-output-->yes
-
- **Recursive Solution** 
-### Algorithm
-bool search(head, x)
-1) If head is NULL, return false.
-2) If head's key is same as x, return true;
-3) Else return search(head->next, x) 
-
-### Properties
-Time-Complexity-->O(n)
-Space-Complexity-->O(n)
-
-### Examples
-Linked list-->1->2->5->8->6->30
-->If we search for 40 then output will be
-output-->No
-->If we search for 8 then output will be
-output-->yes
-
 ### Explanation
 
-Linked List : 10  20  30  NULL
+1. Linked List : 10  20  30  NULL
 
 Key : 20
 
@@ -292,7 +256,7 @@ Key : 20
 2. Now, temp->data = 20. key = 20. temp->key == key. "Seach Found".
 
 
-Linked List : 10  20  30  NULL
+2. Linked List : 10  20  30  NULL
 
 Key : 100
 
@@ -307,3 +271,29 @@ Key : 100
 4. Finally, the program execution will come out of the loop. So, it will return -1.
 
 "Search Not Found".
+
+ ## Approach1
+ **Iterative Solution** 
+### Algorithm
+
+1) Initialize a node pointer, current = head.
+2) Do following while current is not NULL
+    a) current->key is equal to the key being searched return true.
+    b) current = current->next
+3) Return false 
+
+### Properties
+Time-Complexity-->O(n)
+Space-Complexity-->O(n)
+
+ ## Approach2
+ **Recursive Solution** 
+### Algorithm
+bool search(head, x)
+1) If head is NULL, return false.
+2) If head's key is same as x, return true;
+3) Else return search(head->next, x) 
+
+### Properties
+Time-Complexity-->O(n)
+Space-Complexity-->O(n)
