@@ -241,7 +241,7 @@ Given pointer to the head node of a linked list, the task is to reverse the link
 
 ![image](https://user-images.githubusercontent.com/100334178/164755329-e649def2-f5e5-4406-a896-5f78b3a52aa7.png)
 
- Iterative Solution 
+ **Iterative Solution** 
 ### Algorithm
 
 1) Initialize a node pointer, current = head.
@@ -261,7 +261,7 @@ output-->No
 ->If we search for 8 then output will be
 output-->yes
 
- Recursive Solution 
+ **Recursive Solution** 
 ### Algorithm
 bool search(head, x)
 1) If head is NULL, return false.
