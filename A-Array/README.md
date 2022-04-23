@@ -7,6 +7,7 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
+- [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
 - [Union of two Sorted Arrays](#union-of-two-sorted-arrays)
 
@@ -69,6 +70,7 @@ The problem states that there is a string that contains only digits. You have to
 Time complexity: O(n<sup>2</sup>) 
 Space complexity: O(1) 
 </pre>
+
 
 
 
@@ -537,6 +539,7 @@ For every k size window store every element if negative in deque from rear end u
    ```
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
+
  
 # Union of two Sorted Arrays 
 
@@ -570,6 +573,4 @@ Time Complexity : `O(1)`
 
 
 ![image](https://user-images.githubusercontent.com/81226536/163536470-3971f593-6a1a-4be1-9461-b7e4c3981457.png)
-
-
 
