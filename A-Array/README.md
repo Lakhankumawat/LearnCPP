@@ -663,7 +663,14 @@ For **BINARY SEARCH**-
 
  # Reversing of Array
 
-## Reverse1
+## Reverse
+
+![image](https://user-images.githubusercontent.com/100334178/164883102-0de2ab96-09e6-4a7c-b392-6173fd79a01b.png)
+
+### Approach1
+
+![image](https://user-images.githubusercontent.com/100334178/164883125-5e188e0f-85fd-4a3e-b0b4-ebe140dc1c53.png)
+![image](https://user-images.githubusercontent.com/100334178/164883138-4b106bd0-79d0-403d-b662-b6540a3ce0bc.png)
 
 ### Algorithm
 
@@ -677,15 +684,13 @@ For **BINARY SEARCH**-
 Time-complexity-->O(n)
 Space-complexity-->O(n)
 
-### Examples
-1->Input : 1, 2, 3, 4, 5
-Output :5, 4, 3, 2, 1
-
-2->Input :  10, 20, 30, 40
-Output : 40, 30, 20, 10
 
 
-## Reverse2
+### Approach2
+
+![image](https://user-images.githubusercontent.com/100334178/164883049-30b0e1a4-8b39-4fe1-b6e7-41d766cdd572.png)
+
+![image](https://user-images.githubusercontent.com/100334178/164883155-ce34b2ef-fea9-4e0b-9838-5d18adf02b05.png)
 
 ### Algorithm
 The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
@@ -694,12 +699,3 @@ For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 w
  Properties
 Time-complexity-->O(n)
 Space-complexity-->O(1)
-
-Examples
-1->Input : 1, 2, 3, 4, 5
-Output :5, 4, 3, 2, 1
-
-2->Input :  10, 20, 30, 40
-Output : 40, 30, 20, 10
-
-
