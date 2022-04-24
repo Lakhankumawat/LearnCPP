@@ -9,6 +9,7 @@
 - [Peak In 1D Array](#peak-in-1d-array)
 - [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
+- [Reversing of array](#reversing-of-array)
 
 
 
@@ -660,4 +661,41 @@ For **BINARY SEARCH**-
 * **Best Case Time Complexity is** O(1)
 * **Worst Case Time Complexity is** O(log n)
 
- 
+ # Reversing of Array
+
+## Reverse
+
+![image](https://user-images.githubusercontent.com/100334178/164883102-0de2ab96-09e6-4a7c-b392-6173fd79a01b.png)
+
+### Approach1
+
+![image](https://user-images.githubusercontent.com/100334178/164883125-5e188e0f-85fd-4a3e-b0b4-ebe140dc1c53.png)
+![image](https://user-images.githubusercontent.com/100334178/164883138-4b106bd0-79d0-403d-b662-b6540a3ce0bc.png)
+
+### Algorithm
+
+1.Take input the size of the array and the elements of the array.
+2.Consider a function reverse1 which takes the parameters-the array(say arr) and the size of the array(say n).
+3.Inside the function, a new array (with the array size of the first array, arr) is initialized. The array arr[] is iterated from the first element, and each element of array arr[] is placed in the new array from the back, i.e., the new array is iterated from its last element.
+4.In this way, all the elements of the array arr[] are placed reversely in the new array.
+5.Further, we can iterate through the new array from the beginning and print the elements of the array.
+
+### Properties
+Time-complexity-->O(n)
+Space-complexity-->O(n)
+
+
+
+### Approach2
+
+![image](https://user-images.githubusercontent.com/100334178/164883049-30b0e1a4-8b39-4fe1-b6e7-41d766cdd572.png)
+
+![image](https://user-images.githubusercontent.com/100334178/164883155-ce34b2ef-fea9-4e0b-9838-5d18adf02b05.png)
+
+### Algorithm
+The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
+For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 with n-1, 3 with n-2 and further. 
+
+ Properties
+Time-complexity-->O(n)
+Space-complexity-->O(1)
