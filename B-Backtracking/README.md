@@ -48,3 +48,48 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 > My OUTPUT
 > 
    <img src="https://user-images.githubusercontent.com/55774240/113557918-66a0d880-961c-11eb-8cd8-a71a6f5db9a4.png" width="350" />
+
+
+
+## [3. The Knight’s tour problem](#The-Knight’s-tour-problem)
+   - [Backtracking Algorithm](#Algorithm)
+   - [Time Complexity](#TComplexity)
+   - [Space Complexity](#SComplexity)
+   - [Advantages](#advantages)
+   - [Disadvantage](#disadvantage)
+
+
+## The Knight’s tour problem
+
+- Given a number n which represents the size of a chess board, and a row and a column, as a starting point for a knight piece, you are required to generate the all moves of a knight starting in (row, col) such that knight visits all cells of the board exactly once.
+
+- A knight should move according to the rules in chess. Please explore the next moves in the clockwise direction to get the same result as ours.
+
+- One of the possible valid configuration for N = 8 is shown below:
+
+### Backtracking Algorithm
+
+- If invalid move (row < 0, row >= n, col < 0, col >= n or chess[row][col] > 0), then return without printing.
+- If the base case is hit (got till the last move = n2), then fill the cell with move no, print the configuration, mark the cell empty back - again (=0), and backtrack/return.
+- Before Recurring, mark the cell with the current move number.
+- Recur for all possible 8 moves with modified values of row and col, and a unit increment of the move number.
+- After returning from all 8 calls, mark the cell as empty again (=0) and return.
+
+### Time Complexity
+```
+- For each cell, we have 8 decisions to choose from for each of the n2 cell, the time complexity will be O(8(n^2)).
+ ``` 
+### Space Complexity
+```
+- The maximum number of recursive calls/depth of the recursion tree can be equal to the number of cells. Hence the recursion stack call will take atmax O(n2) space.
+
+- However, we are not using any extra data structure, hence the solution is said to have O(1) auxiliary space.
+ ``` 
+### Advantages 
+- We learned how to use backtracking in this problem.
+- Less Memory consuming.
+
+### Disadvantages
+- Backtracking is not the best solution for the Knight’s tour problem. 
+- Time Consuming.
+
