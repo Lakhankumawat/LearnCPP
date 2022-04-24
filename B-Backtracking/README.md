@@ -67,6 +67,9 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 
 - One of the possible valid configuration for N = 8 is shown below:
 
+![Screenshot (556)](https://user-images.githubusercontent.com/98539013/164994466-b3475065-a90c-4397-a0b4-d57c3a8196a5.png)
+
+
 ### Backtracking Algorithm
 
 - If invalid move (row < 0, row >= n, col < 0, col >= n or chess[row][col] > 0), then return without printing.
