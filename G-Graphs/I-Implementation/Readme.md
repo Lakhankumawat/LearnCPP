@@ -4,7 +4,14 @@
     - [Algorithm](#algorithm)
     - [Properties](#properties)
     - [Advantages](#advantages)
-    - [Disadvantage](#disadvantages)
+    - [Disadvantages](#disadvantages)
+-
+- [Add and Delete edge of directed graph in Adjacency Matrix](#add-and-delete-edge-of-directed-graph-in-adjacency-matrix)
+    - [Code](DelAddEdgeAdjacencyMatrix.cpp)
+    - [Add & Delete edge Algorithm](#add-&-Delete-edge-algorithm)
+    - [Propertie](#propertie)
+    - [Advantage](#advantage)
+    - [Disadvantage](#disadvantage)
 
 ## Adjacency Matrix
 adjacency matrix is a matrix that maintain the information of adjacent vertices .
@@ -35,3 +42,32 @@ Time Complexity: O(n^2), where n is the number of vertices in a graph.
 
 ### Disadvantages
 - large memory complexity .
+
+## Add and Delete edge of directed graph in Adjacency Matrix
+
+- INSERTION / addition - an edge (i, j ) requires changing value of adj[i][j] from 0 to 1.
+<!-- image to help better explain the concept -->
+- Addition of an edge in directed graph
+![add-and-delete-edge-of-directed-graph-in-adjacency-matrix](https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/add-edge-operation-on-graph-in-data-structure.png)
+
+- DELETION - an edge (I,j ) requires changing value of adj[i][j] from 1 to 0.
+
+<!-- image to help better explain the concept -->
+- Deletion of an edge in directed graph
+![add-and-delete-edge-of-directed-graph-in-adjacency-matrix](https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/delete-edge-operation-on-graph-in-data-structure.png)
+
+
+### Add & Delete edge Algorithm
+1. Addition : For a new edge in adj[][], Update value at Adj[X][Y] to 1 and
+2. Deletion : For deletind a existing edge in adj[][], Update value at Adj[X][Y] to 0 .
+
+### Properties
+Time Complexity : O(1) , for both addition and deletion .
+Space Complexity : O(n^2) , where n is the total number of vertex .
+
+### Advantages
+- Add an edge in graph in constant time .
+- Delete an edge in the graph in constant time .
+
+### Disadvantages
+- If using adjacency matrix traversing graph using DPS/BFS algorithms require O(n^2) time else where using adjacency list only O(v+e) time required , (where v is vertex and e is edge).
