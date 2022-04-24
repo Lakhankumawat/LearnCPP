@@ -5,10 +5,10 @@
     - [Properties](#properties)
     - [Advantages](#advantages)
     - [Disadvantages](#disadvantages)
--
+
 - [Add and Delete edge of directed graph in Adjacency Matrix](#add-and-delete-edge-of-directed-graph-in-adjacency-matrix)
     - [Code](DelAddEdgeAdjacencyMatrix.cpp)
-    - [Add & Delete edge Algorithm](#add-&-Delete-edge-algorithm)
+    - [Add & Delete edge Algorithm](#Add-&-Delete-edge-Algorithm)
     - [Propertie](#propertie)
     - [Advantage](#advantage)
     - [Disadvantage](#disadvantage)
@@ -61,13 +61,13 @@ Time Complexity: O(n^2), where n is the number of vertices in a graph.
 1. Addition : For a new edge in adj[][], Update value at Adj[X][Y] to 1 and
 2. Deletion : For deletind a existing edge in adj[][], Update value at Adj[X][Y] to 0 .
 
-### Properties
-Time Complexity : O(1) , for both addition and deletion .
-Space Complexity : O(n^2) , where n is the total number of vertex .
+### Propertie
+- Time Complexity : O(1) , for both addition and deletion .
+- Space Complexity : O(n^2) , where n is the total number of vertex .
 
-### Advantages
+### Advantage
 - Add an edge in graph in constant time .
 - Delete an edge in the graph in constant time .
 
-### Disadvantages
+### Disadvantage
 - If using adjacency matrix traversing graph using DPS/BFS algorithms require O(n^2) time else where using adjacency list only O(v+e) time required , (where v is vertex and e is edge).
