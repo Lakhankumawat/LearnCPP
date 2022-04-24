@@ -594,6 +594,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "michaelehab",
+      "name": "Michael Ehab",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29122581?v=4",
+      "profile": "https://www.linkedin.com/in/michaelehab16/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "shr-code",
+      "name": "Shraddha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84399701?v=4",
+      "profile": "https://github.com/shr-code",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SanyaGera",
+      "name": "Sanya Gera",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75986201?v=4",
+      "profile": "https://github.com/SanyaGera",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
