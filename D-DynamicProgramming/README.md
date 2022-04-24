@@ -1,6 +1,10 @@
 
+
+
+
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
+- [Rod Cutting](#rod-cutting)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Shortest Common Super-sequence](#shortest-common-super-sequence)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
@@ -14,7 +18,12 @@
 - [Unique Paths](#unique-paths)
 
 - [Unique Paths II](#unique-paths-ii)
+
 - [Count Of Subsets With Sum Equal To Given Sum](#count-of-subsets-with-sum-equal-to-given-sum)
+
+
+- [Minimum Falling Path Sum](#minimum-falling-path-sum)
+
 
 
 # Dynamic Programming
@@ -75,7 +84,45 @@ return f[n];
  ```
  Solution Link: 
  ```
----
+## Rod Cutting 
+- [Problem Statement](#problem-statement-for-rod-cutting)
+    - [Examples](#rod-cutting-examples)
+- [Optimal Approach](#rod-cutting-optimal-approach)
+- [Complexity](#rod-cutting-complexity)
+### Problem Statement for Rod Cutting
+Given a rod of length n and a list of rod prices of length i, where 1 <= i <= n, find the optimal way to cut the rod into smaller rods to maximize profit.
+
+![image](https://user-images.githubusercontent.com/29122581/164487339-bc6e60e9-36f6-4d40-b804-2a220f0ff3d2.png)
+
+
+#### Rod Cutting Examples
+
+    1. prices[] = [1, 5, 8, 9, 10, 17, 17, 20]  
+       rod length = 4  
+       Best: Cut the rod into two pieces of length 2 each to gain revenue of 5 + 5 = 10
+       
+    2. prices[] = [1, 5, 8, 9, 10, 17, 17, 20]
+       rod length = 8
+       Best: Cut the rod into two pieces of length 2 and 6 to gain revenue of 5 + 17 = 22
+       
+    3. prices[] = [3, 5, 8, 9, 10, 17, 17, 20]
+       rod length = 8
+       Best: Cut the rod into eight pieces of length 1 to gain revenue of 8 * 3 = 24
+       
+#### Rod Cutting Optimal Approach
+
+    We will solve this problem in a bottom-up manner. (iteratively)  
+    In the bottom-up approach, we solve smaller subproblems first, then move on to larger subproblems.  
+    The following bottom-up approach computes dp[i], which stores maximum profit achieved from the rod of length i from 1 to len. 
+    It uses the value of smaller values i already computed.
+    
+![image](https://user-images.githubusercontent.com/29122581/164486773-2ec7a752-dcce-464c-adf2-4ecc5fa613db.png)
+    
+#### Rod Cutting Complexity
+```
+Time Complexity : O(n^2;)  
+Space Complexity : O(n)  
+```
 
 # Equal Sum Partition Problem
 
@@ -929,6 +976,7 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 #### Space Complexity = O(m * n)
 
+
 # Count Of Subsets With Sum Equal To Given Sum
 
 - [Problem Statement](#problem-statement)
@@ -986,5 +1034,99 @@ lastly we will return our answer that is t[n][sum].
 
 Time Complexity: O(sum*n), where the sum is the ‘target sum’ and ‘n’ is the size of the array.
 Auxiliary Space: O(sum*n), as the size of the 2-D array, is sum*n. 
+
+=======
+
+# [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
+
+- [Problem Statement](#problem-statement-4)
+
+- [Examples](#examples-4)
+
+- [Explanation](#explanation-5)
+
+- [Pseudo Code](#pseudo-code-2)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/MinimumFallingPathSum/D-DynamicProgramming/MinimumFallingPathSum.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-1)
+
+
+
+### Problem Statement
+
+Given an n x n array of integers matrix, return the minimum sum of any falling path through matrix.
+
+A falling path starts at any element in the first row and chooses the element in the next row that is either directly below or diagonally left/right. Specifically, the next element from position (row, col) will be (row + 1, col - 1), (row + 1, col), or (row + 1, col + 1).
+
+
+### Examples
+
+#### Example 1
+
+![image](https://user-images.githubusercontent.com/75883328/163238977-cc4fff48-4640-41f4-9877-7da9ac5fc4e7.png)
+
+#### Input: matrix = [[2,1,3],[6,5,4],[7,8,9]]
+#### Output: 13
+
+
+#### Example 2
+
+![image](https://user-images.githubusercontent.com/75883328/163239115-52cb1c59-4463-444b-918b-f393b6239bf1.png)
+
+#### Input: matrix = [[-19,57],[-40,-5]]
+#### Output: -59
+
+
+### Explanation
+
+- we are supposed to find the minimum sum of the falling path.
+- since a falling path starts at any element in the first row ,so we'll run a for loop upto the number of columns.
+- now at any cell we are having three options :- 1.move directly below ,2.move  diagonally left ,3. move diagonally right
+- now explore all these three options to get a falling path with minimum sum.
+- if we are on grid[i][j] ,then  
+
+               - on moving directly below we'll reach gird[i+1][j] .
+               
+               - on moving move diagonally left we'll reach gird[i+1][j-1] .
+               
+               - on moving move diagonally right we'll reach gird[i+1][j+1].
+
+- if at any point i<0 or j<0 return infinity ,because its an invalid path.
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+- So we can store the values in a vector and will use those values from the vector only instead of making recursive calls for it.
+
+
+
+
+### Pseudo Code
+
+
+        int minSum(int currRow,int currCol,int m,int n,vector<vector<int>>&matrix, vector<vector<int>>&v)
+
+               if(currCol < 0 || currCol >= n) return 100001; 
+               if(currRow == m-1) return matrix[currRow][currCol];
+        
+               if(v[currRow][currCol]!=-1) return v[currRow][currCol];
+
+               int leftD = matrix[currRow][currCol] + minSum(currRow+1,currCol-1,m,n,matrix,v); 
+               int down = matrix[currRow][currCol] + minSum(currRow+1,currCol,m,n,matrix,v);    
+               int rightD = matrix[currRow][currCol] + minSum(currRow+1,currCol+1,m,n,matrix,v); 
+       
+               v[currRow][currCol] = min(down,min(leftD,rightD));
+               return v[currRow][currCol];
+
+
+
+
+### Time Complexity and Space Complexity
+
+#### Time Complexity = O(n^2)
+
+#### Space Complexity = O(n^2)
 
 
