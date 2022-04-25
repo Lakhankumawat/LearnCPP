@@ -3,6 +3,7 @@
 - [1.Fractional KnapSack](#OPEN-this-link-below-for-a-deatiled-summary-of-above-greedy-algorithms-✨)
 - [2.Job Scheduling](#OPEN-this-link-below-for-a-deatiled-summary-of-above-greedy-algorithms-✨)
 - [3.Busyman Problem](#OPEN-this-link-below-for-a-deatiled-summary-of-above-greedy-algorithms-✨)
+- [4.Grumpy Bookstore owner](#open-this-link-below-for-a-deatiled-summary-of-above-greedy-algorithms-✨)
 - [Optimal Merge Pattern](#Optimal-Merge-Pattern)
     - [Implementation](OptimalMergePattern.cpp)
     - [Algorithm](#algorithm)
@@ -16,6 +17,8 @@
  [2.Job Scheduling](https://github.com/Lakhankumawat/LearnCPP/files/6333157/1906055_CS4403.pdf) 
 <br>
 [3.Busyman Problem](https://www.spoj.com/problems/BUSYMAN/)
+<br>
+[4. Grumpy Bookstore owner](https://www.tutorialspoint.com/grumpy-bookstore-owner-in-python)
 
 
 ## Optimal Merge Pattern
