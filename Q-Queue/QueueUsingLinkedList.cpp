@@ -22,7 +22,7 @@ if((front==NULL) && (rear==NULL))
 rear->next=newNode;
 rear= newNode;
 
-}
+}}
 
 
 void Delete(){
