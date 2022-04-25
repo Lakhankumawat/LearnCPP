@@ -1075,7 +1075,7 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 - [Examples](#examples-5)
 
-- [Explanation](#explanation-6)
+- [Algorithm](#algorithm-1)
 
 - [Pseudo Code](#pseudo-code-3)
 
@@ -1118,7 +1118,7 @@ wt[] = {1, 3, 4, 5}
 Output: 11
 Explanation-The optimal choice is to pick the 2nd and 4th element
   
-### Explanation
+### Algorithm 
 
 - We have to maximixe the profit provided that we do not exceed the knapsack capacity and can take an iten any number of times.
 - If we are on the currentItem then, we are having two possibilities :- 1)either to take it or 2)to leave it.
