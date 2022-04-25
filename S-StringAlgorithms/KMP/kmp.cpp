@@ -60,8 +60,12 @@ void KMP(string text, string pattern)
 // Program to implement the KMP algorithm in C++
 int main()
 {
-    string text = "ABCABAABCABAC";
-    string pattern = "CAB";
+    string text ;
+    string pattern;
+    cout<<"Enter the text ";
+    cin>>text;
+    cout<<"Enter the pattern ";
+    cin>>pattern;
 
     KMP(text, pattern);
 
