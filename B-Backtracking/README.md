@@ -51,10 +51,10 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 
 
 
-## [3. The Knight’s tour problem](#The-Knight’s-tour-problem)
-   - [Backtracking Algorithm](#Algorithm)
-   - [Time Complexity](#TComplexity)
-   - [Space Complexity](#SComplexity)
+## [3. The Knight’s tour problem](#the-knight’s-tour-problem)
+   - [Algorithm](#algorithm)
+   - [Time Complexity](#timeComplexity)
+   - [Space Complexity](#spaceComplexity)
    - [Advantages](#advantages)
    - [Disadvantage](#disadvantage)
 
@@ -70,7 +70,7 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 ![Screenshot (556)](https://user-images.githubusercontent.com/98539013/164994466-b3475065-a90c-4397-a0b4-d57c3a8196a5.png)
 
 
-### Backtracking Algorithm
+### Algorithm
 
 - If invalid move (row < 0, row >= n, col < 0, col >= n or chess[row][col] > 0), then return without printing.
 - If the base case is hit (got till the last move = n2), then fill the cell with move no, print the configuration, mark the cell empty back - again (=0), and backtrack/return.
