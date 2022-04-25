@@ -8,11 +8,11 @@
 
  - [Forms of Inheritance](#forms-of-inheritance)
    - [Single Inheritance](#single-inheritance)
+   - [Multilevel Inheritance](#multilevel-inheritance)
    - [Multiple Inheritance](#multiple-inheritance)
    - [Hierarchical Inheritance](#hierarchical-inheritance)
-   - [Multilevel Inheritance](#multilevel-inheritance)
    - [Hybrid Inheritance](#hybrid-inheritance)
-   - 
+   
  - [Access Modifiers In Inheritance](#access-modifiers-in-inheritance)
    - [Public Access Modifier](#public-access-modifier)
    - [Private Access Modifier](#private-access-modifier)
@@ -70,6 +70,13 @@ In C++, inheritance is a process in which one object acquires all the properties
 Single inheritance is a type of inheritance in which a derived class is inherited with only one base class.
 
 ![Single](https://user-images.githubusercontent.com/75986201/163713213-0003cadf-b331-41e4-9b0b-38910192d892.png)
+
+### Multilevel Inheritance
+
+In C++ programming, not only you can derive a class from the base class but you can also derive a class from the derived class. This form of inheritance is known as multilevel inheritance.
+
+![image](https://user-images.githubusercontent.com/75986201/165105432-98665b12-40a4-4590-a5ff-19cd13bd27e3.png)
+
 
 ### Access Modifiers In Inheritance
 
