@@ -59,7 +59,7 @@ Time Complexity: O(n^2), where n is the number of vertices in a graph.
 
 ### Add & Delete edge Algorithm
 1. Addition : For a new edge in adj[][], Update value at Adj[X][Y] to 1 and
-2. Deletion : For deletind a existing edge in adj[][], Update value at Adj[X][Y] to 0 .
+2. Deletion : For deleting a existing edge in adj[][], Update value at Adj[X][Y] to 0 .
 
 ### Propertie
 - Time Complexity : O(1) , for both addition and deletion .
