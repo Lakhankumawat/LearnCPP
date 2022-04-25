@@ -13,7 +13,12 @@
    - [Multilevel Inheritance](#multilevel-inheritance)
    - [Hybrid Inheritance](#hybrid-inheritance)
    - 
-
+ - [Access Modifiers In Inheritance](#access-modifiers-in-inheritance)
+   - [Public Access Modifier](#public-access-modifier)
+   - [Private Access Modifier](#private-access-modifier)
+   - [Protected Access Modifier](#public-access-modifier)
+   - [ Summary ](#summary)
+   
 ## Inheritance in C++
 
 In C++, inheritance is a process in which one object acquires all the properties and behaviors of its parent object automatically. In such way, you can reuse, extend or modify the attributes and behaviors which are defined in other class.<hr>
@@ -66,8 +71,56 @@ Single inheritance is a type of inheritance in which a derived class is inherite
 
 ![Single](https://user-images.githubusercontent.com/75986201/163713213-0003cadf-b331-41e4-9b0b-38910192d892.png)
 
+### Access Modifiers In Inheritance
+
+In C++ inheritance, we can derive a child class from the base class in different access modes. For example,
+
+     class Base {
+    .... ... ....
+    };
+
+    class Derived : public Base {
+    .... ... ....
+    };
+Notice the keyword **public** in the code.
+This means that we have created a derived class from the base class in public mode. Alternatively, we can also derive classes in **protected or private modes**.
+
+These 3 keywords (public, protected, and private) are known as **access specifiers in C++ inheritance**.
+
+### Public Access Modifier
+
+Public inheritance makes public members of the base class public in the derived class, and the protected members of the base class remain protected in the derived class.
+(Meaning of Protected members will be cleared later in this section)
+
+**Accessibility in public Inheritance**
+
+| Accessibility |	private members |	protected members	| public members |
+|---------------|-----------------|-------------------|----------------|
+|  Base Class   |      Yes        |       Yes         |     Yes        |
+| Derived Class |      No         |       Yes         |     Yes        |
 
 
+### Private Access Modifier
 
- 	
+As we know, private members cannot be directly accessed from outside the class. Therefore, private members cannot be inherited from the base class. But, in private mode both protected as well as public members of the base class get inherited as private members in the derived class.
 
+**Accessibility in Private Inheritance**
+| Accessibility |	private members |	         Protected members                 |           Public members                 |
+|---------------|-----------------|--------------------------------------------|------------------------------------------|
+|  Base Class   |      Yes        |       Yes                                  |            Yes                           |
+| Derived Class |      No         |       Yes(inherited as private variables)  |     Yes(inherited as private variables)  |
+
+
+### Protected Access Modifier
+
+Protected access modifier is similar to that of private access modifiers, the difference is that the class member declared as Protected are inaccessible outside the class but they can be accessed by any subclass(derived class) of that class. In this case, private members remain not inherited while both the protected as well as public members of the base class will get inherited as protected members in the derived class.
+
+**Accessibility in protected Inheritance**
+
+| Accessibility |	private members |	         Protected members                 |           Public members                       |
+|---------------|-----------------|--------------------------------------------|------------------------------------------------|
+|  Base Class   |      Yes        |       Yes                                  |            Yes                                 |
+| Derived Class |      No         |        Yes                                 |           Yes(inherited as protected members)  |
+
+### Summary
+![image](https://user-images.githubusercontent.com/75986201/164960641-9ecc1809-1627-4355-9416-7eb7d2898d01.png)
