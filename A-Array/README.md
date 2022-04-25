@@ -1,5 +1,5 @@
-
 # Table of contents:
+- [Counting divisible Substrings](#counting-divisible-substrings)
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
 - [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
@@ -7,6 +7,72 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
+- [Array Operations](#array-operations)
+- [Symmetric matrix](#symmetric-matrix)
+- [Reversing of array](#reversing-of-array)
+
+
+
+# [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
+![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
+Question:<br>
+You are given a string Str of length N. Each character of the string is a base 10 digit.
+
+Your task is to find the total number of substrings of Str such that the number denoted by the string Str[i...j] is divisible by 6. Since that result can be a very large return it is modulo 10^9+7.
+
+Notes:
+* It is given that a number denoted by Str[i..j] can have leading Zeroes.
+
+Input Format
+The first line contains an integer, N, denoting the length of the given string.
+The next line contains a string, Str, denoting the given string.
+
+Constrains
+1 <= N <= 10^5
+1 <= len(Str) <= 10^5
+
+<table>
+    <tr>
+        <td>Sample Input</td>
+        <td>Sample Output</td>
+        <td>Explanation</td>
+    </tr>
+    <tr>
+        <td>3<br>328</td>
+        <td>0</td>
+        <td>No substring is divisible by 6</td>
+    </tr>
+    <tr>
+        <td>3<br>318</td>
+        <td>2</td>
+        <td>"18","318" divisible by 6</td>
+    </tr>
+        <tr>
+        <td>4<br>6151</td>
+        <td>1</td>
+        <td>"6" divisible by 6</td>
+    </tr>
+</table>
+</pre>
+<pre>
+The problem states that there is a string that contains only digits. You have to find the number of subsets that can be divisible by 6.
+</pre>
+
+## Algorithm
+* 1<sup>st</sup> Select an index in the string from begining that has not been selected before as leftmost prefix and initilize count = 0.
+* 2<sup>nd</sup> initilize number as 0.
+* 3<sup>rd</sup> get the digit from the string by int(string[index])-int('0').
+* 4<sup>th</sup> Now update the number by (suming prefix digit)*10 +  current index digits and increment count if number is divisible
+* 5<sup>th</sup> follow step 3<sup>rd</sup> till the end of string.
+* 6<sup>th</sup> continue step 1-4 till all the element of string is not chosen as most significant digit place.
+
+## Complexity
+<pre>
+Time complexity: O(n<sup>2</sup>) 
+Space complexity: O(1) 
+</pre>
+
+
 
 
 
@@ -142,7 +208,7 @@ return max_so_far
 **Time complexity:** `O(n)`, Where n is the size of the array. \
 **Space complexity:** `O(1)` 
 
-# Trace and Normal of Matrix
+# Trace and Normal of Matrix:
   - [Trace](#trace)
   - [Normal](#normal)
   - [Properties_of_trace_matrix](#properties-of-trace-matrix)
@@ -199,6 +265,53 @@ trace = 2+4+4  so, trace of matrix = 10
 Time complexity of trace of a matrix is n^2.
 Time complexity of normal of a matrix is n^2.
 ```
+
+# Symmetric matrix:
+- [Symmetric matrix](#symmetric-matrix)
+- [Pseudo Code of Symmetric Matrix](#pseudo-code-of-Symmetric-Matrix)
+- [Some properties of Symmetric Matrix](#some-properties-of-Symmetric-Matrix)
+- [Example of Symmetric Matrix](#example-of-Symmetric-Matrix)
+- [Time complexity/space complexity of Symmetric Matrix](#time-complexity/space-complexity-of-Symmetric-Matrix)
+
+## Problem statement:
+To check weather a matrix is symmetric or not 
+
+## Symmetric Matrix
+
+In linear algebra, a symmetric matrix is defined as the square matrix that is equal to its transpose matrix. The transpose matrix of any given matrix A can be given as A^T. A symmetric matrix A therefore satisfies the condition, A = A^T. 
+
+![image](https://user-images.githubusercontent.com/100208233/161611874-c8883351-7d07-494b-aad8-8f52bbe4c2e6.png)
+
+## Pseudo Code of Symmetric Matrix
+
+1. Input from the user the order r,c of the matrix we wish to check
+2. Input a matrix of size rxc from the user with the help of nested for loops and store it in a 2-D array of size rxc.
+3. Set a variable flag = 0.
+3. Using a nested for loop check if a[i][j] = a[j][i] , if not, set flag = 1 and break out of the loops.
+4. Out of the loop check if flag = 0 then its symmetric matrix.
+5. In the else condition, if flag = 1 then its not a symmetric matrix.
+
+![image](https://user-images.githubusercontent.com/100208233/162382134-ae77a23c-68f4-4a79-8fb5-7ccd859d97f4.png)
+
+## Some properties of Symmetric Matrix
+
+1. The sum and difference of two symmetric matrices give the resultant as a symmetric matrix.
+2. The property stated above is not always true for the product: Given the symmetric matrices A and B, then AB is symmetric if and only if A and B follow commutative property of multiplication, i.e., if AB = BA.
+3. For integer n, if A is symmetric, ⇒ A^n is symmetric.
+4. If A^-1 exists, it will be symmetric if and only if A is symmetric.
+
+
+## Example of Symmetric Matrix
+
+
+![image](https://user-images.githubusercontent.com/100208233/162580118-952fbd6c-064d-447d-aad8-9729a09dde40.png)
+
+
+## Time complexity/space complexity of Symmetric Matrix
+
+Time Complexity : O(N x N) 
+space complexity : O(N x N)
+
 
 
 # Sort an Array of 0s, 1s and 2s
@@ -427,5 +540,162 @@ For every k size window store every element if negative in deque from rear end u
    ```
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
- 
 
+# [Array Operations](A-Array/arrayOperations.cpp)
+
+- [INTRODUCTION](#introduction-of-arrays)
+- [SAMPLE ARRAY](#sample-array)
+- [Algorithm](#algorithm-of-array-operations)
+- [Example](#example-of-array)
+- [Time Complexity](#time-complexity-of-various-operations)
+
+# INTRODUCTION of arrays
+
+ Array is a container which can hold fix number of items of same data type.
+ Syntax for declaring an array is:
+       datatype array_name[size];
+       
+ Most of the Data Structures use arrays to implement algorithms. Some basics operations can be performed in an array.
+ The Operations which can be performed are as follows: 
+ 1. Traversal
+ 2. Insertion
+ 3. Deletion
+ 4. Searching- a) Linear Search b) Binary Search
+
+# SAMPLE ARRAY
+![ArrayOperations1](https://user-images.githubusercontent.com/87706725/163707384-196cc4b8-a680-44fb-9d6f-2cd030aee88d.png)
+![ArrayOperations2](https://user-images.githubusercontent.com/87706725/163707394-c7506383-348a-4e89-8085-bb032668496d.png)
+
+
+ # Algorithm of array operations
+
+* 1<sup>st</sup> START OF THE PROGRAM
+* 2<sup>st</sup> Create an array of fixed size i.e the maximum capacity/elements the array can store.
+* 3<sup>nd</sup> Input the size of array you want to create & the elements of array from the user.
+* 4<sup>rd</sup> Create a traversal function which takes array & size of the array as its arguments so that every element of the array can be traversed as well as printed(with the help of for loop which iterate with the size of array).
+* 5<sup>th</sup> For Insertion, create an insert function i.e insert(array,new element,index of new element,size,capacity). Check the condition whether element can be inserted or not & if the index number is valid or not.If yes, then insert the new element by shifting the previous elements in forward direction & put the new element at the required index
+*       for (int i = size - 1; i >= index; i--)
+        {
+            arr[i + 1] = arr[i];
+        }
+        arr[index] = element;
+* 6<sup>th</sup> For Deletion, create a delete function which takes array, size & index as arguments. Deletion can be done directly by shifting the elements in backward direction from the index number
+*        for (int i = index; i < size - 1; i++)
+         {
+             arr[i] = arr[i + 1];
+         }
+* 7<sup>st</sup> In order to Search elements in the Array, there are 2 methods i.e LINEAR SEARCH ALGORITHM & another is BINARY SEARCH ALGORITHM.
+* LINEAR SEARCH -
+* In this algorithm, a sequential search is made over all elements one by one & if a match is found(i.e key==element),then index of that element is returned.
+*        for (int i = 0; i < size; i++)
+         {
+              if (arr[i] == key)
+              {
+                return i;
+              }
+         }
+* BINARY SEARCH -
+* NOTE:: This algorithm works only for SORTED ARRAYS
+* In this algorithm, search begins by comparing the key with  the element in the middle of the array.If match is found then index is returned. But, if the key is less than middle element, then the search continues in the lower half of the array(i.e BINARY SEARCH will again work from low index to the middle index). And if the key is greater than the middle element,then search continues in the upper half(i.e from middle index to high index)
+*         int low = 0;
+          int mid;
+          int high = size - 1;
+
+          while (low <= high)
+          {
+              mid = (low + high) / 2;
+              if (arr[mid] == key)
+              {
+                 return mid;
+              }
+              else if (arr[mid] < key)
+              {
+                 low = mid + 1;
+              }
+              else
+              {
+                 high = mid - 1;
+              } 
+	  }
+* 8<sup>st</sup> END OF THE PROGRAM
+
+
+## Example of Array:
+*            SAMPLE INPUT -  arr[10]={1,2,3,4,5};
+            Traversal-> traversal(arr,size);
+                        O/P- 1  2  3  4  5 
+	    Insertion-> insert(arr, new element, index, size, capacity); 
+	                (let new element be 9 & index be 2)
+	                O/P- 1  2  9  3  4  5
+	    Deletion->  delete(arr,size,index);
+	                (let index=1)
+			 O/P- 1  9  3  4  5
+	    Linear Search-> linear(arr,key,size);
+	                    (let key=3)
+			     O/P- Element 3 is found at index 2
+	    Binary Search-> binary(arr,key,size);
+	                    (let key=9)
+			    O/P- Element 9 is found at index 1
+			    (if key=3)
+			     O/P- Element not Found as Binary search works only for sorted array
+
+## Time complexity of various operations:
+
+For **TRAVERSAL**-
+
+**Time complexity is** O(n).
+
+For **INSERTION**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **DELETION**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **LINEAR SEARCH**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **BINARY SEARCH**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(log n)
+
+ # Reversing of Array
+
+## Reverse
+
+![image](https://user-images.githubusercontent.com/100334178/164883102-0de2ab96-09e6-4a7c-b392-6173fd79a01b.png)
+
+### Approach1
+
+![image](https://user-images.githubusercontent.com/100334178/164883125-5e188e0f-85fd-4a3e-b0b4-ebe140dc1c53.png)
+![image](https://user-images.githubusercontent.com/100334178/164883138-4b106bd0-79d0-403d-b662-b6540a3ce0bc.png)
+
+### Algorithm
+
+1.Take input the size of the array and the elements of the array.
+2.Consider a function reverse1 which takes the parameters-the array(say arr) and the size of the array(say n).
+3.Inside the function, a new array (with the array size of the first array, arr) is initialized. The array arr[] is iterated from the first element, and each element of array arr[] is placed in the new array from the back, i.e., the new array is iterated from its last element.
+4.In this way, all the elements of the array arr[] are placed reversely in the new array.
+5.Further, we can iterate through the new array from the beginning and print the elements of the array.
+
+### Properties
+Time-complexity-->O(n)
+Space-complexity-->O(n)
+
+
+
+### Approach2
+
+![image](https://user-images.githubusercontent.com/100334178/164883049-30b0e1a4-8b39-4fe1-b6e7-41d766cdd572.png)
+
+![image](https://user-images.githubusercontent.com/100334178/164883155-ce34b2ef-fea9-4e0b-9838-5d18adf02b05.png)
+
+### Algorithm
+The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
+For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 with n-1, 3 with n-2 and further. 
+
+ Properties
+Time-complexity-->O(n)
+Space-complexity-->O(1)

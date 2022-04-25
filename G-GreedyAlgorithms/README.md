@@ -9,6 +9,12 @@
     - [Algorithm](#algorithm)
     - [Properties](#properties)
     - [Advantages](#advantages)
+- [Huffman Coding](#Huffman-Coding)
+    - [Implementation](HuffmanCoding.cpp)
+    - [Huffman Coding Algorithm](#huffman-coding-algorithm)
+    - [Time Complexity](#Time-Complexity)
+    - [Advantage](#advantage)
+    - [Disadvantage](#disadvantage)
 
 
 ## OPEN this link below for a deatiled summary of above greedy algorithms ✨
@@ -46,3 +52,44 @@
 ### Advantages
 
 - Less number of computation rerqired.
+
+
+## Huffman Coding
+
+- Huffman coding is a method of data compression that is independent of its data type. In which more common event is represented by shorter code and less common event is represent longer code.
+<!-- image to help better explain the concept -->
+![Huffman-Coding](https://ds055uzetaobb.cloudfront.net/image_optimizer/7d429535d4035498e71eb0b5402a1c301ecfa131.jpg)
+Huffman coding :
+A : 11
+B : 10
+C : 01
+D : 00
+
+Huffman Coding have two main steps -
+1. Creating a huffman tree from input characters.
+2. Huffman tree traversal and assigning codes to characters.
+
+### Huffman Coding Algorithm
+
+* creating minheap (insertin frquency)
+* merge untill priority queue is not empty
+* while minheap is not empty 
+* extrtact two minimum frequency from minheap assign first to left and second to right .
+* for all the non used node. 
+* assign the sum of these two to the newnode and make them its left and right child.
+* display the code
+* if null then return
+* if root is used then print data an code
+* call display for left and rigjht node
+
+### Time Complexity
+
+-  O(nlogn) , where n is the total number of symbols
+
+### Advantage
+
+- uses less storage for fequently occurring characters .
+
+### Disadvantage
+
+- Require two passes over the input (one to compute frequency and one for coding ) thus encoding is slow.
