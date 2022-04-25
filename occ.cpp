@@ -6,13 +6,18 @@ int first(int arr[], int x, int n)
   int low = 0, high = n - 1, res = -1;
   while (low <= high)
   {
-   
+    
+    // Normal Binary Search Logic
     int mid = (low + high) / 2;
     
     if (arr[mid] > x)
       high = mid - 1;
     else if (arr[mid] < x)
       low = mid + 1;
+
+    // If arr[mid] is same as x, we
+    // update res and move to the left
+    // half.
     else
     {
       res = mid;
@@ -28,7 +33,7 @@ int last(int arr[], int x, int n)
   while (low <= high)
   {
     
- 
+    // Normal Binary Search Logic
     int mid = (low + high) / 2;
     
     if (arr[mid] > x)
@@ -36,7 +41,9 @@ int last(int arr[], int x, int n)
     else if (arr[mid] < x)
       low = mid + 1;
 
-  
+    // If arr[mid] is same as x, we
+    // update res and move to the right
+    // half.
     else
     {
       res = mid;
@@ -56,7 +63,10 @@ int main()
     for(int i=0;i<n;i++)
     cin>>a[i];
 
-  int x = 8;
+  int x;
+  cout<<"Enter the number to find the occurance "<<endl;
+  cin>>x;
+  
   cout <<"First Occurrence = " << first(a, x, n);
   cout <<"\nLast Occurrence = "<< last(a, x, n)<<endl;
   
