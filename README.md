@@ -129,6 +129,7 @@ Fond of designing README this section will be helpful to you
   </tr>
   <tr>
   <td align="center"><a href="https://github.com/aditi944"><img src="https://avatars.githubusercontent.com/u/68181276?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aditi</b></sub></a><br />👀</td>
+    <td align="center"><a href="https://github.com/vilsi12"><img src="https://avatars.githubusercontent.com/u/53365687?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vilsi Jain</b></sub></a><br />👀</td>
   </tr>
 </table>
 
