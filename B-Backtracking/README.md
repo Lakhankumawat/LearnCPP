@@ -53,10 +53,10 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 
 ## [3. The Knight’s tour problem](#the-knight’s-tour-problem)
    - [Algorithm](#algorithm)
-   - [Time Complexity](#timeComplexity)
-   - [Space Complexity](#spaceComplexity)
+   - [Time Complexity](#time-complexity)
+   - [Space Complexity](#space-Complexity)
    - [Advantages](#advantages)
-   - [Disadvantage](#disadvantage)
+   - [Disadvantages](#disadvantages)
 
 
 ## The Knight’s tour problem
