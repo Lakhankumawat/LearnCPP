@@ -8,7 +8,7 @@
 
 - [Add and Delete edge of directed graph in Adjacency Matrix](#add-and-delete-edge-of-directed-graph-in-adjacency-matrix)
     - [Code](DelAddEdgeAdjacencyMatrix.cpp)
-    - [Add & Delete edge Algorithm](#Add-&-Delete-edge-Algorithm)
+    - [Add and Delete edge Algorithm](#Add-and-Delete-edge-Algorithm)
     - [Propertie](#propertie)
     - [Advantage](#advantage)
     - [Disadvantage](#disadvantage)
@@ -57,7 +57,7 @@ Time Complexity: O(n^2), where n is the number of vertices in a graph.
 ![add-and-delete-edge-of-directed-graph-in-adjacency-matrix](https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/delete-edge-operation-on-graph-in-data-structure.png)
 
 
-### Add & Delete edge Algorithm
+### Add and Delete edge Algorithm
 1. Addition : For a new edge in adj[][], Update value at Adj[X][Y] to 1 and
 2. Deletion : For deleting a existing edge in adj[][], Update value at Adj[X][Y] to 0 .
 
