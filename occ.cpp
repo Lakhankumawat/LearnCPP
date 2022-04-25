@@ -7,7 +7,7 @@ int first(int arr[], int x, int n)
   while (low <= high)
   {
     
-    // Normal Binary Search Logic
+   
     int mid = (low + high) / 2;
     
     if (arr[mid] > x)
@@ -15,9 +15,7 @@ int first(int arr[], int x, int n)
     else if (arr[mid] < x)
       low = mid + 1;
 
-    // If arr[mid] is same as x, we
-    // update res and move to the left
-    // half.
+   
     else
     {
       res = mid;
@@ -33,7 +31,7 @@ int last(int arr[], int x, int n)
   while (low <= high)
   {
     
-    // Normal Binary Search Logic
+    
     int mid = (low + high) / 2;
     
     if (arr[mid] > x)
@@ -41,9 +39,7 @@ int last(int arr[], int x, int n)
     else if (arr[mid] < x)
       low = mid + 1;
 
-    // If arr[mid] is same as x, we
-    // update res and move to the right
-    // half.
+ 
     else
     {
       res = mid;
