@@ -21,6 +21,8 @@
 
 - [Minimum Falling Path Sum](#minimum-falling-path-sum)
 
+- [Minimum number of deletions and insertions to transform one string into another](#minimum-number-of-deletions-and-insertions-to-transform-one-string-into-another)
+
 
 
 # Dynamic Programming
@@ -1066,3 +1068,54 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 #### Space Complexity = O(n^2)
 
+
+# Minimum number of deletions and insertions to transform one string into another
+
+- [Problem Statement](#problem-statement-for-string-transform)
+    - [Examples](#examples-for-string-transform)
+- [Explanation](#explanation-for-string-transform)
+- [Complexity](#complexity-for-string-transform)
+
+# Problem Statement for string transform
+
+You are given two strings of different length. We need to transform string1 into string2 by deleting and inserting minimum number of characters.
+    > Note this question is a variation of LCS problem
+
+## Examples for string transform
+```
+Input:
+str1 = "heap", str2 = "pea" 
+
+Output : 
+Minimum Deletion = 2 
+Minimum Insertion = 1
+
+First we need to delete 2 characters 'h' and 'p' from heap and then add 1 character 'p' to convert i to string2.
+```
+
+# Explanation for string transform
+
+- Consider you are given two strings 'str1' and 'str2'.
+
+- Let the length of string1 'str1' be m and length of string2 'str2' be n respectively.
+
+- First we need to find out the LCS of the two strings .
+
+- After finding LCS we can reduce the size of LCS from the length of string1 'str1' to find the total number of deletions.
+
+```
+minimum number of deletions minDel = m – lcs
+```
+
+- Similarly after finding LCS we can reduce the length of string2 'str2' to find the total number of insertions.
+```
+minimum number of Insertions minInsert = n – len
+```
+
+## Following diagram shows the logic of the code for string transform
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/20200817135845/picture2-660x402.jpg)
+
+# Complexity for string transform
+```
+Time Complexity: O(m*n)
+```
