@@ -1,15 +1,11 @@
 <!-- Table of content -->
 # Table of content
-- [Dynamic Programming](#dynamic-programming)
-    - [Multistage Graph](#multistage-graph)
-        - [Algorithm](#algorithm)
-        - [Properties](#properties)
-        - [Advantages](#advantages)
-        - [Disadvantage](#disadvantage)
+- [Multistage Graph](#multistage-graph)
+    - [Algorithm](#algorithm)
+    - [Properties](#properties)
+    - [Advantages](#advantages)
+    - [Disadvantage](#disadvantage)
 
-# Dynamic Programming
-
-- In this process the problem is broken into subproblems ,And by the memoization or tabulation of overlapping subproblems repeated subproblem is stored hence , Reduce time complexity . 
 
 ## Multistage Graph
 
