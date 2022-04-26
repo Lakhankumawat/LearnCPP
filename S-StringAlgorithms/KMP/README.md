@@ -4,7 +4,7 @@
 - [Problem statement](#problem-statement)
 - [KMP Algorithm](#kmp-algorithm)
 - [Algorithm](#algorithm)
-- [ComplexityAnalysis](#complexityanalysis)
+- [ComplexityAnalysis](#complexityAnalysis)
 - [Advantages and Disadvantages](#advantages-and-disadvantages)
 
 ### Problem statement
