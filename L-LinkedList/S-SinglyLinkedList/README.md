@@ -306,9 +306,6 @@ Suppose we have a list of some elements. We have to remove all elements that hav
 
 ![1](https://user-images.githubusercontent.com/100334178/165158959-12fd67cb-0a78-49de-8b2f-03e1dbad5953.jpg)
 
-![2](https://user-images.githubusercontent.com/100334178/165159010-c71ee967-3abe-4bf2-bb79-78c8f040cfe8.png)
-
-![image](https://user-images.githubusercontent.com/100334178/165159795-06ca45ac-2e5a-4a36-9e85-170201873867.png)
 
 ### Algorithm
 
