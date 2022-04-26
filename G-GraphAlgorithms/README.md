@@ -1,11 +1,11 @@
 <!-- Table of content -->
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
- - [Multistage Graph](#multistage-graph)
-    - [Algorithm](#algorithm)
-    - [Properties](#properties)
-    - [Advantages](#advantages)
-    - [Disadvantage](#disadvantage)
+    - [Multistage Graph](#multistage-graph)
+        - [Algorithm](#algorithm)
+        - [Properties](#properties)
+        - [Advantages](#advantages)
+        - [Disadvantage](#disadvantage)
 
 # Dynamic Programming
 
