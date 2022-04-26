@@ -77,6 +77,7 @@ In C++ programming, not only you can derive a class from the base class but you 
 
 ![image](https://user-images.githubusercontent.com/75986201/165105432-98665b12-40a4-4590-a5ff-19cd13bd27e3.png)
 
+---------
 
 ### Access Modifiers In Inheritance
 
