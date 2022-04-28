@@ -23,6 +23,8 @@
 
 - [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
 
+- [Coin Change](#coin-change)
+
 
 
 # Dynamic Programming
@@ -1155,3 +1157,100 @@ Explanation-The optimal choice is to pick the 2nd and 4th element
 
 - Time Complexity = O(N * W)
 - Space Complexity = O(N * W)
+
+
+# [Coin Change](https://leetcode.com/problems/coin-change/)
+
+- [Problem Statement](#problem-statement-6)
+
+- [Examples](#examples-6)
+
+- [Algorithm](#algorithm-2)
+
+- [Pseudo Code](#pseudo-code-4)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/coinChange/D-DynamicProgramming/CoinChange.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-3)
+
+
+### Problem Statement
+
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+You may assume that you have an infinite number of each kind of coin.
+
+#### Constraints:
+
+
+1 <= coins.length <= 12
+1 <= coins[i] <= 231 - 1
+0 <= amount <= 104
+
+
+
+![image](https://user-images.githubusercontent.com/75883328/165454680-640a326c-7f2e-4489-acf9-9cabf07bb5a4.png)
+
+
+
+### Examples
+
+Example 1:
+
+Input: coins = [1,2,5], amount = 11
+
+Output: 3
+
+
+Example 2:
+
+Input: coins = [2], amount = 3
+
+Output: -1
+
+
+### Algorithm 
+
+- We are supposed to find the minimum numbers of coins required to make amount ,provided that we can take a coin any number of times.
+
+- For every coins present in the coins array, we are having two options :- 1)either to take that coin , 2) don't take the coin.
+
+- If we'll take the currentCoin,then the amount will decrease by coins[currentCoin] (i.e. the denomination of the currentCoin)and we can still take the currentCoin if its denomination is less than or equal to the amount and we'll add a one because we are taking that coin to make the amount.
+
+- If we aren't taking the currentCoin ,then we'll simply move on to currentCoin+1.
+
+- If at any point amount becomes 0,then it means that we have successfully made amount ,so return 0.
+
+- Otherwise if we have reached the end of the coins array and amount != 0 ,then return infinity.
+
+
+### Pseudo Code
+
+
+  int minCoins(int currentCoin,int amount,vector<int>&coins,int n,vector<vector<int>>&v)
+    
+    if(amount == 0) return 0;
+          if(currentCoin >= n) return 100001;
+        
+        if(v[currentCoin][amount] != -1)
+            return v[currentCoin][amount];
+        
+        int consider = 100001;
+        if(coins[currentCoin] <= amount)
+            consider = 1 + minCoins(currentCoin,amount-coins[currentCoin],coins,n,v);
+        
+        int notConsider = minCoins(currentCoin+1,amount,coins,n,v);
+        
+        v[currentCoin][amount] = min(consider,notConsider);
+        return v[currentCoin][amount];
+
+
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexcity = O(n * amount)
+
+- Space Complexity = O(n * amount)
