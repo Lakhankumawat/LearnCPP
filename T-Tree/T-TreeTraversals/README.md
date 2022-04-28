@@ -101,19 +101,15 @@ O(n) + O(n) = O(n)
 </pre>
 
 ## Output
-## Output Screenshots
 
-> Test 1
+> Test 1<br>
 Input 1<br>
 ![image](https://user-images.githubusercontent.com/29145628/165778429-8d96bf2f-9a9f-498c-8f50-48902c103b80.png)<br>
-
- Output 1<br>
+Output 1<br>
 ![image](https://user-images.githubusercontent.com/29145628/165778615-78ba231f-02e9-4af8-bf2d-79215e861768.png)
 
-> Test 2
+> Test 2<br>
 Input 2<br>
 ![image](https://user-images.githubusercontent.com/29145628/165779137-fa49a002-14fe-48c6-bf92-9b01770b1822.png)
-
 Output 2<br>
 ![image](https://user-images.githubusercontent.com/29145628/165779067-53be85e0-501c-470d-8ef5-e63b540215ac.png)
-
