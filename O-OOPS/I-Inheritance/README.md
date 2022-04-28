@@ -77,6 +77,22 @@ In C++ programming, not only you can derive a class from the base class but you 
 
 ![image](https://user-images.githubusercontent.com/75986201/165105432-98665b12-40a4-4590-a5ff-19cd13bd27e3.png)
 
+
+### Multiple Inheritance
+
+Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes.
+The constructors of inherited classes are called in the same order in which they are inherited.
+
+Syntax:
+
+     class DerivedC: visibility-mode base1, visibility-mode base2
+      {
+         Class body of class "DerivedC"
+       };
+       
+![image](https://user-images.githubusercontent.com/75986201/165782310-1f2e1f7b-ed2e-436f-91a5-63c46fb83346.png)
+
+
 ---------
 
 ### Access Modifiers In Inheritance
