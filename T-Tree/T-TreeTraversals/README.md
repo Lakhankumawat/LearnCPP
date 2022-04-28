@@ -64,9 +64,9 @@ Algorithm that traverses a binary tree from left to right then from right to lef
 ![image](https://user-images.githubusercontent.com/29145628/165636674-e022fb00-9e58-457c-90c9-15f0e4d956d9.png)
 	
 ## Time Complexity:
-O(n) --> As we traverse each node.
+The algorithm traverses each node to put it in the queue so, time comlexity is O(n).
 ## Space complexity 
-O(n) + O(n) = O(n)
+As the algorithm contains a queue with maximum size of n(nodes number) and a vector to save nodes in each level with maximum size of n then space complexity is O(n) + O(n) = O(n)
 
 ## Algorithm
 <pre>
