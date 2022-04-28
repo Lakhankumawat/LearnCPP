@@ -307,7 +307,7 @@ Suppose we have a list of some elements. We have to remove all elements that hav
 ![1](https://user-images.githubusercontent.com/100334178/165158959-12fd67cb-0a78-49de-8b2f-03e1dbad5953.jpg)
 
 
-### Algorithm
+## Algorithm
 
 * Create a dummy node with value -1, prev := NULL, dummyPtr := dummy
 * while head is not null
@@ -328,6 +328,14 @@ Suppose we have a list of some elements. We have to remove all elements that hav
 #### Output
 [3, 5, 7, 8, ]
 
-### Time Complexity and Space Complexity
+## Time Complexity and Space Complexity
 * Time Complexity: O(n)
 * Auxiliary Space Complexity: O(1)
+
+## Advantages
+* In this algorithm problem will be solved  by iterating only  single time through the linked list.
+* It takes less time and space complexity.
+* Easy to understand algorithm
+
+## Disadvantages
+* Linked list must be sorted for applying this algorithm..
