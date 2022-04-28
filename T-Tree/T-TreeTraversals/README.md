@@ -100,39 +100,20 @@ O(n) + O(n) = O(n)
     end while<br>
 </pre>
 
-## Tracing The Algorithm on the given Example
+## Output
+## Output Screenshots
 
-- rightLeft = true
-- Queue: 3
-- s = 1
-- rightLeft = false
-- Enter for loop(1)
-- Pop 3
-- Queue: 9 20
-- Level Vector: 9 20
-- level: 3
-- exit for
-- rightLeft is false then print 3 and clear level vector
-- s = 2
-- rightLeft = true
-- Enter for loop (2)
-- Pop 9
-- Queue: 20    (9 has no left or right children)
-- level: 9
-- Pop 20
-- Queue: 15 7
-- level: 9 20
-- exit for
-- rightLeft is true then reverse level and print 20 9 then clear level
-- s = 2
-- rightLeft = false
-- Enter for loop (2)
-- Pop 15
-- Queue: 7
-- level: 15
-- Pop 7
-- Queue: (empty as 15 and 7 have no children)
-- level: 15 7
-- exit for
-- rightLeft is false then print 15 7 then clear level
-- end while (queue is empty)
+> Test 1
+Input 1<br>
+![image](https://user-images.githubusercontent.com/29145628/165778429-8d96bf2f-9a9f-498c-8f50-48902c103b80.png)<br>
+
+ Output 1<br>
+![image](https://user-images.githubusercontent.com/29145628/165778615-78ba231f-02e9-4af8-bf2d-79215e861768.png)
+
+> Test 2
+Input 2<br>
+![image](https://user-images.githubusercontent.com/29145628/165779137-fa49a002-14fe-48c6-bf92-9b01770b1822.png)
+
+Output 2<br>
+![image](https://user-images.githubusercontent.com/29145628/165779067-53be85e0-501c-470d-8ef5-e63b540215ac.png)
+
