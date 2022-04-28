@@ -36,3 +36,48 @@ many such configurations are possible. For above shown configurations, maximum o
 ```
 ### Time Complexity
 For sorting, it takes Nlog(N). For our algorithm, log(N) for binary search and N for checking if cows can be allocated or not. So total time complexity is Nlog(N).
+
+# Reverse Bits #
+
+## Table of Contents:-
+* [Problem Statement](#problem-statement)
+* [Explanation of Problem Statement](#explanation-of-problem-statement-with-a-test-case)
+* [Algorithm](#algorithm)
+* [Time Complexity](#time-complexity)
+
+### Problem Statement
+
+Reverse bits of a given 32 bits unsigned integer.
+
+### Explanation of Problem Statement with a test case
+
+```
+Input: n = 00000010100101000001111010011100
+Output:    964176192 (00111001011110000010100101000000)
+Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.
+```
+
+### Algorithm
+
+```
+uint32_t reverseBits(uint32_t n) {
+    long long sum=0;
+    bitset<32> bs(n);
+    bitset<32> bsnew(n);
+    for(int i=0;i<32;i++){
+        if(bs[31-i]==1)
+            bsnew[i]=1;
+        else bsnew[i]=0;
+        }
+    for(int i=0;i<32;i++){
+        if(bsnew[i]==1)
+            sum+=pow(2,i);
+        }
+    return sum;
+}    
+
+```
+
+### complexity: 
+
+- O(n)
