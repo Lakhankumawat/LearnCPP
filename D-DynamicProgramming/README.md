@@ -1075,17 +1075,17 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 # Minimum number of deletions and insertions to transform one string into another
 
-- [Problem Statement](#problem-statement)
-    - [Examples](#examples)
-- [Explanation](#explanation)
-- [Complexity](#complexity)
+- [Problem Statement](#problem-statement-for-the-question)
+    - [Examples](#examples-for-the-question)
+- [Explanation](#explanation-of-the-question)
+- [Complexity](#complexity-of-the-question)
 
-# Problem Statement
+# Problem Statement for the question
 
 You are given two strings of different length. We need to transform string1 into string2 by deleting and inserting minimum number of characters.
     > Note this question is a variation of LCS problem
 
-## Examples
+## Examples for the question
 ```
 Input:
 str1 = "heap", str2 = "pea" 
@@ -1097,7 +1097,7 @@ Minimum Insertion = 1
 First we need to delete 2 characters 'h' and 'p' from heap and then add 1 character 'p' to convert i to string2.
 ```
 
-# Explanation
+# Explanation of the question
 
 - Consider you are given two strings 'str1' and 'str2'.
 
@@ -1119,7 +1119,7 @@ minimum number of Insertions minInsert = n – len
 ## Following diagram shows the logic of the code
 ![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/20200817135845/picture2-660x402.jpg)
 
-# Complexity
+# Complexity of the question
 ```
 Time Complexity: O(m*n)
 ```
