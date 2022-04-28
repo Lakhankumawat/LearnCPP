@@ -20,6 +20,10 @@
 - [Unique Paths II](#unique-paths-ii)
 
 - [Minimum Falling Path Sum](#minimum-falling-path-sum)
+ 
+- [Minimum number of deletions and insertions required to transform one string into another](#minimum-number-of-deletions-and-insertions-required-to-transform-one-string-into-another)
+
+
 
 - [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
 
@@ -1069,6 +1073,63 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 #### Space Complexity = O(n^2)
 
 
+# Minimum number of deletions and insertions required to transform one string into another
+
+- [Problem Statement](#problem-statement-for-the-question)
+    - [Examples](#examples-for-the-question)
+- [Explanation](#explanation-of-the-question)
+- [Advantages](#advantages-of-using-dp )
+- [Complexity](#complexity-of-the-question)
+
+### Problem Statement for the question
+
+You are given two strings of different length. We need to transform string1 into string2 by deleting and inserting minimum number of characters.
+    > Note this question is a variation of LCS problem
+
+### Examples for the question
+```
+Input:
+str1 = "heap", str2 = "pea" 
+
+Output : 
+Minimum Deletion = 2 
+Minimum Insertion = 1
+
+First we need to delete 2 characters 'h' and 'p' from heap and then add 1 character 'p' to convert i to string2.
+```
+
+### Explanation of the question
+
+- Consider you are given two strings 'str1' and 'str2'.
+
+- Let the length of string1 'str1' be m and length of string2 'str2' be n respectively.
+
+- First we need to find out the LCS of the two strings .
+
+- After finding LCS we can reduce the size of LCS from the length of string1 'str1' to find the total number of deletions.
+
+```
+minimum number of deletions minDel = m – lcs
+```
+
+- Similarly after finding LCS we can reduce the length of string2 'str2' to find the total number of insertions.
+```
+minimum number of Insertions minInsert = n – len
+```
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/20200817135845/picture2-660x402.jpg)
+
+### Advantages of using dp 
+- Use of dynamic programming optimizes the recursive calls.
+- It also saves us the time of re-computing inputs later.
+- Dynamic programming approach helps us to re-use the results.
+- It uses less line of code and speeds up the process.
+
+### Complexity of the question
+```
+Time Complexity: O(m*n)
+```
 # [Knapsack with Duplicate Items](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1/#)
 
 - [Problem Statement](#problem-statement-5)
@@ -1155,3 +1216,4 @@ Explanation-The optimal choice is to pick the 2nd and 4th element
 
 - Time Complexity = O(N * W)
 - Space Complexity = O(N * W)
+
