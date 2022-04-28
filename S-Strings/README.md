@@ -4,6 +4,12 @@
 -[algorithim](#algorithim)
 -[application](#application)
 
+## Longest Word in Sentence
+- [Longest word in sentence](#longest-word-in-sentence)
+- [Example](#examples)
+- [Approach](#approach)
+- [Time and Space Complexity](#time-and-space-complexity)
+
 
 # String Comparison:
 Most string comparison algorithms compare the strings character by character. C++ provides us some built in operators like == and != to compare strings along with strcmp and compare functions.
@@ -40,3 +46,37 @@ For example, consider a website having two fields ‘Email’ & ‘Confirm Email
 2. compare() inbuilt function, and
 3. C++ relational operators ( ‘==’, ‘!=’)
 
+# Longest Word In Sentence
+
+In this Problem we have to print the word that is `Longest word` in the sentence which is given as the input .
+
+## Consepts Used
+
+1. getline() :- This is to take sentence as the input.
+2. cin.ignore() :- This is used to clear the buffer in the input stream.
+
+## Examples
+
+### Example1:
+Input : "This is a GSSOC'22" \
+Output : Maximum length word: GSSOC'22
+
+### Example2:
+Input : "Open Source is best way to enhance your knowledge" \
+Output : Maximum length word: knowledge 
+
+## Approach
+
+- Idea is simple, we traverse the given string and when we find end of word.
+- Then we compare length of word which is ended with result length.
+- Otherwise we increment length of current word.
+- We also take an variable which take care of the longest word starting and ending.
+  - In this we update the `max_length` and the `max_start_index` ( which points to the starting of the maximum length word).
+- At the end we print the word , which is longest with its length.
+
+**Note :-** For taking sentence we have to use `getline()` function . We also have to use `cin.ignore()` to clear the input buffer.
+
+## Time and Space Complexity
+
+- **Time Complexity :-** O(n) n is the length of string or sentence.
+- **Space Complexity :-** O(n) n is the length of sentence.
