@@ -24,6 +24,8 @@
 
 - [Minimum Falling Path Sum](#minimum-falling-path-sum)
 
+- [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
+
 
 
 # Dynamic Programming
@@ -1129,4 +1131,92 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 #### Space Complexity = O(n^2)
 
+
+
+# [Knapsack with Duplicate Items](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1/#)
+
+- [Problem Statement](#problem-statement-5)
+
+- [Examples](#examples-5)
+
+- [Algorithm](#algorithm-1)
+
+- [Pseudo Code](#pseudo-code-3)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/KnapsackWithDuplicateItems/D-DynamicProgramming/KnapsackwithDuplicateItems.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-2)
+
+
+### Problem Statement
+
+Given a set of N items, each with a weight and a value, represented by the array w[] and val[] respectively. Also, a knapsack with weight limit W.
+The task is to fill the knapsack in such a way that we can get the maximum profit. Return the maximum profit.
+Note: Each item can be taken any number of times.
+
+
+![image](https://user-images.githubusercontent.com/75883328/164772943-33fd9778-9a2f-4622-ba84-1b02eae02001.png)
+
+
+### Examples
+#### Example1
+
+Input: N = 2, W = 3
+
+val[] = {1, 1}
+wt[] = {2, 1}
+
+Output: 3
+Explanation- 
+1.Pick the 2nd element thrice.
+2.Total profit = 1 + 1 + 1 = 3. Also the total 
+  weight = 1 + 1 + 1  = 3 which is <= W.
+
+#### Example2
+
+Input: N = 4, W = 8
+
+val[] = {1, 4, 5, 7}
+wt[] = {1, 3, 4, 5}
+
+Output: 11
+Explanation-The optimal choice is to pick the 2nd and 4th element
+  
+### Algorithm 
+
+- We have to maximixe the profit provided that we do not exceed the knapsack capacity and can take an iten any number of times.
+- If we are on the currentItem then, we are having two possibilities :- 1)either to take it or 2)to leave it.
+- If we will take that currentItem then, we can still take that and now the capacity of the knapsack will decreased by weight[currentItem] and we'll get its profit.
+- If we will not take the currentItem, then we'll simply move on to currentItem+1.
+- If at any point currentitem >= N, we'll return 0, because we can't get any profit from an item that doesn't exists.
+- If capacity == 0, we'll return 0, because now we can't take anymore items.
+
+### Pseudo Code
+
+```
+
+	int maxProfit(int currentItem,int n,int capacity,int profit[],int weight[],vector<vector<int>>&v)
+
+    		if(capacity == 0) return 0;
+    		if(currentItem >= n) return 0;
+        
+    		if(v[currentItem][capacity] != -1) 
+        		return v[currentItem][capacity];
+		
+    		int consider=0;
+    		if(weight[currentItem] <= capacity)
+       			consider= profit[currentItem] + maxProfit(currentItem,n,capacity-weight[currentItem],profit,weight,v);
+            
+    		int notConsider = maxProfit(currentItem+1,n,capacity,profit,weight,v);
+    
+    		v[currentItem][capacity] = max(consider,notConsider);
+    		return v[currentItem][capacity];
+		
+```
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexity = O(N * W)
+- Space Complexity = O(N * W)
 

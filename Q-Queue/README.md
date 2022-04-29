@@ -215,7 +215,7 @@ Step 4: Set TEMP = TEMP -> NEXT
 
 ### Problem Statement
 
-Implementation of Circular Queue using Array and performing different operations such as insertion, deletion and display of elements in a queue.
+Implementation of Circular Queue using Array and performing different operations such as insertion, deletion and display of elements in a circular queue.
 
 ### Features
 
@@ -328,3 +328,101 @@ Step 7 - Again display 'cQueue[i]' value and increment i value by one (i++). Rep
 - Memory management
 
 - Traffic Management
+
+## 5. Implementation of Circular Queue using Linked List
+
+### Problem Statement
+
+Implementation of Circular Queue using Linked List and performing different operations such as insertion, deletion and display of elements in a circular queue.
+
+### Features
+
+1. Circular Queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle.
+
+2.  When we implement circular Queue using linked list it is similar to circular linked list except there is two pointer front and rear in circular Queue where as circular linked list has only one pointer head.
+
+
+### Approach
+
+- There are 3 main operations.
+
+1. Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition. 
+
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition. 
+
+3. Display: All the elements of the queue are displayed, starting from the front index to the rear.
+
+
+<!-- image to help better explain the concept -->
+
+
+![circular_linkedlist](https://user-images.githubusercontent.com/93239528/164962445-a57731dd-610e-43e7-aecb-c5e7301df0c5.jpg)
+
+
+### Pseudo Code
+
+1. For insertion
+
+```
+
+Step 1: if (((FRONT == 0) and (REAR == N - 1)) or (REAR == FRONT - 1)) //  Condition for overflow
+Step 2: Print “Queue Overflow”
+Step 3: end
+Step 4: else if (FRONT == -1)    //  Inserting in an Empty Queue
+Step 5: FRONT = REAR = 0
+Step 6: end ifelse if (REAR == N - 1)   //  Inserting after the last element
+Step 7: REAR = 0
+Step 8: end ifelse
+Step 9: REAR = REAR + 1   //  Increment REAR
+Step 10: end else
+Step 11: QUEUE [REAR]=  element     
+Step 12: end
+```
+
+2. For deletion
+
+```
+
+Step 1: if(FRONT == -1) //  Condition for underflow
+Step 2: Print “Queue Underflow”
+Step 3: end Dequeue
+Step 4: end if
+Step 5: Temp = QUEUE[FRONT] // Copy FRONT in a temporary variableif(FRONT == REAR) // The queue contains only one node
+Step 6: FRONT = REAR   = -1
+Step 7: end ifelse if (FRONT == N - 1)  // If FRONT is the last node
+Step 8: front = 0   // Make FRONT as the first node
+Step 9: end ifelse
+Step 10: FRONT = FRONT + 1  //  Increment FRONT
+Step 11: end else
+Step 12: end Dequeue
+
+  
+
+```
+
+3. For display
+
+```
+Step 1: Set TEMP = FRONT [Initializes pointer TEMP]
+Step 2: Repeat Steps 3 and 4 while TEMP->NEXT != FRONT
+Step 3: Apply PROCESS to TEMP -> DATA
+Step 4: Set TEMP = TEMP -> NEXT
+[End of Step 2 loop]
+Step 5: Apply PROCESS to TEMP -> DATA
+Step 6: Exit
+
+```
+
+### Properties
+
+1. Time Complexity : 
+
+- Enqueue: O(1) time
+
+- Dequeue: O(1) time
+
+2. Space Complexity : O(1)
+
+### Advantages of implementating Circular Queue using Linked List
+- The key advantage of a circular queue over a normal queue is effective utilization of storage space or memory.
+- Linked list provide the facility of dynamic memory allocation so it is easy to create.
