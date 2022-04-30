@@ -12,7 +12,11 @@
   - [Middle Element of the linked list](#middle-element-of-the-linked-list)
   - [Reverse a linked list](#reverse-a-linked-list)
   - [Searching in a linked list](#searching-in-a-linked-list)
-  - [Removing Duplicates from singly linked list](#removing-duplicates-from-singly-linked-list)
+  - [Removing Duplicates](#removing-duplicates)
+    - [Algorithm](#removing-duplicates)
+    - [Properties](#removing-duplicates)
+    - [Advantages](#removing-duplicates)
+    - [Disadvantages](#removing-duplicates)
 
 
 # Singly Linked List 
@@ -300,7 +304,7 @@ Time-Complexity-->O(n)
 Space-Complexity-->O(n)
 
 
-# Removing Duplicates from singly linked list
+# Removing Duplicates
 
 Suppose we have a list of some elements. We have to remove all elements that have occurred more than once. So only the distinct elements will remain in the list. So if the list is like [1,1,1,2,2,3,5,6,6,7,8], then the output will be [3,5,7,8], all other elements are present more than once.
 
@@ -328,7 +332,8 @@ Suppose we have a list of some elements. We have to remove all elements that hav
 #### Output
 [3, 5, 7, 8, ]
 
-## Time Complexity and Space Complexity
+## Properties
+### Time Complexity and Space Complexity
 * Time Complexity: O(n)
 * Auxiliary Space Complexity: O(1)
 
