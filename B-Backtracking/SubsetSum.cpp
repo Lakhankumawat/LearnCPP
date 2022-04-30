@@ -4,6 +4,9 @@ using namespace std;
 // set is the subset
 // sos is sum of subset
 // tar is target
+
+
+// function to print subset sum
 void printTargetSumSubsets(vector<int> arr, int idx, string set, int sos, int tar) {
   if (sos > tar) {
     return;
@@ -15,7 +18,9 @@ void printTargetSumSubsets(vector<int> arr, int idx, string set, int sos, int ta
     return;
   }
   string val = to_string(arr[idx]);
+  //Call a recursive function for the YES part of the element. Here, that element gets added to the subset string and arithmetically added.
   printTargetSumSubsets(arr, idx + 1, set + val + ", ", sos + arr[idx], tar);
+  //Call a recursive function for the NO part of that element. Here, that element does not get added to either the subset string.
   printTargetSumSubsets(arr, idx + 1, set, sos, tar);
 }
 
