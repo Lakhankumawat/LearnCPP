@@ -97,17 +97,12 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 
 
 ## [4. Subset Sum](#subset-sum)
-   - [Algorithm](#algorithm)
-   - [Time Complexity](#time-complexity)
-   - [Space Complexity](#space-Complexity)
-   - [Advantages](#advantages)
-   - [Disadvantages](#disadvantages)
 
 - Given an array of n numbers and a number "tar" as the input.
 - Calculate and print all subsets of the given elements, the contents of which sum to "tar".
 - Say, if  given an array 10,20,30,40,50 and the target is 60. Then all the valid subsets are [10,20,30],[10,50] and [20,40].
 
-![IMG_20220430_192932](https://user-images.githubusercontent.com/98539013/166108669-f35c4dec-5227-4db1-ac2a-95d64a01d3b5.jpg)
+![IMG_20220430_230655](https://user-images.githubusercontent.com/98539013/166116330-bd7c54c4-bcb5-45ed-8624-97f230340c52.jpg)
 
 
 ### Algorithm
