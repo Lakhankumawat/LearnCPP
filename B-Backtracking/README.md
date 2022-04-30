@@ -59,8 +59,6 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
    - [Disadvantages](#disadvantages)
 
 
-## The Knight’s tour problem
-
 - Given a number n which represents the size of a chess board, and a row and a column, as a starting point for a knight piece, you are required to generate the all moves of a knight starting in (row, col) such that knight visits all cells of the board exactly once.
 
 - A knight should move according to the rules in chess. Please explore the next moves in the clockwise direction to get the same result as ours.
@@ -105,15 +103,11 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
    - [Advantages](#advantages)
    - [Disadvantages](#disadvantages)
 
-
-## Subset Sum
-
 - Given an array of n numbers and a number "tar" as the input.
 - Calculate and print all subsets of the given elements, the contents of which sum to "tar".
 - Say, if  given an array 10,20,30,40,50 and the target is 60. Then all the valid subsets are [10,20,30],[10,50] and [20,40].
 
-![IMG_20220430_143230](https://user-images.githubusercontent.com/98539013/166099513-ffc1f2a2-30eb-4068-b997-8f3f4f4ada9e.jpg)
-
+![IMG_20220430_192932](https://user-images.githubusercontent.com/98539013/166108669-f35c4dec-5227-4db1-ac2a-95d64a01d3b5.jpg)
 
 
 ### Algorithm
