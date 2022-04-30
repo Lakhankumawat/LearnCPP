@@ -467,6 +467,9 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 ## DNF Sort
 
 DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is specially designed for only the array which contain numbers `0's` `1's` and `2's` only.
+    
+![image](https://user-images.githubusercontent.com/86917304/166096608-225a0941-cc06-47a2-a67d-df45a15797b0.png)
+
 
 ### Algorithm
 
