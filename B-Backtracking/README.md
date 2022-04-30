@@ -112,7 +112,8 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 - Calculate and print all subsets of the given elements, the contents of which sum to "tar".
 - Say, if  given an array 10,20,30,40,50 and the target is 60. Then all the valid subsets are [10,20,30],[10,50] and [20,40].
 
-![Screenshot (556)](https://user-images.githubusercontent.com/98539013/164994466-b3475065-a90c-4397-a0b4-d57c3a8196a5.png)
+![IMG_20220430_143230](https://user-images.githubusercontent.com/98539013/166099513-ffc1f2a2-30eb-4068-b997-8f3f4f4ada9e.jpg)
+
 
 
 ### Algorithm
