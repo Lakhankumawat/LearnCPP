@@ -96,3 +96,49 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 - Backtracking is not the best solution for the Knight’s tour problem. 
 - Time Consuming.
 
+
+
+## [4. Subset Sum](#subset-sum)
+   - [Algorithm](#algorithm)
+   - [Time Complexity](#time-complexity)
+   - [Space Complexity](#space-Complexity)
+   - [Advantages](#advantages)
+   - [Disadvantages](#disadvantages)
+
+
+## Subset Sum
+
+- Given an array of n numbers and a number "tar" as the input.
+- Calculate and print all subsets of the given elements, the contents of which sum to "tar".
+- Say, if  given an array 10,20,30,40,50 and the target is 60. Then all the valid subsets are [10,20,30],[10,50] and [20,40].
+
+![Screenshot (556)](https://user-images.githubusercontent.com/98539013/164994466-b3475065-a90c-4397-a0b4-d57c3a8196a5.png)
+
+
+### Algorithm
+
+- Pass the  arguments as parameters to the given function "PrintTarget SumSubsets" : given input array, the index we are at i.e. 0 , initial empty subset, sum of that subset and the target .
+- BASE CASE: check whether the index is equal to array of length because it would tell whether all the elements have been used up or not.
+- Check condition for arr.ize() and not arr.size()-1 even though the indices start with 0 because when the recursive function is called on the last element it increases the index by 1 for the index arr.length-1 and hence the value stored in "idx" is equal to the arr.size().
+- Call a recursive function for the YES part of the element. Here, that element gets added to the subset string and arithmetically added.
+- Call a recursive function for the NO part of that element. Here, that element does not get added to either the subset string.
+
+### Time Complexity
+```
+- O(2n)
+- This time complexity is exponential because for each state, 2 recursion calls are made.
+ ``` 
+### Space Complexity
+```
+-O(1)
+-As no extra space is required, therefore space complexity is constant. However, if we include the space used in the recursive stack then the space complexity is O(n).
+ ``` 
+### Advantages 
+- We learned how to use backtracking in this problem.
+- Less Memory consuming.
+
+### Disadvantages
+- Backtracking is not the best solution for Subset Sum Problem. 
+- Time Consuming.
+
+
