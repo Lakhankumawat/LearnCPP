@@ -709,14 +709,14 @@ Space-complexity-->O(1)
 - [Explanation](#explanation-for-antispiral-matrix)
 - [Complexity](#complexity-for-antispiral-matrix)
 
-# Problem Statement for antispiral matrix
+### Problem Statement for antispiral matrix
 
 The problem is that you are given a 2D array and the task is to print matrix in anti spiral form.
 
     > Note you must be well aware with the printing matrix in spiral form algorithm
     to properly understand the printing matrix in antispiral form
 
-## Examples for antispiral matrix
+### Examples for antispiral matrix
 ```
 Input :
 
@@ -730,7 +730,7 @@ Output :
 10 11 7 6 5 9 13 14 15 16 12 8 4 3 2 1
 ```
 
-# Explanation for antispiral matrix
+### Explanation for antispiral matrix
 
 
 - The idea is simple, we traverse matrix in spiral form and put all traversed elements in a stack. 
@@ -756,10 +756,10 @@ Output :
 
 - Now, the new boundary conditions become our new matrix.
 
-## Following diagram shows the logic of the code
+### Following diagram shows the logic of the code
 ![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/spiral1.jpg)
 
-# Complexity for antispiral matrix
+### Complexity for antispiral matrix
 ```
 Time Complexity: O ( m * n )
 ```
