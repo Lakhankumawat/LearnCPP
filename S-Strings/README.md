@@ -51,7 +51,7 @@ For example, consider a website having two fields ‘Email’ & ‘Confirm Email
 
 In this Problem we have to print the word that is `Longest word` in the sentence which is given as the input .
 
-## Consepts Used
+## Concepts Used
 
 1. getline() :- This is to take sentence as the input.
 2. cin.ignore() :- This is used to clear the buffer in the input stream.
