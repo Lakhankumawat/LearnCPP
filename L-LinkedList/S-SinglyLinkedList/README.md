@@ -11,6 +11,12 @@
   - [Palindrome linked list](#palindrome-linked-list)
   - [Middle Element of the linked list](#middle-element-of-the-linked-list)
   - [Reverse a linked list](#reverse-a-linked-list)
+  - [Searching in a linked list](#searching-in-a-linked-list)
+  - [Removing Duplicates](#removing-duplicates)
+    - [Algorithm](#removing-duplicates)
+    - [Properties](#removing-duplicates)
+    - [Advantages](#removing-duplicates)
+    - [Disadvantages](#removing-duplicates)
 
 
 # Singly Linked List 
@@ -236,3 +242,105 @@ Given pointer to the head node of a linked list, the task is to reverse the link
 ##### Image for Reference:
 ![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
+
+
+# Searching in a linked list
+
+![image](https://user-images.githubusercontent.com/100334178/164755329-e649def2-f5e5-4406-a896-5f78b3a52aa7.png)
+
+### Explanation
+
+1. Linked List : 10  20  30  NULL
+
+Key : 20
+
+![image](https://user-images.githubusercontent.com/100334178/164756127-c0d093cb-c940-419a-9118-3bc0a1c47009.png)
+
+1. temp holding the address of the head node. temp->data = 10. key = 20. temp->data != key, so move the temp variable to the next node.
+
+2. Now, temp->data = 20. key = 20. temp->key == key. "Seach Found".
+
+
+2. Linked List : 10  20  30  NULL
+
+Key : 100
+
+![image](https://user-images.githubusercontent.com/100334178/164756361-f165f956-4bce-4de8-877f-b6d3bddcd42b.png)
+
+1. temp->data = 10. key = 100. temp->data != key. Hence move the temp variable to the next node.
+
+2. temp->data = 20. key = 100. temp->data != key. Hence move the temp variable to the next node.
+
+3. temp->data = 30. key = 100. temp->data != key. Hence move the temp variable to the next node which is NULL.
+
+4. Finally, the program execution will come out of the loop. So, it will return -1.
+
+"Search Not Found".
+
+ ## Approach1
+ **Iterative Solution** 
+### Algorithm
+
+1) Initialize a node pointer, current = head.
+2) Do following while current is not NULL
+    a) current->key is equal to the key being searched return true.
+    b) current = current->next
+3) Return false 
+
+### Properties
+Time-Complexity-->O(n)
+Space-Complexity-->O(n)
+
+ ## Approach2
+ **Recursive Solution** 
+### Algorithm
+bool search(head, x)
+1) If head is NULL, return false.
+2) If head's key is same as x, return true;
+3) Else return search(head->next, x) 
+
+### Properties
+Time-Complexity-->O(n)
+Space-Complexity-->O(n)
+
+
+# Removing Duplicates
+
+Suppose we have a list of some elements. We have to remove all elements that have occurred more than once. So only the distinct elements will remain in the list. So if the list is like [1,1,1,2,2,3,5,6,6,7,8], then the output will be [3,5,7,8], all other elements are present more than once.
+
+![1](https://user-images.githubusercontent.com/100334178/165158959-12fd67cb-0a78-49de-8b2f-03e1dbad5953.jpg)
+
+
+## Algorithm
+
+* Create a dummy node with value -1, prev := NULL, dummyPtr := dummy
+* while head is not null
+* if next of head is present or the value of head is not same as the value of the next node, then
+* next of dummyPtr := head
+* temp := next of head, and make next of head null
+* head := temp
+* dummyPtr := next of dummyPtr
+* Otherwise
+* prev := head, and head := next of head
+* while head is not null and value of head = value of prev
+* prev := head and head := next of head
+* return the next of dummy
+
+#### Input
+[1,1,1,2,2,3,5,6,6,7,8]
+
+#### Output
+[3, 5, 7, 8, ]
+
+## Properties
+### Time Complexity and Space Complexity
+* Time Complexity: O(n)
+* Auxiliary Space Complexity: O(1)
+
+## Advantages
+* In this algorithm problem will be solved  by iterating only  single time through the linked list.
+* It takes less time and space complexity.
+* Easy to understand algorithm
+
+## Disadvantages
+* Linked list must be sorted for applying this algorithm..
