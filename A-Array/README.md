@@ -10,6 +10,7 @@
 - [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
 - [Reversing of array](#reversing-of-array)
+- [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
 
 
 
@@ -699,3 +700,69 @@ For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 w
  Properties
 Time-complexity-->O(n)
 Space-complexity-->O(1)
+
+
+# Printing matrix in antispiral form
+
+- [Problem Statement](#problem-statement-for-antispiral-matrix)
+    - [Examples](#examples-for-antispiral-matrix)
+- [Explanation](#explanation-for-antispiral-matrix)
+- [Complexity](#complexity-for-antispiral-matrix)
+
+### Problem Statement for antispiral matrix
+
+The problem is that you are given a 2D array and the task is to print matrix in anti spiral form.
+
+    > Note you must be well aware with the printing matrix in spiral form algorithm
+    to properly understand the printing matrix in antispiral form
+
+### Examples for antispiral matrix
+```
+Input :
+
+ arr[][4] = {1, 2, 3, 4
+                    5, 6, 7, 8
+                    9, 10, 11, 12
+                    13, 14, 15, 16};
+
+Output :
+
+10 11 7 6 5 9 13 14 15 16 12 8 4 3 2 1
+```
+
+### Explanation for antispiral matrix
+
+
+- The idea is simple, we traverse matrix in spiral form and put all traversed elements in a stack. 
+
+- Finally one by one elements from stack and print them.
+
+- Understanding spiral method :
+
+- In spiral method the problem can be solved by dividing the matrix into boundaries.
+
+- It is visible that elements of the outer loop are printed in a clockwise manner, and then the elements from the inner loop are printed.
+
+- So, we can imagine the outer loop as four boundaries, namely row_start, col_start, row_end, col_end.
+
+![](https://miro.medium.com/max/1400/1*wIbS1BHxu5asM2pfefnj5w.png)
+
+- row_start: elements in the path of the matrix where we move from left to right.
+- row_end: elements in the path of the matrix where we move from right to left.
+- col_start: elements in the path of the matrix where we move from up to down.
+- col_end: elements in the path of the matrix where we move from down to up.
+
+- We print elements covered by each boundary in a clockwise manner using four loops, and after each iteration, reduce the dimension of the boundary to form an inner loop of the matrix. 
+
+- Now, the new boundary conditions become our new matrix.
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/spiral1.jpg)
+
+###
+
+### Complexity for antispiral matrix
+```
+Time Complexity: O ( m * n )
+Space Complexity: O (m * n )
+```
