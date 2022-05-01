@@ -55,3 +55,35 @@ input output 1
 input output 2
 ![Screenshot 2022-03-03 202230](https://user-images.githubusercontent.com/78430607/156589622-279cf956-58e5-4672-9d8e-1187201d38ab.png)
 ![Screenshot 2022-03-03 202257](https://user-images.githubusercontent.com/78430607/156589641-7dfd9e98-c523-4375-b39a-07127f84720b.png)
+
+
+# DIAGONAL TRAVERSAL 
+- [PROBLEM STATEMENT](#problem-statement)
+- [Examples](#examples)
+- [Algorithm](#algorithm)
+- [code](https://github.com/utkarsh006/LearnCPP/blob/Diagonal_Traversal/T-Tree/T-TreeTraversals/DiagonalTraversal.cpp)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
+
+## PROBLEM STATEMENT
+
+Given a Binary Tree, print the diagonal traversal of the binary tree.
+Consider lines of slope -1 passing between nodes. Given a Binary Tree, print all diagonal elements in a binary tree belonging to same line.
+
+## Examples
+Input : [8,3,10,1,6,null,14,null,null,4,7,13]  
+Output : 8 10 14 3 6 7 13 1 4
+
+![image](https://user-images.githubusercontent.com/94545831/166156380-641fabe7-f553-4936-888f-70dc68dfafd4.png)
+
+## Algorithm
+- In this traversal, I have taken a binary tree in main function and called a function named as : printDiagonal.
+- The function will return the elements being placed in diagonal fashion in binary tree.
+- We have used an unordered map for this purpose.
+- By recursion we have solved one case and pushed the curr node in the map.
+- Then in recursive manner we have called the same function for each left and right children of the given binary tree.
+- The hypothesis of Base case lies in the fact that if there is no node then we would be returning NULL.
+- Then we have traversed through the map to print the stored elements.
+
+## Time Complexity and Space Complexity
+- TIME COMPLEXITY : O(N)
+- SPACE COMPLEXITY : O(N)
