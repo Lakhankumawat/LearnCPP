@@ -83,7 +83,7 @@ In C++ programming, not only you can derive a class from the base class but you 
 Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes.
 The constructors of inherited classes are called in the same order in which they are inherited.
 
-Syntax:
+**Syntax:**
 
      class DerivedC: visibility-mode base1, visibility-mode base2
       {
@@ -96,7 +96,7 @@ Syntax:
 
 As the name defines, it is the hierarchy of classes. There is a single base class and multiple derived classes. Furthermore, the derived classes are also inherited by some other classes. Thus a tree-like structure is formed of hierarchy.
 
-Syntax:
+**Syntax:**
 
     Class Parent  
     {  
@@ -121,6 +121,31 @@ Syntax:
 
 
 ![image](https://user-images.githubusercontent.com/75986201/166136241-4a70af10-bf66-40c3-b9ed-cb7826a9557e.png)
+
+### Hybrid Inheritance
+
+In hybrid inheritance, there is a combination of one or more inheritance types. For instance, the combination of single and hierarchical inheritance. Therefore, hybrid inheritance is also known as multipath inheritance.
+
+![image](https://user-images.githubusercontent.com/75986201/166160814-8674b79b-4444-4abf-bff4-6fc8c1b211ae.png)
+
+**Syntax for above example:**
+
+    Class A  
+    {  
+    statement(s)  
+    }:  
+    Class B: public A  
+    {  
+    statement(s);  
+     };  
+    Class C  
+    {  
+    statement(s);  
+    };  
+    Class D: public B, public C  
+    {  
+    statement(s);  
+    };  
 
 
 ---------
