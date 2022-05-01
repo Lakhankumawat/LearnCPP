@@ -13,15 +13,15 @@
     - [Algorithm](#algorithm-2)
     - [Time Complexity](#time-complexity-2)
     - [Space Complexity](#space-complexity-2)
-    - [Advantages](#advantages-2)
-    - [Disadvantages](#disadvantages-2)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
 
 - [Subset Sum](#Subset-Sum) 
     - [Algorithm](#algorithm-3)
     - [Time Complexity](#time-complexity-3)
     - [Space Complexity](#space-complexity-3)
-    - [Advantages](#advantages-3)
-    - [Disadvantages](#disadvantages-3)
+    - [Advantages](#advantages-1)
+    - [Disadvantages](#disadvantages-1)
 
 
 ##  N Queen Problem
