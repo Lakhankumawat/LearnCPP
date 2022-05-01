@@ -9,6 +9,7 @@
 - [Shortest Common Super-sequence](#shortest-common-super-sequence)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
 - [Longest Common Subsequence Problem](#longest-common-subsequence-problem)
+- [Coin Change Problem](#coin-change)
 - [Egg Dropping Puzzle](#egg-dropping-puzzle)
 
 - [Climbing Stairs](#climbing-stairs)
