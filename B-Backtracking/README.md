@@ -9,7 +9,7 @@
     - [Time Complexity](#time-complexity-1)
     - [Space Complexity](#space-complexity-1)
 
-- [The Knight tour problem](#The-Knigh-tour-problem) 
+- [The Knight tour problem](#The-Knight-tour-problem) 
     - [Algorithm](#algorithm-2)
     - [Time Complexity](#time-complexity-2)
     - [Space Complexity](#space-complexity-2)
