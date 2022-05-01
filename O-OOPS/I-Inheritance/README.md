@@ -92,6 +92,36 @@ Syntax:
        
 ![image](https://user-images.githubusercontent.com/75986201/165782310-1f2e1f7b-ed2e-436f-91a5-63c46fb83346.png)
 
+### Hierarchical Inheritance
+
+As the name defines, it is the hierarchy of classes. There is a single base class and multiple derived classes. Furthermore, the derived classes are also inherited by some other classes. Thus a tree-like structure is formed of hierarchy.
+
+Syntax:
+
+    Class Parent  
+    {  
+    statement(s);  
+    };  
+    Class Derived1: public Parent  
+    {  
+    statement(s);  
+    };  
+    Class Derived2: public Parent  
+    {  
+    statement(s);  
+    };  
+    class newderived1: public Derived1  
+     {  
+    statement(s);  
+    };  
+    class newderived2: public Derived2  
+    {  
+    statement(s);  
+    };  
+
+
+![image](https://user-images.githubusercontent.com/75986201/166136241-4a70af10-bf66-40c3-b9ed-cb7826a9557e.png)
+
 
 ---------
 
