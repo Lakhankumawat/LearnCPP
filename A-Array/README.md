@@ -759,7 +759,10 @@ Output :
 ### Following diagram shows the logic of the code
 ![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/spiral1.jpg)
 
+###
+
 ### Complexity for antispiral matrix
 ```
 Time Complexity: O ( m * n )
+Space Complexity: O (m * n )
 ```
