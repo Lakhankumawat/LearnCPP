@@ -60,7 +60,7 @@ input output 2
 # DIAGONAL TRAVERSAL 
 - [PROBLEM STATEMENT](#problem-statement)
 - [Examples](#examples)
-- [Algorithm](#algorithm)
+- [Algorithm](#algorithm-1)
 - [code](https://github.com/utkarsh006/LearnCPP/blob/Diagonal_Traversal/T-Tree/T-TreeTraversals/DiagonalTraversal.cpp)
 - [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
 
