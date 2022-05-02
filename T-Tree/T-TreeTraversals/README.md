@@ -55,3 +55,25 @@ input output 1
 input output 2
 ![Screenshot 2022-03-03 202230](https://user-images.githubusercontent.com/78430607/156589622-279cf956-58e5-4672-9d8e-1187201d38ab.png)
 ![Screenshot 2022-03-03 202257](https://user-images.githubusercontent.com/78430607/156589641-7dfd9e98-c523-4375-b39a-07127f84720b.png)
+
+## Zig Zag Tree Traversal
+
+This is traversal in which we have to traverse in a order , that the first level should be traversed _Left to right_ and next should be traversed _right to left_ and this should level by level , so we can say that this is the **level order zig zag traversal**.
+
+### Approach
+
+1. We will assume two stacks of name `curlevel` and `nextelvel`.
+2. We also maintain a variable name `LeftToRight` for keeping track that we have to traverse left to right or right to left.
+3. Whenever , the current level order is from left to right, push the nodes left child, then its right child to the stack nextlevel.
+4. Next time when nodes are popped off nextlevel, it will be in the reverse order.
+5. when the current level order is from right to left, we would push the nodes right child first, then its left child. Finally. \
+   **Note:-** Don't forget to swap `nextLevel` and `curLevel` at the end of each level (condition **curLevel** must be empty).
+
+### Time & Space Complexities
+
+1. Time Complexity :- `O(n)` where **n** is the number of nodes.
+2. Space Complexity :- `O(n) + (n) = O(n)` where **n** is the number of nodes.
+
+### Output Screenshots
+![image](https://user-images.githubusercontent.com/86917304/166304303-55655284-7d4e-40c0-b56e-00aeb82d2844.png)
+
