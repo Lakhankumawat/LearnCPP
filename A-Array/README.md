@@ -10,9 +10,10 @@
 - [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
 - [Reversing of array](#reversing-of-array)
+
 - [Matrix](#matrix)
-- [Spiral Traversal of a Matrix](#spiral-traversal-of-a-matrix)
-- [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
+	- [Spiral Traversal of a Matrix](#spiral-traversal-of-a-matrix)
+	- [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
 
 
 
