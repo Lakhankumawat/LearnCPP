@@ -11,7 +11,7 @@ struct TreeNode
     struct TreeNode* right;
 };
 
-//to form a new node of a tree
+//function to form a new node of a tree
 struct TreeNode* newnode(int data){
     TreeNode* node = new TreeNode;
     node->val = data;
@@ -21,6 +21,37 @@ struct TreeNode* newnode(int data){
     return node;
 }
 
+//utility function to insert a value in the tree
+struct TreeNode* insertValue(struct TreeNode* root, int value,
+                         queue<TreeNode *>& q)
+{
+    TreeNode* node = newnode(value);
+    if (root == NULL)
+        root = node;
+ 
+    else if (q.front()->left == NULL)
+        q.front()->left = node;
+
+    else {
+        q.front()->right = node;
+        q.pop();
+    }
+
+    q.push(node);
+    return root;
+}
+
+//function to create the tree from the level order traversal
+struct TreeNode* createTree(int arr[], int n)
+{
+    TreeNode* root = NULL;
+    queue<TreeNode*> q;
+    for (int i = 0; i < n; i++)
+      root = insertValue(root, arr[i], q);
+    return root;
+}
+
+//function to print the inorder traversal of binary tree
 void inorderTraversal(TreeNode* root){
     if(root== NULL){
         return;
@@ -55,30 +86,30 @@ void mirror(TreeNode* root){
 
 
 int main(){
-   struct TreeNode *root = newnode(1);
-    root->left = newnode(2);
-    root->right = newnode(3);
-    root->left->left = newnode(4);
-    root->left->right = newnode(5);
+    int n;//number of nodes
 
-    /* Given tree in this case is shown below : 
-                1
-               / \
-              2   3
-             / \
-            4   5
-    */
+    cout<<"Enter the number of nodes : ";
+    cin>>n;
+    int arr[n];
+
+    cout<<"Enter the level order traversal of tree : "
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    
+    //root contains the root of binary tree
+    struct TreeNode* root = createTree(arr, n);
 
     cout<<"The inorder traversal of the given binary Tree : "<<endl;
 
-    inorderTraversal(root);
+    inorderTraversal(root);//before mirroring
     cout<<endl;
- 
+    
     mirror(root);
 
     cout<<"The inorder traversal of the mirror binary Tree : "<<endl;
 
-    inorderTraversal(root);
+    inorderTraversal(root);//after mirroring
     cout<<endl;
 
     return 0;
