@@ -11,6 +11,7 @@
 - [Symmetric matrix](#symmetric-matrix)
 - [Reversing of array](#reversing-of-array)
 - [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
+- [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
 
 
 
@@ -765,4 +766,57 @@ Output :
 ```
 Time Complexity: O ( m * n )
 Space Complexity: O (m * n )
+```
+
+# Printing matrix for find the missing and repeating number
+
+- [Problem Statement](#problem-statement-for-find-the-missing-and-repeating-number)
+    - [Examples](#examples-for-find-the-missing-and-repeating-number)
+- [Explanation](#explanation-for-find-the-missing-and-repeating-number)
+- [Advantages](#advantages-for-find-the-missing-and-repeating-number)
+- [Complexity](#complexity-for-find-the-missing-and-repeating-number)
+
+### Problem Statement for find the missing and repeating number
+Given an unsorted array of size n. Array elements are in the range from 1 to n. One number from set {1, 2, …n} is missing and one number occurs twice in the array. 
+
+Find these two numbers.
+
+### Examples for find the missing and repeating number
+```
+Input:
+ arr[] = {3, 1, 3}
+ 
+Output:
+ Missing = 2, Repeating = 3
+
+Explanation: In the array, 
+2 is missing and 3 occurs twice 
+
+```
+
+### Explanation for find the missing and repeating number
+
+- Given an array and its size first we need to traverse the array.
+
+- While traversing, use the absolute value of every element as an index. 
+
+- Make the value at this index as negative to mark it visited. 
+
+- If something is already marked negative then this is the repeating element. 
+
+- To find missing, traverse the array again and look for a positive value.
+
+### Advantages for find the missing and repeating number
+- This question can also be solved using sorting.
+
+- But using this approach is better as it solves the question in O(n) complexity whereas in sorting it would need O(nlogn) complexity.
+
+- In sorting approach you would need to sort the input array and then traverse and check for elements.
+
+- This would lead to O(nlogn) complexity.
+
+### Complexity for find the missing and repeating number
+```
+Time Complexity: O (n)
+Space Complexity: O (n)
 ```
