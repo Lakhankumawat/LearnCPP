@@ -21,6 +21,9 @@
 
 - [Minimum Falling Path Sum](#minimum-falling-path-sum)
 
+- [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
+
+- [Minimum number of deletions and insertions required to transform one string into another](#minimum-number-of-deletions-and-insertions-required-to-transform-one-string-into-another)
 
 
 # Dynamic Programming
@@ -1066,3 +1069,146 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 #### Space Complexity = O(n^2)
 
+
+# [Knapsack with Duplicate Items](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1/#)
+
+- [Problem Statement](#problem-statement-5)
+
+- [Examples](#examples-5)
+
+- [Algorithm](#algorithm-1)
+
+- [Pseudo Code](#pseudo-code-3)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/KnapsackWithDuplicateItems/D-DynamicProgramming/KnapsackwithDuplicateItems.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-2)
+
+
+### Problem Statement
+
+Given a set of N items, each with a weight and a value, represented by the array w[] and val[] respectively. Also, a knapsack with weight limit W.
+The task is to fill the knapsack in such a way that we can get the maximum profit. Return the maximum profit.
+Note: Each item can be taken any number of times.
+
+
+![image](https://user-images.githubusercontent.com/75883328/164772943-33fd9778-9a2f-4622-ba84-1b02eae02001.png)
+
+
+### Examples
+#### Example1
+
+Input: N = 2, W = 3
+
+val[] = {1, 1}
+wt[] = {2, 1}
+
+Output: 3
+Explanation- 
+1.Pick the 2nd element thrice.
+2.Total profit = 1 + 1 + 1 = 3. Also the total 
+  weight = 1 + 1 + 1  = 3 which is <= W.
+
+#### Example2
+
+Input: N = 4, W = 8
+
+val[] = {1, 4, 5, 7}
+wt[] = {1, 3, 4, 5}
+
+Output: 11
+Explanation-The optimal choice is to pick the 2nd and 4th element
+  
+### Algorithm 
+
+- We have to maximixe the profit provided that we do not exceed the knapsack capacity and can take an iten any number of times.
+- If we are on the currentItem then, we are having two possibilities :- 1)either to take it or 2)to leave it.
+- If we will take that currentItem then, we can still take that and now the capacity of the knapsack will decreased by weight[currentItem] and we'll get its profit.
+- If we will not take the currentItem, then we'll simply move on to currentItem+1.
+- If at any point currentitem >= N, we'll return 0, because we can't get any profit from an item that doesn't exists.
+- If capacity == 0, we'll return 0, because now we can't take anymore items.
+
+### Pseudo Code
+
+```
+
+	int maxProfit(int currentItem,int n,int capacity,int profit[],int weight[],vector<vector<int>>&v)
+
+    		if(capacity == 0) return 0;
+    		if(currentItem >= n) return 0;
+        
+    		if(v[currentItem][capacity] != -1) 
+        		return v[currentItem][capacity];
+		
+    		int consider=0;
+    		if(weight[currentItem] <= capacity)
+       			consider= profit[currentItem] + maxProfit(currentItem,n,capacity-weight[currentItem],profit,weight,v);
+            
+    		int notConsider = maxProfit(currentItem+1,n,capacity,profit,weight,v);
+    
+    		v[currentItem][capacity] = max(consider,notConsider);
+    		return v[currentItem][capacity];
+		
+```
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexity = O(N * W)
+- Space Complexity = O(N * W)
+
+
+# Minimum number of deletions and insertions required to transform one string into another
+
+- [Problem Statement](#problem-statement-for-the-question)
+    - [Examples](#examples-for-the-question)
+- [Explanation](#explanation-of-the-question)
+- [Advantages](#advantages-of-using-dp )
+- [Complexity](#complexity-of-the-question)
+
+### Problem Statement for the question
+
+You are given two strings of different length. We need to transform string1 into string2 by deleting and inserting minimum number of characters.
+    > Note this question is a variation of LCS problem
+### Examples for the question
+```
+Input:
+str1 = "heap", str2 = "pea" 
+Output : 
+Minimum Deletion = 2 
+Minimum Insertion = 1
+First we need to delete 2 characters 'h' and 'p' from heap and then add 1 character 'p' to convert i to string2.
+```
+
+### Explanation of the question
+
+- Consider you are given two strings 'str1' and 'str2'.
+
+- Let the length of string1 'str1' be m and length of string2 'str2' be n respectively.
+
+- First we need to find out the LCS of the two strings .
+
+- After finding LCS we can reduce the size of LCS from the length of string1 'str1' to find the total number of deletions.
+
+```
+minimum number of deletions minDel = m – lcs
+```
+
+- Similarly after finding LCS we can reduce the length of string2 'str2' to find the total number of insertions.
+```
+minimum number of Insertions minInsert = n – len
+```
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/20200817135845/picture2-660x402.jpg)
+
+### Advantages of using dp 
+- Use of dynamic programming optimizes the recursive calls.
+- It also saves us the time of re-computing inputs later.
+- Dynamic programming approach helps us to re-use the results.
+- It uses less line of code and speeds up the process.
+
+### Complexity of the question
+```
+Time Complexity: O(m*n)
+```
