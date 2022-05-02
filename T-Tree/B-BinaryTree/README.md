@@ -1,5 +1,9 @@
 # Table of content
 - [Height of the binary tree](#height-of-the-binary-tree)
+- [Number of Internal Nodes](#number-of-internal-nodes)
+    - [Algorithm](#algorithm-1)
+    - [Output](#output-1)
+    - [Properties](#properties-1)
 - [Largest Bst in a Binary Tree](#largest-bst-in-a-binary-tree)
     - [Properties](#properties)
     - [Algorithm](#algorithm)
@@ -81,6 +85,61 @@ Height of tree: 3
 - Time Complexity :
   - Worst case time	: O(n)
 
+
+# Number of Internal Nodes
+-  Internal Node is a node that can have at least one child (i.e. non-leaf node is an internal node).
+
+### Algorithm
+```
+begin internal_nodes( root )
+If node is NULL 
+  then return 0
+If left child and right child nodes are NULL 
+    return 0
+Else 
+    return 1 + internal_nodes( left child of node ) + internal_nodes( right child of node )
+
+ end internal_nodes
+```
+
+### Output
+1.
+```
+100
+  \
+   120
+      \
+      130
+         \
+         140
+            \
+            150
+              \
+              160
+                 \
+                 170
+ ```
+ Number of internal nodes: 6
+ 
+ ![Picture1](https://user-images.githubusercontent.com/76229635/166240690-74f39f94-4cf6-4cd7-82e9-d8a3898fd535.png)
+
+2.
+```
+                 100
+           /              \
+        30                150
+     /    \             /      \
+  20       50          122      188
+```
+Number of internal nodes: 3
+
+![Picture2](https://user-images.githubusercontent.com/76229635/166241039-11097823-a3e8-48fc-a758-800ca72f49ed.png)
+
+
+### Properties
+
+- Time Complexity :
+  - Worst case time	: O(n)
 
 # Largest Bst in a Binary Tree
 
