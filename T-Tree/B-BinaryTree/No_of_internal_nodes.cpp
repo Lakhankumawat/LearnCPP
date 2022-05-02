@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-///--------------------Structure of Node---------------------------//
+//--------------------Structure of Node---------------------------//
 
 struct Node
 {
@@ -11,9 +11,9 @@ struct Node
 
 };
 
-///------------End of structure------------//
+//------------End of structure------------//
 
-///------------To create a node and assign data to each section of node------------//
+//------------To create a node and assign data to each section of node------------//
 
 struct Node *create ( int val )
 {
@@ -24,9 +24,7 @@ struct Node *create ( int val )
     return p;
 }
 
-///-----------------------------------------------------------------------------------------//
-
-///-------------------To create and assign nodes in the binary according values--------------//
+//-------------------To create and assign nodes in the binary according values--------------//
 
 struct Node* tree(Node* t, int v){
 	 if (t == NULL)
@@ -40,9 +38,7 @@ struct Node* tree(Node* t, int v){
     return t;
 }
 
-///------------------------------------------------------------------------------------------//
-
-///------------Number of Internal nodes in the binary tree------------///
+//------------Number of Internal nodes in the binary tree------------//
 
 int internal_nodes( struct Node* p )
 {
@@ -54,10 +50,8 @@ int internal_nodes( struct Node* p )
         return 1 + internal_nodes( p->left ) + internal_nodes( p->right );
 }
 
-///---------------------------------------------------------------//
 
-
-///-------------------Driver function----------------------------//
+//-------------------Driver function----------------------------//
 
 int main()
 {
@@ -86,4 +80,4 @@ int main()
     return 0;
 }
 
-///------------------End of driver function----------------------//
+//------------------End of driver function----------------------//
