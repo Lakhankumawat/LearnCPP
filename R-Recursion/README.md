@@ -209,3 +209,33 @@ output-->19200
  ## Disadvantages
  - As recursion uses stack, for large numbers, memory may become full due to stack full
 
+
+# fibonacci Number
+
+- [Problem Statement](#problem-statement)
+- [Examples](#examples-2)
+- [Algorithm](#algorithm-1)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
+
+## Problem Statement
+The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is, 
+
+F(0) = 0, F(1) = 1
+F(n) = F(n - 1) + F(n - 2), for n > 1. Given n, calculate F(n).
+
+## Examples
+Example 1 : Input: n = 2
+            Output: 1
+            
+Example 2 : Input: n = 4
+            Output: 3
+            
+## Algorithm
+- Fibonacci number is a mathematical series in which first two terms are 0 and 1.
+- The other terms are obtained by the sum of previous two terms.
+- If noticed, we are solving a larger problem by observing the values of smaller problems.
+- Hence, Recursion comes into the picture and we solves this problem using this concept.
+
+## Time Complexity and Space Complexity
+- Time Complexity : O(N)
+- Space Complexity : O(N) here N is the recursion stack space.
