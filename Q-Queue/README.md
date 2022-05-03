@@ -454,7 +454,7 @@ We are given a stack data structure with push and pop operations, the task is to
 <!-- image to help better explain the concept -->
 
 
-![queue using stacks](https://www.interviewbit.com/blog/wp-content/uploads/2021/11/Stack-Example-1024x640.png)
+![queue using stacks](https://i1.wp.com/algorithms.tutorialhorizon.com/files/2015/01/Implement-Queue-Using-Stacks.png?ssl=1)
 
 
 ### Pseudo Code
@@ -507,3 +507,5 @@ Step 5: Exit
 - Enqueue: O(1) time
 
 - Dequeue: O(n) time
+
+2. Space Complexity : O(n)
