@@ -86,7 +86,7 @@ Height of tree: 3
   - Worst case time	: O(n)
 
 
-# Number of Internal Nodes
+## Number of Internal Nodes
 -  Internal Node is a node that can have at least one child (i.e. non-leaf node is an internal node).
 
 ### Algorithm
@@ -141,7 +141,7 @@ Number of internal nodes: 3
 - Time Complexity :
   - Worst case time	: O(n)
 
-# Largest Bst in a Binary Tree
+## Largest Bst in a Binary Tree
 
 - A tree is said to be a binary search tree if it is a binary search tree at its root. 
 - It means that the value inside the left child of the root node should be less than the value of the root node and the value inside the right child of the root node should be greater than the value inside the root node. 
@@ -187,13 +187,13 @@ and size will be : ans.size = l.size + r.size + 1;
 - Have to traverse each node and check if it is a bst or not.
 
 
-# Diameter of the Binary-Tree
+## Diameter of the Binary-Tree
 
-# Problem Statement
+### Problem Statement
 
 Given the root of a binary tree, return the length of the diameter of the tree.
 
-## Examples
+### Examples
 ```
  Let us create following Binary-Tree
              100
@@ -207,7 +207,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
  4 
 
 ```
-# Explanation
+### Explanation
 
 - The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
 
@@ -221,7 +221,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
  
 
 
-# Algorithm
+### Algorithm
 
 - Node passed in recursive function is null then return zero.
 - Using recursive call, calculate the diameter and the height of left-subtree until node becomes NULL 
@@ -238,7 +238,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
 -  The final output will return the max of step 4 and step 5.
 
 
-# Complexity
+### Complexity
 ```
 Complexities -: 
    1.Time Complexity - O(N), N - Number of nodes in a Binary-Tree.
