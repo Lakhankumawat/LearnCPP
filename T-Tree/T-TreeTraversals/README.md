@@ -20,7 +20,8 @@
 - The idea of Morris Traversal is based on Threaded Binary Tree. 
 - In this traversal, we first create links to Inorder successor and print the data using these links, and finally revert the changes to restore original tree. 
 
-![generic-tree_gfg](https://user-images.githubusercontent.com/55774240/158732482-11f84781-453f-4d25-8826-8ef54a5b0490.png)
+![Screenshot (567)](https://user-images.githubusercontent.com/98539013/166672079-40f40b47-3207-4963-a443-21b157ffccd1.png)
+
 
 ### Properties
 
