@@ -90,5 +90,5 @@ Output : 8 10 14 3 6 7 13 1 4
 - Then we have traversed through the map to print the stored elements.
 
 ## Time Complexity and Space Complexity
-- TIME COMPLEXITY : O(N)
-- SPACE COMPLEXITY : O(N)
+- Time Complexity : O(N)
+- Space Complexity : O(N)
