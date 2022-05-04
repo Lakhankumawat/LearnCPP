@@ -1,86 +1,69 @@
-# Contents
+# Table of content
 - [Morris Traversal](#morris-traversal)
-- [Diagonal Traversal](#diagonal-traversal)
+    - [Properties](#properties)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#time-complexity)
+    - [Space Complexity](#space-complexity)
+   
+    
+- [Diagonal Traversal](#diagonal-traversal) 
+    - [Examples](#Examples)
+    - [Algorithm](#algorithm-1)
+    - [Time Complexity](#time-complexity-1)
+    - [Space Complexity](#space-complexity-1)
+
 
 
 ## Morris Traversal
-Using Morris Traversal, we can traverse the tree without using stack and recursion. The idea of Morris Traversal is based on Threaded Binary Tree. In this traversal, we first create links to Inorder successor and print the data using these links, and finally revert the changes to restore original tree. 
 
-The Morris algorithm for inorder traversal allows you to traverse a tree with O(n) time and O(1) space complexity. But it requires changing the tree at runtime.
-## Time Complexity:
-We observe that every edge of the tree is traversed at most 3 times. The same number of extra edges, as in the input tree, is removed and created. Thus, the total time complexity of the above program is O(n).
-## Space complexity 
-O(1)  No extra space for traversal.
+- Using Morris Traversal, we can traverse the tree without using stack and recursion. 
+- The idea of Morris Traversal is based on Threaded Binary Tree. 
+- In this traversal, we first create links to Inorder successor and print the data using these links, and finally revert the changes to restore original tree. 
 
-## algorithm
-1)Set current_node as root 
+![generic-tree_gfg](https://user-images.githubusercontent.com/55774240/158732482-11f84781-453f-4d25-8826-8ef54a5b0490.png)
 
-2)  While current_node is not NULL
-3)  
-        If the current_node does not have any left child
-        
-            Print/traverse the current_node
-            
-            Move to the right child and update 
-            
-            current_node = current_node ->right
-            
-        Else
-        
-            Mark the current_node as right child of its 
-            
-            inorder predecessor & move to the left child, 
-            
-            i.e., 
-            
-            update current = current->left. But, if it's already 
-            
-            made as right child of its inorder predecessor 
-            
-            (that means done in any previous iterations) 
-            
-            then delete that link (It restores the tree back), 
-            
-            print/traverse the current node(because the left subtree is traversed)
-            
-            and move to its right child, 
-            
-            i.e., 
-            
-            update current = current->right  
-            
-    End While
+### Properties
 
-## Output Screenshots
-| #Screenshot 1|
-input output 1
-![Screenshot 2022-03-08 172342](https://user-images.githubusercontent.com/78430607/157233621-1e25b74d-05e7-4b57-9586-7852b6ace4cf.png)
-![Screenshot 2022-03-08 172427](https://user-images.githubusercontent.com/78430607/157233639-ab9b9271-5348-46f0-8514-f1ab629d2634.png)
-| Screenshot #2  |
-input output 2
-![Screenshot 2022-03-03 202230](https://user-images.githubusercontent.com/78430607/156589622-279cf956-58e5-4672-9d8e-1187201d38ab.png)
-![Screenshot 2022-03-03 202257](https://user-images.githubusercontent.com/78430607/156589641-7dfd9e98-c523-4375-b39a-07127f84720b.png)
+- The Morris algorithm for inorder traversal allows you to traverse a tree with O(n) time and O(1) space complexity. 
+- But it requires changing the tree at runtime.n advance.
+
+### Algorithm
+
+- Set current_node as root.
+- While current_node is not NULL.
+- If the current_node does not have any left child
+then,Print/traverse the current_node and Move to the right child and update.
+current_node = current_node ->right
+- Otherwise,Mark the current_node as right child of its inorder predecessor & move to the left child.
+update current = current->left.
+- If it's already Made as right child of its inorder predecessor(that means done in any previous iterations),then delete that link,It restores the tree back.
+- print/traverse the current node(because the left subtree is traversed)and move to its right child.
+update current = current->right  
+
+### Time Complexity
+```
+- We observe that every edge of the tree is traversed at most 3 times. The same number of extra edges, as in the input tree, is removed and created. Thus, the total time complexity of the above program is O(n).
+ ``` 
+
+### Space Complexity
+```
+- O(1)  No extra space for traversal.
+ ``` 
 
 
-# Diagonal Traversal
-- [Problem Statement](#problem-statement)
-- [Examples](#examples)
-- [Algorithm](#algorithm-1)
-- [code](https://github.com/utkarsh006/LearnCPP/blob/Diagonal_Traversal/T-Tree/T-TreeTraversals/DiagonalTraversal.cpp)
-- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
 
-## Problem Statement
+## Diagonal Traversal
 
-Given a Binary Tree, print the diagonal traversal of the binary tree.
-Consider lines of slope -1 passing between nodes. Given a Binary Tree, print all diagonal elements in a binary tree belonging to same line.
+- Given a Binary Tree, print the diagonal traversal of the binary tree.
+- Consider lines of slope -1 passing between nodes. Given a Binary Tree, print all diagonal elements in a binary tree belonging to same line.
 
-## Examples
+### Examples
 Input : [8,3,10,1,6,null,14,null,null,4,7,13]  
 Output : 8 10 14 3 6 7 13 1 4
 
 ![image](https://user-images.githubusercontent.com/94545831/166156380-641fabe7-f553-4936-888f-70dc68dfafd4.png)
 
-## Algorithm
+### Algorithm
 - In this traversal, I have taken a binary tree in main function and called a function named as : printDiagonal.
 - The function will return the elements being placed in diagonal fashion in binary tree.
 - We have used an unordered map for this purpose.
@@ -89,6 +72,12 @@ Output : 8 10 14 3 6 7 13 1 4
 - The hypothesis of Base case lies in the fact that if there is no node then we would be returning NULL.
 - Then we have traversed through the map to print the stored elements.
 
-## Time Complexity and Space Complexity
+### Time Complexity
+```
 - Time Complexity : O(N)
+ ``` 
+
+### Space Complexity
+```
 - Space Complexity : O(N)
+ ``` 
