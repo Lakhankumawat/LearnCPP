@@ -5,7 +5,13 @@
 # Different types of the recursion
 * Direct Recursion.
 * Indirect Recursion.
-* Tail Recursion.
+- [Tail Recursion](#tail-recursion)
+  - [Algorithm](#tail-recursion)
+  - [Properties](#tail-recursion)
+  - [Advantages](#tail-recursion)
+  - [Disadvantages](#tail-recursion)
+
+  
 * No Tail/ Head Recursion.
 * Linear recursion.
 - [Tree Recursion](#tree-recursion)
@@ -54,3 +60,26 @@ we call the function fib(4) which generates two more calls fib(3) and fib(2) , f
 
 ### Disadvantages
 - As recursion uses stack, for large numbers, memory may become full due to stack full
+
+
+
+# Tail Recursion
+* Tail Recursion
+ If a recursive function calling itself and that recursive call is the last statement in the function then it’s known as Tail Recursion. After that call the recursive function performs nothing. The function has to process or perform any operation at the time of calling and it does nothing at returning time.
+
+## Algorithm
+ Let’s understand the example by tracing tree of recursive function. That is how the calls are made and how the outputs are produced.
+ ![image](https://user-images.githubusercontent.com/100334178/166622562-760c951c-aa00-4fe0-a107-0563aa98d223.png)
+
+
+## Properties
+Time Complexity For Tail Recursion : O(n) 
+Space Complexity For Tail Recursion : O(n)
+
+## Advantages
+Advantage of using tail-recursion := so that the compiler optimize the code and convert it to a non-recursive code. Advantage of non-recursive code over recursive one := the non-recursive code requires less memory to execute than a recursive one. This is because of idle stack frames that the recursion consumes
+
+## Disadvantages
+ - it doesn't save a lot of run time.
+ - As recursion uses stack, for large numbers, memory may become full due to stack full
+
