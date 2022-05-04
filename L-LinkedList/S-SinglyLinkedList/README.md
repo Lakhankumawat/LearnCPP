@@ -1,14 +1,117 @@
 
 <!-- Table of content -->
 # Table of content
+  - [Singly Linked list](#singly-linked-list)
+    - [Creating singly linked list](#creating-singly-linked-list)
+    - [Displaying the Singly Linked List](#displaying-the-singly-linked-list)
+    - [Inserting a node](#inserting-a-node)
+    - [Inserting a node at nth position](#inserting-a-node-at-nth-position)
+    - [Deleting a node](#deleting-a-node)
   - [Segregate Even Odd](#segregate-even-odd)
-    - [Algorithm](#algorithm)
-    - [Properties](#properties)
-    - [Advantages](#advantages)
-    - [Disadvantage](#disadvantage)
   - [Palindrome linked list](#palindrome-linked-list)
-  - [Reverse a Linked List](#Reverse-Linked-List)
+  - [Middle Element of the linked list](#middle-element-of-the-linked-list)
+  - [Reverse a linked list](#reverse-a-linked-list)
+  - [Searching in a linked list](#searching-in-a-linked-list)
+  - [Removing Duplicates](#removing-duplicates)
+    - [Algorithm](#removing-duplicates)
+    - [Properties](#removing-duplicates)
+    - [Advantages](#removing-duplicates)
+    - [Disadvantages](#removing-duplicates)
 
+
+# Singly Linked List 
+
+* Create a SLL 
+* Display a SLL 
+* Insert a node in SLL 
+* Delete a node in SLL 
+
+## Creating Singly Linked List 
+
+### Steps  
+* Create an array and store elements in array.
+* Create nodes using malloc function and store elements of array in Linked List. 
+
+### Space Complexity
+
+* Extra space is used to store elements of LL in array.  
+* Space Complexity : O(n) 
+
+## Displaying the Singly Linked List 
+
+### Steps
+
+* Use the pointer and display node data until node becomes null.
+
+### Time Complexity
+
+* Displaying the first node: O(1) 
+* Displaying a node in between: O(n) 
+* Displaying the last node: O(n) 
+
+### Space Complexity
+
+* No extra space is used.   
+* Space Complexity: O(1)  
+
+## Inserting a node
+
+### Steps 
+
+* Inserting a node at first position will shift first or head pointer to new node.
+* For inserting a node in between, bring temporary pointer p to the position. 
+
+##### Inserting at first position : 
+
+![Linkedlist_insert_at_start](https://user-images.githubusercontent.com/81226536/157304956-2cee37f1-5cda-455a-ad4a-477b74cdad01.png) 
+
+
+## Inserting a node at nth position
+To insert a node at nth position, we need to follow these steps-
+* Create a new node
+* Iterate to the previous of the nth node
+* Set newnode's ‘next’ pointer to the ‘next’ pointer of the previous of the nth node
+* Set previous node's next to the new node
+* Return the head pointer
+
+### Time Complexity
+* Insertion at head node - O(1).
+* Insertion at last node - O(n).
+* Insertion in middle - O(n). 
+
+### Space Complexity
+* Space complexity: O(1).
+
+
+##### Image to show the insertion at nth position:
+
+![insertion-in-singly-linked-list-at-beginning](https://user-images.githubusercontent.com/86103131/157711281-4a6a00be-1a58-4fca-af71-e5b5a1a31e89.png)
+
+## Deleting a node
+
+### Steps
+
+* Find the previous node of the node to be deleted. 
+* Change the next of the previous node. 
+* Free memory for the node to be deleted.
+
+
+##### Deleting a node  : 
+
+![Linkedlist_deletion](https://user-images.githubusercontent.com/81226536/157306410-645f3871-7d8d-4f01-8492-66862d6da268.png) 
+
+### Time Complexity 
+
+* Deleting the first node => O(1) 
+* Deleting a node in between => O(n) 
+* Deleting the last node => O(n) 
+
+### Space Complexity 
+
+No extra space is used.   
+Space Complexity : O(1)
+
+***
 # Segregate Even Odd
 
 The Problem Statement : Give a Linked List of integer, write a function to modify the linked list such that all even numbers appear before all the odd numbers in the modified linked list. Also, keep the order of even and odd numbers the same
@@ -48,119 +151,9 @@ Write Pseudo code for your algorithm here
 
 - 
 
----
 
-### Singly Linked List 
-
-1. Create a SLL 
-2. Display a SLL 
-3. Insert a node in SLL 
-4. Delete a node in SLL 
-
-### Creating Singly Linked List 
-
-**Steps :**  
-
-1. Create an array and store elements in array.
-2. Create nodes using malloc function and store elements of array in Linked List. 
-
-**Space Complexity** 
-
-Extra space is used to store elements of LL in array.  
-Space Complexity : O(n) 
-
-### Displaying the Singly Linked List 
-
-**Steps :**
-
-1. Use the pointer and display node data until node becomes null.
-
-**Time Complexity** 
-
-1. Displaying the first node => O(1) 
-2. Displaying a node in between => O(n) 
-3. Displaying the last node => O(n) 
-
-**Space Complexity** 
-
-No extra space is used.   
-Space Complexity : O(1)  
-
-### Inserting a node in Singly Linked List 
-
-**Steps :** 
-
-1. Inserting a node at first position will shift first or head pointer to new node.
-2. For inserting a node in between, bring temporary pointer p to the position. 
-
-Inserting at first position : 
-
-![Linkedlist_insert_at_start](https://user-images.githubusercontent.com/81226536/157304956-2cee37f1-5cda-455a-ad4a-477b74cdad01.png) 
-
-
-Insert a node at nth position in the linked list
----
-To insert a node at nth position, we need to follow these steps-
-* Create a new node
-* Iterate to the previous of the nth node
-* Set newnode's ‘next’ pointer to the ‘next’ pointer of the previous of the nth node
-* Set previous node's next to the new node
-* Return the head pointer
-
-Time Complexity
-------------------------
-* Insertion at head node - O(1).
-* Insertion at last node - O(n).
-* Insertion in middle - O(n). 
-
-Space Complexity
------------
-* Space complexity: O(1).
-
-
-Image to show the insertion
----
-
-![insertion-in-singly-linked-list-at-beginning](https://user-images.githubusercontent.com/86103131/157711281-4a6a00be-1a58-4fca-af71-e5b5a1a31e89.png)
-
- 
-**Time Complexity** 
-
-1. Inserting the first node => O(1) 
-2. Inserting a node in between => O(n) 
-3. Inserting the last node => O(n) 
-
-**Space Complexity** 
-
-No extra space is used.  
-Space Complexity : O(1) 
-
-### Deleting a node in Singly Linked List 
-
-**Steps :**
-
-1. Find the previous node of the node to be deleted. 
-2. Change the next of the previous node. 
-3. Free memory for the node to be deleted.
-
-
-Deleting a node  : 
-
-![Linkedlist_deletion](https://user-images.githubusercontent.com/81226536/157306410-645f3871-7d8d-4f01-8492-66862d6da268.png) 
-
-**Time Complexity** 
-
-1. Deleting the first node => O(1) 
-2. Deleting a node in between => O(n) 
-3. Deleting the last node => O(n) 
-
-**Space Complexity** 
-
-No extra space is used.   
-Space Complexity : O(1)
 ***
 # Palindrome linked list
-
 In this approach, I have used a stack to store all the elements after the middle
 element so that We have to compare only (n/2)-1 elements to find out the list is palindrome or not.
 
@@ -193,18 +186,39 @@ element so that We have to compare only (n/2)-1 elements to find out the list is
 
 ### Disadvantage
 * Takes O(n) Auxilary space.
+***
+# Middle element of the linked list
+I have used two pointers approach to find the middle element of the linked list, in this we have to do only n/2 comparisions
 
+### Algorithm
+* Initialize two pointers i.e one is slow and one is fast and set them to head of the list
+* Iterate in the list until fast or fast->next pointer becomes null, make slow = slow->next and fast = fast->next->next
+* After while loops terminates, the slow pointer will be pointing at the middle node of the list
+* Return slow->data
 
-# To reverse a Linked List 
+### Time complexity
+
+- The time complexity will be O(n). But we have to do only n/2 comparisions in this approach
+
+### Space complexity
+
+* Space complexity will be O(1) as it is not taking any extra space in the program
+### Advantage
+
+- This approach is very efficient as only n/2 comparision is done.
+##### Image for reference:
+![image](https://user-images.githubusercontent.com/86103131/159268069-d7b68db0-6d67-45a5-9288-e8b3c4a335a9.png)
+*** 
+# Reverse a Linked List 
 Given pointer to the head node of a linked list, the task is to reverse the linked list. We need to reverse the list by changing the links between nodes.
-## Example
-Input: Head of following linked list 
+### Example
+- Input: Head of following linked list 
 1->2->3->4->NULL 
-Output: Linked list should be changed to, 
+- Output: Linked list should be changed to, 
 4->3->2->1->NULL
 ### To reverse a linked list, do the following.
-1. Initialize three pointers prev as NULL, curr as head and next as NULL
-2. Iterate through the linked list. In loop, do following,
+* Initialize three pointers prev as NULL, curr as head and next as NULL
+* Iterate through the linked list. In loop, do following,
     
     
     
@@ -221,10 +235,112 @@ Output: Linked list should be changed to,
     
     
     curr = next
-## Time Complexity and Space Complexity
-1.Time Complexity: O(n) 
-2.Space Complexity: O(1)
+### Time Complexity and Space Complexity
+* Time Complexity: O(n) 
+* Space Complexity: O(1)
 
-## Image for Reference
+##### Image for Reference:
 ![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
+
+
+# Searching in a linked list
+
+![image](https://user-images.githubusercontent.com/100334178/164755329-e649def2-f5e5-4406-a896-5f78b3a52aa7.png)
+
+### Explanation
+
+1. Linked List : 10  20  30  NULL
+
+Key : 20
+
+![image](https://user-images.githubusercontent.com/100334178/164756127-c0d093cb-c940-419a-9118-3bc0a1c47009.png)
+
+1. temp holding the address of the head node. temp->data = 10. key = 20. temp->data != key, so move the temp variable to the next node.
+
+2. Now, temp->data = 20. key = 20. temp->key == key. "Seach Found".
+
+
+2. Linked List : 10  20  30  NULL
+
+Key : 100
+
+![image](https://user-images.githubusercontent.com/100334178/164756361-f165f956-4bce-4de8-877f-b6d3bddcd42b.png)
+
+1. temp->data = 10. key = 100. temp->data != key. Hence move the temp variable to the next node.
+
+2. temp->data = 20. key = 100. temp->data != key. Hence move the temp variable to the next node.
+
+3. temp->data = 30. key = 100. temp->data != key. Hence move the temp variable to the next node which is NULL.
+
+4. Finally, the program execution will come out of the loop. So, it will return -1.
+
+"Search Not Found".
+
+ ## Approach1
+ **Iterative Solution** 
+### Algorithm
+
+1) Initialize a node pointer, current = head.
+2) Do following while current is not NULL
+    a) current->key is equal to the key being searched return true.
+    b) current = current->next
+3) Return false 
+
+### Properties
+Time-Complexity-->O(n)
+Space-Complexity-->O(n)
+
+ ## Approach2
+ **Recursive Solution** 
+### Algorithm
+bool search(head, x)
+1) If head is NULL, return false.
+2) If head's key is same as x, return true;
+3) Else return search(head->next, x) 
+
+### Properties
+Time-Complexity-->O(n)
+Space-Complexity-->O(n)
+
+
+# Removing Duplicates
+
+Suppose we have a list of some elements. We have to remove all elements that have occurred more than once. So only the distinct elements will remain in the list. So if the list is like [1,1,1,2,2,3,5,6,6,7,8], then the output will be [3,5,7,8], all other elements are present more than once.
+
+![1](https://user-images.githubusercontent.com/100334178/165158959-12fd67cb-0a78-49de-8b2f-03e1dbad5953.jpg)
+
+
+## Algorithm
+
+* Create a dummy node with value -1, prev := NULL, dummyPtr := dummy
+* while head is not null
+* if next of head is present or the value of head is not same as the value of the next node, then
+* next of dummyPtr := head
+* temp := next of head, and make next of head null
+* head := temp
+* dummyPtr := next of dummyPtr
+* Otherwise
+* prev := head, and head := next of head
+* while head is not null and value of head = value of prev
+* prev := head and head := next of head
+* return the next of dummy
+
+#### Input
+[1,1,1,2,2,3,5,6,6,7,8]
+
+#### Output
+[3, 5, 7, 8, ]
+
+## Properties
+### Time Complexity and Space Complexity
+* Time Complexity: O(n)
+* Auxiliary Space Complexity: O(1)
+
+## Advantages
+* In this algorithm problem will be solved  by iterating only  single time through the linked list.
+* It takes less time and space complexity.
+* Easy to understand algorithm
+
+## Disadvantages
+* Linked list must be sorted for applying this algorithm..
