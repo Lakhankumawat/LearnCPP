@@ -1,6 +1,7 @@
 # Contents
 - [Morris Traversal](#morris-traversal)
 - [Diagonal Traversal](#diagonal-traversal)
+- [Zig Zag Traversal](#zig-zag-tree-traversal)
 
 
 ## Morris Traversal
@@ -82,8 +83,6 @@ This is traversal in which we have to traverse in a order , that the first level
 
 ### Output Screenshots
 ![image](https://user-images.githubusercontent.com/86917304/166304303-55655284-7d4e-40c0-b56e-00aeb82d2844.png)
-
-=======
 
 # Diagonal Traversal
 - [Problem Statement](#problem-statement)
