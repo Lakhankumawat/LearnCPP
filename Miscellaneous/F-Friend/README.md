@@ -81,14 +81,14 @@ To declare two classes that are friends of one another, the entire second class 
 ```
 ## friend function <a name="ffunction"/>
 A friend function is a function that is not a member of a class but has access to the class's private and protected members. Friend functions are not considered class members; they are normal external functions that are given special access privileges. Friends are not in the class's scope, and they are not called using the member-selection operators (. and ->) unless they are members of another class. A friend function is declared by the class that is granting access. The friend declaration can be placed anywhere in the class declaration. It is not affected by the access control keywords.
-Example : <a href="https://github.com/Lakhankumawat/LearnCPP/blob/main/F-Friend/FriendFunction.cpp">FriendFunction.cpp</a>
+Example : <a href="https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/F-Friend/FriendFunction.cpp">FriendFunction.cpp</a>
 
 ## Class members as friends <a name="fclass">
 A friend class is a class all of whose member functions are friend functions of a class, that is, whose member functions have access to the other class's private and protected members. Syntax:
 ```
 friend class A;
 ```
-Example : <a href="https://github.com/Lakhankumawat/LearnCPP/blob/main/F-Friend/FriendClass.cpp">FriendClass.cpp</a> 
+Example : <a href="https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/F-Friend/FriendClass.cpp">FriendClass.cpp</a> 
 
 Friendship is not mutual unless explicitly specified as such.
 
