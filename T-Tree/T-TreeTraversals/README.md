@@ -1,4 +1,4 @@
-# CONTENTS
+# Contents
 - [Morris Traversal](#morris-traversal)
 - [Diagonal Traversal](#diagonal-traversal)
 
@@ -62,14 +62,14 @@ input output 2
 ![Screenshot 2022-03-03 202257](https://user-images.githubusercontent.com/78430607/156589641-7dfd9e98-c523-4375-b39a-07127f84720b.png)
 
 
-# DIAGONAL TRAVERSAL 
-- [PROBLEM STATEMENT](#problem-statement)
+# Diagonal Traversal
+- [Problem Statement](#problem-statement)
 - [Examples](#examples)
 - [Algorithm](#algorithm-1)
 - [code](https://github.com/utkarsh006/LearnCPP/blob/Diagonal_Traversal/T-Tree/T-TreeTraversals/DiagonalTraversal.cpp)
 - [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
 
-## PROBLEM STATEMENT
+## Problem Statement
 
 Given a Binary Tree, print the diagonal traversal of the binary tree.
 Consider lines of slope -1 passing between nodes. Given a Binary Tree, print all diagonal elements in a binary tree belonging to same line.
