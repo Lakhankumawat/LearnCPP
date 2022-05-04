@@ -185,6 +185,7 @@ Although  this notation is not very readable by humans ,but proved very useful f
 Algorithm
 ```
 - Time Complexity O(n) , where n is length of expression .
+- Space Complexity O(n), where n is the length of expression.
 1. Using cpp build a stack.
 2. Reverse the infix expression
 3. Read each character of Infix expression one by one from left to right.
@@ -201,6 +202,6 @@ Algorithm
 ```
 - Its implementation is [here](InfixToPrefix.cpp)
 
-![Infix to postfix conversion](https://prepinsta.com/wp-content/uploads/2020/07/Infix-to-prefix-conversion.webp)
+![Infix to prefix conversion](https://www.helpmestudybro.com/wp-content/uploads/2020/06/Infix2Prefix-1397x1536.jpg)
 
 - For more information about infix to postfix conversion [click here](https://www.javatpoint.com/convert-infix-to-prefix-notation)
