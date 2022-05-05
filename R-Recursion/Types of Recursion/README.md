@@ -6,7 +6,11 @@
 * Direct Recursion.
 * Indirect Recursion.
 * Tail Recursion.
-* No Tail/ Head Recursion.
+- [Head Recursion](#head-recursion)
+  - [Algorithm](#head-recursion)
+  - [Properties](#head-recursion)
+  - [Advantages](#head-recursion)
+  - [Disadvantages](#head-recursion)
 * Linear recursion.
 - [Tree Recursion](#tree-recursion)
   - [Algorithm](#algorithm)
@@ -54,3 +58,32 @@ we call the function fib(4) which generates two more calls fib(3) and fib(2) , f
 
 ### Disadvantages
 - As recursion uses stack, for large numbers, memory may become full due to stack full
+
+
+# Head Recursion
+ If a recursive function calling itself and that recursive call is the first statement in the function then it’s known as Head Recursion. There’s no statement, no operation before the call. The function doesn’t have to process or perform any operation at the time of calling and all operations are done at returning time.
+
+Let’s understand the example by tracing tree of recursive function. That is how the calls are made and how the outputs are produced.
+![image](https://user-images.githubusercontent.com/100334178/166974790-912ef94f-0e4a-4730-a374-25cf4dd146da.png)
+
+*  If there is something before the recursive call then it is not a head recursion. If something is there before the function call, it is just a recursion. 
+
+
+## Algorithm
+we pass n=5 in the function fun, each time call for function with value n-1 without printing it at first. As a result, fun(1) will be the first to execute completely and 1 is printed first. The function calls terminate when n=0, this is the Base Case of our Recursive function. We can see the call is not the last step in the function. The program above demonstrates Given a Number N Print 1 to N without Loop.
+ ![image](https://user-images.githubusercontent.com/100334178/166975640-926924ba-2756-4666-add3-683bf93c56b2.png)
+
+ 
+## properties
+* Time Complexity For Head Recursion: O(n) 
+* Space Complexity For Head Recursion: O(n)
+ 
+## Advantages
+* For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.
+* Easy and understandable code.
+
+## Disadvantages
+* slower in terms of speed.
+* It may require a lot of memory space to hold intermediate results on the system stacks.
+Hard to analyze or understand the code.
+* It is not more efficient in terms of space and time complexity.
