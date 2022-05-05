@@ -43,6 +43,14 @@
      - [Properties](#properties-6)
      - [Advantages](#advantages-6)
      - [Disadvantage](#disadvantage-4)
+     
+    - [Shell Sort](#shell-sort)
+      -  [Algorithm](#shellsortalogorithm)
+      - [Properties](#propertiesshellsort)
+      - [Advantages](#advantagesofshellsort)
+      - [Disadvantage](#disadvantagesofshellsort)
+ 
+     
  
 # Sorting Algorithms
 
@@ -506,3 +514,55 @@ DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is spe
 ### Disadvantage
 
 - Problem was restricted by allowing the inspection of the color of each element only once.
+
+ 
+                                                                                                                     
+ ## Shell Sort
+  
+  Shellsort, also known as Shell sort or Shell's method, is an in-place comparison sort. It can be seen as either a generalization of sorting by exchange or sorting by insertion.
+  
+  This algorithm uses insertion sort on a widely spread elements, first to sort them and then sorts the less widely spaced elements. This spacing is termed as interval. This interval is calculated based on Knuth's formula as −
+```
+Knuth's Formula
+h = h * 3 + 1
+where −
+   h is interval with initial value 1.
+  ```
+  
+  ### Algorithm
+  
+  1)Suppose, we need to sort the following array.
+  ![image](https://user-images.githubusercontent.com/91210199/166855987-1ea3e5e5-6c7a-4b63-a22a-84b6a964dc18.png)
+  
+ 2) We are using the shell's original sequence (N/2, N/4, ...1) as intervals in our algorithm.
+
+In the first loop, if the array size is N = 8 then, the elements lying at the interval of N/2 = 4 are compared and swapped if they are not in order.
+    a) The 0th element is compared with the 4th element.
+     b)If the 0th element is greater than the 4th one then, the 4th element is first stored in temp variable and the 0th element (ie. greater element) is stored in the 4th position and the element stored in temp is stored in the 0th position.
+                                                                                                                     
+      ![image](https://user-images.githubusercontent.com/91210199/166856041-3318ca22-4a42-4037-a3b7-29664fee3a58.png)
+                                                                                                                     
+     This process goes on for remaining elements.
+ 3)In the second loop, an interval of N/4 = 8/4 = 2 is taken and again the elements lying at these intervals are sorted. The same process goes on for remaining elements .Finally, when the interval is N/8 = 8/8 =1 then the array elements lying at the interval of 1 are sorted. The array is now completely sorted.
+ ![image](https://user-images.githubusercontent.com/91210199/166856221-990b2e7c-d380-41b2-9f07-34ef656407a4.png)
+                                                                                                                     
+### Properties
+                                                                                                                     
+Shell sort is used when:
+
+1)calling a stack is overhead. uClibc library uses this sort.
+2)recursion exceeds a limit. bzip2 compressor uses it.
+3)Insertion sort does not perform well when the close elements are far apart. Shell sort helps in reducing the distance between the close elements. Thus, there will be less number of swappings to be performed.     
+                                                                                                                     
+ `Time Complexity - O(nlogn)`
+ `Space complexity-O(1).`    
+                                                                                                                     
+### Advantages
+
+1)Shell sort algorithm is only efficient for finite number of elements in an array.
+2)Shell sort algorithm is 5.32 x faster than bubble sort algorithm.
+                                                                                                                    
+### Disadvantages
+
+1)Shell sort algorithm is complex in structure and bit more difficult to understand.
+2)Shell sort algorithm is significantly slower than the merge sort, quick sort and heap sort algorithms.                                                                                                                     
