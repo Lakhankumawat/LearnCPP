@@ -180,7 +180,7 @@ For example:
     1. We make pop easy and push expensive
     2. We make push easy and pop expensive
 
-### WAY 1
+### APPROACH 1
 
 #### Functions : 
 - Stack1 : This function creates new stack and initialis=zes the size as 0
@@ -214,7 +214,7 @@ For example:
 
 ![image](https://static.studytonight.com/data-structures/images/stack-using-queue-1.png)
 
-### WAY 2
+### APPROACH 2
 
 #### Functions : 
 - Stack2 : This function creates new stack and initialis=zes the size as 0
