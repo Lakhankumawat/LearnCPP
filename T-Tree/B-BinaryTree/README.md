@@ -12,6 +12,12 @@
     - [Explanation](#explanation)
     - [Algorithm](#algorithm-1)
     - [Complexity](#complexity)
+ - [Mirror Tree of Binary Tree](#mirror-tree-of-the-binary-tree)
+    - [Problem Statement](#problem-statement)
+    - [Examples](#examples)
+    - [Explanation](#explanation)
+    - [Algorithm](#algorithm-1)
+    - [Complexity](#complexity) 
 
 
 
@@ -185,3 +191,41 @@ Complexities -:
    1.Time Complexity - O(N), N - Number of nodes in a Binary-Tree.
    2.Space Complexity - O(H), H - Height of the Binary-Tree.
 ```
+
+# Mirror Tree of the Binary-Tree
+
+# Problem Statement
+
+Given a Binary Tree, convert it into its mirror.
+
+## Examples
+![Screenshot (239)](https://user-images.githubusercontent.com/81473660/166943108-f9b3cc11-58d0-4346-90d0-bf7102d596ca.png)
+
+![Screenshot (241)](https://user-images.githubusercontent.com/81473660/166943125-8f2e5730-c7f4-463c-b425-2fd69cfa9629.png)
+
+# Explanation
+
+- Mirror of a Tree: Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged. 
+
+
+ 
+![Screenshot (235)](https://user-images.githubusercontent.com/81473660/166943449-b63a2791-852c-4103-8fa1-f3be614e9b8b.png)
+
+
+# Algorithm
+```
+(1)  Call Mirror for left-subtree    i.e., Mirror(left-subtree)
+(2)  Call Mirror for right-subtree  i.e., Mirror(right-subtree)
+(3)  Swap left and right subtrees.
+          temp = left-subtree
+          left-subtree = right-subtree
+          right-subtree = temp
+
+```
+# Complexity
+```
+Complexities -: 
+   1.Time Complexity - Worst-case Time complexity is O(n) n=number of nodes in tree
+   2.Space Complexity -  If we don’t consider the size of the recursive stack for function calls then O(1) otherwise O(h) where h is the height of the tree.
+```
+
