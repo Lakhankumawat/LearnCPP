@@ -426,3 +426,86 @@ Step 6: Exit
 ### Advantages of implementating Circular Queue using Linked List
 - The key advantage of a circular queue over a normal queue is effective utilization of storage space or memory.
 - Linked list provide the facility of dynamic memory allocation so it is easy to create.
+
+## 5. Implementation of Queue using Stacks
+
+### Problem Statement
+
+We are given a stack data structure with push and pop operations, the task is to implement a queue using instances of stack data structure and operations on them.
+
+### Features
+
+1. Queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle 
+
+2.  When we implement circular Queue using linked list it is similar to circular linked list except there is two pointer front and rear in circular Queue where as circular linked list has only one pointer head.
+
+
+### Approach
+
+- There are 3 main operations.
+
+1. Enqueue: Adds an item to the queue. 
+
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition and an error message is displayed. 
+
+3. Empty: Tells whether a queue is empty or not.
+
+
+<!-- image to help better explain the concept -->
+
+
+![queue using stacks](https://i1.wp.com/algorithms.tutorialhorizon.com/files/2015/01/Implement-Queue-Using-Stacks.png?ssl=1)
+
+
+### Pseudo Code
+
+1. For enqueue
+
+```
+
+Step 1: push element into stack1
+
+```
+
+2. For dequeue
+
+```
+
+Step 1: if(s1.empty() && s2.empty()) //  Condition for underflow
+Step 2: Print “error”
+Step 3: end Dequeue
+Step 4: end if
+Step 5: if (s2.empty)
+Step 6: while(!s1.empty())
+Step 7: s2.push(s1.pop()) 
+Step 8: s1.pop()
+Step 9: end if
+Step 10: topval = s2.top()
+Step 11: s2.pop()
+Step 12: return topval
+Step 13: end dequeue
+
+  
+
+```
+
+3. For empty
+
+```
+Step 1: if(s1.empty() && s2.empty())
+Step 2: return true
+Step 3: else
+Step 4: return false
+Step 5: Exit
+
+```
+
+### Properties
+
+1. Time Complexity : 
+
+- Enqueue: O(1) time
+
+- Dequeue: O(n) time
+
+2. Space Complexity : O(n)
