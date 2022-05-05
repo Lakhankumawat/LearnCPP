@@ -5,6 +5,7 @@
 - [How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
 - [Converting decimal number to binary](#converting-decimal-number-to-binary)
 - [Stack ADT using linked list](#stack-adt-using-linked-list)
+- [Stack using queues](#stack-using-queues)
 
 ## STACK 
 
@@ -170,3 +171,83 @@ For example:
 - Working with linked list and void pointers is little bit difficult.
 
 ![image](https://prepinsta.com/wp-content/uploads/2019/07/ll.png)
+
+## Stack using queues
+
+### Problem statement : 
+    We are given queue data structure, the task is to implement stack using only given queue data structure. 
+    There are two ways to do it:
+    1. We make pop easy and push expensive
+    2. We make push easy and pop expensive
+
+### WAY 1
+
+#### Functions : 
+- Stack1 : This function creates new stack and initialis=zes the size as 0
+- push : This function pushes data into the node
+- pop : This function pops the data from the stack
+- top : This function retrieves stack top
+- size : This function returns the stack size
+
+#### ALGORITHMS:
+
+- Push():
+    1. Add the element in queue1.
+    2. While queue2 is empty add all its elements to q1. //thereby reversing the order of elements 
+    3. Swap the two queues.
+
+    Time Complexity : O(n)
+- Pop():
+    1. Simply pop the front element of queue1
+
+    Time Complexity : O(1)
+
+- Top():
+    1. Return the front of queue.
+
+    Time Complexity : O(1)
+
+- Size():
+    1. Return N;    
+    
+    Time Complexity : O(1)
+
+![image](https://static.studytonight.com/data-structures/images/stack-using-queue-1.png)
+
+### WAY 2
+
+#### Functions : 
+- Stack2 : This function creates new stack and initialis=zes the size as 0
+- push : This function pushes data into the node
+- pop : This function pops the data from the stack
+- top : This function retrieves stack top
+- size : This function returns the stack size
+
+#### ALGORITHMS:
+
+- Push():
+    1. Add the element in queue1.
+
+    Time Complexity : O(1)
+
+- Pop():
+    1. push the front element of queue1 into queue2 and pop from queue1 until it has only 1 element left
+    2. pop the element remaining in queue1
+    3. swap the two queues
+
+    Time Complexity : O(n)
+
+- Top():
+    1. push the front element of queue1 into queue2 and pop from queue1 until it has only 1 element left
+    2. store the value of the last element left of queue1 in a variable val
+    3. push the last element of queue1 into q2 and pop it from queue1
+    4. return val
+
+    Time Complexity : O(n)
+
+- Size():
+    1. Return N;    
+    
+    Time Complexity : O(1)
+
+![image](https://1.bp.blogspot.com/-t4p_sriB32M/WCTAKc_5rNI/AAAAAAAABa4/lbBiRe_qKbYnsyaMaqco2aepxenvPDhZgCLcB/s1600/implement-stack-using-queue-single-queue-algorithm.png)
