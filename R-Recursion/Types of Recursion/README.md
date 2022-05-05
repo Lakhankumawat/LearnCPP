@@ -70,7 +70,7 @@ we call the function fib(4) which generates two more calls fib(3) and fib(2) , f
 ## Algorithm
  Let’s understand the example by tracing tree of recursive function. That is how the calls are made and how the outputs are produced.
  ![image](https://user-images.githubusercontent.com/100334178/166622562-760c951c-aa00-4fe0-a107-0563aa98d223.png)
-
+The tail recursive functions considered better than non tail recursive functions as tail-recursion can be optimized by the compiler. Compilers usually execute recursive procedures by using a stack. This stack consists of all the pertinent information, including the parameter values, for each recursive call. When a procedure is called, its information is pushed onto a stack, and when the function terminates the information is popped out of the stack. Thus for the non-tail-recursive functions, the stack depth (maximum amount of stack space used at any time during compilation) is more. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use.
 
 ## Properties
 Time Complexity For Tail Recursion : O(n) 
