@@ -200,7 +200,7 @@ Although  this notation is not very readable by humans ,but proved very useful f
 ```
 - Its implementation is [here](InfixToPrefix.cpp)
 
-### PROPERTIES
+### Properties:
 - Time Complexity O(n) , where n is length of expression .
 - Space Complexity O(n), where n is the length of expression.
 
