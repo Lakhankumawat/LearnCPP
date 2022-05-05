@@ -135,31 +135,21 @@ public:
 int main(){
     Stack1 s1;
     s1.push(1);
-    cout << s1.top() << " ";
     s1.push(2);
-    cout << s1.top() << " ";
     s1.push(3);
-    cout << s1.top() << endl;
-    s1.pop();
-    cout << s1.top() << " ";
-    s1.pop();
-    cout << s1.top() << endl;
-    s1.pop();
-    cout << s1.size() << endl;
+    
+    while(s1.size() > 0){    
+    	cout << s1.top() << " ";
+    	s1.pop();
+    }
 
     Stack2 s2;
     s2.push(1);
-    cout << s2.top() << " ";
     s2.push(2);
-    cout << s2.top() << " ";
     s2.push(3);
-    cout << s2.top() << endl;
-    s2.pop();
-    cout << s2.top() << " ";
-    s2.pop();
-    cout << s2.top() << endl;
-    s2.pop();
-    cout << s2.size() << endl;
-
+    while(s2.size() > 0){    
+    	cout << s2.top() << " ";
+    	s2.pop();
+    }
 
 }
