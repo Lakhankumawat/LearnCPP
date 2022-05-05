@@ -200,10 +200,10 @@ Although  this notation is not very readable by humans ,but proved very useful f
 ```
 - Its implementation is [here](InfixToPrefix.cpp)
 
-### Properties:
-- Time Complexity O(n) , where n is length of expression .
-- Space Complexity O(n), where n is the length of expression.
-
 ![Infix to prefix conversion](https://www.helpmestudybro.com/wp-content/uploads/2020/06/Infix2Prefix-1397x1536.jpg)
 
 - For more information about infix to postfix conversion [click here](https://www.javatpoint.com/convert-infix-to-prefix-notation)
+
+### Properties:
+- Time Complexity O(n) , where n is length of expression .
+- Space Complexity O(n), where n is the length of expression.
