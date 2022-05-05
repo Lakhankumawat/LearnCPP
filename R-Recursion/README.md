@@ -6,10 +6,7 @@
     - [Disadvantages of recursion](#disadvantages-of-recursion)
     - [Difference between iterative approach and recursive approach](#difference-between-iterative-approach-and-recursive-approach)
     - [Tracing of a recursive function](#tracing-of-a-recursive-function)
-    - [Recursion using Stack](#recursion-using-stack)
-    - [Time Complexity in Recursion](#time-complexity-in-recursion)
-    - [Static and Global Variables in Recursion](#static-and-global-variables-in-recursion)
-    -
+ 
 
 - [Types of Recursion](#types-of-recursion)
     
@@ -36,7 +33,7 @@
 
 
 
-## Recusrion
+## Recursion
 
    ### Definition and Syntax
    When function is called within the same function, it is known as recursion in C++. The function which calls the same function, is known as recursive function.
