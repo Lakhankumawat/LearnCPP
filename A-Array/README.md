@@ -845,23 +845,23 @@ than the half of the size of the array size.
 
 ```
 
-### Explanation for Majority Element
+### Algorithm for Majority Element
 
-- Given an array we take two loops and keep track of the maximum count for all different elements. 
+1. Given an array we take two loops and keep track of the maximum count for all different elements. 
 
-- If maximum count becomes greater than n/2 then break the loops and return the element having maximum count.
+2. If maximum count becomes greater than n/2 then break the loops and return the element having maximum count.
 
--  If the maximum count doesn’t become more than n/2 then the majority element doesn’t exist.
+3.  If the maximum count doesn’t become more than n/2 then the majority element doesn’t exist.
 
-- Create a variable to store the max count, count = 0
+4. Create a variable to store the max count, count = 0
 
-- Traverse through the array from start to end.
+5. Traverse through the array from start to end.
 
-- For every element in the array run another loop to find the count of similar elements in the given array.
+6. For every element in the array run another loop to find the count of similar elements in the given array.
 
-- If the count is greater than the max count update the max count and store the index in another variable.
+7. If the count is greater than the max count update the max count and store the index in another variable.
 
-- If the maximum count is greater than the half the size of the array, print the element. Else print there is no majority element.
+8. If the maximum count is greater than the half the size of the array, print the element. Else print there is no majority element.
 
 
 ### Complexity for Majority Element
