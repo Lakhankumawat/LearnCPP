@@ -555,14 +555,17 @@ Shell sort is used when:
 3)Insertion sort does not perform well when the close elements are far apart. Shell sort helps in reducing the distance between the close elements. Thus, there will be less number of swappings to be performed.     
                                                                                                                      
  `Time Complexity - O(nlogn)`
+                                                                                                                     
  `Space complexity-O(1).`    
                                                                                                                      
 ### Advantages
 
 1)Shell sort algorithm is only efficient for finite number of elements in an array.
+                                                                                                                     
 2)Shell sort algorithm is 5.32 x faster than bubble sort algorithm.
                                                                                                                     
 ### Disadvantages
 
 1)Shell sort algorithm is complex in structure and bit more difficult to understand.
+                                                                                                                     
 2)Shell sort algorithm is significantly slower than the merge sort, quick sort and heap sort algorithms.                                                                                                                     
