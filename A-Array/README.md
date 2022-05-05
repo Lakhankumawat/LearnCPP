@@ -7,7 +7,12 @@
 - [Prefix Sum](#prefix-sum)
 - [First Negative Integer In Every K size Window](#first-negative-integer-in-every-k-size-window)
 - [Peak In 1D Array](#peak-in-1d-array)
+- [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
+- [Reversing of array](#reversing-of-array)
+- [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
+- [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
+
 
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
@@ -68,6 +73,7 @@ The problem states that there is a string that contains only digits. You have to
 Time complexity: O(n<sup>2</sup>) 
 Space complexity: O(1) 
 </pre>
+
 
 
 
@@ -536,4 +542,281 @@ For every k size window store every element if negative in deque from rear end u
    ```
 **Time Complexity:** `O(log n)`\
 **Auxillary Space:** `O(1)`
+
+# [Array Operations](A-Array/arrayOperations.cpp)
+
+- [INTRODUCTION](#introduction-of-arrays)
+- [SAMPLE ARRAY](#sample-array)
+- [Algorithm](#algorithm-of-array-operations)
+- [Example](#example-of-array)
+- [Time Complexity](#time-complexity-of-various-operations)
+
+# INTRODUCTION of arrays
+
+ Array is a container which can hold fix number of items of same data type.
+ Syntax for declaring an array is:
+       datatype array_name[size];
+       
+ Most of the Data Structures use arrays to implement algorithms. Some basics operations can be performed in an array.
+ The Operations which can be performed are as follows: 
+ 1. Traversal
+ 2. Insertion
+ 3. Deletion
+ 4. Searching- a) Linear Search b) Binary Search
+
+# SAMPLE ARRAY
+![ArrayOperations1](https://user-images.githubusercontent.com/87706725/163707384-196cc4b8-a680-44fb-9d6f-2cd030aee88d.png)
+![ArrayOperations2](https://user-images.githubusercontent.com/87706725/163707394-c7506383-348a-4e89-8085-bb032668496d.png)
+
+
+ # Algorithm of array operations
+
+* 1<sup>st</sup> START OF THE PROGRAM
+* 2<sup>st</sup> Create an array of fixed size i.e the maximum capacity/elements the array can store.
+* 3<sup>nd</sup> Input the size of array you want to create & the elements of array from the user.
+* 4<sup>rd</sup> Create a traversal function which takes array & size of the array as its arguments so that every element of the array can be traversed as well as printed(with the help of for loop which iterate with the size of array).
+* 5<sup>th</sup> For Insertion, create an insert function i.e insert(array,new element,index of new element,size,capacity). Check the condition whether element can be inserted or not & if the index number is valid or not.If yes, then insert the new element by shifting the previous elements in forward direction & put the new element at the required index
+*       for (int i = size - 1; i >= index; i--)
+        {
+            arr[i + 1] = arr[i];
+        }
+        arr[index] = element;
+* 6<sup>th</sup> For Deletion, create a delete function which takes array, size & index as arguments. Deletion can be done directly by shifting the elements in backward direction from the index number
+*        for (int i = index; i < size - 1; i++)
+         {
+             arr[i] = arr[i + 1];
+         }
+* 7<sup>st</sup> In order to Search elements in the Array, there are 2 methods i.e LINEAR SEARCH ALGORITHM & another is BINARY SEARCH ALGORITHM.
+* LINEAR SEARCH -
+* In this algorithm, a sequential search is made over all elements one by one & if a match is found(i.e key==element),then index of that element is returned.
+*        for (int i = 0; i < size; i++)
+         {
+              if (arr[i] == key)
+              {
+                return i;
+              }
+         }
+* BINARY SEARCH -
+* NOTE:: This algorithm works only for SORTED ARRAYS
+* In this algorithm, search begins by comparing the key with  the element in the middle of the array.If match is found then index is returned. But, if the key is less than middle element, then the search continues in the lower half of the array(i.e BINARY SEARCH will again work from low index to the middle index). And if the key is greater than the middle element,then search continues in the upper half(i.e from middle index to high index)
+*         int low = 0;
+          int mid;
+          int high = size - 1;
+
+          while (low <= high)
+          {
+              mid = (low + high) / 2;
+              if (arr[mid] == key)
+              {
+                 return mid;
+              }
+              else if (arr[mid] < key)
+              {
+                 low = mid + 1;
+              }
+              else
+              {
+                 high = mid - 1;
+              } 
+	  }
+* 8<sup>st</sup> END OF THE PROGRAM
+
+
+## Example of Array:
+*            SAMPLE INPUT -  arr[10]={1,2,3,4,5};
+            Traversal-> traversal(arr,size);
+                        O/P- 1  2  3  4  5 
+	    Insertion-> insert(arr, new element, index, size, capacity); 
+	                (let new element be 9 & index be 2)
+	                O/P- 1  2  9  3  4  5
+	    Deletion->  delete(arr,size,index);
+	                (let index=1)
+			 O/P- 1  9  3  4  5
+	    Linear Search-> linear(arr,key,size);
+	                    (let key=3)
+			     O/P- Element 3 is found at index 2
+	    Binary Search-> binary(arr,key,size);
+	                    (let key=9)
+			    O/P- Element 9 is found at index 1
+			    (if key=3)
+			     O/P- Element not Found as Binary search works only for sorted array
+
+## Time complexity of various operations:
+
+For **TRAVERSAL**-
+
+**Time complexity is** O(n).
+
+For **INSERTION**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **DELETION**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **LINEAR SEARCH**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
+
+For **BINARY SEARCH**-
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(log n)
+
+ # Reversing of Array
+
+## Reverse
+
+![image](https://user-images.githubusercontent.com/100334178/164883102-0de2ab96-09e6-4a7c-b392-6173fd79a01b.png)
+
+### Approach1
+
+![image](https://user-images.githubusercontent.com/100334178/164883125-5e188e0f-85fd-4a3e-b0b4-ebe140dc1c53.png)
+![image](https://user-images.githubusercontent.com/100334178/164883138-4b106bd0-79d0-403d-b662-b6540a3ce0bc.png)
+
+### Algorithm
+
+1.Take input the size of the array and the elements of the array.
+2.Consider a function reverse1 which takes the parameters-the array(say arr) and the size of the array(say n).
+3.Inside the function, a new array (with the array size of the first array, arr) is initialized. The array arr[] is iterated from the first element, and each element of array arr[] is placed in the new array from the back, i.e., the new array is iterated from its last element.
+4.In this way, all the elements of the array arr[] are placed reversely in the new array.
+5.Further, we can iterate through the new array from the beginning and print the elements of the array.
+
+### Properties
+Time-complexity-->O(n)
+Space-complexity-->O(n)
+
+
+
+### Approach2
+
+![image](https://user-images.githubusercontent.com/100334178/164883049-30b0e1a4-8b39-4fe1-b6e7-41d766cdd572.png)
+
+![image](https://user-images.githubusercontent.com/100334178/164883155-ce34b2ef-fea9-4e0b-9838-5d18adf02b05.png)
+
+### Algorithm
+The reverse2 method uses a similar code for the inputting and printing of the array. However, we don’t create a new array like the above method. Instead, we reverse the original array itself. In this method, we swap the elements of the array. The first element is swapped with the last element. The second element is swapped with the last but one element and so on. 
+For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 with n-1, 3 with n-2 and further. 
+
+ Properties
+Time-complexity-->O(n)
+Space-complexity-->O(1)
+
+
+# Printing matrix in antispiral form
+
+- [Problem Statement](#problem-statement-for-antispiral-matrix)
+    - [Examples](#examples-for-antispiral-matrix)
+- [Explanation](#explanation-for-antispiral-matrix)
+- [Complexity](#complexity-for-antispiral-matrix)
+
+### Problem Statement for antispiral matrix
+
+The problem is that you are given a 2D array and the task is to print matrix in anti spiral form.
+
+    > Note you must be well aware with the printing matrix in spiral form algorithm
+    to properly understand the printing matrix in antispiral form
+
+### Examples for antispiral matrix
+```
+Input :
+
+ arr[][4] = {1, 2, 3, 4
+                    5, 6, 7, 8
+                    9, 10, 11, 12
+                    13, 14, 15, 16};
+
+Output :
+
+10 11 7 6 5 9 13 14 15 16 12 8 4 3 2 1
+```
+
+### Explanation for antispiral matrix
+
+
+- The idea is simple, we traverse matrix in spiral form and put all traversed elements in a stack. 
+
+- Finally one by one elements from stack and print them.
+
+- Understanding spiral method :
+
+- In spiral method the problem can be solved by dividing the matrix into boundaries.
+
+- It is visible that elements of the outer loop are printed in a clockwise manner, and then the elements from the inner loop are printed.
+
+- So, we can imagine the outer loop as four boundaries, namely row_start, col_start, row_end, col_end.
+
+![](https://miro.medium.com/max/1400/1*wIbS1BHxu5asM2pfefnj5w.png)
+
+- row_start: elements in the path of the matrix where we move from left to right.
+- row_end: elements in the path of the matrix where we move from right to left.
+- col_start: elements in the path of the matrix where we move from up to down.
+- col_end: elements in the path of the matrix where we move from down to up.
+
+- We print elements covered by each boundary in a clockwise manner using four loops, and after each iteration, reduce the dimension of the boundary to form an inner loop of the matrix. 
+
+- Now, the new boundary conditions become our new matrix.
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/spiral1.jpg)
+
+###
+
+### Complexity for antispiral matrix
+```
+Time Complexity: O ( m * n )
+Space Complexity: O (m * n )
+```
+
+# Printing matrix for find the missing and repeating number
+
+- [Problem Statement](#problem-statement-for-find-the-missing-and-repeating-number)
+    - [Examples](#examples-for-find-the-missing-and-repeating-number)
+- [Explanation](#explanation-for-find-the-missing-and-repeating-number)
+- [Advantages](#advantages-for-find-the-missing-and-repeating-number)
+- [Complexity](#complexity-for-find-the-missing-and-repeating-number)
+
+### Problem Statement for find the missing and repeating number
+Given an unsorted array of size n. Array elements are in the range from 1 to n. One number from set {1, 2, …n} is missing and one number occurs twice in the array. 
+
+Find these two numbers.
+
+### Examples for find the missing and repeating number
+```
+Input:
+ arr[] = {3, 1, 3}
  
+Output:
+ Missing = 2, Repeating = 3
+
+Explanation: In the array, 
+2 is missing and 3 occurs twice 
+
+```
+
+### Explanation for find the missing and repeating number
+
+- Given an array and its size first we need to traverse the array.
+
+- While traversing, use the absolute value of every element as an index. 
+
+- Make the value at this index as negative to mark it visited. 
+
+- If something is already marked negative then this is the repeating element. 
+
+- To find missing, traverse the array again and look for a positive value.
+
+### Advantages for find the missing and repeating number
+- This question can also be solved using sorting.
+
+- But using this approach is better as it solves the question in O(n) complexity whereas in sorting it would need O(nlogn) complexity.
+
+- In sorting approach you would need to sort the input array and then traverse and check for elements.
+
+- This would lead to O(nlogn) complexity.
+
+### Complexity for find the missing and repeating number
+```
+Time Complexity: O (n)
+Space Complexity: O (n)
+```
