@@ -179,13 +179,11 @@ For example:
 - Infix: A+B
 - Prefix: +AB
 
-Need of prefix Notation :
+### Need of prefix Notation :
 Although  this notation is not very readable by humans ,but proved very useful for compiler designers in generating machine language  code for evaluating arithmetic expression .
 
-Algorithm
+### Algorithm
 ```
-- Time Complexity O(n) , where n is length of expression .
-- Space Complexity O(n), where n is the length of expression.
 1. Using cpp build a stack.
 2. Reverse the infix expression
 3. Read each character of Infix expression one by one from left to right.
@@ -201,6 +199,10 @@ Algorithm
 9. print the result string that is the prefix notation.
 ```
 - Its implementation is [here](InfixToPrefix.cpp)
+
+### PROPERTIES
+- Time Complexity O(n) , where n is length of expression .
+- Space Complexity O(n), where n is the length of expression.
 
 ![Infix to prefix conversion](https://www.helpmestudybro.com/wp-content/uploads/2020/06/Infix2Prefix-1397x1536.jpg)
 
