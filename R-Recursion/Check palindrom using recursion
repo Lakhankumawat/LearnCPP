@@ -1,4 +1,4 @@
-// Online C++ compiler to run C++ program online
+
 // Check whether a string is palindrome or not using recursion
 #include <bits/stdc++.h>
 using namespace std;
