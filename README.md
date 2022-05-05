@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-69-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-70-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -639,6 +639,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/shr-code"><img src="https://avatars.githubusercontent.com/u/84399701?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shraddha</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shr-code" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/SanyaGera"><img src="https://avatars.githubusercontent.com/u/75986201?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanya Gera</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SanyaGera" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/utkarsh006"><img src="https://avatars.githubusercontent.com/u/94545831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Utkarsh Saxena</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=utkarsh006" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AyuBisht"><img src="https://avatars.githubusercontent.com/u/94152085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ayushi Bisht</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=AyuBisht" title="Code">💻</a></td>
   </tr>
 </table>
 
