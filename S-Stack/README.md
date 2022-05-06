@@ -180,7 +180,7 @@ For example:
     1. We make pop easy and push expensive
     2. We make push easy and pop expensive
 
-### APPROACH 1
+### Approach-1
 
 #### Functions : 
 - Stack1 : This function creates new stack and initialis=zes the size as 0
@@ -189,7 +189,7 @@ For example:
 - top : This function retrieves stack top
 - size : This function returns the stack size
 
-#### ALGORITHMS:
+#### Algorithms:
 
 - Push():
     1. Add the element in queue1.
@@ -214,7 +214,7 @@ For example:
 
 ![image](https://static.studytonight.com/data-structures/images/stack-using-queue-1.png)
 
-### APPROACH 2
+### Approach-2
 
 #### Functions : 
 - Stack2 : This function creates new stack and initialis=zes the size as 0
@@ -223,7 +223,7 @@ For example:
 - top : This function retrieves stack top
 - size : This function returns the stack size
 
-#### ALGORITHMS:
+#### Algorithms:
 
 - Push():
     1. Add the element in queue1.
