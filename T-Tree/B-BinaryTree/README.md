@@ -121,7 +121,8 @@ Else
  ```
  Number of internal nodes: 6
  
- ![Picture1](https://user-images.githubusercontent.com/76229635/166240690-74f39f94-4cf6-4cd7-82e9-d8a3898fd535.png)
+ ![SmartSelect_20220506-122942_Samsung Notes](https://user-images.githubusercontent.com/76229635/167093456-f747a157-eefe-4af2-b22e-1492bd4b1026.jpg)
+
 
 2.
 ```
@@ -133,7 +134,7 @@ Else
 ```
 Number of internal nodes: 3
 
-![Picture2](https://user-images.githubusercontent.com/76229635/166241039-11097823-a3e8-48fc-a758-800ca72f49ed.png)
+![SmartSelect_20220506-122923_Samsung Notes](https://user-images.githubusercontent.com/76229635/167093513-721a78f1-ee6e-4c64-8e22-750eb67314ae.jpg)
 
 
 ### Properties
