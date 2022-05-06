@@ -5,6 +5,7 @@
 - [How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
 - [Converting decimal number to binary](#converting-decimal-number-to-binary)
 - [Stack ADT using linked list](#stack-adt-using-linked-list)
+- [Infix to Prefix Notation using stack](#infix-to-prefix-notation-using-stack)
 
 ## STACK 
 
@@ -170,3 +171,40 @@ For example:
 - Working with linked list and void pointers is little bit difficult.
 
 ![image](https://prepinsta.com/wp-content/uploads/2019/07/ll.png)
+
+## Infix to Prefix Notation using stack
+
+- The conventational method of representing an arithmatic expression is known as infix notation of an expression
+- Prefix expression: The operator is placed before the operand in prefix notation .
+- Infix: A+B
+- Prefix: +AB
+
+### Need of prefix Notation :
+Although  this notation is not very readable by humans ,but proved very useful for compiler designers in generating machine language  code for evaluating arithmetic expression .
+
+### Algorithm
+```
+1. Using cpp build a stack.
+2. Reverse the infix expression
+3. Read each character of Infix expression one by one from left to right.
+4. If the character is an operand, add to output. 
+5. Else If the character is ')', push in stack. 
+6. Else If the character is '(', pop the stack and output the string upto character ')' .
+7. Else, it is a operator , check precedence and push or pop accordingly 
+      1.  If the precedence of the checked operator is greater than the precedence of the operator in the stack(or the stack is empty or the stack contains a '(' ), push it. 
+      2. Else, Pop all the operators from the stack which are greater than or equal to in precedence than that of the checked operator. After doing that Push the checked operator to the stack. (If there is a parenthesis while popping then stop there and push the checked operator in the stack.)   
+7. Repeat steps 4-7 upto the end of Infix expression. 
+8. pop the remaining expression from the stack until stack is empty
+9.reverse the resultant string.
+9. print the result string that is the prefix notation.
+```
+- Its implementation is [here](InfixToPrefix.cpp)
+
+<img width="400" src="https://www.helpmestudybro.com/wp-content/uploads/2020/06/Infix2Prefix-1397x1536.jpg"> 
+
+
+- For more information about infix to postfix conversion [click here](https://www.javatpoint.com/convert-infix-to-prefix-notation)
+
+### Properties:
+- Time Complexity O(n) , where n is length of expression .
+- Space Complexity O(n), where n is the length of expression.
