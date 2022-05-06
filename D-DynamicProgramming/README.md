@@ -26,6 +26,9 @@
 
 - [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
 
+- [Minimum number of deletions and insertions required to transform one string into another](#minimum-number-of-deletions-and-insertions-required-to-transform-one-string-into-another)
+
+- [Coin Change](#coin-change)
 
 
 # Dynamic Programming
@@ -1219,4 +1222,158 @@ Explanation-The optimal choice is to pick the 2nd and 4th element
 
 - Time Complexity = O(N * W)
 - Space Complexity = O(N * W)
+
+
+# Minimum number of deletions and insertions required to transform one string into another
+
+- [Problem Statement](#problem-statement-for-the-question)
+    - [Examples](#examples-for-the-question)
+- [Explanation](#explanation-of-the-question)
+- [Advantages](#advantages-of-using-dp )
+- [Complexity](#complexity-of-the-question)
+
+### Problem Statement for the question
+
+You are given two strings of different length. We need to transform string1 into string2 by deleting and inserting minimum number of characters.
+    > Note this question is a variation of LCS problem
+### Examples for the question
+```
+Input:
+str1 = "heap", str2 = "pea" 
+Output : 
+Minimum Deletion = 2 
+Minimum Insertion = 1
+First we need to delete 2 characters 'h' and 'p' from heap and then add 1 character 'p' to convert i to string2.
+```
+
+### Explanation of the question
+
+- Consider you are given two strings 'str1' and 'str2'.
+
+- Let the length of string1 'str1' be m and length of string2 'str2' be n respectively.
+
+- First we need to find out the LCS of the two strings .
+
+- After finding LCS we can reduce the size of LCS from the length of string1 'str1' to find the total number of deletions.
+
+```
+minimum number of deletions minDel = m – lcs
+```
+
+- Similarly after finding LCS we can reduce the length of string2 'str2' to find the total number of insertions.
+```
+minimum number of Insertions minInsert = n – len
+```
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/20200817135845/picture2-660x402.jpg)
+
+### Advantages of using dp 
+- Use of dynamic programming optimizes the recursive calls.
+- It also saves us the time of re-computing inputs later.
+- Dynamic programming approach helps us to re-use the results.
+- It uses less line of code and speeds up the process.
+
+### Complexity of the question
+```
+Time Complexity: O(m*n)
+```
+
+  
+  
+ # [Coin Change](https://leetcode.com/problems/coin-change/)
+
+- [Problem Statement](#problem-statement-7)
+
+- [Examples](#examples-7)
+
+- [Algorithm](#algorithm-2)
+
+- [Pseudo Code](#pseudo-code-4)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/coinChange/D-DynamicProgramming/CoinChange.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-3)
+
+
+### Problem Statement
+
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+You may assume that you have an infinite number of each kind of coin.
+
+#### Constraints:
+
+
+1 <= coins.length <= 12
+1 <= coins[i] <= 231 - 1
+0 <= amount <= 104
+
+
+
+![image](https://user-images.githubusercontent.com/75883328/165454680-640a326c-7f2e-4489-acf9-9cabf07bb5a4.png)
+
+
+
+### Examples
+
+Example 1:
+
+Input: coins = [1,2,5], amount = 11
+
+Output: 3
+
+
+Example 2:
+
+Input: coins = [2], amount = 3
+
+Output: -1
+
+
+### Algorithm 
+
+- We are supposed to find the minimum numbers of coins required to make amount ,provided that we can take a coin any number of times.
+
+- For every coins present in the coins array, we are having two options :- 1)either to take that coin , 2) don't take the coin.
+
+- If we'll take the currentCoin,then the amount will decrease by coins[currentCoin] (i.e. the denomination of the currentCoin)and we can still take the currentCoin if its denomination is less than or equal to the amount and we'll add a one because we are taking that coin to make the amount.
+
+- If we aren't taking the currentCoin ,then we'll simply move on to currentCoin+1.
+
+- If at any point amount becomes 0,then it means that we have successfully made amount ,so return 0.
+
+- Otherwise if we have reached the end of the coins array and amount != 0 ,then return infinity.
+
+
+### Pseudo Code
+
+
+  int minCoins(int currentCoin,int amount,vector<int>&coins,int n,vector<vector<int>>&v)
+    
+    if(amount == 0) return 0;
+          if(currentCoin >= n) return 100001;
+        
+        if(v[currentCoin][amount] != -1)
+            return v[currentCoin][amount];
+        
+        int consider = 100001;
+        if(coins[currentCoin] <= amount)
+            consider = 1 + minCoins(currentCoin,amount-coins[currentCoin],coins,n,v);
+        
+        int notConsider = minCoins(currentCoin+1,amount,coins,n,v);
+        
+        v[currentCoin][amount] = min(consider,notConsider);
+        return v[currentCoin][amount];
+
+
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexcity = O(n * amount)
+
+- Space Complexity = O(n * amount)
 
