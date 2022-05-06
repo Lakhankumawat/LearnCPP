@@ -46,40 +46,6 @@ Else
     height_of_a_tree = 1 + (which-one is bigger from 'l' & 'r')
  end height
 ```
-
-### Output:
-1.
-```
-100
-  \
-   120
-      \
-      130
-         \
-         140
-            \
-            150
-              \
-              160
-                 \
-                 170
-```
-Height of tree: 7
-
-![o_p5](https://user-images.githubusercontent.com/76229635/158337847-c0be85a6-d577-47ed-a347-dba09652e8e6.png)
-
-2.
-```
-                 100
-           /              \
-        30                150
-     /    \             /      \
-  20       50          122      188
-```
-Height of tree: 3
-
-![o_p4](https://user-images.githubusercontent.com/76229635/158338061-5043a09d-70ef-449c-adbe-79117bc3ce4f.png)
-
 ### Properties
 
 - Time Complexity :
@@ -119,11 +85,9 @@ Else
                  \
                  170
  ```
- Number of internal nodes: 6
- 
- ![SmartSelect_20220506-122942_Samsung Notes](https://user-images.githubusercontent.com/76229635/167093456-f747a157-eefe-4af2-b22e-1492bd4b1026.jpg)
-
-
+ Number of internal nodes: 6 <br>
+ <img width="400"  src="https://user-images.githubusercontent.com/76229635/167093456-f747a157-eefe-4af2-b22e-1492bd4b1026.jpg">
+ <br>
 2.
 ```
                  100
@@ -133,9 +97,9 @@ Else
   20       50          122      188
 ```
 Number of internal nodes: 3
-
-![SmartSelect_20220506-122923_Samsung Notes](https://user-images.githubusercontent.com/76229635/167093513-721a78f1-ee6e-4c64-8e22-750eb67314ae.jpg)
-
+<br>
+ <img width="400"  src="https://user-images.githubusercontent.com/76229635/167093513-721a78f1-ee6e-4c64-8e22-750eb67314ae.jpg">
+ <br>
 
 ### Properties
 
