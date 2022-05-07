@@ -8,11 +8,11 @@
 
  - [Forms of Inheritance](#forms-of-inheritance)
    - [Single Inheritance](#single-inheritance)
+   - [Multilevel Inheritance](#multilevel-inheritance)
    - [Multiple Inheritance](#multiple-inheritance)
    - [Hierarchical Inheritance](#hierarchical-inheritance)
-   - [Multilevel Inheritance](#multilevel-inheritance)
    - [Hybrid Inheritance](#hybrid-inheritance)
-   - 
+   
  - [Access Modifiers In Inheritance](#access-modifiers-in-inheritance)
    - [Public Access Modifier](#public-access-modifier)
    - [Private Access Modifier](#private-access-modifier)
@@ -70,6 +70,85 @@ In C++, inheritance is a process in which one object acquires all the properties
 Single inheritance is a type of inheritance in which a derived class is inherited with only one base class.
 
 ![Single](https://user-images.githubusercontent.com/75986201/163713213-0003cadf-b331-41e4-9b0b-38910192d892.png)
+
+### Multilevel Inheritance
+
+In C++ programming, not only you can derive a class from the base class but you can also derive a class from the derived class. This form of inheritance is known as multilevel inheritance.
+
+![image](https://user-images.githubusercontent.com/75986201/165105432-98665b12-40a4-4590-a5ff-19cd13bd27e3.png)
+
+
+### Multiple Inheritance
+
+Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes.
+The constructors of inherited classes are called in the same order in which they are inherited.
+
+**Syntax:**
+
+     class DerivedC: visibility-mode base1, visibility-mode base2
+      {
+         Class body of class "DerivedC"
+       };
+       
+![image](https://user-images.githubusercontent.com/75986201/165782310-1f2e1f7b-ed2e-436f-91a5-63c46fb83346.png)
+
+### Hierarchical Inheritance
+
+As the name defines, it is the hierarchy of classes. There is a single base class and multiple derived classes. Furthermore, the derived classes are also inherited by some other classes. Thus a tree-like structure is formed of hierarchy.
+
+**Syntax:**
+
+    Class Parent  
+    {  
+    statement(s);  
+    };  
+    Class Derived1: public Parent  
+    {  
+    statement(s);  
+    };  
+    Class Derived2: public Parent  
+    {  
+    statement(s);  
+    };  
+    class newderived1: public Derived1  
+     {  
+    statement(s);  
+    };  
+    class newderived2: public Derived2  
+    {  
+    statement(s);  
+    };  
+
+
+![image](https://user-images.githubusercontent.com/75986201/166136241-4a70af10-bf66-40c3-b9ed-cb7826a9557e.png)
+
+### Hybrid Inheritance
+
+In hybrid inheritance, there is a combination of one or more inheritance types. For instance, the combination of single and hierarchical inheritance. Therefore, hybrid inheritance is also known as multipath inheritance.
+
+![image](https://user-images.githubusercontent.com/75986201/166160814-8674b79b-4444-4abf-bff4-6fc8c1b211ae.png)
+
+**Syntax for above example:**
+
+    Class A  
+    {  
+    statement(s)  
+    }:  
+    Class B: public A  
+    {  
+    statement(s);  
+     };  
+    Class C  
+    {  
+    statement(s);  
+    };  
+    Class D: public B, public C  
+    {  
+    statement(s);  
+    };  
+
+
+---------
 
 ### Access Modifiers In Inheritance
 
