@@ -1,3 +1,12 @@
+# Red Black Trees
+- [Insertion](#insertion-of-a-node-in-a-red-black-tree)
+- [Deletion](#deletion-of-a-node-in-a-red-black-tree)
+- [Searching](#searching-a-node-in-a-red-black-tree)
+- [Space and Complexity](#space-and-time-complexity)
+- [Advantages](#advantages-of-red-black-trees)
+- [Disadvantages](#disadvantages-of-red-black-trees)
+
+
 Red-Black tree is a self-balancing binary search tree in which each node contains an extra bit for denoting the color of the node, either red or black.
 
 A red-black tree satisfies the following properties:
@@ -10,6 +19,7 @@ A red-black tree satisfies the following properties:
 
 
 An example of a red-black tree is:
+
 ![image](https://user-images.githubusercontent.com/77603501/167234741-97d7cdd0-2ad1-42d8-80fa-66ad1cf4bd79.png)
 
 ## Insertion of a node in a Red Black Tree
