@@ -57,6 +57,10 @@
 ### Difference between iterative approach and recursive approach 
 ![](https://cdn-media-1.freecodecamp.org/images/1*QrQ5uFKIhK3jQSFYeRBIRg.png)
 
+### Tracing of a recursive function
+Let us show tracing of factorial function using recursion.
+![slide_251](https://user-images.githubusercontent.com/75986201/167252506-d6ac06b9-01ff-4618-b4d0-9ae1cb40c858.jpg)
+
 
 
 
