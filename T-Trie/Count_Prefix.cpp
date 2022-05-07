@@ -77,12 +77,15 @@ public:
 int main()
 {
     Trie T;
-    string s[] = {"the", "this", "tear", "cute", "monkey"}; // The list
-    for (auto i : s)
+    vector<string>s; // The list
+    int n; cin>>n;
+    for (int i=0;i<n;i++)
     {
-        T.insert(i);
+        cin>>s[i];
+        T.insert(s[i]);
     }
-    string check = "th"; // The prefix which we have to check.
+    string check; 
+    cin>>check;  // The prefix which we have to check.
     int ans = T.wordStartWith(check);
     cout << "The word which start from " << check << " is :" << ans << " in number in List.";
 }
