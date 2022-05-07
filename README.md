@@ -386,6 +386,7 @@ Fond of designing README this section will be helpful to you
 |  3 | Maximum of all Subarrays of size k  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/max_of_size_k_window.cpp)|
 |  4 | Lowercase to Uppercase  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/LowercaseToUppercase.cpp)|
 | 5  | Counting Frequencies  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/CountingFrequencies.cpp)|
+| 6 | Delete Node without head pointer | [Solution](https://github.com/Rahul2570089/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/deletenode_withoutHeadPointer.cpp)|
 
 
 
