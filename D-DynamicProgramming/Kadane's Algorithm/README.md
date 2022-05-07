@@ -1,7 +1,7 @@
-#DYNAMIC PROGRAMMING : 
+# DYNAMIC PROGRAMMING : 
 	Dynamic Programming is a method for solving a complex problem by breaking it down into a collection of simpler sub-problems, solving each of those subproblems just once, and storing their solutions using a memory-based data structures.
 
-##KADANE'S ALGORITHM : 
+## KADANE'S ALGORITHM : 
 	Kadane’s algorithm is a Dynamic Programming approach to maintain the maximum possible sum of a subarray ending at an index without needing to store the numbers in an auxiliary array thereby reducing the space complexity.
 Let us understand this kadane's algorithm using a popular problem of Largest Sum of Contiguous Subarray. 
 
