@@ -12,6 +12,7 @@
 - [Reversing of array](#reversing-of-array)
 - [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
 - [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
+- [Majority Element](#majority-element)
 
 
 
@@ -820,3 +821,52 @@ Explanation: In the array,
 Time Complexity: O (n)
 Space Complexity: O (n)
 ```
+
+# Majority Element
+
+- [Problem Statement](#problem-statement-for-majority-element)
+    - [Examples](#examples-for-majority-element)
+- [Explanation](#explanation-for-majority-element)
+
+- [Complexity](#complexity-for-majority-element)
+
+### Problem Statement for Majority Element
+The problem is given an array you have to print the majority element. A majority element in an array A[] of size n is an element that appears more than n/2 times.
+
+### Examples for Majority Element
+```
+Input :
+ {3, 3, 4, 2, 4, 4, 2, 4, 4}
+
+Output : 4
+
+Explanation: The frequency of 4 is 5 which is greater
+than the half of the size of the array size. 
+
+```
+
+### Algorithm for Majority Element
+
+1. Given an array we take two loops and keep track of the maximum count for all different elements. 
+
+2. If maximum count becomes greater than n/2 then break the loops and return the element having maximum count.
+
+3.  If the maximum count doesn’t become more than n/2 then the majority element doesn’t exist.
+
+4. Create a variable to store the max count, count = 0
+
+5. Traverse through the array from start to end.
+
+6. For every element in the array run another loop to find the count of similar elements in the given array.
+
+7. If the count is greater than the max count update the max count and store the index in another variable.
+
+8. If the maximum count is greater than the half the size of the array, print the element. Else print there is no majority element.
+
+
+### Complexity for Majority Element
+```
+Time Complexity: O(n*n)
+Space Complexity: O(1)
+```
+
