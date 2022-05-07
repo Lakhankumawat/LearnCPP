@@ -19,8 +19,42 @@ public:
 	Node(int v, Node* left, Node* right) : val(v), left(left), right(right) {}
 };
 
-Node* createNode(int value) {
-	return new Node(value);
+vector<Node*> inputTree(string in) {
+	vector<Node*> vec;
+	stringstream s(in); // create a stream
+	string subS;
+	while (s >> subS) {
+		if (subS == "null")
+			vec.push_back(nullptr);
+		else
+		{
+			int tempVal = stoi(subS);
+			Node* newNode = new Node(tempVal);
+			vec.push_back(newNode);
+		}
+	}
+
+	return vec;
+}
+
+// Creating tree from level order input
+Node* createTree(string in)
+{
+	vector<Node*> vec = inputTree(in);
+	Node* root = nullptr;
+	queue<Node*> q;   // Queue to store nodes
+	for (int i = 0; i < vec.size(); i++) {
+		if (root == nullptr)
+			root = vec[i];
+		else if (q.front()->left == nullptr)
+			q.front()->left = vec[i];
+		else {
+			q.front()->right = vec[i];
+			q.pop(); // pop as we checked left and right for the node.
+		}
+		q.push(vec[i]);
+	}
+	return root;
 }
 
 void zigzagLevelOrder(Node* root) {
@@ -62,50 +96,45 @@ void zigzagLevelOrder(Node* root) {
 	}
 }
 
-
 int main() {
 
 	ios::sync_with_stdio(false), cin.tie(), cout.tie();
 
-	// Test 1
+	string in;
+	cout << "Enter level order input (input 'null' for null nodes): ";
+	getline(cin, in);
+	Node* root = createTree(in);
+	zigzagLevelOrder(root);
 
-	/*
-	*		3
-	*	  /	  \
-	*	9	   20
-	*		  /  \
-	*		15	  7
+
+
+	/* Test 1
+
+		Input: 3 9 20 null null 15 7
+
+			3
+		  /	  \
+		9	   20
+			  /  \
+			15	  7
+
+
+		Output: 3 20 9 15 7
 	*/
 
-	Node* root1 = new Node(3);
-	root1->left = createNode(9);
-	root1->right = createNode(20);
-	root1->right->left = createNode(15);
-	root1->right->right = createNode(7);
 
-	zigzagLevelOrder(root1); // 3 20 9 15 7
+	/* Test 2
 
-	// Test 2
+		Input: 1 2 3 7 6 5 4
 
-	/*
-	*		 1
-	*	  /	   \
-	*	 2	    3
-	*	/ \    /  \
-	*  7   6  5    4
+			1
+		  /	   \
+		 2	    3
+		/ \    /  \
+	   7   6  5    4
+
+		Output: 1 3 2 7 6 5 4
 	*/
-
-	cout << "\n-----------------\n";
-
-	Node* root2 = new Node(1);
-	root2->left = createNode(2);
-	root2->right = createNode(3);
-	root2->left->left = createNode(7);
-	root2->left->right = createNode(6);
-	root2->right->left = createNode(5);
-	root2->right->right = createNode(4);
-
-	zigzagLevelOrder(root2); // 1 3 2 7 6 5 4
 
 	return 0;
 }
