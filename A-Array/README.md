@@ -13,7 +13,7 @@
 - [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
 - [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
 - [Majority Element](#majority-element)
-
+- [Sort an Array in wave form](#sort-an-array-in-wave-form)
 
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
@@ -870,3 +870,42 @@ Time Complexity: O(n*n)
 Space Complexity: O(1)
 ```
 
+# Sort an Array in wave form
+
+- [Problem Statement](#problem-statement-for-sorting-in-wave-form)
+    - [Examples](#examples-for-sorting-in-wave-form)
+- [Explanation](#explanation-for-sorting-in-wave-form)
+- [Complexity](#complexity-for-sorting-in-wave-form)
+
+### Problem Statement for sorting in wave form
+
+Given an unsorted array of integers, sort the array into a wave like array. An array ‘arr[0..n-1]’ is sorted in wave form if arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= …..
+
+### Examples for sorting in wave form
+```
+Input: 
+ arr[] = {10, 5, 6, 3, 2, 20, 100, 80}
+Output:
+ arr[] = {10, 5, 6, 2, 20, 3, 100, 80} OR
+         {20, 5, 10, 2, 80, 6, 100, 3} OR
+         any other array that is in wave form
+
+```
+
+### Explanation for sorting in wave form
+
+- Given an array of size n first sort the input array.
+
+- Then swap all the adjacent elements.
+
+- For example, let the input array be {3, 6, 5, 10, 7, 20}. 
+
+- After sorting, we get {3, 5, 6, 7, 10, 20}. 
+
+- After swapping adjacent elements, we get {5, 3, 7, 6, 20, 10}. 
+
+### Complexity for sorting in wave form
+```
+Time Complexity: O(nlogn)
+Space Complexity: O(1)
+```
