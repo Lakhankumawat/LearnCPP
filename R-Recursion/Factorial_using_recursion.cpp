@@ -2,8 +2,7 @@
 TIME COMPLEXITY : O(N)
 SPACE COMPLEXITY : O(N)    Here, N is recursion stack space.
 Link to the article for reference : https://www.sciencedirect.com/topics/computer-science/factorial-function#:~:text=The%20factorial%20function%20can%20be,factorial(n%20%E2%80%93%201).        */
-#include<iostream>
-using namespace std;
+
 // Function to calculate factorial of a number
 int factorial(int n) {
 
