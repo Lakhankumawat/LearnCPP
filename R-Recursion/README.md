@@ -1,3 +1,13 @@
+#  Table of Contents
+- [Inversion Count](#inversion-count)
+- [Replace Pi](#replace-pi)
+- [Tower Of Hanoi](#tower-of-hanoi)
+- [Calculating GCD and LCM by Recursion](#calculating-gcd-and-lcm-by-recursion)
+- [Taylor series by Horners rule](#taylor-series-by-horners-rule)
+- [Fibonacci Number](#fibonacci-number)
+- [Power of Two](#power-of-two)
+
+
 # [Inversion Count](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Inversion_Count.cpp) 
 
 Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, 
@@ -134,7 +144,7 @@ The process in which a function calls itself directly or indirectly is called re
  - time complexity of this program is less compared to other methods for finding GCD and LCM
 
 
-# Taylor series by Horner's rule
+# Taylor series by Horners rule
 
  The value of the Exponential function can be calculated using Taylor Series.
 
