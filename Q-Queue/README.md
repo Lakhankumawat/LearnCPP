@@ -51,8 +51,14 @@
   - [Pseudo Code](#pseudo-code-6)
   - [Time Complexity](#time-complexity-6)
   - [Space Complexity](#space-complexity-6)
-
-
+ 
+ - [Implementation of Queue ADT using Linked List](#implementation-of-queue-adt-using-linked-list)
+   - [Features](#features-4)
+   - [Approach](#approach-6)
+   - [Pseudo Code](#pseudo-code-6)
+   - [Time Complexity](#time-complexity-6)
+   - [Space Complexity](#space-complexity-6)
+   - [Advantages](#advantages-3)
 
 ##  Reverse a Queue
 
@@ -596,3 +602,137 @@ Step 5: Exit
 -  O(n)
 ```
 
+##  Implementation of Queue ADT using linked list
+
+- Implementation of the Queue ADT using linked list is best so that we can perform all the queue operations like enqueue, dequeue, retrieve data etc. can be performed without any problem.
+
+### Features
+
+- The linked list implementation is best when we are unsure about number of elements and the memory required.
+- The ADT structure increases the code reusability and we can use any data type in the program.
+
+### Approach :
+
+There are total 8 functions used in this program.
+
+- createQueue() : This function is used for creating the queue head.
+- enqueue() : This function is used to insert the data at rear.
+- dequeue() : This function is used to delete the data at front.
+- queueFront() : This function is used to retrieve the data at front.
+- queueRear() : This function is used to retrieve the data at rear.
+- emptyQueue() : This function is used to check whether the queue is empty.
+- queueCount() : This function is used to count the elements of queue.
+- disp() : This function is used to dispaly the queue elements.
+
+![image](https://user-images.githubusercontent.com/84305637/167248533-f92864e1-7c5c-4d9a-94ab-f080d27c1c8e.png)
+
+### Algorithm :
+
+- createQueue()
+
+```
+1) Allocate queue head
+2) set front and rear to null
+3) set queue count to null
+4) returnn queue head
+```
+- enqueue(queue, dataIn) 
+
+```
+1) if queue full
+    return false
+2) end if
+3) allocate new node
+4) move dataIn to new node data
+5) set new node next to null
+6) if queue empty
+    set queue front to new data
+7) else
+    set next of rear node to address of new node
+8) end if
+9) set queue raer to address of new node
+10) increment queue count
+11) return true
+
+```
+
+- dequeue(queue)
+
+```
+1) if queue empty
+    return null
+2) end if
+3) move front data to item
+4) if only 1 node in queue
+    set queue rear to null
+5) end if
+6) set queue front to queue front next
+7) decrement queue count
+8) return item
+
+```
+
+- queueFront(queue)
+
+```
+1) if queue empty
+    return null
+2) end if
+3) return data at front of queue
+
+```
+
+- queueRear(queue)
+
+```
+1) if queue empty
+    return null
+2) end if
+3) return data at rear of queue
+
+```
+
+- emptyQueue(queue)
+
+```
+1) if queue count equal to 0
+    return true
+2)else
+    return false
+ 
+```
+
+- queueCount(queue)
+
+```
+1) return queue count
+
+```
+
+- disp(queue)
+
+```
+1) Allocate a temp node and point it to front
+2) traverse the queue until last element
+3) print the data of each node
+
+```
+
+### Time Complexity
+
+```
+- Enqueue: O(1) time
+- Dequeue: O(1) time
+-  Display: O(N) time
+```
+
+### Space Complexity
+
+```
+-  O(1)
+```
+
+### Advantages 
+
+- The functions can be used for any data type
+- Linked list implementaion makes better use of dynamic memory managemenet
