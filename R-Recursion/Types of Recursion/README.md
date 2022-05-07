@@ -70,7 +70,12 @@ Let’s understand the example by tracing tree of recursive function. That is ho
 
 
 ## Algorithm
-we pass n=5 in the function fun, each time call for function with value n-1 without printing it at first. As a result, fun(1) will be the first to execute completely and 1 is printed first. The function calls terminate when n=0, this is the Base Case of our Recursive function. We can see the call is not the last step in the function. The program above demonstrates Given a Number N Print 1 to N without Loop.
+- we pass n=5 in the function fun
+-  each time call for function with value n-1 without printing it at first. 
+-  As a result, fun(1) will be the first to execute completely and 1 is printed first. 
+-  The function calls terminate when n=0,
+-  _this is the Base Case of our Recursive function_
+- We can see the call is not the last step in the function. The program above demonstrates Given a Number N Print 1 to N without Loop.
  ![image](https://user-images.githubusercontent.com/100334178/166975640-926924ba-2756-4666-add3-683bf93c56b2.png)
 
  
