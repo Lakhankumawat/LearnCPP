@@ -1,17 +1,18 @@
 # Table of content
 
 - [Recursion](#recursion)
-  - [# Different types of the recursion](#different-types-of-the-recursion)
-    - [Tree Recursion](#tree-recursion)
-      - [Algorithm](#algorithm)
-      - [Time Complexity](#time-complexity)
-      - [Space Complexity](#space-complexity)
-      - [Advantages](#advantages)
-      - [Disadvantages](#disadvantages)
+  - [Different types of the recursion](#different-types-of-the-recursion)
 
 
+# Recursion
 
-# Different types of the recursion
+
+- The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. 
+- Using recursive algorithm, certain problems can be solved quite easily.
+- Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
+
+## Different types of the recursion
+
 * Direct Recursion.
 * Indirect Recursion.
 * Tail Recursion.
@@ -26,20 +27,6 @@
   - [Properties](#properties)
   - [Advantages](#advantages)
   - [Disadvantages](#disadvantages)
-
-# Recursion
-
-
-- The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. 
-- Using recursive algorithm, certain problems can be solved quite easily.
-- Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
-
-## Different types of the recursion
-- Direct Recursion.
-- Indirect Recursion.
-- Tail Recursion.
-- No Tail/ Head Recursion.
-- Linear recursion.
 
 
 ## Tree Recursion
