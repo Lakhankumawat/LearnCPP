@@ -12,7 +12,8 @@
 - [Reversing of array](#reversing-of-array)
 - [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
 - [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
-
+- [Majority Element](#majority-element)
+- [Sort an Array in wave form](#sort-an-array-in-wave-form)
 
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
@@ -819,4 +820,92 @@ Explanation: In the array,
 ```
 Time Complexity: O (n)
 Space Complexity: O (n)
+```
+
+# Majority Element
+
+- [Problem Statement](#problem-statement-for-majority-element)
+    - [Examples](#examples-for-majority-element)
+- [Explanation](#explanation-for-majority-element)
+
+- [Complexity](#complexity-for-majority-element)
+
+### Problem Statement for Majority Element
+The problem is given an array you have to print the majority element. A majority element in an array A[] of size n is an element that appears more than n/2 times.
+
+### Examples for Majority Element
+```
+Input :
+ {3, 3, 4, 2, 4, 4, 2, 4, 4}
+
+Output : 4
+
+Explanation: The frequency of 4 is 5 which is greater
+than the half of the size of the array size. 
+
+```
+
+### Algorithm for Majority Element
+
+1. Given an array we take two loops and keep track of the maximum count for all different elements. 
+
+2. If maximum count becomes greater than n/2 then break the loops and return the element having maximum count.
+
+3.  If the maximum count doesn’t become more than n/2 then the majority element doesn’t exist.
+
+4. Create a variable to store the max count, count = 0
+
+5. Traverse through the array from start to end.
+
+6. For every element in the array run another loop to find the count of similar elements in the given array.
+
+7. If the count is greater than the max count update the max count and store the index in another variable.
+
+8. If the maximum count is greater than the half the size of the array, print the element. Else print there is no majority element.
+
+
+### Complexity for Majority Element
+```
+Time Complexity: O(n*n)
+Space Complexity: O(1)
+```
+
+# Sort an Array in wave form
+
+- [Problem Statement](#problem-statement-for-sorting-in-wave-form)
+    - [Examples](#examples-for-sorting-in-wave-form)
+- [Explanation](#explanation-for-sorting-in-wave-form)
+- [Complexity](#complexity-for-sorting-in-wave-form)
+
+### Problem Statement for sorting in wave form
+
+Given an unsorted array of integers, sort the array into a wave like array. An array ‘arr[0..n-1]’ is sorted in wave form if arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= …..
+
+### Examples for sorting in wave form
+```
+Input: 
+ arr[] = {10, 5, 6, 3, 2, 20, 100, 80}
+Output:
+ arr[] = {10, 5, 6, 2, 20, 3, 100, 80} OR
+         {20, 5, 10, 2, 80, 6, 100, 3} OR
+         any other array that is in wave form
+
+```
+
+### Explanation for sorting in wave form
+
+- Given an array of size n first sort the input array.
+
+- Then swap all the adjacent elements.
+
+- For example, let the input array be {3, 6, 5, 10, 7, 20}. 
+
+- After sorting, we get {3, 5, 6, 7, 10, 20}. 
+
+- After swapping adjacent elements, we get {5, 3, 7, 6, 20, 10}. 
+
+### Complexity for sorting in wave form
+```
+Time Complexity: O(nlogn)
+Space Complexity: O(1)
 ```
