@@ -17,7 +17,7 @@ int main()
     cin>>n;
     int ws[n];
     for(int i=0;i<n;i++){
-            cout<<"\n Enter the "<<i+1<<" word: ";
+            cout<<"\n Enter the "<<i+1<<" word (length): ";
             cin>>ws[i];
     }
     word_wrap (ws, n, w);
