@@ -12,6 +12,11 @@
   - [Middle Element of the linked list](#middle-element-of-the-linked-list)
   - [Reverse a linked list](#reverse-a-linked-list)
   - [Searching in a linked list](#searching-in-a-linked-list)
+  - [Removing Duplicates](#removing-duplicates)
+    - [Algorithm](#removing-duplicates)
+    - [Properties](#removing-duplicates)
+    - [Advantages](#removing-duplicates)
+    - [Disadvantages](#removing-duplicates)
 
 
 # Singly Linked List 
@@ -297,3 +302,45 @@ bool search(head, x)
 ### Properties
 Time-Complexity-->O(n)
 Space-Complexity-->O(n)
+
+
+# Removing Duplicates
+
+Suppose we have a list of some elements. We have to remove all elements that have occurred more than once. So only the distinct elements will remain in the list. So if the list is like [1,1,1,2,2,3,5,6,6,7,8], then the output will be [3,5,7,8], all other elements are present more than once.
+
+![1](https://user-images.githubusercontent.com/100334178/165158959-12fd67cb-0a78-49de-8b2f-03e1dbad5953.jpg)
+
+
+## Algorithm
+
+* Create a dummy node with value -1, prev := NULL, dummyPtr := dummy
+* while head is not null
+* if next of head is present or the value of head is not same as the value of the next node, then
+* next of dummyPtr := head
+* temp := next of head, and make next of head null
+* head := temp
+* dummyPtr := next of dummyPtr
+* Otherwise
+* prev := head, and head := next of head
+* while head is not null and value of head = value of prev
+* prev := head and head := next of head
+* return the next of dummy
+
+#### Input
+[1,1,1,2,2,3,5,6,6,7,8]
+
+#### Output
+[3, 5, 7, 8, ]
+
+## Properties
+### Time Complexity and Space Complexity
+* Time Complexity: O(n)
+* Auxiliary Space Complexity: O(1)
+
+## Advantages
+* In this algorithm problem will be solved  by iterating only  single time through the linked list.
+* It takes less time and space complexity.
+* Easy to understand algorithm
+
+## Disadvantages
+* Linked list must be sorted for applying this algorithm..
