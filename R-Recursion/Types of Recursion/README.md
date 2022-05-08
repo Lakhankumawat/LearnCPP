@@ -1,31 +1,8 @@
 # Table of content
 
 - [Recursion](#recursion)
-  - [# Different types of the recursion](#different-types-of-the-recursion)
-    - [Tree Recursion](#tree-recursion)
-      - [Algorithm](#algorithm)
-      - [Time Complexity](#time-complexity)
-      - [Space Complexity](#space-complexity)
-      - [Advantages](#advantages)
-      - [Disadvantages](#disadvantages)
+  - [Different types of the recursion](#different-types-of-the-recursion)
 
-
-
-# Different types of the recursion
-* Direct Recursion.
-- [Indirect Recursion](#indirect-recursion)
-  - [Algorithm](#indirect-recursion)
-  - [Properties](#indirect-recursion)
-  - [Advantages](#indirect-recursion)
-  - [Disadvantages](#indirect-recursion)
-* Tail Recursion.
-* No Tail/ Head Recursion.
-* Linear recursion.
-- [Tree Recursion](#tree-recursion)
-  - [Algorithm](#algorithm)
-  - [Properties](#properties)
-  - [Advantages](#advantages)
-  - [Disadvantages](#disadvantages)
 
 # Recursion
 
@@ -35,11 +12,20 @@
 - Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
 ## Different types of the recursion
-- Direct Recursion.
-- Indirect Recursion.
-- Tail Recursion.
-- No Tail/ Head Recursion.
-- Linear recursion.
+* Direct Recursion.
+- [Indirect Recursion](#indirect-recursion)
+  - [Algorithm](#indirect-recursion)
+  - [Properties](#indirect-recursion)
+  - [Advantages](#indirect-recursion)
+  - [Disadvantages](#indirect-recursion)
+* Tail Recursion.
+* Head Recursion.
+* Linear recursion.
+- [Tree Recursion](#tree-recursion)
+  - [Algorithm](#algorithm)
+  - [Properties](#properties)
+  - [Advantages](#advantages)
+  - [Disadvantages](#disadvantages)
 
 
 ## Tree Recursion
