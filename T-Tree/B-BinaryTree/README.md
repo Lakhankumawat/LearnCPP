@@ -1,5 +1,9 @@
 # Table of content
 - [Height of the binary tree](#height-of-the-binary-tree)
+- [Number of Internal Nodes](#number-of-internal-nodes)
+    - [Algorithm](#algorithm-1)
+    - [Output](#output-1)
+    - [Properties](#properties-1)
 - [Largest Bst in a Binary Tree](#largest-bst-in-a-binary-tree)
     - [Properties](#properties)
     - [Algorithm](#algorithm)
@@ -42,8 +46,29 @@ Else
     height_of_a_tree = 1 + (which-one is bigger from 'l' & 'r')
  end height
 ```
+### Properties
 
-### Output:
+- Time Complexity :
+  - Worst case time	: O(n)
+- Space Complexity: O(n)
+
+## Number of Internal Nodes
+-  Internal Node is a node that can have at least one child (i.e. non-leaf node is an internal node).
+
+### Algorithm
+```
+begin internal_nodes( root )
+If node is NULL 
+  then return 0
+If left child and right child nodes are NULL 
+    return 0
+Else 
+    return 1 + internal_nodes( left child of node ) + internal_nodes( right child of node )
+
+ end internal_nodes
+```
+
+### Output
 1.
 ```
 100
@@ -59,11 +84,10 @@ Else
               160
                  \
                  170
-```
-Height of tree: 7
-
-![o_p5](https://user-images.githubusercontent.com/76229635/158337847-c0be85a6-d577-47ed-a347-dba09652e8e6.png)
-
+ ```
+ Number of internal nodes: 6 <br>
+ <img width="400"  src="https://user-images.githubusercontent.com/76229635/167093456-f747a157-eefe-4af2-b22e-1492bd4b1026.jpg">
+ <br>
 2.
 ```
                  100
@@ -72,17 +96,18 @@ Height of tree: 7
      /    \             /      \
   20       50          122      188
 ```
-Height of tree: 3
-
-![o_p4](https://user-images.githubusercontent.com/76229635/158338061-5043a09d-70ef-449c-adbe-79117bc3ce4f.png)
+Number of internal nodes: 3
+<br>
+ <img width="400"  src="https://user-images.githubusercontent.com/76229635/167093513-721a78f1-ee6e-4c64-8e22-750eb67314ae.jpg">
+ <br>
 
 ### Properties
 
 - Time Complexity :
   - Worst case time	: O(n)
+- Space Complexity: O(n)
 
-
-# Largest Bst in a Binary Tree
+## Largest Bst in a Binary Tree
 
 - A tree is said to be a binary search tree if it is a binary search tree at its root. 
 - It means that the value inside the left child of the root node should be less than the value of the root node and the value inside the right child of the root node should be greater than the value inside the root node. 
@@ -128,13 +153,13 @@ and size will be : ans.size = l.size + r.size + 1;
 - Have to traverse each node and check if it is a bst or not.
 
 
-# Diameter of the Binary-Tree
+## Diameter of the Binary-Tree
 
-# Problem Statement
+### Problem Statement
 
 Given the root of a binary tree, return the length of the diameter of the tree.
 
-## Examples
+### Examples
 ```
  Let us create following Binary-Tree
              100
@@ -148,7 +173,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
  4 
 
 ```
-# Explanation
+### Explanation
 
 - The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
 
@@ -162,7 +187,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
  
 
 
-# Algorithm
+### Algorithm
 
 - Node passed in recursive function is null then return zero.
 - Using recursive call, calculate the diameter and the height of left-subtree until node becomes NULL 
@@ -179,7 +204,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
 -  The final output will return the max of step 4 and step 5.
 
 
-# Complexity
+### Complexity
 ```
 Complexities -: 
    1.Time Complexity - O(N), N - Number of nodes in a Binary-Tree.
