@@ -6,6 +6,7 @@
 - [Taylor series by Horners rule](#taylor-series-by-horners-rule)
 - [Fibonacci Number](#fibonacci-number)
 - [Power of Two](#power-of-two)
+- [Power of Three](#power-of-three)
 
 
 # [Inversion Count](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Inversion_Count.cpp) 
@@ -281,5 +282,37 @@ Example 2 : Input: n = 5
 ## Time Complexity and Space Complexity
 - Time Complexity : O(N)
 - Space Complexity : O(N) here N is the recursion stack space.
+
+
+# Power of three
+
+- [Problem Statement](#problem-statement-2)
+- [Examples](#examples-4)
+- [Algorithm](#algorithm-3)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-2)
+
+## Problem Statement
+Given an integer n, return true if it is a power of three. Otherwise, return false.
+An integer n is a power of three, if there exists an integer x such that n == 3x.
+
+## Examples
+Example 1 : Input: n = 13
+            Output: false
+
+Example 2 : Input: n = 27
+            Output: true
+
+## Algorithm
+- Given a number we have to determine that it can be represented in the power of 3.
+- If that number is 1 or 3 then obviously, we would be returning true.
+- Else we will check the modulo of that number.
+- If modulo is not equals to 0 , we would return false.
+- Another case may be if given no. is 0 we have to return false.
+- Call the recursive function for n/3 times.
+
+## Time Complexity and Space Complexity
+- Time Complexity : O(N)
+- Space Complexity : O(N) here N is the recursion stack space.
+
 
 
