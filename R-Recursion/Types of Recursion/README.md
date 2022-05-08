@@ -1,33 +1,8 @@
 # Table of content
 
 - [Recursion](#recursion)
-  - [# Different types of the recursion](#different-types-of-the-recursion)
-    - [Tree Recursion](#tree-recursion)
-      - [Algorithm](#algorithm)
-      - [Time Complexity](#time-complexity)
-      - [Space Complexity](#space-complexity)
-      - [Advantages](#advantages)
-      - [Disadvantages](#disadvantages)
+  - [Different types of the recursion](#different-types-of-the-recursion)
 
-
-
-# Different types of the recursion
-* Direct Recursion.
-* Indirect Recursion.
-- [Tail Recursion](#tail-recursion)
-  - [Algorithm](#tail-recursion)
-  - [Properties](#tail-recursion)
-  - [Advantages](#tail-recursion)
-  - [Disadvantages](#tail-recursion)
-
-  
-* No Tail/ Head Recursion.
-* Linear recursion.
-- [Tree Recursion](#tree-recursion)
-  - [Algorithm](#algorithm)
-  - [Properties](#properties)
-  - [Advantages](#advantages)
-  - [Disadvantages](#disadvantages)
 
 # Recursion
 
@@ -36,12 +11,22 @@
 - Using recursive algorithm, certain problems can be solved quite easily.
 - Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
-## Different types of the recursion
-- Direct Recursion.
-- Indirect Recursion.
-- Tail Recursion.
-- No Tail/ Head Recursion.
-- Linear recursion.
+# Different types of the recursion
+
+* Direct Recursion.
+* Indirect Recursion.
+- [Tail Recursion](#tail-recursion)
+  - [Algorithm](#tail-recursion)
+  - [Properties](#tail-recursion)
+  - [Advantages](#tail-recursion)
+  - [Disadvantages](#tail-recursion) 
+* Head Recursion.
+* Linear recursion.
+- [Tree Recursion](#tree-recursion)
+  - [Algorithm](#algorithm)
+  - [Properties](#properties)
+  - [Advantages](#advantages)
+  - [Disadvantages](#disadvantages)
 
 
 ## Tree Recursion
