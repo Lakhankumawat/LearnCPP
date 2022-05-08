@@ -240,3 +240,58 @@ Example 2 : Input: n = 4
 ## Time Complexity and Space Complexity
 - Time Complexity : O(N)
 - Space Complexity : O(N) here N is the recursion stack space.
+
+# Power of a Number
+ ## Problem Statement
+ The power of a number specifies how many times a particular number is being multiplied by itself.
+ 
+ ## Example
+ Example 1: Input :x=2,n=5
+            Output: 32
+            
+Example 2 : Input : x=5, n=3
+            Output : 125
+            
+## First Approach
+ Lets consider 2 raised to the power 4 :
+ - 2^4=2*2*2*2
+ - 2^4 = 2*2^3
+ - Now, 2^3 = 2*2^2
+ - Now, 2^2 = 2*2^1
+ - Now, 2^1 = 2*2^0
+ - Eventually, 2^0=1 and this is our base clase
+ Therefore, we subdivide our problem into parts by decrementing the value of power by 1 until it reaches base case.
+ 
+ ## Algorithm
+ - Enter the power function for number x and power n
+ - Check if power(n) is equal to 0
+   - If yes, return 1
+   - If no, skip to the next step i.e. call the function recursively for x and n-1.
+
+## Time Complexity and Space Complexity
+- Time Complexity : O(N)
+- Space Complexity : O(N) here N is the recursion stack space.
+
+## Second Approach
+ Here, we check if the power(n) is even or odd.
+ - If even, 
+   - Eg : 2^8 =(2*2)^(8/2)=(2*2)^4
+  - If odd, 
+   - Eg : 2^9 =2*(2*2)^(8/2)=2*(2*2)^4
+ 
+ - The above steps will continue until it reaches base case , 2^0=1.
+
+## Algorithm
+- Enter the power function with number x and power n
+- Check if n is equal to 0
+  - If yes, retuen 1
+  - If no, check if n is even
+     - If yes,
+     - Call the function recursively for x*x and n/2
+     - If no,
+     - Call the function  recursively for x*x and n/2 and multiply it by x.
+
+## Time Complexity and Space Complexity
+- Time Complexity : O(log N)
+- Space Complexity : O(log N) here N is the recursion stack space.
+   
