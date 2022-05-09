@@ -13,7 +13,7 @@
     - [Advantage](#advantage)
     - [Disadvantage](#disadvantage)
 
-- [Path Matrix](#path-matrix])
+- [Path Matrix](#path-matrix)
     - [Code](PathMatrix.cpp)
     - [Path Matrix Algorithm](#path-matrix-algorithm)
     - [Path Matrix Properties](#path-matrix-properties)
