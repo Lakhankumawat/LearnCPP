@@ -16,29 +16,45 @@ public:
 //print list
 void print(Node* head) {
 	while (head != NULL) {
-		cout << head->data<<" ";
+		cout << head->data << " ";
 		head = head->next;
 	}
 }
-void insertAtTail(Node*& head, Node*&tail,int key) {
+void insertAtTail(Node*& head, Node*& tail, int key) {
 	Node* newnode = new Node(key);
 	if (head == NULL) {
 		head = newnode;
 		tail = head;
 		return;
 	}
-	tail->next= newnode;
+	tail->next = newnode;
 	tail = newnode;
 }
 
-Node* clone(Node*head) {
+void append(Node*& head, int key) {
+	Node* newnode = new Node(key);
+	Node* last = head;
+	newnode->next = NULL;
+
+	if (head == NULL) {
+		head = newnode;
+		return;
+	}
+	while (last->next != NULL) {
+		last = last->next;
+	}
+	last->next = newnode;
+	return;
+
+}	
+Node* clone(Node* head) {
 	//Concept
 
 //Step 1: clone the list
-/*					
-					
+/*
+
 original List =  1 -> 2 -> 3 -> 4
-  cloned List =  1 -> 2 -> 3 -> 4 
+  cloned List =  1 -> 2 -> 3 -> 4
 
 */
 
@@ -50,12 +66,12 @@ original List =  1 -> 2 -> 3 -> 4
 		temp = temp->next;
 	}
 
-//Step 2: create the mapping
-/*      original List = 1 -> 2 -> 3 -> 4
-						|	 |	  |    |
-						|    |    |    |
-	      cloned List = 1 -> 2 -> 3 -> 4
-*/
+	//Step 2: create the mapping
+	/*      original List = 1 -> 2 -> 3 -> 4
+							|	 |	  |    |
+							|    |    |    |
+			  cloned List = 1 -> 2 -> 3 -> 4
+	*/
 	unordered_map<Node*, Node*>map;
 	temp = head;
 	Node* temp2 = cloneHead;
@@ -76,22 +92,23 @@ original List =  1 -> 2 -> 3 -> 4
 int main()
 {
 	//Basic list
-	Node* root = new Node(1);
-	Node* second = new Node(2);
-	Node* third = new Node(3);
-	Node* fourth = new Node(4);
-	Node* fifth = NULL;
+	Node* root = NULL;
 
-	root->next = second;
-	root->rand = fourth;
-	second->next = third;
-	second->rand = root;
-	third->next = fourth;
-	third->rand = second;
-	fourth->next = fifth;
-	fourth->rand = third;
 	print(root);
 
-	clone(root);
+	append(root, 6);
+	append(root, 4);
+	append(root, 9);
+	append(root, 7);
+	append(root, 1);
+
+	cout << "original list : ";
+	print(root);
+
+	cout << endl;
+
+	Node*ans = clone(root);
+	cout << "cloned  list : ";
+	print(ans);
 
 }
