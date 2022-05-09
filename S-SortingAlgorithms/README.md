@@ -493,9 +493,13 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 
 ```
 shellSort(array, size)
-  for interval i <- size/2n down to 1
-    for each interval "i" in array
-        sort all the elements at interval "i"
+    
+    1) Set the gap value (prefered to be arraySize / 2).
+    2) Start a loop and keep dividing the gap value by 2 until it reaches less than 1 which means there is no gap.
+    
+       1- Inside the loop start another loop starting from the gap value till the end of the array.
+       2- Check the number you are standing on with the other numbers that are gap value steps apart, if less than them, swap them.
+
 end shellSort   
                     
 ```
