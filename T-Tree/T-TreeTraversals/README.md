@@ -1,9 +1,20 @@
 # Table of content
-- [Morris Traversal](#morris-traversal)
+- [Table of content](#table-of-content)
+  - [Morris Traversal](#morris-traversal)
     - [Properties](#properties)
     - [Algorithm](#algorithm)
     - [Time Complexity](#time-complexity)
     - [Space Complexity](#space-complexity)
+  - [Diagonal Traversal](#diagonal-traversal)
+    - [Examples](#examples)
+    - [Algorithm](#algorithm-1)
+    - [Time Complexity](#time-complexity-1)
+    - [Space Complexity](#space-complexity-1)
+  - [Right Side View of BT](#right-side-view-of-bt)
+    - [Examples](#examples-1)
+    - [Algorithm (Iterative)](#algorithm-iterative)
+    - [Time Complexity](#time-complexity-2)
+    - [Space Complexity](#space-complexity-2)
    
     
 - [Diagonal Traversal](#diagonal-traversal) 
@@ -72,6 +83,51 @@ Output : 8 10 14 3 6 7 13 1 4
 - Then in recursive manner we have called the same function for each left and right children of the given binary tree.
 - The hypothesis of Base case lies in the fact that if there is no node then we would be returning NULL.
 - Then we have traversed through the map to print the stored elements.
+
+### Time Complexity
+```
+- Time Complexity : O(N)
+ ``` 
+
+### Space Complexity
+```
+- Space Complexity : O(N)
+ ``` 
+
+<br>
+
+ ## Right Side View of BT
+
+ - Given a binary tree, write an efficient algorithm to print its right view.
+
+### Examples
+Input : [1,2,3,6,7,5,4,null,null,9,null,null,8]  
+Output : 1 3 4 8
+
+![Screenshot](https://user-images.githubusercontent.com/78534043/167404001-d387d0e3-8d3d-4284-9229-632055883a24.jpg)
+
+### Algorithm (Iterative)
+
+<h3>Intuition</h3>
+This, perhaps, is the most intuitive way of solving this problem.
+We travel the entire tree level by level (from right to left).
+At each level, we print/store the right most node.
+After the algorithm is done processing the entire tree, we will obtain the right view of the binary tree given to us.
+<br><br>
+<h3>The Iterative Algorithm</h3>
+
+1. Initialize a queue data structure ((commonly used in BFS algorithm) with the root node and a LevelEnd character to mark a level's end in the queue. Commonly, nullptr or NULL is used as LevelEnd in C/C++, while None is used in Python.
+
+2. While the queue is not empty, do the following:
+
+    a. Pop the front of the queue, and call it frontVal
+
+    b. If frontVal is LevelEnd, and the resultant queue is not empty, pop and print the front value of the resultant queue (this is the rightmost node of the given level), and also push a LevelEnd character into the queue.
+
+    c. If frontVal is LevelEnd and the resultant queue is empty, break out of the while loop.
+
+    d. If frontVal is not LevelEnd, then push its right child followed by left child into the queue (they must exist, of course).
+
 
 ### Time Complexity
 ```
