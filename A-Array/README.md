@@ -14,6 +14,7 @@
 - [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
 - [Majority Element](#majority-element)
 - [Sort an Array in wave form](#sort-an-array-in-wave-form)
+- [Print the matrix in wave form](#print-the-matrix-in-wave-form)
 
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
