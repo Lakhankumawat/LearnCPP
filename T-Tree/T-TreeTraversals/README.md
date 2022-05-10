@@ -96,6 +96,7 @@ Algorithm that traverses a binary tree from left to right then from right to lef
 ![image](https://user-images.githubusercontent.com/29145628/165636674-e022fb00-9e58-457c-90c9-15f0e4d956d9.png)
 
 ### Algorithm
+```
 - Create rightLeft variable to store the next direction.<br>
 - Create vector to store nodes in each level.<br>
 - Create queue to store nodes.(BFS)<br>
@@ -112,11 +113,10 @@ Algorithm that traverses a binary tree from left to right then from right to lef
 - When loop on s exits, check the rightLeft direction, ifit's true reverse level vector<br>
 - Print level vector
 - Clear level vector
-
+```
 ### Example
 Input : 3 9 20 null null 15 7<br>
 Output : 3 20 9 15 7 <br>
-![image](https://user-images.githubusercontent.com/29145628/167263097-850f42a4-79f9-4203-b1dc-17104ecf25d7.png)<br>
 
 ### Time Complexity
 ```
