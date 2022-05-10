@@ -1,9 +1,10 @@
 # Table of Contents
-* [Explanation](#explanation)  
-* [Time Complexity](#time-complexity-of-min-max-heap)  
+- [Heap Explanation](#heap-explanation)  
+- [Heap Time Complexity](#time-complexity-of-min-max-heap)  
+- [k-largest Elements in an Array](#k-largest-elements)
+- [Minimum Cost Of Ropes](#minimum-cost-of-ropes)
 
--[k-largest Elements in an Array](#k-largest-elements)
-## Explanation  
+## Heap Explanation  
 
 ### How are Min/Max Heaps represented?
 
@@ -101,4 +102,5 @@ Example 2 : Input: n = 5 and arr[] = {4, 2, 7, 6, 9}
 
 ## Time Complexity and Space Complexity
 Time Complexity : O(n log n)
+
 Space Complexity : O(n)
