@@ -30,8 +30,7 @@
   - Example for Extra spaces: Let take an array A={aaa, bbb, cc, dddd} and length of line=6.
   
   ![wwp](https://user-images.githubusercontent.com/76229635/167290207-01928ec7-1e65-4f1b-b00c-599bb1b4fca1.jpg)
-### Output  
-  ![w_w_p](https://user-images.githubusercontent.com/76229635/167291024-65abc470-3bc1-4b2e-b034-aa9a3192bf04.png)
+
 
 
 
