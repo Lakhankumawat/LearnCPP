@@ -11,6 +11,7 @@
 - Using recursive algorithm, certain problems can be solved quite easily.
 - Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
+
 # Different types of the recursion
 
 * Direct Recursion.
@@ -20,6 +21,16 @@
   - [Properties](#tail-recursion)
   - [Advantages](#tail-recursion)
   - [Disadvantages](#tail-recursion) 
+  
+## Different types of the recursion
+* Direct Recursion.
+- [Indirect Recursion](#indirect-recursion)
+  - [Algorithm](#indirect-recursion)
+  - [Properties](#indirect-recursion)
+  - [Advantages](#indirect-recursion)
+  - [Disadvantages](#indirect-recursion)
+* Tail Recursion.
+
 * Head Recursion.
 * Linear recursion.
 - [Tree Recursion](#tree-recursion)
@@ -85,6 +96,7 @@ For Tree Recursion: O(n)
 
 
 
+
 # Tail Recursion
 * Tail Recursion
  If a recursive function calling itself and that recursive call is the last statement in the function then it’s known as Tail Recursion. After that call the recursive function performs nothing. The function has to process or perform any operation at the time of calling and it does nothing at returning time.
@@ -104,4 +116,56 @@ Advantage of using tail-recursion := so that the compiler optimize the code and 
 ## Disadvantages
  - it doesn't save a lot of run time.
  - As recursion uses stack, for large numbers, memory may become full due to stack full
+
+
+# Indirect Recursion
+
+ In this recursion, there may be more than one functions and they are calling one another in a circular manner.
+
+int num()
+{
+	...
+	...
+	int sum();
+
+}
+
+int sum()
+{
+	...
+	...
+	int num();
+
+}
+
+
+* For indirect recursion, both the functions need to be declared before they are defined.
+
+## Algorithm
+
+* user input the value and that value will be given to fun(A) as input .
+* Then under the fun(A) , fun(A) will call fun(B) with some modification.
+* Then fun(B) will call fun(C) with some other modification.
+* Then fun(C) again call fun(A) with some other modifications.
+
+![image](https://user-images.githubusercontent.com/100334178/167283694-ce9a0db6-7856-4a47-a08c-93f713c976e2.png)
+
+
+From the above diagram fun(A) is calling for fun(B), fun(B) is calling for fun(C) and fun(C) is calling for fun(A) and thus it makes a cycle.
+
+Let’s understand the example by tracing tree of recursive function. That is how the calls are made and how the outputs are produced.
+![image](https://user-images.githubusercontent.com/100334178/167283701-8fcbf238-ff9c-43d1-a596-0c2d0bde355d.png)
+
+## Properties
+* Time complexity of indirect recursion is O(2^n).
+* Space complexity of indirect recursion is O(nm).
+
+## Advantages
+* For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.
+* Some problems are inherently recursive, such as Graph and Tree Traversal.
+
+
+## Disadvantages
+* A recursive program has greater space requirements than an iterative program as each function call will remain in the stack until the base case is reached.
+* It also has greater time requirements because each time the function is called, the stack grows and the final answer is returned when the stack is popped completely.
 
