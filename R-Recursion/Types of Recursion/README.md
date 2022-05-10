@@ -12,16 +12,6 @@
 - Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
 
-# Different types of the recursion
-
-* Direct Recursion.
-* Indirect Recursion.
-- [Tail Recursion](#tail-recursion)
-  - [Algorithm](#tail-recursion)
-  - [Properties](#tail-recursion)
-  - [Advantages](#tail-recursion)
-  - [Disadvantages](#tail-recursion) 
-  
 ## Different types of the recursion
 * Direct Recursion.
 - [Indirect Recursion](#indirect-recursion)
@@ -29,7 +19,11 @@
   - [Properties](#indirect-recursion)
   - [Advantages](#indirect-recursion)
   - [Disadvantages](#indirect-recursion)
-* Tail Recursion.
+- [Tail Recursion](#tail-recursion)
+  - [Algorithm](#tail-recursion)
+  - [Properties](#tail-recursion)
+  - [Advantages](#tail-recursion)
+  - [Disadvantages](#tail-recursion)
 
 * Head Recursion.
 * Linear recursion.
