@@ -71,3 +71,34 @@ Arr[] = {1, 2, 7, 3, 9, 19}
 ###### Time Complexity:  
 #### O(k*log(k) + (n-k)*log(k))  without sorted output
 #### O(k*log(k) + (n-k)*log(k) + k*log(k)) with sorted output
+
+
+# Minimum Cost Of Ropes
+- [Problem Statement](#problem-statement-1)
+- [Examples](#examples)
+- [Algorithm](#algorithm)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
+
+## Problem Statement 
+There are given N ropes of different lengths, we need to connect these ropes into one rope. The cost to connect two ropes is equal to sum of their lengths. 
+The task is to connect the ropes with minimum cost.
+
+## Examples
+Example 1 : Input: n = 4 and arr[] = {4, 3, 2, 6} 
+
+            Output: 29
+
+Example 2 : Input: n = 5 and arr[] = {4, 2, 7, 6, 9} 
+
+            Output: 62
+	
+## Algorithm 
+- Store the array elements in min heap(priority queue).
+- Pop out two minimum elements from the heap and add them.
+- Do the process till heap is not empty.
+- Initialise cost=0 and then keep adding heap elements to it.
+- Push the final result into queue and return the cost.
+
+## Time Complexity and Space Complexity
+Time Complexity : O(n log n)
+Space Complexity : O(n)
