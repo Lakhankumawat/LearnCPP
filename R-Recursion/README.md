@@ -1,9 +1,58 @@
-# [Inversion Count](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Inversion_Count.cpp) 
+# Table Of Content
+
+  - [Recursion](#recursion)
+    - [Definition and Syntax](#definition-and-syntax)
+    - [Advantages of recursion](#advantages-of-recursion)
+    - [Disadvantages of recursion](#disadvantages-of-recursion)
+    - [Difference between iterative approach and recursive approach](#difference-between-iterative-approach-and-recursive-approach)
+    - [Tracing of a recursive function](#tracing-of-a-recursive-function)
+ - [Questions for Recursion](questions-for-recursion)
+    - [Inversion Count](#inversion-count)
+    - [Replace PI](#replace-pi)
+    - [Tower of Hanoi](#tower-of-hanoi)
+    - [Calculating GCD and LCM by Recursion](#calculating-gcd-and-lcm-by-recursion)
+    - [Taylor series by Horner rule](#taylor-series-by-horner-rule)
+    
+## Recursion
+
+   ### Definition and Syntax
+   When function is called within the same function, it is known as recursion in C++. The function which calls the same function, is known as recursive function.
+   Using recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree       Traversals, DFS of Graph, etc.
+   
+   **Syntax**:
+   
+        recursionfunction(){    
+         recursionfunction(); //calling self function    
+         } 
+         
+### Advantages of recursion
+   - It makes our code shorter and cleaner.
+   - Recursion is required in problems concerning data structures and advanced algorithms, such as Graph and Tree Traversal.
+
+### Disadvantages of recursion
+  - It takes a lot of stack space compared to an iterative program.
+  - It uses more processor time.
+  - It can be more difficult to debug compared to an equivalent iterative program.
+
+### Difference between iterative approach and recursive approach 
+![](https://cdn-media-1.freecodecamp.org/images/1*QrQ5uFKIhK3jQSFYeRBIRg.png)
+
+### Tracing of a recursive function
+Let us show tracing of factorial function using recursion.
+![slide_251](https://user-images.githubusercontent.com/75986201/167252506-d6ac06b9-01ff-4618-b4d0-9ae1cb40c858.jpg)
+
+
+
+
+
+
+## Questions for Recursion
+### [Inversion Count](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Inversion_Count.cpp) 
 
 Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, 
 but if the array is sorted in the reverse order, the inversion count is the maximum. <br><br>
 Formally speaking, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j <br>
-## Example
+### Example
 ```
 Input: arr[] = {8, 4, 2, 1}
 Output: 6
@@ -19,10 +68,10 @@ Explanation: Given array has two inversions:
 (3, 1), (3, 2) 
 ```
 
-# [Replace PI](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Replace_%CF%80.cpp)
+### [Replace PI](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Replace_%CF%80.cpp)
 
 Recursive program to replace all occurrences of pi with 3.14 in a given string
-## Examples: 
+### Examples: 
 ```
 Input : str = “pippppiiiipi” 
 Output : 3.14ppp3.14iii3.14
@@ -35,7 +84,7 @@ Output : x3.14x
 ```
 
 
-# [Tower of Hanoi](https://github.com/bhumikatewary/LearnCPP/blob/ddd6b1e51cecd18d72f76f303cefe7f341f3092f/R-Recursion/TowerofHanoi.cpp)
+### [Tower of Hanoi](https://github.com/bhumikatewary/LearnCPP/blob/ddd6b1e51cecd18d72f76f303cefe7f341f3092f/R-Recursion/TowerofHanoi.cpp)
 
 Tower of Hanoi is a mathematical game or puzzle involving three sticks and a number of different discs, <br>
 which can slip on any stick/rod. The paradox begins with discs embedded in the same object in a declining size(descending order), <br>
@@ -48,7 +97,7 @@ Here are three simple rules:
 3. No larger disk can be placed on a smaller disk.
 
 ![Tower-of-Hanoi](https://4.bp.blogspot.com/-MiMl_ZKCkKs/Vnk3SyI2D5I/AAAAAAAAAy0/iqw84ovEbGM/s1600/Tower-Of-Hanoi-2-disk.png)
-## Example
+### Example
 ```
 Input : 2
 Output : Disk 1 moved from X to Y
@@ -101,18 +150,13 @@ STOP
 
 - The Hanoi Tower cannot be used independently to understand and evaluate higher brain functions.
 
-# [Calculating GCD and LCM by Recursion](https://github.com/Arun9739/LearnCPP/blob/recursiveGCD/R-Recursion/Recursive_GCD_LCM.cpp)
+### [Calculating GCD and LCM by Recursion](https://github.com/Arun9739/LearnCPP/blob/recursiveGCD/R-Recursion/Recursive_GCD_LCM.cpp)
 
-## Brief explainaion about GCD and LCM :
+### Brief explainaion about GCD and LCM :
 The least common multiple (LCM) of two integers is the smallest positive integer that is a multiple of both. The greatest common divisor (GCD) of two integers is the largest positive integer dividing both. The product of the two numbers is the product of the LCM and the GCD.
 
-## What is Recursion : 
-The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function. Using recursive algorithm, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
-## Difference between iterative approach and recursive approach :
-![](https://cdn-media-1.freecodecamp.org/images/1*QrQ5uFKIhK3jQSFYeRBIRg.png)
-
-## Algorithm :
+### Algorithm :
 ### Algorithm for GCD :
 
 - Read two numbers a and b
@@ -125,21 +169,21 @@ The process in which a function calls itself directly or indirectly is called re
 - Read two numbrs a and b
 - return (a x b) / GCD(a, b)
 
-## Time and Space Complexity
+### Time and Space Complexity
 - Time Complexity: `O(n)`
 - Space complexity: `O(n)`
 
-## Advantages
+### Advantages
  - The logic used by the program is simple to understand
  - time complexity of this program is less compared to other methods for finding GCD and LCM
 
 
-# Taylor series by Horner's rule
+### Taylor series by Horner rule
 
  The value of the Exponential function can be calculated using Taylor Series.
 
 
-## Approach
+### Approach
 Taylor series is … 
 e^x = 1 + x/1! + x^2/2! + x^3/3! + x^4/4!......
 
@@ -175,7 +219,7 @@ As we can see the total number of multiplications is reduced to just 4 from 12.
 
 So, this will give us O(n) time complexity.
 
-## Properties
+### Properties
 ### Time-Complexity
 To find this we will determine the total multiplication performed.
 
@@ -196,7 +240,7 @@ the time complexity if this approach is O(n2)
 ### Space-Complexity
 The recursive call will take place n+1 times and hence n + 1 activation records will get created at max. That shows the space complexity is O(n).
 
-## Examples
+### Examples
 input-->5,30
 output-->144
 
@@ -206,6 +250,6 @@ output-->6
 input-->9,10
 output-->19200
 
- ## Disadvantages
+ ### Disadvantages
  - As recursion uses stack, for large numbers, memory may become full due to stack full
 
