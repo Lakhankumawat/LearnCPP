@@ -17,6 +17,10 @@
     - [Search Element in a Rotated Sorted Array](#search-element-in-rotated-sorted-array)
         - [Explanation](#explanation)
         - [Properties](#properties)
+    - [Order_Agnostic_Binary_Search](#order-agnostic-binary-search)
+       - [Advantages](#advantagesOfOrderAgnosticBinarySearch)
+       - [Disadvantages](#disadvantagesOfOrderAgnosticBinarySearch)
+       - [Properties](#properties_0f_Order_Agnostic_Binary_Search)
 
 # Searching Algorithms
 
@@ -210,3 +214,19 @@ Case 2b: The right half of the array must be sorted .
 ### Properties
 - Time Complexity: ` O(log n) `  where n is size of the array
 - Space Complexity: ` O(1) `
+
+
+## order-agnostic-binary-search
+In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array.Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.[Source: Wikipedia]
+
+## advantagesOfOrderAgnosticBinarySearch
+* Its Fast because it keeps on splitting the code into 2 parts which drastically lowers the search time
+* Its Order-Agnostic , So list can be in ascending as well as in descending order , Its checks for the given order first and then performs the required operation on it.
+
+## disadvantagesOfOrderAgnosticBinarySearch
+* It employs recursive approach which requires more stack space.
+* The interaction of binary search with memory hierarchy i.e. caching is poor
+
+## properties_0f_Order_Agnostic_Binary_Search
+* Time Complexity : O(logn) 
+* Space Complexity : O(1)
