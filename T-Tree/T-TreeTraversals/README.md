@@ -12,6 +12,12 @@
     - [Time Complexity](#time-complexity-1)
     - [Space Complexity](#space-complexity-1)
 
+- [Zigzag Level Order Traversal](#zigzag-level-order-traversal) 
+    - [Example](#Example)
+    - [Algorithm](#algorithm-2)
+    - [Time Complexity](#time-complexity-2)
+    - [Space Complexity](#space-complexity-2)
+
 
 
 ## Morris Traversal
@@ -82,3 +88,44 @@ Output : 8 10 14 3 6 7 13 1 4
 ```
 - Space Complexity : O(N)
  ``` 
+ 
+ 
+## Zigzag Level Order Traversal
+Algorithm that traverses a binary tree from left to right then from right to left for the next leveland alternate between so, it's called Zigzag Level Order Traversal.
+
+![image](https://user-images.githubusercontent.com/29145628/165636674-e022fb00-9e58-457c-90c9-15f0e4d956d9.png)
+
+### Algorithm
+```
+- Create rightLeft variable to store the next direction.<br>
+- Create vector to store nodes in each level.<br>
+- Create queue to store nodes.(BFS)<br>
+- Push root in queue.<br>
+- Loop while the queue is not empty
+- In Each iteration:
+- Assign queue size in s to loop on nodes from the previous level
+- Alternate rightLeft (negate)
+- Loop on s to check all nodes in the level
+- Save front node in queue in temp node then pop front node from queue<br>
+- Check if current node's left is not null push it in queue       
+- Check if current node's right is not null push it in queue 
+- Push in level vector current node value 
+- When loop on s exits, check the rightLeft direction, ifit's true reverse level vector<br>
+- Print level vector
+- Clear level vector
+```
+### Example
+Input : 3 9 20 null null 15 7<br>
+Output : 3 20 9 15 7 <br>
+
+### Time Complexity
+```
+- Time Complexity : O(N)
+The algorithm traverses each node to put it in the queue so, time comlexity is O(N).
+```
+
+### Space complexity 
+```
+- Space Complexity : O(N)
+As the algorithm contains a queue with maximum size of n(nodes number) and a vector to save nodes in each level with maximum size of n then space complexity is O(N) + O(N) = O(N)
+```
