@@ -1,3 +1,13 @@
+#  Table of Contents
+- [Inversion Count](#inversion-count)
+- [Replace Pi](#replace-pi)
+- [Tower Of Hanoi](#tower-of-hanoi)
+- [Calculating GCD and LCM by Recursion](#calculating-gcd-and-lcm-by-recursion)
+- [Taylor series by Horners rule](#taylor-series-by-horners-rule)
+- [Fibonacci Number](#fibonacci-number)
+- [Power of Two](#power-of-two)
+
+
 # [Inversion Count](https://github.com/Lakhankumawat/LearnCPP/blob/main/Day-100(Algorithms)/R-Recursion/Inversion_Count.cpp) 
 
 Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, 
@@ -134,7 +144,7 @@ The process in which a function calls itself directly or indirectly is called re
  - time complexity of this program is less compared to other methods for finding GCD and LCM
 
 
-# Taylor series by Horner's rule
+# Taylor series by Horners rule
 
  The value of the Exponential function can be calculated using Taylor Series.
 
@@ -240,3 +250,36 @@ Example 2 : Input: n = 4
 ## Time Complexity and Space Complexity
 - Time Complexity : O(N)
 - Space Complexity : O(N) here N is the recursion stack space.
+
+
+# Power of two
+
+- [Problem Statement](#problem-statement-1)
+- [Examples](#examples-3)
+- [Algorithm](#algorithm-2)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-1)
+
+## Problem Statement
+Given an integer n, return true if it is a power of two. Otherwise, return false.
+An integer n is a power of two, if there exists an integer x such that n == 2x.
+
+## Examples
+Example 1 : Input: n = 16
+            Output: true
+
+Example 2 : Input: n = 5
+            Output: false
+
+## Algorithm
+- Given a number we have to determine that it can be represented in the power of 2.
+- If that number is 1 or 2 obviously, we would be returning true.
+- Else we will check the modulo of that number.
+- If modulo comes out to be 1, we would return false.
+- Another case may be if given no. is 0 we have to return false.
+- Call the recursive function for n/2 times.
+
+## Time Complexity and Space Complexity
+- Time Complexity : O(N)
+- Space Complexity : O(N) here N is the recursion stack space.
+
+
