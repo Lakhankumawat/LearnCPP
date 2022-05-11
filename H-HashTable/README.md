@@ -67,3 +67,12 @@
 - Searching : O(1)
 - Insering : O(1)
 ```    
+### Advantages :
+
+- Hash table is very useful when we have huge amount of data
+- Searching a data in a table is very fast.
+
+### Disadvantages : 
+
+- Only limited entries in a Hash table
+- If collision occurs, we must take care of it.
