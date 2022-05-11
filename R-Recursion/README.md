@@ -209,3 +209,50 @@ output-->19200
  ## Disadvantages
  - As recursion uses stack, for large numbers, memory may become full due to stack full
 
+
+
+
+
+# Check Palindrome
+
+You are given a string s, check whether the string is palindrome or not through recursion. Write a function and return true if yes and false if no.
+Palindrome: A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
+
+### Examples
+Example 1 : INPUT: learncpp
+            OUTPUT: false
+
+Example 2 : INPUT: learncppcnrael
+            OUTPUT: true
+
+
+### Algorithm
+
+  - Take the input string Str[] and calculate its length.
+
+  -  If length is 0 then set result=1.
+
+   - Else set result=checkPalindrome(Str, 0, length - 1) where 0 is first index and lenght - 1 is last index
+
+   - Function checkPalindrome(char str[], int first, int last) returns 0 if any character does not match with its corresponding character in the string.
+
+   - If indexes first and last are the same then string has one character, then return 1.
+
+   - If not then check the remaining characters except end characters by first++, last-- and recursive call checkPalindrome(str, first, last).
+
+   -  At the end of all recursions we will get a result.
+
+   - If it is 1 then the input string is palindrome.
+
+   - Else input string is not a palindrome.
+
+   - Print result in main.
+https://user-images.githubusercontent.com/97409445/167003996-8cfe5fc4-9ac0-4caf-a66f-02a443399fd9.png
+
+
+### Time Complexity
+  O(n) where n is the size of the string.
+
+
+### Space Complexity
+   O(1) because we don’t create any auxiliary space here.
