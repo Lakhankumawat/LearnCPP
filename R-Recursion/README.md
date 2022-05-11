@@ -53,6 +53,12 @@
   - [Time Complexity](#time-complexity-7)
   - [Space Complexity](#space-complexity-7)
 
+- [Subsequence K Sum](#subsequence-k-sum)
+  - [Examples](#examples-7)
+  - [Algorithm](#algorithm-7)
+  - [Time Complexity](#time-complexity-8)
+  - [Space Complexity](#space-complexity-8)
+
 
 ## Inversion Count
 
@@ -411,9 +417,46 @@ Example 2 : Input: n = 27
 - Another case may be if given no. is 0 we have to return false.
 - Call the recursive function for n/3 times.
 
-## Time Complexity and Space Complexity
+## Time Complexity
 - Time Complexity : O(N)
+## Space Complexity
 - Space Complexity : O(N) here N is the recursion stack space.
 
 
+## Subsequence K sum 
 
+Given an array arr[] of length N and a number K, the task is to find all the subsequences of the array whose sum of elements is K using recursion.
+
+### Examples
+
+```
+Input: arr[] = {1, 2, 3}, K = 3 
+Output: 
+1 2 
+3
+
+Input: arr[] = {17, 18, 6, 11, 2, 4}, K = 6  
+Output: 
+2 4 
+6
+```
+
+### Algorithm
+
+-The idea is to use the jagged array to store the subsequences of the array of different lengths. 
+
+-For every element in the array, there are mainly two choices for it that are either to include in the subsequence or not. 
+
+-Apply this for every element in the array by reducing the sum, if the element is included otherwise search for the subsequence without including it.
+
+### Time Complexity
+```
+-O(n^2) as this is a recursive solution for the problem. We are using recursion to iterate over all the subsequences and then finding the desired one.
+
+```
+
+### Space Complexity
+```
+ -O(n)
+
+```
