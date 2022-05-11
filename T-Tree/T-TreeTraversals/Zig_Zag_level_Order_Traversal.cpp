@@ -2,6 +2,7 @@
 #include <stack>
 using namespace std;
 
+// node structure
 struct node
 {
     int data;
@@ -13,22 +14,25 @@ struct node
     }
 };
 
+// zig zag traversal
 void zigzagTraversal(node *root)
 {
+    // base condition
+
     if (!root)
     {
         return;
     }
 
-    stack<node *> curlevel;
-    stack<node *> nextlevel;
+    stack<node *> curlevel;  // For maintaning the printing order of current level
+    stack<node *> nextlevel; // // For maintaning the printing order of next level
     bool LOR = true;
 
-    curlevel.push(root);
+    curlevel.push(root); // Pushing the root node.
 
-    while (!curlevel.empty())
+    while (!curlevel.empty()) // checking if current level is empty or not.
     {
-        node *temp = curlevel.top();
+        node *temp = curlevel.top(); // fetching the top element
         curlevel.pop();
 
         if (temp)
@@ -36,9 +40,9 @@ void zigzagTraversal(node *root)
             cout << temp->data << " ";
         }
 
-        if (LOR)
+        if (LOR) // As we know we have to traverse in zig zag order so , if LOR is true then we have traverse left to right otherwise in reverse.
         {
-            if (temp->left)
+            if (temp->left) // First left node then right
             {
                 nextlevel.push(temp->left);
             }
@@ -48,18 +52,19 @@ void zigzagTraversal(node *root)
             }
         }
 
+        // When we have to traverse right to left.
         else
         {
-            if (temp->right)
+            if (temp->right) // First right node
             {
                 nextlevel.push(temp->right);
             }
-            if (temp->left)
+            if (temp->left) // Then left node.
             {
                 nextlevel.push(temp->left);
             }
         }
-        if (curlevel.empty())
+        if (curlevel.empty()) // If the current level is empty we swap the stacks and pop and print elements from the swaaped one
         {
             LOR = !LOR;
             swap(curlevel, nextlevel);
