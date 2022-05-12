@@ -14,7 +14,7 @@
 - [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
 - [Majority Element](#majority-element)
 - [Sort an Array in wave form](#sort-an-array-in-wave-form)
-
+- [Spiral Traversal of Matrix](#spiral-traversal)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
@@ -909,3 +909,31 @@ Output:
 Time Complexity: O(nlogn)
 Space Complexity: O(1)
 ```
+# Spiral Traversal Of A Matrix <a name="spiral-traversal"/>
+The Spiral Matrix problem takes a 2-Dimensional array with N rows and M columns as input and prints the elements in spiral order.
+The spiral starts at the top left corner of the input matrix and prints all of the elements it encounters as it loops clockwise towards the centre.
+
+## Algorithm
+- First, four variables containing the indices for the corner points of the array are initialized.
+- From the top left corner of the array, the algorithm traverses the first row from left to right. It does not need to revisit the row once it has traversed it, so it increments the top corner index.
+- It then traverses the rightmost column from top to bottom. Once this is done, there is no need to go back to the rightmost column, so the right corner index is decremented.
+- Next, the algorithm traverses the bottommost row and decrements the bottom corner index afterward.
+- Finally, the algorithm goes through the leftmost column, incrementing the left corner index once it's done.
+
+## Visualization of the algorithm
+|   |   |   |   |
+|---|---|---|---|
+| ![sm1](https://user-images.githubusercontent.com/84399701/165970510-17258305-d440-4e62-82d3-23064ed3592b.png)  |  ![sm2](https://user-images.githubusercontent.com/84399701/165970522-92b7dc94-c328-4e48-8f87-d640d6c1d663.png) |  ![sm3](https://user-images.githubusercontent.com/84399701/165970534-7ad0cf0b-326b-4267-91a7-540e1ec4a555.png) | ![sm4](https://user-images.githubusercontent.com/84399701/165970539-1949eb72-91c2-4f29-bdf0-02ecd4830d2f.png)  | 
+| ![sm5](https://user-images.githubusercontent.com/84399701/165970553-7a419f25-f69b-4baa-bfff-0ea3707091f6.png)  | ![sm6](https://user-images.githubusercontent.com/84399701/165970560-a1c0b21b-f987-4f69-9dfe-37be0f0aa248.png)  | ![sm7](https://user-images.githubusercontent.com/84399701/165970569-8dc3fafd-b358-4c8d-a79c-b09a41b04dcd.png)| ![sm8](https://user-images.githubusercontent.com/84399701/165970573-56283699-cd7e-467a-a14d-56a70aa86f6c.png)  | 
+![sm9](https://user-images.githubusercontent.com/84399701/165970581-0aff3970-e510-4721-9e2b-82bca1dd97f3.png) | ![sm10](https://user-images.githubusercontent.com/84399701/165970589-f9ccd6fe-9696-405a-8651-606dbf56063b.png) |  ![sm11](https://user-images.githubusercontent.com/84399701/165970594-14437556-2e70-491a-9af9-be10577ecfd2.png) |  ![sm12](https://user-images.githubusercontent.com/84399701/165970598-7498381f-e49e-4f4a-bfd3-64c37d0bb48c.png) |  
+![sm13](https://user-images.githubusercontent.com/84399701/165970601-8ad630c9-21c3-4d67-9d1c-4d4f9dd72ebd.png) |  ![sm14](https://user-images.githubusercontent.com/84399701/165970605-00c2da97-3564-41e0-bcbe-b39bf3f3764b.png) | ![sm15](https://user-images.githubusercontent.com/84399701/165970613-12e49ef2-5e7d-40bc-be1d-dfb5214aaa03.png) | ![sm16](https://user-images.githubusercontent.com/84399701/165970624-59e52f32-d89b-4455-82f0-580c4231b5f1.png) 
+
+<p align="center">
+  <img 
+    width="250"
+    height="200"
+    src="https://user-images.githubusercontent.com/84399701/165970628-8115dade-9d6f-4e04-a8d0-99c215b47474.png"
+  >
+</p>
+
+
