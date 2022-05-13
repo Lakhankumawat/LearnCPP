@@ -16,15 +16,12 @@
 
 
 * Direct Recursion.
-* Indirect Recursion.
-* Tail Recursion.
 - [Head Recursion](#head-recursion)
   - [Algorithm](#head-recursion)
   - [Properties](#head-recursion)
   - [Advantages](#head-recursion)
   - [Disadvantages](#head-recursion)
 
-* Direct Recursion.
 - [Indirect Recursion](#indirect-recursion)
   - [Algorithm](#indirect-recursion)
   - [Properties](#indirect-recursion)
@@ -36,7 +33,6 @@
   - [Advantages](#tail-recursion)
   - [Disadvantages](#tail-recursion)
 
-* Head Recursion.
 
 * Linear recursion.
 - [Tree Recursion](#tree-recursion)
