@@ -1,4 +1,13 @@
 # Trie
+- [Implementation](#trie-implementation)
+- [Node Structure](#structure-of-trie-node)
+- [Insertion](#inserting-in-a-trie)
+- [Searching](#searching-in-a-trie)
+- [Complexities](#time-and-space-complexity)
+- [Applications](#application-of-trie)
+- [Limitations](#limitations-of-trie)
+
+## Trie Implementation
 **Trie** is an advance data structure , Trie is one of the data structure in which search can be opptimized till the `key Length`. Using Trie we can search any key using `O(M)` time (where M is maximum length of string) , But the catch here is that trie requires high storage which leads storage requirements as the limitations of it.
 
 ## Implementation of Trie
