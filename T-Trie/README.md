@@ -1,3 +1,11 @@
+<hr>
+
+- [Problem Explanation](#count-prefix)
+- [Approach](#approach)
+- [Method](#method)
+- [Complexities](#time-and-space-complexity)
+
+
 ## Count Prefix
 In this problem we have to count the number of words in a list of string with the given prefix using **trie**.
 
