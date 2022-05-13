@@ -922,9 +922,9 @@ For a 2D integer array "matrix" of size m x n (where m and n are the number of r
 ### Sample input and output
 ```
 Input :
- {{1,2,3},
-  {4,5,6},
-  {7,8,9}}
+  1,2,3
+  4,5,6
+  7,8,9
 
 Output : 1 4 7 8 5 2 3 6 9
 
