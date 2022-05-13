@@ -34,8 +34,40 @@ Here we will be studying about Doubly Linked Lists.
 # Doubly Linked List
 A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer, together with next pointer and data which are there in singly linked list.
 
-![ll](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
+![doubly_linked_list](https://user-images.githubusercontent.com/93239528/167244323-4c38727f-b2e9-4f07-afe6-ccabcc610243.jpg)
 
+
+Following are the important terms to understand the concept of doubly linked list.
+
+- Link − Each link of a linked list can store a data called an element.
+
+- Next − Each link of a linked list contains a link to the next link called Next.
+
+- Prev − Each link of a linked list contains a link to the previous link called Prev.
+
+### Basic Operations
+
+- Insertion − Adds an element at the beginning of the list.
+
+- Deletion − Deletes an element at the beginning of the list.
+
+- Insert Last − Adds an element at the end of the list.
+
+- Delete Last − Deletes an element from the end of the list.
+
+- Insert After − Adds an element after an item of the list.
+
+- Delete − Deletes an element from the list using the key.
+
+- Display forward − Displays the complete list in a forward manner.
+
+- Display backward − Displays the complete list in a backward manner.
+
+### Advantages over singly linked list 
+
+1) A DLL can be traversed in both forward and backward direction. 
+2) The delete operation in DLL is more efficient if pointer to the node to be deleted is given. 
+3) We can quickly insert a new node before a given node. 
 
 # Reverse a Doubly Linked List
 
