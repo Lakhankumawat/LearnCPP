@@ -6,7 +6,9 @@
 
 
  [Complexity analysis](#complexity-analysis)
-
+ 
+ [Working Diagram](#working-diagram)
+ 
 
  [Example](#example)
 
@@ -49,12 +51,13 @@ Step 6:-Run a loop from 0 to n-1 and observe the count of people who knows the V
 Time Complexity: O(n)
 Space Complexity: O(1) No extra space is required.
 ```
-
+## Working Diagram
+![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/celebrity.png?token=GHSAT0AAAAAABUGYBNP7VF6UZAWY355VNBOYT7XKXA)
 
 ## Example
 According to problem statement, you are given a matrix M[][], let consider it as example,
 
-![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/examples.png?token=GHSAT0AAAAAABSVBUS4LGILYJCWGLOCA4XAYSH53EA)
+![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/examples.png?token=GHSAT0AAAAAABUGYBNPKPYLZS6CURYIVGOQYT7XNEA)
 
 
 The above Matrix will be given and if M[i][j] = 1, it means ith person knows jth person.
@@ -64,5 +67,3 @@ For example, in above Matrix, 0th person knows 2nd person.
 NOTE only ith person knows jth person, we are still not sure that whether jth person knows ith person or not.
 
 In the above example, 2nd person is the celebrity because, every other person knows him and 2nd person doesn’t know anyone.
-
-OUTPUT:- 2 .
