@@ -1222,9 +1222,9 @@ Time Complexity: O(m*n)
   
  # [Coin Change](https://leetcode.com/problems/coin-change/)
 
-- [Problem Statement](#problem-statement-7)
+- [Problem Statement](#problem-statement-6)
 
-- [Examples](#examples-7)
+- [Examples](#examples-6)
 
 - [Algorithm](#algorithm-2)
 
@@ -1319,9 +1319,9 @@ Output: -1
 
 # Edit Distance
 
-- [Problem Statement](#problem-statement-8)
+- [Problem Statement](#problem-statement-7)
 
-- [Examples](#examples-8)
+- [Examples](#examples-7)
 
 - [Algorithm](#algorithm-3)
 
@@ -1341,6 +1341,7 @@ Output<br>
 - The minimal cost to transform str1 to str2 by single symbol insertions, deletions, and substitutions.
 
 ![image](https://user-images.githubusercontent.com/29145628/168327404-ad1380da-b135-484d-98e1-9b58f608b40d.png)
+
 
 ### Examples
 
