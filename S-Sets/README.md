@@ -1,5 +1,6 @@
 # Table of Content 
-- [Union of two sets](#Union-of-two-sets)
+- [Union of two sets](#union-of-two-sets)
+- [Intersection of two sets](#intersection-of-two-sets)
 - [Cartesian Product of two Set](#cartesian-product-of-two-set)
 
 # Union of two sets
@@ -27,6 +28,32 @@
 8. else put it into sets C
 
 **Time Complexity** is O(n^2)
+
+# Intersection of two sets
+- The intersection of sets can be denoted using the symbol ‘∩’. 
+- The intersection of two sets A and B is the set of all those elements which are common to both A and B. Symbolically, we can represent the intersection of A and B as A ∩ B.
+
+- For example:
+![inter](https://user-images.githubusercontent.com/93239528/168460303-2b05d6c1-8708-4d93-859d-bdb6b7ef9238.png)
+
+
+## Properties 
+1. Commutative Property	`A ∩ B = B ∩ A`
+2. Associative Property	`(A ∩ B) ∩ C = A ∩ (B ∩ C)`
+3. Idempotent Property	`A ∩ A = A`
+4. Property of Ⲫ/ Identity Law	`A ∩ Ⲫ = Ⲫ`
+5. Property of Universal Set	`A ∩ U = A`
+
+## Pseduo code
+1) Initialize intersection I as empty.
+2) Do following for every element x of first array
+   a) If x is present in second array, then copy x to I.
+4) Return I.
+
+
+**Time Complexity** is O(mn)
+where, m and n are number of elements in arr1[] and arr2[] respectively.
+
 
 # Cartesian Product of two Set
 
