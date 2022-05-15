@@ -45,11 +45,11 @@
      - [Disadvantage](#disadvantage-4)
 
   - [Cycle Sort](#cycle-sort)
-     - [Algorithm](#algorithmofCycleSort)
-     - [Properties](#propertiesofCycleSort)
-     - [Advantages](#advantagesofCycleSort)
-     - [Disadvantage](#disadvantageofCycleSort)
-     -[PracticeProblems](#practice-problems)
+     - [Algorithm](#CycleSortAlgorithm)
+     - [Properties](#CycleSortProperties)
+     - [Advantages](#CycleSortAdvantages)
+     - [Disadvantage](#CycleSortDisadvantages)
+     -[PracticeProblems](#CycleSortpractice-problems)
  
 # Sorting Algorithms
 
@@ -516,112 +516,93 @@ DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is spe
 
 -----------
 
+
+
 ### Cycle Sort
--Cycle sort is a comparison based sorting algorithm which forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array.
 
--It is an in-place and unstable sorting algorithm.
+- Cycle sort is a comparison based sorting algorithm which forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array.
+- It is an in-place and unstable sorting algorithm.
 
--It is optimal in terms of number of memory writes. It minimizes the number of memory writes to sort. Each value is either written zero times, if it’s already in its correct position, or written one time to its correct position.
+- It is optimal in terms of number of memory writes. It minimizes the number of memory writes to sort. Each value is either written zero times, if it’s already in its correct position, or written one time to its correct position.
 
--It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array.
-  
- 
-## algorithmofCycleSort
+- It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array.
 
-## Algorithm
--An array of n distinct elements is to be considered.
+Here, array elements: {30, 20, 10, 40, 60, 50}
+![cycle-sort working image](https://user-images.githubusercontent.com/84588360/168461077-f38dc4b5-83b1-4549-9df8-1aaf57364e3b.png)
 
--An element a is given, index of a can be calculated by counting the number of elements that are smaller than a.
+# CycleSortAlgorithm
 
--If the element is found to be at its correct position, simply leave it as it is.
+### Algorithm
 
--Otherwise, find the correct position of a by counting the total number of elements that are less than a. where it must be present in the sorted array. The other element b which is replaced is to be moved to its correct position. This process continues until we got an element at the original position of a.
+- An array of n distinct elements is to be considered.
 
-```
-##Code
+- An element a is given, index of a can be calculated by counting the number of elements that are smaller than a.
 
-#include <iostream>
-using namespace std;
+- If the element is found to be at its correct position, simply leave it as it is.
 
-void cycleSort(int arr[], int n)  
-{  
-    int counter = 0,start,element,pos,temp,i;
-    for (start = 0; start <= n - 2; start++) {  
-        element = arr[start];  
-        pos = start;  
-        for (i = start + 1; i < n; i++)  
-            if (arr[i] < element)  
-                pos++;  
-        if (pos == start)  
-            continue;  
-        while (element == arr[pos])  
-            pos += 1;  
-        if (pos != start) {    
-        temp = element;  
-        element = arr[pos];  
-            arr[pos] = temp;    
-            counter++;  
-        }  
-        while (pos != start) {  
-            pos = start;  
-            for (i = start + 1; i < n; i++)  
-                if (arr[i] < element)  
-                    pos += 1;  
-            while (element == arr[pos])  
-                pos += 1;  
-            if (element != arr[pos]) {  
-              temp = element;  
-          element = arr[pos];  
-              arr[pos] = temp;    
-                counter++;  
-            }  
-        }  
-    }
-}
-int main()  
-{  
-    cout<<"Enter the no. of elements in array:"<< endl;
-    int n;
-    cin>>n;
-    int arr[n];
-    cout<<"Enter the elements in array:"<< endl;
-    for(int i=0; i < n ;i++){
-        cin>>arr[i];
-    }
-    cycleSort(arr,n);
-    cout<<"Sorted array:"<< endl;
-    for(int i=0; i < n; i++){
-          cout << arr[i] << " " ;
-    }
-    return 0;  
-}  
-    
-```
-## propertiesofCycleSort
+- Otherwise, find the correct position of a by counting the total number of elements that are less than a. where it must be present in the sorted array. The other element b which is replaced is to be moved to its correct position. This process continues until we got an element at the original position of a.
 
-## Properties
+### Pseudocode
+
+    Begin
+    for start := 0 to n – 2 do
+    item := arr[start]
+    pos := start
+    for i := start + 1 to n-1 do
+      if arr[i] < item then
+         pos:= pos+1
+    done
+
+    if pos = start then
+        ignore lower part, go for next iteration
+    while item = arr[pos] do
+        pos := pos+1
+    done
+
+    if pos != start then
+        swap arr[pos] with item
+    while pos != start do
+        pos := start
+        for i := start + 1 to n-1 do
+               if arr[i] < item then
+                    pos:= pos+1
+        done
+
+        while item = arr[pos]
+               pos := pos +1
+        if item != arr[pos]
+               swap arr[pos] and item
+       done
+      done
+    End
+
+# CycleSortProperties
+
+### Properties
 - Time Complexity: O(n^2) 
 - Space Complexity: O(1)
- - In-place : Yes
+- In-place : Yes
 - Stable : No
 
-## advantagesofCycleSort
+# CycleSortAdvantages
 
-## Advantages
--Cycle Sort offers the advantage of little or no additional storage.
+### Advantages
 
--It is an in-place sorting Algorithm.
+- Cycle Sort offers the advantage of little or no additional storage.
 
--It is optimal in terms of number of memory writes. It makes minimum number of writes to the memory and hence efficient when array is stored in EEPROM or Flash. Unlike nearly every other sort (Quick , insertion , merge sort), items are never written elsewhere in the array simply to push them out of the way of the action. Each value is either written zero times, if it's already in its correct position, or written one time to its correct position.This matches the minimal number of overwrites required for a completed in-place sort.
+- It is an in-place sorting Algorithm.
 
-## disadvantageofCycleSort
+- It is optimal in terms of number of memory writes. It makes minimum number of writes to the memory and hence efficient when array is stored in EEPROM or Flash. Unlike nearly every other sort (Quick , insertion , merge sort), items are never written elsewhere in the array simply to push them out of the way of the action. Each value is either written zero times, if it's already in its correct position, or written one time to its correct position.This matches the minimal number of overwrites required for a completed in-place sort.
 
-## Disadvantage
+# CycleSortDisadvantages
+
+### Disadvantage
 - It is not mostly used because it has more time complexity (i.e O(n^2)) than any other comparison sorting algorithm.
 
-## Practice-problems
+# CycleSortpractice-problems
 
-## Link to practice problems
+### Link to practice problems
 [CycleSort practice problems](https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/07-sorting.md)
 
+--------
 --------
