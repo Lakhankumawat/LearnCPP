@@ -449,6 +449,9 @@ Output:
 
 -Apply this for every element in the array by reducing the sum, if the element is included otherwise search for the subsequence without including it.
 
+![image](https://user-images.githubusercontent.com/67185564/168480484-8fcc3edf-cea6-483b-a355-910da3dad3bb.png)
+
+
 ### Time Complexity
 ```
 -O(n^2) as this is a recursive solution for the problem. We are using recursion to iterate over all the subsequences and then finding the desired one.
