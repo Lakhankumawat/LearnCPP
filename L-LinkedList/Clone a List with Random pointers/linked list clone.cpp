@@ -95,20 +95,20 @@ int main()
 	//Basic list
 	Node* root = NULL;
 
-	cout << "Enter the total number of nodes " << endl<<"->";
+	cout << "Enter the total number of nodes " << endl << "->";
 	int n;
-	cin >>n;
+	cin >> n;
 	while (n--) {
 		int val;
 		cout << "Enter node's value" << endl << "->";
 		cin >> val;
 		append(root, val);
+	}
+		cout << "original list : ";
+		print(root);
 
-	cout << "original list : ";
-	print(root);
-
-	Node* ans = clone(root);
-	cout << "cloned  list : ";
-	print(ans);
+		Node* ans = clone(root);
+		cout << "cloned  list : ";
+		print(ans);
 
 }
