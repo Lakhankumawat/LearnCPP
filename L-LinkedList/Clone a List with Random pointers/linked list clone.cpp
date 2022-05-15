@@ -19,6 +19,7 @@ void print(Node* head) {
 		cout << head->data << " ";
 		head = head->next;
 	}
+	cout << endl;
 }
 void insertAtTail(Node*& head, Node*& tail, int key) {
 	Node* newnode = new Node(key);
@@ -46,7 +47,7 @@ void append(Node*& head, int key) {
 	last->next = newnode;
 	return;
 
-}	
+}
 Node* clone(Node* head) {
 	//Concept
 
@@ -94,20 +95,19 @@ int main()
 	//Basic list
 	Node* root = NULL;
 
-	print(root);
-
-	append(root, 6);
-	append(root, 4);
-	append(root, 9);
-	append(root, 7);
-	append(root, 1);
+	cout << "Enter the total number of nodes " << endl<<"->";
+	int n;
+	cin >>n;
+	while (n--) {
+		int val;
+		cout << "Enter node's value" << endl << "->";
+		cin >> val;
+		append(root, val);
 
 	cout << "original list : ";
 	print(root);
 
-	cout << endl;
-
-	Node*ans = clone(root);
+	Node* ans = clone(root);
 	cout << "cloned  list : ";
 	print(ans);
 
