@@ -3,6 +3,7 @@
     - [Code](ConnectedComponentUndirectedGraph.cpp)
     - [Algorithm](#algorithm)
     - [Properties](#properties)
+    - [Advantages](#advantages)
 
 
 ## Connected components in undirected graph
@@ -33,3 +34,7 @@ dfs(v,checked[]){
 - Time Complexity: O(V+E), where V is the number of vertices and E is total number edges in a graph.
 
 - Space Complexity: O(n) , where n is total number of vertices in graph .
+
+### Advantages
+- use in the social networking sites, connected components are used to depict the group of people who are friends of each other or who have any common interest
+- It can also be used to convert a graph into a Direct Acyclic graph of strongly connected components .
