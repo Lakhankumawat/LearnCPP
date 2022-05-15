@@ -50,7 +50,7 @@ Else
 
 - Time Complexity :
   - Worst case time	: O(n)
-  - Space Complexity: O(n)
+- Space Complexity: O(n)
 
 ## Number of Internal Nodes
 -  Internal Node is a node that can have at least one child (i.e. non-leaf node is an internal node).
@@ -105,7 +105,7 @@ Number of internal nodes: 3
 
 - Time Complexity :
   - Worst case time	: O(n)
-  - Space Complexity: O(n)
+- Space Complexity: O(n)
 
 ## Largest Bst in a Binary Tree
 
