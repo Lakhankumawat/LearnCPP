@@ -75,6 +75,8 @@ Arr[] = {1, 2, 7, 3, 9, 19}
 
 
 # Minimum Cost Of Ropes
+![image](https://user-images.githubusercontent.com/94545831/168652909-f3f47486-2f12-4002-87f8-768fc4339ecb.png)
+
 - [Problem Statement](#problem-statement-1)
 - [Examples](#examples)
 - [Algorithm](#algorithm)
