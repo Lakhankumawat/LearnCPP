@@ -50,6 +50,12 @@
      - [Advantages](#CycleSortAdvantages)
      - [Disadvantage](#CycleSortDisadvantages)
      -[PracticeProblems](#CycleSortpractice-problems)
+
+  - [Radix Sort](#Radix-sort)
+     - [Algorithm](#RadixSortAlgorithm)
+     - [Properties](#RadixSortProperties)
+     - [Advantages](#RadixSortAdvantages)
+     - [Disadvantage](#RadixSortDisadvantages)
  
 # Sorting Algorithms
 
@@ -606,3 +612,161 @@ Here, array elements: {30, 20, 10, 40, 60, 50}
 
 --------
 --------
+
+
+# Radix Sort
+
+- Radix sort is a non-comparison-based sorting algorithm.It avoids comparison by creating and categorizing elements based on their radix.
+- For elements with more than one significant digit, it repeats the bucketing process for each digit while preserving the previous step's ordering until all digits have been considered.
+- The word radix, by definition, refers to the base or the number of unique digits used to represent numbers. In radix sort, we sort the elements by processing them in multiple passes, digit by digit.
+- Each pass sorts elements according to the digits in a particular place value, using a stable sorting algorithm (usually counting sort as a subroutine). It can be implemented to start the sorting from the least significant digit (LSD) or the most significant digit (MSD). 
+- The number of passes required to fully sort the elements is equal to the number of place values (digits) present in the largest element among all the input elements to be sorted. These passes continue to run for each place value until the sorting is done. 
+
+# Radix-sort
+
+![Radix sort working snippet](https://user-images.githubusercontent.com/84588360/168561310-52dfca38-33d3-4bcd-943b-fdbac31af87a.png)
+
+# Algorithm
+
+- ***Step 1*** – Take input array and find maximum number in the array
+- ***Step 2*** – Create a for expression that loops d times, where d = number of digits in the largest element (maxim)
+- ***Step 3*** – For the first place value, call counting sort, jump place value by 10 to move to the next significant digit.
+- ***Step 4*** – Continue step 3 for all place values (finish all d passes).
+- ***Step 5*** – Display the updated, sorted array.
+- ***Step 6*** – Exit.
+ 
+# RadixSortAlgorithm
+
+**Example :**
+
+    Assume the input array is:
+    10,21,17,34,44,11,654,123
+
+    Based on the algorithm, we will sort the input array according to the one's digit (least significant digit).
+    0: 10
+    1: 21 11
+    2:
+    3: 123
+    4: 34 44 654
+    5:
+    6:
+    7: 17
+    8:
+    9:
+
+    So, the array becomes 10,21,11,123,24,44,654,17
+    Now, we'll sort according to the ten's digit:
+    0:
+    1: 10 11 17
+    2: 21 123
+    3: 34
+    4: 44
+    5: 654
+    6:
+    7:
+    8:
+    9:
+
+    Now, the array becomes : 10,11,17,21,123,34,44,654
+    Finally , we sort according to the hundred's digit (most significant digit):
+    0: 010 011 017 021 034 044
+    1: 123
+    2:
+    3:
+    4:
+    5:
+    6: 654
+    7:
+    8:
+    9:
+
+    The array becomes : 10,11,17,21,34,44,123,654 which is sorted. This is how the algorithm works.
+  
+  **Animated Illustration**
+  
+https://user-images.githubusercontent.com/84588360/168647326-0d773672-f505-4c84-a329-a9ddaf55105e.mp4
+
+*Source:* https://www.crio.do/blog/top-10-sorting-algorithms/
+
+
+# Pseudocode
+
+**Radix Sort Pseudocode RadixSort(arr[], length) –**
+
+- ***Step 1.*** An input array is taken & consider its length as– arr[length]
+- ***Step 2.*** Maximum element from this array is obtained
+- ***Step 3.*** n = GetMaximum(arr, length)
+- ***Step 4.*** Counting sort is called x times based on the no of digits in the max number n.
+- for (int div = 1; n/div > 0; div *= 10)
+- ***Step 5.*** CountingSort(arr, length, div)
+
+**Counting Sort Pseudocode CountingSort(arr[], length, div) –**
+
+- ***Step 1.*** arr[length] is taken
+
+- ***Step 2.*** Output array called – opt[length] is created
+
+- ***Step 3.*** Range taken - (or no of unique elements. Default value 10 in our case)
+
+- ***Step 4.*** count array called – count[range] is created & all the values are initialized to 0
+-     for(int i=0 to i<range)
+-     count[i] = 0
+
+- ***Step 5.*** Each element is counted & are placed in the count[] array
+-     for(int i = 0 to i<length)
+-     count[ (arr[i]/div)%10 ]++;
+
+- ***Step 6.*** count[] array is modified to store previous counts (cumulative)
+-     or(int i = 1 to i < range)
+-     count[i] += count[i – 1];
+
+- ***Step 7.*** Elements are placed from input array arr[] to opt array opt[] using this count[] array that has the actual positions of elements
+-     for(int i=0 to i<length)
+-     opt[count[ (arr[i]/div)%10 ] – 1] = arr[i]
+-     count[ (arr[i]/div)%10 ]–-
+
+- ***Step 8.*** Sorted values are transferred from opt[] array to input array arr[]
+-     for(i=0 to i<length)
+-     arr[i] = opt[i] 
+
+
+# RadixSortProperties
+
+# Properties
+
+- **Time Complexity:**  For worst-, best- and average-case scenario is O(d*(n+b)). 
+
+  Here, 
+
+  - d is the number of digits in the maximum number
+  - O(n+b) is the time complexity of counting sort, where b is the base of the number system used.
+  - The complexity of counting sort is O(n+b) because there are four for loops, three of them iterating n times, one iterating b times  — O(3n+b) or O(n+b). 
+  - The time complexity for radix sort is O(d*(n+b)) because counting sort is called d times.
+- **Space Complexity:**  O(n+b)
+- **In-place :** No
+*NOTE:* Binary MSD radix sort, also called binary quicksort, can be implemented in-place by splitting the input array into two bins - the 0s bin and the 1s bin.*
+- **Stable** : Yes
+
+
+# Advantages
+
+- Radix Sort is a stable sort because it maintains the relative order of elements with equal values.
+- Fast when the keys are short, i.e. when the array element range is small.
+- Used in suffix arrays construction algorithms such as Manber's and the DC3 algorithm.
+
+# RadixSortAdvantages
+
+
+# Disadvantages
+
+- Radix sort may be slower than other sorting algorithms such as merge sort and Quicksort if the operations are inefficient. These operations include sub-inset lists and delete functions, as well as the process of isolating the desired digits.
+- The Radix Sort algorithm is less flexible than other sorts because it is based on digits or letters. As a result, for each different type of data, it must be rewritten.
+- Radix sort has a higher constant than other sorting algorithms.
+- It takes up more space than Quicksort, which is used for in-place sorting.
+- Because it is based on digits or letters, the radix sort is less flexible than other sorts. If the data type must be rewritten, so must the Radix sort.
+
+# RadixSortDisadvantages
+
+-----------------------
+-----------------------
+
