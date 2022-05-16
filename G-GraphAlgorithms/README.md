@@ -65,6 +65,9 @@ It is a algorithm which is based in **greedy approach** for finding the maximum 
 
 We can visualize the algorithm using a pipeline system in which every pipe have the different capacities and for a instance their is some water in each pipe and using algorithm we have to find amount of liquid flowed from source to sink.
 
+![image](https://user-images.githubusercontent.com/86917304/168588090-43973475-e956-488f-8b42-29ec88258284.png)
+
+
 ### Prerequisites
 
 - **Augmenting Path :-** The path available in a flow of the network.
