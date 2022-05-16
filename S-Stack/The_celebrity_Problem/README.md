@@ -52,12 +52,12 @@ Time Complexity: O(n)
 Space Complexity: O(1) No extra space is required.
 ```
 ## Working Diagram
-![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/celebrity.png?token=GHSAT0AAAAAABUGYBNP7VF6UZAWY355VNBOYT7XKXA)
+![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/celebrity.png?token=GHSAT0AAAAAABUGYBNOUHWMD7V3N4NVXB5KYUCBKRQ)
 
 ## Example
 According to problem statement, you are given a matrix M[][], let consider it as example,
 
-![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/examples.png?token=GHSAT0AAAAAABUGYBNPKPYLZS6CURYIVGOQYT7XNEA)
+![code](https://raw.githubusercontent.com/gp919934/Screenshots/main/examples.png?token=GHSAT0AAAAAABUGYBNPPEGCIIAJXNSO7VPWYUCBLGQ)
 
 
 The above Matrix will be given and if M[i][j] = 1, it means ith person knows jth person.
