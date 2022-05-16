@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-68-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-73-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -46,10 +46,38 @@
 </div>
 
 
-
- 
- 
-
+# What's Inside 🗃
+- Advanced Data Structures
+- [Array](#array)
+- [Backtracking](#backtracking)
+- [Bit Manipulation](#bit-manipulation)
+- [Disjoint Set Union](#disjoint-set-union)
+- Divide And Conquer Algorithms
+- [Dynamic Programming](#dynamic-programming)
+- [Extra](#extra)
+- [Graph Algorithms](#graph-algorithms)
+- [Graphs](#graphs)
+- [Greedy Algorithms](#greedy-algorithms)
+- [HashMap](#hashMap)
+- HashTable
+- [Heap](#heap)
+- [Linked List](#linked-list)
+- [Mathematical Algorithms](#mathematical-algorithms)
+- [Miscellaneous](#miscellaneous)
+- [Priority Queue](#priority-queue)
+- [Problem Statements and Solution](#problem-statements-and-solution)
+- [Queue](#queue)
+- [Recursion](#recursion)
+- [STL](#stl)
+- [Searching Algorithms](#searching-algorithms)
+- [Sets](#sets)
+- [Sorting Algorithms](#sorting-algorithms)
+- [Stack](#stack)
+- [String Algorithms](#string-algorithms)
+- [Strings](#strings)
+- [Template](#template)
+- [Tree](#tree)
+- Trie
 
 <!-- ## <img src="https://media.giphy.com/media/Y3eZ2VA2b2UP5Lz6os/giphy.gif" alt="prerequisite" width="40px" > Contributing -->
 
@@ -135,6 +163,385 @@ Fond of designing README this section will be helpful to you
 
 <br>
 <br>
+
+
+- ## Array
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Array Operations](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#array-operations)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/arrayOperations.cpp)|
+| 2 | [Antispiral Matrix](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#printing-matrix-in-antispiral-form)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/AntispiralMatrix.cpp)|
+| 3  | [Counting Divisibl eSubstrings](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#counting-divisible-substrings)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)|
+| 4  | [First Negative in Every Window](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#first-negative-integer-in-every-k-size-window)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/FirstNegativeInEveryWindow.cpp)|
+| 5  | [Maximum Sum Subarray](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#maximum-sum-of-subarray)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/MaximumSumSubarray.cpp)|
+| 6  | [Missing and Repeating Number](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#printing-matrix-for-find-the-missing-and-repeating-number)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/MissingAndRepeatingNumber.cpp)|
+| 7  | [Peak in 1D Array](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#peak-in-1d-array)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Peak.cpp)|
+| 8  |  [Prefix Sum](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#prefix-sum) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/PrefixSum.cpp)|
+| 9  | [Reversing of Array](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#reversing-of-array)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Reversingofarray.cpp)|
+| 10  | [Sort an Array of 0's 1's and 2's](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#sort-an-array-of-0s-1s-and-2s)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Sort_0_1_2.cpp)|
+| 11  |  [Best Time to Buy and Sell Stock](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)|
+| 12  |  [Symmetric Matrix](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#symmetric-matrix) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/SymmetricMatrix.cpp)|
+| 13  | [Trace and Normal](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#trace-and-normal-of-matrix)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/TraceAndNormal.cpp)|
+
+
+- ## Backtracking
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Hamiltonian Cycle](https://github.com/Lakhankumawat/LearnCPP/tree/main/B-Backtracking#Hamiltonian-Cycle)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-Backtracking/HamiltonianCycle.cpp)|
+| 2  | [N-Queen](https://github.com/Lakhankumawat/LearnCPP/tree/main/B-Backtracking#N-Queen-Problem)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-Backtracking/N-Queen.cpp)|
+| 3  | Rat in Maze  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-Backtracking/RatInMaze.cpp)|
+| 4  | [Subset Sum](https://github.com/Lakhankumawat/LearnCPP/tree/main/B-Backtracking#Subset-Sum)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-Backtracking/SubsetSum.cpp)|
+| 5  | [The Knight’s Tour Problem](https://github.com/Lakhankumawat/LearnCPP/tree/main/B-Backtracking#The-Knight-tour-problem)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-Backtracking/TheKnight%E2%80%99stourproblem.cpp)|
+
+
+- ## Bit Manipulation
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | Bit Manipulation  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/BitManipulation.cpp)|
+| 2  | Cout Set Bits  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/Count_set_Bits.cpp)|
+| 3  | [Swapping 2 Numbers](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/Swapping%202%20Numbers/readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/Swapping%202%20Numbers/swapping.cpp)|
+
+
+
+
+- ## Disjoint Set Union
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  [Disjoint Set Union](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DisjointSetUnion/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DisjointSetUnion/DSU.cpp)|
+
+
+
+- ## Dynamic Programming
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Rod Cutting](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#rod-cutting)   | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/RodCutting.cpp)|
+| 2  | [Equal Sum Partition Problem](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#equal-sum-partition-problem)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/Equal_Sum_Partition.cpp)|
+| 3  | [Shortest Common Super-sequence](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#shortest-common-super-sequence)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/ShortestCommonSuperSequence.cpp)|
+| 4  | [Trapping Rain Water Problem](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#trapping-rain-water-problem) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/TrappingRainWater.cpp)|
+| 5  | [Longest Common Subsequence Problem](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#longest-common-subsequence-problem)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/LongestCommonSubsequence.cpp)|
+| 6  | [Egg Dropping Puzzle](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#egg-dropping-puzzle)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/EggDroppingPuzzle.cpp)|
+| 7  | [Climbing Stairs](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#climbing-stairs) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/ClimbingStairs.cpp)|
+| 8  | [Min Cost Climbing Stairs](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#min-cost-climbing-stairs)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/MinCostClimbingStairs.cpp)|
+| 9  | [Unique Paths](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#unique-paths)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/UniquePaths.cpp)|
+| 10  | [Unique Paths II](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#unique-paths-ii)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/UniquePaths2.cpp)|
+| 11  | [Minimum Falling Path Sum](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#minimum-falling-path-sum)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/MinimumFallingPathSum.cpp)|
+| 12  | [Knapsack with Duplicate Items](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#knapsack-with-duplicate-items)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/KnapsackwithDuplicateItems.cpp)|
+| 13  | [Minimum number of deletions and insertions required](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#minimum-number-of-deletions-and-insertions-required-to-transform-one-string-into-another)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/MinimumInsertionDeletion.cpp)|
+| 14  | [Coin Change](https://github.com/Lakhankumawat/LearnCPP/tree/main/D-DynamicProgramming#coin-change)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/CoinChange.cpp)|
+| 15  | [Kadane's Algorithm](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/Kadane's%20Algorithm/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/Kadane's%20Algorithm/Kadane's%20Algorithm.cpp)|
+| 16  | 0-1 KnapSack  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/01KnapSack.cpp)|
+| 17  | Traveling Sales Person | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/TravelingSalesPerson.cpp)|
+| 18  | Subset Sum  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/SubsetSum.cpp)|
+| 19 |  Minimun Insertions form Palindrome | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/D-DynamicProgramming/Minimum_insertions_form_palindrome.cpp)|
+
+
+
+- ## Extra
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  Turtle | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/E-Extra/turtle.cpp)|
+| 2  | Projectile  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/E-Extra/Projectile.cpp)|
+| 3 |  Design | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/E-Extra/Design.cpp)|
+
+
+
+
+- ## Graph Algorithms
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Multistage Graph Shortest Path](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GraphAlgorithms/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GraphAlgorithms/MultistageGraphShortestPath.cpp)|
+| 2  | Bellman Ford  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GraphAlgorithms/S-SingleSourceShortestPath/Bellman_Ford.cpp)|
+| 3  | Floyd Warshall  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GraphAlgorithms/S-SingleSourceShortestPath/floyd_warshall.cpp)|
+| 4  | Dijsktra Single Source Shortest Path  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GraphAlgorithms/S-SingleSourceShortestPath/DijsktraSSSp.cpp)|
+
+
+
+- ## Graphs
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | Articulation Points  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/ArticulationPoints.cpp)|
+| 2  | Graph Coloring  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/GraphColoring.cpp)|
+| 3  |  [Check Bipartite](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/B-BipartiteGraph/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/B-BipartiteGraph/checkBipartite.cpp)|
+| 4  | [Add and delete edge of directed graph in an adjacency matrix](https://github.com/Lakhankumawat/LearnCPP/tree/main/G-Graphs/I-Implementation#add-and-delete-edge-of-directed-graph-in-adjacency-matrix)   | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/I-Implementation/DelAddEdgeAdjacencyMatrix.cpp)|
+| 5  | [create and display an adjacency matrix](https://github.com/Lakhankumawat/LearnCPP/tree/main/G-Graphs/I-Implementation#adjacency-matrix)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/I-Implementation/AdjacencyMatrix.cpp)|
+| 6 | Adjacency List  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/I-Implementation/AdjacencyList.cpp)|
+| 7  | Adjacency List Using Hashmap | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/I-Implementation/AdjListUsingHashmap.cpp)|
+|  8 |  Prims | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/M-MinimumSpanningTree/Prims.cpp)|
+|  9 | [Prims using Priority Queue](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/M-MinimumSpanningTree/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/M-MinimumSpanningTree/primsPriorityQueue.cpp)|
+| 10  | Kruskal  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/M-MinimumSpanningTree/Kruskal.cpp)|
+| 11  | [kruskal DSU](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/M-MinimumSpanningTree/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/M-MinimumSpanningTree/kruskalDSU.cpp)|
+| 12  | [Ford Fulkerson](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/N-NetworkFlow/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/N-NetworkFlow/fordFulkerson.cpp)|
+| 13  | Breadth First Search  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/T-TraversalInGraphs/BreadthFirstSearch.cpp)|
+| 14  | Depth First Search  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-Graphs/T-TraversalInGraphs/DepthFirstSearch.cpp)|
+
+
+- ## Greedy Algorithms
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Optimal Merge Pattern](https://github.com/Lakhankumawat/LearnCPP/tree/main/G-GreedyAlgorithms#Optimal-Merge-Pattern)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GreedyAlgorithms/OptimalMergePattern.cpp)|
+| 2  | [Huffman Coding](https://github.com/Lakhankumawat/LearnCPP/tree/main/G-GreedyAlgorithms#Huffman-Coding)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GreedyAlgorithms/HuffmanCoding.cpp)|
+| 3  | Fractional KnapSack  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GreedyAlgorithms/FractionalKnapsack.cpp)|
+| 4  | Job Scheduling  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GreedyAlgorithms/JobSequencing_with_Deadlines.cpp)|
+| 5  | Busyman Problem | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/G-GreedyAlgorithms/BusyManProblem.cpp)|
+
+
+
+
+- ## HashMap
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [HashMaps](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/README.md#HashMaps)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/HashMaps.cpp)|
+| 2  | [Map](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/README.md#Map) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/Map.cpp)|
+| 3  | [Multimap](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/Multimap.cpp)|
+|  4 | [UnorderedMap](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/UnorderedMap.cpp)|
+| 5  | [UnorderedMaps CustomHashmaps OperatorOverloading](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/README.md#UnorderedMaps-CustomHashmaps-OperatorOverloading)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/UnorderedMaps-CustomHashmaps-OperatorOverloading.cpp)|
+| 6  | [Set](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/Set%26Unordered_Set/readme.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/Set%26Unordered_Set/set.cpp)|
+|  7 | [Unordered Set](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/Set%26Unordered_Set/readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-HashMap/Set%26Unordered_Set/unordered_set.cpp)|
+
+
+
+- ## Heap
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [k largest](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/README.md#k-largest-elements)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/klargest.cpp)|
+| 2  | [Min Heap](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/README.md#k-largest-elements)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/MinHeap.cpp)|
+| 3  | [Max Heap](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/README.md#k-largest-elements)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/MaxHeap.cpp)|
+| 4  | Heapify  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/Heapify.cpp)|
+| 5  | Heap Sort  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/H-Heap/HeapSort.cpp)|
+
+
+
+
+- ## Linked List
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  [Singly Linked List](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#singly-linked-list) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/LinkedListOperations.cpp)|
+|  2 | [Removing Duplicates](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#removing-duplicates)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/RemovingDuplicates.cpp)|
+|  3 |  [Searching in a linked list](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#searching-in-a-linked-list) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/SearchingInALinkedList.cpp)|
+| 4  | [Reverse a Linked List](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#reverse-a-linked-list)   | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/ReverseLinkedList.cpp)|
+| 5  | [Middle element of the linked list](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#middle-element-of-the-linked-list)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/middleElementOfLinkedList.cpp)|
+| 6  | [Palindrome linked list](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#palindrome-linked-list)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/PalindromeLinkedList.cpp)|
+| 7  | [Segregate Even Odd](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/S-SinglyLinkedList#segregate-even-odd)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/S-SinglyLinkedList/SegregateEvenOdd.cpp)|
+| 8  | [Merge K Sorted LinkedList](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/Merge%20K%20Sorted%20LinkedList/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/Merge%20K%20Sorted%20LinkedList/merge_k_ll.cpp)|
+| 9  | [LRU Cache](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/LRU%20Cache/readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/LRU%20Cache/LRUCache.cpp)|
+| 10  | Circular Linked Lists  | [Explanation](https://github.com/Lakhankumawat/LearnCPP/tree/main/L-LinkedList/C-CircularLinkedList)|
+| 11  |  [Reverse a Doubly Linked List](https://github.com/Lakhankumawat/LearnCPP/blob/main/L-LinkedList/D-DoublyLinkedList/README.md) | [Solution]()|
+
+
+
+- ## Mathematical Algorithms
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [SegmentedSieve](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/S-SegmentedSieve/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/S-SegmentedSieve/SegmentedSieve.cpp)|
+|  2 | [Armstrong number](https://github.com/Lakhankumawat/LearnCPP/tree/main/M-MathematicalAlgorithms#armstrong-number)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/ArmstrongNumber.cpp)|
+| 3  | Eulid Greatest Common Divisor  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/EulidGreatestCommonDivisor.cpp)|
+|4   | Prime Sum  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/primeSum.cpp)|
+|  5 | [Factorial Larger Numbers](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/Factorial%20of%20large%20numbers/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/Factorial%20of%20large%20numbers/FactorialLargeNumbers.cpp)|
+| 6  | [Juggler Sequence](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/JugglerSequence/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/M-MathematicalAlgorithms/JugglerSequence/JugglerSequence.cpp)|
+
+
+- ## Miscellaneous
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+|  1 | [Exception Handling](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/README.md)   | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/Exception_Handling.cpp)|
+| 2  | [Lambda Functions](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/Lambda_Functions.cpp)|
+| 3  | [Friend Class](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/F-Friend/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/F-Friend/FriendClass.cpp)|
+| 4  | [Friend Function](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/F-Friend/README.md#ffunction)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Miscellaneous/F-Friend/FriendFunction.cpp)|
+
+
+
+- ## Priority Queue
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+|  1 | Priority Queue  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-PriorityQueue/PriorityQueue.cpp)|
+|  2 | Priority Queue STL Comparator  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-PriorityQueue/PriorityQueueSTLComparator.cpp)|
+
+
+
+
+- ## Problem Statements and Solution
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+|  1 | [Aggressive Cows](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/2-Level%202/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/2-Level%202/AggressiveCows.cpp)|
+| 2  |  Pair with given sum in sorted doubly linked list | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/two_pointer_on_doubly_linked_list.cpp)|
+|  3 | Maximum of all Subarrays of size k  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/max_of_size_k_window.cpp)|
+|  4 | Lowercase to Uppercase  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/LowercaseToUppercase.cpp)|
+| 5  | Counting Frequencies  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/P-Problem%20Statements%20%26%20Solution/1-Level%201/CountingFrequencies.cpp)|
+
+
+
+- ## Queue
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  [Queue Using Linked List](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/QueueUsingLinkedList.cpp)|
+| 2  | [Queue Using Array](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/QueueUsingArray.cpp)|
+| 3  | [Queue STL]  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/QueueSTL.cpp)|
+| 4  | [Circular Queue Using LinkedList](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/CircularQueueUsingLinkedList.cpp)|
+| 5  |  [Reverse Queue](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/ReverseQueue.cpp)|
+|  6 | [Circular Queue Using Array](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/Q-Queue/CircularQueueUsingArray.cpp)|
+
+
+
+
+- ## Recursion
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+|  1 | [Inversion Count](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/Inversion_Count.cpp)|
+| 2  | [Replace PI](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/Replace_%CF%80.cpp)|
+| 3  |  [Tower of Hanoi](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/README.md)| [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/TowerofHanoi.cpp)|
+| 4  | [Calculating GCD and LCM by Recursion](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/Recursive_GCD_LCM.cpp)|
+| 5  | [Taylor series by Horner's rule](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/TaylorsSerieHornersRule.cpp)|
+| 6  | [Types of Recursion](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/Types%20of%20Recursion/TreeRecursion.cpp)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/R-Recursion/Types%20of%20Recursion/README.md)|
+
+
+- ## STL
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  [Pairs STL](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/P-Pairs/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/P-Pairs/PairsSTL.cpp)|
+|  2 | Lists-Operation  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/C-Containers/L-List/Lists-Operations.cpp)|
+|  3 | Lists  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/C-Containers/L-List/Lists.cpp)|
+|  4 | Multiset  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/C-Containers/M-Multiset/MultiSetSTL.cpp)|
+|  5 | Sets  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/C-Containers/S-Set/Sets.cpp)|
+|  6 | [Vector](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-STL/C-Containers/V-Vector/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-STL/C-Containers/V-Vector)|
+
+
+
+- ## Searching Algorithms
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+|1   |  [Linear Search](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SearchingAlgorithms/README.md#linear-search) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SearchingAlgorithms/SimpleLinearSearch.cpp)|
+| 2  | [Binary Search](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SearchingAlgorithms/README.md#binary-search)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SearchingAlgorithms/BinarySearch.cpp)|
+| 3  | [Search Element in a Rotated Sorted Array](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SearchingAlgorithms/README.md#search-element-in-rotated-sorted-array)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SearchingAlgorithms/SearchElementRotatedSortedArray.cpp)|
+
+
+
+- ## Sets
+
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+|  1 | [Cartesian Product of two Set](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Sets/README.md#cartesian-product-of-two-set)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Sets/Cartesian_Product.cpp)|
+| 2  | [Union of two sets](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Sets/README.md#Union-of-two-sets)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Sets/SetUnion.cpp)|
+
+
+
+- ## Sorting Algorithms
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Bubble Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#bubble-sort)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/BubbleSort.cpp)|
+| 2  | [Insertion Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#insertion-sort)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/InsertionSort.cpp)|
+| 3  | [Quick Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#quick-sort)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/QuickSort.cpp)|
+| 4  | [Merge Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#merge-sort)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/MergeSort.cpp)|
+| 5  | [Counting Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#counting-sort)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/CountingSort.cpp)|
+| 6  | [Bucket Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#bucket-sort) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/BucketSort.cpp)|
+| 7  | [DNF Sort](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-SortingAlgorithms#dnf-sort)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/DutchNationalFlagSort.cpp)|
+| 8  | Selection Sort  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-SortingAlgorithms/SelectionSort.cpp)|
+
+
+
+
+- ## Stack
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Infix to postfix conversion](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-Stack#infix-to-postfix-conversion)   | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/InfixToPostfix.cpp)|
+| 2  | [Redundant Parenthesis](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/RedundantParenthesis/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/RedundantParenthesis/RedudantParenthesis.cpp)|
+| 3  | [Stack ADT using Linked List](https://github.com/Lakhankumawat/LearnCPP/tree/main/S-Stack#stack-adt-using-linked-list)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/stackADTUsingLL.cpp)|
+|  4 | [Converting decimal number to binary](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/DecimalToBinary.cpp)|
+|  5 |  Stacks Without STL | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/StacksWithoutSTL.cpp)|
+|  6 |  Stacks STL | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/StacksSTL.cpp)|
+|  7 | [Next Greater Element](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/NextGreaterElement/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/NextGreaterElement/nge.cpp)|
+| 8  | [Bracket Balancing Using Stack](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/Bracket%20Balancing%20Using%20Stack/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Stack/Bracket%20Balancing%20Using%20Stack/Bracket_Balancing_using_Stack.cpp)|
+
+
+
+- ## String Algorithms
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  [KMP](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-StringAlgorithms/KMP/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-StringAlgorithms/KMP/kmp.cpp)|
+
+
+
+
+- ## Strings
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  |  Strings | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/Strings.cpp)|
+|  2 | String Toknizer  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/StringToknizer.cpp)|
+|  3  | String Sorting  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/StringSorting.cpp)|
+| 4  | String Reverse  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/StringReverse.cpp)|
+| 5  | [String Comparison](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/README.md#string-comparison)   | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/StringComparison.cpp)|
+|  6 | [Longest Word In Sentence](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/README.md#longest-word-in-sentence-1)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/LongestWordInSentence.cpp)|
+| 7 | [String Palindrome](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/StringPalindrome/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/S-Strings/StringPalindrome/StringPalindrome.cpp)|
+
+
+
+- ## Template
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Class Template](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Template/README.md#classTemplate)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Template/ClassTemplate.cpp)|
+|  2 | [Function Template](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Template/README.md#functionTemplate)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Template/FunctionTemplate.cpp)|
+
+
+- ## Tree
+
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1   | [Ceil Value in BST](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Ceil%20Value%20in%20BST/readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Ceil%20Value%20in%20BST/CeilValue.cpp)|
+| 2  |  [Check Valid BST](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Check%20Valid%20BST/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Check%20Valid%20BST/checkValidBST.cpp)|
+|  3 | [Floor Value in BST](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Floor%20Value%20in%20BST/Readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Floor%20Value%20in%20BST/FloorValueBST.cpp)|
+| 4  | BST | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/BST.cpp)|
+| 5  | [AVL](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/B-BinarySearchTree#avl-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/AVL.cpp)|
+| 6  |  [Array to Bst](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/B-BinarySearchTree#Array-to-Bst) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/Arraytobst.cpp)|
+| 7  | [Construct BST From Preorder Travsersal](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/B-BinarySearchTree#Construct-BST-From-Preorder-Travsersal)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinarySearchTree/ConstructBSTFromPreoderTraversal.cpp)|
+| 8  | [Height of the binary tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/B-BinaryTree#height-of-the-binary-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinaryTree/Height_of_Tree.cpp)|
+|  9 | [Largest Bst in a Binary Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/B-BinaryTree#largest-bst-in-a-binary-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinaryTree/LargestBSTinBT.cpp)|
+|   10 | [Diameter of Binary Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/B-BinaryTree#diameter-of-the-binary-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinaryTree/Diameter.cpp)|
+| 11  | [Number of leaf nodes in binary tree](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinaryTree/Readme.md#number-of-leaf-nodes-in-binary-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/B-BinaryTree/No_of_leaf_nodes.cpp)|
+| 12  | [FenwickTree](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/F-FenwickTree/Readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/F-FenwickTree/K_Query.cpp)|
+|  13 |  [Iterative Preorder and Postorder Traversal of Generic Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/G-GenricTree#Iterative-Preorder-and-Postorder-Traversal-of-Generic-Tree) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/G-GenricTree/IterativePreorderandPostorder.cpp)|
+|  14 | [Level order traversal in a Genric Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/G-GenricTree#Level-order-traversal-in-a-genric-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/G-GenricTree/LevelOrderTraversalOfaGenricTree.cpp)|
+|  15 | [Mirror of a Genric Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/G-GenricTree#Mirror-of-a-genric-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/G-GenricTree/MirrorOfGenricTree.cpp)|
+| 16  | [Diameter of a Genric Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/G-GenricTree#Diameter-of-a-genric-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/G-GenricTree/DiameterofGenricTree.cpp)|
+| 17  |  [Minimum distance between two nodes in a Genric Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/G-GenricTree#minimum-distance-between-two-nodes-in-a-genric-tree) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/G-GenricTree/MinimumDistanceBetweenNodeGT.cpp)|
+| 18  | [Construct and Display Genric Tree](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/G-GenricTree#construct-and-display-genric-tree)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/G-GenricTree/GenricTree.cpp)|
+| 19  | [Diagonal Traversal](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/T-TreeTraversals#diagonal-traversal)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/T-TreeTraversals/DiagonalTraversal.cpp)|
+| 20  | [Morris Traversal](https://github.com/Lakhankumawat/LearnCPP/tree/main/T-Tree/T-TreeTraversals#morris-traversal)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/T-TreeTraversals/Morris_Traversal.cpp)|
+|  21 | Preorder Traversal | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/T-TreeTraversals/preorderTraversal.cpp)|
+| 22  | Postorder Traversal  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/T-TreeTraversals/postorderTraversal.cpp)|
+| 23  | Inorder Traversal  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/T-TreeTraversals/inorderTraversal.cpp)|
+|  24 | Levelorder Traversal  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/T-Tree/T-TreeTraversals/levelorderTraversal.cpp)|
+
+
+
 
 ## Contributors ✨
 
@@ -231,6 +638,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/michaelehab16/"><img src="https://avatars.githubusercontent.com/u/29122581?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Ehab</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=michaelehab" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/shr-code"><img src="https://avatars.githubusercontent.com/u/84399701?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shraddha</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=shr-code" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/SanyaGera"><img src="https://avatars.githubusercontent.com/u/75986201?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanya Gera</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SanyaGera" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/utkarsh006"><img src="https://avatars.githubusercontent.com/u/94545831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Utkarsh Saxena</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=utkarsh006" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AyuBisht"><img src="https://avatars.githubusercontent.com/u/94152085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ayushi Bisht</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=AyuBisht" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/mirette-amin-439b0281/"><img src="https://avatars.githubusercontent.com/u/29145628?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mirette Amin</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=miretteamin" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/LakshayN"><img src="https://avatars.githubusercontent.com/u/67185564?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lakshay Narula</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=LakshayN" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SupriyaKumari08"><img src="https://avatars.githubusercontent.com/u/84588360?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Supriya Kumari </b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SupriyaKumari08" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -243,7 +657,6 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 
 ## Happy Coding !!
-
 <br><br><hr>
   <h6 align="center">© LearnCPP 2022 <br>
   All Rights Reserved</h6>
