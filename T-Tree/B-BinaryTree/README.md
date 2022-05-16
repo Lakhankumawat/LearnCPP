@@ -171,7 +171,7 @@ Given the root of a binary tree, return the length of the diameter of the tree.
  Expected Results -:
  Diameter of the Binary Tree is as follows -:
  4 
--
+
 ```
 ### Explanation
 
@@ -184,7 +184,8 @@ Given the root of a binary tree, return the length of the diameter of the tree.
 - To compute the Diameter efficiently, made use of the pair class of C++, which provides the facility of computing the height of the left subtree as well as of right subtree and the diameter of the respectve subtrees.
 - Found the maximum diameter by comparing the diameter of the left subtree(by recursion) and the right subtree(by recursion) and the sum of the heights of the left subtree and the right subtree.
 ![largest-diameter-of-binary-tree](https://user-images.githubusercontent.com/84433782/159844065-b609c7c4-2d43-4216-bb15-69ccb6f35435.png)
--
+
+
 
 
 ### Algorithm
