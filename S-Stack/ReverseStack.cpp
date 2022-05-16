@@ -48,15 +48,15 @@ int main()
 {
      
     // push elements into the stack
-    st.push('5');
-    st.push('6');
+    st.push('3');
+    st.push('2');
+    st.push('1');
     st.push('7');
-    st.push('8');
      
     cout<<"Previous Stack\n";
      
     // print the old elements
-    cout<<"5"<<" "<<"6"<<" "<<"7"<<" "<<"8"<<endl;
+    cout<<"3"<<" "<<"2"<<" "<<"1"<<" "<<"7"<<endl;
      
     
     reverse();   //functioncall
