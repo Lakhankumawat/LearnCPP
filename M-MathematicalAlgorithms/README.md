@@ -3,7 +3,8 @@
 -[Sieve Of Eratosthenes](#sieve-of-eratosthenes)
 
  -[Armstrong Number](#armstrong-number)
-
+ 
+ -[Neon Number](#neon-number)
 #  Sieve Of Eratosthenes :
 - [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
@@ -102,3 +103,49 @@ Example 2:
 
 ### Time_complexity:
 Time complexity of armstrong number is n.
+
+
+# Neon number:
+  - [Neon Number](#Neon-number)
+  - [Algorithm of neon number](#algorithm-of-neon-number)
+  - [Example of neon number](#Example-of-neon-number)
+  - [Properties](#properties)
+
+### Neon Number:
+
+A neon number is a number where the sum of digits of square of the number is equal to the number. The task is to check and print neon numbers in a range.
+
+![image](<img width="435" alt="Screenshot 2022-05-18 at 1 00 01 AM" src="https://user-images.githubusercontent.com/71934168/168896258-36ecd24e-a7cb-42ba-aa9f-f900f792d38c.png">)
+
+### Algorithm of Neon Number:
+
+1. Calculate the square of the given input number.
+
+2. Initialize sum_digits variable value to 0.
+
+3. Using while loop ,firstly, Get the rightmost digit of variable square by using (square % 10) and add its value to the variable sum_digits.
+Then get rid of the rightmost digit by dividing the square variable with 10. Store the resulting value in square variable.
+Continue till square becomes 0.
+
+4. Check whether the variable sum_digits is equal to input number .
+  If both are equal then the inputNumber is a Neon number.
+  Otherwise, the inputNumber is not a Neon number.
+
+### Example of neon number:
+
+9 is a neon number as:
+
+9 =>
+= (9*9) {Square of number}
+= 81
+= 8+1 {add the digits}
+= 9 
+
+
+Sample Output:
+![image](<img width="1149" alt="Screenshot 2022-05-16 at 10 20 41 PM" src="https://user-images.githubusercontent.com/71934168/168896452-7adf0ff6-338a-4f6a-b342-db9c38ab2a55.png">)
+![image](<img width="1149" alt="Screenshot 2022-05-16 at 10 20 55 PM" src="https://user-images.githubusercontent.com/71934168/168896456-afb67135-f7eb-430d-9358-d2aa5035b638.png">)
+
+### Properties:
+Time complexity of armstrong number is O(1).
+
