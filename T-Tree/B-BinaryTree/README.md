@@ -187,7 +187,6 @@ Given the root of a binary tree, return the length of the diameter of the tree.
 
 
 
-
 ### Algorithm
 
 - Node passed in recursive function is null then return zero.
