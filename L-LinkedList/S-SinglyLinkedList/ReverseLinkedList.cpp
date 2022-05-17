@@ -52,8 +52,14 @@ class LinkedList {
 //Driver Function
 int main() {
   LinkedList listl;
-  for(int i=1;i<=10;i++)
-	listl.push(i);
+  int n,k;
+  cout << "Enter the number of nodes in linked list: ";
+  cin >> n;
+  cout << "Enter the nodes: ";
+  for(int i=1;i<=n;i++){
+    cin >> k;
+    listl.push(k);
+  }
 
   cout << "Given linked list\n";
   listl.print();
