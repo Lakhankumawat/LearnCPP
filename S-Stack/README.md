@@ -322,8 +322,6 @@ Example 2 : Input: St = {5,6,7,8}
 
 # Sort a Stack
 
-![image](https://user-images.githubusercontent.com/94742536/168801681-a0bbfc3e-58da-411e-a54f-11a47d88254f.png)
-
 ## Problem Statement
 Given a stack, the task is to sort it such that the top of the stack has the greatest element.
 
@@ -335,6 +333,9 @@ Example 1 : Input: St = {11,2,32,3,41}
 Example 2 : Input: St = {9,3,28,4,67}
 
             Output: {67,28,9,4,3}
+            
+ ![image](https://user-images.githubusercontent.com/94742536/168801681-a0bbfc3e-58da-411e-a54f-11a47d88254f.png)
+        
 
 ## Algorithm
 - Insert elements into stack.
