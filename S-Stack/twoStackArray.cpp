@@ -105,21 +105,25 @@ int main(){
             case 1: cout << "Enter the data to push : ";
                     cin >> data;
                     push_1(data);
+                    display_1();
                     break;
 
             case 2: cout << "Enter the data to push : ";
                     cin >> data;
                     push_2(data);
+                    display_2();
                     break;
 
             case 3: data = pop_1();
                     if(data != -1)
                         cout << "Popped data is : " << data << endl;
+                    display_1();
                     break;
 
             case 4: data = pop_2();
                     if(data != -1)
                         cout << "Popped data is : " << data << endl;
+                    display_2();
                     break;
 
             case 5: display_1();
