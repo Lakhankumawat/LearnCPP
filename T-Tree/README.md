@@ -1,4 +1,11 @@
 ## [Vertical Order Traversal](T-Tree\T-TreeTraversals\verticalTraversal.cpp)
+#### **Table of Contents -**
+- Introduction
+- Algorithm
+- Complexity
+- Input/Output
+
+#### **Introduction -**
 Vertical Order Traversal ia method of traversing a binary tree from top to bottom and left to right.
 But before understanding Vertical order traversal, we should be aware with the term - *horizontal distance*.<br>
 **Horizontal distance** - Horizontal distance is the distance of the node from the root node. Thus,
