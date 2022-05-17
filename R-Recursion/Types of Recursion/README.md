@@ -11,26 +11,28 @@
 - Using recursive algorithm, certain problems can be solved quite easily.
 - Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
 
+
 ## Different types of the recursion
 
 
 * Direct Recursion.
-* Indirect Recursion.
-* Tail Recursion.
 - [Head Recursion](#head-recursion)
   - [Algorithm](#head-recursion)
   - [Properties](#head-recursion)
   - [Advantages](#head-recursion)
   - [Disadvantages](#head-recursion)
 
-* Direct Recursion.
 - [Indirect Recursion](#indirect-recursion)
   - [Algorithm](#indirect-recursion)
   - [Properties](#indirect-recursion)
   - [Advantages](#indirect-recursion)
   - [Disadvantages](#indirect-recursion)
-* Tail Recursion.
-* Head Recursion.
+- [Tail Recursion](#tail-recursion)
+  - [Algorithm](#tail-recursion)
+  - [Properties](#tail-recursion)
+  - [Advantages](#tail-recursion)
+  - [Disadvantages](#tail-recursion)
+
 
 * Linear recursion.
 - [Tree Recursion](#tree-recursion)
@@ -96,6 +98,27 @@ For Tree Recursion: O(n)
 
 
 
+
+# Tail Recursion
+* Tail Recursion
+ If a recursive function calling itself and that recursive call is the last statement in the function then it’s known as Tail Recursion. After that call the recursive function performs nothing. The function has to process or perform any operation at the time of calling and it does nothing at returning time.
+
+## Algorithm
+ Let’s understand the example by tracing tree of recursive function. That is how the calls are made and how the outputs are produced.
+ ![image](https://user-images.githubusercontent.com/100334178/166622562-760c951c-aa00-4fe0-a107-0563aa98d223.png)
+The tail recursive functions considered better than non tail recursive functions as tail-recursion can be optimized by the compiler. Compilers usually execute recursive procedures by using a stack. This stack consists of all the pertinent information, including the parameter values, for each recursive call. When a procedure is called, its information is pushed onto a stack, and when the function terminates the information is popped out of the stack. Thus for the non-tail-recursive functions, the stack depth (maximum amount of stack space used at any time during compilation) is more. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use.
+
+## Properties
+Time Complexity For Tail Recursion : O(n) 
+Space Complexity For Tail Recursion : O(n)
+
+## Advantages
+Advantage of using tail-recursion := so that the compiler optimize the code and convert it to a non-recursive code. Advantage of non-recursive code over recursive one := the non-recursive code requires less memory to execute than a recursive one. This is because of idle stack frames that the recursion consumes
+
+## Disadvantages
+ - it doesn't save a lot of run time.
+ - As recursion uses stack, for large numbers, memory may become full due to stack full
+
 # Head Recursion
  If a recursive function calling itself and that recursive call is the first statement in the function then it’s known as Head Recursion. There’s no statement, no operation before the call. The function doesn’t have to process or perform any operation at the time of calling and all operations are done at returning time.
 
@@ -128,6 +151,7 @@ Let’s understand the example by tracing tree of recursive function. That is ho
 * It may require a lot of memory space to hold intermediate results on the system stacks.
 Hard to analyze or understand the code.
 * It is not more efficient in terms of space and time complexity.
+
 
 
 # Indirect Recursion
@@ -180,3 +204,4 @@ Let’s understand the example by tracing tree of recursive function. That is ho
 ## Disadvantages
 * A recursive program has greater space requirements than an iterative program as each function call will remain in the stack until the base case is reached.
 * It also has greater time requirements because each time the function is called, the stack grows and the final answer is returned when the stack is popped completely.
+
