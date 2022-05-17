@@ -28,7 +28,7 @@ int main()
       {
          if(a[i]== b[j])
          {
-             c[k]=a[i];
+             c[k]=a[i];      //Copy intersecting elements of set A and B into a new array C
              k++;
          }
         
@@ -36,7 +36,7 @@ int main()
       
     }
 
-   //Printing all the elements in set C (which is union of set A and set B)
+   //Printing all the elements in set C (which is intersection of set A and set B)
    cout<<"Intersection of set A and B is:-\n";
    for(i=0;i<k;i++)
       cout<<" "<<c[i];
