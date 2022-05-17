@@ -18,7 +18,7 @@
 
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-71-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-75-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -643,6 +643,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/mirette-amin-439b0281/"><img src="https://avatars.githubusercontent.com/u/29145628?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mirette Amin</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=miretteamin" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/LakshayN"><img src="https://avatars.githubusercontent.com/u/67185564?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lakshay Narula</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=LakshayN" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SupriyaKumari08"><img src="https://avatars.githubusercontent.com/u/84588360?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Supriya Kumari </b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=SupriyaKumari08" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/gp919934"><img src="https://avatars.githubusercontent.com/u/86097554?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gaurav Patel</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=gp919934" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/nishkarsh800/"><img src="https://avatars.githubusercontent.com/u/94742536?v=4?s=100" width="100px;" alt=""/><br /><sub><b>NISHKARSH SAXENA</b></sub></a><br /><a href="https://github.com/Lakhankumawat/LearnCPP/commits?author=nishkarsh800" title="Code">💻</a></td>
   </tr>
 </table>
 

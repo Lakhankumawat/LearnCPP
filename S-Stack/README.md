@@ -8,6 +8,8 @@
 - [Stack using queues](#stack-using-queues)
 - [Infix to Prefix Notation using stack](#infix-to-prefix-notation-using-stack)
 - [Implementing two stacks using a single array](#implementing-two-stacks-using-a-single-array)
+- [Reverse Stack](#reverse-stack)
+
 
 ## STACK 
 
@@ -293,6 +295,7 @@ Although  this notation is not very readable by humans ,but proved very useful f
 - Space Complexity O(n), where n is the length of expression.
 
 
+
 ## Implementing two stacks using a single array
 
 ### Problem statement : 
@@ -335,3 +338,30 @@ There are 6 methods used in this program :
 ### Disadvantages :
 
 - The size of the array is limited.
+
+# Reverse Stack
+
+## Problem Statement
+You are given a stack St. You have to reverse the stack using recursion.
+
+## Examples
+Example 1 : Input: St = {3,2,1,7,6}
+            Output: {6,7,1,2,3}
+
+Example 2 : Input: St = {5,6,7,8}
+            Output: {8,7,6,5}
+
+## Algorithm
+- We have to reverse a stack using recursion.
+- First, we have called the reverse() function which will reverse our elements till stack is not empty.
+- Then we have called insert() function inside reverse() which would add all elements at bottom of new stack.
+- The insert() function will be the recursive function here.
+- This function take out the topmost element, pop it and recursively call itself to insert elements.
+- At last our original stack would get reversed.
+
+## Time Complexity
+- Time Complexity : O(N^2)
+## Space Complexity
+- Space Complexity : O(N) here N is the recursion stack space.
+
+
