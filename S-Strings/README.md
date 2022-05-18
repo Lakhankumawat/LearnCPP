@@ -99,8 +99,8 @@ Output : Maximum length word: knowledge
 ![Counts the Occurence of particular Chararacter in Sentence](https://www.shristitechlabs.com/wp-content/uploads/2019/05/totalcharacters.png)
 
 ### Examples of count character occurrence
-1. Input : example one !
-  Output : 
+1. - Input : example one !
+   - Output : 
     - Occurrence of charater e in the string is : 3
     - Occurrence of charater x in the string is : 1
     - Occurrence of charater a in the string is : 1
@@ -112,8 +112,8 @@ Output : Maximum length word: knowledge
     - Occurrence of charater n in the string is : 1
     - Occurrence of charater ! in the string is : 1
 
-2. Input : count occurrence
-  Output : 
+2. - Input : count occurrence
+   - Output : 
     - Occurrence of charater c in the string is : 4
     - Occurrence of charater o in the string is : 2
     - Occurrence of charater u in the string is : 2
