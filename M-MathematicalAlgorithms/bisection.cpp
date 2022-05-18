@@ -2,8 +2,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define epsilon 0.01 
-// epsilon be the error in determing roots of a function 
-// take an example of a  function whose solution we have to find
+
+// take an example of a  function whose solution we have to find answer
 // Let function be:  x^3 - x^2  + 2
 double value_of_function(double x)
 {
