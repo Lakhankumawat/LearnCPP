@@ -232,25 +232,29 @@ Note that in a binary tree, the root node is at the depth 0, and children of eac
 
 ### Examples
 
-- Example-1
+##### Example-1
 ![image](https://user-images.githubusercontent.com/75883328/169003203-d780ee3d-5c36-4298-ad69-9855110fa044.png)
 
-- Input: root = [1,2,3,4], x = 4, y = 3
-- Output: false
+Input: root = [1,2,3,4], x = 4, y = 3
 
-- Example-2
+Output: false
+
+
+##### Example-2
 
 ![image](https://user-images.githubusercontent.com/75883328/169003345-74efbcd0-8f86-4448-a2d4-d20a25f69a36.png)
 
-- Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
-- Output: true
+Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
+
+Output: true
 
 ### Algorithm
 
 - If x & y are on same levels and has different parents then they are cousins.
 - So we have to find parents and levels for both x and y.
-- Now, if parents of x is not equal to parents of y and if they are on same level then we'll return true otherwise return false.
 - If value of any node is equal to x then we'll update the parent and the level of x and will do the same for y.
+- Now, if parent of x is not equal to parent of y and if they are on same level then we'll return true otherwise return false.
+
 
 ### Time and Space Complexity
 - Time Complexity = O(n) , since we are iterating over all the n-nodes.
