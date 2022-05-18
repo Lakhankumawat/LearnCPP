@@ -81,6 +81,6 @@ If value f(a)*f(c) < 0 then root lies between a and c. So we check for a and c
 Else If f(b)*f(c) < 0 then root lies between b and c. So we check for  b and c.
                Else given function doesn’t follow one of assumptions.
 
-Time complexicity:
+Time complexity:
    Depends upon the value of a function.
 
