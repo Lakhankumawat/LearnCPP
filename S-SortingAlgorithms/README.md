@@ -31,14 +31,25 @@
        -  [Algorithm](#algorithmofcountingSort)
        - [Properties](#countingSortproperties)
        - [Advantages](#advantagesofcountingSort)
-       - [Disadvantage](#disadvantageofcountingSort)
-
-       
+       - [Disadvantage](#disadvantageofcountingSort)  
   - [Bucket Sort](#bucket-sort)
        - [Algorithm](#bucketsortAlgo)
        - [Properties](#bucketsortProperties)
        - [Advantages](#bucketsortAdvantages)
        - [Disadvantages](#bucketsortDisadvantages)
+
+   - [DNF Sort](#dnf-sort)
+     -  [Algorithm](#algorithm-6)
+     - [Properties](#properties-6)
+     - [Advantages](#advantages-6)
+     - [Disadvantage](#disadvantage-4)
+
+  - [Cycle Sort](#cycle-sort)
+     - [Algorithm](#CycleSortAlgorithm)
+     - [Properties](#CycleSortProperties)
+     - [Advantages](#CycleSortAdvantages)
+     - [Disadvantage](#CycleSortDisadvantages)
+     -[PracticeProblems](#CycleSortpractice-problems)
  
 # Sorting Algorithms
 
@@ -458,3 +469,140 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - Can’t apply it to all data types since a suitable bucketing technique is required. Bucket sort’s efficiency is dependent on the distribution of the input values, thus it’s not worth it if your data are closely grouped.In many situations, you might achieve greater performance by using a specialized sorting algorithm like radix sort, counting sort, or burst sort instead of bucket sort.
 
 - Bucket sort’s performance is determined by the number of buckets used, which may need some additional performance adjustment when compared to other algorithms.
+
+    
+## DNF Sort
+
+DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is specially designed for only the array which contain numbers `0's` `1's` and `2's` only.
+    
+![image](https://user-images.githubusercontent.com/86917304/166096608-225a0941-cc06-47a2-a67d-df45a15797b0.png)
+
+
+### Algorithm
+
+1. Initialize the `low = 0` , `mid = 0` and `high = size - 1`.
+2. Traverse the array from starting to last till mid is less than equal to high.
+3. If the element is 0 then swap the element with the element at index low and increase low and mid by 1.
+4. If the element is 1 then increase mid by 1.
+5. If the element is 2 then swap the element with the element at index high and decrease the high by 1.
+
+- **Approach**
+
+  **The Array is divided into four Sections**
+
+  - `a[1 to low-1]` for zeroes and as repect to flag (red in Dutch Flag).
+  - `a[low to mid-1]` for ones and as repect to flag (white).
+  - `a[mid to high]` no change.
+  - `a[high+1 to n(size)]` for twos and as respect to flag (blue).
+
+### Properties
+
+- Time Complexities
+  - Worst case time : O(n)
+  - Best case time : O(n)
+  - Average case time : O(n)
+- Auxillary Space : O(1)
+- In-place : No
+- Stable : Yes
+
+### Advantages
+
+- The DNF algorithm can be extended to four, or even more colours.
+- Can we used as an alternative to find two different elements `a1` and `a2` , from the array `a` such that `a1<a2`.
+
+### Disadvantage
+
+- Problem was restricted by allowing the inspection of the color of each element only once.
+
+-----------
+
+
+
+### Cycle Sort
+
+- Cycle sort is a comparison based sorting algorithm which forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array.
+- It is an in-place and unstable sorting algorithm.
+
+- It is optimal in terms of number of memory writes. It minimizes the number of memory writes to sort. Each value is either written zero times, if it’s already in its correct position, or written one time to its correct position.
+
+- It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array.
+
+Here, array elements: {30, 20, 10, 40, 60, 50}
+![cycle-sort working image](https://user-images.githubusercontent.com/84588360/168461077-f38dc4b5-83b1-4549-9df8-1aaf57364e3b.png)
+
+# CycleSortAlgorithm
+
+### Algorithm
+
+- An array of n distinct elements is to be considered.
+
+- An element a is given, index of a can be calculated by counting the number of elements that are smaller than a.
+
+- If the element is found to be at its correct position, simply leave it as it is.
+
+- Otherwise, find the correct position of a by counting the total number of elements that are less than a. where it must be present in the sorted array. The other element b which is replaced is to be moved to its correct position. This process continues until we got an element at the original position of a.
+
+### Pseudocode
+
+    Begin
+    for start := 0 to n – 2 do
+    item := arr[start]
+    pos := start
+    for i := start + 1 to n-1 do
+      if arr[i] < item then
+         pos:= pos+1
+    done
+
+    if pos = start then
+        ignore lower part, go for next iteration
+    while item = arr[pos] do
+        pos := pos+1
+    done
+
+    if pos != start then
+        swap arr[pos] with item
+    while pos != start do
+        pos := start
+        for i := start + 1 to n-1 do
+               if arr[i] < item then
+                    pos:= pos+1
+        done
+
+        while item = arr[pos]
+               pos := pos +1
+        if item != arr[pos]
+               swap arr[pos] and item
+       done
+      done
+    End
+
+# CycleSortProperties
+
+### Properties
+- Time Complexity: O(n^2) 
+- Space Complexity: O(1)
+- In-place : Yes
+- Stable : No
+
+# CycleSortAdvantages
+
+### Advantages
+
+- Cycle Sort offers the advantage of little or no additional storage.
+
+- It is an in-place sorting Algorithm.
+
+- It is optimal in terms of number of memory writes. It makes minimum number of writes to the memory and hence efficient when array is stored in EEPROM or Flash. Unlike nearly every other sort (Quick , insertion , merge sort), items are never written elsewhere in the array simply to push them out of the way of the action. Each value is either written zero times, if it's already in its correct position, or written one time to its correct position.This matches the minimal number of overwrites required for a completed in-place sort.
+
+# CycleSortDisadvantages
+
+### Disadvantage
+- It is not mostly used because it has more time complexity (i.e O(n^2)) than any other comparison sorting algorithm.
+
+# CycleSortpractice-problems
+
+### Link to practice problems
+[CycleSort practice problems](https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/07-sorting.md)
+
+--------
+--------
