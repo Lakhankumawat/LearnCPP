@@ -1,4 +1,5 @@
 <!-- Table of contents  -->
+# Table of content
 ## String Comparision
 - [String Comparison](#string-comparison)
 - [Example](#example)
@@ -10,6 +11,14 @@
 - [Example](#examples)
 - [Approach](#approach)
 - [Time and Space Complexity](#time-and-space-complexity)
+
+## Count the Occurence of particular Chararacter in Sentence
+- [Counts the Occurence of particular Chararacter in Sentence](#counts-the-occurence-of-particular-chararacter-in-sentence)
+- [Code](CountCharOccurrence.cpp)
+- [Examples of count character occurrence](#examples-of-count-character-occurrence)
+- [Algorithm of count character occurrence](#algorithm-of-count-character-occurrence)
+- [Properties of count character occurrence](#properties-of-count-character-occurrence)
+    
 
 
 # String Comparison:
@@ -81,3 +90,65 @@ Output : Maximum length word: knowledge
 
 - **Time Complexity :-** O(n) n is the length of string or sentence.
 - **Space Complexity :-** O(n) n is the length of sentence.
+
+## Counts the Occurence of particular Chararacter in Sentence
+- In this problem the cout of occurrence of every character present in the input sentence is displayed .
+
+<!-- image to help better explain the concept -->
+
+![Counts the Occurence of particular Chararacter in Sentence](https://www.shristitechlabs.com/wp-content/uploads/2019/05/totalcharacters.png)
+
+### Examples of count character occurrence
+1. Input : example one !
+  Output : 
+    - Occurrence of charater e in the string is : 3
+    - Occurrence of charater x in the string is : 1
+    - Occurrence of charater a in the string is : 1
+    - Occurrence of charater m in the string is : 1
+    - Occurrence of charater p in the string is : 1
+    - Occurrence of charater l in the string is : 1
+    - Occurrence of charater   in the string is : 2
+    - Occurrence of charater o in the string is : 1
+    - Occurrence of charater n in the string is : 1
+    - Occurrence of charater ! in the string is : 1
+
+2. Input : count occurrence
+  Output : 
+    - Occurrence of charater c in the string is : 4
+    - Occurrence of charater o in the string is : 2
+    - Occurrence of charater u in the string is : 2
+    - Occurrence of charater n in the string is : 2
+    - Occurrence of charater t in the string is : 1
+    - Occurrence of charater   in the string is : 1
+    - Occurrence of charater r in the string is : 2
+    - Occurrence of charater e in the string is : 2
+    - Occurrence of charater n in the string is : 1
+
+### Algorithm of count character occurrence
+```
+countEachChar(str){
+1. initialized counter array of 256 size
+
+2. for 0 to lenght of string do
+
+  - increment element for particular characters
+  - i++
+
+3. initialized array of string size
+
+4. for 0 to lenght of string do
+  - array[i]=str[i];
+  - int flag =0;
+  - for 0 to i do
+    - if str[i]=array[j] then flag++
+    - j++
+  - display character count of occurrence only for flag value 1 so that all character occurrence display only once
+}
+
+```
+
+### Properties of count character occurrence
+
+- Time Complexity: O(n^2), where n is the size of sentence .
+
+- Space Complexity: O(n) , where n is the size of sentence .
