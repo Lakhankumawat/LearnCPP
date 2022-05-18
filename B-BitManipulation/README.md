@@ -35,7 +35,7 @@ Algorithm that uses bit masking to generate all possible subsets from a given ar
 # Count Set Bits
 
 ## Problem Statement 
-Given a positive integer N, print count of set bits in it. 
+Given a positive integer N, print count of set bits in it. Set Bits are the no. of bits that are 1.
 
 ## Examples
 Example 1 : Input : N = 6
@@ -50,9 +50,11 @@ Example 2 :  Input : N = 8
 
             
 ## Algorithm
+   - This algorithm is of fast approach as mentioned in code.
 - Given a number N.
-- Run the loop till number is not 0.
+- Run the while loop till number is greater than 0.
 - Do Bitwise AND operation of that number to its preceding number.
+- Assign the result to that original number.
 - Increment the counter by 1.
 - Return the counter.
 
