@@ -1,6 +1,7 @@
 # Table of Content 
-- [Union of two sets](#Union-of-two-sets)
+- [Union of two sets](#union-of-two-sets)
 - [Cartesian Product of two Set](#cartesian-product-of-two-set)
+- [Intersection of two Set](#intersection-of-sets)
 
 # Union of two sets
 - The union of a two of sets is the set of all elements in the both the sets. It is one of the fundamental operations through which sets can be combined and related to each other. 
@@ -64,3 +65,34 @@ Suppose, if A and B are two non-empty sets, then the Cartesian product of two se
         print `{A[i],B[j]}`
 
  - **Time Complexity** for finding Cartesian Product is n^2 
+
+---
+
+# Intersection of sets
+
+The intersection of two sets A and B is the set of all elements which are common in both sets as same in both A and B set , The intersection of A and B is denoted as `A ∩ B`.
+
+- If Any of one set is empty then the intersection of set A and B is defined as `null or fi` and we can represent as `A ∩ B = φ` these sets are called **disjoint sets**.
+
+![image](https://user-images.githubusercontent.com/86917304/168950618-3b5da193-ead6-4a94-a793-4d87de887924.png)
+
+## Properties
+
+- Commutative Law : `A ∩ B = B ∩ A`
+- Associative law : `(A ∩ B) ∩ C = A ∩ (B ∩ C)`
+- Law of φ and U : `φ ∩ A = φ, U ∩ A = A`
+- Distributive law : `A ∩ (B U C) = (A ∩ B) U (A ∩ C)`
+- Idempotent law : `A ∩ A = A`
+
+## Approach
+
+- Firstly We sort both the array in _ascending order_.
+- Then we traverse to both array with two pointer approach.
+- If `a[i]==b[j]` then we print the element.
+- If `a[i]<b[j]` then simply increase the `i` pointer.
+- If `a[i]>b[j]` then we simply increase the `j` pointer.
+
+## Complexites
+
+- Time Complexity :- O(n+m)
+- Space Complexity :- O(1)
