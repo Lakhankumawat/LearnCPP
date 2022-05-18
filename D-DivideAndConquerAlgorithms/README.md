@@ -1,6 +1,6 @@
 # Table of content
 
-- [Divide and Conquer Algorithim](#divide-and-conqure-algorithm)
+- [Divide and Conquer Algorithm](#divide-and-conquer-algorithm)
    - [Merge Sort](#merge-sort)
       - [Algorithm](#algorithm)
       - [Time Complexity](#time-complexity)
@@ -9,7 +9,7 @@
       - [Disadvantages](#disadvantages)
 
 
-# Divide and Conquer Algorithim
+# Divide and Conquer Algorithm
 
 - A divide and conquer algorithm is a strategy of solving a large problem by:
 - Breaking the problem into smaller sub-problems.
@@ -21,6 +21,8 @@
 - Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm.
 - Using the Divide and Conquer technique, we divide a problem into subproblems. When the solution to each subproblem is ready, we 'combine' the results from the subproblems to solve the main problem.
 - We had to sort an array arr. A subproblem would be to sort a sub-section of this array starting at index l and ending at index r, denoted as arr[l..r].
+
+![Screenshot (637)](https://user-images.githubusercontent.com/98539013/169039682-0e5bcddd-e9ae-4a2c-800a-4f4f36d5857c.png)
 
 
 ### Algorithm
