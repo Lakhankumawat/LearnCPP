@@ -84,6 +84,9 @@ The intersection of two sets A and B is the set of all elements which are common
 - Distributive law : `A ∩ (B U C) = (A ∩ B) U (A ∩ C)`
 - Idempotent law : `A ∩ A = A`
 
+## Pseudo Code
+![image](https://user-images.githubusercontent.com/86917304/169095891-1a6d91dd-cf45-4f3d-be19-d49c58c63faf.png)
+
 ## Approach
 
 - Firstly We sort both the array in _ascending order_.
