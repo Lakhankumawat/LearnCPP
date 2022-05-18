@@ -44,7 +44,7 @@ Example 1 : Input : N = 6
 
 Example 2 :  Input : N = 8
 
-             Output : N = 1
+             Output : 1
              
  ![image](https://user-images.githubusercontent.com/94545831/169095943-17f56cab-2bea-4ce6-bf8a-cbbfb5abfd9c.png)
 
