@@ -22,7 +22,10 @@
     - [Space Complexity](#space-complexity-3)
     - [Advantages](#advantages-1)
     - [Disadvantages](#disadvantages-1)
-
+- [Word Search](#Word-Search) 
+    - [Time Complexity](#time-complexity-4)
+    - [Space Complexity](#space-complexity-4)
+   
 
 ##  N Queen Problem
 
@@ -169,5 +172,29 @@ A Hamiltonian cycle also called a Hamiltonian circuit, is a graph cycle (i.e., c
 ### Disadvantages
 - Backtracking is not the best solution for Subset Sum Problem. 
 - Time Consuming.
+
+## Word Search
+Given an m x n grid of characters board and a string word, return true if word exists in the grid.
+
+
+
+ 
+- Given an m x n grid of characters board and a string word, return true if word exists in the grid.
+- The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+![image](https://user-images.githubusercontent.com/65586827/169122037-12302b3d-b2c0-49f2-93cc-519c76ebd694.png)
+
+
+
+### Time Complexity
+```
+- O(2n)
+- This time complexity is exponential because for each state, 2 recursion calls are made.
+ ``` 
+### Space Complexity
+```
+-O(1)
+-As no extra space is required, therefore space complexity is constant. However, if we include the space used in the recursive stack then the space complexity is O(n).
+ ``` 
 
 
