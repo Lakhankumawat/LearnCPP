@@ -16,10 +16,14 @@
 - [Sort an Array in wave form](#sort-an-array-in-wave-form)
 - [Print the matrix in wave form](#print-the-matrix-in-wave-form)
 - [Spiral Traversal of Matrix](#spiral-traversal)
+- [Pascal Triangle](#pascal-triangle)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
+
+
 Question:<br>
+
 You are given a string Str of length N. Each character of the string is a base 10 digit.
 
 Your task is to find the total number of substrings of Str such that the number denoted by the string Str[i...j] is divisible by 6. Since that result can be a very large return it is modulo 10^9+7.
