@@ -7,6 +7,7 @@
 - [Stack ADT using linked list](#stack-adt-using-linked-list)
 - [Stack using queues](#stack-using-queues)
 - [Infix to Prefix Notation using stack](#infix-to-prefix-notation-using-stack)
+- [Reverse Stack](#reverse-stack)
 
 ## STACK 
 
@@ -292,15 +293,29 @@ Although  this notation is not very readable by humans ,but proved very useful f
 - Space Complexity O(n), where n is the length of expression.
 
 
-### Remove Outermost Parentheses
 
-```
-A valid parentheses string is either empty "", "(" + A + ")", or A + B, where A and B are valid parentheses strings, and + represents string concatenation.
+# Reverse Stack
 
-For example, "", "()", "(())()", and "(()(()))" are all valid parentheses strings.
-A valid parentheses string s is primitive if it is nonempty, and there does not exist a way to split it into s = A + B, with A and B nonempty valid parentheses strings.
+## Problem Statement
+You are given a stack St. You have to reverse the stack using recursion.
 
-Given a valid parentheses string s, consider its primitive decomposition: s = P1 + P2 + ... + Pk, where Pi are primitive valid parentheses strings.
+## Examples
+Example 1 : Input: St = {3,2,1,7,6}
+            Output: {6,7,1,2,3}
 
-Return s after removing the outermost parentheses of every primitive string in the primitive decomposition of s.
- ```
+Example 2 : Input: St = {5,6,7,8}
+            Output: {8,7,6,5}
+
+## Algorithm
+- We have to reverse a stack using recursion.
+- First, we have called the reverse() function which will reverse our elements till stack is not empty.
+- Then we have called insert() function inside reverse() which would add all elements at bottom of new stack.
+- The insert() function will be the recursive function here.
+- This function take out the topmost element, pop it and recursively call itself to insert elements.
+- At last our original stack would get reversed.
+
+## Time Complexity
+- Time Complexity : O(N^2)
+## Space Complexity
+- Space Complexity : O(N) here N is the recursion stack space.
+
