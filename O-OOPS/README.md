@@ -101,6 +101,7 @@ cout<<n1+n2;
 - [Output of Solved Problem](#output-of-solved-problem)
 - [Advantages](#advantages)
 - [Disadvantages](#disadvantages)
+- [Time Complexity](#time-complexity)
 
 
 # Introduction
@@ -117,10 +118,17 @@ Here, the A class constructor is called twice: once when the B class object is c
 ![Inheritance1](https://user-images.githubusercontent.com/87706725/168796785-4124aa2d-42d5-40b2-8132-a4b9e003b01b.png)
 
 # Output of Diamond Inheritance
-On creating an object of Sub-child Class D, we get the following output:
-
-![Diamond1](https://user-images.githubusercontent.com/87706725/168798184-ee79cfdd-567f-492b-9e99-e5a609dc0642.PNG)
-
+On creating an object of Sub-child Class D, webget the following output:
+<br>
+A
+<br>
+B
+<br>
+A
+<br>
+C
+<br>
+D
 
 Here the constructor of class A is called twice. Thus giving rise to ambiguity.
 
@@ -148,9 +156,14 @@ Here we have used the virtual keyword when classes B and C inherit the A class. 
 
 # Output of Solved Problem
 After Using the "virtual" keyword, the Diamond Problem is Solved.
-
-![Diamond2](https://user-images.githubusercontent.com/87706725/168799944-8b2a6427-5aba-4909-9c7b-f196c2a17d4f.PNG)
-
+<br>
+A
+<br>
+B
+<br>
+C
+<br>
+D
 
 Here you can see that the class A constructor is called only once.
 
@@ -161,3 +174,8 @@ Here you can see that the class A constructor is called only once.
 # Disadvantages
 
 1. The disadvantage of Diamond inheritance is that,it leads to a lot of confusion when two base classes implement a method with same name.
+
+# Time Complexity
+
+* **Best Case Time Complexity is** O(1)
+* **Worst Case Time Complexity is** O(n)
