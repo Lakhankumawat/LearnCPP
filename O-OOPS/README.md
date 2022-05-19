@@ -95,51 +95,34 @@ cout<<n1+n2;
 - [Introduction](#introduction)
 - [Problem Statement](#diamond-problem-statement)
 - [Example](#example-of-diamond-inheritance)
-- [Output of Diamond Inheritance](#output-of-diamond-inheritance)
 - [Solution](#solution-of-diamond-problem)
 - [Algorithm](#algorithm)
-- [Output of Solved Problem](#output-of-solved-problem)
 - [Advantages](#advantages)
 - [Disadvantages](#disadvantages)
 - [Time Complexity](#time-complexity)
 
 
-# Introduction
+### Introduction
 The Diamond Problem is an ambiguity that arises in multiple inheritance when two-parent classes inherit from the same grandparent class, and both parent classes are inherited by a single child class.This scenario gives rise to a diamond-shaped inheritance graph and is famously called “The Diamond Problem.”
 
 
-# Diamond Problem Statement
+### Diamond Problem Statement
 Child Class(D) inherits the traits of class A twice—once from B and again from C. This gives rise to ambiguity since the compiler fails to understand which way to go.
 Here, the A class constructor is called twice: once when the B class object is created and next when the C class object is created. The properties of the A class are inherited twice, giving rise to ambiguity.
 
 
-# Example of Diamond Inheritance
+### Example of Diamond Inheritance
 
 ![Inheritance1](https://user-images.githubusercontent.com/87706725/168796785-4124aa2d-42d5-40b2-8132-a4b9e003b01b.png)
 
-# Output of Diamond Inheritance
-On creating an object of Sub-child Class D, webget the following output:
-<br>
-A
-<br>
-B
-<br>
-A
-<br>
-C
-<br>
-D
 
-Here the constructor of class A is called twice. Thus giving rise to ambiguity.
-
-
-# Solution of Diamond Problem
+### Solution of Diamond Problem
 The solution to the diamond problem is to use the "virtual" keyword. We will make the two parent classes (who inherit from the same grandparent class) into virtual classes in order to avoid two copies of the grandparent class in the child class.
 Here we have used the virtual keyword when classes B and C inherit the A class. This is usually called “virtual inheritance," which guarantees that only a single instance of the inherited class (in this case, the A class) is passed on.
 
 ![Inheritance2](https://user-images.githubusercontent.com/87706725/168802641-f0e9b7e4-9824-43a4-adbb-8b16193e8057.png)
 
-# Algorithm
+### Algorithm
 
 * 1<sup>st</sup> START OF THE PROGRAM
 * 2<sup>nd</sup> Create a parent class A & a constructor of that class such that it only prints "Constructor A.
@@ -154,28 +137,15 @@ Here we have used the virtual keyword when classes B and C inherit the A class. 
 * 8<sup>th</sup> STOP 
 
 
-# Output of Solved Problem
-After Using the "virtual" keyword, the Diamond Problem is Solved.
-<br>
-A
-<br>
-B
-<br>
-C
-<br>
-D
-
-Here you can see that the class A constructor is called only once.
-
-# Advantages
+### Advantages
 
 1. By using "virtual" keyword , when two superclasses of a class have a common base class,then constructor is called only once. This resolves the ambiguity.
 
-# Disadvantages
+### Disadvantages
 
 1. The disadvantage of Diamond inheritance is that,it leads to a lot of confusion when two base classes implement a method with same name.
 
-# Time Complexity
+### Time Complexity
 
 * **Best Case Time Complexity is** O(1)
-* **Worst Case Time Complexity is** O(n)
+* **Worst Case Time Complexity is** O(1)
