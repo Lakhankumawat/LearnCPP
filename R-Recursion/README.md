@@ -47,6 +47,17 @@
   - [Time Complexity](#time-complexity-6)
   - [Space Complexity](#space-complexity-6)
 
+- [Power of Three](#power-of-three)
+  - [Examples](#examples-6)
+  - [Algorithm](#algorithm-6)
+  - [Time Complexity](#time-complexity-7)
+  - [Space Complexity](#space-complexity-7)
+
+- [Subsequence K Sum](#subsequence-k-sum)
+  - [Examples](#examples-7)
+  - [Algorithm](#algorithm-7)
+  - [Time Complexity](#time-complexity-8)
+  - [Space Complexity](#space-complexity-8)
 
 
 ## Inversion Count
@@ -380,3 +391,75 @@ Example 2 : Input: n = 5
 ```
 
 
+# Power of three
+
+- [Problem Statement](#problem-statement-2)
+- [Examples](#examples-4)
+- [Algorithm](#algorithm-3)
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-2)
+
+## Problem Statement
+Given an integer n, return true if it is a power of three. Otherwise, return false.
+An integer n is a power of three, if there exists an integer x such that n == 3x.
+
+## Examples
+Example 1 : Input: n = 13
+            Output: false
+
+Example 2 : Input: n = 27
+            Output: true
+
+## Algorithm
+- Given a number we have to determine that it can be represented in the power of 3.
+- If that number is 1 or 3 then obviously, we would be returning true.
+- Else we will check the modulo of that number.
+- If modulo is not equals to 0 , we would return false.
+- Another case may be if given no. is 0 we have to return false.
+- Call the recursive function for n/3 times.
+
+## Time Complexity
+- Time Complexity : O(N)
+## Space Complexity
+- Space Complexity : O(N) here N is the recursion stack space.
+
+
+## Subsequence K sum 
+
+Given an array arr[] of length N and a number K, the task is to find all the subsequences of the array whose sum of elements is K using recursion.
+
+### Examples
+
+```
+Input: arr[] = {1, 2, 3}, K = 3 
+Output: 
+1 2 
+3
+
+Input: arr[] = {17, 18, 6, 11, 2, 4}, K = 6  
+Output: 
+2 4 
+6
+```
+
+### Algorithm
+
+-The idea is to use the jagged array to store the subsequences of the array of different lengths. 
+
+-For every element in the array, there are mainly two choices for it that are either to include in the subsequence or not. 
+
+-Apply this for every element in the array by reducing the sum, if the element is included otherwise search for the subsequence without including it.
+
+![image](https://user-images.githubusercontent.com/67185564/168480484-8fcc3edf-cea6-483b-a355-910da3dad3bb.png)
+
+
+### Time Complexity
+```
+-O(n^2) as this is a recursive solution for the problem. We are using recursion to iterate over all the subsequences and then finding the desired one.
+
+```
+
+### Space Complexity
+```
+ -O(n)
+
+```
