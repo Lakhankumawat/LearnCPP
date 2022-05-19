@@ -102,3 +102,48 @@ Example 2:
 
 ### Time_complexity:
 Time complexity of armstrong number is n.
+
+# Niven/Harshad number:
+  - [Niven/Harshad Number](#Niven-number)
+  - [Algorithm of Niven/Harshad number](#Algorithm-of-Niven-number)
+  - [Example of Niven number](#ExampleforNiven-number)
+  - [Time_complexity](#Time_complexityNivenNumber)
+
+
+## Niven/Harshad Number
+
+A number is said to be a Niven number/Harshad number if the number is divisible by the sum of the digits of the number.
+
+![Niven main](https://user-images.githubusercontent.com/84588360/169084304-b35ca37c-176c-45e0-bf8b-3afefcca6ecc.png)
+
+# Niven-number
+
+## Algorithm
+- ***Step 1 :*** Declare a variable temp(to store the value of entered input) &
+                 a variable sum(to store the sum of digits of the entered number)
+- ***Step 2 :*** Initialize variable temp with value of entered input and sum=0
+- ***Step 3 :*** Extract each digits from the input number and add each digit to sum
+- ***Step 4 :*** If the input number is divisible by sum then that number is Niven/Harshad number 
+
+# Algorithm-of-Niven-number
+
+## Properties
+- Time-complexity : O(n)
+- Space-complexity : O(1)
+
+#Time_complexityNivenNumber
+
+## Examples
+7, 10, 14, 17, 34 are some of the Niven numbers as :
+
+- 126/(1+2+6) = 126/9 = 14
+
+- 153/(1+5+3) = 153/9 = 17
+
+- 408/(4+0+8) = 408/12 = 34
+
+# ExampleforNiven-number
+
+Example (i) ![niven exmpl 1](https://user-images.githubusercontent.com/84588360/169362417-920248e3-17f1-42f9-ab46-3ddb59bbc788.png)
+
+Example (ii) ![niven example 2](https://user-images.githubusercontent.com/84588360/169362412-2d93f818-f00b-49e2-a38e-3fe8a4105393.png)
