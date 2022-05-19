@@ -4,6 +4,8 @@
 
  -[Armstrong Number](#armstrong-number)
 
+ -[Krishnamurthy Number](#armstrong-number)
+
 #  Sieve Of Eratosthenes :
 - [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
   - [Algorithm](#algorithm)
@@ -62,12 +64,12 @@ Solution Link:
  ```
 
 # Armstrong number:
-  - [Armstrong Number](#armstrong-number)
+  - [Armstrong Number Defination](#armstrong-number-defination)
   - [Algorithm of armstrong number](#algorithm-of-armstrong-number)
   - [Example](#example)
   - [Time_complexity](#time_complexity)
 
-### Armstrong number:
+### Armstrong number Defination:
 
 An integer number is called Armstrong number if sum of the cubes of its digits is equal to the number itself.
 
@@ -102,3 +104,47 @@ Example 2:
 
 ### Time_complexity:
 Time complexity of armstrong number is n.
+
+
+
+
+# Krishnamurthy number:
+  - [Krishnamurthy Number](#Krishnamurthy-number)
+  - [Algorithm of Krishnamurthy number](#algorithm-of-Krishnamurthy-number)
+  - [Example of Krishnamurthy number](#example-of-Krishnamurthy-number)
+  - [Time_complexity_Krishnamurthy_number](#Time_complexity_Krishnamurthy_number)
+
+### Krishnamurthy number:
+
+A Krishnamurthy number is a number whose sum of the factorial of digits is equal to the number itself.
+
+
+### Algorithm of Krishnamurthy number:
+
+1. Take the input from user.
+2. Calculate the factorial of each digit of the input.
+3. Sum up all the factorials we calculated in step2.
+4. Check if (sum_of_factorials == input number).
+5. If statement 4 is true then its a Krishnamurthy number.
+6. Id statement 4 is false then its not a Krishnamurthy number.
+
+### Example of Krishnamurthy number:
+
+145 is a Krishnamurthy number because,
+
+sum of factorial of each digits 
+= 1! + 4! + 5!
+= 1 + 24 + 120 
+= 145
+
+
+Example 1:
+![image](<img width="880" alt="Screenshot 2022-05-19 at 6 05 07 PM" src="https://user-images.githubusercontent.com/71934168/169302431-8a7b2e54-c60d-44fc-8f2c-756463e98856.png">)
+
+Example 2:
+![image](<img width="880" alt="Screenshot 2022-05-19 at 6 05 28 PM" src="https://user-images.githubusercontent.com/71934168/169302496-12e906fa-3409-443f-beab-f92dc0b3c902.png">
+)
+
+
+### Time_complexity_Krishnamurthy_number:
+Time complexity of armstrong number is 1.
