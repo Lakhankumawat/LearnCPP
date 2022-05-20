@@ -102,3 +102,28 @@ Example 2:
 
 ### Time_complexity:
 Time complexity of armstrong number is n.
+
+
+
+
+
+# Bisection Method :-
+It is the binary search method used to find the roots of an equation in a given interval.
+It is also called as the interval halving method.
+The method is based on the Intermediate Value Theorem which states that if f(x) is a continuous function and there are two real numbers a and b such that f(a)*f(b) 0 and f(b) < 0), then it is guaranteed that it has at least one root between them.
+
+### There are some conditions that are pre-assumed:-
+1.	f(x) is a continuous function in interval [a, b]
+2.	f(a) * f(b) < 0
+
+### Procedure:-
+1.	Find middle point c= (a + b)/2 .
+2.	If f(c) == 0, then c is the root of the solution.
+3.	Else f(c) is not equal to. 0
+    If value f(a)*f(c) < 0 then root lies between a and c. So we check for a and c
+    Else If f(b)*f(c) < 0 then root lies between b and c. So we check for  b and c.
+    Else given function doesnt follow one of assumptions.
+  
+**Time Complexity**:- Depends upon The value of a function
+
+ 
