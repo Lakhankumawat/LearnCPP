@@ -101,28 +101,17 @@ Output : Maximum length word: knowledge
 ### Examples of count character occurrence
 1. - Input : example one !
    - Output : 
-     - Occurrence of charater e in the string is : 3
-     - Occurrence of charater x in the string is : 1
-     - Occurrence of charater a in the string is : 1
-     - Occurrence of charater m in the string is : 1
-     - Occurrence of charater p in the string is : 1
-     - Occurrence of charater l in the string is : 1
-     - Occurrence of charater   in the string is : 2
-     - Occurrence of charater o in the string is : 1
-     - Occurrence of charater n in the string is : 1
-     - Occurrence of charater ! in the string is : 1
+     -  "e" : 3
+     -  "x" : 1
+     -  "a" : 1
+     -  "m" : 1
+     -  "p" : 1
+     -  "l" : 1
+     -  " " : 2
+     -  "o" : 1
+     -  "n" : 1
+     -  "!" : 1
 
-2. - Input : count occurrence
-   - Output : 
-     - Occurrence of charater c in the string is : 4
-     - Occurrence of charater o in the string is : 2
-     - Occurrence of charater u in the string is : 2
-     - Occurrence of charater n in the string is : 2
-     - Occurrence of charater t in the string is : 1
-     - Occurrence of charater   in the string is : 1
-     - Occurrence of charater r in the string is : 2
-     - Occurrence of charater e in the string is : 2
-     - Occurrence of charater n in the string is : 1
 
 ### Algorithm of count character occurrence
 ```
@@ -136,7 +125,7 @@ countEachChar(str){
 
 3. initialized array of string size
 
-4. for 0 to lenght of string do
+4. for 0 to length of string do
   - array[i]=str[i];
   - int flag =0;
   - for 0 to i do
