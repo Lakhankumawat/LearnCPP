@@ -100,18 +100,7 @@ Output : Maximum length word: knowledge
 
 ### Examples of count character occurrence
 1. - Input : example one !
-   - Output : 
-     -  "e" : 3
-     -  "x" : 1
-     -  "a" : 1
-     -  "m" : 1
-     -  "p" : 1
-     -  "l" : 1
-     -  " " : 2
-     -  "o" : 1
-     -  "n" : 1
-     -  "!" : 1
-
+   - Output : "e" : 3 , "x" : 1, "a" : 1, "m" : 1,  "p" : 1, "l" : 1,  " " : 2,  "o" : 1, "n" : 1,  "!" : 1
 
 ### Algorithm of count character occurrence
 ```
