@@ -14,6 +14,7 @@
 - [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
 - [Majority Element](#majority-element)
 - [Sort an Array in wave form](#sort-an-array-in-wave-form)
+- [Print the matrix in wave form](#print-the-matrix-in-wave-form)
 - [Spiral Traversal of Matrix](#spiral-traversal)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
@@ -909,6 +910,42 @@ Output:
 Time Complexity: O(nlogn)
 Space Complexity: O(1)
 ```
+# Print the matrix in wave form
+- [Problem Statement](#problem-statement-to-print-in-wave-form)
+- [Sample test case](#sample-input-and-output)
+- [Explanation](#explanation-of-the-problem)
+- [Algorithm](#algorithm-of-the-problem)
+- [Complexity](#time-space-complexity)
+ 
+### Problem Statement to print in wave form
+For a 2D integer array "matrix" of size m x n (where m and n are the number of rows and columns respectively), print the ‘matrix’ in wave order, i.e. print the first column top to bottom, next column bottom to top, and so on.
+### Sample input and output
+```
+Input :
+  1,2,3
+  4,5,6
+  7,8,9
+
+Output : 1 4 7 8 5 2 3 6 9
+
+```
+### Explanation of the problem
+![gssoc](https://user-images.githubusercontent.com/84696772/167357290-3555ff0c-0b64-4421-a2da-9e1306016a46.PNG)
+
+### Algorithm of the problem
+- Run a loop from col_no = 0 to n ( Toal number of columns).
+- If the col_no(current column) is even, then the elements will be printed from top to     bottom.
+  - Run an inner loop from row_no = 0 to m (Total number of rows)
+     Print all the elements.
+- Else if the current row is odd, then the elements will be printed from bottom to top.
+  - Run another inner loop from row no = m - 1 to 0
+  - Print all the elements.
+  
+### Time space Complexity
+```
+Time Complexity: O(N2)
+Auxiliary Space: O(1)
+```
 # Spiral Traversal Of A Matrix <a name="spiral-traversal"/>
 The Spiral Matrix problem takes a 2-Dimensional array with N rows and M columns as input and prints the elements in spiral order.
 The spiral starts at the top left corner of the input matrix and prints all of the elements it encounters as it loops clockwise towards the centre.
@@ -935,5 +972,4 @@ The spiral starts at the top left corner of the input matrix and prints all of t
     src="https://user-images.githubusercontent.com/84399701/165970628-8115dade-9d6f-4e04-a8d0-99c215b47474.png"
   >
 </p>
-
 

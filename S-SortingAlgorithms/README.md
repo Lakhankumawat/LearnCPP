@@ -43,6 +43,13 @@
      - [Properties](#properties-6)
      - [Advantages](#advantages-6)
      - [Disadvantage](#disadvantage-4)
+
+  - [Cycle Sort](#cycle-sort)
+     - [Algorithm](#CycleSortAlgorithm)
+     - [Properties](#CycleSortProperties)
+     - [Advantages](#CycleSortAdvantages)
+     - [Disadvantage](#CycleSortDisadvantages)
+     -[PracticeProblems](#CycleSortpractice-problems)
  
 # Sorting Algorithms
 
@@ -506,3 +513,96 @@ DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is spe
 ### Disadvantage
 
 - Problem was restricted by allowing the inspection of the color of each element only once.
+
+-----------
+
+
+
+### Cycle Sort
+
+- Cycle sort is a comparison based sorting algorithm which forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array.
+- It is an in-place and unstable sorting algorithm.
+
+- It is optimal in terms of number of memory writes. It minimizes the number of memory writes to sort. Each value is either written zero times, if it’s already in its correct position, or written one time to its correct position.
+
+- It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array.
+
+Here, array elements: {30, 20, 10, 40, 60, 50}
+![cycle-sort working image](https://user-images.githubusercontent.com/84588360/168461077-f38dc4b5-83b1-4549-9df8-1aaf57364e3b.png)
+
+# CycleSortAlgorithm
+
+### Algorithm
+
+- An array of n distinct elements is to be considered.
+
+- An element a is given, index of a can be calculated by counting the number of elements that are smaller than a.
+
+- If the element is found to be at its correct position, simply leave it as it is.
+
+- Otherwise, find the correct position of a by counting the total number of elements that are less than a. where it must be present in the sorted array. The other element b which is replaced is to be moved to its correct position. This process continues until we got an element at the original position of a.
+
+### Pseudocode
+
+    Begin
+    for start := 0 to n – 2 do
+    item := arr[start]
+    pos := start
+    for i := start + 1 to n-1 do
+      if arr[i] < item then
+         pos:= pos+1
+    done
+
+    if pos = start then
+        ignore lower part, go for next iteration
+    while item = arr[pos] do
+        pos := pos+1
+    done
+
+    if pos != start then
+        swap arr[pos] with item
+    while pos != start do
+        pos := start
+        for i := start + 1 to n-1 do
+               if arr[i] < item then
+                    pos:= pos+1
+        done
+
+        while item = arr[pos]
+               pos := pos +1
+        if item != arr[pos]
+               swap arr[pos] and item
+       done
+      done
+    End
+
+# CycleSortProperties
+
+### Properties
+- Time Complexity: O(n^2) 
+- Space Complexity: O(1)
+- In-place : Yes
+- Stable : No
+
+# CycleSortAdvantages
+
+### Advantages
+
+- Cycle Sort offers the advantage of little or no additional storage.
+
+- It is an in-place sorting Algorithm.
+
+- It is optimal in terms of number of memory writes. It makes minimum number of writes to the memory and hence efficient when array is stored in EEPROM or Flash. Unlike nearly every other sort (Quick , insertion , merge sort), items are never written elsewhere in the array simply to push them out of the way of the action. Each value is either written zero times, if it's already in its correct position, or written one time to its correct position.This matches the minimal number of overwrites required for a completed in-place sort.
+
+# CycleSortDisadvantages
+
+### Disadvantage
+- It is not mostly used because it has more time complexity (i.e O(n^2)) than any other comparison sorting algorithm.
+
+# CycleSortpractice-problems
+
+### Link to practice problems
+[CycleSort practice problems](https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/07-sorting.md)
+
+--------
+--------
