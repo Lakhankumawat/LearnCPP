@@ -3,6 +3,8 @@
 -[Sieve Of Eratosthenes](#sieve-of-eratosthenes)
 
  -[Armstrong Number](#armstrong-number)
+ 
+ -[Bisection Method](#bisection-method)
 
 #  Sieve Of Eratosthenes :
 - [Sieve Of Eratosthenes](#sieve-of-eratosthenes)
