@@ -94,7 +94,7 @@ Output: 3
 
 ## Algorithm
 - We have to convert Roman to Decimal.
-- First, we have to declare  and enter a string which will depict the roman numeral.
+- First, we have to declare and enter a string which will depict the roman numeral.
 - Then we have called the romanDec() function which will convert the roman numeral to decimal .
 - In romanDec() function we will loop the string from right to left.
 - We will use prev to keep track of previous value.
