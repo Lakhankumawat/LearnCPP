@@ -15,6 +15,11 @@
        - [Properties](#insertionSortproperties)
        - [Advantages](#advantagesofinsertionSort)
        - [Disadvantage](#disadvantageofinsertionSort)
+  - [Quick Sort](#quick-sort)
+       -  [Algorithm](#algorithmofquickSort)
+       - [Properties](#quickSortproperties)
+       - [Advantages](#advantagesofquickSort)
+       - [Disadvantage](#disadvantageofquickSort)
 
   - [Merge Sort](#merge-sort)
        -  [Algorithm](#algorithmofmergeSort)
@@ -26,14 +31,26 @@
        -  [Algorithm](#algorithmofcountingSort)
        - [Properties](#countingSortproperties)
        - [Advantages](#advantagesofcountingSort)
-       - [Disadvantage](#disadvantageofcountingSort)
-       
+       - [Disadvantage](#disadvantageofcountingSort)  
   - [Bucket Sort](#bucket-sort)
        - [Algorithm](#bucketsortAlgo)
        - [Properties](#bucketsortProperties)
        - [Advantages](#bucketsortAdvantages)
        - [Disadvantages](#bucketsortDisadvantages)
-   
+
+   - [DNF Sort](#dnf-sort)
+     -  [Algorithm](#algorithm-6)
+     - [Properties](#properties-6)
+     - [Advantages](#advantages-6)
+     - [Disadvantage](#disadvantage-4)
+
+  - [Cycle Sort](#cycle-sort)
+     - [Algorithm](#CycleSortAlgorithm)
+     - [Properties](#CycleSortProperties)
+     - [Advantages](#CycleSortAdvantages)
+     - [Disadvantage](#CycleSortDisadvantages)
+     -[PracticeProblems](#CycleSortpractice-problems)
+ 
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -149,10 +166,97 @@ end BubbleSort
 
 - Insertion sort is inefficient against more extensive data sets.
 
-
+---
 ## Quick Sort
+    
+Quicksort is a divide and conquer algorithm. Select a random pivot, put it in its correct position, and sort the left and right part recursively. 
+There are many different versions of quickSort that pick pivot in different ways: 
+1.	Always pick first element as pivot.
+2.	Always pick last element as pivot (implemented)
+3.	Pick a random element as pivot.
+4.	Pick median as pivot.
+
+Technically, quick sort follows the below steps: \
+Step 1 − Make any element as pivot \
+Step 2 − Partition the array on the basis of pivot \
+Step 3 − Apply quick sort on left partition recursively \
+Step 4 − Apply quick sort on right partition recursively 
+
+### Example:
+![image](https://user-images.githubusercontent.com/62667818/161125194-3613bc6f-5e94-44ed-aa96-a36e0514957a.png)
+
+<a name="algorithmofquickSort"></a>
+### Algorithm:
+```
+/**
+* The main function that implements quick sort.
+* @Parameters: array, starting index and ending index
+*/
+quickSort(arr[], start, end)
+{
+    if (start < end)
+    {
+        // pivot_index is partitioning index, arr[pivot_index] is now at correct place in sorted array
+        pivot_index = partition(arr, start, end);
+
+        quickSort(arr, start, pivot_index - 1);  // Before pivot_index
+        quickSort(arr, pivot_index + 1, end); // After pivot_index
+    }
+}
+```
 
 
+```
+/**
+* The function selects the last element as pivot element, places that pivot element correctly in the array in such a way that 
+  all the elements to the left of the pivot are lesser than the pivot and all the elements to the right of pivot are greater than it.
+* @Parameters: array, starting index and ending index
+* @Returns: index of pivot element after placing it correctly in sorted array
+*/
+
+partition (arr[], start, end)
+{
+    // pivot - Element at right most position
+    pivot = arr[end];  
+    i = (start - 1);  // Index of smaller element
+    for (j = start; j <= end-1; j++)
+    {
+        // If current element is smaller than the pivot, swap the element with pivot
+        if (arr[j] < pivot)
+        {
+            i++;    // increment index of smaller element
+            swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i + 1], arr[end]);
+    return (i + 1);
+}
+```
+ <a name="quickSortproperties"></a>                          
+### Properties
+- Time Complexities: 
+  - **Best Case: O(n logn)**, the best case occurs when the partition process always picks the middle element as pivot. 
+  - **Average Case: O(n logn)**, it occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. 
+  - **Worst Case: O(n^2)**, the worst case occurs when the partition process always picks greatest or smallest element as pivot. 
+
+- Space Complexity: \
+  The space complexity for quicksort is **O(log n)**
+    
+- Stable: No
+- InPlace : Yes
+
+   
+<a name="advantagesofquickSort"></a>
+### Advantages
+ - Fast and efficient
+ - On the average it runs very fast, even faster than Merge Sort.
+    
+    
+ <a name="disadvantageofquickSort"></a>
+### Disadvantage
+ - Its running time can differ depending on the contents of the array
+    
+---
 
 ## Merge Sort
 
@@ -256,7 +360,8 @@ begin countSort(arr, n)
 
 - Works for restricted inputs only for a certain range and takes extra space.
 
-    
+
+=======
 ## Bucket Sort
 <a name="#bucket-sort"></a>
     
@@ -364,3 +469,140 @@ The complexity becomes even worse when the elements are in reverse order. If ins
 - Can’t apply it to all data types since a suitable bucketing technique is required. Bucket sort’s efficiency is dependent on the distribution of the input values, thus it’s not worth it if your data are closely grouped.In many situations, you might achieve greater performance by using a specialized sorting algorithm like radix sort, counting sort, or burst sort instead of bucket sort.
 
 - Bucket sort’s performance is determined by the number of buckets used, which may need some additional performance adjustment when compared to other algorithms.
+
+    
+## DNF Sort
+
+DNF Sort (Dutch National Flag Sorting) , This is the sorting method which is specially designed for only the array which contain numbers `0's` `1's` and `2's` only.
+    
+![image](https://user-images.githubusercontent.com/86917304/166096608-225a0941-cc06-47a2-a67d-df45a15797b0.png)
+
+
+### Algorithm
+
+1. Initialize the `low = 0` , `mid = 0` and `high = size - 1`.
+2. Traverse the array from starting to last till mid is less than equal to high.
+3. If the element is 0 then swap the element with the element at index low and increase low and mid by 1.
+4. If the element is 1 then increase mid by 1.
+5. If the element is 2 then swap the element with the element at index high and decrease the high by 1.
+
+- **Approach**
+
+  **The Array is divided into four Sections**
+
+  - `a[1 to low-1]` for zeroes and as repect to flag (red in Dutch Flag).
+  - `a[low to mid-1]` for ones and as repect to flag (white).
+  - `a[mid to high]` no change.
+  - `a[high+1 to n(size)]` for twos and as respect to flag (blue).
+
+### Properties
+
+- Time Complexities
+  - Worst case time : O(n)
+  - Best case time : O(n)
+  - Average case time : O(n)
+- Auxillary Space : O(1)
+- In-place : No
+- Stable : Yes
+
+### Advantages
+
+- The DNF algorithm can be extended to four, or even more colours.
+- Can we used as an alternative to find two different elements `a1` and `a2` , from the array `a` such that `a1<a2`.
+
+### Disadvantage
+
+- Problem was restricted by allowing the inspection of the color of each element only once.
+
+-----------
+
+
+
+### Cycle Sort
+
+- Cycle sort is a comparison based sorting algorithm which forces array to be factored into the number of cycles where each of them can be rotated to produce a sorted array.
+- It is an in-place and unstable sorting algorithm.
+
+- It is optimal in terms of number of memory writes. It minimizes the number of memory writes to sort. Each value is either written zero times, if it’s already in its correct position, or written one time to its correct position.
+
+- It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array.
+
+Here, array elements: {30, 20, 10, 40, 60, 50}
+![cycle-sort working image](https://user-images.githubusercontent.com/84588360/168461077-f38dc4b5-83b1-4549-9df8-1aaf57364e3b.png)
+
+# CycleSortAlgorithm
+
+### Algorithm
+
+- An array of n distinct elements is to be considered.
+
+- An element a is given, index of a can be calculated by counting the number of elements that are smaller than a.
+
+- If the element is found to be at its correct position, simply leave it as it is.
+
+- Otherwise, find the correct position of a by counting the total number of elements that are less than a. where it must be present in the sorted array. The other element b which is replaced is to be moved to its correct position. This process continues until we got an element at the original position of a.
+
+### Pseudocode
+
+    Begin
+    for start := 0 to n – 2 do
+    item := arr[start]
+    pos := start
+    for i := start + 1 to n-1 do
+      if arr[i] < item then
+         pos:= pos+1
+    done
+
+    if pos = start then
+        ignore lower part, go for next iteration
+    while item = arr[pos] do
+        pos := pos+1
+    done
+
+    if pos != start then
+        swap arr[pos] with item
+    while pos != start do
+        pos := start
+        for i := start + 1 to n-1 do
+               if arr[i] < item then
+                    pos:= pos+1
+        done
+
+        while item = arr[pos]
+               pos := pos +1
+        if item != arr[pos]
+               swap arr[pos] and item
+       done
+      done
+    End
+
+# CycleSortProperties
+
+### Properties
+- Time Complexity: O(n^2) 
+- Space Complexity: O(1)
+- In-place : Yes
+- Stable : No
+
+# CycleSortAdvantages
+
+### Advantages
+
+- Cycle Sort offers the advantage of little or no additional storage.
+
+- It is an in-place sorting Algorithm.
+
+- It is optimal in terms of number of memory writes. It makes minimum number of writes to the memory and hence efficient when array is stored in EEPROM or Flash. Unlike nearly every other sort (Quick , insertion , merge sort), items are never written elsewhere in the array simply to push them out of the way of the action. Each value is either written zero times, if it's already in its correct position, or written one time to its correct position.This matches the minimal number of overwrites required for a completed in-place sort.
+
+# CycleSortDisadvantages
+
+### Disadvantage
+- It is not mostly used because it has more time complexity (i.e O(n^2)) than any other comparison sorting algorithm.
+
+# CycleSortpractice-problems
+
+### Link to practice problems
+[CycleSort practice problems](https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/07-sorting.md)
+
+--------
+--------
