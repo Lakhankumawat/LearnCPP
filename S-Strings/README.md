@@ -1,18 +1,9 @@
 <!-- Table of contents  -->
-## String Comparision
-- [String Comparison](#string-comparison)
-- [Example](#example)
-- [Algorithim](#algorithim-)
-- [Application](#application-)
+- [String Comparision](#string-comparison)
+- [Longest Word in Sentence](#longest-word-in-sentence)
+- [Roman To Decimal](#roman-to-decimal) 
 
-## Longest Word in Sentence
-- [Longest word in sentence](#longest-word-in-sentence-1)
-- [Example](#examples)
-- [Approach](#approach)
-- [Time and Space Complexity](#time-and-space-complexity)
-
-
-# String Comparison:
+# String Comparison
 Most string comparison algorithms compare the strings character by character. C++ provides us some built in operators like == and != to compare strings along with strcmp and compare functions.
 
 ![image](https://user-images.githubusercontent.com/100208233/162633708-61773b59-35ff-4290-bc66-0d370ed42645.png)
@@ -81,3 +72,38 @@ Output : Maximum length word: knowledge
 
 - **Time Complexity :-** O(n) n is the length of string or sentence.
 - **Space Complexity :-** O(n) n is the length of sentence.
+
+# Roman To Decimal
+
+## Problem Statement
+Given a string in roman no format (s)  your task is to convert it to an integer . Various symbols and their values are given below.
+I :1, V : 5 X : 10 L : 50 C :100 D : 500 M : 1000
+
+## Examples :
+
+### Example 1 : 
+Input: s = V \
+Output: 5
+
+### Example 2 : 
+Input: III \
+Output: 3
+
+![image](https://user-images.githubusercontent.com/94742536/169452774-8d033d92-c614-44cc-b401-ce79b63c3f91.png)
+
+
+## Algorithm
+- We have to convert Roman to Decimal.
+- First, we have to declare  and enter a string which will depict the roman numeral.
+- Then we have called the romanDec() function which will convert the roman numeral to decimal .
+- In romanDec() function we will loop the string from right to left.
+- We will use prev to keep track of previous value.
+- We will compare cureent value and previous value,
+- If the current value is small then subtract it.
+- If the current value is equal or larger then add it.
+- Then we will update the value of previous as the value of current symbol.
+
+## Time Complexity
+- Time Complexity : O(N)
+## Space Complexity
+- Space Complexity : O(1) 
