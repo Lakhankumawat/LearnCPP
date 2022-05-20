@@ -1,6 +1,13 @@
 # Table of content
 
 - [Divide and Conquer Algorithm](#divide-and-conquer-algorithm)
+   - [Pow(x,n)](#Pow(x,n))
+      - [Algorithm](#algorithm)
+      - [Time Complexity](#time-complexity)
+      - [Space Complexity](#space-complexity)
+      - [Advantages](#advantages)
+      - [Disadvantages](#disadvantages)
+     
    - [Merge Sort](#merge-sort)
       - [Algorithm](#algorithm)
       - [Time Complexity](#time-complexity)
@@ -15,6 +22,9 @@
 - Breaking the problem into smaller sub-problems.
 - Solving the sub-problems.
 - Combining them to get the desired output.
+
+## Pow(x,n)
+- 
 
 ## Merge Sort
 
