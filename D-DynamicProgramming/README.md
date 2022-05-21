@@ -1,6 +1,10 @@
 
+
+
+
 # Table of content
 - [Dynamic Programming](#dynamic-programming)
+- [Rod Cutting](#rod-cutting)
 - [Equal Sum Partition Problem](#equal-sum-partition-problem)
 - [Shortest Common Super-sequence](#shortest-common-super-sequence)
 - [Trapping Rain Water Problem](#trapping-rain-water-problem)
@@ -8,6 +12,22 @@
 - [Egg Dropping Puzzle](#egg-dropping-puzzle)
 
 - [Climbing Stairs](#climbing-stairs)
+
+- [Min Cost Climbing Stairs](#min-cost-climbing-stairs)
+
+- [Unique Paths](#unique-paths)
+
+- [Unique Paths II](#unique-paths-ii)
+
+- [Minimum Falling Path Sum](#minimum-falling-path-sum)
+
+- [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
+
+- [Minimum number of deletions and insertions required to transform one string into another](#minimum-number-of-deletions-and-insertions-required-to-transform-one-string-into-another)
+
+- [Coin Change](#coin-change)
+
+- [Edit Distance](#edit-distance)
 
 
 # Dynamic Programming
@@ -68,7 +88,45 @@ return f[n];
  ```
  Solution Link: 
  ```
----
+## Rod Cutting 
+- [Problem Statement](#problem-statement-for-rod-cutting)
+    - [Examples](#rod-cutting-examples)
+- [Optimal Approach](#rod-cutting-optimal-approach)
+- [Complexity](#rod-cutting-complexity)
+### Problem Statement for Rod Cutting
+Given a rod of length n and a list of rod prices of length i, where 1 <= i <= n, find the optimal way to cut the rod into smaller rods to maximize profit.
+
+![image](https://user-images.githubusercontent.com/29122581/164487339-bc6e60e9-36f6-4d40-b804-2a220f0ff3d2.png)
+
+
+#### Rod Cutting Examples
+
+    1. prices[] = [1, 5, 8, 9, 10, 17, 17, 20]  
+       rod length = 4  
+       Best: Cut the rod into two pieces of length 2 each to gain revenue of 5 + 5 = 10
+       
+    2. prices[] = [1, 5, 8, 9, 10, 17, 17, 20]
+       rod length = 8
+       Best: Cut the rod into two pieces of length 2 and 6 to gain revenue of 5 + 17 = 22
+       
+    3. prices[] = [3, 5, 8, 9, 10, 17, 17, 20]
+       rod length = 8
+       Best: Cut the rod into eight pieces of length 1 to gain revenue of 8 * 3 = 24
+       
+#### Rod Cutting Optimal Approach
+
+    We will solve this problem in a bottom-up manner. (iteratively)  
+    In the bottom-up approach, we solve smaller subproblems first, then move on to larger subproblems.  
+    The following bottom-up approach computes dp[i], which stores maximum profit achieved from the rod of length i from 1 to len. 
+    It uses the value of smaller values i already computed.
+    
+![image](https://user-images.githubusercontent.com/29122581/164486773-2ec7a752-dcce-464c-adf2-4ecc5fa613db.png)
+    
+#### Rod Cutting Complexity
+```
+Time Complexity : O(n^2;)  
+Space Complexity : O(n)  
+```
 
 # Equal Sum Partition Problem
 
@@ -921,3 +979,425 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 
 
 #### Space Complexity = O(m * n)
+
+
+# [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
+
+- [Problem Statement](#problem-statement-4)
+
+- [Examples](#examples-4)
+
+- [Explanation](#explanation-5)
+
+- [Pseudo Code](#pseudo-code-2)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/MinimumFallingPathSum/D-DynamicProgramming/MinimumFallingPathSum.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-1)
+
+
+
+### Problem Statement
+
+Given an n x n array of integers matrix, return the minimum sum of any falling path through matrix.
+
+A falling path starts at any element in the first row and chooses the element in the next row that is either directly below or diagonally left/right. Specifically, the next element from position (row, col) will be (row + 1, col - 1), (row + 1, col), or (row + 1, col + 1).
+
+
+### Examples
+
+#### Example 1
+
+![image](https://user-images.githubusercontent.com/75883328/163238977-cc4fff48-4640-41f4-9877-7da9ac5fc4e7.png)
+
+#### Input: matrix = [[2,1,3],[6,5,4],[7,8,9]]
+#### Output: 13
+
+
+#### Example 2
+
+![image](https://user-images.githubusercontent.com/75883328/163239115-52cb1c59-4463-444b-918b-f393b6239bf1.png)
+
+#### Input: matrix = [[-19,57],[-40,-5]]
+#### Output: -59
+
+
+### Explanation
+
+- we are supposed to find the minimum sum of the falling path.
+- since a falling path starts at any element in the first row ,so we'll run a for loop upto the number of columns.
+- now at any cell we are having three options :- 1.move directly below ,2.move  diagonally left ,3. move diagonally right
+- now explore all these three options to get a falling path with minimum sum.
+- if we are on grid[i][j] ,then  
+
+               - on moving directly below we'll reach gird[i+1][j] .
+               
+               - on moving move diagonally left we'll reach gird[i+1][j-1] .
+               
+               - on moving move diagonally right we'll reach gird[i+1][j+1].
+
+- if at any point i<0 or j<0 return infinity ,because its an invalid path.
+
+This recursive code will give us a TLE.So, we need to optimize this.
+
+We'll optimize this using DP ,because we have overlapping sub-problems.
+
+- So we can store the values in a vector and will use those values from the vector only instead of making recursive calls for it.
+
+
+
+
+### Pseudo Code
+
+
+        int minSum(int currRow,int currCol,int m,int n,vector<vector<int>>&matrix, vector<vector<int>>&v)
+
+               if(currCol < 0 || currCol >= n) return 100001; 
+               if(currRow == m-1) return matrix[currRow][currCol];
+        
+               if(v[currRow][currCol]!=-1) return v[currRow][currCol];
+
+               int leftD = matrix[currRow][currCol] + minSum(currRow+1,currCol-1,m,n,matrix,v); 
+               int down = matrix[currRow][currCol] + minSum(currRow+1,currCol,m,n,matrix,v);    
+               int rightD = matrix[currRow][currCol] + minSum(currRow+1,currCol+1,m,n,matrix,v); 
+       
+               v[currRow][currCol] = min(down,min(leftD,rightD));
+               return v[currRow][currCol];
+
+
+
+
+### Time Complexity and Space Complexity
+
+#### Time Complexity = O(n^2)
+
+#### Space Complexity = O(n^2)
+
+
+# [Knapsack with Duplicate Items](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1/#)
+
+- [Problem Statement](#problem-statement-5)
+
+- [Examples](#examples-5)
+
+- [Algorithm](#algorithm-1)
+
+- [Pseudo Code](#pseudo-code-3)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/KnapsackWithDuplicateItems/D-DynamicProgramming/KnapsackwithDuplicateItems.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-2)
+
+
+### Problem Statement
+
+Given a set of N items, each with a weight and a value, represented by the array w[] and val[] respectively. Also, a knapsack with weight limit W.
+The task is to fill the knapsack in such a way that we can get the maximum profit. Return the maximum profit.
+Note: Each item can be taken any number of times.
+
+
+![image](https://user-images.githubusercontent.com/75883328/164772943-33fd9778-9a2f-4622-ba84-1b02eae02001.png)
+
+
+### Examples
+#### Example1
+
+Input: N = 2, W = 3
+
+val[] = {1, 1}
+wt[] = {2, 1}
+
+Output: 3
+Explanation- 
+1.Pick the 2nd element thrice.
+2.Total profit = 1 + 1 + 1 = 3. Also the total 
+  weight = 1 + 1 + 1  = 3 which is <= W.
+
+#### Example2
+
+Input: N = 4, W = 8
+
+val[] = {1, 4, 5, 7}
+wt[] = {1, 3, 4, 5}
+
+Output: 11
+Explanation-The optimal choice is to pick the 2nd and 4th element
+  
+### Algorithm 
+
+- We have to maximixe the profit provided that we do not exceed the knapsack capacity and can take an iten any number of times.
+- If we are on the currentItem then, we are having two possibilities :- 1)either to take it or 2)to leave it.
+- If we will take that currentItem then, we can still take that and now the capacity of the knapsack will decreased by weight[currentItem] and we'll get its profit.
+- If we will not take the currentItem, then we'll simply move on to currentItem+1.
+- If at any point currentitem >= N, we'll return 0, because we can't get any profit from an item that doesn't exists.
+- If capacity == 0, we'll return 0, because now we can't take anymore items.
+
+### Pseudo Code
+
+```
+
+	int maxProfit(int currentItem,int n,int capacity,int profit[],int weight[],vector<vector<int>>&v)
+
+    		if(capacity == 0) return 0;
+    		if(currentItem >= n) return 0;
+        
+    		if(v[currentItem][capacity] != -1) 
+        		return v[currentItem][capacity];
+		
+    		int consider=0;
+    		if(weight[currentItem] <= capacity)
+       			consider= profit[currentItem] + maxProfit(currentItem,n,capacity-weight[currentItem],profit,weight,v);
+            
+    		int notConsider = maxProfit(currentItem+1,n,capacity,profit,weight,v);
+    
+    		v[currentItem][capacity] = max(consider,notConsider);
+    		return v[currentItem][capacity];
+		
+```
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexity = O(N * W)
+- Space Complexity = O(N * W)
+
+
+
+# Minimum number of deletions and insertions required to transform one string into another
+
+- [Problem Statement](#problem-statement-for-the-question)
+    - [Examples](#examples-for-the-question)
+- [Explanation](#explanation-of-the-question)
+- [Advantages](#advantages-of-using-dp )
+- [Complexity](#complexity-of-the-question)
+
+### Problem Statement for the question
+
+You are given two strings of different length. We need to transform string1 into string2 by deleting and inserting minimum number of characters.
+    > Note this question is a variation of LCS problem
+### Examples for the question
+```
+Input:
+str1 = "heap", str2 = "pea" 
+Output : 
+Minimum Deletion = 2 
+Minimum Insertion = 1
+First we need to delete 2 characters 'h' and 'p' from heap and then add 1 character 'p' to convert i to string2.
+```
+
+### Explanation of the question
+
+- Consider you are given two strings 'str1' and 'str2'.
+
+- Let the length of string1 'str1' be m and length of string2 'str2' be n respectively.
+
+- First we need to find out the LCS of the two strings .
+
+- After finding LCS we can reduce the size of LCS from the length of string1 'str1' to find the total number of deletions.
+
+```
+minimum number of deletions minDel = m – lcs
+```
+
+- Similarly after finding LCS we can reduce the length of string2 'str2' to find the total number of insertions.
+```
+minimum number of Insertions minInsert = n – len
+```
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/20200817135845/picture2-660x402.jpg)
+
+### Advantages of using dp 
+- Use of dynamic programming optimizes the recursive calls.
+- It also saves us the time of re-computing inputs later.
+- Dynamic programming approach helps us to re-use the results.
+- It uses less line of code and speeds up the process.
+
+### Complexity of the question
+```
+Time Complexity: O(m*n)
+```
+
+  
+  
+ # [Coin Change](https://leetcode.com/problems/coin-change/)
+
+- [Problem Statement](#problem-statement-6)
+
+- [Examples](#examples-6)
+
+- [Algorithm](#algorithm-2)
+
+- [Pseudo Code](#pseudo-code-4)
+
+- [Code Link](https://github.com/Shweta2024/LearnCPP/blob/coinChange/D-DynamicProgramming/CoinChange.cpp)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-3)
+
+
+### Problem Statement
+
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+You may assume that you have an infinite number of each kind of coin.
+
+#### Constraints:
+
+
+1 <= coins.length <= 12
+1 <= coins[i] <= 231 - 1
+0 <= amount <= 104
+
+
+
+![image](https://user-images.githubusercontent.com/75883328/165454680-640a326c-7f2e-4489-acf9-9cabf07bb5a4.png)
+
+
+
+### Examples
+
+Example 1:
+
+Input: coins = [1,2,5], amount = 11
+
+Output: 3
+
+
+Example 2:
+
+Input: coins = [2], amount = 3
+
+Output: -1
+
+
+### Algorithm 
+
+- We are supposed to find the minimum numbers of coins required to make amount ,provided that we can take a coin any number of times.
+
+- For every coins present in the coins array, we are having two options :- 1)either to take that coin , 2) don't take the coin.
+
+- If we'll take the currentCoin,then the amount will decrease by coins[currentCoin] (i.e. the denomination of the currentCoin)and we can still take the currentCoin if its denomination is less than or equal to the amount and we'll add a one because we are taking that coin to make the amount.
+
+- If we aren't taking the currentCoin ,then we'll simply move on to currentCoin+1.
+
+- If at any point amount becomes 0,then it means that we have successfully made amount ,so return 0.
+
+- Otherwise if we have reached the end of the coins array and amount != 0 ,then return infinity.
+
+
+### Pseudo Code
+
+
+  int minCoins(int currentCoin,int amount,vector<int>&coins,int n,vector<vector<int>>&v)
+    
+    if(amount == 0) return 0;
+          if(currentCoin >= n) return 100001;
+        
+        if(v[currentCoin][amount] != -1)
+            return v[currentCoin][amount];
+        
+        int consider = 100001;
+        if(coins[currentCoin] <= amount)
+            consider = 1 + minCoins(currentCoin,amount-coins[currentCoin],coins,n,v);
+        
+        int notConsider = minCoins(currentCoin+1,amount,coins,n,v);
+        
+        v[currentCoin][amount] = min(consider,notConsider);
+        return v[currentCoin][amount];
+
+
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexcity = O(n * amount)
+
+- Space Complexity = O(n * amount)
+
+
+# Edit Distance
+
+- [Problem Statement](#problem-statement-7)
+
+- [Examples](#examples-7)
+
+- [Algorithm](#algorithm-3)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-4)
+
+
+### Problem Statement
+
+Find the weighted edit distance between string 1 and string 2, where the cost of inserting is I, the cost of deletion is D, and the cost of substitution is S.<br>
+
+Input<br>
+- The strings str1 and str2 are given in the first and secind lines, respectively. Both strings consist of
+small Latin letters only.
+- The third line contains three integers I, D and S (1 <= I, D, S <= 100).
+
+Output<br>
+- The minimal cost to transform str1 to str2 by single symbol insertions, deletions, and substitutions.
+
+![image](https://user-images.githubusercontent.com/29145628/168327404-ad1380da-b135-484d-98e1-9b58f608b40d.png)
+
+
+### Examples
+
+Example 1:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+1 1 1<br><br>
+Output: 5<br><br>
+
+Example 2:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+1 1 100<br><br>
+Output: 7<br><br>
+
+Example 3:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+100 1 1<br><br>
+Output: 105<br><br>
+
+Example 4:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+1 100 1<br><br>
+Output: 6<br>
+
+### Algorithm 
+
+- It's supposed to find the minimum cost to convert string 1 to string 2 using insertion, deletion and substitution operations
+
+- Each operation has a chosen cost
+
+- Using bottom up approach, create a dp storage to store all possible moves and always choose the operation with minimum cost
+
+- Initializing row 0 and column 0 with D and I costs resepctively as row 0 represents word's characters deletion and column 0 represents word's characters insertion
+
+- Loop on the string 1 and loop for each character in string 1 on string 2 characers
+
+- If the 2 characters are similar do nothing, just take the diagonal value 
+
+- If the 2 characters are not similar, perform the operation the minimal cost andd the new cost on it
+
+- Print the last element in the created matrix as it's the minimal possible cost after trying all operations in the matrix
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexcity = O(n * m) where n and m are strings' lengths
+
+- Space Complexity = O(n * m) where n and m are strings' lengths
