@@ -19,6 +19,7 @@ class LinkedList {
   LinkedList() {
     head = NULL;
   }
+
 //Function to reverse the linked list
   void reverse() {
     Node * current = head;
@@ -34,6 +35,37 @@ class LinkedList {
     }
     head = prev;
   }
+
+  //Function to reverse the linked list using recursion
+  void reverse_ll_using_recursion(Node* node){
+  	if(node->next == 0){
+  		head = node;
+  		return;
+  	}
+  	reverse_ll_using_recursion(node->next);
+  	node->next->next = node;
+  	node->next = NULL;
+  }
+
+//Function to reverse a linked list using stack
+  void reverse_ll_using_stack(){
+  	stack<Node* > s;
+  	Node* tmp = head;
+  	while(tmp){
+  		s.push(tmp);
+  		tmp = tmp->next;
+  	}
+  	head = s.top();
+  	s.pop();
+  	tmp = head;
+  	while(!(s.empty())){
+  		tmp->next = s.top();
+  		s.pop();
+  		tmp = tmp->next;
+  	}
+  	tmp->next = 0;
+  }
+
 //Function to print the linked list
   void print() {
     Node * temp = head;
@@ -42,6 +74,7 @@ class LinkedList {
       temp = temp -> next;
     }
   }
+
 //Function to Insert values to Linked List
   void push(int data) {
     Node * temp = new Node(data);
@@ -49,6 +82,8 @@ class LinkedList {
     head = temp;
   }
 };
+
+
 //Driver Function
 int main() {
   LinkedList listl;
@@ -68,5 +103,14 @@ int main() {
 
   cout << "\nReversed Linked list \n";
   listl.print();
+
+  listl.reverse_ll_using_recursion(listl.head);
+  cout<<"\nReversed Linked list using recursion \n";
+  listl.print();
+
+  listl.reverse_ll_using_stack();
+  cout<<"\nReversed Linked list using stack \n";
+  listl.print();
+  
   return 0;
 }
