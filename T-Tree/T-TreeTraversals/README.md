@@ -18,6 +18,13 @@
     - [Time Complexity](#time-complexity-2)
     - [Space Complexity](#space-complexity-2)
 
+- [Conversion of expression by expression tree traversal](#conversion-of-expression-by-expression-tree-traversal)
+    - [Properties](#properties-1)
+    - [Algorithm](#algorithm-3)
+    - [Time Complexity](#time-complexity-3)
+    - [Space Complexity](#space-complexity-3)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
 
 
 ## Morris Traversal
@@ -129,3 +136,61 @@ The algorithm traverses each node to put it in the queue so, time comlexity is O
 - Space Complexity : O(N)
 As the algorithm contains a queue with maximum size of n(nodes number) and a vector to save nodes in each level with maximum size of n then space complexity is O(N) + O(N) = O(N)
 ```
+
+
+## Conversion of expression by expression tree traversal
+
+![image](https://user-images.githubusercontent.com/84305637/168638346-47d75943-ee98-4a57-ac3c-9be4393a1a73.png)
+
+### Properties
+
+- Given a expression tree, it's inorder traversal gives the infix expression, post order traversal gives the postfix expression, and pre order traversal gives prefix expression.
+- In a expression tree, we will be having operators at the non-leaf node, and operands will be at the leaf nodes.
+
+### Algorithm 
+
+- inorder traversal :
+1) if root is not null
+2) if root is operand
+    print root
+3) else
+    print open parenthesis
+    inorder(left subtree)
+    print root
+    inorder(right subtree)
+    print close parenthesis
+4) end if
+5) end if
+
+- preorder traversal :
+1) if root is not null
+    print root
+    preorder(left subtree)
+    preorder(right subtree)
+2) end if
+
+- postorder traversal :
+1) if root not null
+    postorder(left subtree)
+    postorder(right subtree)
+    print root
+2) end if
+
+### Time Complexity
+```
+Time Complexity : O(N)
+``` 
+
+### Space Complexity
+```
+Space Complexity : O(N)
+``` 
+
+### Advantages 
+    
+- The infix expression is very clear with brackets
+- Easy to implement, compared to other conversion methods
+
+### Disadvantages
+
+- Construction of a expression tree is difficult to implement.

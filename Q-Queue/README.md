@@ -52,6 +52,12 @@
   - [Time Complexity](#time-complexity-6)
   - [Space Complexity](#space-complexity-6)
 
+- [Implementation of Deque](#implementation-of-dequeue)
+  - [Features](#features-5)
+  - [Pseudo Code](#pseudo-code-7)
+  - [Time Complexity](#time-complexity-7)
+  - [Space Complexity](#space-complexity-7)
+
 
 
 ##  Reverse a Queue
@@ -588,6 +594,77 @@ Step 5: Exit
 ```
 - Enqueue: O(1) time
 - Dequeue: O(n) time
+```
+
+### Space Complexity
+
+```
+-  O(n)
+```
+##  Implementation of Deque
+
+- Deque or Double Ended Queue is a generalized version of Queue data structure that allows insert and delete at both ends. We are ussing array to implement it 
+
+### Features
+
+- Some basic operations of dequeue are −
+
+  1. insert_at_beg(): inserts an item at the front of Dequeue.
+
+  2. insert_at_end(): inserts an item at the rear of Dequeue.
+
+  3. delete_fr_beg(): Deletes an item from front of Dequeue.
+
+  4. delete_fr_rear(): Deletes an item from rear of Dequeue.
+
+<!-- image to help better explain the concept -->
+
+
+![deque](https://media.geeksforgeeks.org/wp-content/uploads/anod.png)
+
+
+### Pseudo Code
+
+- For insert_at_beg(int) :
+
+```
+
+If queue is not completely filled up, insert element at the front and update front and rear
+Otherwise print overflow.
+
+```
+
+- For insert_at_end(int)
+
+```
+
+If queue is not completely filled up, insert element at the rear and update front and rear
+Otherwise print overflow.
+
+```
+
+- For delete_fr_beg()
+
+```
+
+If queue is empty, print underflow otherwise delete the front element and update front.
+
+```
+- For delete_fr_end()
+
+```
+
+If queue is empty, print underflow otherwise delete the rear element and update rear.
+
+```
+
+### Time Complexity
+
+```
+- insert_at_beg(int): O(1) time
+- insert_at_beg(int): O(1) time
+- delete_fr_beg(): O(1) time
+- delete_fr_end(): O(1) time
 ```
 
 ### Space Complexity
