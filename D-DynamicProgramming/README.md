@@ -28,6 +28,7 @@
 - [Coin Change](#coin-change)
 
 - [Edit Distance](#edit-distance)
+- [Traveling SalesPerson](#traveling-salesperson)
 
 
 # Dynamic Programming
@@ -1401,3 +1402,44 @@ Output: 6<br>
 - Time Complexcity = O(n * m) where n and m are strings' lengths
 
 - Space Complexity = O(n * m) where n and m are strings' lengths
+
+# Traveling SalesPerson:
+
+- [Problem Statement](#problem-statement-8)
+
+- [Example](#example-3)
+
+- [Algorithm](#algorithm-4)
+
+- [Time Complexity](#time-complexity)
+	
+### Problem Statement
+Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
+	
+### Example:
+#### Input:
+	
+|       | 	1	|	2     |		3      |	4      |	 5      |
+|-------| ------------- |-------------|----------------|---------------|----------------|
+|   1   | 	0	|	24    |		11     |	10     |	 9      |
+|   2   | 	8	|	0     |		2      |	5      |	 11     |
+|   3   | 	26	|	12    |		0      |	8      |	 7      |
+|   4   | 	11	|	23    |		24     |	0      |	 6      |
+|   5   | 	5	|	4     |		8      |	11     |	 0      |
+	
+## Output:
+Minimum weight Hamiltonian Cycle is 1 – 4 – 5 – 2 – 3 – 1, with optimum weight as 34.
+	
+### Algorithm:
+**Step 1:** \
+Let d[i, j] indicates the distance between cities i and j. Function C[x, V – { x }] is the cost of the path starting from city x. V is the set of cities/vertices in given graph. The aim of TSP is to minimize the cost function. \
+**Step 2:** \
+Assume that graph contains n vertices V1, V2, ..., Vn. TSP finds a path covering all vertices exactly once, and the same time it tries to minimize the overall traveling distance(weight). \
+**Step 3:** \
+Mathematical formula to find minimum path weight is stated below: \
+	``` C(i, V) = min { d[i, j] + C(j, V – { j }) }, j ∈ V and i ∉ V. ```
+	
+### Time Complexity: 
+**Time Complexity:**  O(n^2*2^n) 
+
+In the dynamic algorithm for TSP, the number of possible subsets can be at most n\*2^n . Each subset can be solved in O(n) times. Therefore, the time complexity of this algorithm would be O(n^2\*2^n).
