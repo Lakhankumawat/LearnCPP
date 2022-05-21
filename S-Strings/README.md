@@ -1,9 +1,14 @@
 <!-- Table of contents  -->
-- [String Comparision](#string-comparison)
+
+# Table of content
+- [String Comparison](#string-comparison)
 - [Longest Word in Sentence](#longest-word-in-sentence)
-- [Roman To Decimal](#roman-to-decimal) 
+- [Count the Occurence of particular Chararacter in Sentence](#counts-the-occurence-of-particular-chararacter-in-sentence)
+- [Roman to Decimal](#roman-to-decimal)
+
 
 # String Comparison
+
 Most string comparison algorithms compare the strings character by character. C++ provides us some built in operators like == and != to compare strings along with strcmp and compare functions.
 
 ![image](https://user-images.githubusercontent.com/100208233/162633708-61773b59-35ff-4290-bc66-0d370ed42645.png)
@@ -72,6 +77,47 @@ Output : Maximum length word: knowledge
 
 - **Time Complexity :-** O(n) n is the length of string or sentence.
 - **Space Complexity :-** O(n) n is the length of sentence.
+
+
+## Counts the Occurence of particular Chararacter in Sentence
+- In this problem the cout of occurrence of every character present in the input sentence is displayed .
+
+<!-- image to help better explain the concept -->
+
+![Counts the Occurence of particular Chararacter in Sentence](https://www.shristitechlabs.com/wp-content/uploads/2019/05/totalcharacters.png)
+
+### Examples of count character occurrence
+1. - Input : example one !
+   - Output : "e" : 3 , "x" : 1, "a" : 1, "m" : 1,  "p" : 1, "l" : 1,  " " : 2,  "o" : 1, "n" : 1,  "!" : 1
+
+### Algorithm of count character occurrence
+```
+countEachChar(str){
+1. initialized counter array of 256 size
+
+2. for 0 to lenght of string do
+
+  - increment element for particular characters
+  - i++
+
+3. initialized array of string size
+
+4. for 0 to length of string do
+  - array[i]=str[i];
+  - int flag =0;
+  - for 0 to i do
+    - if str[i]=array[j] then flag++
+    - j++
+  - display character count of occurrence only for flag value 1 so that all character occurrence display only once
+}
+
+```
+
+### Properties of count character occurrence
+
+- Time Complexity: O(n^2), where n is the size of sentence .
+
+- Space Complexity: O(n) , where n is the size of sentence .
 
 # Roman To Decimal
 

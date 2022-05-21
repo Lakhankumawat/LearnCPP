@@ -1,10 +1,6 @@
 # Table of content
 - [Subsets Generation using Bit Masking](#subsets-generation-using-bit-masking)
-    - [Algorithm](#algorithm)
-    - [Properties](#properties)
-    - [Advantages](#advantages)
-    - [Disadvantage](#disadvantage)
-
+- [Count Set Bits](#count-set-bits)
 
 ## Subsets Generation using Bit Masking
 Algorithm that uses bit masking to generate all possible subsets from a given array with a chosen data type.<br>
@@ -34,3 +30,35 @@ Algorithm that uses bit masking to generate all possible subsets from a given ar
 ### Disadvantage
 
 - Problem must have small constraints as Bitmasking takes up to exponential time.
+
+
+# Count Set Bits
+
+## Problem Statement 
+Given a positive integer N, print count of set bits in it. Set Bits are the no. of bits that are 1.
+
+## Examples
+Example 1 : Input : N = 6
+
+            Output : 2
+
+Example 2 :  Input : N = 8
+
+             Output : 1
+             
+ ![image](https://user-images.githubusercontent.com/94545831/169095943-17f56cab-2bea-4ce6-bf8a-cbbfb5abfd9c.png)
+
+            
+## Algorithm
+   - This algorithm is of fast approach as mentioned in code.
+- Given a number N.
+- Run the while loop till number is greater than 0.
+- Do Bitwise AND operation of that number to its preceding number.
+- Assign the result to that original number.
+- Increment the counter by 1.
+- Return the counter.
+
+## Time Complexity and Space Complexity
+Time Complexity : O(n log n)
+
+Space Complexity : O(1)

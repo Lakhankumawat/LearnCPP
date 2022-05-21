@@ -1,7 +1,7 @@
 name: New Issue
 description: Description
 title: "Title "
-labels: ["GSSoC22"]
+labels: [""]
 body:
   - type: markdown
     attributes:
