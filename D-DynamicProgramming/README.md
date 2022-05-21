@@ -1414,7 +1414,17 @@ Output: 6<br>
 - [Time Complexity](#time-complexity)
 	
 ### Problem Statement
-Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point.
+Given a set of cities and distance between every pair of cities, the problem is to find the shortest possible route that visits every city exactly once and returns to the starting point. 
+<p align="center">
+  <img 
+    width="400"
+    height="300"
+    src="https://user-images.githubusercontent.com/62667818/169648386-e4f57e7e-a247-4230-b120-fe84c42ac22b.png"
+  >
+</p>
+
+
+Consider the graph shown in figure above. A TSP tour in the graph is 1-2-4-3-1. The cost of the tour is 10+25+30+15 which is 80.
 	
 ### Example:
 #### Input:
@@ -1427,15 +1437,15 @@ Given a set of cities and distance between every pair of cities, the problem is 
 |   4   | 	11	|	23    |		24     |	0      |	 6      |
 |   5   | 	5	|	4     |		8      |	11     |	 0      |
 	
-## Output:
+#### Output:
 Minimum weight Hamiltonian Cycle is 1 – 4 – 5 – 2 – 3 – 1, with optimum weight as 34.
 	
 ### Algorithm:
-**Step 1:** \
-Let d[i, j] indicates the distance between cities i and j. Function C[x, V – { x }] is the cost of the path starting from city x. V is the set of cities/vertices in given graph. The aim of TSP is to minimize the cost function. \
-**Step 2:** \
-Assume that graph contains n vertices V1, V2, ..., Vn. TSP finds a path covering all vertices exactly once, and the same time it tries to minimize the overall traveling distance(weight). \
-**Step 3:** \
+- Step 1: \
+Let d[i, j] indicates the distance between cities i and j. Function C[x, V – { x }] is the cost of the path starting from city x. V is the set of cities/vertices in given graph. The aim of TSP is to minimize the cost function. 
+- Step 2: \
+Assume that graph contains n vertices V1, V2, ..., Vn. TSP finds a path covering all vertices exactly once, and the same time it tries to minimize the overall traveling distance(weight). 
+- Step 3: \
 Mathematical formula to find minimum path weight is stated below: \
 	``` C(i, V) = min { d[i, j] + C(j, V – { j }) }, j ∈ V and i ∉ V. ```
 	
