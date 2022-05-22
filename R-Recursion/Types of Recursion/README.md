@@ -233,6 +233,23 @@ fun();
 
 In the above structure of the direct recursion, the outer fun() function recursively calls the inner fun() function, and this type of recursion is called the direct recursion.
 
+## Example
+
+int testfunc(int num)
+{
+  if (num == 0)
+    return 0;
+  else
+    return (testfunc(num - 1));
+}
+
+* First we pass the value in the testfunc function
+* if value is equals to 0 we return 0 simply without doing any operation.
+* else we have to call the same function with with decreasing value of num by 1
+* This fuction will recursively calls itself until the value of num not reaches to 0.
+
+Here, the function ‘testfunc’ calls itself for all positive values of num.
+
 ## Algorithm
 
 *  only one function is called by itself.
