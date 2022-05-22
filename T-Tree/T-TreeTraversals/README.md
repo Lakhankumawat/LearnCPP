@@ -12,6 +12,19 @@
     - [Time Complexity](#time-complexity-1)
     - [Space Complexity](#space-complexity-1)
 
+- [Zigzag Level Order Traversal](#zigzag-level-order-traversal) 
+    - [Example](#Example)
+    - [Algorithm](#algorithm-2)
+    - [Time Complexity](#time-complexity-2)
+    - [Space Complexity](#space-complexity-2)
+
+- [Conversion of expression by expression tree traversal](#conversion-of-expression-by-expression-tree-traversal)
+    - [Properties](#properties-1)
+    - [Algorithm](#algorithm-3)
+    - [Time Complexity](#time-complexity-3)
+    - [Space Complexity](#space-complexity-3)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
 
 
 ## Morris Traversal
@@ -82,3 +95,102 @@ Output : 8 10 14 3 6 7 13 1 4
 ```
 - Space Complexity : O(N)
  ``` 
+ 
+ 
+## Zigzag Level Order Traversal
+Algorithm that traverses a binary tree from left to right then from right to left for the next leveland alternate between so, it's called Zigzag Level Order Traversal.
+
+![image](https://user-images.githubusercontent.com/29145628/165636674-e022fb00-9e58-457c-90c9-15f0e4d956d9.png)
+
+### Algorithm
+```
+- Create rightLeft variable to store the next direction.<br>
+- Create vector to store nodes in each level.<br>
+- Create queue to store nodes.(BFS)<br>
+- Push root in queue.<br>
+- Loop while the queue is not empty
+- In Each iteration:
+- Assign queue size in s to loop on nodes from the previous level
+- Alternate rightLeft (negate)
+- Loop on s to check all nodes in the level
+- Save front node in queue in temp node then pop front node from queue<br>
+- Check if current node's left is not null push it in queue       
+- Check if current node's right is not null push it in queue 
+- Push in level vector current node value 
+- When loop on s exits, check the rightLeft direction, ifit's true reverse level vector<br>
+- Print level vector
+- Clear level vector
+```
+### Example
+Input : 3 9 20 null null 15 7<br>
+Output : 3 20 9 15 7 <br>
+
+### Time Complexity
+```
+- Time Complexity : O(N)
+The algorithm traverses each node to put it in the queue so, time comlexity is O(N).
+```
+
+### Space complexity 
+```
+- Space Complexity : O(N)
+As the algorithm contains a queue with maximum size of n(nodes number) and a vector to save nodes in each level with maximum size of n then space complexity is O(N) + O(N) = O(N)
+```
+
+
+## Conversion of expression by expression tree traversal
+
+![image](https://user-images.githubusercontent.com/84305637/168638346-47d75943-ee98-4a57-ac3c-9be4393a1a73.png)
+
+### Properties
+
+- Given a expression tree, it's inorder traversal gives the infix expression, post order traversal gives the postfix expression, and pre order traversal gives prefix expression.
+- In a expression tree, we will be having operators at the non-leaf node, and operands will be at the leaf nodes.
+
+### Algorithm 
+
+- inorder traversal :
+1) if root is not null
+2) if root is operand
+    print root
+3) else
+    print open parenthesis
+    inorder(left subtree)
+    print root
+    inorder(right subtree)
+    print close parenthesis
+4) end if
+5) end if
+
+- preorder traversal :
+1) if root is not null
+    print root
+    preorder(left subtree)
+    preorder(right subtree)
+2) end if
+
+- postorder traversal :
+1) if root not null
+    postorder(left subtree)
+    postorder(right subtree)
+    print root
+2) end if
+
+### Time Complexity
+```
+Time Complexity : O(N)
+``` 
+
+### Space Complexity
+```
+Space Complexity : O(N)
+``` 
+
+### Advantages 
+    
+- The infix expression is very clear with brackets
+- Easy to implement, compared to other conversion methods
+
+### Disadvantages
+
+- Construction of a expression tree is difficult to implement.

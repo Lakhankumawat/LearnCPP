@@ -2,11 +2,13 @@
 - [Stack](#stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
-- [How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
+- [How To check parenthesis using Stack](#how-to-check-parenthesis-using-stack)
 - [Converting decimal number to binary](#converting-decimal-number-to-binary)
 - [Stack ADT using linked list](#stack-adt-using-linked-list)
 - [Stack using queues](#stack-using-queues)
 - [Infix to Prefix Notation using stack](#infix-to-prefix-notation-using-stack)
+- [Reverse Stack](#reverse-stack)
+- [Sort a Stack](#sort-a-stack)
 
 ## STACK 
 
@@ -99,7 +101,7 @@ Note that an input string is valid if:
 1.Open brackets must be closed by the same type of brackets
 2.Open brackets must be closed in the correct order.
 
-## How To check parenthesis using Stack ?
+## How To check parenthesis using Stack
 ```
 1. Declare stack S.
 2. Now traverse the string expression using a pointer. 
@@ -291,3 +293,58 @@ Although  this notation is not very readable by humans ,but proved very useful f
 - Time Complexity O(n) , where n is length of expression .
 - Space Complexity O(n), where n is the length of expression.
 
+
+# Reverse Stack
+
+## Problem Statement
+You are given a stack St. You have to reverse the stack using recursion.
+
+## Examples
+Example 1 : Input: St = {3,2,1,7,6}
+            Output: {6,7,1,2,3}
+
+Example 2 : Input: St = {5,6,7,8}
+            Output: {8,7,6,5}
+
+## Algorithm
+- We have to reverse a stack using recursion.
+- First, we have called the reverse() function which will reverse our elements till stack is not empty.
+- Then we have called insert() function inside reverse() which would add all elements at bottom of new stack.
+- The insert() function will be the recursive function here.
+- This function take out the topmost element, pop it and recursively call itself to insert elements.
+- At last our original stack would get reversed.
+
+## Time Complexity
+- Time Complexity : O(N^2)
+## Space Complexity
+- Space Complexity : O(N) here N is the recursion stack space.
+
+
+# Sort a Stack
+
+## Problem Statement
+Given a stack, the task is to sort it such that the top of the stack has the greatest element.
+
+## Examples
+Example 1 : Input: St = {11,2,32,3,41}
+
+            Output: {41,32,11,3,2}
+
+Example 2 : Input: St = {9,3,28,4,67}
+
+            Output: {67,28,9,4,3}
+            
+ ![image](https://user-images.githubusercontent.com/94742536/168801681-a0bbfc3e-58da-411e-a54f-11a47d88254f.png)
+        
+
+## Algorithm
+- Insert elements into stack.
+- Declare a min heap.
+- Run the loop till the stack is not empty.
+- Run the loop till the min heap is not empty.
+- While in main function, call sort and show function respectively.
+
+## Time Complexity
+- Time Complexity : O(N log N)
+## Space Complexity
+- Space Complexity : O(N) here N is the stack space.

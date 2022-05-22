@@ -243,6 +243,27 @@ Given pointer to the head node of a linked list, the task is to reverse the link
 ![image](https://user-images.githubusercontent.com/74498344/158961580-61a95b47-fa77-4547-bfe1-7288fb8aa88b.png)
 
 
+***
+# Detect a Cycle in a Linked List
+Given head, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.
+
+### Algorithm
+Slow and Faster Pointer - We will use two pointers with different steps forward. The process is as follows:-
+We will take two pointers, namely fast and slow. Fast pointer takes 2 steps ahead and slow pointer takes 2 points ahead.
+Iterate through the list until the fast pointer is equal to NULL. This is because NULL indicates that there is no cycle present in the given list.
+Cycle can be detected when fast and slow pointers collide.
+![1](https://user-images.githubusercontent.com/69976168/167245221-c6405419-b152-42c1-ac5b-ef618671cd1b.JPG)
+![2](https://user-images.githubusercontent.com/69976168/167245228-e3807860-f6d0-4c06-aaa7-76be25d06d7d.JPG)
+![3](https://user-images.githubusercontent.com/69976168/167245234-e22484a2-9ea6-4675-b923-ebeea94aaf2d.JPG)
+![4](https://user-images.githubusercontent.com/69976168/167245242-752852fc-2a3a-448d-8264-416a827ab590.JPG)
+
+### Complexities
+Time Complexity: O(N)
+Reason: In the worst case, all the nodes of the list are visited.
+Space Complexity: O(1)
+Reason: No extra data structure is used.
+
+
 
 # Searching in a linked list
 
@@ -344,3 +365,4 @@ Suppose we have a list of some elements. We have to remove all elements that hav
 
 ## Disadvantages
 * Linked list must be sorted for applying this algorithm..
+
