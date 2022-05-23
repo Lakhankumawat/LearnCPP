@@ -16,6 +16,7 @@
 - [Sort an Array in wave form](#sort-an-array-in-wave-form)
 - [Print the matrix in wave form](#print-the-matrix-in-wave-form)
 - [Spiral Traversal of Matrix](#spiral-traversal)
+- [Maximum Product Subarray](#Maximum-Product-Subarray)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
@@ -973,3 +974,139 @@ The spiral starts at the top left corner of the input matrix and prints all of t
   >
 </p>
 
+# Maximum Product of Subarray in an Array:
+- [Maximum Product Subarray](#maximum-product-subarray)
+- [Some Examples](#some-examples)
+- [Different Approaches Used](#different-approaches-used)
+  - [Brute force Approach (Optimized)](#1-brute-force-approach-optimized)
+  - [Two Traversals Approach](#2-two-traversals-approach)
+  - [Efficient Approach using Kadane's Algorithm](#3-efficient-approach-using-kadanes-algorithm)
+
+## [Maximum Product Subarray:](https://github.com/Heril18/LearnCPP/blob/main/A-Array/Maximum-Product-Subarray.cpp)
+## Problem Statement : Given an array that contains both negative and positive integers, find the maximum product subarray. 
+<br>
+
+![image](https://lh4.googleusercontent.com/FV3VuPiZsCm6YT8F9VK-KKdjMO0Yz0205NAFJihWyuZLyVMy1Yts_ql2YodgZxZ_yMJBrAJCnWlBDZyx_vCbjuG_o-7-2vSmPNoL0YuOUnEUDFgogQi8dFxOkL7JLLk8MvlX85Ih)
+
+## Some Examples:
+ 
+|Sr. No.|              Input            | Output|                                  Explanation                                       |
+|:----: | :----------------------------:|:-----:| :--------------------------------------------------------------------------------- |
+|   1   | [ 1 , 2 , 3 , 4 ,  5, 0 ]       |  120  | The subarray [1, 2, 3, 4, 5] has the maximum product among all subarrays with product 120. |
+|   2   |         [ -2, 3, -1, 2 ]        |   12   | The subarray [-2, 3, -1, 2]  has the maximum product among all subarrays with product 12.|
+|   3   |  [ 1 , 2 , -3 , 0 ,-4 ,-5 ]  |   20  | The subarray [-4 , -5] has the maximum product among all subarrays with product 20.   |
+
+
+## Different Approaches Used:
+We would be solving the problem by following approaches –
+1. Brute force approach
+2. Two Traversals Approach
+3. Efficient Approach: Kadane’s Algorithm
+
+## 1. Brute force Approach (Optimized)
+We can perform the brute force approach by making 2 nested iterations.
+
+Following are the steps for the approach:
+
+1. Run a loop to find the start of the subarrays.
+2. Run another nested loop
+3. Multiply each element and store the maximum value of all the subarray.
+  #### Algorithm:
+  ```
+#include<bits/stdc++.h>
+using namespace std;
+
+int maxProductSubArray(vector<int>& nums) {
+    int result = nums[0];
+    for(int i=0;i<nums.size()-1;i++) {
+        int p = nums[i];
+        for(int j=i+1;j<nums.size();j++) {
+           result = max(result,p);
+           p *= nums[j];
+        }
+        result = max(result,p);//manages (n-1)th term 
+    }
+    return result;
+}
+
+```
+
+**Time Complexity:** `O(n^2)`, Where n is the size of the array.Reason: We are using two nested loops. \
+**Space Complexity:** `O(1)` , Reason: No extra data structures are used for computation.
+
+## 2. Two Traversals Approach:
+Idea is to find the maximum product from both sides,i.e, once in a forwarding direction and another in the backward direction.
+Following are the steps for the approach:
+1. Iteration from left to right once to get maximum product for forward direction.
+2. If zero is encountered, we set all variables again to initial value.
+3. Iteration from right to left once again to get maximum product for backward direction.
+4. If zero is encountered, we set all variables again to zero to find a new subarray with maximum product.
+5. Once both iterations are completed, the overall result for the maximum product subarray of the given array is the maximum product obtained from both the iterations. 
+#### Algorithm:
+```
+int maxProductSubArray(vector<int>& nums) {
+    int maxLeft = nums[0];
+    int maxRight = nums[0];
+    
+    int prod = 1;
+    
+    bool zeroPresent =  false;
+    
+    for(auto i:nums) {
+        prod *= i;
+        if(i == 0) {
+            zeroPresent = true;
+            prod = 1;
+            continue;
+        }
+        maxLeft = max(maxLeft,prod);
+    }
+    
+    prod = 1;
+    
+    for(int j=nums.size()-1;j>=0;j--) {
+        prod *= nums[j];
+        if(nums[j] == 0) {
+            zeroPresent = true;
+            prod = 1;
+            continue;
+        }
+        maxRight = max(maxRight,prod);
+    }
+    
+    if(zeroPresent) return max(max(maxLeft,maxRight),0);
+    return max(maxLeft,maxRight);
+}
+  
+
+```
+**Time Complexity:** `O(n)`, Where n is the size of the array.Reason: O(N) iteration two times for computing maximum product.\
+**Space Complexity:** `O(1)`.Reason: No extra data structures are used for computation.
+
+## 3. Efficient Approach using Kadane’s Algorithm
+The following approach is motivated by [Kadane’s algorithm](https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/).The pick point for this problem is that we can get the maximum product from the product of two negative numbers too.
+Following are the steps for the approach:
+1. Traverse through the array. 
+2. For each element, we will store prod1 and prod2.
+3. Prod1 is maximum of current element, product of current element and prod1 and product of current element and prod2
+4. Prod2 is minimum of current element, product of current element and prod1 and product of current element and prod2
+5. Return maximum of result and prod1
+  #### Algorithm:
+  ```
+  int maxProductSubArray(vector<int>& nums) {
+    int prod1 = nums[0],prod2 = nums[0],result = nums[0];
+    
+    for(int i=1;i<nums.size();i++) {
+        int temp = max({nums[i],prod1*nums[i],prod2*nums[i]});
+        prod2 = min({nums[i],prod1*nums[i],prod2*nums[i]});
+        prod1 = temp;
+        
+        result = max(result,prod1);
+    }
+    
+    return result;
+}
+
+```
+**Time complexity:** `O(n)`, Where n is the size of the array. Reason : A single iteration is used.\
+**Space complexity:** `O(1)`. Reason : No extra data structure is used for computation.
