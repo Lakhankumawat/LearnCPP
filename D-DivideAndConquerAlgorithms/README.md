@@ -25,6 +25,7 @@
 
 ## Pow(x,n)
 - 
+![ss2](https://user-images.githubusercontent.com/75080313/170106563-6acc84b6-0b84-492f-b932-f7efd2eac8e3.png)
 
 ## Merge Sort
 
@@ -33,7 +34,6 @@
 - We had to sort an array arr. A subproblem would be to sort a sub-section of this array starting at index l and ending at index r, denoted as arr[l..r].
 
 ![Screenshot (637)](https://user-images.githubusercontent.com/98539013/169039682-0e5bcddd-e9ae-4a2c-800a-4f4f36d5857c.png)
-
 
 ### Algorithm
 - Call mergesort function and pass arr , l and r.
