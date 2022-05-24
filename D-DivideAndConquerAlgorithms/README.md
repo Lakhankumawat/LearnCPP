@@ -25,7 +25,27 @@
 
 ## Pow(x,n)
 - 
+- 
 ![ss2](https://user-images.githubusercontent.com/75080313/170106563-6acc84b6-0b84-492f-b932-f7efd2eac8e3.png)
+
+### Algorithm
+- Call Pow(x,n) function and pass x and n.
+- Where, x is a number and n is the power.
+- Recursively, call Pow(x,n) function x is a number and n is a power.
+- BASE CASE- when n==0 simply return 1.
+- if n is a factor of 
+
+
+### Time Complexity
+```
+- O(log(n))
+```
+
+### Space Complexity
+```
+- O(1)
+```
+
 
 ## Merge Sort
 
