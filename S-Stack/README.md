@@ -2,12 +2,15 @@
 - [Stack](#stack)
 - [Infix to postfix conversion](#infix-to-postfix-conversion)
 - [Parenthesis Checker](#parenthesis-checker)
-- [How To check parenthesis using Stack ?](#how-to-check-parenthesis-using-stack)
+- [How To check parenthesis using Stack](#how-to-check-parenthesis-using-stack)
 - [Converting decimal number to binary](#converting-decimal-number-to-binary)
 - [Stack ADT using linked list](#stack-adt-using-linked-list)
 - [Stack using queues](#stack-using-queues)
 - [Infix to Prefix Notation using stack](#infix-to-prefix-notation-using-stack)
+- [Implementing two stacks using a single array](#implementing-two-stacks-using-a-single-array)
 - [Reverse Stack](#reverse-stack)
+- [Sort a Stack](#sort-a-stack)
+
 
 ## STACK 
 
@@ -100,7 +103,7 @@ Note that an input string is valid if:
 1.Open brackets must be closed by the same type of brackets
 2.Open brackets must be closed in the correct order.
 
-## How To check parenthesis using Stack ?
+## How To check parenthesis using Stack
 ```
 1. Declare stack S.
 2. Now traverse the string expression using a pointer. 
@@ -294,6 +297,7 @@ Although  this notation is not very readable by humans ,but proved very useful f
 
 
 
+
 # Reverse Stack
 
 ## Problem Statement
@@ -318,4 +322,5 @@ Example 2 : Input: St = {5,6,7,8}
 - Time Complexity : O(N^2)
 ## Space Complexity
 - Space Complexity : O(N) here N is the recursion stack space.
+
 
