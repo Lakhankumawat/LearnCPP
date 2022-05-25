@@ -1,6 +1,7 @@
 # Table of content
 - [Subsets Generation using Bit Masking](#subsets-generation-using-bit-masking)
 - [Count Set Bits](#count-set-bits)
+- [Maximize Expression](#maximize-expression)
 
 ## Subsets Generation using Bit Masking
 Algorithm that uses bit masking to generate all possible subsets from a given array with a chosen data type.<br>
@@ -60,5 +61,33 @@ Example 2 :  Input : N = 8
 
 ## Time Complexity and Space Complexity
 Time Complexity : O(n log n)
+
+Space Complexity : O(1)
+
+# Maximize Expression
+
+## Problem Statement 
+Given two positive integers X and Y. Let’s define W such that Y AND W = W. The task is to maximize the expression X XOR Y.
+
+## Examples
+Example 1 : Input: X = 11 Y = 4
+            Output: 15 
+
+Example 2 :  Input: X = 9 and Y = 13
+             Output: 13
+             
+<img src="https://user-images.githubusercontent.com/98539013/170197593-162feef0-f03d-47e3-bf26-678cdda3a72e.png" width="400" height="300" />
+            
+## Algorithm
+- Take the two inputs X and Y, pass through the function (Maximize Expression) to maximize the expression.
+- We initialize our result with A.
+- Next we will consider the ith bit of W to be 1.
+- Next step will invlove calculating the value of (Y and bitofW).
+- We check if the bitofW satifies the expression- (Y and W=0).
+- Finally we check if bitofW can maximize (X xor W).
+- And thus, we return our ans.
+
+## Time Complexity and Space Complexity
+Time Complexity : O(MAX)
 
 Space Complexity : O(1)
