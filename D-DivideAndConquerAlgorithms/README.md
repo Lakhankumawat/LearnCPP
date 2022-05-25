@@ -5,8 +5,6 @@
       - [Algorithm](#algorithm)
       - [Time Complexity](#time-complexity)
       - [Space Complexity](#space-complexity)
-      - [Advantages](#advantages)
-      - [Disadvantages](#disadvantages)
      
    - [Merge Sort](#merge-sort)
       - [Algorithm](#algorithm)
@@ -24,8 +22,10 @@
 - Combining them to get the desired output.
 
 ## Pow(x,n)
-- 
-- 
+
+- Pow function takes x as number input and n as power input
+- It return power value of the two input that is equal to x^n
+
 ![ss2](https://user-images.githubusercontent.com/75080313/170106563-6acc84b6-0b84-492f-b932-f7efd2eac8e3.png)
 
 ### Algorithm
@@ -33,8 +33,8 @@
 - Where, x is a number and n is the power.
 - Recursively, call Pow(x,n) function x is a number and n is a power.
 - BASE CASE- when n==0 simply return 1.
-- if n is a factor of 
-
+- if n is a factor of 2 the return (x^(n/2))^2 value.
+- if n is not a factor of 2 then return (x^(n/2))^2*x value.
 
 ### Time Complexity
 ```
