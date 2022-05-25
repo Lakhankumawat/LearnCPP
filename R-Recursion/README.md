@@ -499,9 +499,22 @@ Example 2 : INPUT: learncppcnrael
 
    - Else input string is not a palindrome.
 
+![chcj](https://user-images.githubusercontent.com/97409445/170348824-9424b4bb-e94d-46fe-be17-f1698f2939ca.jpg)
+
+
    - Print result in main.
 https://user-images.githubusercontent.com/97409445/167003996-8cfe5fc4-9ac0-4caf-a66f-02a443399fd9.png
 ```
+
+ ### Advantages
+ - It reduce time complexity.
+ - It has a relaxation on the number of iterations( we can run a variable number of loops ). 
+ - It is easy to implement. 
+
+### Disadvantage
+- Recursion uses more memory. Because the function has to add to the stack with each recursive call and keep the values there until the call is finished, the memory allocation is greater than that of an iterative function.
+- It can be less optimised and slow in some cases.
+
 
 ### Time Complexity
   ```
