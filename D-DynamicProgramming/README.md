@@ -19,6 +19,9 @@
 
 - [Unique Paths II](#unique-paths-ii)
 
+- [Count Of Subsets With Sum Equal To Given Sum](#count-of-subsets-with-sum-equal-to-given-sum)
+
+
 - [Minimum Falling Path Sum](#minimum-falling-path-sum)
 
 - [Knapsack with Duplicate Items](#knapsack-with-duplicate-items)
@@ -981,6 +984,66 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 #### Space Complexity = O(m * n)
 
 
+# Count Of Subsets With Sum Equal To Given Sum
+
+- [Problem Statement](#problem-statement)
+    - [Examples](#Examples)
+- [Explanation](#explanation)
+- [Complexity](#complexity)
+
+# Problem Statement
+
+Given an array and an integer, you have to find the number of subsets with a sum equal to the given integer.
+
+## Examples
+
+Input: arr[] = {1, 2, 3, 3} , Sum = 6
+Output: 3 
+All the possible subsets are {1, 2, 3}, {1, 2, 3} and {3, 3}
+
+
+Input: arr[] = {2, 3, 5, 6, 8, 10} , Sum = 10
+Output: 3
+All the possible subsets are {2, 8}, {5, 2, 3} and {10}
+
+# Explanation
+
+There are many approaches to solve this problem but here we will discuss tabulation (Bottom up) approach.
+
+Declare a 2D matrix of size (n+1)*(sum+1) where n is the size of the array and the sum is the target sum.
+   
+    int t[n+1][sum+1]
+  
+After that we will initialize the matrix.
+
+  Initializing the first value of matrix,
+
+    t[0][0] = 1 because the array has zero element and the given sum is also zero then there will be only 1 possible subset that is empty set.
+
+  Initializing the first row and column other than t[0][0],
+
+    t[0][j] = 0 because the array is empty so there will be no subset having sum equal to j.
+    t[i][0] = 1 because there will always be 1 subset (empty subset) having sum equals to 0.
+
+For filling other rows and columns,
+  if the element of the array is less than the sum then we can either include it or exclude it. But if the element is greater than the sum then we will exclude it.
+    if(arr[i-1]<=j){
+        t[i][j] = t[i-1][j] + t[i-1][j-arr[i-1]];
+    }
+    else{
+        t[i][j] = t[i-1][j];
+      }
+
+lastly we will return our answer that is t[n][sum].
+
+
+# Complexity
+
+Time Complexity: O(sum*n), where the sum is the ‘target sum’ and ‘n’ is the size of the array.
+Auxiliary Space: O(sum*n), as the size of the 2-D array, is sum*n. 
+
+=======
+
 # [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
 
 - [Problem Statement](#problem-statement-4)
@@ -1074,6 +1137,7 @@ We'll optimize this using DP ,because we have overlapping sub-problems.
 #### Space Complexity = O(n^2)
 
 
+
 # [Knapsack with Duplicate Items](https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1/#)
 
 - [Problem Statement](#problem-statement-5)
@@ -1160,7 +1224,6 @@ Explanation-The optimal choice is to pick the 2nd and 4th element
 
 - Time Complexity = O(N * W)
 - Space Complexity = O(N * W)
-
 
 
 # Minimum number of deletions and insertions required to transform one string into another
@@ -1401,3 +1464,4 @@ Output: 6<br>
 - Time Complexcity = O(n * m) where n and m are strings' lengths
 
 - Space Complexity = O(n * m) where n and m are strings' lengths
+ main
