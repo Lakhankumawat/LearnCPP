@@ -30,6 +30,8 @@
 
 - [Coin Change](#coin-change)
 
+- [Edit Distance](#edit-distance)
+
 
 # Dynamic Programming
   - [Recursive vs Dynamic Programming Approach](#recursive-vs-dynamic-programming-approach)
@@ -1283,9 +1285,9 @@ Time Complexity: O(m*n)
   
  # [Coin Change](https://leetcode.com/problems/coin-change/)
 
-- [Problem Statement](#problem-statement-7)
+- [Problem Statement](#problem-statement-6)
 
-- [Examples](#examples-7)
+- [Examples](#examples-6)
 
 - [Algorithm](#algorithm-2)
 
@@ -1377,3 +1379,89 @@ Output: -1
 
 - Space Complexity = O(n * amount)
 
+
+# Edit Distance
+
+- [Problem Statement](#problem-statement-7)
+
+- [Examples](#examples-7)
+
+- [Algorithm](#algorithm-3)
+
+- [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-4)
+
+
+### Problem Statement
+
+Find the weighted edit distance between string 1 and string 2, where the cost of inserting is I, the cost of deletion is D, and the cost of substitution is S.<br>
+
+Input<br>
+- The strings str1 and str2 are given in the first and secind lines, respectively. Both strings consist of
+small Latin letters only.
+- The third line contains three integers I, D and S (1 <= I, D, S <= 100).
+
+Output<br>
+- The minimal cost to transform str1 to str2 by single symbol insertions, deletions, and substitutions.
+
+![image](https://user-images.githubusercontent.com/29145628/168327404-ad1380da-b135-484d-98e1-9b58f608b40d.png)
+
+
+### Examples
+
+Example 1:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+1 1 1<br><br>
+Output: 5<br><br>
+
+Example 2:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+1 1 100<br><br>
+Output: 7<br><br>
+
+Example 3:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+100 1 1<br><br>
+Output: 105<br><br>
+
+Example 4:<br>
+
+Input: <br><br>
+editing<br>
+distance<br>
+1 100 1<br><br>
+Output: 6<br>
+
+### Algorithm 
+
+- It's supposed to find the minimum cost to convert string 1 to string 2 using insertion, deletion and substitution operations
+
+- Each operation has a chosen cost
+
+- Using bottom up approach, create a dp storage to store all possible moves and always choose the operation with minimum cost
+
+- Initializing row 0 and column 0 with D and I costs resepctively as row 0 represents word's characters deletion and column 0 represents word's characters insertion
+
+- Loop on the string 1 and loop for each character in string 1 on string 2 characers
+
+- If the 2 characters are similar do nothing, just take the diagonal value 
+
+- If the 2 characters are not similar, perform the operation the minimal cost andd the new cost on it
+
+- Print the last element in the created matrix as it's the minimal possible cost after trying all operations in the matrix
+
+
+### Time Complexity and Space Complexity
+
+- Time Complexcity = O(n * m) where n and m are strings' lengths
+
+- Space Complexity = O(n * m) where n and m are strings' lengths
+ main

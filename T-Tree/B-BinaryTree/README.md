@@ -17,6 +17,14 @@
     - [Algorithm](#algorithm-1)
     - [Complexity](#complexity)
 
+- [Cousins in Binary Tree](#cousins-in-binary-tree)
+    - [Problem Statement](#problem-statement-1)
+    - [Examples](#examples-1)
+    - [Algorithm](#algorithm-4)
+    - [Time and Space Coomplexity](#time-and-space-complexity)
+
+
+
 
 
 # Binary Tree:
@@ -210,3 +218,44 @@ Complexities -:
    1.Time Complexity - O(N), N - Number of nodes in a Binary-Tree.
    2.Space Complexity - O(H), H - Height of the Binary-Tree.
 ```
+
+## Cousins in Binary Tree
+
+### Problem Statement
+
+Given the root of a binary tree with unique values and the values of two different nodes of the tree x and y, return true if the nodes corresponding to the values x and y in the tree are cousins, or false otherwise.
+
+Two nodes of a binary tree are cousins if they have the same depth with different parents.
+
+Note that in a binary tree, the root node is at the depth 0, and children of each depth k node are at the depth k + 1.
+
+
+### Examples
+
+##### Example-1
+![image](https://user-images.githubusercontent.com/75883328/169003203-d780ee3d-5c36-4298-ad69-9855110fa044.png)
+
+Input: root = [1,2,3,4], x = 4, y = 3
+
+Output: false
+
+
+##### Example-2
+
+![image](https://user-images.githubusercontent.com/75883328/169003345-74efbcd0-8f86-4448-a2d4-d20a25f69a36.png)
+
+Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
+
+Output: true
+
+### Algorithm
+
+- If x & y are on same levels and has different parents then they are cousins.
+- So we have to find parents and levels for both x and y.
+- If value of any node is equal to x then we'll update the parent and the level of x and will do the same for y.
+- Now, if parent of x is not equal to parent of y and if they are on same level then we'll return true otherwise return false.
+
+
+### Time and Space Complexity
+- Time Complexity = O(n) , since we are iterating over all the n-nodes.
+- Space Complexity = O(h) ,h is the height of the Binary Tree
