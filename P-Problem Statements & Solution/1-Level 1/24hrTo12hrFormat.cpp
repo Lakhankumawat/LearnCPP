@@ -1,13 +1,6 @@
 //Link to the Question: https://www.geeksforgeeks.org/convert-time-from-24-hour-clock-to-12-hour-clock-format/
 
-
-//The approach to solving this problem requires some observations.
-//First that the minutes and seconds will be same in both the cases.
-//The only change will be in the hours and according to that Meridien will be appended to the string.
-//For hours, first convert it from string to int datatype, then take its modulo with 12 and that will be our hours in 12-hour format. Still, there will be a case when hour becomes 00 i.e (12 or 00 in 24-hour format) which we need to handle separately.
-
-
-//Below is the implementation of above approach:
+//Below is the implementation of the given approach:
 
 #include <bits/stdc++.h>
 using namespace std;
