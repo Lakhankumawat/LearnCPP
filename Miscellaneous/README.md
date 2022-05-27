@@ -106,3 +106,48 @@ catch(int x){
 3. Stirng Catch
 4. double Catch
 5. Universal Catch (As Stated second point of Special features)
+
+---
+
+## Catalan Number
+
+The Catalan numbers are the special type of numbers which are defined as a sequence of natural numbers that occur in various counting problems , generally involving recursively defined objects.
+
+![58374aa2b2e2c016a5b313e2bbd59940a2e1a5f9](https://user-images.githubusercontent.com/86917304/169381272-a9b6afe0-5cea-4447-b8db-e3688d1f4eb1.jpg)
+
+### Calculations
+
+There are two formulas for the Catalan numbers:
+
+- Recursive : The recurrence formula can be easily deduced from the problem of the correct bracket sequence.
+
+![image](https://user-images.githubusercontent.com/86917304/169523760-1eda6c2f-8900-49a3-b9d4-fe567d71af64.png)
+
+- Analytical : The formula can be easily concluded from the problem of the monotonic paths in square grid. The total number of monotonic paths in the lattice size of `n x n` is given by `(2n / n)`.
+
+![image](https://user-images.githubusercontent.com/86917304/169523868-d77e610e-6d7c-4fe4-a75e-19126b398105.png)
+
+- Binomial Coefficient : We can use formula which is defined below to find the catalan number in `O(N)` time complexity.
+
+![image](https://user-images.githubusercontent.com/86917304/169525112-e43aa376-7941-42b1-b345-9cd0a69b78b2.png)
+
+### Complexites
+
+- Recursive :
+  - Time Complexity : `O(N)`
+  - Space Complexity : `O(N)`
+- Dynamic Programming :
+  - Time Complexity : `O(N^2)`
+  - Space Complexity : `O(N)`
+- Binomial Coeffcient :
+  - Time Complexity : `O(N)`
+  - Space Complexity : `O(N)`
+
+### Applications
+
+1. Number of ways to connect the points on a circle disjoint chords. This is similar to point 3 above.
+2. Number of ways to form a “mountain ranges” with n upstrokes and n down-strokes that all stay above the original line.The mountain range interpretation is that the mountains will never go below the horizon.
+3. Count the number of expressions containing n pairs of parentheses which are correctly matched. For n = 3, possible expressions are ((())), ()(()), ()()(), (())(), (()()).
+4. Count the number of possible Binary Search Trees with n keys (See this)
+5. Count the number of full binary trees (A rooted binary tree is full if every vertex has either two children or no children) with n+1 leaves.
+6. Given a number n, return the number of ways you can draw n chords in a circle with 2 x n points such that no 2 chords intersect.
