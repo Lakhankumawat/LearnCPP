@@ -1,3 +1,6 @@
+
+
+
 # Table of content
 - [Height of the binary tree](#height-of-the-binary-tree)
 - [Number of Internal Nodes](#number-of-internal-nodes)
