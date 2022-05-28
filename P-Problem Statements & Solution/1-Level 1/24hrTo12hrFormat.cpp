@@ -50,9 +50,9 @@ int main()
 {
 
     string str;
-    cout << "Enter time (24 hr format): ";
+    cout << "Enter time in 24 hr format(hh:mm:ss)= ";
     cin >> str;
-
+    cout << "Time in 12hr format is = ";
     convert12(str);
 
     return 0;
