@@ -2,6 +2,11 @@
 - [Union of two sets](#union-of-two-sets)
 - [Cartesian Product of two Set](#cartesian-product-of-two-set)
 - [Intersection of two Set](#intersection-of-sets)
+- [Find Kth distinct character from start of given String](#find-kth-distinct-character-from-start-of-given-string)
+  - [Properties](#properties)
+  - [Algorithm](#algorithm)
+  - [Time Complexity](#time-complexity)
+  - [Space Complexity](#space-complexity)
 
 # Union of two sets
 - The union of a two of sets is the set of all elements in the both the sets. It is one of the fundamental operations through which sets can be combined and related to each other. 
@@ -99,3 +104,37 @@ The intersection of two sets A and B is the set of all elements which are common
 
 - Time Complexity :- O(n+m)
 - Space Complexity :- O(1)
+
+
+# Find Kth distinct character from start of given String
+
+- Given a string str of size N containing all possible characters including integers.Print Kth distinct character from the starting of the given string. 
+- If K is more than number of distinct characters, print -1.
+- Note: The uppercase and lowercase letters are considered different.
+
+<img src="https://user-images.githubusercontent.com/98539013/170510201-bac36cdd-c133-4ba6-9bdc-d0acf560971e.png" width="750" height="400" />
+
+## Properties
+
+- Commutative Law : `A ∩ B = B ∩ A`
+- Associative law : `(A ∩ B) ∩ C = A ∩ (B ∩ C)`
+- Law of φ and U : `φ ∩ A = φ, U ∩ A = A`
+- Distributive law : `A ∩ (B U C) = (A ∩ B) U (A ∩ C)`
+- Idempotent law : `A ∩ A = A`
+
+## Algorithm
+
+- Taking the inputs from the user.
+- Passing the string and k through the function- printKthDistinct.
+- Then initialize the set- "uniqueEle".
+- Traverse the string and put its elements in the set, till the size of set becomes  equal to k. 
+- Finally output the last traversed element of the string.
+
+## Time Complexity
+```
+- O(N*N).
+```
+## Space Complexity
+```
+- O(1).
+```
