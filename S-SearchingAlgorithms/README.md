@@ -14,6 +14,15 @@
         - [Properties](#binarysearchproperties)
         - [Advantages](#advantagesofbinarysearch)
         - [Disadvantage](#disadvantageofbinarysearch)
+    - [Search Element in a Rotated Sorted Array](#search-element-in-rotated-sorted-array)
+        - [Explanation](#explanation)
+        - [Properties](#properties)
+
+    -  [Interpolation Search](#interpolation-search)
+        - [Approach](#approach)
+        - [Complexities](#complexities)
+        - [Advantages](#advantages-2)
+        - [Disadvantage](#disadvantages)
 
 # Searching Algorithms
 
@@ -166,3 +175,85 @@ end procedure
 
 <a name="#difference"></a>
 
+# [Search element in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+### Naive Approach
+Use Linear Search to check if the element is present in the array or not. 
+
+Time Complexity: ` O(n) `  where n is size of the array
+Space Complexity: ` O(1) `
+
+### Optimal Approach
+Since, it is given that the array is sorted, we will solve this problem using Binary Search.
+
+Consider this array:- arr= [4,5,6,7,0,1,2]   n=7, element=1
+
+Suppose, we are standing on index 1.
+
+![image](https://user-images.githubusercontent.com/99183334/159004776-0feeaff8-b5e3-46d9-a1ed-f43207dd3c1a.png)
+
+Now, if we carefully observe the left half is sorted and the right half is unsorted.
+
+![image](https://user-images.githubusercontent.com/99183334/159002873-831d0bfc-d6f7-48b5-9e68-ac8abe9c0237.png)
+
+Similarly, if we look at index 4, the left half is unsorted and the right half is sorted.
+
+![image](https://user-images.githubusercontent.com/99183334/159003631-2488cd15-3214-46bb-b9de-27f112da7c93.png)
+
+Therefore, if we are standing on any index, either the left half is sorted or the right half is sorted.
+
+Case 1: Check if mid is equal to the element `arr[mid]==element` . If yes, then `return mid`
+Case 2a: Check if the left half of the array is sorted `arr[low]<=arr[mid]`.
+        Now, check if the element lies in the left sorted half `element>=arr[low] && element< arr[mid]`
+            i)If yes, then search in left sorted half `high=mid-1`
+            ii) else, the element must lie in the right unsorted half `low=mid+1`
+Case 2b: The right half of the array must be sorted .
+        Now, check if the element lies in the right sorted half `element>arr[mid] && element<= arr[high]`
+            i)If yes, then search in right sorted half `low=mid+1`
+            ii)else, the element must lie in the left unsorted half `high=mid-1`
+
+
+### Properties
+- Time Complexity: ` O(log n) `  where n is size of the array
+- Space Complexity: ` O(1) `
+
+---
+
+## Interpolation Search
+
+The interpolation search is the enhanced form of the binary search in this values in a **sorted array** is uniformly distributed . Interpolation search will visit different locations according to the value that is given and being searched.
+
+- **For example :-** If the value of the target is closer to the last element, interpolation search is likely to start search toward the end of the array or we say from the last element.
+
+![image](https://user-images.githubusercontent.com/86917304/168891817-2b2a2d57-2c05-43a1-b350-12419b74ce17.png)
+
+
+### Approach
+
+- **Intutuion**
+
+1. The intution behind the search is to return the high value of postion.
+2. When we want to search the element is closer to `a[high]` and smaller value when closer to `a[low]`.
+3. The working formula (probe position formula) is \
+   **pos = low + [ (key - a[low]) \* (high-low) / (a[high] - a[low]) ]**
+
+- **Algorithm**
+
+1. Calculate the value of _pos_ using the probe position formula.
+2. If it is a match with the key that provided , return the index of the key, and exit from the loop.
+3. If the key is less than `arr[pos]`, calculate the probe position of the left sub-array. Else calculate the same in the right sub-array.
+4. Repeat until a match is found or the sub-array size turned to zero.
+
+### Complexities
+
+- Time Complexity :- - Average Case :- `O(log2(log2 n))` - Worst Case :- `O(n)`
+  Here , **n** is the size of array.
+- Space Complexity :- `O(1)`
+
+### Advantages
+
+- It is the combination of both binary search algorithm and linear search algorithm.
+
+### Disadvantages
+
+- When the elements in the list or array are increased exponentially, then executing time of Interpolation search algorithm increased to `0(n) time complexity`.

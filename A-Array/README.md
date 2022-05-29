@@ -10,8 +10,12 @@
 - [Array Operations](#array-operations)
 - [Symmetric matrix](#symmetric-matrix)
 - [Reversing of array](#reversing-of-array)
-
-
+- [Printing matrix in antispiral form](#printing-matrix-in-antispiral-form)
+- [Printing matrix for find the missing and repeating number](#printing-matrix-for-find-the-missing-and-repeating-number)
+- [Majority Element](#majority-element)
+- [Sort an Array in wave form](#sort-an-array-in-wave-form)
+- [Print the matrix in wave form](#print-the-matrix-in-wave-form)
+- [Spiral Traversal of Matrix](#spiral-traversal)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
@@ -699,3 +703,273 @@ For instance, consider array [1, 2, 3, …., n-2, n-1, n]. We swap 1 with n, 2 w
  Properties
 Time-complexity-->O(n)
 Space-complexity-->O(1)
+
+
+# Printing matrix in antispiral form
+
+- [Problem Statement](#problem-statement-for-antispiral-matrix)
+    - [Examples](#examples-for-antispiral-matrix)
+- [Explanation](#explanation-for-antispiral-matrix)
+- [Complexity](#complexity-for-antispiral-matrix)
+
+### Problem Statement for antispiral matrix
+
+The problem is that you are given a 2D array and the task is to print matrix in anti spiral form.
+
+    > Note you must be well aware with the printing matrix in spiral form algorithm
+    to properly understand the printing matrix in antispiral form
+
+### Examples for antispiral matrix
+```
+Input :
+
+ arr[][4] = {1, 2, 3, 4
+                    5, 6, 7, 8
+                    9, 10, 11, 12
+                    13, 14, 15, 16};
+
+Output :
+
+10 11 7 6 5 9 13 14 15 16 12 8 4 3 2 1
+```
+
+### Explanation for antispiral matrix
+
+
+- The idea is simple, we traverse matrix in spiral form and put all traversed elements in a stack. 
+
+- Finally one by one elements from stack and print them.
+
+- Understanding spiral method :
+
+- In spiral method the problem can be solved by dividing the matrix into boundaries.
+
+- It is visible that elements of the outer loop are printed in a clockwise manner, and then the elements from the inner loop are printed.
+
+- So, we can imagine the outer loop as four boundaries, namely row_start, col_start, row_end, col_end.
+
+![](https://miro.medium.com/max/1400/1*wIbS1BHxu5asM2pfefnj5w.png)
+
+- row_start: elements in the path of the matrix where we move from left to right.
+- row_end: elements in the path of the matrix where we move from right to left.
+- col_start: elements in the path of the matrix where we move from up to down.
+- col_end: elements in the path of the matrix where we move from down to up.
+
+- We print elements covered by each boundary in a clockwise manner using four loops, and after each iteration, reduce the dimension of the boundary to form an inner loop of the matrix. 
+
+- Now, the new boundary conditions become our new matrix.
+
+### Following diagram shows the logic of the code
+![This is image showing logic of code](https://media.geeksforgeeks.org/wp-content/uploads/spiral1.jpg)
+
+###
+
+### Complexity for antispiral matrix
+```
+Time Complexity: O ( m * n )
+Space Complexity: O (m * n )
+```
+
+# Printing matrix for find the missing and repeating number
+
+- [Problem Statement](#problem-statement-for-find-the-missing-and-repeating-number)
+    - [Examples](#examples-for-find-the-missing-and-repeating-number)
+- [Explanation](#explanation-for-find-the-missing-and-repeating-number)
+- [Advantages](#advantages-for-find-the-missing-and-repeating-number)
+- [Complexity](#complexity-for-find-the-missing-and-repeating-number)
+
+### Problem Statement for find the missing and repeating number
+Given an unsorted array of size n. Array elements are in the range from 1 to n. One number from set {1, 2, …n} is missing and one number occurs twice in the array. 
+
+Find these two numbers.
+
+### Examples for find the missing and repeating number
+```
+Input:
+ arr[] = {3, 1, 3}
+ 
+Output:
+ Missing = 2, Repeating = 3
+
+Explanation: In the array, 
+2 is missing and 3 occurs twice 
+
+```
+
+### Explanation for find the missing and repeating number
+
+- Given an array and its size first we need to traverse the array.
+
+- While traversing, use the absolute value of every element as an index. 
+
+- Make the value at this index as negative to mark it visited. 
+
+- If something is already marked negative then this is the repeating element. 
+
+- To find missing, traverse the array again and look for a positive value.
+
+### Advantages for find the missing and repeating number
+- This question can also be solved using sorting.
+
+- But using this approach is better as it solves the question in O(n) complexity whereas in sorting it would need O(nlogn) complexity.
+
+- In sorting approach you would need to sort the input array and then traverse and check for elements.
+
+- This would lead to O(nlogn) complexity.
+
+### Complexity for find the missing and repeating number
+```
+Time Complexity: O (n)
+Space Complexity: O (n)
+```
+
+# Majority Element
+
+- [Problem Statement](#problem-statement-for-majority-element)
+    - [Examples](#examples-for-majority-element)
+- [Explanation](#explanation-for-majority-element)
+
+- [Complexity](#complexity-for-majority-element)
+
+### Problem Statement for Majority Element
+The problem is given an array you have to print the majority element. A majority element in an array A[] of size n is an element that appears more than n/2 times.
+
+### Examples for Majority Element
+```
+Input :
+ {3, 3, 4, 2, 4, 4, 2, 4, 4}
+
+Output : 4
+
+Explanation: The frequency of 4 is 5 which is greater
+than the half of the size of the array size. 
+
+```
+
+### Algorithm for Majority Element
+
+1. Given an array we take two loops and keep track of the maximum count for all different elements. 
+
+2. If maximum count becomes greater than n/2 then break the loops and return the element having maximum count.
+
+3.  If the maximum count doesn’t become more than n/2 then the majority element doesn’t exist.
+
+4. Create a variable to store the max count, count = 0
+
+5. Traverse through the array from start to end.
+
+6. For every element in the array run another loop to find the count of similar elements in the given array.
+
+7. If the count is greater than the max count update the max count and store the index in another variable.
+
+8. If the maximum count is greater than the half the size of the array, print the element. Else print there is no majority element.
+
+
+### Complexity for Majority Element
+```
+Time Complexity: O(n*n)
+Space Complexity: O(1)
+```
+
+# Sort an Array in wave form
+
+- [Problem Statement](#problem-statement-for-sorting-in-wave-form)
+    - [Examples](#examples-for-sorting-in-wave-form)
+- [Explanation](#explanation-for-sorting-in-wave-form)
+- [Complexity](#complexity-for-sorting-in-wave-form)
+
+### Problem Statement for sorting in wave form
+
+Given an unsorted array of integers, sort the array into a wave like array. An array ‘arr[0..n-1]’ is sorted in wave form if arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= …..
+
+### Examples for sorting in wave form
+```
+Input: 
+ arr[] = {10, 5, 6, 3, 2, 20, 100, 80}
+Output:
+ arr[] = {10, 5, 6, 2, 20, 3, 100, 80} OR
+         {20, 5, 10, 2, 80, 6, 100, 3} OR
+         any other array that is in wave form
+
+```
+
+### Explanation for sorting in wave form
+
+- Given an array of size n first sort the input array.
+
+- Then swap all the adjacent elements.
+
+- For example, let the input array be {3, 6, 5, 10, 7, 20}. 
+
+- After sorting, we get {3, 5, 6, 7, 10, 20}. 
+
+- After swapping adjacent elements, we get {5, 3, 7, 6, 20, 10}. 
+
+### Complexity for sorting in wave form
+```
+Time Complexity: O(nlogn)
+Space Complexity: O(1)
+```
+# Print the matrix in wave form
+- [Problem Statement](#problem-statement-to-print-in-wave-form)
+- [Sample test case](#sample-input-and-output)
+- [Explanation](#explanation-of-the-problem)
+- [Algorithm](#algorithm-of-the-problem)
+- [Complexity](#time-space-complexity)
+ 
+### Problem Statement to print in wave form
+For a 2D integer array "matrix" of size m x n (where m and n are the number of rows and columns respectively), print the ‘matrix’ in wave order, i.e. print the first column top to bottom, next column bottom to top, and so on.
+### Sample input and output
+```
+Input :
+  1,2,3
+  4,5,6
+  7,8,9
+
+Output : 1 4 7 8 5 2 3 6 9
+
+```
+### Explanation of the problem
+![gssoc](https://user-images.githubusercontent.com/84696772/167357290-3555ff0c-0b64-4421-a2da-9e1306016a46.PNG)
+
+### Algorithm of the problem
+- Run a loop from col_no = 0 to n ( Toal number of columns).
+- If the col_no(current column) is even, then the elements will be printed from top to     bottom.
+  - Run an inner loop from row_no = 0 to m (Total number of rows)
+     Print all the elements.
+- Else if the current row is odd, then the elements will be printed from bottom to top.
+  - Run another inner loop from row no = m - 1 to 0
+  - Print all the elements.
+  
+### Time space Complexity
+```
+Time Complexity: O(N2)
+Auxiliary Space: O(1)
+```
+# Spiral Traversal Of A Matrix <a name="spiral-traversal"/>
+The Spiral Matrix problem takes a 2-Dimensional array with N rows and M columns as input and prints the elements in spiral order.
+The spiral starts at the top left corner of the input matrix and prints all of the elements it encounters as it loops clockwise towards the centre.
+
+## Algorithm
+- First, four variables containing the indices for the corner points of the array are initialized.
+- From the top left corner of the array, the algorithm traverses the first row from left to right. It does not need to revisit the row once it has traversed it, so it increments the top corner index.
+- It then traverses the rightmost column from top to bottom. Once this is done, there is no need to go back to the rightmost column, so the right corner index is decremented.
+- Next, the algorithm traverses the bottommost row and decrements the bottom corner index afterward.
+- Finally, the algorithm goes through the leftmost column, incrementing the left corner index once it's done.
+
+## Visualization of the algorithm
+|   |   |   |   |
+|---|---|---|---|
+| ![sm1](https://user-images.githubusercontent.com/84399701/165970510-17258305-d440-4e62-82d3-23064ed3592b.png)  |  ![sm2](https://user-images.githubusercontent.com/84399701/165970522-92b7dc94-c328-4e48-8f87-d640d6c1d663.png) |  ![sm3](https://user-images.githubusercontent.com/84399701/165970534-7ad0cf0b-326b-4267-91a7-540e1ec4a555.png) | ![sm4](https://user-images.githubusercontent.com/84399701/165970539-1949eb72-91c2-4f29-bdf0-02ecd4830d2f.png)  | 
+| ![sm5](https://user-images.githubusercontent.com/84399701/165970553-7a419f25-f69b-4baa-bfff-0ea3707091f6.png)  | ![sm6](https://user-images.githubusercontent.com/84399701/165970560-a1c0b21b-f987-4f69-9dfe-37be0f0aa248.png)  | ![sm7](https://user-images.githubusercontent.com/84399701/165970569-8dc3fafd-b358-4c8d-a79c-b09a41b04dcd.png)| ![sm8](https://user-images.githubusercontent.com/84399701/165970573-56283699-cd7e-467a-a14d-56a70aa86f6c.png)  | 
+![sm9](https://user-images.githubusercontent.com/84399701/165970581-0aff3970-e510-4721-9e2b-82bca1dd97f3.png) | ![sm10](https://user-images.githubusercontent.com/84399701/165970589-f9ccd6fe-9696-405a-8651-606dbf56063b.png) |  ![sm11](https://user-images.githubusercontent.com/84399701/165970594-14437556-2e70-491a-9af9-be10577ecfd2.png) |  ![sm12](https://user-images.githubusercontent.com/84399701/165970598-7498381f-e49e-4f4a-bfd3-64c37d0bb48c.png) |  
+![sm13](https://user-images.githubusercontent.com/84399701/165970601-8ad630c9-21c3-4d67-9d1c-4d4f9dd72ebd.png) |  ![sm14](https://user-images.githubusercontent.com/84399701/165970605-00c2da97-3564-41e0-bcbe-b39bf3f3764b.png) | ![sm15](https://user-images.githubusercontent.com/84399701/165970613-12e49ef2-5e7d-40bc-be1d-dfb5214aaa03.png) | ![sm16](https://user-images.githubusercontent.com/84399701/165970624-59e52f32-d89b-4455-82f0-580c4231b5f1.png) 
+
+<p align="center">
+  <img 
+    width="250"
+    height="200"
+    src="https://user-images.githubusercontent.com/84399701/165970628-8115dade-9d6f-4e04-a8d0-99c215b47474.png"
+  >
+</p>
+
