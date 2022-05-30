@@ -14,6 +14,11 @@
     - [Time Complexity](#Time-Complexity)
     - [Advantage](#advantage)
     - [Disadvantage](#disadvantage)
+- [Buy Maximum Stocks if i stocks can be bought on i-th day](#buy-maximum-stocks-if-i-stocks-can-be-bought-on-ith-day)
+    - [Algorithm](#algorithm)
+    - [Time Complexity](#Time-Complexity)
+    - [Advantage](#advantage)
+    - [Disadvantage](#disadvantage)
 
 
 ## OPEN this link below for a deatiled summary of above greedy algorithms ✨
@@ -90,3 +95,36 @@ Huffman Coding have two main steps -
 ### Disadvantage
 
 - Require two passes over the input (one to compute frequency and one for coding ) thus encoding is slow.
+
+## Buy Maximum Stocks if i stocks can be bought on i-th day
+
+- In a stock market, there is a product with its infinite stocks. The stock prices are given for N days, where arr[i] denotes the price of the stock on the ith day. 
+- There is a rule that a customer can buy at most i stock on the ith day. If the customer has an amount of k amount of money initially, find out the maximum number of stocks a customer can buy. 
+- For example, for 3 days the price of a stock is given as 7, 10, 4. You can buy 1 stock worth 7 rs on day 1, 2 stocks worth 10 rs each on day 2 and 3 stock worth 4 rs each on day 3.
+
+<!-- image to help better explain the concept -->
+<img src="https://user-images.githubusercontent.com/98539013/170832323-6262fe06-e901-4960-9da0-bdea83f192ba.jpeg" width="400" height="300" />
+
+
+### Algorithm
+
+* The idea is to use the greedy approach.
+* First take the inputs from the user.
+* Pass the inputs through the function buyMaxStocks
+* Now we make pair of product cost and number of the day.
+* Next we will sort the vector pair.
+* Thus, we will calculate the maximum number of stock count.
+* Then, we will finally return the result.
+
+### Time Complexity
+```
+- O(NlogN).
+```
+
+### Advantage
+
+- Solutions to smaller instances of the problem can be straightforward and easy to understand.
+
+### Disadvantage
+
+- Sometimes the algorithms fail to find the globally optimal solution because they do not consider all the data. The choice made by a greedy algorithm may depend on choices it has made so far, but it is not aware of future choices it could make.
