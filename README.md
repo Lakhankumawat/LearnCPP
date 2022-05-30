@@ -51,6 +51,7 @@
 - [Array](#array)
 - [Backtracking](#backtracking)
 - [Bit Manipulation](#bit-manipulation)
+- [Brute Force](#brute-force)
 - [Disjoint Set Union](#disjoint-set-union)
 - Divide And Conquer Algorithms
 - [Dynamic Programming](#dynamic-programming)
@@ -203,8 +204,11 @@ Fond of designing README this section will be helpful to you
 | 2  | Cout Set Bits  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/Count_set_Bits.cpp)|
 | 3  | [Swapping 2 Numbers](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/Swapping%202%20Numbers/readme.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/Swapping%202%20Numbers/swapping.cpp)|
 
+- ## Brute Force
 
-
+| # | Problem Statement & Explanation | Solution |
+| --- | --- | --- |
+| 1  | [Discounted Price Calculation](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/README.md)  | [Solution]([https://github.com/Lakhankumawat/LearnCPP/blob/main/B-BitManipulation/BitManipulation.cpp](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/discountedPrice.cpp))|
 
 - ## Disjoint Set Union
 
