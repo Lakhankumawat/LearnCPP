@@ -53,10 +53,12 @@
 
   - [Radix Sort](#Radix-sort)
      - [Algorithm](#RadixSortAlgorithm)
+     - [Pseudo-code](#RadixSortPseudocode)
      - [Properties](#RadixSortProperties)
      - [Advantages](#RadixSortAdvantages)
      - [Disadvantage](#RadixSortDisadvantages)
- 
+
+
 # Sorting Algorithms
 
 - Sorting basically refers to rearranging a collection of data into ascending or descending order.
@@ -622,11 +624,10 @@ Here, array elements: {30, 20, 10, 40, 60, 50}
 - Each pass sorts elements according to the digits in a particular place value, using a stable sorting algorithm (usually counting sort as a subroutine). It can be implemented to start the sorting from the least significant digit (LSD) or the most significant digit (MSD). 
 - The number of passes required to fully sort the elements is equal to the number of place values (digits) present in the largest element among all the input elements to be sorted. These passes continue to run for each place value until the sorting is done. 
 
-# Radix-sort
 
 ![Radix sort working snippet](https://user-images.githubusercontent.com/84588360/168561310-52dfca38-33d3-4bcd-943b-fdbac31af87a.png)
 
-# Algorithm
+### Algorithm
 
 - ***Step 1*** – Take input array and find maximum number in the array
 - ***Step 2*** – Create a for expression that loops d times, where d = number of digits in the largest element (maxim)
@@ -635,7 +636,7 @@ Here, array elements: {30, 20, 10, 40, 60, 50}
 - ***Step 5*** – Display the updated, sorted array.
 - ***Step 6*** – Exit.
  
-# RadixSortAlgorithm
+<a name="RadixSortAlgorithm"></a>
 
 **Example :**
 
@@ -688,8 +689,9 @@ https://user-images.githubusercontent.com/84588360/168647326-0d773672-f505-4c84-
 
 *Source:* https://www.crio.do/blog/top-10-sorting-algorithms/
 
+<a name="RadixSortPseudocode"></a>
 
-# Pseudocode
+### Pseudocode
 
 **Radix Sort Pseudocode RadixSort(arr[], length) –**
 
@@ -730,9 +732,7 @@ https://user-images.githubusercontent.com/84588360/168647326-0d773672-f505-4c84-
 -     arr[i] = opt[i] 
 
 
-# RadixSortProperties
-
-# Properties
+### Properties
 
 - **Time Complexity:**  For worst-, best- and average-case scenario is O(d*(n+b)). 
 
@@ -747,17 +747,18 @@ https://user-images.githubusercontent.com/84588360/168647326-0d773672-f505-4c84-
 *NOTE:* Binary MSD radix sort, also called binary quicksort, can be implemented in-place by splitting the input array into two bins - the 0s bin and the 1s bin.*
 - **Stable** : Yes
 
+<a name="RadixSortProperties"></a>
 
-# Advantages
+### Advantages
 
 - Radix Sort is a stable sort because it maintains the relative order of elements with equal values.
 - Fast when the keys are short, i.e. when the array element range is small.
 - Used in suffix arrays construction algorithms such as Manber's and the DC3 algorithm.
 
-# RadixSortAdvantages
+<a name="RadixSortAdvantages"></a>
 
 
-# Disadvantages
+### Disadvantages
 
 - Radix sort may be slower than other sorting algorithms such as merge sort and Quicksort if the operations are inefficient. These operations include sub-inset lists and delete functions, as well as the process of isolating the desired digits.
 - The Radix Sort algorithm is less flexible than other sorts because it is based on digits or letters. As a result, for each different type of data, it must be rewritten.
@@ -765,7 +766,7 @@ https://user-images.githubusercontent.com/84588360/168647326-0d773672-f505-4c84-
 - It takes up more space than Quicksort, which is used for in-place sorting.
 - Because it is based on digits or letters, the radix sort is less flexible than other sorts. If the data type must be rewritten, so must the Radix sort.
 
-# RadixSortDisadvantages
+<a name="RadixSortDisadvantages"></a>
 
 -----------------------
 -----------------------
