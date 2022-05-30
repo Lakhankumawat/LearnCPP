@@ -208,7 +208,7 @@ Fond of designing README this section will be helpful to you
 
 | # | Problem Statement & Explanation | Solution |
 | --- | --- | --- |
-| 1  | [Discounted Price Calculation](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/discountedPrice.cpp))|
+| 1  | [Discounted Price Calculation](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/README.md)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/discountedPrice.cpp)|
 
 - ## Disjoint Set Union
 
