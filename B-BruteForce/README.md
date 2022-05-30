@@ -3,7 +3,7 @@
 
 
 
-# [Calculating New Discounted Price](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
+# [Calculating New Discounted Price](https://github.com/Lakhankumawat/LearnCPP/blob/discount/B-BruteForce/discountedPrice.cpp)
 
 Question:<br>
 
