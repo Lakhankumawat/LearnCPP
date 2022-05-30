@@ -7,6 +7,9 @@
   - [Algorithm](#algorithm)
   - [Time Complexity](#time-complexity)
   - [Space Complexity](#space-complexity)
+- [Sum of first k missing natural number in a given array](#sum-of-first-k-missing-natural-number-in-a-given-array)
+  - [Problem Approach](#problem-approach)
+  - [Time and Space Complexity](#time-and-space-complexity)
 
 # Union of two sets
 - The union of a two of sets is the set of all elements in the both the sets. It is one of the fundamental operations through which sets can be combined and related to each other. 
@@ -137,4 +140,35 @@ The intersection of two sets A and B is the set of all elements which are common
 ## Space Complexity
 ```
 - O(1).
+```
+
+# Sum of first k missing natural number in a given array
+
+Given an array arr[] of size N and a number K, the task is to find the sum of the first K natural numbers that are not present in the given array.
+
+<img src="https://user-images.githubusercontent.com/78517313/170889405-4b81f7cd-6b50-4a7e-bfe0-5da7d44eae58.PNG" />
+
+## Properties:
+
+- Commutative Law : `A ∩ B = B ∩ A`
+- Associative law : `(A ∩ B) ∩ C = A ∩ (B ∩ C)`
+- Law of φ and U : `φ ∩ A = φ, U ∩ A = A`
+- Distributive law : `A ∩ (B U C) = (A ∩ B) U (A ∩ C)`
+- Idempotent law : `A ∩ A = A`
+
+## Problem Approach
+
+- Taking the inputs from the user.
+- Create a sorted set from array elements to remove all duplicates.
+- Then for each positive numbers from
+ starting in set:
+ - Find count of numbers in between 2 positive numbers in the set
+ - If the count is smaller than K, find the sum of numbers in between those 2 numbers in the set and reduce K by count
+ - If the count is greater than K, find the sum of only K numbers from the previous positive number and reduce K to 0
+- Return the sum
+
+## Time and Space Complexity
+```
+- Time Complexity - O(N * logN)
+- Space Complexity - O(N)
 ```
