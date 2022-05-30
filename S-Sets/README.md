@@ -1,6 +1,12 @@
 # Table of Content 
-- [Union of two sets](#Union-of-two-sets)
+- [Union of two sets](#union-of-two-sets)
 - [Cartesian Product of two Set](#cartesian-product-of-two-set)
+- [Intersection of two Set](#intersection-of-sets)
+- [Find Kth distinct character from start of given String](#find-kth-distinct-character-from-start-of-given-string)
+  - [Properties](#properties)
+  - [Algorithm](#algorithm)
+  - [Time Complexity](#time-complexity)
+  - [Space Complexity](#space-complexity)
 
 # Union of two sets
 - The union of a two of sets is the set of all elements in the both the sets. It is one of the fundamental operations through which sets can be combined and related to each other. 
@@ -64,3 +70,71 @@ Suppose, if A and B are two non-empty sets, then the Cartesian product of two se
         print `{A[i],B[j]}`
 
  - **Time Complexity** for finding Cartesian Product is n^2 
+
+---
+
+# Intersection of sets
+
+The intersection of two sets A and B is the set of all elements which are common in both sets as same in both A and B set , The intersection of A and B is denoted as `A ∩ B`.
+
+- If Any of one set is empty then the intersection of set A and B is defined as `null or fi` and we can represent as `A ∩ B = φ` these sets are called **disjoint sets**.
+
+![image](https://user-images.githubusercontent.com/86917304/168950618-3b5da193-ead6-4a94-a793-4d87de887924.png)
+
+## Properties
+
+- Commutative Law : `A ∩ B = B ∩ A`
+- Associative law : `(A ∩ B) ∩ C = A ∩ (B ∩ C)`
+- Law of φ and U : `φ ∩ A = φ, U ∩ A = A`
+- Distributive law : `A ∩ (B U C) = (A ∩ B) U (A ∩ C)`
+- Idempotent law : `A ∩ A = A`
+
+## Pseudo Code
+![image](https://user-images.githubusercontent.com/86917304/169095891-1a6d91dd-cf45-4f3d-be19-d49c58c63faf.png)
+
+## Approach
+
+- Firstly We sort both the array in _ascending order_.
+- Then we traverse to both array with two pointer approach.
+- If `a[i]==b[j]` then we print the element.
+- If `a[i]<b[j]` then simply increase the `i` pointer.
+- If `a[i]>b[j]` then we simply increase the `j` pointer.
+
+## Complexites
+
+- Time Complexity :- O(n+m)
+- Space Complexity :- O(1)
+
+
+# Find Kth distinct character from start of given String
+
+- Given a string str of size N containing all possible characters including integers.Print Kth distinct character from the starting of the given string. 
+- If K is more than number of distinct characters, print -1.
+- Note: The uppercase and lowercase letters are considered different.
+
+<img src="https://user-images.githubusercontent.com/98539013/170510201-bac36cdd-c133-4ba6-9bdc-d0acf560971e.png" width="750" height="400" />
+
+## Properties
+
+- Commutative Law : `A ∩ B = B ∩ A`
+- Associative law : `(A ∩ B) ∩ C = A ∩ (B ∩ C)`
+- Law of φ and U : `φ ∩ A = φ, U ∩ A = A`
+- Distributive law : `A ∩ (B U C) = (A ∩ B) U (A ∩ C)`
+- Idempotent law : `A ∩ A = A`
+
+## Algorithm
+
+- Taking the inputs from the user.
+- Passing the string and k through the function- printKthDistinct.
+- Then initialize the set- "uniqueEle".
+- Traverse the string and put its elements in the set, till the size of set becomes  equal to k. 
+- Finally output the last traversed element of the string.
+
+## Time Complexity
+```
+- O(N*N).
+```
+## Space Complexity
+```
+- O(1).
+```

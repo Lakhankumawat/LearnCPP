@@ -5,7 +5,6 @@
     - [Time Complexity](#time-complexity)
     - [Space Complexity](#space-complexity)
    
-    
 - [Diagonal Traversal](#diagonal-traversal) 
     - [Examples](#Examples)
     - [Algorithm](#algorithm-1)
@@ -18,6 +17,13 @@
     - [Time Complexity](#time-complexity-2)
     - [Space Complexity](#space-complexity-2)
 
+- [Conversion of expression by expression tree traversal](#conversion-of-expression-by-expression-tree-traversal)
+    - [Properties](#properties-1)
+    - [Algorithm](#algorithm-3)
+    - [Time Complexity](#time-complexity-3)
+    - [Space Complexity](#space-complexity-3)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
 
 
 ## Morris Traversal
@@ -129,3 +135,106 @@ The algorithm traverses each node to put it in the queue so, time comlexity is O
 - Space Complexity : O(N)
 As the algorithm contains a queue with maximum size of n(nodes number) and a vector to save nodes in each level with maximum size of n then space complexity is O(N) + O(N) = O(N)
 ```
+
+
+## Conversion of expression by expression tree traversal
+
+![image](https://user-images.githubusercontent.com/84305637/168638346-47d75943-ee98-4a57-ac3c-9be4393a1a73.png)
+
+### Properties
+
+- Given a expression tree, it's inorder traversal gives the infix expression, post order traversal gives the postfix expression, and pre order traversal gives prefix expression.
+- In a expression tree, we will be having operators at the non-leaf node, and operands will be at the leaf nodes.
+
+### Algorithm 
+
+- inorder traversal :
+1) if root is not null
+2) if root is operand
+    print root
+3) else
+    print open parenthesis
+    inorder(left subtree)
+    print root
+    inorder(right subtree)
+    print close parenthesis
+4) end if
+5) end if
+
+- preorder traversal :
+1) if root is not null
+    print root
+    preorder(left subtree)
+    preorder(right subtree)
+2) end if
+
+- postorder traversal :
+1) if root not null
+    postorder(left subtree)
+    postorder(right subtree)
+    print root
+2) end if
+
+### Time Complexity
+```
+Time Complexity : O(N)
+``` 
+
+### Space Complexity
+```
+Space Complexity : O(N)
+``` 
+
+### Advantages 
+    
+- The infix expression is very clear with brackets
+- Easy to implement, compared to other conversion methods
+
+### Disadvantages
+
+- Construction of a expression tree is difficult to implement.
+
+<br><br>
+
+## Right Side View of BT
+
+- Given a binary tree, write an efficient algorithm to print its right view.
+
+### Examples
+Input : [1,2,3,6,7,5,4,null,null,9,null,null,8]  
+Output : 1 3 4 8
+
+![Screenshot](https://user-images.githubusercontent.com/78534043/167404001-d387d0e3-8d3d-4284-9229-632055883a24.jpg)
+
+### Algorithm (Iterative)
+
+<h3>Intuition</h3>
+This, perhaps, is the most intuitive way of solving this problem.
+We travel the entire tree level by level (from right to left).
+At each level, we print/store the right most node.
+After the algorithm is done processing the entire tree, we will obtain the right view of the binary tree given to us.
+<br><br>
+<h3>The Iterative Algorithm</h3>
+
+1. Initialize a queue data structure ((commonly used in BFS algorithm) with the root node and a LevelEnd character to mark a level's end in the queue. Commonly, nullptr or NULL is used as LevelEnd in C/C++, while None is used in Python.
+
+2. While the queue is not empty, do the following:
+
+    a. Pop the front of the queue, and call it frontVal
+
+    b. If frontVal is LevelEnd, and the resultant queue is not empty, pop and print the front value of the resultant queue (this is the rightmost node of the given level), and also push a LevelEnd character into the queue.
+
+    c. If frontVal is LevelEnd and the resultant queue is empty, break out of the while loop.
+
+    d. If frontVal is not LevelEnd, then push its right child followed by left child into the queue (they must exist, of course).
+
+
+### Time Complexity
+```
+- Time Complexity : O(N)
+ ``` 
+
+### Space Complexity
+```
+- Space Complexity : O(N)
+ ``` 

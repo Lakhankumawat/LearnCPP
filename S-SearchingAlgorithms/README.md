@@ -18,6 +18,12 @@
         - [Explanation](#explanation)
         - [Properties](#properties)
 
+    -  [Interpolation Search](#interpolation-search)
+        - [Approach](#approach)
+        - [Complexities](#complexities)
+        - [Advantages](#advantages-2)
+        - [Disadvantage](#disadvantages)
+
 # Searching Algorithms
 
 - searching is the process of finding an item with specified properties from a
@@ -210,3 +216,44 @@ Case 2b: The right half of the array must be sorted .
 ### Properties
 - Time Complexity: ` O(log n) `  where n is size of the array
 - Space Complexity: ` O(1) `
+
+---
+
+## Interpolation Search
+
+The interpolation search is the enhanced form of the binary search in this values in a **sorted array** is uniformly distributed . Interpolation search will visit different locations according to the value that is given and being searched.
+
+- **For example :-** If the value of the target is closer to the last element, interpolation search is likely to start search toward the end of the array or we say from the last element.
+
+![image](https://user-images.githubusercontent.com/86917304/168891817-2b2a2d57-2c05-43a1-b350-12419b74ce17.png)
+
+
+### Approach
+
+- **Intutuion**
+
+1. The intution behind the search is to return the high value of postion.
+2. When we want to search the element is closer to `a[high]` and smaller value when closer to `a[low]`.
+3. The working formula (probe position formula) is \
+   **pos = low + [ (key - a[low]) \* (high-low) / (a[high] - a[low]) ]**
+
+- **Algorithm**
+
+1. Calculate the value of _pos_ using the probe position formula.
+2. If it is a match with the key that provided , return the index of the key, and exit from the loop.
+3. If the key is less than `arr[pos]`, calculate the probe position of the left sub-array. Else calculate the same in the right sub-array.
+4. Repeat until a match is found or the sub-array size turned to zero.
+
+### Complexities
+
+- Time Complexity :- - Average Case :- `O(log2(log2 n))` - Worst Case :- `O(n)`
+  Here , **n** is the size of array.
+- Space Complexity :- `O(1)`
+
+### Advantages
+
+- It is the combination of both binary search algorithm and linear search algorithm.
+
+### Disadvantages
+
+- When the elements in the list or array are increased exponentially, then executing time of Interpolation search algorithm increased to `0(n) time complexity`.
