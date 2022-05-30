@@ -11,6 +11,9 @@
   - [Palindrome linked list](#palindrome-linked-list)
   - [Middle Element of the linked list](#middle-element-of-the-linked-list)
   - [Reverse a linked list](#reverse-a-linked-list)
+  - [Reverse linked list in group size k](#reverse-linked-list-in-group-size-k)
+    - [Problem Approach](#problem-approach)
+    - [Time and Space Complexity](#time-and-space-complexity)
   - [Searching in a linked list](#searching-in-a-linked-list)
   - [Removing Duplicates](#removing-duplicates)
     - [Algorithm](#removing-duplicates)
@@ -366,3 +369,26 @@ Suppose we have a list of some elements. We have to remove all elements that hav
 ## Disadvantages
 * Linked list must be sorted for applying this algorithm..
 
+# Reverse linked list in group size k
+Given a linked list, write a function to reverse every k nodes (where k is an input to the function). 
+
+k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.
+
+Example 1:
+
+![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg)
+
+Input: 1->2->3->4->5->NULL, K = 2
+Output: 2->1->4->3->5->NULL 
+
+## Problem Approach
+* Reverse the first sub-list of size k.
+* While reversing keep track of the next node and previous node. Let the pointer to the next node be next and pointer to the previous node be prev. 
+* head->next = reverse(next, k) ( Recursively call for rest of the list and link the two sub-lists )
+* Return prev ( prev becomes the new head of the list
+
+## Time and Space Complexity
+* Time Complexity: O(n). 
+   Traversal of list is done only once and it has ‘n’ elements.
+* Auxiliary Space: O(n/k). 
+For each Linked List of size n, n/k or (n/k)+1 calls will be made during the recursion
