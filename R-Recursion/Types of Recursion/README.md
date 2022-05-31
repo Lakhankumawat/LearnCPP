@@ -15,7 +15,13 @@
 ## Different types of the recursion
 
 
-* Direct Recursion.
+- [Direct Recursion](#direct-recursion)
+  - [Algorithm](#direct-recursion)
+  - [Properties](#direct-recursion)
+  - [Advantages](#direct-recursion)
+  - [Disadvantages](#direct-recursion)
+
+
 - [Head Recursion](#head-recursion)
   - [Algorithm](#head-recursion)
   - [Properties](#head-recursion)
@@ -34,7 +40,13 @@
   - [Disadvantages](#tail-recursion)
 
 
-* Linear recursion.
+- [Linear recursion](#linear-recursion)
+  - [Algorithm](#linear-recursion)
+  - [Properties](#linear-recursion)
+  - [Advantages](#linear-recursion)
+  - [Disadvantages](#linear-recursion)
+
+
 - [Tree Recursion](#tree-recursion)
   - [Algorithm](#algorithm)
   - [Properties](#properties)
@@ -204,4 +216,113 @@ Let’s understand the example by tracing tree of recursive function. That is ho
 ## Disadvantages
 * A recursive program has greater space requirements than an iterative program as each function call will remain in the stack until the base case is reached.
 * It also has greater time requirements because each time the function is called, the stack grows and the final answer is returned when the stack is popped completely.
+
+
+
+
+
+
+
+
+
+# Direct Recursion
+
+If a function calls itself, it’s known as direct recursion. This results in a one-step recursive call: the function makes a recursive call inside its own function body.
+
+#### Structure of the direct recursion
+
+fun()  
+{  
+// write some code  
+fun();  
+// some code  
+}  
+
+In the above structure of the direct recursion, the outer fun() function recursively calls the inner fun() function, and this type of recursion is called the direct recursion.
+
+## Example
+
+int testfunc(int num)
+{
+  if (num == 0)
+    return 0;
+  else
+    return (testfunc(num - 1));
+}
+
+* First we pass the value in the testfunc function
+* if value is equals to 0 we return 0 simply without doing any operation.
+* else we have to call the same function with with decreasing value of num by 1
+* This fuction will recursively calls itself until the value of num not reaches to 0.
+
+Here, the function ‘testfunc’ calls itself for all positive values of num.
+
+## Algorithm
+
+*  only one function is called by itself.
+* The direct recursion called by the same function
+*  when function called next time, value of local variable will stored
+*  it engaged memory location
+
+![image](https://user-images.githubusercontent.com/100334178/168663839-3a11c6dc-f132-4ec2-a9fd-e16ec7951352.png)
+
+
+## properties
+* Time Complexity For Head Recursion: O(n) 
+* Space Complexity For Head Recursion: O(n)
+
+
+## Advantages 
+
+* For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.
+* Some problems are inherently recursive, such as Graph and Tree Traversal.
+
+## Disadvantages 
+
+* A recursive program has greater space requirements than an iterative program as each function call will remain in the stack until the base case is reached.
+* It also has greater time requirements because each time the function is called, the stack grows and the final answer is returned when the stack is popped completely.
+
+# Linear Recursion
+
+A linear recursive function is a function that only makes a single call to itself each time the function runs (as opposed to one that would call itself multiple times during its execution). The factorial function is a good example of linear recursion.
+
+Another example of a linear recursive function would be one to compute the square root of a number using Newton's method (assume EPSILON to be a very small number close to 0):
+
+
+## Algorithm
+   ![image](https://user-images.githubusercontent.com/100334178/168443835-9b4cc6fc-3ed8-410b-840c-7e3cecb1cdf5.png)
+
+   
+We begin by considering the factorial function, defined by
+
+
+         n! =  n  * (n-1) * (n-2) .....3 * 2 * 1
+
+There are many ways to compute factorials. One way is to make use of the observation that n! is equal to n times (n-1)! for any positive integer n:
+
+
+        n! = n * [(n-1) * (n-2)....3 * 2 * 1] = n (n-1)
+
+Thus, we can compute n! by computing (n-1)! and multiplying the result by n. If we add the stipulation that 1! is equal to 1, this observation translates directly into a procedure:
+
+(define (factorial n)
+  (if (= n 1)
+      1
+      (* n (factorial (- n 1)))))
+
+
+## Properties
+* Time complexity->O(n)
+* Space complexity->O(n)
+
+
+## Advantages
+* For a recursive function, you only need to define the base case and recursive case, so the code is simpler and shorter than an iterative code.
+
+## Disadvantages
+* slower in terms of speed.
+* It may require a lot of memory space to hold intermediate results on the system stacks.
+Hard to analyze or understand the code.
+* It is not more efficient in terms of space and time complexity.
+
 
