@@ -182,7 +182,7 @@ Fond of designing README this section will be helpful to you
 | 11  |  [Best Time to Buy and Sell Stock](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/README.md) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/Stock%20Buy%20And%20Sell.cpp)|
 | 12  |  [Symmetric Matrix](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#symmetric-matrix) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/SymmetricMatrix.cpp)|
 | 13  | [Trace and Normal](https://github.com/Lakhankumawat/LearnCPP/tree/main/A-Array#trace-and-normal-of-matrix)  | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/main/A-Array/TraceAndNormal.cpp)|
-
+| 14  | [Intersection of Arrays](https://github.com/Rishita489/LearnCPP/blob/arrays/A-Array/README.md#intersection-of-arrays) | [Solution](https://github.com/Lakhankumawat/LearnCPP/blob/arrays/A-Array/Array_Intersection.cpp)|
 
 - ## Backtracking
 
