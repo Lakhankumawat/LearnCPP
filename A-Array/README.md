@@ -1,5 +1,6 @@
 # Table of contents:
 - [Counting divisible Substrings](#counting-divisible-substrings)
+- [Intersection of Arrays](#intersection-of-arrays)
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
 - [Trace and Normal of Matrix](#trace-and-normal-of-matrix)
@@ -76,6 +77,44 @@ Time complexity: O(n<sup>2</sup>)
 Space complexity: O(1) 
 </pre>
 
+
+
+# [Intersection of Arrays](https://github.com/Lakhankumawat/LearnCPP/blob/arrays/A-Array/Array_Intersection.cpp)
+
+Question:<br>
+Given two arrays of different sizes n and m respectively , print the intersection of arrays in sorted order .
+
+
+Input Format
+The first line contains an integer, N, denoting the size of the first array .
+The second line contains an integer, M, denoting the size of the second array .
+The third line contains the elements of first array ,A .
+The fourth line contains the elements of second array ,B .
+
+Constrains
+1 <= N <= 10^5
+
+1 <= M <= 10^5
+
+1 <= A[i] <= 10^9
+
+1 <= B[i] <= 10^9
+
+1 <= i <= N (for first array A)
+
+1 <= i <= M (for second array B)
+
+## Algorithm
+* <sup></sup>Sort the first array of size N
+* <sup></sup>Sort the second array of size M
+* <sup></sup>Initialise two pointers p1=0 and p2=0.
+* <sup></sup>Traverse both the arrays A and B using p1 and p2 respectively by comparing the elements of two arrays such that the elements are printed in sorted order .
+
+## Complexity
+<pre>
+Time complexity: O(nlogn) 
+Space complexity: O(1) 
+</pre>
 
 
 
