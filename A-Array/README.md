@@ -19,7 +19,7 @@
 - [Spiral Traversal of Matrix](#spiral-traversal)
 
 # [Final Merge two Sorted Arrays Without Extra Space](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/Merge%20two%20Sorted%20Arrays%20Without%20Extra%20Space.cpp)
-
+![image](https://user-images.githubusercontent.com/75080313/172060351-1a8c9bbc-930b-467a-aaed-da2404709aae.png)
 
 # [Counting divisible Substrings](https://github.com/PrashantVIT1/LearnCPP/blob/main/A-Array/CountingDivisibleSubstrings.cpp)
 ![image](https://user-images.githubusercontent.com/75080313/161073362-aa7f9f46-ae97-4c26-8f18-d0d610adbdaf.png)
