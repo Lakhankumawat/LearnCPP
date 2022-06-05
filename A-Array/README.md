@@ -1,5 +1,5 @@
 # Table of contents:
-- [Final Merge two Sorted Arrays Without Extra Space](#Final-Merge-two-Sorted-Arrays-Without-Extra-Space)
+- [Merge two Sorted Arrays Without Extra Space](#Merge-two-Sorted-Arrays-Without-Extra-Space)
 - [Counting divisible Substrings](#counting-divisible-substrings)
 - [Best Time to Buy And Sell Stock](Best-Time-to-Buy-And-Sell-Stock)
 - [Maximum Sum of Subarray](#maximum-sum-of-subarray)
