@@ -1,0 +1,2 @@
+- name: Close All Pull Requests
+  uses: crondaemon/close-pr@v1
