@@ -14,7 +14,7 @@ There are 2 ways to check for a bipartite graph:
 *  A graph is a bipartite graph if and only if it is colorable by 2 colors only.
 While doing BFS traversal m the given Graph, each node in the BFS tree is given its parent’s opposite color. If there exists an edge connecting the current vertex to a previously colored vertex with the same color, then we can say that the graph is not bipartite.
 
-* A graph is a bipartite graph if and only if it contains an odd cycle(Cycle contains Odd number of vertices)
+* A graph is a bipartite graph if and only if it contains an even cycle(Cycle contains even number of vertices)
 If a graph contains an odd, we cannot divide the graph such that every adjacent vertex has a different color. If in the BFS, we find an edge, if both of its endpoints are at the same level, then the graph is not Bipartite and an odd-cycle is found.
 
 *Here in the explanation, we use the 1st approach of the BFS algorithm to check whether a given graph I bipartite or not.*
